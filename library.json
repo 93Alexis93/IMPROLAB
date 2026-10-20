@@ -1313,22 +1313,28 @@
       "section": "Saison 1",
       "numero_source": 52,
       "texte_original": "Jeu de scène : entrer dans une IMPRo. Jeux a quatre : deux joueurs commencent une IMPRo et deux sont sur le côté. Deux personnages doivent toujours être sur scène, quand un personnage entre un autre doit donc sortir, si c’est les deux les deux sortent.",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Quatre comédiens participent. Deux commencent une improvisation pendant que les deux autres attendent sur le côté. Il doit toujours y avoir exactement deux personnages sur scène. Lorsqu’un joueur entre, l’un des personnages présents doit sortir. Si les deux joueurs en attente entrent simultanément, les deux joueurs présents sortent. La scène continue sans interruption, en intégrant naturellement chaque arrivée et chaque départ.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Construction",
+        "Amusement",
+        "Cohésion"
+      ]
     },
     {
       "id": "1-53",
@@ -1336,22 +1342,27 @@
       "section": "Saison 1",
       "numero_source": 53,
       "texte_original": "Exercice de scène : entrée dans une IMPRo : deux personnages vont faire une scène et les autres vont enter dans la scène et en repartir rapidement, soit pour apporter du contenu soit pour rebondir sur quelque chose. Prends un lieu de départ avec du passage comme une gare",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Deux comédiens commencent une improvisation dans un lieu où les passages sont naturels, par exemple une gare. Les autres joueurs peuvent entrer brièvement dans la scène, puis en ressortir rapidement. Chaque intervention sert à apporter une information, enrichir la situation ou rebondir sur une réplique ou une action déjà présente. Les deux personnages principaux poursuivent leur histoire en intégrant ces interventions.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Construction",
+        "Écoute",
+        "Amusement"
+      ]
     },
     {
       "id": "1-54",
@@ -1359,22 +1370,27 @@
       "section": "Saison 1",
       "numero_source": 54,
       "texte_original": "Jeux pointer du doigt : on se regarde on s’imite en imitant celui qu’on pinte du doigt. On commence neutre et au second tour on augmente les mouvements",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs se placent en cercle et lèvent tous un bras. Un premier joueur désigne du doigt un autre joueur. Celui-ci pointe à son tour une personne qui a encore le bras levé, puis baisse le sien une fois son choix effectué. La chaîne de pointages se poursuit de joueur en joueur, en choisissant chaque fois une personne qui n’a pas encore été désignée, jusqu’à ce que chacun ait été intégré à la chaîne. Le groupe peut ensuite reprendre cette chaîne en se regardant et en imitant les mouvements de la personne désignée : d’abord avec des gestes neutres, puis en amplifiant les mouvements au deuxième tour.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Corps",
+        "Amusement",
+        "Lâcher-prise"
+      ]
     },
     {
       "id": "1-55",
@@ -1382,22 +1398,27 @@
       "section": "Saison 1",
       "numero_source": 55,
       "texte_original": "Yoga du regard, on en choisit un tout le monde le regarde pendant 10 secondes minimum puis il regarde un autre et ça continue",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Le groupe choisit un premier joueur. Tous les autres dirigent leur regard vers lui pendant au moins dix secondes, sans détourner les yeux. Le joueur observé choisit ensuite une autre personne en la regardant. Tout le groupe déplace alors son attention vers cette nouvelle personne pendant au moins dix secondes. Le processus se poursuit en transmettant ainsi le regard collectif d’un joueur à l’autre.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Cohésion",
+        "Corps",
+        "Lâcher-prise"
+      ]
     },
     {
       "id": "1-56",
@@ -1405,22 +1426,26 @@
       "section": "Saison 1",
       "numero_source": 56,
       "texte_original": "On marche dans l’espace et tout le monde s’arrête : un premier va dire un mot à quelqu’un qui a son tour va dire un mot à quelqu’un et ainsi de suite. Après lancer un deuxième mot et un troisième pour beaucoup de mouvement",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs marchent librement dans l’espace, puis s’immobilisent au signal de l’animateur. Un premier joueur adresse un mot à une personne de son choix. Celle-ci transmet à son tour un mot à un autre joueur, et ainsi de suite. Quand cette première circulation fonctionne, l’animateur lance un deuxième mot, puis un troisième, afin que plusieurs chaînes de transmission se déroulent simultanément. Les joueurs doivent rester attentifs aux mots qui circulent et aux personnes qui les sollicitent.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Corps",
+      "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Énergie",
+        "Cohésion"
+      ]
     },
     {
       "id": "1-57",
