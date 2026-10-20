@@ -790,22 +790,28 @@
       "section": "Saison 1",
       "numero_source": 29,
       "texte_original": "Carré d’émotions : 4 émotions sont présentes  et matérialisée par 4 zone chaque joueur doit jouer l’histoire avec l’émotion correspondant à sa zone géographique",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "L’espace de jeu est divisé en quatre zones, chacune associée à une émotion différente : par exemple joie, colère, peur et tristesse. Les comédiens improvisent une scène. Dès qu’un personnage entre dans une zone, il adopte l’émotion qui lui correspond, tout en poursuivant l’histoire. Ses émotions évoluent donc au fil de ses déplacements.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Émotions",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Choisissez une émotion et faites-la comprendre par le corps, la voix et la situation.",
         "variante_facile": "Jouer une émotion simple avec une intensité modérée.",
         "variante_difficile": "Faire évoluer progressivement l'émotion pendant la scène.",
         "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Corps",
+        "Scène",
+        "Écoute",
+        "Amusement"
+      ]
     },
     {
       "id": "1-30",
@@ -813,22 +819,28 @@
       "section": "Saison 1",
       "numero_source": 30,
       "texte_original": "Carré hollandais : 4 personnes se mettent en carré et chacun va jouer avec ses deux voisins. L’histoire se déroule avec le binôme de devant, quand le mc tire le carré, les personnages font un cycle et l’histoire suivante continue. Chacun a un personnage et un lieu défini au début",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Quatre comédiens se placent aux quatre sommets d’un carré. Chaque joueur joue dans deux histoires différentes, une avec chacun de ses voisins. Au départ, chaque binôme définit ses personnages et son lieu. Le binôme situé face au public commence sa scène. Au signal du maître de cérémonie, les quatre joueurs tournent ensemble d’un quart de tour : le nouveau binôme de devant reprend sa propre histoire. Les scènes alternent au fil des rotations.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Scène",
+      "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Scène",
+        "Écoute",
+        "Imaginaire",
+        "Cohésion"
+      ]
     },
     {
       "id": "1-31",
@@ -836,22 +848,28 @@
       "section": "Saison 1",
       "numero_source": 31,
       "texte_original": "Le répondeur : chacun laisse un message sur le répondeur d’une personne désignée à l’avance sur laquelle on a deux trois infos",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "L’animateur désigne une personne fictive et donne au groupe deux ou trois informations à son sujet. Les joueurs passent ensuite chacun leur tour pour laisser un message sur son répondeur téléphonique. Chaque message invente une relation, un événement ou une situation en lien avec ce personnage. Au fil des messages, le public découvre progressivement sa vie et sa personnalité.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Énergie",
+      "objectif_pedagogique": "Imaginaire",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Construction",
+        "Écoute",
+        "Amusement",
+        "Lâcher-prise"
+      ]
     },
     {
       "id": "1-32",
@@ -859,22 +877,28 @@
       "section": "Saison 1",
       "numero_source": 32,
       "texte_original": "Le speed dating, professionnel ou drague. Une personne se met au milieu, on apprend deux trois trucs sur elle, et tous les improvisateurs viennent passer l’entretien",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Un joueur s’installe au centre de l’espace. Le groupe définit deux ou trois caractéristiques de son personnage. Les autres improvisateurs viennent à tour de rôle le rencontrer pour un entretien très court. Selon le thème choisi, il peut s’agir d’un rendez-vous amoureux ou d’un recrutement professionnel. Chaque nouvel interlocuteur propose une personnalité et une situation différentes, auxquelles le personnage central doit réagir.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Construction",
+        "Écoute",
+        "Imaginaire",
+        "Amusement"
+      ]
     },
     {
       "id": "1-33",
