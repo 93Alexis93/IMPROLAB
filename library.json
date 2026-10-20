@@ -308,11 +308,11 @@
       "numero_source": 13,
       "texte_original": "Jeu du SAV avec une personne qui ne sait pas quel objet elle ramène.",
       "regle_clarifiee": "Une scène se déroule au service après-vente. Le client vient rapporter un objet dont il ignore l’identité ; l’employé et le public savent de quel objet il s’agit. Le client improvise une réclamation, écoute les réponses de l’employé et tente de comprendre ce qu’il est censé rapporter, sans sortir de la situation.",
-      "statut": "validée après corrections du coach",
+      "statut": "validée par le coach",
       "eligible_generateur": false,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Énergie",
+      "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
@@ -322,7 +322,12 @@
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Construction",
+        "Amusement"
+      ]
     },
     {
       "id": "1-14",
