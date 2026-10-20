@@ -104,19 +104,31 @@ test('les neuf catégories et les catégories secondaires sont filtrables',async
  await expect(page.locator('#games')).toContainText('voyant');
 });
 
-test('neuf curseurs compacts 0-100, persistance et generation',async({page})=>{
+test('dix curseurs compacts 0-100, persistance et timeline souple',async({page})=>{
  await page.goto('/');
  await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
  const sliders=page.locator('.dynamic-grid input[type=range]');
- await expect(sliders).toHaveCount(9);
+ await expect(sliders).toHaveCount(10);
  for(const slider of await sliders.all()){await expect(slider).toHaveAttribute('max','100');await expect(slider).toHaveAttribute('step','1')}
- await page.locator('#dynamic8').fill('87');
- await expect(page.locator('#dynamicValue8')).toHaveText('87 %');
+ await page.locator('#dynamic9').fill('87');
+ await expect(page.locator('#dynamicValue9')).toHaveText('87 %');
  await page.reload();
- await expect(page.locator('#dynamic8')).toHaveValue('87');
+ await expect(page.locator('#dynamic9')).toHaveValue('87');
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  await expect(page.locator('#plan>.card')).toHaveCount(5);
  await expect(page.locator('#planSummary')).toContainText('55 minutes');
  await page.getByRole('button',{name:/Réinitialiser/}).click();
- await expect(page.locator('#dynamic8')).toHaveValue('80');
+ await expect(page.locator('#dynamic9')).toHaveValue('60');
+});
+
+test('timeline souple : cinq étapes et priorité Imaginaire',async({page})=>{
+ await page.goto('/');
+ await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await page.locator('#dynamic9').fill('100');
+ await page.getByRole('button',{name:'Générer ma séance'}).click();
+ await expect(page.locator('#plan>.card')).toHaveCount(5);
+ for(const label of ['Mise en énergie','Connexion collective','Exploration','Improvisation','Final collectif'])await expect(page.locator('#plan>.card small').filter({hasText:label})).toHaveCount(1);
+ await page.getByRole('button',{name:'Jeux'}).click();
+ await page.locator('#categoryFilter').selectOption('Imaginaire');
+ await expect(page.locator('#categoryFilter')).toHaveValue('Imaginaire');
 });
