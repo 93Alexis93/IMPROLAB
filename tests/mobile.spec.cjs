@@ -1,7 +1,7 @@
 const { test, expect, devices } = require('@playwright/test');
 const { spawn } = require('node:child_process');
 const { once } = require('node:events');
-test.use({ ...devices['iPhone 13'], browserName:'chromium' });
+test.use({ ...devices['iPhone 13'] });
 test.beforeEach(async ({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('http://127.0.0.1:8765/');
