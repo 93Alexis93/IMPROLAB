@@ -1528,7 +1528,7 @@
       "section": "Saison 1",
       "numero_source": 59,
       "texte_original": "Caca homard je mange tu mange le chifoumi",
-      "regle_clarifiee": "En binôme, compter jusqu’à trois et choisir simultanément un geste et une réplique parmi « Je mange » (se pointer), « Tu manges » (pointer l’autre), « Caca » (losange avec les mains) et « Homard » (pinces en l’air). Jeu comique inspiré du chifoumi ; aucune règle de victoire n’a été précisée.",
+      "regle_clarifiee": "En binôme, compter jusqu’à trois et choisir simultanément un geste et une réplique parmi « Je mange » (se pointer), « Tu manges » (pointer l’autre), « Caca » (losange avec les mains) et « Homard » (pinces en l’air). Jeu comique inspiré du chifoumi, sans véritable gagnant : les combinaisons produisent des situations absurdes, notamment l’idée qu’il vaut mieux ne pas manger du caca.",
       "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
@@ -1612,22 +1612,27 @@
       "section": "Saison 1",
       "numero_source": 62,
       "texte_original": "I A O : un premier lance le jeu en disant I et en levant les bras, puis ses voisins miment un découpage et dise À, puis celui qui a les bras en l’air les redescend en pointant quelqu’un et disant O, puis la personne visée lève les bras en disant I, ses voisins la découpe avec un A et ça continue. Quand tout le monde est ok on élimine et un éliminé croise les bras, ça fait changer les voisins. C’est un genre de shawa fu",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs forment un cercle. Un premier joueur lève les bras en disant « I ». Ses deux voisins miment aussitôt un mouvement de découpage vers lui en disant « A ». Le joueur central abaisse ensuite ses bras, désigne une personne du cercle et dit « O ». La personne désignée lève les bras en disant « I » et le cycle recommence. Quand le groupe maîtrise le rythme, les erreurs entraînent une élimination. Les joueurs éliminés croisent les bras et ne participent plus : les voisins actifs changent donc au fur et à mesure.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Énergie",
+        "Écoute",
+        "Amusement"
+      ]
     },
     {
       "id": "1-63",
@@ -1635,22 +1640,28 @@
       "section": "Saison 1",
       "numero_source": 63,
       "texte_original": "Diapositive : 3 comédiens qui vont jouer les diapositives (images figées) que un ou deux autres comédiens vont devoir raconter : exemple les diapositives de notre voyage à Rome, de la fete de fin d’année du club de Tennis.",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Trois comédiens composent des images figées, comme des diapositives projetées. Un ou deux autres joueurs présentent et racontent ces images devant le public, en improvisant les explications. Le thème peut être, par exemple, « Notre voyage à Rome » ou « La fête de fin d’année du club de tennis ». Les présentateurs inventent une histoire cohérente à partir des poses proposées par les trois comédiens.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Corps",
+        "Scène",
+        "Imaginaire",
+        "Amusement"
+      ]
     },
     {
       "id": "1-64",
@@ -1658,22 +1669,28 @@
       "section": "Saison 1",
       "numero_source": 64,
       "texte_original": "En groupe, en ligne ou assis dans un ordre : histoire partagée :                  chacun va dire environ 3 mots et on se suit les uns les autres, ça doit faire une histoire, il y a un roi qui donne un sujet de départ puis décide si le joueur est trop long, si cest trop éloigné de 3 mots d’éliminer. Le but est d’être rapide et de continuer l’histoire sans réfléchir.",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs se placent en ligne ou s’assoient dans un ordre défini. Un « roi » propose un thème de départ. Chacun ajoute à tour de rôle environ trois mots pour construire une seule histoire collective. Les interventions doivent s’enchaîner rapidement, sans temps de réflexion. Le roi arbitre : il peut éliminer un joueur qui prend trop de temps, dépasse la longueur autorisée ou ne fait pas avancer l’histoire. Le jeu continue avec les participants restants.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Imaginaire",
+        "Lâcher-prise",
+        "Amusement"
+      ]
     },
     {
       "id": "2-1",
