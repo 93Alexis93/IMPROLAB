@@ -74,7 +74,8 @@
       "categories_secondaires": [
         "Lâcher-prise",
         "Écoute",
-        "Énergie"
+        "Énergie",
+        "Imaginaire"
       ]
     },
     {
@@ -173,7 +174,10 @@
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Imaginaire"
+      ]
     },
     {
       "id": "1-8",
@@ -326,7 +330,8 @@
       "categories_secondaires": [
         "Écoute",
         "Construction",
-        "Amusement"
+        "Amusement",
+        "Imaginaire"
       ]
     },
     {
@@ -355,7 +360,8 @@
         "Écoute",
         "Corps",
         "Construction",
-        "Amusement"
+        "Amusement",
+        "Imaginaire"
       ]
     },
     {
@@ -461,7 +467,7 @@
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Lâcher-prise",
+      "objectif_pedagogique": "Imaginaire",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
@@ -473,6 +479,7 @@
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "categories_secondaires": [
+        "Lâcher-prise",
         "Construction",
         "Écoute",
         "Amusement"
@@ -576,7 +583,8 @@
       "categories_secondaires": [
         "Écoute",
         "Construction",
-        "Lâcher-prise"
+        "Lâcher-prise",
+        "Imaginaire"
       ]
     },
     {
@@ -866,7 +874,7 @@
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Scène",
+      "objectif_pedagogique": "Imaginaire",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
@@ -878,6 +886,7 @@
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "categories_secondaires": [
+        "Scène",
         "Construction",
         "Énergie",
         "Cohésion",
@@ -994,7 +1003,8 @@
         "Construction",
         "Cohésion",
         "Écoute",
-        "Amusement"
+        "Amusement",
+        "Imaginaire"
       ]
     },
     {
@@ -1022,7 +1032,8 @@
       "categories_secondaires": [
         "Construction",
         "Amusement",
-        "Cohésion"
+        "Cohésion",
+        "Imaginaire"
       ]
     },
     {
@@ -1079,7 +1090,8 @@
         "Corps",
         "Énergie",
         "Amusement",
-        "Lâcher-prise"
+        "Lâcher-prise",
+        "Imaginaire"
       ]
     },
     {
@@ -1108,7 +1120,8 @@
         "Scène",
         "Écoute",
         "Amusement",
-        "Construction"
+        "Construction",
+        "Imaginaire"
       ]
     },
     {
@@ -1136,7 +1149,8 @@
       "categories_secondaires": [
         "Construction",
         "Écoute",
-        "Amusement"
+        "Amusement",
+        "Imaginaire"
       ]
     },
     {
@@ -1163,7 +1177,8 @@
       },
       "categories_secondaires": [
         "Scène",
-        "Écoute"
+        "Écoute",
+        "Imaginaire"
       ]
     },
     {
@@ -1313,7 +1328,7 @@
       "section": "Saison 1",
       "numero_source": 52,
       "texte_original": "Jeu de scène : entrer dans une IMPRo. Jeux a quatre : deux joueurs commencent une IMPRo et deux sont sur le côté. Deux personnages doivent toujours être sur scène, quand un personnage entre un autre doit donc sortir, si c’est les deux les deux sortent.",
-      "regle_clarifiee": "Quatre comédiens participent. Deux commencent une improvisation pendant que les deux autres attendent sur le côté. Il doit toujours y avoir exactement deux personnages sur scène. Lorsqu’un joueur entre, l’un des personnages présents doit sortir. Si les deux joueurs en attente entrent simultanément, les deux joueurs présents sortent. La scène continue sans interruption, en intégrant naturellement chaque arrivée et chaque départ.",
+      "regle_clarifiee": "Quatre comédiens participent. Deux commencent une improvisation pendant que les deux autres attendent sur le côté. Il doit toujours y avoir exactement deux personnages sur scène. Lorsqu’un joueur entre, l’un des personnages présents doit sortir ; lorsqu’un joueur sort, l’un des joueurs en attente doit entrer à son tour. Si les deux joueurs en attente entrent simultanément, les deux joueurs présents sortent. La scène continue sans interruption, en intégrant naturellement chaque arrivée et chaque départ.",
       "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
@@ -1361,7 +1376,8 @@
       "categories_secondaires": [
         "Construction",
         "Écoute",
-        "Amusement"
+        "Amusement",
+        "Imaginaire"
       ]
     },
     {
@@ -1491,7 +1507,10 @@
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Imaginaire"
+      ]
     },
     {
       "id": "1-59",
@@ -2020,7 +2039,10 @@
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Imaginaire"
+      ]
     },
     {
       "id": "2-18",
@@ -2204,7 +2226,10 @@
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Imaginaire"
+      ]
     },
     {
       "id": "2-26",
@@ -2240,7 +2265,7 @@
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Énergie",
+      "objectif_pedagogique": "Imaginaire",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée",
@@ -2250,7 +2275,10 @@
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Énergie"
+      ]
     },
     {
       "id": "2-28",
