@@ -1172,22 +1172,27 @@
       "section": "Saison 1",
       "numero_source": 47,
       "texte_original": "Mimer une action en parlant d’autre chose. Exemple on peint un mur et on discute de sa dernière rupture",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Deux, trois ou quatre comédiens jouent une scène en accomplissant physiquement une action commune, tout en discutant d’un sujet sans rapport. Par exemple, ils miment le fait de peindre un mur en parlant de leur dernière rupture amoureuse. L’action doit rester visible et crédible pendant que la conversation se développe indépendamment. L’enjeu est de mener simultanément une activité physique et un dialogue.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Scène",
+        "Construction",
+        "Écoute"
+      ]
     },
     {
       "id": "1-48",
@@ -1195,22 +1200,28 @@
       "section": "Saison 1",
       "numero_source": 48,
       "texte_original": "Asoca : on se met en rond, le premier dit A avec sa main sur la tête pointant vers la gauche ou la droite pour envoyer au suivant qui dit SO avec sa main sur le torse pointant vers droite ou la gauche pour envoyer la suite, puis le dernier dit CA en faisant un lancer en direction de la personne qui prendra la suite. Une fois que les participant.es maîtrisent on joue avec élimination et les élimines font le tour du rond en disant ASOCA pour déstabiliser les joueurs",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs forment un cercle. Le premier dit « A » en posant une main sur sa tête et en indiquant la gauche ou la droite : son geste désigne le suivant. Celui-ci dit « SO », main sur le torse, en indiquant à son tour une direction. Le troisième dit « CA » et effectue un geste de lancer vers le joueur de son choix, qui relance le cycle avec « A ». Lorsque le groupe maîtrise l’enchaînement, les joueurs qui se trompent sont éliminés du cercle. Ils tournent alors autour des autres en répétant « ASOCA » pour essayer de les déconcentrer.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Corps",
+        "Amusement",
+        "Lâcher-prise"
+      ]
     },
     {
       "id": "1-49",
@@ -1218,22 +1229,27 @@
       "section": "Saison 1",
       "numero_source": 49,
       "texte_original": "Pile ou face : les joueurs se mettent en deux files et se font face en se tenant par la main, le professeur lancera la pièce. Seuls les deux joueurs au début de la ligne ont les yeux ouverts. Si c’est face ils ne font rien, si c’est pile ils serrent la main au suivant qui serre la main au suivant jusqu’au dernier qui doit lever le bras. L’équipe qui gagne avance d’un cran jusqu’à ce que le dernier revienne au début",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Deux équipes forment deux files face à face. Les joueurs d’une même file se tiennent par la main ; seuls les premiers de chaque file gardent les yeux ouverts. L’animateur lance une pièce. Sur « face », personne ne doit réagir. Sur « pile », les premiers joueurs transmettent une pression de main, de joueur en joueur. Le dernier de chaque file doit lever le bras dès qu’il reçoit le signal. L’équipe la plus rapide gagne la manche et avance d’un cran dans sa file. On poursuit jusqu’à ce que le dernier joueur soit revenu à la première place.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Énergie",
+      "objectif_pedagogique": "Cohésion",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Énergie",
+        "Amusement"
+      ]
     },
     {
       "id": "1-50",
@@ -1241,22 +1257,27 @@
       "section": "Saison 1",
       "numero_source": 50,
       "texte_original": "Jeu de scène: 3 joueurs travailler le regard etc… un premier joueur regardera uniquement le fond de la scène, un second regardera uniquement le public et le troisième regardera uniquement celui qui regarde le public. L’histoire avance et à chaque fois qu’un participant change de rôle tout le monde doit s’adapter.",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Trois comédiens improvisent une scène avec des contraintes de regard différentes. Le premier regarde uniquement le fond de la scène, le deuxième regarde uniquement le public et le troisième regarde uniquement le comédien qui regarde le public. L’histoire progresse malgré ces contraintes. Lorsqu’un participant change de direction de regard, les autres doivent adapter leurs regards pour respecter à nouveau les contraintes. Les personnages et les rôles dans l’histoire ne changent pas.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Scène",
+        "Corps",
+        "Construction"
+      ]
     },
     {
       "id": "1-51",
@@ -1264,22 +1285,27 @@
       "section": "Saison 1",
       "numero_source": 51,
       "texte_original": "Les joueurs marchent dans l’espace, quand le prof dit stop 3 positions sont possibles : assis debout penché, si c’est équilibré le groupe gagne (exemple 3 de chaque à 9, ou 3,2 et 2)",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs se déplacent librement dans l’espace. Au signal « Stop ! » de l’animateur, chacun adopte immédiatement l’une des trois positions : assis, debout ou penché. Sans se concerter, le groupe cherche à obtenir une répartition aussi équilibrée que possible entre les trois positions. Par exemple, avec neuf joueurs, trois dans chaque position ; avec sept joueurs, une répartition de trois, deux et deux. Si l’équilibre est atteint, le groupe gagne la manche.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Corps",
+      "objectif_pedagogique": "Cohésion",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Corps",
+        "Écoute",
+        "Amusement"
+      ]
     },
     {
       "id": "1-52",
