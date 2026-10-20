@@ -891,22 +891,27 @@
       "section": "Saison 1",
       "numero_source": 37,
       "texte_original": "Entraînement élocution : panier piano, quatre tartes crues quatre tarte cuites, suis je chez ce cher Serge, Si tu m'eusses cru. Tu te fusses tu. Te fusses-tu tu, Tu m'eusses plus cru !",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "L’animateur propose des phrases difficiles à articuler, comme « Panier piano », « Quatre tartes crues, quatre tartes cuites » ou « Suis-je chez ce cher Serge ? ». Les joueurs les prononcent distinctement, puis essaient d’accélérer sans perdre l’articulation. On peut varier le volume, le rythme et l’intonation.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Énergie",
+      "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Énergie",
+        "Amusement",
+        "Lâcher-prise"
+      ]
     },
     {
       "id": "1-38",
@@ -914,22 +919,27 @@
       "section": "Saison 1",
       "numero_source": 38,
       "texte_original": "Jeu des listes : une première personne dit donne moi une liste de 5 … (proverbe par exemple) la personne fait les 5 un par un et à chaque fois les autres joueurs compte jusqu’à 5 et disent et ça fait 5 choses, puis celui qui vient de lister donne une liste à qqun d’autre etc…",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Un joueur lance à un autre : « Donne-moi une liste de cinq… », en précisant un thème. Le joueur interrogé donne cinq réponses, une par une. Entre chaque réponse, les autres comptent jusqu’à cinq pour maintenir la pression. Après la cinquième, le groupe scande en rythme : « Et ça fait cinq ! ». Celui qui vient de répondre lance à son tour un nouveau défi à un autre joueur.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Énergie",
+      "objectif_pedagogique": "Lâcher-prise",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Énergie",
+        "Amusement",
+        "Écoute"
+      ]
     },
     {
       "id": "1-39",
@@ -937,22 +947,26 @@
       "section": "Saison 1",
       "numero_source": 39,
       "texte_original": "Comptage collectif : ensemble on doit compter jusqu’à 20, chacun dit un nombre quand il veut, si deux personnes disent un nombre en même temps c’est perdu.",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs doivent compter collectivement de 1 à 20, sans désigner à l’avance qui parlera. N’importe qui peut annoncer le nombre suivant, mais chaque nombre doit être prononcé par une seule personne. Si deux joueurs parlent simultanément, la tentative échoue et le groupe recommence à 1. L’objectif est d’atteindre 20 grâce à l’écoute et à l’attention mutuelle.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Cohésion",
+        "Lâcher-prise"
+      ]
     },
     {
       "id": "1-40",
@@ -960,22 +974,28 @@
       "section": "Saison 1",
       "numero_source": 40,
       "texte_original": "La machine humaine  : une personne arrive et fait un mouvement répétitif avec un bruit, une seconde vient compléter la machine avec un mouvement répétitif et un son et ainsi de suite jusqu’à ce que la machine soit finie",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Un premier joueur entre dans l’espace et répète un mouvement accompagné d’un son. Un deuxième le rejoint et ajoute un autre mouvement répétitif et un bruit qui complètent la machine. Les autres arrivent progressivement, chacun apportant sa propre pièce. Le groupe poursuit jusqu’à former une grande machine humaine dont les mouvements et les sons fonctionnent ensemble.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Construction",
+        "Cohésion",
+        "Écoute",
+        "Amusement"
+      ]
     },
     {
       "id": "1-41",
@@ -983,22 +1003,27 @@
       "section": "Saison 1",
       "numero_source": 41,
       "texte_original": "Jeu des mots : un premier joueur dit un mot puis chacun dit un mot qui fait penser au précédent uniquement (pas à celui deux avant). A la fin on doit revenir dans l’autre sens en disant : j’ai dit ceci car tu as dit cela etc… en remontant jusqu’au premier mot",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Un premier joueur annonce un mot. Chacun son tour, les autres proposent un mot associé uniquement au mot précédent, et non à un mot plus ancien de la chaîne. Une fois le dernier mot annoncé, le groupe remonte la chaîne à l’envers. Chaque joueur explique son association en disant : « J’ai dit ceci parce que tu as dit cela », jusqu’à retrouver le mot de départ.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Énergie",
+      "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Construction",
+        "Amusement",
+        "Cohésion"
+      ]
     },
     {
       "id": "1-42",
