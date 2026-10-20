@@ -2,7 +2,7 @@ const {test,expect,devices}=require('@playwright/test');
 for(const duration of ['45','55','60','90']){
  test('durée exacte '+duration+' min',async({page})=>{
   await page.goto('/');
-  await expect(page.locator('#libraryStatus')).toContainText('105 exercices');
+  await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
   await page.locator('#duration').selectOption(duration);
   await page.getByRole('button',{name:'Générer ma séance'}).click();
   await expect(page.locator('#planSummary')).toContainText(duration+' minutes');
@@ -13,7 +13,7 @@ for(const duration of ['45','55','60','90']){
 }
 test('édition, suppression, rechargement, groupe et export',async({page})=>{
  await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('105 exercices');
+ await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  await page.locator('#plan>.card').last().getByRole('button',{name:'✕'}).click();
  await expect(page.locator('#plan>.card')).toHaveCount(4);
@@ -33,7 +33,7 @@ test('édition, suppression, rechargement, groupe et export',async({page})=>{
 });
 test('navigation clavier du mode animateur',async({page})=>{
  await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('105 exercices');
+ await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  await page.getByRole('button',{name:/Animateur/}).click();
  await page.locator('body').click({position:{x:5,y:5}});
