@@ -1,0 +1,19 @@
+{
+  "name": "IMPRO LAB",
+  "short_name": "IMPRO LAB",
+  "description": "Séances d'improvisation théâtrale au collège et en troupe",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#111528",
+  "theme_color": "#171b36",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
