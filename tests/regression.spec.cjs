@@ -63,3 +63,29 @@ test('générateur respecte la catégorie des cinq étapes',async({page})=>{
  expect(labels).toHaveLength(5);
  expect(labels.map(x=>x.split('·')[1].trim())).toEqual(['Énergie','Écoute','Corps','Construction','Scène']);
 });
+
+test('générateur privilégie les notes personnelles et respecte les étapes',async({page})=>{
+ await page.goto('/');
+ await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await expect(page.locator('#includeExternal')).not.toBeChecked();
+ await page.getByRole('button',{name:'Générer ma séance'}).click();
+ const labels=await page.locator('#plan>.card small').allTextContents();
+ expect(labels).toHaveLength(5);
+ expect(labels.every(x=>x.includes('Mes notes'))).toBe(true);
+ expect(['Énergie','Corps']).toContain(labels[0].split('·')[1].trim());
+ expect(labels.at(-1).split('·')[1].trim()).toBe('Scène');
+ await page.locator('#includeExternal').check();
+ await page.getByRole('button',{name:'Générer ma séance'}).click();
+ await expect(page.locator('#plan>.card')).toHaveCount(5);
+});
+test('rotation équitable entre séances consécutives',async({page})=>{
+ await page.goto('/');
+ await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await page.getByRole('button',{name:'Générer ma séance'}).click();
+ const first=await page.locator('#plan>.card h3').allTextContents();
+ await page.getByRole('button',{name:'Générer ma séance'}).click();
+ const second=await page.locator('#plan>.card h3').allTextContents();
+ expect(second.filter(x=>first.includes(x))).toHaveLength(0);
+ const counts=await page.evaluate(()=>JSON.parse(localStorage.getItem('impro-game-usage-v1')));
+ expect(Object.values(counts).reduce((a,b)=>a+b,0)).toBe(10);
+});
