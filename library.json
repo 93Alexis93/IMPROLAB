@@ -256,11 +256,11 @@
       "numero_source": 11,
       "texte_original": "On forme un losange, il y a 4 sommet. Un sommmet commence à danser puis va passer le relais au sommet de gauche ou droite en fonction de où va son pas de danseDans le but de regarder tous au même endroit",
       "regle_clarifiee": "Quatre joueurs occupent les sommets d’un losange, tous tournés dans la même direction. Celui qui est devant mène une danse que les autres reproduisent. Quand ses pas orientent le groupe vers la gauche ou la droite, le joueur qui se retrouve à l’avant prend le relais et devient meneur. On peut ajouter d’autres danseurs à l’intérieur du losange : ils suivent les mouvements, mais ne deviennent jamais meneurs.",
-      "statut": "validée après corrections du coach",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Écoute",
+      "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
@@ -270,7 +270,13 @@
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Cohésion",
+        "Lâcher-prise",
+        "Énergie"
+      ]
     },
     {
       "id": "1-12",
