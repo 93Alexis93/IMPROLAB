@@ -501,7 +501,7 @@ const DRAW_DEFAULTS={
  ]
 };
 let drawLists={},drawEnabled={},drawValues={};
-function drawInit(){try{const saved=JSON.parse(localStorage.getItem('impro-draw-lists-v3')||localStorage.getItem('impro-draw-lists-v2')||'{}');for(const k of Object.keys(DRAW_DEFAULTS))drawLists[k]=Array.isArray(saved[k])&&saved[k].length?[...new Set([...saved[k],...DRAW_DEFAULTS[k]])]:[...DRAW_DEFAULTS[k]]}catch{for(const k of Object.keys(DRAW_DEFAULTS))drawLists[k]=[...DRAW_DEFAULTS[k]]}
+function drawInit(){try{const modern=localStorage.getItem('impro-draw-lists-v3');const saved=JSON.parse(modern||localStorage.getItem('impro-draw-lists-v2')||'{}');for(const k of Object.keys(DRAW_DEFAULTS))drawLists[k]=Array.isArray(saved[k])&&saved[k].length?(modern?[...saved[k]]:[...new Set([...saved[k],...DRAW_DEFAULTS[k]])]):[...DRAW_DEFAULTS[k]]}catch{for(const k of Object.keys(DRAW_DEFAULTS))drawLists[k]=[...DRAW_DEFAULTS[k]]}
 try{drawEnabled=JSON.parse(localStorage.getItem('impro-draw-enabled-v2')||'{}')}catch{drawEnabled={}}
 const cats=Object.keys(DRAW_DEFAULTS);document.getElementById('drawCategories').innerHTML=cats.map((k,i)=>'<label><input type="checkbox" data-draw-cat="'+i+'" '+(drawEnabled[k]!==false?'checked':'')+' onchange="drawToggle('+i+',this.checked)"> '+escapeText(k)+'</label>').join('');
 document.getElementById('drawEditCategory').innerHTML=cats.map((k,i)=>'<option value="'+i+'">'+escapeText(k)+'</option>').join('');drawShowEditor();drawRender()}
@@ -519,5 +519,5 @@ initDynamics();
 rosterLoad();
 drawInit();
 loadLibrary();
-if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=20261021-8categories',{updateViaCache:'none'}).then(reg=>reg.update()).catch(e=>console.warn('Mode hors ligne indisponible',e)));
+if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=20261021-320ideas',{updateViaCache:'none'}).then(reg=>reg.update()).catch(e=>console.warn('Mode hors ligne indisponible',e)));
 document.getElementById('plan').innerHTML=localStorage.getItem('impro-last-plan')||'';refreshEditor();</script></body></html>
