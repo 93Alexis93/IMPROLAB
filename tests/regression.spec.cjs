@@ -89,3 +89,17 @@ test('rotation équitable entre séances consécutives',async({page})=>{
  const counts=await page.evaluate(()=>JSON.parse(localStorage.getItem('impro-game-usage-v1')));
  expect(Object.values(counts).reduce((a,b)=>a+b,0)).toBe(10);
 });
+
+test('les neuf catégories et les catégories secondaires sont filtrables',async({page})=>{
+ await page.goto('/');
+ await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await page.getByRole('button',{name:'Jeux',exact:true}).click();
+ const filter=page.locator('#categoryFilter');
+ await expect(filter.locator('option')).toHaveCount(10);
+ await filter.selectOption('Amusement');
+ await expect(page.locator('#games')).toContainText('Ceci est un');
+ await filter.selectOption('Lâcher-prise');
+ await expect(page.locator('#games')).toContainText('zombie');
+ await filter.selectOption('Cohésion');
+ await expect(page.locator('#games')).toContainText('voyant');
+});
