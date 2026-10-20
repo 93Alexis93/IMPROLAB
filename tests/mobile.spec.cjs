@@ -5,17 +5,17 @@ test.use({ ...devices['iPhone 13'] });
 test.beforeEach(async ({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('http://127.0.0.1:8765/');
- await expect(page.locator('#libraryStatus')).toContainText('105 exercices',{timeout:15000});
+ await expect(page.locator('#libraryStatus')).toContainText('113 exercices',{timeout:15000});
  await page.evaluate(()=>localStorage.clear());
  await page.reload();
- await expect(page.locator('#libraryStatus')).toContainText('105 exercices',{timeout:15000});
+ await expect(page.locator('#libraryStatus')).toContainText('113 exercices',{timeout:15000});
  page.__errors=errors;
 });
 test('bibliothèque, favoris, recherche et échappement',async ({page})=>{
  await page.getByRole('button',{name:'Jeux'}).click();
- await expect(page.locator('#games .card')).toHaveCount(105);
- await page.locator('#search').fill('homard');
- await expect(page.locator('#games .card').first()).toContainText('homard',{ignoreCase:true});
+ await expect(page.locator('#games .card')).toHaveCount(113);
+ await page.locator('#search').fill('Objets en dix secondes');
+ await expect(page.locator('#games .card').first()).toContainText('Objets en dix secondes');
  await page.locator('#games .favorite').first().click();
  await page.locator('#search').fill('');
  await page.locator('#favoritesOnly').check();
