@@ -15,7 +15,53 @@ let data=[
 ['Patate chaude','Lâcher-prise','Répondre rapidement à une catégorie sans répétition.','Collège : pas d’élimination, seulement un défi collectif.'],
 ['Carré d’émotions','Émotions','Quatre zones représentent quatre émotions ; les joueurs adaptent leur jeu à la zone.','Collège : choisir joie, peur, colère et surprise.'],
 ['Téléphone arabe mimé','Corps','Une action mimée est transmise successivement à des joueurs qui ne l’ont pas vue.','Collège : limiter à quatre transmissions puis comparer.']
-];let remaining=300,interval=null;function tab(id){document.querySelectorAll('section').forEach(s=>s.hidden=s.id!==id);if(id==='jeux')renderGames();if(id==='historique')renderHistory();if(id==='live')liveReset()}function card(g){return '<div class="card"><h3>'+escapeText(g[0])+'</h3><span class="pill">'+escapeText(g[1])+'</span><p><b>Règle :</b> '+escapeText(g[2])+'</p>'+(g[4]?'<details><summary>Voir la note originale</summary><p>'+escapeText(g[4])+'</p></details>':'')+(g[5]?'<p><small>Règle clarifiée par le coach</small></p>':'')+(g[3]?'<p><b>Variante collège proposée :</b> '+escapeText(g[3])+'</p>':'')+'</div>'}function escapeText(v){return String(v||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function renderGames(){let q=document.getElementById('search').value.toLowerCase();document.getElementById('games').innerHTML=data.filter(g=>g.join(' ').toLowerCase().includes(q)).map(card).join('')||'<p>Aucun résultat.</p>'}function generate(){let d=+document.getElementById('duration').value,adult=document.getElementById('public').selectedIndex===1,parts=[['Énergie',Math.round(d*.18)],['Écoute',Math.round(d*.18)],['Corps',Math.round(d*.18)],['Construction',Math.round(d*.18)],['Scène',0]];parts[4][1]=d-parts.slice(0,4).reduce((s,p)=>s+p[1],0);let chosen=[];document.getElementById('plan').innerHTML=parts.map(p=>{let pool=data.filter(g=>g[6]&&g[1]===p[0]&&!chosen.includes(g[0]));if(!pool.length)pool=data.filter(g=>g[6]&&!chosen.includes(g[0]));let g=pool[Math.floor(Math.random()*pool.length)];chosen.push(g[0]);return '<div class="card"><small>'+p[1]+' min</small><h3>'+g[0]+'</h3><p>'+g[2]+'</p>'+(!adult?'<p><b>Adaptation collège :</b> '+g[3]+'</p>':'')+'</div>'}).join('');persistPlan()}function update(){let m=Math.floor(remaining/60),s=remaining%60;document.getElementById('timer').textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')}function start(){if(interval){clearInterval(interval);interval=null;return}interval=setInterval(()=>{if(remaining>0){remaining--;update()}else{clearInterval(interval);interval=null;alert('Temps écoulé !')}},1000)}function reset(){clearInterval(interval);interval=null;remaining=Math.max(1,+document.getElementById('mins').value||5)*60;update()}function draw(){let a=['Gare','Forêt','Restaurant','Ascenseur','Bibliothèque','Terrain de foot'],b=['Joie','Panique','Jalousie','Sérénité','Embarras'],c=['Touriste perdu','Prof enthousiaste','Pirate vegan','Magicien nul','Voisin'];let pick=x=>x[Math.floor(Math.random()*x.length)];document.getElementById('draw').textContent=pick(a)+' · '+pick(b)+' · '+pick(c)}
+];let remaining=300,interval=null;function tab(id){document.querySelectorAll('section').forEach(s=>s.hidden=s.id!==id);if(id==='jeux')renderGames();if(id==='historique')renderHistory();if(id==='live')liveReset()}function card(g){return '<div class="card"><h3>'+escapeText(g[0])+'</h3><span class="pill">'+escapeText(g[1])+'</span><p><b>Règle :</b> '+escapeText(g[2])+'</p>'+(g[4]?'<details><summary>Voir la note originale</summary><p>'+escapeText(g[4])+'</p></details>':'')+(g[5]?'<p><small>Règle clarifiée par le coach</small></p>':'')+(g[3]?'<p><b>Variante collège proposée :</b> '+escapeText(g[3])+'</p>':'')+'</div>'}function escapeText(v){return String(v||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function renderGames(){let q=document.getElementById('search').value.toLowerCase();document.getElementById('games').innerHTML=data.filter(g=>g.join(' ').toLowerCase().includes(q)).map(card).join('')||'<p>Aucun résultat.</p>'}function generate(){
+ const duration=+document.getElementById('duration').value;
+ const adult=document.getElementById('public').selectedIndex===1;
+ const profiles={
+  45:[['Énergie',6],['Écoute',8],['Corps',8],['Construction',10],['Scène',13]],
+  55:[['Énergie',7],['Écoute',9],['Corps',9],['Construction',12],['Scène',18]],
+  60:[['Énergie',8],['Écoute',10],['Corps',10],['Construction',12],['Scène',20]],
+  90:[['Énergie',10],['Écoute',12],['Corps',13],['Construction',20],['Scène',35]]
+ };
+ const parts=profiles[duration]||profiles[55];
+ const allowed=data.filter(g=>g[6]&&g[2]&&g[2].trim().length>20);
+ if(allowed.length<5){alert('La bibliothèque est encore en cours de chargement. Réessaie dans un instant.');return}
+ const history=JSON.parse(localStorage.getItem('impro-recent-games')||'[]');
+ const selected=[];
+ const norm=x=>x.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+ const categoryHints={
+  'Énergie':/energie|chawafu|samourai|cowboy|patate|tape|claque|1-2-3|chauff|caca|homard/,
+  'Écoute':/ecoute|balle|compter|comptage|regard|prenom|fil d.ariane|convergence|mot/,
+  'Corps':/corps|mime|mimer|marche|machine|geste|danse|position|maison|creature/,
+  'Construction':/construction|histoire|lettre|plate.forme|qui qui|cube|repondeur|epistolaire/,
+  'Scène':/scene|impro|debat|tele|radio|doublage|interview|expert|mitraillette|diapositive/
+ };
+ function score(g,category){
+  let t=norm(g[0]+' '+g[1]);
+  let n=g[1]===category?10:0;
+  if(categoryHints[category].test(t))n+=15;
+  if(history.includes(g[0]))n-=30;
+  if(g[5])n+=3;
+  if(!adult&&/elimin|violence|insulte|sexualite/.test(norm(g[2])))n-=20;
+  return n+Math.random()*5;
+ }
+ let html='';
+ for(let i=0;i<parts.length;i++){
+  let [category,minutes]=parts[i];
+  let pool=allowed.filter(g=>!selected.includes(g[0]));
+  if(!pool.length)break;
+  pool.sort((a,b)=>score(b,category)-score(a,category));
+  let g=pool[0];
+  selected.push(g[0]);
+  let note=!adult?'<p><b>Conseil collège :</b> Démonstration courte, consigne simple et droit à l’erreur. Faire participer tout le groupe.</p>':'';
+  html+='<div class="card"><small>'+minutes+' min · '+escapeText(category)+'</small><h3>'+escapeText(g[0])+'</h3><p>'+escapeText(g[2])+'</p>'+note+'</div>';
+ }
+ document.getElementById('plan').innerHTML=html;
+ localStorage.setItem('impro-recent-games',JSON.stringify([...selected,...history].slice(0,20)));
+ liveIndex=0;persistPlan();
+}
+function update(){let m=Math.floor(remaining/60),s=remaining%60;document.getElementById('timer').textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')}function start(){if(interval){clearInterval(interval);interval=null;return}interval=setInterval(()=>{if(remaining>0){remaining--;update()}else{clearInterval(interval);interval=null;alert('Temps écoulé !')}},1000)}function reset(){clearInterval(interval);interval=null;remaining=Math.max(1,+document.getElementById('mins').value||5)*60;update()}function draw(){let a=['Gare','Forêt','Restaurant','Ascenseur','Bibliothèque','Terrain de foot'],b=['Joie','Panique','Jalousie','Sérénité','Embarras'],c=['Touriste perdu','Prof enthousiaste','Pirate vegan','Magicien nul','Voisin'];let pick=x=>x[Math.floor(Math.random()*x.length)];document.getElementById('draw').textContent=pick(a)+' · '+pick(b)+' · '+pick(c)}
 function persistPlan(){localStorage.setItem('impro-last-plan',document.getElementById('plan').innerHTML)}
 function addManual(){let g=data[+document.getElementById('manualGame').value],m=Math.max(1,Math.min(60,+document.getElementById('manualMins').value||8));if(!g)return;document.getElementById('plan').insertAdjacentHTML('beforeend','<div class="card"><small>'+m+' min</small><h3>'+g[0]+'</h3><p>'+g[2]+'</p><p><b>Variante collège :</b> '+g[3]+'</p></div>');persistPlan()}
 function saveSession(){let html=document.getElementById('plan').innerHTML;if(!html){alert('Ajoute un exercice.');return}let a=JSON.parse(localStorage.getItem('impro-history')||'[]');a.unshift({date:new Date().toISOString(),html});localStorage.setItem('impro-history',JSON.stringify(a.slice(0,50)));alert('Séance enregistrée sur cet appareil.')}
