@@ -24,15 +24,12 @@ let data=[
 }
 const IMPRO_CATEGORIES=["Énergie","Écoute","Corps","Construction","Scène","Émotions","Amusement","Lâcher-prise","Cohésion"];
 const DEFAULT_DYNAMICS={"Énergie":3,"Écoute":3,"Corps":3,"Construction":3,"Scène":4,"Émotions":2,"Amusement":4,"Lâcher-prise":3,"Cohésion":4};
-function getDynamics(){try{const x=JSON.parse(localStorage.getItem('impro-dynamics-v1')||'{}');return Object.fromEntries(IMPRO_CATEGORIES.map(c=>[c,Math.max(0,Math.min(5,Number.isFinite(+x[c])?+x[c]:DEFAULT_DYNAMICS[c]))]));}catch{return {...DEFAULT_DYNAMICS}}}
-function renderDynamics(){const values=getDynamics();document.getElementById('dynamicsControls').innerHTML=IMPRO_CATEGORIES.map(c=>'<label style="display:flex;align-items:center;gap:10px"><span style="flex:1">'+escapeText(c)+'</span><input type="range" min="0" max="5" step="1" data-category="'+escapeText(c)+'" value="'+values[c]+'" aria-label="Importance '+escapeText(c)+'" oninput="updateDynamics(this)" style="width:43%;padding:0"><output>'+values[c]+'</output></label>').join('')}
-function updateDynamics(el){const v=getDynamics();v[el.dataset.category]=+el.value;localStorage.setItem('impro-dynamics-v1',JSON.stringify(v));el.nextElementSibling.textContent=el.value}
-function resetDynamics(){localStorage.setItem('impro-dynamics-v1',JSON.stringify(DEFAULT_DYNAMICS));renderDynamics()}
+function getDynamics(){const values={};for(let i=0;i<IMPRO_CATEGORIES.length;i++)values[IMPRO_CATEGORIES[i]]=Number(document.getElementById('dynamic'+i).value);return values}
 function gameAffinity(g,category){return g[1]===category?3:(g[11]||[]).includes(category)?1.5:0}
 function chooseDynamicGame(pool,slot,weights,counts,history){const recent=history.slice(0,15);const scored=pool.map(g=>{let score=0;for(const c of IMPRO_CATEGORIES)score+=weights[c]*gameAffinity(g,c);score+=gameAffinity(g,slot)*8;score-=(counts[g[0]]||0)*3;if(recent.includes(g[0]))score-=12;return {g,score}});const top=Math.max(...scored.map(x=>x.score));const shortlist=scored.filter(x=>x.score>=top-2);return shortlist[Math.floor(Math.random()*shortlist.length)].g}
-function updateDynamic(i){const el=document.getElementById('dynamic'+i);const n=Number(el.value);document.getElementById('dynamicValue'+i).textContent=n.toFixed(1);el.style.setProperty('--fill',(n/5*100)+'%');try{const saved=JSON.parse(localStorage.getItem('impro-dynamics-v1')||'{}');saved[i]=n;localStorage.setItem('impro-dynamics-v1',JSON.stringify(saved))}catch{}}
-function resetDynamics(){for(let i=0;i<9;i++){document.getElementById('dynamic'+i).value=2;updateDynamic(i)}}
-function initDynamics(){let saved={};try{saved=JSON.parse(localStorage.getItem('impro-dynamics-v1')||'{}')}catch{}for(let i=0;i<9;i++){if(Number.isFinite(saved[i]))document.getElementById('dynamic'+i).value=Math.max(0,Math.min(5,saved[i]));updateDynamic(i)}}
+function updateDynamic(i){const el=document.getElementById('dynamic'+i);const n=Number(el.value);document.getElementById('dynamicValue'+i).textContent=n.toFixed(1);el.style.setProperty('--fill',(n/5*100)+'%');try{const saved=JSON.parse(localStorage.getItem('impro-dynamics-v1')||'{}');saved[IMPRO_CATEGORIES[i]]=n;localStorage.setItem('impro-dynamics-v1',JSON.stringify(saved))}catch{}}
+function resetDynamics(){for(let i=0;i<9;i++){document.getElementById('dynamic'+i).value=DEFAULT_DYNAMICS[IMPRO_CATEGORIES[i]];updateDynamic(i)}}
+function initDynamics(){let saved={};try{saved=JSON.parse(localStorage.getItem('impro-dynamics-v1')||'{}')}catch{}for(let i=0;i<9;i++){const c=IMPRO_CATEGORIES[i];const val=saved[c]??saved[i]??DEFAULT_DYNAMICS[c];document.getElementById('dynamic'+i).value=Math.max(0,Math.min(5,Number(val)||0));updateDynamic(i)}}
 function generate(){
  const duration=+document.getElementById('duration').value;
  const adult=document.getElementById('public').selectedIndex===1;
@@ -62,7 +59,7 @@ function generate(){
   // Conserver un début dynamique et une fin en scène, même si les curseurs les réduisent.
   const pool=(i===0||i===parts.length-1)?(matching.length?matching:secondary.length?secondary:unused):unused.filter(g=>g[1]===category||dynamics[g[1]]>0||(g[11]||[]).some(c=>dynamics[c]>0));
   const safePool=pool.length?pool:unused;
-  if(!pool.length)break;
+  if(!safePool.length)break;
   const g=chooseDynamicGame(safePool,category,dynamics,counts,history);
   selected.push(g[0]);
   counts[g[0]]=(counts[g[0]]||0)+1;
