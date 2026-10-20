@@ -55,7 +55,7 @@
       "section": "Saison 1",
       "numero_source": 3,
       "texte_original": "Ceci est un (deux noms rigolo genre poindon et gogli) ceci est un à répéter un quoi on se retourne ça recommence",
-      "regle_clarifiee": "En cercle, un joueur transmet à son voisin un objet imaginaire au nom absurde, par exemple : « Ceci est un poindon. » Le voisin demande : « Un quoi ? » Cette question remonte de joueur en joueur jusqu’au lanceur initial. Celui-ci répond : « Un poindon. » La réponse repart alors dans l’autre sens, de joueur en joueur, jusqu’à celui qui attendait la réponse. Il dit : « Ah d’accord, c’est un poindon ! » et peut à son tour transmettre l’objet au voisin suivant. À chaque nouvelle demande « Un quoi ? », on remonte jusqu’au lanceur initial, puis on redescend jusqu’au dernier destinataire. On peut utiliser un second nom absurde, comme « gogli ».",
+      "regle_clarifiee": "En cercle, le lanceur donne un objet imaginaire à son voisin en disant : « Tiens, ceci est un poindon. » Le voisin demande : « Un quoi ? » Le lanceur répond : « Bah, un poindon ! » Le voisin conclut : « Ah d’accord, c’est un poindon ! » Il transmet alors l’objet au joueur suivant : « Tiens, ceci est un poindon. » Celui-ci demande : « Un quoi ? » La question circule en sens inverse, de joueur en joueur, jusqu’au lanceur initial. Celui-ci répond : « Un poindon ! » La réponse repart alors dans l’autre sens, de joueur en joueur, jusqu’au destinataire, qui conclut : « Ah d’accord, c’est un poindon ! » Puis il transmet à son tour l’objet au suivant. À chaque nouvelle transmission, la question revient jusqu’au lanceur initial et la réponse repart jusqu’au dernier destinataire. Garder les répliques et le rythme de la chaîne.",
       "statut": "validée après corrections du coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
@@ -70,7 +70,10 @@
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute"
+      ]
     },
     {
       "id": "1-4",
