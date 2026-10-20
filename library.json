@@ -60,7 +60,7 @@
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Énergie",
+      "objectif_pedagogique": "Amusement",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
@@ -72,7 +72,9 @@
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "categories_secondaires": [
-        "Écoute"
+        "Lâcher-prise",
+        "Écoute",
+        "Énergie"
       ]
     },
     {
@@ -2888,5 +2890,15 @@
       "source_url": "https://www.theatrefolk.com/blog/improv-game-yes-and-and-no-but"
     }
   ],
-  "note_pedagogique": "Les consignes courtes et variantes sont des propositions génériques de l'assistant selon l'objectif principal ; elles ne constituent pas des règles tirées des notes ou des sources. Pour les notes incomplètes, consulter l'original avant utilisation."
+  "note_pedagogique": "Les consignes courtes et variantes sont des propositions génériques de l'assistant selon l'objectif principal ; elles ne constituent pas des règles tirées des notes ou des sources. Pour les notes incomplètes, consulter l'original avant utilisation.",
+  "categories_pedagogiques": [
+    "Énergie",
+    "Écoute",
+    "Corps",
+    "Construction",
+    "Scène",
+    "Émotions",
+    "Amusement",
+    "Lâcher-prise"
+  ]
 }
