@@ -84,22 +84,28 @@
       "section": "Saison 1",
       "numero_source": 4,
       "texte_original": "Un mot chacun avec rythme pour une impro sur un thème",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "L’animateur propose un thème. Les joueurs construisent ensemble une improvisation verbale en prononçant chacun un seul mot à leur tour. Ils doivent respecter un rythme régulier tout en donnant du sens à la phrase ou à l’histoire collective.",
+      "statut": "validée par le coach",
       "eligible_generateur": false,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Scène",
+      "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "incomplète",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Énergie",
+        "Imaginaire",
+        "Cohésion"
+      ]
     },
     {
       "id": "1-5",
@@ -136,22 +142,26 @@
       "section": "Saison 1",
       "numero_source": 6,
       "texte_original": "Compter collectivement chacun si deux personnes comptent en même temps on recommence à 1",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Le groupe tente de compter collectivement à partir de 1, sans fixer l’ordre des prises de parole. Chaque joueur peut annoncer le nombre suivant. Si deux personnes parlent simultanément, tout le groupe recommence à 1.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Cohésion",
+        "Lâcher-prise"
+      ]
     },
     {
       "id": "1-7",
@@ -185,22 +195,27 @@
       "section": "Saison 1",
       "numero_source": 8,
       "texte_original": "Cowboy dit nom on doit tirer si on est un des voisins de la personne appelé qui elle se baisse",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs forment un cercle. L’animateur annonce le prénom d’un participant. Celui-ci doit immédiatement se baisser ; ses deux voisins se font face et miment un duel de cowboys en tirant l’un sur l’autre, en disant « Pan ! ». On peut éliminer un joueur s’il ne se baisse pas lorsqu’il est appelé ou s’il oublie de tirer en disant « Pan ! » lorsqu’il est voisin de la personne appelée. On recommence avec un autre prénom.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Corps",
+        "Amusement"
+      ]
     },
     {
       "id": "1-9",
@@ -236,22 +251,27 @@
       "section": "Saison 1",
       "numero_source": 10,
       "texte_original": "Danse : un participant fait un mouvement tout le monde doit suivre jusqu’à ce que quelqu’un fasse un autre geste",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs dansent ensemble. Un participant propose un mouvement que tout le groupe reproduit. Dès qu’un autre joueur propose un nouveau geste, les autres l’adoptent à leur tour. La danse évolue ainsi grâce aux initiatives successives des participants.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Cohésion",
+        "Lâcher-prise"
+      ]
     },
     {
       "id": "1-11",
@@ -288,22 +308,27 @@
       "section": "Saison 1",
       "numero_source": 12,
       "texte_original": "Energie a se passer en frappant dans les mains : au début on frappe une fois en direction du suivant ou deux fois en se retournant pour faire passer l’énergie. Aller vite et ne pas attendre la fin. Recommencer en doublant à chaque fois les tapements de main exemple 4 et 8.",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs forment un cercle et transmettent une énergie par des frappements de mains. Une frappe en direction du voisin fait continuer le signal dans le même sens ; deux frappes accompagnées d’un retournement inversent le sens de circulation. Le groupe cherche à accélérer sans attendre la fin du geste précédent. Dans les manches suivantes, on double le nombre de frappes nécessaires, par exemple quatre puis huit.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Corps",
+        "Cohésion"
+      ]
     },
     {
       "id": "1-13",
