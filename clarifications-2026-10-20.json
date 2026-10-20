@@ -1,0 +1,56 @@
+{
+  "type": "clarifications_utilisateur",
+  "note": "Descriptions validées par l’utilisateur ; le texte original de la bibliothèque demeure inchangé.",
+  "exercices": [
+    {
+      "id": "EX-007",
+      "titre": "Balles de couleur",
+      "regle_clarifiee": "L’animateur introduit une balle imaginaire en annonçant sa couleur. Les participants circulent dans la pièce et se la transmettent en disant « Je te donne la balle [couleur] ». À l’arrêt, on vérifie qui la possède. Progressivement, plusieurs balles de couleurs différentes circulent simultanément ; à la fin, on vérifie si toutes les balles sont encore présentes et qui les détient."
+    },
+    {
+      "id": "EX-058",
+      "titre": "Chaînes de télé",
+      "regle_clarifiee": "Plusieurs binômes représentent chacun une chaîne de télévision dotée d’une identité propre (cuisine, information en continu, etc.). Chaque binôme improvise son émission. L’animateur zappe librement entre les chaînes ; seul le binôme sélectionné joue."
+    },
+    {
+      "id": "EX-059",
+      "titre": "Caca homard",
+      "regle_clarifiee": "Jeu en binôme inspiré du chifoumi. Les deux joueurs comptent jusqu’à trois et choisissent simultanément l’une de quatre répliques accompagnées d’un geste : « Je mange » (se désigner), « Tu manges » (désigner l’autre), « Caca » (former un losange) ou « Homard » (faire des pinces en l’air). L’objectif est de produire des combinaisons amusantes, notamment « Je mange du caca » ou « Tu manges du caca ». Les conditions exactes de victoire ne sont pas précisées."
+    },
+    {
+      "id": "EX-080",
+      "titre": "Lettre à deux (épistolaire)",
+      "regle_clarifiee": "Deux comédiens improvisent une correspondance. A écrit une lettre à B, qui la lit silencieusement au fur et à mesure ; puis B écrit sa réponse à A, qui la lit à son tour en silence. Les lettres et leur contenu sont improvisés."
+    },
+    {
+      "id": "EX-081",
+      "titre": "Radio / YouTube",
+      "regle_clarifiee": "Même principe que « Chaînes de télé » : plusieurs binômes improvisent chacun une émission ou une chaîne avec une identité propre, ici sous forme de radio ou de chaîne YouTube. L’animateur passe librement de l’une à l’autre."
+    },
+    {
+      "id": "EX-089",
+      "titre": "Débat mimé",
+      "regle_clarifiee": "Deux comédiens débattent d’un sujet volontairement absurde, par exemple : « Faut-il verser le lait avant ou après les céréales ? ». Sur les côtés, deux équipes de deux mimeurs miment des mots choisis à l’avance par le public. Trois mots doivent être placés par les débatteurs au cours de leur échange ; lorsqu’un mot est intégré avec succès, le public applaudit."
+    },
+    {
+      "id": "EX-090",
+      "titre": "Maison – créature – inondations",
+      "regle_clarifiee": "Les participants forment des groupes de trois : deux joueurs composent une maison qui abrite un troisième joueur, la créature. Un ou deux joueurs restent sans groupe. Quand l’animateur annonce « Maison », les maisons changent de place ou de partenaires ; à « Créature », les créatures changent de maison ; à « Inondations », tout le monde se réorganise pour reformer des trios. Le ou les joueurs restés seuls participent au prochain changement. Le détail exact du changement des maisons reste à préciser."
+    },
+    {
+      "id": "EX-091",
+      "titre": "Expert du dictionnaire",
+      "regle_clarifiee": "L’animateur propose un mot inconnu du groupe. Jusqu’à six comédiens, placés en ligne, improvisent chacun une définition de ce mot."
+    },
+    {
+      "id": "EX-102",
+      "titre": "Impro",
+      "regle_clarifiee": "Improvisation libre, sans contrainte particulière précisée."
+    },
+    {
+      "id": "EX-105",
+      "titre": "Logorrhée verbale",
+      "regle_clarifiee": "Un comédien parle sans s’interrompre pendant une durée définie, par exemple 30 secondes. S’il prononce « euh », le public reprend « euh ». L’animateur peut ajouter des contraintes."
+    }
+  ]
+}
