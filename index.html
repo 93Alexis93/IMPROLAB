@@ -51,8 +51,8 @@ let data=[
   let [category,minutes]=parts[i];
   let pool=allowed.filter(g=>!selected.includes(g[0]));
   if(!pool.length)break;
-  pool.sort((a,b)=>score(b,category)-score(a,category));
-  let g=pool[0];
+  let ranked=pool.map(g=>({g,points:score(g,category)})).sort((a,b)=>b.points-a.points);
+  let g=ranked[0].g;
   selected.push(g[0]);
   let note=!adult?'<p><b>Conseil collège :</b> Démonstration courte, consigne simple et droit à l’erreur. Faire participer tout le groupe.</p>':'';
   html+='<div class="card"><small>'+minutes+' min · '+escapeText(category)+'</small><h3>'+escapeText(g[0])+'</h3><p>'+escapeText(g[2])+'</p>'+note+'</div>';
