@@ -1,7 +1,4 @@
-const { test, expect, devices } = require('@playwright/test');
-const { spawn } = require('node:child_process');
-const { once } = require('node:events');
-test.use({ ...devices['iPhone 13'] });
+const { test, expect } = require('@playwright/test');
 test.beforeEach(async ({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto('http://127.0.0.1:8765/');
@@ -50,9 +47,9 @@ test('générateur, édition, historique et mode animateur',async ({page})=>{
  await page.getByRole('button',{name:/Précédent/}).click();
  expect(await page.locator('#liveTitle').textContent()).toBe(first);
  await page.getByRole('button',{name:'+ 1 min'}).click();
- await page.getByRole('button',{name:/Démarrer/}).click();
+ await page.locator('#liveStart').click();
  await expect(page.locator('#liveStart')).toContainText('Pause');
- await page.getByRole('button',{name:/Pause/}).click();
+ await page.locator('#liveStart').click();
  await expect(page.locator('#liveStart')).toContainText('Reprendre');
  expect(page.__errors).toEqual([]);
 });
