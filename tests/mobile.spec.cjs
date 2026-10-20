@@ -58,7 +58,7 @@ test('glissement tactile et absence de débordement',async ({page})=>{
  await page.getByRole('button',{name:/Animateur/}).click();
  const area=page.locator('#liveClock');const box=await area.boundingBox();
  await page.touchscreen.tap(box.x+box.width/2,box.y+box.height/2);
- await page.evaluate(()=>{const e=document.querySelector('#liveClock'),r=e.getBoundingClientRect();const start=new Touch({identifier:1,target:e,clientX:r.right-10,clientY:r.top+20});const end=new Touch({identifier:1,target:e,clientX:r.left+10,clientY:r.top+20});e.dispatchEvent(new TouchEvent('touchstart',{bubbles:true,touches:[start],targetTouches:[start],changedTouches:[start]}));e.dispatchEvent(new TouchEvent('touchend',{bubbles:true,touches:[],targetTouches:[],changedTouches:[end]}));});
+ await page.evaluate(()=>{const e=document.querySelector('#liveClock'),r=e.getBoundingClientRect();const point=x=>({clientX:x,clientY:r.top+20});const fire=(type,properties)=>{const event=new Event(type,{bubbles:true});for(const [key,value] of Object.entries(properties))Object.defineProperty(event,key,{value});e.dispatchEvent(event)};fire('touchstart',{touches:[point(r.right-10)]});fire('touchend',{changedTouches:[point(r.left+10)]});});;
  await expect(page.locator('#liveProgress')).toContainText('Exercice 2 / 5');
  const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+2);
  expect(overflow).toBe(false);
