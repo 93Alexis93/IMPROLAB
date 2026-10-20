@@ -1469,22 +1469,29 @@
       "section": "Saison 1",
       "numero_source": 57,
       "texte_original": "La mitraillette : Une grande ligne tout le monde regarde vers le public, les deux du milieu avance, se mette dos à dos et font une IMPRo de 10 secondes avec le mot qui leu r sera donné par le prof qui arrête limpro quand il veut. Les deux repartent à l’extérieur de la ligne, et les deux nouveaux du milieu s’avance et font pareil.",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Tous les joueurs se placent sur une même ligne, face au public. Les deux joueurs du milieu avancent et se placent dos à dos. L’animateur annonce un mot : dès qu’ils l’entendent, les deux comédiens se retournent et commencent une improvisation très courte, d’environ dix secondes. L’animateur interrompt la scène quand il le souhaite. Les deux joueurs rejoignent les extrémités de la ligne, puis les deux nouveaux joueurs du centre avancent à leur tour. Les scènes s’enchaînent rapidement.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Écoute",
+      "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Scène",
+        "Écoute",
+        "Lâcher-prise",
+        "Imaginaire",
+        "Cohésion"
+      ]
     },
     {
       "id": "1-58",
@@ -1492,15 +1499,15 @@
       "section": "Saison 1",
       "numero_source": 58,
       "texte_original": "Les chaînes de télé",
-      "regle_clarifiee": "Plusieurs binômes jouent chacun une chaîne de télévision identifiée (cuisine, information, etc.). L’animateur zappe librement et seul le binôme de la chaîne sélectionnée joue.",
-      "statut": "clarifié",
+      "regle_clarifiee": "Plusieurs binômes représentent chacun une chaîne de télévision. L’animateur joue le rôle de la télécommande et passe d’une chaîne à l’autre. Seul le binôme de la chaîne sélectionnée joue. Lorsqu’on revient sur une chaîne, celle-ci peut reprendre son émission précédente ou en proposer une nouvelle.",
+      "statut": "validée par le coach",
       "eligible_generateur": false,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "clarifiée",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
@@ -1509,6 +1516,9 @@
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "categories_secondaires": [
+        "Construction",
+        "Écoute",
+        "Amusement",
         "Imaginaire"
       ]
     },
@@ -1518,22 +1528,27 @@
       "section": "Saison 1",
       "numero_source": 59,
       "texte_original": "Caca homard je mange tu mange le chifoumi",
-      "regle_clarifiee": "En binôme, compter jusqu’à trois et choisir simultanément un geste et une réplique parmi « Je mange » (se pointer), « Tu manges » (pointer l’autre), « Caca » (losange avec les mains) et « Homard » (pinces en l’air). Jeu comique inspiré du chifoumi ; pas de règle de victoire confirmée.",
-      "statut": "clarifié",
+      "regle_clarifiee": "En binôme, compter jusqu’à trois et choisir simultanément un geste et une réplique parmi « Je mange » (se pointer), « Tu manges » (pointer l’autre), « Caca » (losange avec les mains) et « Homard » (pinces en l’air). Jeu comique inspiré du chifoumi ; aucune règle de victoire n’a été précisée.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "clarifiée",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Amusement",
+        "Corps",
+        "Lâcher-prise"
+      ]
     },
     {
       "id": "1-60",
@@ -1541,22 +1556,27 @@
       "section": "Saison 1",
       "numero_source": 60,
       "texte_original": "Patate chaude donner un sport aquatique, une marque de voiture, un film d’action, qqchose a ne pas dire a un mariage. Si hésitation ou redite -> éliminé",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs se placent en cercle. L’animateur annonce une catégorie, par exemple « un sport aquatique », « une marque de voiture », « un film d’action » ou « quelque chose à ne pas dire à un mariage ». Les participants répondent chacun leur tour, rapidement, en donnant une proposition différente. Toute hésitation trop longue ou réponse déjà donnée entraîne l’élimination. Le jeu continue jusqu’au dernier joueur restant.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Amusement",
+        "Lâcher-prise",
+        "Imaginaire"
+      ]
     },
     {
       "id": "1-61",
@@ -1564,22 +1584,27 @@
       "section": "Saison 1",
       "numero_source": 61,
       "texte_original": "Mouvement en avant en arrière en déformant le mouvement cela donne un mot ou un verbe une phrase",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Un joueur propose un mouvement. Le groupe le reproduit en avançant puis en reculant, en le déformant progressivement. À partir de cette transformation, les participants cherchent à faire émerger un mot, un verbe ou une phrase. Le mouvement devient ainsi un point de départ pour une association d’idées ou une proposition improvisée.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Imaginaire",
+        "Lâcher-prise",
+        "Construction"
+      ]
     },
     {
       "id": "1-62",
