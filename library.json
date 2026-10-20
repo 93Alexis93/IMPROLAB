@@ -107,7 +107,7 @@
       "numero_source": 5,
       "texte_original": "Jeu du zombie se délivrer en regardant quelqu’un qui doit prononcer un autre nom",
       "regle_clarifiee": "Les joueurs se placent en cercle. Un zombie avance vers une personne pour la toucher. La personne menacée cherche le regard d’un autre joueur ; celui-ci doit rapidement prononcer le prénom d’une nouvelle cible. Le zombie change alors de direction et poursuit cette nouvelle personne. Tant qu’il ne touche personne, il reste zombie. Dès qu’il réussit à toucher quelqu’un, cette personne devient le nouveau zombie.",
-      "statut": "validée après corrections du coach",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
@@ -121,7 +121,11 @@
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Énergie",
+        "Corps"
+      ]
     },
     {
       "id": "1-6",
