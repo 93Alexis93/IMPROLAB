@@ -42,3 +42,24 @@ test('navigation clavier du mode animateur',async({page})=>{
  await page.keyboard.press('ArrowLeft');
  await expect(page.locator('#liveProgress')).toContainText('Exercice 1 / 5');
 });
+
+test('filtres bibliothèque par origine et objectif',async({page})=>{
+ await page.goto('/');
+ await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await page.getByRole('button',{name:'Jeux'}).click();
+ await page.locator('#sourceFilter').selectOption('recherche_web');
+ await expect(page.locator('#games .card')).toHaveCount(17);
+ await page.locator('#sourceFilter').selectOption('notes_personnelles');
+ await expect(page.locator('#games .card')).toHaveCount(105);
+ await page.locator('#categoryFilter').selectOption('Écoute');
+ await expect(page.locator('#games .card').first()).toBeVisible();
+ const n=await page.locator('#games .card').count();expect(n).toBeGreaterThan(0);expect(n).toBeLessThan(105);
+});
+test('générateur respecte la catégorie des cinq étapes',async({page})=>{
+ await page.goto('/');
+ await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await page.getByRole('button',{name:'Générer ma séance'}).click();
+ const labels=await page.locator('#plan>.card small').allTextContents();
+ expect(labels).toHaveLength(5);
+ expect(labels.map(x=>x.split('·')[1].trim())).toEqual(['Énergie','Écoute','Corps','Construction','Scène']);
+});
