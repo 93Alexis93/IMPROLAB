@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "source": "Notes personnelles de théâtre d’improvisation",
   "conservation": "Les 105 notes originales sont préservées ; les exercices externes sont des reformulations attribuées et séparées.",
   "exercices": [
@@ -17,7 +17,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-2",
@@ -33,7 +40,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "clarifiée"
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-3",
@@ -49,7 +63,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-4",
@@ -65,7 +86,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "incomplète"
+      "qualite_fiche": "incomplète",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-5",
@@ -81,7 +109,14 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-6",
@@ -97,7 +132,14 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-7",
@@ -113,7 +155,14 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "clarifiée"
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-8",
@@ -129,7 +178,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-9",
@@ -145,7 +201,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-10",
@@ -161,7 +224,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-11",
@@ -177,7 +247,14 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-12",
@@ -193,7 +270,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-13",
@@ -209,7 +293,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-14",
@@ -225,7 +316,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-15",
@@ -241,7 +339,14 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-16",
@@ -257,7 +362,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-17",
@@ -273,7 +385,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-18",
@@ -289,7 +408,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-19",
@@ -305,7 +431,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-20",
@@ -321,7 +454,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-21",
@@ -337,7 +477,14 @@
       "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
+        "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
+        "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-22",
@@ -353,7 +500,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-23",
@@ -369,7 +523,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-24",
@@ -385,7 +546,14 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-25",
@@ -401,7 +569,14 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-26",
@@ -417,7 +592,14 @@
       "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
+        "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
+        "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-27",
@@ -433,7 +615,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-28",
@@ -449,7 +638,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-29",
@@ -465,7 +661,14 @@
       "objectif_pedagogique": "Émotions",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Choisissez une émotion et faites-la comprendre par le corps, la voix et la situation.",
+        "variante_facile": "Jouer une émotion simple avec une intensité modérée.",
+        "variante_difficile": "Faire évoluer progressivement l'émotion pendant la scène.",
+        "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-30",
@@ -481,7 +684,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-31",
@@ -497,7 +707,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-32",
@@ -513,7 +730,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-33",
@@ -529,7 +753,14 @@
       "objectif_pedagogique": "Émotions",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Choisissez une émotion et faites-la comprendre par le corps, la voix et la situation.",
+        "variante_facile": "Jouer une émotion simple avec une intensité modérée.",
+        "variante_difficile": "Faire évoluer progressivement l'émotion pendant la scène.",
+        "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-34",
@@ -545,7 +776,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-35",
@@ -561,7 +799,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-36",
@@ -577,7 +822,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-37",
@@ -593,7 +845,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-38",
@@ -609,7 +868,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-39",
@@ -625,7 +891,14 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-40",
@@ -641,7 +914,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-41",
@@ -657,7 +937,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-42",
@@ -673,7 +960,14 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-43",
@@ -689,7 +983,14 @@
       "objectif_pedagogique": "Émotions",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Choisissez une émotion et faites-la comprendre par le corps, la voix et la situation.",
+        "variante_facile": "Jouer une émotion simple avec une intensité modérée.",
+        "variante_difficile": "Faire évoluer progressivement l'émotion pendant la scène.",
+        "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-44",
@@ -705,7 +1006,14 @@
       "objectif_pedagogique": "Émotions",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Choisissez une émotion et faites-la comprendre par le corps, la voix et la situation.",
+        "variante_facile": "Jouer une émotion simple avec une intensité modérée.",
+        "variante_difficile": "Faire évoluer progressivement l'émotion pendant la scène.",
+        "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-45",
@@ -721,7 +1029,14 @@
       "objectif_pedagogique": "Émotions",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Choisissez une émotion et faites-la comprendre par le corps, la voix et la situation.",
+        "variante_facile": "Jouer une émotion simple avec une intensité modérée.",
+        "variante_difficile": "Faire évoluer progressivement l'émotion pendant la scène.",
+        "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-46",
@@ -737,7 +1052,14 @@
       "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
+        "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
+        "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-47",
@@ -753,7 +1075,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-48",
@@ -769,7 +1098,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-49",
@@ -785,7 +1121,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-50",
@@ -801,7 +1144,14 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-51",
@@ -817,7 +1167,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-52",
@@ -833,7 +1190,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-53",
@@ -849,7 +1213,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-54",
@@ -865,7 +1236,14 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-55",
@@ -881,7 +1259,14 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-56",
@@ -897,7 +1282,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-57",
@@ -913,7 +1305,14 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-58",
@@ -929,7 +1328,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "clarifiée"
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-59",
@@ -945,7 +1351,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "clarifiée"
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-60",
@@ -961,7 +1374,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-61",
@@ -977,7 +1397,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-62",
@@ -993,7 +1420,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-63",
@@ -1009,7 +1443,14 @@
       "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
+        "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
+        "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "1-64",
@@ -1025,7 +1466,14 @@
       "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
+        "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
+        "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-1",
@@ -1041,7 +1489,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-2",
@@ -1057,7 +1512,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-3",
@@ -1073,7 +1535,14 @@
       "objectif_pedagogique": "Émotions",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Choisissez une émotion et faites-la comprendre par le corps, la voix et la situation.",
+        "variante_facile": "Jouer une émotion simple avec une intensité modérée.",
+        "variante_difficile": "Faire évoluer progressivement l'émotion pendant la scène.",
+        "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-4",
@@ -1089,7 +1558,14 @@
       "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
+        "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
+        "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-5",
@@ -1105,7 +1581,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-6",
@@ -1121,7 +1604,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-7",
@@ -1137,7 +1627,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-8",
@@ -1153,7 +1650,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-9",
@@ -1169,7 +1673,14 @@
       "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
+        "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
+        "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-10",
@@ -1185,7 +1696,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-11",
@@ -1201,7 +1719,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-12",
@@ -1217,7 +1742,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-13",
@@ -1233,7 +1765,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-14",
@@ -1249,7 +1788,14 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-15",
@@ -1265,7 +1811,14 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-16",
@@ -1281,7 +1834,14 @@
       "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "clarifiée"
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
+        "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
+        "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-17",
@@ -1297,7 +1857,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "clarifiée"
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-18",
@@ -1313,7 +1880,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-19",
@@ -1329,7 +1903,14 @@
       "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
+        "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
+        "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-20",
@@ -1345,7 +1926,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "incomplète"
+      "qualite_fiche": "incomplète",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-21",
@@ -1361,7 +1949,14 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-22",
@@ -1377,7 +1972,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-23",
@@ -1393,7 +1995,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-24",
@@ -1409,7 +2018,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-25",
@@ -1425,7 +2041,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "clarifiée"
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-26",
@@ -1441,7 +2064,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "clarifiée"
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-27",
@@ -1457,7 +2087,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "clarifiée"
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-28",
@@ -1473,7 +2110,14 @@
       "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
+        "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
+        "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-29",
@@ -1489,7 +2133,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-30",
@@ -1505,7 +2156,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-31",
@@ -1521,7 +2179,14 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-32",
@@ -1537,7 +2202,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-33",
@@ -1553,7 +2225,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-34",
@@ -1569,7 +2248,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-35",
@@ -1585,7 +2271,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "2-36",
@@ -1601,7 +2294,14 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "3-1",
@@ -1617,7 +2317,14 @@
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "3-2",
@@ -1633,7 +2340,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "clarifiée"
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "3-3",
@@ -1649,7 +2363,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "3-4",
@@ -1665,7 +2386,14 @@
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire"
+      "qualite_fiche": "notes à relire",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "3-5",
@@ -1681,7 +2409,14 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "clarifiée"
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "WEB-001",
@@ -1699,7 +2434,14 @@
       "effectif_conseille": "10–15 (sous-groupes si besoin)",
       "variante_college": "Former trois équipes de quatre ou cinq ; privilégier des objets familiers et éviter les portés.",
       "source_url": "https://dramaresource.com/ten-second-objects/",
-      "qualite_fiche": "source vérifiée et reformulée"
+      "qualite_fiche": "source vérifiée et reformulée",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "WEB-002",
@@ -1717,7 +2459,14 @@
       "effectif_conseille": "10–15 (sous-groupes si besoin)",
       "variante_college": "Autoriser un ou deux changements au premier tour ; ne pas toucher aux affaires d'autrui.",
       "source_url": "https://dramaresource.com/three-changes/",
-      "qualite_fiche": "source vérifiée et reformulée"
+      "qualite_fiche": "source vérifiée et reformulée",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "WEB-003",
@@ -1735,7 +2484,14 @@
       "effectif_conseille": "10–15 (sous-groupes si besoin)",
       "variante_college": "Commencer par une forêt ou une gare ; interdire les cris près des oreilles.",
       "source_url": "https://dramaresource.com/soundscapes/",
-      "qualite_fiche": "source vérifiée et reformulée"
+      "qualite_fiche": "source vérifiée et reformulée",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "WEB-004",
@@ -1753,7 +2509,14 @@
       "effectif_conseille": "10–15 (sous-groupes si besoin)",
       "variante_college": "Expliquer qu'il s'agit de statuts fictifs, jamais de juger la valeur des élèves.",
       "source_url": "https://dramaresource.com/status-pictures/",
-      "qualite_fiche": "source vérifiée et reformulée"
+      "qualite_fiche": "source vérifiée et reformulée",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "WEB-005",
@@ -1771,7 +2534,14 @@
       "effectif_conseille": "10–15 (sous-groupes si besoin)",
       "variante_college": "Commencer lentement et autoriser un temps de réflexion ; aucun joueur éliminé.",
       "source_url": "https://dramaresource.com/what-are-you-doing/",
-      "qualite_fiche": "source vérifiée et reformulée"
+      "qualite_fiche": "source vérifiée et reformulée",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "WEB-006",
@@ -1789,7 +2559,14 @@
       "effectif_conseille": "10–15 (sous-groupes si besoin)",
       "variante_college": "Limiter à six participants par espace, puis faire découvrir les deux décors créés.",
       "source_url": "https://improvencyclopedia.org/games/Group_Environment.html",
-      "qualite_fiche": "source vérifiée et reformulée"
+      "qualite_fiche": "source vérifiée et reformulée",
+      "conseils_animation": {
+        "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
+        "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
+        "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "WEB-007",
@@ -1807,7 +2584,14 @@
       "effectif_conseille": "10–15 (sous-groupes si besoin)",
       "variante_college": "Rappeler que chacun peut poser une limite personnelle ; choisir des situations neutres et non intimes.",
       "source_url": "https://www.theatrefolk.com/blog/improv-game-yes-and-and-no-but",
-      "qualite_fiche": "source vérifiée et reformulée"
+      "qualite_fiche": "source vérifiée et reformulée",
+      "conseils_animation": {
+        "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
+        "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
+        "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "WEB-008",
@@ -1825,7 +2609,14 @@
       "effectif_conseille": "10–15 (sous-groupes si besoin)",
       "variante_college": "Former des groupes de trois à cinq et privilégier les personnages imaginaires plutôt que les familles réelles.",
       "source_url": "https://dramaresource.com/family-portraits/",
-      "qualite_fiche": "source vérifiée et reformulée"
+      "qualite_fiche": "source vérifiée et reformulée",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "EXT-001",
@@ -1844,7 +2635,14 @@
       "variante_college": "Sans élimination ; possibilité de passer son tour ; consignes courtes et démonstration préalable.",
       "source_url": "https://improwiki.com/fr/exercices",
       "source_nom": "Improwiki",
-      "qualite_fiche": "adaptation sourcée à tester en atelier"
+      "qualite_fiche": "adaptation sourcée à tester en atelier",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "EXT-002",
@@ -1863,7 +2661,14 @@
       "variante_college": "Sans élimination ; possibilité de passer son tour ; consignes courtes et démonstration préalable.",
       "source_url": "https://improwiki.com/fr/exercices",
       "source_nom": "Improwiki",
-      "qualite_fiche": "adaptation sourcée à tester en atelier"
+      "qualite_fiche": "adaptation sourcée à tester en atelier",
+      "conseils_animation": {
+        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
+        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "EXT-003",
@@ -1882,7 +2687,14 @@
       "variante_college": "Sans élimination ; possibilité de passer son tour ; consignes courtes et démonstration préalable.",
       "source_url": "https://improwiki.com/fr/exercices",
       "source_nom": "Improwiki",
-      "qualite_fiche": "adaptation sourcée à tester en atelier"
+      "qualite_fiche": "adaptation sourcée à tester en atelier",
+      "conseils_animation": {
+        "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
+        "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
+        "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "EXT-004",
@@ -1901,7 +2713,14 @@
       "variante_college": "Sans élimination ; possibilité de passer son tour ; consignes courtes et démonstration préalable.",
       "source_url": "https://improwiki.com/fr/exercices",
       "source_nom": "Improwiki",
-      "qualite_fiche": "adaptation sourcée à tester en atelier"
+      "qualite_fiche": "adaptation sourcée à tester en atelier",
+      "conseils_animation": {
+        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
+        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "EXT-005",
@@ -1920,7 +2739,14 @@
       "variante_college": "Sans élimination ; possibilité de passer son tour ; consignes courtes et démonstration préalable.",
       "source_url": "https://improwiki.com/fr/exercices",
       "source_nom": "Improwiki",
-      "qualite_fiche": "adaptation sourcée à tester en atelier"
+      "qualite_fiche": "adaptation sourcée à tester en atelier",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "EXT-006",
@@ -1939,7 +2765,14 @@
       "variante_college": "Sans élimination ; possibilité de passer son tour ; consignes courtes et démonstration préalable.",
       "source_url": "https://soulintoart.com/blog/acting/exercices-improvisation-theatrale/",
       "source_nom": "Soul Into Art",
-      "qualite_fiche": "adaptation sourcée à tester en atelier"
+      "qualite_fiche": "adaptation sourcée à tester en atelier",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "EXT-007",
@@ -1958,7 +2791,14 @@
       "variante_college": "Sans élimination ; possibilité de passer son tour ; consignes courtes et démonstration préalable.",
       "source_url": "https://soulintoart.com/blog/acting/exercices-improvisation-theatrale/",
       "source_nom": "Soul Into Art",
-      "qualite_fiche": "adaptation sourcée à tester en atelier"
+      "qualite_fiche": "adaptation sourcée à tester en atelier",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "EXT-008",
@@ -1977,7 +2817,14 @@
       "variante_college": "Sans élimination ; possibilité de passer son tour ; consignes courtes et démonstration préalable.",
       "source_url": "https://soulintoart.com/blog/acting/exercices-improvisation-theatrale/",
       "source_nom": "Soul Into Art",
-      "qualite_fiche": "adaptation sourcée à tester en atelier"
+      "qualite_fiche": "adaptation sourcée à tester en atelier",
+      "conseils_animation": {
+        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
+        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     },
     {
       "id": "EXT-009",
@@ -1996,7 +2843,14 @@
       "variante_college": "Sans élimination ; possibilité de passer son tour ; consignes courtes et démonstration préalable.",
       "source_url": "https://soulintoart.com/blog/acting/exercices-improvisation-theatrale/",
       "source_nom": "Soul Into Art",
-      "qualite_fiche": "adaptation sourcée à tester en atelier"
+      "qualite_fiche": "adaptation sourcée à tester en atelier",
+      "conseils_animation": {
+        "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
+        "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
+        "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      }
     }
   ],
   "sources_externes": [
@@ -2030,5 +2884,6 @@
       "detail": "Le oui-et n'oblige jamais à accepter une situation inconfortable ; une réorientation constructive est possible.",
       "source_url": "https://www.theatrefolk.com/blog/improv-game-yes-and-and-no-but"
     }
-  ]
+  ],
+  "note_pedagogique": "Les consignes courtes et variantes sont des propositions génériques de l'assistant selon l'objectif principal ; elles ne constituent pas des règles tirées des notes ou des sources. Pour les notes incomplètes, consulter l'original avant utilisation."
 }
