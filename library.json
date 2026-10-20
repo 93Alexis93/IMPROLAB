@@ -205,11 +205,11 @@
       "numero_source": 9,
       "texte_original": "Le jeu du voyant je suis voyant et je sais que parmi vous… jusqu’à qu’il n’y en ait qu’un, si tout le monde s’en va c’est perdu",
       "regle_clarifiee": "Un voyant annonce : « Je suis voyant et je sais que parmi vous… », puis donne une caractéristique. Les joueurs avancent progressivement ; ceux qui ne sont pas concernés par l’affirmation arrêtent d’avancer. Le voyant poursuit ses annonces pour qu’il ne reste finalement qu’une personne en mouvement. Si tout le monde s’arrête, il a perdu.",
-      "statut": "validée après corrections du coach",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Énergie",
+      "objectif_pedagogique": "Cohésion",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
@@ -219,7 +219,12 @@
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Énergie",
+        "Écoute",
+        "Amusement"
+      ]
     },
     {
       "id": "1-10",
