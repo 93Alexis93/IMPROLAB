@@ -104,21 +104,19 @@ test('les neuf catégories et les catégories secondaires sont filtrables',async
  await expect(page.locator('#games')).toContainText('voyant');
 });
 
-test('neuf curseurs de dynamique persistants et generation de seance',async({page})=>{
+test('neuf curseurs compacts 0-100, persistance et generation',async({page})=>{
  await page.goto('/');
  await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
- await page.locator('#dynamicsPanel').evaluate(el=>el.open=true);
- await expect(page.locator('#dynamicsControls input[type=range]')).toHaveCount(9);
- const slider=page.locator('#dynamicsControls input[data-category="Cohésion"]');
- await slider.fill('5');
- await expect(page.locator('#dynamicsControls input[data-category="Cohésion"]')).toHaveValue('5');
+ const sliders=page.locator('.dynamic-grid input[type=range]');
+ await expect(sliders).toHaveCount(9);
+ for(const slider of await sliders.all()){await expect(slider).toHaveAttribute('max','100');await expect(slider).toHaveAttribute('step','1')}
+ await page.locator('#dynamic8').fill('87');
+ await expect(page.locator('#dynamicValue8')).toHaveText('87 %');
  await page.reload();
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
- await page.locator('#dynamicsPanel').evaluate(el=>el.open=true);
- await expect(page.locator('#dynamicsControls input[data-category="Cohésion"]')).toHaveValue('5');
+ await expect(page.locator('#dynamic8')).toHaveValue('87');
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  await expect(page.locator('#plan>.card')).toHaveCount(5);
  await expect(page.locator('#planSummary')).toContainText('55 minutes');
- await page.getByRole('button',{name:'Réinitialiser les curseurs'}).click();
- await expect(page.locator('#dynamicsControls input[data-category="Cohésion"]')).toHaveValue('4');
+ await page.getByRole('button',{name:/Réinitialiser/}).click();
+ await expect(page.locator('#dynamic8')).toHaveValue('80');
 });
