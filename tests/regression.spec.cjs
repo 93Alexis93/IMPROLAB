@@ -103,3 +103,22 @@ test('les neuf catégories et les catégories secondaires sont filtrables',async
  await filter.selectOption('Cohésion');
  await expect(page.locator('#games')).toContainText('voyant');
 });
+
+test('neuf curseurs de dynamique persistants et generation de seance',async({page})=>{
+ await page.goto('/');
+ await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await page.locator('#dynamicsPanel').evaluate(el=>el.open=true);
+ await expect(page.locator('#dynamicsControls input[type=range]')).toHaveCount(9);
+ const slider=page.locator('#dynamicsControls input[data-category="Cohésion"]');
+ await slider.fill('5');
+ await expect(page.locator('#dynamicsControls input[data-category="Cohésion"]')).toHaveValue('5');
+ await page.reload();
+ await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await page.locator('#dynamicsPanel').evaluate(el=>el.open=true);
+ await expect(page.locator('#dynamicsControls input[data-category="Cohésion"]')).toHaveValue('5');
+ await page.getByRole('button',{name:'Générer ma séance'}).click();
+ await expect(page.locator('#plan>.card')).toHaveCount(5);
+ await expect(page.locator('#planSummary')).toContainText('55 minutes');
+ await page.getByRole('button',{name:'Réinitialiser les curseurs'}).click();
+ await expect(page.locator('#dynamicsControls input[data-category="Cohésion"]')).toHaveValue('4');
+});
