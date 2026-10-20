@@ -22,7 +22,7 @@ jobs:
   browser:
     name: Tests navigateur mobile
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -31,7 +31,7 @@ jobs:
       - name: Installer Playwright
         run: npm install --no-save @playwright/test@1.56.1
       - name: Installer Chromium
-        run: npx playwright install --with-deps chromium
+        run: npx playwright install --with-deps chromium webkit
       - name: Tests tactiles et fonctionnels
         run: npx playwright test
       - name: Conserver les preuves si échec
