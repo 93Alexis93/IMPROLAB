@@ -50,7 +50,7 @@ function generate(){
   if(!pool.length)break;
   // Rotation équitable : privilégier les jeux les moins joués, puis les moins récents.
   const ranked=pool.map(g=>({g,uses:counts[g[0]]||0,recency:history.indexOf(g[0])}))
-   .sort((a,b)=>a.uses-b.uses||((a.recency<0?999:a.recency)-(b.recency<0?999:b.recency))*-1);
+   .sort((a,b)=>a.uses-b.uses);
   const minUses=ranked[0].uses;
   const fair=ranked.filter(x=>x.uses===minUses);
   const neverRecent=fair.filter(x=>x.recency<0);
@@ -65,7 +65,6 @@ function generate(){
  localStorage.setItem('impro-game-usage-v1',JSON.stringify(counts));
  localStorage.setItem('impro-recent-games',JSON.stringify([...selected,...history].slice(0,80)));
  document.getElementById('plan').innerHTML=html;
- localStorage.setItem('impro-recent-games',JSON.stringify([...selected,...history].slice(0,20)));
  liveIndex=0;persistPlan();
 }
 function update(){let m=Math.floor(remaining/60),s=remaining%60;document.getElementById('timer').textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')}function start(){if(interval){clearInterval(interval);interval=null;return}interval=setInterval(()=>{if(remaining>0){remaining--;update()}else{clearInterval(interval);interval=null;alert('Temps écoulé !')}},1000)}function reset(){clearInterval(interval);interval=null;remaining=Math.max(1,+document.getElementById('mins').value||5)*60;update()}function draw(){let a=['Gare','Forêt','Restaurant','Ascenseur','Bibliothèque','Terrain de foot'],b=['Joie','Panique','Jalousie','Sérénité','Embarras'],c=['Touriste perdu','Prof enthousiaste','Pirate vegan','Magicien nul','Voisin'];let pick=x=>x[Math.floor(Math.random()*x.length)];document.getElementById('draw').textContent=pick(a)+' · '+pick(b)+' · '+pick(c)}
