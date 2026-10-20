@@ -567,22 +567,28 @@
       "section": "Saison 1",
       "numero_source": 21,
       "texte_original": "Abécédaire : un participant commence par une phrase en A et chacun des participants commencent sa phrase par la lettre suivante",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs construisent ensemble une histoire improvisée. Le premier commence sa réplique par A, le suivant par B, puis C, et ainsi de suite. Chacun poursuit l'histoire en respectant sa lettre. L'animateur peut interdire les prénoms ou d'autres types de mots.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Imaginaire",
+        "Amusement",
+        "Lâcher-prise"
+      ]
     },
     {
       "id": "1-22",
@@ -646,22 +652,27 @@
       "section": "Saison 1",
       "numero_source": 24,
       "texte_original": "Jeu de l’ordre alphabétique : rangez vous dans l’ordre alphabétique de vos prénoms , puis de vos métiers si y en a un qui marche pas on continue dans l’ordre alphabétique ça a pas besoin d’être en vrai",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs se rangent dans l'ordre alphabétique selon une caractéristique annoncée : leurs prénoms, puis leurs métiers, par exemple. Les réponses peuvent être inventées. Si une proposition ne convient pas, le groupe poursuit pour retrouver un ordre cohérent.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Écoute",
+      "objectif_pedagogique": "Cohésion",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Imaginaire",
+        "Amusement"
+      ]
     },
     {
       "id": "1-25",
@@ -669,22 +680,28 @@
       "section": "Saison 1",
       "numero_source": 25,
       "texte_original": "Convergence : deux personnes disent en premier j’ai , et compte ensemble un deux trois puis disent un mot simultanément. Ensuite deux autres personnes vont dire j’ai, et en se servant des deux mots précédents vont essayer de trouver le même mot. Elles comptent un deux trois puis disent le mot ensemble et ainsi de suite jusqu’à atteindre la convergence (le même mot)",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Deux joueurs comptent ensemble jusqu'à trois puis disent simultanément un mot. Deux autres cherchent chacun un mot reliant les deux précédents et le disent simultanément après un nouveau compte. Les binômes se succèdent jusqu'à prononcer le même mot. Tous concluent : « Et c'est la convergenceeee ! »",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Construction",
+        "Imaginaire",
+        "Cohésion",
+        "Amusement"
+      ]
     },
     {
       "id": "1-26",
@@ -692,22 +709,28 @@
       "section": "Saison 1",
       "numero_source": 26,
       "texte_original": "Tu sais pas quoi : jeu en binôme, le premier dit qqchose comme ah mais avant hier j’ai passé une soirée incroyable, tu sais pas qui il y avait ? L’autre donne la réponse rapidement , puis le premier continue l’histoire puis repose une une question genre et tu sais pas ce qui m’a dit ? Et ainsi de suite",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Deux joueurs improvisent une anecdote. Le premier raconte un événement puis pose une question comme « Tu sais pas qui il y avait ? ». Le second invente immédiatement une réponse. Le premier l'accepte, poursuit et pose une autre question. L'histoire avance ainsi spontanément.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Imaginaire",
+        "Lâcher-prise",
+        "Amusement"
+      ]
     },
     {
       "id": "1-27",
@@ -715,22 +738,28 @@
       "section": "Saison 1",
       "numero_source": 27,
       "texte_original": "Doublage : deux binômes, un acteur double un autre qui ne doit donc pas parler mais ouvrir et fermer la bouche au bon moment.",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Deux binômes participent. Dans chacun, un comédien joue sans parler et ouvre et ferme la bouche pendant que son doubleur fournit les paroles. Les doubleurs sont assis de biais par rapport aux comédiens doublés ou allongés devant le public. Les deux personnages jouent ensemble tandis que leurs doubleurs improvisent les dialogues.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Corps",
+        "Construction",
+        "Amusement"
+      ]
     },
     {
       "id": "1-28",
