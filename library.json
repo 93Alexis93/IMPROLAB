@@ -395,22 +395,27 @@
       "section": "Saison 1",
       "numero_source": 15,
       "texte_original": "Compter jusqu’à 7 pour faire passer l’énergie à droite ou à gauche en se tapant sur l’épaule . A 7 on envoie l’énergie avec les mains a qui on veut. On recommence ensuite en changeant le 3 par un jour de la semaine, puis le 5 par le 3, puis le 1 envoie l’énergie en tapant du pied",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs forment un cercle et comptent collectivement de 1 à 7 en faisant circuler l’énergie. Pour transmettre au voisin de droite ou de gauche, on se tape sur l’épaule correspondante. À 7, le joueur désigne avec les mains n’importe quel participant, qui reprend à 1. Lorsque le groupe maîtrise le jeu, on ajoute des contraintes successives : remplacer le 3 par un jour de la semaine, puis dire « trois » à la place de 5, tout en conservant aussi le 3 initial, et enfin remplacer le 1 par un geste du pied.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Énergie",
+        "Corps",
+        "Cohésion"
+      ]
     },
     {
       "id": "1-16",
@@ -418,22 +423,27 @@
       "section": "Saison 1",
       "numero_source": 16,
       "texte_original": "Faire Ceci est mon nez en pointant son genoux, l’autre pointe le genou et du ceci est mon pied etc….",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Deux joueurs se font face. Le premier désigne une partie de son corps tout en en nommant une autre : par exemple, il pointe son genou et dit « Ceci est mon nez ». Le deuxième doit réagir rapidement en désignant la partie du corps annoncée, tout en prononçant le nom d’une autre partie du corps. L’échange se poursuit sans hésitation.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Énergie",
+      "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Corps",
+        "Amusement",
+        "Lâcher-prise"
+      ]
     },
     {
       "id": "1-17",
@@ -441,22 +451,28 @@
       "section": "Saison 1",
       "numero_source": 17,
       "texte_original": "Situation : on part d’une situation, lautre dit ah c’est cool on le contredit puis il dit ah c’est pas cool on le contredit encore et ainsi de suite",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Deux joueurs improvisent une histoire à partir d’une situation initiale. Le premier annonce un événement. Son partenaire répond « Ah, c’est cool ! ». Le premier ajoute alors une information qui transforme cet événement en mauvaise nouvelle. Le partenaire répond « Ah, c’est pas cool ! ». Le premier apporte une nouvelle information qui inverse encore la situation. Ils continuent ainsi en alternant les bonnes et les mauvaises nouvelles.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Énergie",
+      "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Imaginaire",
+        "Amusement",
+        "Lâcher-prise"
+      ]
     },
     {
       "id": "1-18",
@@ -464,22 +480,28 @@
       "section": "Saison 1",
       "numero_source": 18,
       "texte_original": "Jeux de danse : 10 personnes dansent au début puis le maître du jeu dit un nombre et ce nombre exact de personnes doit danser",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Une dizaine de joueurs dansent librement dans l’espace. L’animateur annonce soudain un nombre. Sans se concerter, les participants doivent s’organiser pour que seul le nombre exact de joueurs annoncé continue à danser. Les autres s’immobilisent. L’animateur propose ensuite un autre nombre et le groupe doit s’adapter rapidement.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Corps",
+      "objectif_pedagogique": "Cohésion",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Corps",
+        "Écoute",
+        "Énergie",
+        "Amusement"
+      ]
     },
     {
       "id": "1-19",
@@ -516,22 +538,28 @@
       "section": "Saison 1",
       "numero_source": 20,
       "texte_original": "Impro en binôme, on donne un thème et un des deux ne peux dire que les cinq mots, Oui d’accord on y va, pour un des deux",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Deux joueurs improvisent une scène sur un thème donné. L’un peut parler librement ; l’autre ne peut utiliser que les cinq mots « Oui », « d’accord », « on », « y », « va », séparément ou combinés. Il varie son intonation, ses gestes et ses expressions pour exprimer différentes intentions malgré cette contrainte. Son partenaire construit la scène en tenant compte de ses réactions.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Corps",
+        "Construction",
+        "Amusement"
+      ]
     },
     {
       "id": "1-21",
