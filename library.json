@@ -2384,22 +2384,28 @@
       "section": "Saison 2",
       "numero_source": 21,
       "texte_original": "Binôme un son un geste en cercle, on regarde son voisin et on fait un geste accompagné d’un son, ensuite on le fait à deux en même temps avec son voisin. On continue jusqu’à faire un tour. Puis au deuxième tour on le répète deux fois pour chaque binôme, et ensuite on continue et on va de plus en plus vite.",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs se placent en cercle. Chaque binôme se regarde et réalise en même temps un geste accompagné d’un son. Le geste et le son sont transmis de binôme en binôme jusqu’à faire un tour complet du cercle. Au deuxième tour, chaque binôme répète deux fois son geste et son son. Le groupe poursuit ensuite en accélérant progressivement le rythme.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Corps",
+        "Cohésion",
+        "Énergie"
+      ],
+      "remarque_coach": "Aucune"
     },
     {
       "id": "2-22",
@@ -2407,22 +2413,28 @@
       "section": "Saison 2",
       "numero_source": 22,
       "texte_original": "Tu peux me passer le/la, en binôme la structure se répète puis on intervertit les rôles. On fait tous un mime, (repeindre salon, tailler haie) et l’un des deux va dire tu peux me passer le/la et l’autre va répondre quelque chose, lui passer et ce sera exactement ce que l’autre voulait, il va alors devoir justifier pourquoi il en avait besoin. On répète cela puis on change les rôles.",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs se mettent par deux et improvisent une situation mimée, par exemple repeindre un salon ou tailler une haie. À un moment, l’un demande à son partenaire : « Tu peux me passer le/la… ? » L’autre annonce verbalement le nom de l’objet, puis le lui passe sous forme mimée. Le premier doit alors justifier pourquoi il en avait besoin, en restant dans la situation. Le binôme répète la séquence, puis les joueurs inversent les rôles.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Corps",
+      "objectif_pedagogique": "Imaginaire",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Corps",
+        "Écoute",
+        "Construction"
+      ],
+      "remarque_coach": "Aucune"
     },
     {
       "id": "2-23",
@@ -2430,22 +2442,28 @@
       "section": "Saison 2",
       "numero_source": 23,
       "texte_original": "Dauphin un dehors on définit une action, quand il rentre il doit essayer des actions pour petit à petit trouver la bonne. Plus il se rapproche de la bonne action plus le public applaudit avec rythme et force, quand il trouve la bonne applaudissement final",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Un joueur, le « dauphin », sort momentanément de la pièce. Le groupe choisit une action qu’il devra découvrir. Lorsqu’il revient, il propose différentes actions pour essayer de trouver celle qui a été choisie. Par exemple, il peut s’asseoir à un endroit de la pièce ou se faire des oreilles de lapin. Le public l’aide grâce à ses applaudissements : ils deviennent plus rythmés et plus forts à mesure qu’il se rapproche de la bonne action. Lorsqu’il la trouve, le groupe fait un applaudissement final.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Corps",
+        "Amusement"
+      ],
+      "remarque_coach": "Aucune"
     },
     {
       "id": "2-24",
