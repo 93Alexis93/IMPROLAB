@@ -907,7 +907,7 @@
       "numero_source": 33,
       "texte_original": "Saint graal : amplification d’émotion. Les joueurs se placent en cercle, un premier joueur va vers un autre et lui dis je te donne le saint graal, avec une émotion (à 10% de l’émotion) puis la personne le prend en disant j’ai le saint graal (on augmente un peu l’émotion), les deux voisins disent alors en augmentant l’émotion : il/elle a le saint graal. Ensuite en amplifiant au max l’émotion les deux voisins des voisins disent : n’est ce pas génial d’avoir le saint graal.",
       "regle_clarifiee": "Les joueurs forment un cercle. Un joueur s'approche d'un autre et lui transmet un Saint Graal imaginaire en disant « Je te donne le Saint Graal » avec une émotion exprimée à environ 10 % de son intensité. Le receveur prend le Saint Graal et annonce « J'ai le Saint Graal » en augmentant légèrement l'émotion. Ses deux voisins amplifient encore l'émotion en disant « Il/elle a le Saint Graal ». Puis les deux voisins de ces voisins atteignent l'intensité maximale en s'exclamant « N'est-ce pas génial d'avoir le Saint Graal ! ». Le joueur qui détient le Saint Graal se dirige alors vers quelqu'un d'autre pour le lui transmettre et le cycle recommence.",
-      "statut": "clarifié avec précision de l'auteur",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
@@ -921,7 +921,12 @@
         "variante_difficile": "Faire évoluer progressivement l'émotion pendant la scène.",
         "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Lâcher-prise",
+        "Amusement",
+        "Cohésion"
+      ]
     },
     {
       "id": "1-34",
@@ -929,22 +934,26 @@
       "section": "Saison 1",
       "numero_source": 34,
       "texte_original": "Tape tape de l’AS au 7 par exemple. On se met en cercle puis chacun est une carte. On tape deux fois dans ses cuisses puis deux fois dans ses mains. Quand on tape dans ses cuisses on donne sa carte, quand on tape dans ses mains, on appelle une carte (chaque joueur est une carte). Si un joueur perd il recommence en bas de l’échelle (les rôles changent à ce moment)",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs se placent en cercle. Chacun représente une carte dans une hiérarchie allant de l'As à la carte la plus basse (par exemple le 7). Tous gardent le rythme : deux frappes sur les cuisses, puis deux dans les mains. Le joueur actif annonce sa propre carte pendant les frappes sur les cuisses, puis appelle la carte d'un autre joueur pendant les frappes dans les mains. Le joueur appelé prend immédiatement le relais et annonce à son tour sa carte, puis celle d'un autre joueur. Celui qui se trompe descend en bas de la hiérarchie ; les cartes des autres joueurs sont réattribuées en conséquence.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Cohésion"
+      ]
     },
     {
       "id": "1-35",
@@ -952,22 +961,28 @@
       "section": "Saison 1",
       "numero_source": 35,
       "texte_original": "Les binômes : deux binômes vont jouer ensemble. Chaque binôme est un personnage. Le premier binôme (les comédiens collés) doit parler en disant un mot chacun. Le second doit parler en même temps (faire traîner les mots aide à faire marcher cela)",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Quatre comédiens improvisent une scène avec deux personnages, chacun incarné par un binôme. Le premier binôme, dont les deux comédiens sont collés, construit ses phrases en prononçant alternativement un mot chacun. Le second binôme parle simultanément : ses deux comédiens essaient de prononcer exactement les mêmes mots au même moment. Faire traîner les mots aide à se synchroniser. Les deux personnages collectifs improvisent ainsi un dialogue.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Corps",
+      "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Construction",
+        "Scène",
+        "Cohésion",
+        "Amusement"
+      ]
     },
     {
       "id": "1-36",
@@ -1804,22 +1819,27 @@
       "section": "Saison 2",
       "numero_source": 1,
       "texte_original": "Tape tape : les joueurs disent un deux trois et tape dans les mains puis avec leur deux mains ils choisissent une direction (haut bas droite gauche) puis recommencent mais s’ils ont choisi la même direction ils recommencent et après avoir tape dans leurs mains il se tapent dans les mains, retapent dans leur main et continuent",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Deux joueurs se font face. Ensemble, ils disent « Un, deux, trois ! », frappent dans leurs mains, puis orientent simultanément leurs deux mains vers le haut, le bas, la droite ou la gauche. Si leurs directions diffèrent, ils recommencent le cycle. Si elles sont identiques, ils ajoutent une séquence : frapper dans leurs propres mains, taper dans les mains du partenaire, puis frapper à nouveau dans leurs propres mains, avant de continuer. Le rythme doit rester fluide.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Corps",
+        "Amusement"
+      ]
     },
     {
       "id": "2-2",
@@ -1827,22 +1847,26 @@
       "section": "Saison 2",
       "numero_source": 2,
       "texte_original": "L’immeuble : tous les improvisateurs forment des groupes de 1, 2,3 ou 4 puis chaque groupe fait un appartement donc un étage. Ensuite il y a la cage d’escalier ou les gens peuvent se rencontrer. Les ados peuvent eux aller dans un autre appart. Les acteurs jouent aussi entre immeuble via les fenêtres et le téléphone ou autre",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les improvisateurs se répartissent en groupes de une à quatre personnes. Chaque groupe représente les habitants d'un appartement situé à un étage de l'immeuble imaginaire. Les personnages peuvent jouer dans leur appartement, se rencontrer dans la cage d'escalier, se rendre visite ou communiquer entre appartements par les fenêtres, par téléphone ou autrement. Les adolescents peuvent notamment se rendre dans d'autres appartements. Les histoires des différents logements se croisent au fil de l'improvisation.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Construction",
+        "Imaginaire"
+      ]
     },
     {
       "id": "2-3",
