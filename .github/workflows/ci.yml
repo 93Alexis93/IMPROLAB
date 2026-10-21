@@ -18,6 +18,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Vérifier la syntaxe Node des tests
+        run: for file in tests/*.cjs; do node --check "$file"; done
       - name: Contrôles structurels et catégories
         run: node tests/check.cjs
       - name: Intégrité exhaustive de la bibliothèque

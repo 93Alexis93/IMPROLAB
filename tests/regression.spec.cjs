@@ -18,17 +18,18 @@ test('édition, suppression, rechargement, groupe et export',async({page})=>{
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  await page.locator('#plan>.card').last().getByRole('button',{name:'✕'}).click();
  await expect(page.locator('#plan>.card')).toHaveCount(4);
- await reloadApp(page)
+ await reloadApp(page);
  await expect(page.locator('#plan>.card')).toHaveCount(4);
  const downloadPromise=page.waitForEvent('download');
  await page.getByRole('button',{name:/Exporter la séance/}).click();
  const download=await downloadPromise;
  expect(download.suggestedFilename()).toBe('impro-lab-seance.json');
  await page.getByRole('button',{name:'Groupes'}).click();
- await page.locator('#names').fill(Array.from({length:13},(_,i)=>'Élève '+(i+1)).join('\n'));
- await page.locator('#groupCount').fill('3');
- await page.getByRole('button',{name:'Répartir'}).click();
- await expect(page.locator('#groupsResult .card')).toHaveCount(3);
+ await page.locator('#rosterInput').fill(Array.from({length:13},(_,i)=>'Élève '+(i+1)).join('\n'));
+ await page.getByRole('button',{name:/Ajouter/}).click();
+ await page.locator('#rosterFormat').selectOption('3');
+ await page.getByRole('button',{name:/Tirer les groupes/}).click();
+ await expect(page.locator('#groupsResult .card')).toHaveCount(4);
  const content=await page.locator('#groupsResult').innerText();
  for(let i=1;i<=13;i++)expect(content).toContain('Élève '+i);
 });
@@ -113,7 +114,7 @@ test('dix curseurs compacts 0-100, persistance et timeline souple',async({page})
  for(const slider of await sliders.all()){await expect(slider).toHaveAttribute('max','100');await expect(slider).toHaveAttribute('step','1')}
  await page.locator('#dynamic9').fill('87');
  await expect(page.locator('#dynamicValue9')).toHaveText('87 %');
- await reloadApp(page)
+ await reloadApp(page);
  await expect(page.locator('#dynamic9')).toHaveValue('87');
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  await expect(page.locator('#plan>.card')).toHaveCount(5);
