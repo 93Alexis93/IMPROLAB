@@ -2936,22 +2936,27 @@
       "section": "Saison 3",
       "numero_source": 3,
       "texte_original": "Logorrhée verbale",
-      "regle_clarifiee": "Un comédien parle sans s’arrêter pendant une durée fixée (par exemple 30 secondes). À chaque « euh », le public répète « euh ». Des contraintes supplémentaires sont possibles.",
-      "statut": "clarifié",
-      "eligible_generateur": false,
+      "regle_clarifiee": "Un comédien parle sans s’arrêter pendant une durée fixée, par exemple 30 secondes. À chaque fois qu’il prononce « euh », le public répète « euh ». L’animateur peut imposer les contraintes suivantes, une à la fois ou successivement : ne pouvoir répéter que la dernière phrase prononcée ; ne parler qu’avec un seul mot ; ne prononcer aucun mot ; parler en rimant ; s’accroupir et justifier ce choix dans son discours. Il peut aussi inventer d’autres contraintes, par exemple : ne s’exprimer qu’en posant des questions ; éviter un mot interdit ; réutiliser régulièrement un mot imposé ; changer d’émotion sur demande tout en continuant à parler. L’animateur peut retirer une contrainte en cours de jeu.",
+      "statut": "validée par le coach",
+      "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "clarifiée",
+      "qualite_fiche": "clarifiée et validée par le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Amusement",
+        "Lâcher-prise"
+      ]
     },
     {
       "id": "WEB-001",
@@ -3432,5 +3437,14 @@
     "Lâcher-prise",
     "Cohésion",
     "Imaginaire"
+  ],
+  "principes_improvisation": [
+    {
+      "titre": "L’improvisation c’est l’art de rater",
+      "texte_original": "1. L’improvisation c’est l’art de rater",
+      "detail": "Principe général à garder en tête pendant l’improvisation : l’art de rater.",
+      "nature": "principe général",
+      "origine": "notes_personnelles"
+    }
   ]
 }
