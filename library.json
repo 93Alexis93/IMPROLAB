@@ -2016,22 +2016,29 @@
       "section": "Saison 2",
       "numero_source": 8,
       "texte_original": "Chacun marche dans la pièce en essayant de trouver une marche sans pattern, ensuite on pointe quelque chose et on dit son nom, on enchaîne. Ensuite on refait le même exercice mais on dit le nom de ce qu’on a pointé juste avant. On peut aussi pointer quelque chose et devoir dire autre chose qui est dans la salle",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les participants marchent dans l’espace en cherchant une démarche naturelle, sans rythme ni trajet répétitif. Chacun pointe un élément de la salle et en dit le nom. Dans un deuxième temps, il pointe un élément mais nomme celui qui avait été pointé juste avant. Variante : pointer un élément et nommer un autre élément présent dans la salle.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Corps",
+      "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Corps",
+        "Énergie",
+        "Amusement",
+        "Imaginaire"
+      ],
+      "remarque_coach": "Aucune"
     },
     {
       "id": "2-9",
@@ -2039,22 +2046,28 @@
       "section": "Saison 2",
       "numero_source": 9,
       "texte_original": "Iya : jeu où on fait passer l’énergie : ô envoie l’énergie d’un côté avec iya, puis on continue à la faire passer du même côté avec iya, en suite pour changer de sens on dit je bloque (position défensive). Ensuite on rajoute le ayi qui fait sauter un joueur, puis on rajoute le je laisse ou on laisse l’énergie au centre et qui veut dit je prends (si plusieurs personnes le disent plusieurs énergies circulent). On peut ajouter de la complexité avec qqun qui dit 1er étage et ça fera un tour où chacun dit un mot pour former une phrase-histoire, si qqun dit 2eme étage alors on fait un tour où chacun dit une phrase pour faire une histoire.",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Le groupe se place en cercle. Un joueur envoie l’énergie dans une direction en disant « Iya » et la transmet au joueur suivant, qui poursuit dans le même sens. Pour changer de sens, un joueur adopte une position défensive et dit « Je bloque ». « Ayi » permet de faire sauter un joueur. Avec « Je laisse », l’énergie est laissée au centre. Un joueur qui veut la récupérer annonce « Je prends ». Plusieurs joueurs peuvent la prendre, ce qui crée plusieurs circulations d’énergie. En niveau avancé, « Premier étage » déclenche un tour où chacun ajoute un mot pour construire une phrase-histoire ; « Deuxième étage » déclenche un tour où chacun ajoute une phrase à l’histoire.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Construction",
+      "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Cohésion",
+        "Construction"
+      ],
+      "remarque_coach": "Aucune"
     },
     {
       "id": "2-10",
@@ -2062,22 +2075,28 @@
       "section": "Saison 2",
       "numero_source": 10,
       "texte_original": "Téléphone arabe : 4 personnes sortent de la salle, pour les personnes restées à l’intérieur on donne un thème (bicyclette par exemple ou théâtre d’ombre). Une des 4 sorties rentre et une des personnes restées dans la salle va mimer une scène de 30 secondes sur ce thème en silence. La personne qui est rentrée va ensuite devoir la refaire au suivant qui va rentrer et ainsi de suite jusqu’au 4eme qui devra expliquer ce qu’il mime en le faisant. Après le premier joueur revient faire son mime en l’expliquant.",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Quatre personnes sortent de la salle. L’animateur donne un thème aux participants restés à l’intérieur, par exemple « bicyclette » ou « théâtre d’ombre ». Le premier participant appelé revient et observe un mime silencieux de 30 secondes réalisé par une personne du groupe. Il doit ensuite reproduire ce mime au participant suivant, qui vient d’entrer, et ainsi de suite jusqu’au quatrième. Le dernier participant doit expliquer ce qu’il mime tout en le faisant. Enfin, le premier mimeur revient et explique son mime initial.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Imaginaire",
+        "Amusement"
+      ],
+      "remarque_coach": "Correct"
     },
     {
       "id": "2-11",
@@ -2085,22 +2104,29 @@
       "section": "Saison 2",
       "numero_source": 11,
       "texte_original": "Machine à mots : deux improvisteurices et deux ou trois machines à mots : les deux acteurs commencent la scène (on donne un thème ex : file d’attente à Disney) et arrête leur phrase à un moment où il touche l’épaule d’un des machinistes qui va immédiatement donner un mot qui doit être immédiatement intégré par le comédien (possibilité d’ajouter un adverbe ou déterminant).",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Deux improvisateurs commencent une scène sur un thème proposé, par exemple « file d’attente à Disney ». À un moment de sa phrase, un comédien touche l’épaule d’une des deux ou trois « machines à mots ». Celle-ci fournit immédiatement un mot, que le comédien doit intégrer de façon fluide à sa phrase ou à la suite de sa réplique. Il peut ajouter un déterminant ou un adverbe pour rendre la phrase correcte, mais le mot imposé doit rester identifiable. La scène continue et les comédiens sollicitent les machines à mots à différents moments, sans casser le rythme de l’improvisation.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Corps",
+      "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Scène",
+        "Imaginaire",
+        "Amusement"
+      ],
+      "remarque_coach": "Oui, mais ça doit être fluide."
     },
     {
       "id": "2-12",
@@ -2108,22 +2134,28 @@
       "section": "Saison 2",
       "numero_source": 12,
       "texte_original": "Cadeau qu’on offre A et B : A offre un cadeau à B, B dit merci et dit ce que c’est, puis on inverse. Deuxième niveau : pareil mais A rajoutera ensuite un détail (physique) au cadeau. 3eme niveau : B ajoutera pourquoi ça va bien avec son personnage",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "En binôme, A offre un cadeau imaginaire à B. B remercie A et annonce ce que représente le cadeau, puis les rôles s’inversent. Au deuxième niveau, A ajoute un détail physique au cadeau. Au troisième niveau, B explique pourquoi ce cadeau correspond bien à son personnage. On progresse par niveaux en gardant la proposition du partenaire et en développant l’imaginaire.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Scène",
+      "objectif_pedagogique": "Imaginaire",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Construction",
+        "Amusement"
+      ],
+      "remarque_coach": "Aucune"
     },
     {
       "id": "2-13",
