@@ -49,6 +49,10 @@ assert.equal(lib.categories_pedagogiques.length,10,'Nombre de catégories pédag
 const categories = ['Énergie','Écoute','Corps','Construction','Scène','Émotions','Amusement','Lâcher-prise','Cohésion','Imaginaire'];
 assert.deepEqual(lib.categories_pedagogiques,categories,'Liste des catégories pédagogiques modifiée');
 assert.ok(!lib.categories_pedagogiques.includes('Concentration'),'Concentration ne doit pas être une catégorie pédagogique');
+for (const e of lib.exercices.filter(item => item.eligible_generateur)) {
+  assert.ok(categories.includes(e.objectif_pedagogique), `Fiche ${e.id}, champ « objectif_pedagogique » : catégorie de génération inconnue « ${e.objectif_pedagogique} »`);
+  assert.ok(!(e.categories_secondaires || []).includes('Concentration'), `Fiche ${e.id}, champ « categories_secondaires » : Concentration est interdite dans les catégories de génération`);
+}
 for (const category of categories) assert.ok(html.includes('<option>'+category+'</option>') && html.includes('"'+category+'"'), 'Catégorie absente du flux : '+category);
 assert.ok(!html.includes('<option>Concentration</option>'),'Catégorie non reconnue encore présente dans le filtre');
 
