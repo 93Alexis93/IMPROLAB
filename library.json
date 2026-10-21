@@ -1874,22 +1874,27 @@
       "section": "Saison 2",
       "numero_source": 3,
       "texte_original": "Charger un personnage : un improvisateur prend une pose puis le second va le charger : nom travail sentiments famille habitude habits démarche ton etc…",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Un improvisateur prend une pose. Un deuxième joueur « charge » progressivement son personnage en lui donnant un nom, un travail, des sentiments, une famille, des habitudes, des vêtements, une démarche, un ton de voix, etc. Pour aider le joueur qui charge, l'animateur peut proposer des débuts de phrases : « Tu t'appelles… », « Tu travailles comme… », « Dans ta famille… », « Tous les matins, tu… », « Tu as toujours l'habitude de… », « Aujourd'hui, tu te sens… », « Tu portes… », « Quand tu marches, tu… », « Quand tu parles, tu… », « Ce que personne ne sait sur toi, c'est… ». Ces amorces sont des propositions d'aide, pas des répliques obligatoires.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Émotions",
+      "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Choisissez une émotion et faites-la comprendre par le corps, la voix et la situation.",
+        "consigne_courte": "Amorces pour charger : « Tu t'appelles… », « Tu travailles comme… », « Dans ta famille… », « Tous les matins, tu… », « Tu as l'habitude de… », « Tu te sens… », « Tu portes… », « Quand tu marches… », « Quand tu parles… », « Ce que personne ne sait sur toi… ».",
         "variante_facile": "Jouer une émotion simple avec une intensité modérée.",
         "variante_difficile": "Faire évoluer progressivement l'émotion pendant la scène.",
         "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+        "statut": "amorce d'animation proposée à la demande du coach"
+      },
+      "categories_secondaires": [
+        "Imaginaire",
+        "Corps",
+        "Scène"
+      ]
     },
     {
       "id": "2-4",
@@ -1897,22 +1902,27 @@
       "section": "Saison 2",
       "numero_source": 4,
       "texte_original": "Tout à fait : un binôme de comédiens va raconter une histoire et dès que l’un a une micro hésitation l’autre le coupe en disant tout à fait Jean pierre et en reprenant la fin de sa phrase",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Deux comédiens racontent une histoire ensemble. Dès que l'un marque une micro-hésitation, l'autre l'interrompt en disant « Tout à fait, Jean-Pierre ! », reprend la fin de sa phrase et poursuit l'histoire. Au prochain moment d'hésitation, le partenaire peut reprendre à son tour la narration. Le jeu repose sur l'écoute et la continuité du récit.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Amusement",
+        "Cohésion"
+      ]
     },
     {
       "id": "2-5",
@@ -1920,22 +1930,28 @@
       "section": "Saison 2",
       "numero_source": 5,
       "texte_original": "Technique pour faire une transition de scène sans roulettes : arriver sur un espace scénique différent (horizontal ou vertical) et commence une scène en ignorant totalement les autres personnages qui doivent comprendre la transition et quitter la scène. Astuce pour rendre la transition sûre, arriver en parlant avec un perso qui n’est pas encore la (un comédien devra alors venir avec le premier)",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
-      "eligible_generateur": true,
+      "regle_clarifiee": "Entraînement technique à la transition de scène sans roulettes, plutôt qu'un exercice autonome. Pendant qu'une scène se joue, un nouveau comédien entre dans un espace scénique différent, horizontalement ou verticalement, et commence une nouvelle scène en ignorant totalement les personnages présents. Ceux-ci comprennent le changement et quittent la scène. Pour sécuriser la transition, le nouvel arrivant peut s'adresser à un personnage encore absent : un autre comédien entre alors pour jouer ce personnage.",
+      "statut": "validée par le coach",
+      "eligible_generateur": false,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Construction",
+        "Corps"
+      ],
+      "type_fiche": "entraînement technique"
     },
     {
       "id": "2-6",
@@ -1943,22 +1959,28 @@
       "section": "Saison 2",
       "numero_source": 6,
       "texte_original": "Jeu du mime, un premier joueur mime au milieu du cercle une action (pêcher un brochet) un autre rentre au milieu se met dans l’action et lui demande tu fais quoi ? L’autre répond complètement autre chose (je suis en train de marier ma fille) et celui qui est venu se met à faire cette action et ainsi de suite",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs forment un cercle. Un premier joueur mime une action au centre, par exemple pêcher un brochet. Un autre le rejoint, se met dans l'action et demande « Tu fais quoi ? » Le premier répond en annonçant une action complètement différente, par exemple « Je suis en train de marier ma fille. » Le nouveau joueur se met alors à mimer cette nouvelle action. Un troisième entre et lui demande à son tour « Tu fais quoi ? » ; le jeu continue de la même manière.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Imaginaire",
+        "Écoute",
+        "Amusement",
+        "Lâcher-prise"
+      ]
     },
     {
       "id": "2-7",
@@ -1966,22 +1988,27 @@
       "section": "Saison 2",
       "numero_source": 7,
       "texte_original": "Un binôme va jouer une scène de deux minutes Tu as l’air fatigué, c’était aujourd’hui, c’est pour ça que tu portes cette tenue, tu sais ce qu’il / elle va en penser",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Un binôme improvise une scène de deux minutes en s'inspirant librement des phrases proposées : « Tu as l'air fatigué », « C'était aujourd'hui », « C'est pour ça que tu portes cette tenue », « Tu sais ce qu'il/elle va en penser ». Les phrases ne sont pas toutes obligatoires et aucun ordre n'est imposé. Les joueurs peuvent utiliser celles qui font avancer leur scène.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Construction",
+        "Écoute",
+        "Imaginaire"
+      ]
     },
     {
       "id": "2-8",
