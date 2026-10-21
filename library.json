@@ -2802,22 +2802,27 @@
       "section": "Saison 2",
       "numero_source": 36,
       "texte_original": "Jeux prénom (pour se connaître) : en cercle on dit tous une fois son prénom, après on doit dire celui de son voisin de gauche, on mélange le cercle on recommence, puis une personne va prendre la place de quelqu’un en disant son nom, celle ci continue etc…. On peut ensuite lancer deux personnes en même temps",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
-      "eligible_generateur": false,
+      "regle_clarifiee": "Le joueur se déplace à la place de la personne dont il annonce le prénom, et cette personne poursuit le jeu.",
+      "statut": "validée par le coach",
+      "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Cohésion",
+        "Énergie"
+      ],
+      "remarque_coach": "Aucune"
     },
     {
       "id": "3-1",
