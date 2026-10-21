@@ -2539,7 +2539,8 @@
       "categories_secondaires": [
         "Cohésion",
         "Écoute",
-        "Corps"
+        "Corps",
+        "Amusement"
       ]
     },
     {
@@ -2661,14 +2662,14 @@
       "numero_source": 31,
       "texte_original": "Compter jusqu’à 7 en se tapant sur l’épaule gauche ou droite pour faire passer l’énergie , le 7 c’est bras dessus dessous et celui du dessus indique la direction. Ensuite le 2 c’est on regarde, puis le 4 avec les pieds. On monte jusqu’à 7 puis on redescend jusqu’à 1",
       "regle_clarifiee": "Le groupe fait circuler l’énergie en comptant jusqu’à 7, puis redescend de 7 à 1. Les joueurs se tapent sur l’épaule gauche ou droite pour faire passer l’énergie. Au 2, ils se regardent ; au 4, ils utilisent les pieds ; au 7, ils se mettent bras dessus dessous et la personne dont le bras est au-dessus indique la direction. Les gestes associés aux autres nombres restent à préciser.",
-      "statut": "proposition à valider",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "proposition à valider",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
@@ -2689,14 +2690,14 @@
       "numero_source": 32,
       "texte_original": "Cube : un binôme décrit les 6 faces d’un lieu (6 faces de cube), le second reprend la face dite par le premier et décrit une seconde faces d’un et ainsi de suite jusqu’au 6 faces",
       "regle_clarifiee": "Deux binômes construisent ensemble un lieu imaginaire en décrivant les six faces d’un cube. Le premier binôme décrit une première face. Le second reprend la face décrite, puis ajoute une deuxième face. Les binômes alternent ainsi, en reprenant les éléments déjà proposés et en ajoutant une nouvelle face, jusqu’à ce que les six faces du cube soient décrites. L’interprétation de « le second » comme un deuxième binôme reste à confirmer.",
-      "statut": "proposition à valider",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "proposition à valider",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
@@ -2716,22 +2717,27 @@
       "section": "Saison 2",
       "numero_source": 33,
       "texte_original": "Binôme A et B, À donne une Relation , B va la colorer, A va donner une routine, et B donner un souvenir",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Deux comédiens improvisent en binôme. A propose une relation entre les personnages, que B vient colorer. A propose ensuite une routine, puis B apporte un souvenir. Le sens précis de « colorer » une relation reste à préciser.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Énergie",
+      "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Imaginaire",
+        "Scène"
+      ]
     },
     {
       "id": "2-34",
@@ -2739,22 +2745,28 @@
       "section": "Saison 2",
       "numero_source": 34,
       "texte_original": "Un comédien est expert de quelque chose (exemple rap des années 70) et va faire une présentation. Le public va lui des contraintes à intégrer (exemple il pleut sur toi, le sol est glissant, un rat passe devant toi, ça te gratte énormément le dos,…)",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Un comédien incarne un expert dans un domaine et en fait une présentation au public. Pendant cette présentation, le public lui impose des contraintes ou des événements imprévus qu’il doit intégrer à son intervention : il pleut sur lui, le sol est glissant, un rat passe devant lui ou son dos le démange énormément.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Énergie",
+      "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Imaginaire",
+        "Corps",
+        "Amusement"
+      ]
     },
     {
       "id": "2-35",
@@ -2762,22 +2774,27 @@
       "section": "Saison 2",
       "numero_source": 35,
       "texte_original": "Création d’une image avec un mot au départ, puis chacun rajoute un mot en cercle et on crée un lieu (le mot peut être une précision d’autre chose ou un nouvel élément)",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "En cercle, le groupe construit collectivement l’image d’un lieu à partir d’un premier mot. À tour de rôle, chaque participant ajoute un mot pour enrichir la description. Ce mot peut préciser un élément déjà évoqué ou introduire un nouvel élément. L’objectif est de faire émerger ensemble un lieu à partir des propositions successives.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Énergie",
+      "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Imaginaire",
+        "Écoute",
+        "Cohésion"
+      ]
     },
     {
       "id": "2-36",
