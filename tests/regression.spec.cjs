@@ -136,3 +136,28 @@ test('timeline souple : cinq étapes et priorité Imaginaire',async({page})=>{
 });
 
 
+test('déplacement et remplacement d’un exercice conservent une séance cohérente',async({page})=>{
+ await openApp(page);
+ await page.getByRole('button',{name:'Générer ma séance'}).click();
+ const cards=page.locator('#plan>.card');
+ await expect(cards).toHaveCount(5);
+ const initial=await cards.locator('h3').allTextContents();
+ await cards.nth(0).getByRole('button',{name:'Descendre exercice 1'}).click();
+ await expect(cards.nth(0).locator('h3')).toHaveText(initial[1]);
+ await expect(cards.nth(1).locator('h3')).toHaveText(initial[0]);
+ await page.evaluate(()=>{Math.random=()=>0});
+ const oldTitle=await cards.nth(0).locator('h3').textContent();
+ await cards.nth(0).getByRole('button',{name:/Remplacer/}).click();
+ const newTitle=(await cards.nth(0).locator('h3').textContent()).trim();
+ expect(newTitle).not.toBe(oldTitle);
+ const replacement=await page.evaluate(title=>{
+  const item=data.find(entry=>entry[0]===title);
+  return item?{eligible:item[6]===true,rule:item[2]}:null;
+ },newTitle);
+ expect(replacement, 'L’exercice remplacé doit appartenir à la bibliothèque').not.toBeNull();
+ expect(replacement.eligible).toBe(true);
+ await expect(cards.nth(0).locator('p').first()).toHaveText(replacement.rule);
+ await reloadApp(page);
+ await expect(page.locator('#plan>.card')).toHaveCount(5);
+ await expect(page.locator('#plan>.card').first().locator('h3')).toHaveText(newTitle);
+});

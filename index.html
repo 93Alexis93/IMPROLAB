@@ -89,8 +89,9 @@ function generate(){
 }
 function update(){let m=Math.floor(remaining/60),s=remaining%60;document.getElementById('timer').textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')}function start(){if(interval){clearInterval(interval);interval=null;return}interval=setInterval(()=>{if(remaining>0){remaining--;update()}else{clearInterval(interval);interval=null;alert('Temps écoulé !')}},1000)}function reset(){clearInterval(interval);interval=null;remaining=Math.max(1,+document.getElementById('mins').value||5)*60;update()}function draw(){let a=['Gare','Forêt','Restaurant','Ascenseur','Bibliothèque','Terrain de foot'],b=['Joie','Panique','Jalousie','Sérénité','Embarras'],c=['Touriste perdu','Prof enthousiaste','Pirate vegan','Magicien nul','Voisin'];let pick=x=>x[Math.floor(Math.random()*x.length)];document.getElementById('draw').textContent=pick(a)+' · '+pick(b)+' · '+pick(c)}
 function persistPlan(){localStorage.setItem('impro-last-plan',document.getElementById('plan').innerHTML);refreshEditor()}
-function isFavorite(name){return JSON.parse(localStorage.getItem('impro-favorites')||'[]').includes(name)}
-function toggleFavorite(i){let name=data[i][0],a=JSON.parse(localStorage.getItem('impro-favorites')||'[]');a=a.includes(name)?a.filter(x=>x!==name):[...a,name];localStorage.setItem('impro-favorites',JSON.stringify(a));renderGames()}
+function readFavorites(){try{const value=JSON.parse(localStorage.getItem('impro-favorites')||'[]');return Array.isArray(value)?value:[]}catch{return[]}}
+function isFavorite(name){return readFavorites().includes(name)}
+function toggleFavorite(i){let name=data[i][0],a=readFavorites();a=a.includes(name)?a.filter(x=>x!==name):[...a,name];try{localStorage.setItem('impro-favorites',JSON.stringify(a))}catch{}renderGames()}
 function planCards(){return Array.from(document.querySelectorAll('#plan>.card')).filter(e=>e.querySelector('h3'))}
 function refreshEditor(){
  let cards=planCards(),sum=0;
