@@ -46,7 +46,11 @@ test('générateur, édition, historique et mode animateur',async ({page})=>{
  await expect(page.locator('#liveProgress')).toContainText('Exercice 2 / 5');
  await page.getByRole('button',{name:/Avant/}).click();
  expect(await page.locator('#liveTitle').textContent()).toBe(first);
- await page.getByRole('button',{name:'+ 1 min'}).click();
+ await page.locator('details.regie-fold summary').click();
+ const liveMinutesBefore=Number(await page.locator('#liveMinutes').inputValue());
+ await page.locator('#liveExtendMinutes').fill('1');
+ await page.getByRole('button',{name:/Prolonger/}).click();
+ expect(Number(await page.locator('#liveMinutes').inputValue())).toBeCloseTo(liveMinutesBefore+1,1);
  await page.locator('#liveStart').click();
  await expect(page.locator('#liveStart')).toContainText('Pause');
  await page.locator('#liveStart').click();

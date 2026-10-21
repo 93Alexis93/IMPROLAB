@@ -110,7 +110,8 @@ test('mode hors ligne : le service worker conserve la bibliothèque après recha
   });
   expect(swReady, 'service worker actif et contrôlant la page').toBe(true);
   await context.setOffline(true);
-  await reloadApp(page);
+  // Navigation vers la même URL : WebKit peut renvoyer une erreur interne à page.reload() hors ligne.
+  await openApp(page);
   await expect(page.locator('#libraryStatus')).toContainText(`${library.exercices.length} exercices`);
   await page.getByRole('button', { name: 'Jeux' }).click();
   expect(await page.locator('#games .card').count()).toBeGreaterThan(0);

@@ -63,7 +63,7 @@ test('générateur respecte la catégorie des cinq étapes',async({page})=>{
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  const labels=await page.locator('#plan>.card small').allTextContents();
  expect(labels).toHaveLength(5);
- expect(labels.map(x=>x.split('·')[1].trim())).toEqual(['Énergie','Écoute','Corps','Construction','Scène']);
+ expect(labels.map(x=>x.split('·')[1].trim())).toEqual(['Mise en énergie','Connexion collective','Exploration','Improvisation','Final collectif']);
 });
 
 test('générateur privilégie les notes personnelles et respecte les étapes',async({page})=>{
@@ -74,8 +74,8 @@ test('générateur privilégie les notes personnelles et respecte les étapes',a
  const labels=await page.locator('#plan>.card small').allTextContents();
  expect(labels).toHaveLength(5);
  expect(labels.every(x=>x.includes('Mes notes'))).toBe(true);
- expect(['Énergie','Corps']).toContain(labels[0].split('·')[1].trim());
- expect(labels.at(-1).split('·')[1].trim()).toBe('Scène');
+ expect(['Mise en énergie','Connexion collective']).toContain(labels[0].split('·')[1].trim());
+ expect(labels.at(-1).split('·')[1].trim()).toBe('Final collectif');
  await page.locator('#includeExternal').check();
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  await expect(page.locator('#plan>.card')).toHaveCount(5);
@@ -95,7 +95,7 @@ test('rotation équitable entre séances consécutives',async({page})=>{
 test('les neuf catégories et les catégories secondaires sont filtrables',async({page})=>{
  await openApp(page);
  
- await page.getByRole('button',{name:'Jeux',exact:true}).click();
+ await page.getByRole('button',{name:'Jeux'}).click();
  const filter=page.locator('#categoryFilter');
  await expect(filter.locator('option')).toHaveCount(10);
  await filter.selectOption('Amusement');
@@ -109,7 +109,7 @@ test('les neuf catégories et les catégories secondaires sont filtrables',async
 test('dix curseurs compacts 0-100, persistance et timeline souple',async({page})=>{
  await openApp(page);
  
- const sliders=page.locator('.dynamic-grid input[type=range]');
+ const sliders=page.locator('#seance .dynamic-grid input[type=range]');
  await expect(sliders).toHaveCount(10);
  for(const slider of await sliders.all()){await expect(slider).toHaveAttribute('max','100');await expect(slider).toHaveAttribute('step','1')}
  await page.locator('#dynamic9').fill('87');
