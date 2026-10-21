@@ -1,8 +1,9 @@
-const {test,expect,devices}=require('@playwright/test');
+const {test,expect}=require('@playwright/test');
+const {openApp,reloadApp,libraryCount,originCount}=require('./helpers.cjs');
 for(const duration of ['45','55','60','90']){
  test('durée exacte '+duration+' min',async({page})=>{
-  await page.goto('/');
-  await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+  await openApp(page);
+  
   await page.locator('#duration').selectOption(duration);
   await page.getByRole('button',{name:'Générer ma séance'}).click();
   await expect(page.locator('#planSummary')).toContainText(duration+' minutes');
@@ -12,12 +13,12 @@ for(const duration of ['45','55','60','90']){
  });
 }
 test('édition, suppression, rechargement, groupe et export',async({page})=>{
- await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await openApp(page);
+ 
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  await page.locator('#plan>.card').last().getByRole('button',{name:'✕'}).click();
  await expect(page.locator('#plan>.card')).toHaveCount(4);
- await page.reload();
+ await reloadApp(page)
  await expect(page.locator('#plan>.card')).toHaveCount(4);
  const downloadPromise=page.waitForEvent('download');
  await page.getByRole('button',{name:/Exporter la séance/}).click();
@@ -32,8 +33,8 @@ test('édition, suppression, rechargement, groupe et export',async({page})=>{
  for(let i=1;i<=13;i++)expect(content).toContain('Élève '+i);
 });
 test('navigation clavier du mode animateur',async({page})=>{
- await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await openApp(page);
+ 
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  await page.getByRole('button',{name:/Animateur/}).click();
  await page.locator('body').click({position:{x:5,y:5}});
@@ -44,20 +45,20 @@ test('navigation clavier du mode animateur',async({page})=>{
 });
 
 test('filtres bibliothèque par origine et objectif',async({page})=>{
- await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await openApp(page);
+ 
  await page.getByRole('button',{name:'Jeux'}).click();
  await page.locator('#sourceFilter').selectOption('recherche_web');
- await expect(page.locator('#games .card')).toHaveCount(17);
+ await expect(page.locator('#games .card')).toHaveCount(originCount('recherche_web'));
  await page.locator('#sourceFilter').selectOption('notes_personnelles');
- await expect(page.locator('#games .card')).toHaveCount(105);
+ await expect(page.locator('#games .card')).toHaveCount(originCount('notes_personnelles'));
  await page.locator('#categoryFilter').selectOption('Écoute');
  await expect(page.locator('#games .card').first()).toBeVisible();
  const n=await page.locator('#games .card').count();expect(n).toBeGreaterThan(0);expect(n).toBeLessThan(105);
 });
 test('générateur respecte la catégorie des cinq étapes',async({page})=>{
- await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await openApp(page);
+ 
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  const labels=await page.locator('#plan>.card small').allTextContents();
  expect(labels).toHaveLength(5);
@@ -65,8 +66,8 @@ test('générateur respecte la catégorie des cinq étapes',async({page})=>{
 });
 
 test('générateur privilégie les notes personnelles et respecte les étapes',async({page})=>{
- await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await openApp(page);
+ 
  await expect(page.locator('#includeExternal')).not.toBeChecked();
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  const labels=await page.locator('#plan>.card small').allTextContents();
@@ -79,8 +80,8 @@ test('générateur privilégie les notes personnelles et respecte les étapes',a
  await expect(page.locator('#plan>.card')).toHaveCount(5);
 });
 test('rotation équitable entre séances consécutives',async({page})=>{
- await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await openApp(page);
+ 
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  const first=await page.locator('#plan>.card h3').allTextContents();
  await page.getByRole('button',{name:'Générer ma séance'}).click();
@@ -91,8 +92,8 @@ test('rotation équitable entre séances consécutives',async({page})=>{
 });
 
 test('les neuf catégories et les catégories secondaires sont filtrables',async({page})=>{
- await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await openApp(page);
+ 
  await page.getByRole('button',{name:'Jeux',exact:true}).click();
  const filter=page.locator('#categoryFilter');
  await expect(filter.locator('option')).toHaveCount(10);
@@ -105,14 +106,14 @@ test('les neuf catégories et les catégories secondaires sont filtrables',async
 });
 
 test('dix curseurs compacts 0-100, persistance et timeline souple',async({page})=>{
- await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await openApp(page);
+ 
  const sliders=page.locator('.dynamic-grid input[type=range]');
  await expect(sliders).toHaveCount(10);
  for(const slider of await sliders.all()){await expect(slider).toHaveAttribute('max','100');await expect(slider).toHaveAttribute('step','1')}
  await page.locator('#dynamic9').fill('87');
  await expect(page.locator('#dynamicValue9')).toHaveText('87 %');
- await page.reload();
+ await reloadApp(page)
  await expect(page.locator('#dynamic9')).toHaveValue('87');
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  await expect(page.locator('#plan>.card')).toHaveCount(5);
@@ -122,8 +123,8 @@ test('dix curseurs compacts 0-100, persistance et timeline souple',async({page})
 });
 
 test('timeline souple : cinq étapes et priorité Imaginaire',async({page})=>{
- await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await openApp(page);
+ 
  await page.locator('#dynamic9').fill('100');
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  await expect(page.locator('#plan>.card')).toHaveCount(5);
