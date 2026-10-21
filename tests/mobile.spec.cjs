@@ -1,16 +1,13 @@
 const { test, expect } = require('@playwright/test');
+const {openApp,reloadApp,libraryCount}=require('./helpers.cjs');
 test.beforeEach(async ({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto('http://127.0.0.1:8765/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices',{timeout:15000});
- await page.evaluate(()=>localStorage.clear());
- await page.reload();
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices',{timeout:15000});
+ await openApp(page);
  page.__errors=errors;
 });
 test('bibliothèque, favoris, recherche et échappement',async ({page})=>{
  await page.getByRole('button',{name:'Jeux'}).click();
- await expect(page.locator('#games .card')).toHaveCount(122);
+ await expect(page.locator('#games .card')).toHaveCount(libraryCount);
  await page.locator('#search').fill('Objets en dix secondes');
  await expect(page.locator('#games .card').first()).toContainText('Objets en dix secondes');
  await page.locator('#games .favorite').first().click();
@@ -34,19 +31,26 @@ test('générateur, édition, historique et mode animateur',async ({page})=>{
  await page.locator('#plan .card').first().getByRole('button',{name:/Descendre exercice/}).click();
  const moved=await page.locator('#plan>.card h3').allTextContents();
  expect(moved[1]).toBe(before[0]);
+ const beforeReplace=await page.locator('#plan>.card h3').nth(0).textContent();
  await page.locator('#plan .card').first().getByRole('button',{name:'🔄 Remplacer'}).click();
+ const afterReplace=await page.locator('#plan>.card h3').nth(0).textContent();
+ expect(afterReplace).not.toBe(beforeReplace);
  await page.getByRole('button',{name:'Enregistrer'}).click();
  await page.getByRole('button',{name:'Historique'}).click();
  await expect(page.locator('#historyResult .card')).toHaveCount(1);
  await page.getByRole('button',{name:'Réutiliser'}).click();
- await page.getByRole('button',{name:/Animateur/}).click();
+ await page.getByRole('button',{name:/Régie d’impro|Animateur/}).click();
  await expect(page.locator('#liveProgress')).toContainText('Exercice 1 / 5');
  const first=await page.locator('#liveTitle').textContent();
- await page.getByRole('button',{name:/Suivant/}).click();
+ await page.getByRole('button',{name:/Suite/}).click();
  await expect(page.locator('#liveProgress')).toContainText('Exercice 2 / 5');
- await page.getByRole('button',{name:/Précédent/}).click();
+ await page.getByRole('button',{name:/Avant/}).click();
  expect(await page.locator('#liveTitle').textContent()).toBe(first);
- await page.getByRole('button',{name:'+ 1 min'}).click();
+ await page.locator('#live details.regie-fold summary').filter({hasText:'Prolongation'}).click();
+ const liveMinutesBefore=Number(await page.locator('#liveMinutes').inputValue());
+ await page.locator('#liveExtendMinutes').fill('1');
+ await page.getByRole('button',{name:/Prolonger/}).click();
+ expect(Number(await page.locator('#liveMinutes').inputValue())).toBeCloseTo(liveMinutesBefore+1,1);
  await page.locator('#liveStart').click();
  await expect(page.locator('#liveStart')).toContainText('Pause');
  await page.locator('#liveStart').click();
@@ -55,7 +59,7 @@ test('générateur, édition, historique et mode animateur',async ({page})=>{
 });
 test('glissement tactile et absence de débordement',async ({page})=>{
  await page.getByRole('button',{name:'Générer ma séance'}).click();
- await page.getByRole('button',{name:/Animateur/}).click();
+ await page.getByRole('button',{name:/Régie d’impro|Animateur/}).click();
  const area=page.locator('#liveClock');const box=await area.boundingBox();
  await page.touchscreen.tap(box.x+box.width/2,box.y+box.height/2);
  await page.evaluate(()=>{const e=document.querySelector('#liveClock'),r=e.getBoundingClientRect();const point=x=>({clientX:x,clientY:r.top+20});const fire=(type,properties)=>{const event=new Event(type,{bubbles:true});for(const [key,value] of Object.entries(properties))Object.defineProperty(event,key,{value});e.dispatchEvent(event)};fire('touchstart',{touches:[point(r.right-10)]});fire('touchend',{changedTouches:[point(r.left+10)]});});
