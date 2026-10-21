@@ -6,7 +6,7 @@ const assert = require('node:assert/strict');
 const html = fs.readFileSync('index.html', 'utf8');
 const lib = JSON.parse(fs.readFileSync('library.json', 'utf8'));
 const baseline = JSON.parse(fs.readFileSync('tests/library.baseline.json', 'utf8'));
-const script = html.match(/<script>([\\s\\S]*?)<\\/script>/)?.[1];
+const script = html.split('<script>')[1]?.split('</script>')[0];
 
 assert.ok(script, 'Script absent');
 new Function(script);
@@ -32,8 +32,9 @@ for (const e of lib.exercices) {
   assert.equal(typeof e.eligible_generateur, 'boolean', `Fiche ${e.id}, champ « eligible_generateur » : booléen attendu`);
 }
 assert.ok(lib.exercices.some(e => e.eligible_generateur), 'Le générateur ne possède aucune fiche éligible');
-const timeProfiles = script.match(/const times=\\{([^}]+)\\}/)?.[1] || '';
-for (const duration of [45,55,60,90]) assert.ok(new RegExp('(?:^|,)'+duration+':\\\\[').test(timeProfiles), 'Profil '+duration+' min absent');
+const timeStart = script.indexOf('const times={');
+const timeProfiles = timeStart < 0 ? '' : script.slice(timeStart + 'const times={'.length, script.indexOf('}', timeStart));
+for (const duration of [45,55,60,90]) assert.ok(timeProfiles.includes(duration+':['), 'Profil '+duration+' min absent');
 for (const feature of ['touchstart','touchend','Date.now()-liveAnchor','impro-favorites','impro-recent-games','serviceWorker.register','planSummary']) assert.ok(html.includes(feature), 'Fonction manquante : '+feature);
 const manifest = JSON.parse(fs.readFileSync('manifest.webmanifest','utf8'));
 assert.equal(manifest.display,'standalone','Manifest : champ « display » doit valoir standalone');
