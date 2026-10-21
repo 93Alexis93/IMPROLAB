@@ -11,14 +11,15 @@ permissions:
   contents: read
 jobs:
   static:
-    name: Contrôles statiques et bibliothèque
+    name: Contrôles statiques, bibliothèque et intégrité des fiches
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: node tests/check.cjs
+      - name: Contrôles statiques et intégrité des fiches
+        run: node tests/check.cjs
   browser:
     name: Tests navigateur mobile
     runs-on: ubuntu-latest
@@ -28,9 +29,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Installer Playwright
+      - name: Installer Playwright épinglé
         run: npm install --no-save @playwright/test@1.56.1
-      - name: Installer Chromium
+      - name: Installer Chromium et WebKit
         run: npx playwright install --with-deps chromium webkit
       - name: Tests tactiles et fonctionnels
         run: npx playwright test
