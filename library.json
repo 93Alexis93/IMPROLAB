@@ -2520,38 +2520,15 @@
       "section": "Saison 2",
       "numero_source": 26,
       "texte_original": "Maison créature inondations",
-      "regle_clarifiee": "Des trios forment une maison (deux joueurs) abritant une créature (troisième joueur). Un ou deux joueurs restent libres. À « Maison », les maisons changent ; à « Créature », les créatures changent de maison ; à « Inondations », tous reforment des trios. Modalité précise du déplacement des maisons à confirmer.",
-      "statut": "clarifié",
+      "regle_clarifiee": "Les joueurs forment des groupes : deux personnes constituent une maison et se tiennent face à face, bras tendus, en jonglant avec les mains ; la créature se place sous leurs bras. À « Maison », les maisons changent de place. À « Créature », toutes les créatures changent de maison. À « Inondations », les maisons se défont et les joueurs reforment des groupes. Les joueurs libres profitent d’un changement pour entrer simplement dans un groupe.",
+      "statut": "validée par le coach",
       "eligible_generateur": false,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "clarifiée",
-      "conseils_animation": {
-        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
-        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
-        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
-        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
-    },
-    {
-      "id": "2-27",
-      "titre": "Expert du dictionnaire",
-      "section": "Saison 2",
-      "numero_source": 27,
-      "texte_original": "Expert du dictionnaire de l’académie",
-      "regle_clarifiee": "Jusqu’à six joueurs se mettent en ligne. L’animateur donne un mot inconnu et chacun improvise une définition.",
-      "statut": "clarifié",
-      "eligible_generateur": true,
-      "duree_minutes": 8,
-      "origine": "notes_personnelles",
-      "objectif_pedagogique": "Imaginaire",
-      "niveau": "à évaluer",
-      "effectif_conseille": "à évaluer",
-      "qualite_fiche": "clarifiée",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
@@ -2560,7 +2537,37 @@
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "categories_secondaires": [
-        "Énergie"
+        "Cohésion",
+        "Écoute",
+        "Corps"
+      ]
+    },
+    {
+      "id": "2-27",
+      "titre": "Expert du dictionnaire",
+      "section": "Saison 2",
+      "numero_source": 27,
+      "texte_original": "Expert du dictionnaire de l’académie",
+      "regle_clarifiee": "Jusqu’à six joueurs se mettent en ligne. L’animateur donne un mot inconnu et chacun improvise une définition, comme s’il était un expert du dictionnaire.",
+      "statut": "validée par le coach",
+      "eligible_generateur": true,
+      "duree_minutes": 8,
+      "origine": "notes_personnelles",
+      "objectif_pedagogique": "Imaginaire",
+      "niveau": "à évaluer",
+      "effectif_conseille": "à évaluer",
+      "qualite_fiche": "clarifiée avec le coach",
+      "conseils_animation": {
+        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
+        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Construction",
+        "Amusement"
       ]
     },
     {
@@ -2569,22 +2576,27 @@
       "section": "Saison 2",
       "numero_source": 28,
       "texte_original": "Histoire en cercle il était une fois tous les jours mais un jour à cause de ça grâce à ça depuis cercle jour, après on crante avec 3 tous les jours",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs sont en cercle et construisent une histoire collective en s’appuyant sur des amorces : « Il était une fois… », « Tous les jours… », « Mais un jour… », « À cause de ça… », « Grâce à ça… ». Ils poursuivent le récit à tour de rôle et peuvent terminer par une morale. La note originale mentionne aussi « depuis » et une variante autour de « tous les jours » par groupes de trois, dont le fonctionnement reste à préciser.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Imaginaire",
+        "Cohésion"
+      ]
     },
     {
       "id": "2-29",
@@ -2592,22 +2604,27 @@
       "section": "Saison 2",
       "numero_source": 29,
       "texte_original": "En binôme : l’un fait un mimé l’autre dit ah c’est cool que tu fasses ça le premier valide en commençant à construire le deuxième continue la construction et on stop",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Les joueurs se mettent par deux. Le premier mime une action. Le deuxième annonce clairement l’action qu’il pense avoir comprise, par exemple : « Ah, c’est cool, tu … ! ». Le premier valide cette proposition en poursuivant et en construisant l’action ; le deuxième continue ensuite la construction à son tour. L’exercice s’arrête après un temps défini par l’animateur.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Construction",
+        "Cohésion"
+      ]
     },
     {
       "id": "2-30",
@@ -2615,22 +2632,27 @@
       "section": "Saison 2",
       "numero_source": 30,
       "texte_original": "Poser une plate-forme : Qui qui ou quand quoi quoi ou en binôme le premier À dit qui il est, le deuxième B qui il est pour l’autre, À dit où ils sont, B dit quand (heure journée, événement), A dit ce qu’il fait et B dit ce qu’il fait (ensuite on peut lancer une IMPRo sur l’action de départ et les deux acteurs doivent redire tout ça dans la scène ou alors faire une coupe du monde de la plateforme",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "En binôme, les joueurs construisent une plate-forme en définissant successivement les éléments de la situation : A dit qui il est ; B dit qui il est pour A ; A précise où ils sont ; B précise quand (heure, moment de la journée ou événement) ; puis A et B indiquent chacun ce qu’ils font. Ils peuvent ensuite improviser à partir de l’action de départ et réintégrer ces éléments dans la scène. Variante « Coupe du monde de la plate-forme » : chaque binôme essaie de créer le plus de plates-formes possible le plus rapidement possible ; chaque personnage peut donner autant d’éléments qu’il veut.",
+      "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Construction",
+        "Écoute",
+        "Imaginaire"
+      ]
     },
     {
       "id": "2-31",
@@ -2638,22 +2660,27 @@
       "section": "Saison 2",
       "numero_source": 31,
       "texte_original": "Compter jusqu’à 7 en se tapant sur l’épaule gauche ou droite pour faire passer l’énergie , le 7 c’est bras dessus dessous et celui du dessus indique la direction. Ensuite le 2 c’est on regarde, puis le 4 avec les pieds. On monte jusqu’à 7 puis on redescend jusqu’à 1",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Le groupe fait circuler l’énergie en comptant jusqu’à 7, puis redescend de 7 à 1. Les joueurs se tapent sur l’épaule gauche ou droite pour faire passer l’énergie. Au 2, ils se regardent ; au 4, ils utilisent les pieds ; au 7, ils se mettent bras dessus dessous et la personne dont le bras est au-dessus indique la direction. Les gestes associés aux autres nombres restent à préciser.",
+      "statut": "proposition à valider",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "proposition à valider",
       "conseils_animation": {
         "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Corps",
+        "Cohésion",
+        "Énergie"
+      ]
     },
     {
       "id": "2-32",
@@ -2661,22 +2688,27 @@
       "section": "Saison 2",
       "numero_source": 32,
       "texte_original": "Cube : un binôme décrit les 6 faces d’un lieu (6 faces de cube), le second reprend la face dite par le premier et décrit une seconde faces d’un et ainsi de suite jusqu’au 6 faces",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
+      "regle_clarifiee": "Deux binômes construisent ensemble un lieu imaginaire en décrivant les six faces d’un cube. Le premier binôme décrit une première face. Le second reprend la face décrite, puis ajoute une deuxième face. Les binômes alternent ainsi, en reprenant les éléments déjà proposés et en ajoutant une nouvelle face, jusqu’à ce que les six faces du cube soient décrites. L’interprétation de « le second » comme un deuxième binôme reste à confirmer.",
+      "statut": "proposition à valider",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
-      "objectif_pedagogique": "Énergie",
+      "objectif_pedagogique": "Construction",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "proposition à valider",
       "conseils_animation": {
         "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Imaginaire",
+        "Écoute",
+        "Cohésion"
+      ]
     },
     {
       "id": "2-33",
