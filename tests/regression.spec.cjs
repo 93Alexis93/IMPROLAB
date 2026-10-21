@@ -54,7 +54,7 @@ test('filtres bibliothèque par origine et objectif',async({page})=>{
  await expect(page.locator('#games .card')).toHaveCount(originCount('notes_personnelles'));
  await page.locator('#categoryFilter').selectOption('Écoute');
  await expect(page.locator('#games .card').first()).toBeVisible();
- const n=await page.locator('#games .card').count();expect(n).toBeGreaterThan(0);expect(n).toBeLessThan(105);
+ const n=await page.locator('#games .card').count();expect(n).toBeGreaterThan(0);expect(n).toBeLessThan(originCount('notes_personnelles'));
 });
 test('générateur respecte la catégorie des cinq étapes',async({page})=>{
  await openApp(page);
