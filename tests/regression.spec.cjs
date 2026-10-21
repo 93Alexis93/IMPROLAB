@@ -156,7 +156,7 @@ test('déplacement et remplacement d’un exercice conservent une séance cohér
  },newTitle);
  expect(replacement, 'L’exercice remplacé doit appartenir à la bibliothèque').not.toBeNull();
  expect(replacement.eligible).toBe(true);
- await expect(cards.nth(0).locator('p')).toHaveText(replacement.rule);
+ await expect(cards.nth(0).locator('p').first()).toHaveText(replacement.rule);
  await reloadApp(page);
  await expect(page.locator('#plan>.card')).toHaveCount(5);
  await expect(page.locator('#plan>.card').first().locator('h3')).toHaveText(newTitle);
