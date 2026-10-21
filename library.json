@@ -3508,6 +3508,18 @@
       "detail": "En improvisant, un comédien mobilise simultanément trois fonctions complémentaires. L’auteur imagine et construit l’histoire : les événements, les relations, les rebondissements et l’évolution du récit. Le metteur en scène pense à la dimension visuelle : l’espace, les déplacements, les postures, les images créées sur scène et le décor imaginaire. L’acteur incarne son personnage : il lui donne une voix, un corps, des émotions, des intentions et une manière singulière d’agir. Le comédien apprend à faire vivre ces trois dimensions ensemble, sans que l’une prenne toute la place. Il ne s’agit pas de réfléchir longuement à chacune, mais de développer des réflexes qui permettent de raconter une histoire, de créer des images et d’incarner un personnage en même temps.",
       "nature": "principe général",
       "origine": "notes_personnelles"
+    },
+    {
+      "titre": "Les balances entre groupes sur scène",
+      "texte_original": "IMPRo libre : pour les balances ne pas se mettre sur le même plan ni se regarder dans les yeux. Exemple si je joue un géant qui regarde des tous petits on se mets comme pour les balances sur deux espaces différents et on ne se regarde pas en jouant, le public comprendra",
+      "detail": "Lorsqu’il y a deux groupes de comédiens sur scène, il faut gérer leur placement et leur présence pour éviter que le public pense que les deux groupes sont liés. Pour cela, on peut jouer sur les plans de scène et éviter les regards directs entre les groupes. La balance sonore est également très importante : il faut maîtriser le volume de chaque groupe pour préserver la lisibilité de la scène.",
+      "nature": "principe général",
+      "origine": "notes_personnelles",
+      "objectif_pedagogique": "Scène",
+      "categories_secondaires": [
+        "Corps",
+        "Écoute"
+      ]
     }
   ]
 }
