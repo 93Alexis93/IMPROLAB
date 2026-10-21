@@ -899,6 +899,7 @@ function drawSaveEditor(){const k=Object.keys(DRAW_DEFAULTS)[Number(document.get
 function drawResetEditor(){const k=Object.keys(DRAW_DEFAULTS)[Number(document.getElementById('drawEditCategory').value)||0];drawLists[k]=[...DRAW_DEFAULTS[k]];try{localStorage.setItem('impro-draw-lists-v4',JSON.stringify(drawLists))}catch{}drawShowEditor();document.getElementById('drawEditStatus').textContent='Liste par défaut restaurée.'}
 
 initDynamics();
+initRandomDynamics();
 rosterLoad();
 drawInit();
 loadLibrary();
