@@ -3480,6 +3480,20 @@
       "detail": "Un personnage s’adresse directement au public, à l’écart de la conversation que les autres personnages sont en train d’avoir. Il peut partager une pensée, un secret, une réaction ou un commentaire que les autres personnages n’entendent pas. Cette technique crée une complicité avec le public et peut produire un décalage comique ou dramatique entre ce que le personnage montre aux autres et ce qu’il révèle au public.",
       "nature": "principe général",
       "origine": "notes_personnelles"
+    },
+    {
+      "titre": "Décrire ce qui se passe dans la tête d’un personnage",
+      "texte_original": "Décrire ce qu’il se passe dans la tête d’un personnage",
+      "detail": "Un comédien qui n’est pas présent dans la scène intervient pour exprimer ce qui se passe dans la tête du personnage joué par un autre comédien.",
+      "nature": "technique d’improvisation",
+      "origine": "notes_personnelles"
+    },
+    {
+      "titre": "Think Painting",
+      "texte_original": "think painting",
+      "detail": "Règle de l’improvisation utilisée comme exercice pour s’entraîner et gagner en profondeur de jeu.",
+      "nature": "technique d’improvisation",
+      "origine": "notes_personnelles"
     }
   ]
 }
