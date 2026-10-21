@@ -114,8 +114,11 @@ test('mode hors ligne : la bibliothèque reste accessible via le cache du servic
     // WebKit Playwright renvoie une erreur interne sur la navigation principale hors ligne,
     // même vers index.html précaché. On vérifie alors directement le repli cache du SW.
     const cachedCount = await page.evaluate(async () => {
-      const response = await fetch('./library.json?offline-cache-probe', { cache: 'no-store' });
-      if (!response.ok) return -1;
+      const cacheName = (await caches.keys()).find(name => name.startsWith('impro-lab-offline-'));
+      if (!cacheName) return -1;
+      const cache = await caches.open(cacheName);
+      const response = await cache.match(new URL('./library.json', location.href).href, { ignoreSearch: true });
+      if (!response) return -1;
       const payload = await response.json();
       return Array.isArray(payload.exercices) ? payload.exercices.length : -1;
     });
