@@ -11,11 +11,12 @@ async function submitImport(page, payload, filename = 'session.json') {
 }
 async function expectImportAlert(page, payload, expectedMessage) {
   const dialogPromise = page.waitForEvent('dialog');
-  await submitImport(page, payload);
+  const submitPromise = submitImport(page, payload);
   const dialog = await dialogPromise;
   expect(dialog.type()).toBe('alert');
   expect(dialog.message()).toContain(expectedMessage);
   await dialog.accept();
+  await submitPromise;
 }
 
 test('import hostile : HTML actif rendu comme texte, sans exécution', async ({ page }) => {
@@ -111,5 +112,6 @@ test('mode hors ligne : le service worker conserve la bibliothèque après recha
   await context.setOffline(true);
   await reloadApp(page);
   await expect(page.locator('#libraryStatus')).toContainText(`${library.exercices.length} exercices`);
+  await page.getByRole('button', { name: 'Jeux' }).click();
   expect(await page.locator('#games .card').count()).toBeGreaterThan(0);
 });

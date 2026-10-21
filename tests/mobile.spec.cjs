@@ -31,7 +31,10 @@ test('générateur, édition, historique et mode animateur',async ({page})=>{
  await page.locator('#plan .card').first().getByRole('button',{name:/Descendre exercice/}).click();
  const moved=await page.locator('#plan>.card h3').allTextContents();
  expect(moved[1]).toBe(before[0]);
+ const beforeReplace=await page.locator('#plan>.card h3').nth(0).textContent();
  await page.locator('#plan .card').first().getByRole('button',{name:'🔄 Remplacer'}).click();
+ const afterReplace=await page.locator('#plan>.card h3').nth(0).textContent();
+ expect(afterReplace).not.toBe(beforeReplace);
  await page.getByRole('button',{name:'Enregistrer'}).click();
  await page.getByRole('button',{name:'Historique'}).click();
  await expect(page.locator('#historyResult .card')).toHaveCount(1);
