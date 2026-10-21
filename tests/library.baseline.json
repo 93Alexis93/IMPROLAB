@@ -2247,5 +2247,9 @@
     "schema_version": "b83db121bd629895e9b3c8de3d5a3d21ff7ae9ee29b79466aedc2a6a72957990",
     "source": "d154a9a9fbb1c6140755a108414c9a6f4d6840af51498914686589f61e3a79a6",
     "sources_externes": "102fe0f687fd3ed69d98172d41038adf63223174b80f91f3f8e1d1f09cf34706"
+  },
+  "comptages_origine": {
+    "notes_personnelles": 105,
+    "recherche_web": 17
   }
 }

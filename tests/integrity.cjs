@@ -20,7 +20,9 @@ function snapshot(library) {
   }
   const sections_hors_fiches = {};
   for (const key of Object.keys(library).sort()) if (key !== 'exercices') sections_hors_fiches[key] = sha(library[key]);
-  return {version:1, nombre_fiches:library.exercices.length, ordre_ids:sha(library.exercices.map(e=>e.id)), fiches, sections_hors_fiches, duplicate_ids:[...duplicates].sort()};
+  const comptages_origine = {};
+  for (const exercice of library.exercices) { const origin = exercice.origine || '(absente)'; comptages_origine[origin] = (comptages_origine[origin] || 0) + 1; }
+  return {version:1, nombre_fiches:library.exercices.length, ordre_ids:sha(library.exercices.map(e=>e.id)), fiches, sections_hors_fiches, comptages_origine:Object.fromEntries(Object.entries(comptages_origine).sort(([a],[b])=>a.localeCompare(b))), duplicate_ids:[...duplicates].sort()};
 }
 function main() {
   const library = JSON.parse(fs.readFileSync(LIBRARY_PATH, 'utf8'));
@@ -36,6 +38,7 @@ function main() {
   for (const id of current.duplicate_ids) errors.push(`Fiche ${id} : identifiant dupliqué dans library.json`);
   if (reference.nombre_fiches !== current.nombre_fiches) errors.push(`Nombre de fiches : référence ${reference.nombre_fiches}, actuel ${current.nombre_fiches}`);
   if (reference.ordre_ids !== current.ordre_ids) errors.push('Ordre ou liste des identifiants modifié');
+  if (JSON.stringify(reference.comptages_origine) !== JSON.stringify(current.comptages_origine)) errors.push('Répartition des fiches par origine modifiée');
   for (const key of new Set([...Object.keys(reference.sections_hors_fiches),...Object.keys(current.sections_hors_fiches)]))
     if (reference.sections_hors_fiches[key] !== current.sections_hors_fiches[key]) errors.push(`Section hors fiches « ${key} » : ajoutée, supprimée ou modifiée`);
   for (const id of new Set([...Object.keys(reference.fiches),...Object.keys(current.fiches)])) {
@@ -47,7 +50,7 @@ function main() {
       errors.push(`Fiche ${id}, champ « ${key} » : ${change}`);
     }
   }
-  if (errors.length) { console.error(`INTÉGRITÉ ÉCHOUÉE (${errors.length} écart(s)) :\\n - ${errors.join('\\n - ')}`); process.exitCode=1; return; }
+  if (errors.length) { console.error(`INTÉGRITÉ ÉCHOUÉE (${errors.length} écart(s)) :\n - ${errors.join('\n - ')}`); process.exitCode=1; return; }
   console.log(`Intégrité OK : ${current.nombre_fiches} fiches, ${Object.keys(current.sections_hors_fiches).length} sections hors fiches ; tous les champs et leur ordre sont protégés.`);
 }
 try { main(); } catch(error) { console.error('Contrôle d’intégrité impossible :',error.message); process.exitCode=1; }
