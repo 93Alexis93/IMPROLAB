@@ -2210,7 +2210,7 @@
       },
       "categories_secondaires": [
         "Cohésion",
-        "Concentration",
+        "Écoute",
         "Construction"
       ],
       "remarque_coach": "Aucune"
@@ -2322,7 +2322,7 @@
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "categories_secondaires": [
-        "Concentration",
+        "Écoute",
         "Cohésion"
       ],
       "remarque_coach": "Aucune"
@@ -3649,7 +3649,10 @@
         "Rituel",
         "Tempête",
         "Masque",
-        "Refuge"
+        "Refuge",
+        "Transmission",
+        "Crépitement",
+        "Mirage"
       ]
     }
   }
