@@ -1,0 +1,57 @@
+name: Vérification IMPRO LAB
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '17 6 * * 1'
+permissions:
+  contents: read
+jobs:
+  static:
+    name: Contrôles statiques et intégrité
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Vérifier la syntaxe Node des tests
+        run: for file in tests/*.cjs; do node --check "$file"; done
+      - name: Afficher l’empreinte SHA-256 courante de library.json
+        run: sha256sum library.json
+      - name: Contrôles structurels et catégories
+        run: node tests/check.cjs
+      - name: Intégrité exhaustive de la bibliothèque
+        run: node tests/integrity.cjs
+  browser:
+    name: Tests navigateur — ${{ matrix.project }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [iPhone-Chromium, iPhone-WebKit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Installer Playwright épinglé
+        run: npm install --no-save @playwright/test@1.56.1
+      - name: Installer les navigateurs
+        run: npx playwright install --with-deps chromium webkit
+      - name: Tests navigateur et détection des tests instables
+        run: npx playwright test --project="${{ matrix.project }}" --fail-on-flaky-tests
+      - name: Conserver les preuves en cas d’échec
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: preuves-tests-impro-lab-${{ matrix.project }}
+          path: |
+            test-results/
+            playwright-report/
+          if-no-files-found: ignore
+          retention-days: 14

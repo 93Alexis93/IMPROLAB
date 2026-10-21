@@ -1,4 +1,95 @@
-const fs=require('node:fs');const assert=require('node:assert/strict');const html=fs.readFileSync('index.html','utf8');const lib=JSON.parse(fs.readFileSync('library.json','utf8'));const script=html.match(/<script>([\s\S]*?)<\/script>/)?.[1];assert.ok(script,'Script absent');new Function(script);assert.equal(lib.exercices.length,122);assert.equal(new Set(lib.exercices.map(e=>e.id)).size,lib.exercices.length,'Tous les identifiants doivent être uniques');assert.ok(lib.exercices.filter(e=>e.origine==='notes_personnelles'&&e.regle_clarifiee).length>=22);assert.ok(lib.exercices.every(e=>typeof e.texte_original==='string'));for(const fn of ['generate','refreshEditor','moveExercise','changeMinutes','replaceExercise','removeExercise','exportSession','importSession','liveNext','livePrevious','liveToggle','loadLibrary'])assert.ok(script.includes('function '+fn+'('),'Fonction manquante : '+fn);for(const name of ['seance','jeux','groupes','historique','live'])assert.ok(html.includes('id="'+name+'"')); for(const name of ['principes','cahier','random','public','plan','manualGame','libraryStatus','liveStart','randomExerciseUse'])assert.ok(html.includes('id="'+name+'"'));for(const f of ['sw.js','manifest.webmanifest','icon.svg'])assert.ok(fs.existsSync(f));assert.ok(lib.exercices.every(e=>e.id&&e.titre&&typeof e.eligible_generateur==='boolean'),'Fiches mal formées');assert.ok(lib.exercices.some(e=>e.eligible_generateur),'Générateur sans exercices');const timeProfiles=script.match(/const times=\{([^}]+)\}/)?.[1]||'';for(const d of [45,55,60,90])assert.ok(new RegExp('(?:^|,)'+d+':\\[').test(timeProfiles),'Profil '+d+' min absent');for(const feature of ['touchstart','touchend','Date.now()-liveAnchor','impro-favorites','impro-recent-games','serviceWorker.register','planSummary'])assert.ok(html.includes(feature),'Fonction manquante : '+feature);const manifest=JSON.parse(fs.readFileSync('manifest.webmanifest','utf8'));assert.equal(manifest.display,'standalone');assert.ok(fs.readFileSync('sw.js','utf8').includes('library.json'));assert.equal(lib.exercices.filter(e=>e.origine==='notes_personnelles').length,105);assert.equal(lib.exercices.filter(e=>e.origine==='recherche_web').length,17);for(const e of lib.exercices){assert.ok(e.conseils_animation,'Conseils manquants: '+e.id);for(const k of ['consigne_courte','variante_facile','variante_difficile','points_vigilance','statut'])assert.ok(e.conseils_animation[k],'Conseil incomplet '+e.id+': '+k)}assert.ok(html.includes('Fiche animateur'),'Fiches animateur absentes');assert.equal(lib.categories_pedagogiques.length,10);for(const c of lib.categories_pedagogiques)assert.ok(html.includes('<option>'+c+'</option>')&&html.includes('"'+c+'"'),'Catégorie absente du flux : '+c);assert.ok(html.includes('impro-session-dynamics-v1')&&html.includes('impro-random-dynamics-v1')&&html.includes('chooseDynamicGame'),'Curseurs indépendants absents');assert.ok(html.includes('Trois repères pour commencer')&&html.includes('welcome-tutorial'),'Tutoriel d’accueil absent');assert.equal(lib.ressource_cahier_coach.listes.Mot.length,20,'La liste de mots du cahier de coach doit conserver ses 20 éléments');for(const word of ['Transmission','Crépitement','Mirage'])assert.ok(lib.ressource_cahier_coach.listes.Mot.includes(word),'Mot du cahier de coach manquant : '+word);assert.ok(html.includes('id="randomExerciseCategories"')&&html.includes('function pickRandomExercise(')&&html.includes('function useRandomExercise('),'Générateur d’exercice aléatoire absent');for(let i=0;i<10;i++)assert.ok(html.includes('id="randomDynamic'+i+'"'),'Curseur du générateur absent : '+i);assert.ok(script.includes('function getRandomDynamics()')&&script.includes('function updateRandomDynamic(i)'),'Priorités du générateur absentes');assert.ok(html.includes('Object.prototype.hasOwnProperty.call(DRAW_DEFAULTS,category)'),'Les listes du cahier ne doivent pas créer de catégories de tirage inconnues');assert.ok(!html.includes('<option>Concentration</option>'),'Catégorie non reconnue encore présente dans le filtre');const firstNameGame=lib.exercices.find(e=>e.id==='2-36');assert.equal(firstNameGame.statut,'validée par le coach');assert.equal(firstNameGame.eligible_generateur,true);assert.equal(firstNameGame.objectif_pedagogique,'Écoute');assert.deepEqual(firstNameGame.categories_secondaires,['Cohésion','Énergie']);assert.equal(lib.exercices.find(e=>e.id==='2-20').statut,'à confirmer','La fiche 2-20 doit rester en attente tant que le coach ne l’a pas revalidée');for(const e of lib.exercices){if(e.categories_secondaires)for(const c of e.categories_secondaires)assert.ok(lib.categories_pedagogiques.includes(c),'Catégorie secondaire inconnue : '+c)}console.log('IMPRO LAB: contrôles statiques et cohérence des données OK');
-const categories=['Énergie','Écoute','Corps','Construction','Scène','Émotions','Amusement','Lâcher-prise','Cohésion','Imaginaire'];assert.deepEqual(lib.categories_pedagogiques,categories);for(const e of lib.exercices){assert.ok(categories.includes(e.objectif_pedagogique),'Catégorie principale inconnue : '+e.id);if(e.categories_secondaires){assert.ok(Array.isArray(e.categories_secondaires),'Secondaires non valides : '+e.id);assert.ok(e.categories_secondaires.every(c=>categories.includes(c)&&c!==e.objectif_pedagogique),'Secondaire inconnu ou doublon : '+e.id)}}for(const c of categories)assert.ok(html.includes('<option>'+c+'</option>'),'Filtre manquant : '+c);assert.ok(script.includes('(x.g[11]||[]).includes(cat)'),'Filtre secondaire absent');assert.ok(script.includes('function gameAffinity(g,category)'),'Prise en compte des catégories secondaires absente');
+'use strict';
 
-assert.ok(script.includes('SOFT_TIMELINE')&&script.includes('chooseTimelineGame'),'Timeline souple manquante');for(let i=0;i<10;i++)assert.ok(html.includes('id="dynamic'+i+'"'),'Curseur dynamique absent : '+i);for(const profile of ['45:[6,8,8,15,8]','55:[7,10,12,18,8]','60:[8,11,13,20,8]','90:[12,17,20,28,13]'])assert.ok(script.includes(profile),'Profil de durée absent : '+profile);console.log('Timeline souple et dix curseurs OK');
+const fs = require('node:fs');
+const assert = require('node:assert/strict');
+
+const html = fs.readFileSync('index.html', 'utf8');
+const lib = JSON.parse(fs.readFileSync('library.json', 'utf8'));
+const baseline = JSON.parse(fs.readFileSync('tests/library.baseline.json', 'utf8'));
+const script = html.split('<script>')[1]?.split('</script>')[0];
+
+assert.ok(script, 'Script absent');
+new Function(script);
+
+assert.equal(lib.exercices.length, baseline.nombre_fiches, 'Nombre de fiches différent de la référence d’intégrité');
+assert.equal(lib.exercices.length, Object.keys(baseline.fiches).length, 'La référence ne protège pas toutes les fiches');
+const ids = lib.exercices.map(e => e.id);
+const duplicateIds = ids.filter((id, i) => ids.indexOf(id) !== i);
+for (const id of new Set(duplicateIds)) assert.fail(`Fiche ${id}, champ « id » : identifiant dupliqué`);
+const originCounts = {};
+for (const e of lib.exercices) { const origin = e.origine || '(absente)'; originCounts[origin] = (originCounts[origin] || 0) + 1; }
+const sortedOriginCounts = Object.fromEntries(Object.entries(originCounts).sort(([a],[b]) => a.localeCompare(b)));
+assert.deepEqual(sortedOriginCounts, baseline.comptages_origine, 'Répartition des fiches par origine différente de la référence');
+
+assert.ok(lib.exercices.filter(e => e.origine === 'notes_personnelles' && e.regle_clarifiee).length >= 22, 'Pas assez de règles personnelles clarifiées');
+for (const e of lib.exercices) assert.equal(typeof e.texte_original, 'string', `Fiche ${e.id}, champ « texte_original » : doit être une chaîne`);
+for (const fn of ['generate','refreshEditor','moveExercise','changeMinutes','replaceExercise','removeExercise','exportSession','importSession','liveNext','livePrevious','liveToggle','loadLibrary']) assert.ok(script.includes('function '+fn+'('), 'Fonction manquante : '+fn);
+for (const name of ['seance','jeux','groupes','historique','live']) assert.ok(html.includes('id="'+name+'"'), 'Section absente : '+name);
+for (const name of ['principes','cahier','random','public','plan','manualGame','libraryStatus','liveStart','randomExerciseUse']) assert.ok(html.includes('id="'+name+'"'), 'Élément absent : '+name);
+for (const file of ['sw.js','manifest.webmanifest','icon.svg']) assert.ok(fs.existsSync(file), 'Fichier manquant : '+file);
+for (const e of lib.exercices) {
+  assert.ok(e.id && e.titre, `Fiche ${e.id || '(sans id)'}, champ « id/titre » : fiche mal formée`);
+  assert.equal(typeof e.eligible_generateur, 'boolean', `Fiche ${e.id}, champ « eligible_generateur » : booléen attendu`);
+}
+assert.ok(lib.exercices.some(e => e.eligible_generateur), 'Le générateur ne possède aucune fiche éligible');
+const timeStart = script.indexOf('const times={');
+const timeProfiles = timeStart < 0 ? '' : script.slice(timeStart + 'const times={'.length, script.indexOf('}', timeStart));
+for (const duration of [45,55,60,90]) assert.ok(timeProfiles.includes(duration+':['), 'Profil '+duration+' min absent');
+for (const feature of ['touchstart','touchend','Date.now()-liveAnchor','impro-favorites','impro-recent-games','serviceWorker.register','planSummary']) assert.ok(html.includes(feature), 'Fonction manquante : '+feature);
+const manifest = JSON.parse(fs.readFileSync('manifest.webmanifest','utf8'));
+assert.equal(manifest.display,'standalone','Manifest : champ « display » doit valoir standalone');
+assert.ok(fs.readFileSync('sw.js','utf8').includes('library.json'),'Service worker : bibliothèque absente du cache');
+
+for (const e of lib.exercices) {
+  assert.ok(e.conseils_animation, `Fiche ${e.id}, champ « conseils_animation » : conseils manquants`);
+  for (const key of ['consigne_courte','variante_facile','variante_difficile','points_vigilance','statut']) assert.ok(e.conseils_animation[key], `Fiche ${e.id}, champ « conseils_animation.${key} » : conseil manquant`);
+}
+assert.ok(html.includes('Fiche animateur'),'Fiches animateur absentes');
+assert.equal(lib.categories_pedagogiques.length,10,'Nombre de catégories pédagogiques inattendu');
+const categories = ['Énergie','Écoute','Corps','Construction','Scène','Émotions','Amusement','Lâcher-prise','Cohésion','Imaginaire'];
+assert.deepEqual(lib.categories_pedagogiques,categories,'Liste des catégories pédagogiques modifiée');
+assert.ok(!lib.categories_pedagogiques.includes('Concentration'),'Concentration ne doit pas être une catégorie pédagogique');
+for (const e of lib.exercices.filter(item => item.eligible_generateur)) {
+  assert.ok(categories.includes(e.objectif_pedagogique), `Fiche ${e.id}, champ « objectif_pedagogique » : catégorie de génération inconnue « ${e.objectif_pedagogique} »`);
+  assert.ok(!(e.categories_secondaires || []).includes('Concentration'), `Fiche ${e.id}, champ « categories_secondaires » : Concentration est interdite dans les catégories de génération`);
+}
+for (const category of categories) assert.ok(html.includes('<option>'+category+'</option>') && html.includes('"'+category+'"'), 'Catégorie absente du flux : '+category);
+assert.ok(!html.includes('<option>Concentration</option>'),'Catégorie non reconnue encore présente dans le filtre');
+
+const firstNameGame = lib.exercices.find(e => e.id === '2-36');
+assert.ok(firstNameGame, 'Fiche 2-36 absente');
+assert.equal(firstNameGame.statut,'validée par le coach','Fiche 2-36, champ « statut » inattendu');
+assert.equal(firstNameGame.eligible_generateur,true,'Fiche 2-36, champ « eligible_generateur » inattendu');
+assert.equal(firstNameGame.objectif_pedagogique,'Écoute','Fiche 2-36, champ « objectif_pedagogique » inattendu');
+assert.deepEqual(firstNameGame.categories_secondaires,['Cohésion','Énergie'],'Fiche 2-36, champ « categories_secondaires » inattendu');
+const pendingGame = lib.exercices.find(e => e.id === '2-20');
+assert.ok(pendingGame, 'Fiche 2-20 absente');
+assert.equal(pendingGame.statut,'à confirmer','Fiche 2-20, champ « statut » : doit rester en attente');
+assert.equal(pendingGame.eligible_generateur,false,'Fiche 2-20, champ « eligible_generateur » : doit rester non éligible');
+
+for (const e of lib.exercices) {
+  if (e.categories_secondaires) {
+    assert.ok(Array.isArray(e.categories_secondaires), `Fiche ${e.id}, champ « categories_secondaires » : tableau attendu`);
+    for (const category of e.categories_secondaires) {
+      assert.ok(categories.includes(category), `Fiche ${e.id}, champ « categories_secondaires » : catégorie inconnue « ${category} »`);
+      assert.notEqual(category,e.objectif_pedagogique,`Fiche ${e.id}, champ « categories_secondaires » : doublon de l’objectif principal`);
+    }
+  }
+}
+assert.ok(script.includes('(x.g[11]||[]).includes(cat)'),'Filtre secondaire absent');
+assert.ok(script.includes('function gameAffinity(g,category)'),'Prise en compte des catégories secondaires absente');
+assert.ok(script.includes('SOFT_TIMELINE') && script.includes('chooseTimelineGame'),'Timeline souple manquante');
+for (let i=0;i<10;i++) assert.ok(html.includes('id="dynamic'+i+'"'),'Curseur dynamique absent : '+i);
+for (const profile of ['45:[6,8,8,15,8]','55:[7,10,12,18,8]','60:[8,11,13,20,8]','90:[12,17,20,28,13]']) assert.ok(script.includes(profile),'Profil de durée absent : '+profile);
+
+assert.ok(script.includes('impro-session-dynamics-v1') && script.includes('impro-random-dynamics-v1') && script.includes('chooseDynamicGame'),'Curseurs indépendants absents');
+assert.ok(html.includes('Trois repères pour commencer') && html.includes('welcome-tutorial'),'Tutoriel d’accueil absent');
+assert.equal(lib.ressource_cahier_coach.listes.Mot.length,20,'Liste de mots du cahier de coach : longueur inattendue');
+for (const word of ['Transmission','Crépitement','Mirage']) assert.ok(lib.ressource_cahier_coach.listes.Mot.includes(word),'Mot du cahier de coach manquant : '+word);
+assert.ok(html.includes('id="randomExerciseCategories"') && html.includes('function pickRandomExercise(') && html.includes('function useRandomExercise('),'Générateur d’exercice aléatoire absent');
+for (let i=0;i<10;i++) assert.ok(html.includes('id="randomDynamic'+i+'"'),'Curseur du générateur absent : '+i);
+assert.ok(script.includes('function getRandomDynamics()') && script.includes('function updateRandomDynamic(i)'),'Priorités du générateur absentes');
+assert.ok(html.includes('Object.prototype.hasOwnProperty.call(DRAW_DEFAULTS,category)'),'Les listes du cahier ne doivent pas créer de catégories de tirage inconnues');
+
+console.log('IMPRO LAB : contrôles statiques et cohérence des données OK');
+console.log('Timeline souple et dix curseurs OK');
