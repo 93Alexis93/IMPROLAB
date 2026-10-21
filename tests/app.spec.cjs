@@ -1,5 +1,5 @@
 const {test,expect}=require('@playwright/test');
-const base='http://127.0.0.1:4173/';
+const base='/';
 test.beforeEach(async({page})=>{await page.goto(base);await expect(page.locator('#libraryStatus')).toContainText('122 exercices',{timeout:15000})});
 test('bibliothèque et générateur',async({page})=>{await expect(page.locator('#manualGame option')).toHaveCount(122);await page.evaluate(()=>generate());await expect(page.locator('#plan .card')).toHaveCount(5)});
 test('huit catégories et 400 mots sans doublons',async({page})=>{const result=await page.evaluate(()=>({keys:Object.keys(DRAW_DEFAULTS),words:DRAW_DEFAULTS.Mot}));expect(result.keys).toHaveLength(8);expect(result.keys).not.toContain('Genre');expect(result.words).toHaveLength(400);expect(new Set(result.words.map(x=>x.toLowerCase())).size).toBe(400);await page.evaluate(()=>drawAll());await expect(page.locator('#drawResults .draw-result')).toHaveCount(8)});
