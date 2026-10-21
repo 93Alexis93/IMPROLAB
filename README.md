@@ -38,3 +38,6 @@ Ouvrir le run GitHub Actions correspondant, identifier le job et le test précis
 - Le comportement du tutoriel d’accueil n’est pas modifié dans la PR principale. Les helpers de test le ferment lorsqu’il est présent afin que les tests puissent atteindre l’interface. Une proposition isolée avec son test est disponible sur la branche `proposal/tutorial-persistence` ; elle n’est ni fusionnée ni incluse dans la PR principale.
 
 Le test de stockage corrompu a reproduit un défaut réel : une valeur JSON invalide dans `localStorage['impro-favorites']` faisait échouer le chargement de toute la bibliothèque. La correction de ce lot ajoute une lecture tolérante des favoris (valeur invalide ou de forme incorrecte → liste vide) ; le test de régression reste actif.
+
+
+Le test hors ligne a mis en évidence une limite reproductible de Playwright WebKit sur l’environnement iPhone : la navigation principale hors ligne renvoie « WebKit encountered an internal error », même vers une page précachée. Le test conserve le rechargement hors ligne complet sous Chromium et vérifie sous WebKit que le service worker sert bien `library.json` depuis son cache avec une requête hors ligne sans cache HTTP.

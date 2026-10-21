@@ -33,15 +33,9 @@ async function openApp(page, options = {}) {
   await waitForReady(page, options);
 }
 
-async function openCachedApp(page, options = {}) {
-  // Le service worker précache explicitement index.html ; cette URL sert à tester le cache hors ligne sur WebKit.
-  await page.goto('/index.html');
-  await waitForReady(page, options);
-}
-
 async function reloadApp(page, options = {}) {
   await page.reload();
   await waitForReady(page, options);
 }
 
-module.exports = { openApp, openCachedApp, reloadApp, libraryCount, originCount, library, waitForReady };
+module.exports = { openApp, reloadApp, libraryCount, originCount, library, waitForReady };
