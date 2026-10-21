@@ -1,5 +1,5 @@
 const {test,expect}=require('@playwright/test');
-const {openApp,reloadApp,libraryCount,originCount}=require('./helpers.cjs');
+const {openApp,reloadApp,libraryCount,originCount,library}=require('./helpers.cjs');
 for(const duration of ['45','55','60','90']){
  test('durée exacte '+duration+' min',async({page})=>{
   await openApp(page);
@@ -57,7 +57,7 @@ test('filtres bibliothèque par origine et objectif',async({page})=>{
  await expect(page.locator('#games .card').first()).toBeVisible();
  const n=await page.locator('#games .card').count();expect(n).toBeGreaterThan(0);expect(n).toBeLessThan(originCount('notes_personnelles'));
 });
-test('générateur respecte la catégorie des cinq étapes',async({page})=>{
+test('générateur respecte les cinq étapes de la timeline',async({page})=>{
  await openApp(page);
  
  await page.getByRole('button',{name:'Générer ma séance'}).click();
@@ -97,7 +97,7 @@ test('les neuf catégories et les catégories secondaires sont filtrables',async
  
  await page.getByRole('button',{name:'Jeux'}).click();
  const filter=page.locator('#categoryFilter');
- await expect(filter.locator('option')).toHaveCount(10);
+ await expect(filter.locator('option')).toHaveCount(library.categories_pedagogiques.length+1);
  await filter.selectOption('Amusement');
  await expect(page.locator('#games')).toContainText('Ceci est un');
  await filter.selectOption('Lâcher-prise');
