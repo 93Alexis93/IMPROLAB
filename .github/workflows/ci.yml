@@ -20,6 +20,8 @@ jobs:
           node-version: '22'
       - name: Vérifier la syntaxe Node des tests
         run: for file in tests/*.cjs; do node --check "$file"; done
+      - name: Vérifier l’empreinte SHA-256 source de library.json
+        run: echo 'a1c13d2f18e78ef688f6422d72869a89a88cee97d285cac40aab399403737ed2  library.json' | sha256sum --check -
       - name: Contrôles structurels et catégories
         run: node tests/check.cjs
       - name: Intégrité exhaustive de la bibliothèque
