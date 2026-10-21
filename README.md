@@ -30,3 +30,9 @@ Les commandes exécutées par la CI sont :
 ## Diagnostic d’une CI en échec
 
 Ouvrir le run GitHub Actions correspondant, identifier le job et le test précis, puis consulter les traces et captures de l’artefact. Une erreur de contrôle statique ou d’intégrité doit être traitée avant les tests navigateur. Un test instable reste un échec à diagnostiquer : ne pas supprimer le test, augmenter les délais sans preuve, ni contourner le tutoriel pour obtenir un résultat vert.
+
+## Périmètre et décisions en attente
+
+- La fiche **2-20** reste « à confirmer » et non éligible ; aucune fiche n’est rendue éligible dans ce lot.
+- **Concentration** reste exclue des catégories de génération.
+- Le comportement du tutoriel d’accueil n’est pas modifié dans la PR principale. Les helpers de test le ferment lorsqu’il est présent afin que les tests puissent atteindre l’interface. Une proposition isolée avec son test est disponible sur la branche `proposal/tutorial-persistence` ; elle n’est ni fusionnée ni incluse dans la PR principale.
