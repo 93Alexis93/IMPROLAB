@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const fs = require('node:fs');
-const { openApp, waitForReady, library } = require('./helpers.cjs');
+const { openApp, reloadApp, waitForReady, library } = require('./helpers.cjs');
 
 const validPayload = html => ({ format: 'impro-lab-session', version: 1, exportedAt: '2026-10-21T00:00:00.000Z', html });
 const oneCard = '<div class="card"><small>5 min · Corps</small><h3>Exercice de test</h3><p>Une règle de test.</p></div>';
@@ -50,7 +50,10 @@ test('export puis import : les cartes exportées sont identiques', async ({ page
   const download = await downloadPromise;
   const exported = JSON.parse(fs.readFileSync(await download.path(), 'utf8'));
   expect(exported.format).toBe('impro-lab-session');
+  await page.evaluate(() => document.getElementById('plan').replaceChildren());
+  await expect(page.locator('#plan>.card')).toHaveCount(0);
   await submitImport(page, Buffer.from(JSON.stringify(exported)), 'roundtrip.json');
+  await expect(page.locator('#plan>.card')).toHaveCount(before.length);
   const after = await page.locator('#plan>.card').evaluateAll(cards => cards.map(card => ({ small: card.querySelector('small')?.textContent || '', title: card.querySelector('h3')?.textContent || '', rule: card.querySelector('p')?.textContent || '' })));
   expect(after).toEqual(before);
 });
@@ -106,8 +109,7 @@ test('mode hors ligne : le service worker conserve la bibliothèque après recha
   });
   expect(swReady, 'service worker actif et contrôlant la page').toBe(true);
   await context.setOffline(true);
-  await page.reload();
-  await waitForReady(page);
+  await reloadApp(page);
   await expect(page.locator('#libraryStatus')).toContainText(`${library.exercices.length} exercices`);
   expect(await page.locator('#games .card').count()).toBeGreaterThan(0);
 });

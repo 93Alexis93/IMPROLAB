@@ -37,7 +37,7 @@ test('navigation clavier du mode animateur',async({page})=>{
  await openApp(page);
  
  await page.getByRole('button',{name:'Générer ma séance'}).click();
- await page.getByRole('button',{name:/Animateur/}).click();
+ await page.getByRole('button',{name:/Régie d’impro|Animateur/}).click();
  await page.locator('body').click({position:{x:5,y:5}});
  await page.keyboard.press('ArrowRight');
  await expect(page.locator('#liveProgress')).toContainText('Exercice 2 / 5');
