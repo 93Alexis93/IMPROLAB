@@ -2811,11 +2811,11 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
-        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
-        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
-        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "consigne_courte": "En cercle, annonce le prénom d’un partenaire et prends sa place ; la personne appelée poursuit le jeu à son tour.",
+        "variante_facile": "Jouer lentement, en ne désignant qu’une personne à la fois et en laissant le temps de rejoindre la place.",
+        "variante_difficile": "Lancer deux appels simultanés, comme le permet la note originale, lorsque le groupe maîtrise la règle.",
+        "points_vigilance": "Vérifier que chacun comprend qui doit bouger et qui poursuit le jeu ; éviter les déplacements précipités.",
+        "statut": "conseils d’animation adaptés à la règle validée ; ils ne remplacent pas la note originale"
       },
       "categories_secondaires": [
         "Cohésion",
