@@ -2876,22 +2876,29 @@
       "section": "Saison 3",
       "numero_source": 1,
       "texte_original": "Impro clap : on lance une première impro entre deux personnes, et quand quelqu’un clap, il vient prendre la place de quelqu’un et changer d’improvisation tout en gardant la position exacte du comédien remplacé (tips : marquer différentes postures) Remarque, on peut varier en gardant la même impro et donc le même personnage (tips faire des personnages marqués)",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
-      "eligible_generateur": false,
+      "regle_clarifiee": "Deux joueurs commencent une improvisation. Lorsqu’un joueur en attente sur le côté frappe dans ses mains, il entre en scène, prend la place de l’un des comédiens et adopte exactement sa posture au moment où il le remplace. Il lance ensuite une nouvelle improvisation, différente de la précédente. Variante : le remplaçant peut conserver la même improvisation et le même personnage que le joueur remplacé. Pour faciliter les remplacements, les comédiens peuvent prendre des postures bien marquées.",
+      "statut": "validée par le coach",
+      "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée et validée par le coach",
       "conseils_animation": {
         "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Corps",
+        "Construction",
+        "Lâcher-prise",
+        "Amusement"
+      ]
     },
     {
       "id": "3-4",
@@ -2899,22 +2906,29 @@
       "section": "Saison 3",
       "numero_source": 2,
       "texte_original": "Impro clap Les bâtons dans les roues : pareil que l’improvisation clap mais c’est le prof qui clap et qui envoie les comédiens en leur donnant des contraintes quand il passe (ne plus pouvoir répéter que la dernière phrase dite, plus qu’un seul mot, pas de mots du tout, rimé, s’accroupir en devant le justifier et ensuite le prof peut enlever la contrainte pour la suite). Avantage tout le monde passe",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
-      "eligible_generateur": false,
+      "regle_clarifiee": "Le jeu reprend le principe de l’Impro clap : deux joueurs commencent une improvisation, puis le professeur frappe dans ses mains pour déclencher un remplacement. Il fait entrer un comédien et lui impose une contrainte de jeu. Les contraintes possibles citées dans la note sont : ne pouvoir répéter que la dernière phrase prononcée ; ne parler qu’avec un seul mot ; jouer sans parler ; parler en rimant ; s’accroupir et justifier ce choix dans la scène. La proposition retenue ici est d’appliquer une seule contrainte à la fois. Le professeur peut ensuite retirer une contrainte afin que l’improvisation se poursuive sans celle-ci. Le dispositif permet à tous les participants de passer.",
+      "statut": "validée par le coach",
+      "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée et validée par le coach",
       "conseils_animation": {
         "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Corps",
+        "Construction",
+        "Amusement",
+        "Lâcher-prise"
+      ]
     },
     {
       "id": "3-5",
