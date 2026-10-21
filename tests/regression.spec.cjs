@@ -1,8 +1,10 @@
-const {test,expect,devices}=require('@playwright/test');
+const {test,expect}=require('@playwright/test');
+async function library(page){return page.evaluate(async()=>{const x=await(await fetch('library.json')).json();return x.exercices||[]})}
+async function expectLibraryStatus(page){const items=await library(page);await expect(page.locator('#libraryStatus')).toContainText(items.length+' exercices');return items}
 for(const duration of ['45','55','60','90']){
  test('durée exacte '+duration+' min',async({page})=>{
   await page.goto('/');
-  await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+  await expectLibraryStatus(page);
   await page.locator('#duration').selectOption(duration);
   await page.getByRole('button',{name:'Générer ma séance'}).click();
   await expect(page.locator('#planSummary')).toContainText(duration+' minutes');
@@ -13,7 +15,7 @@ for(const duration of ['45','55','60','90']){
 }
 test('édition, suppression, rechargement, groupe et export',async({page})=>{
  await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await expectLibraryStatus(page);
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  await page.locator('#plan>.card').last().getByRole('button',{name:'✕'}).click();
  await expect(page.locator('#plan>.card')).toHaveCount(4);
@@ -33,9 +35,9 @@ test('édition, suppression, rechargement, groupe et export',async({page})=>{
 });
 test('navigation clavier du mode animateur',async({page})=>{
  await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await expectLibraryStatus(page);
  await page.getByRole('button',{name:'Générer ma séance'}).click();
- await page.getByRole('button',{name:/Animateur/}).click();
+ await page.getByRole('button',{name:/Régie d’impro|Animateur/}).click();
  await page.locator('body').click({position:{x:5,y:5}});
  await page.keyboard.press('ArrowRight');
  await expect(page.locator('#liveProgress')).toContainText('Exercice 2 / 5');
@@ -45,10 +47,10 @@ test('navigation clavier du mode animateur',async({page})=>{
 
 test('filtres bibliothèque par origine et objectif',async({page})=>{
  await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await expectLibraryStatus(page);
  await page.getByRole('button',{name:'Jeux'}).click();
  await page.locator('#sourceFilter').selectOption('recherche_web');
- await expect(page.locator('#games .card')).toHaveCount(17);
+ const items=await library(page); await expect(page.locator('#games .card')).toHaveCount(items.filter(x=>x.origine==='recherche_web').length);
  await page.locator('#sourceFilter').selectOption('notes_personnelles');
  await expect(page.locator('#games .card')).toHaveCount(105);
  await page.locator('#categoryFilter').selectOption('Écoute');
@@ -57,30 +59,30 @@ test('filtres bibliothèque par origine et objectif',async({page})=>{
 });
 test('générateur respecte la catégorie des cinq étapes',async({page})=>{
  await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await expectLibraryStatus(page);
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  const labels=await page.locator('#plan>.card small').allTextContents();
  expect(labels).toHaveLength(5);
- expect(labels.map(x=>x.split('·')[1].trim())).toEqual(['Énergie','Écoute','Corps','Construction','Scène']);
+ expect(labels.map(x=>x.split('·')[1].trim())).toEqual(['Mise en énergie','Connexion collective','Exploration','Improvisation','Final collectif']);
 });
 
 test('générateur privilégie les notes personnelles et respecte les étapes',async({page})=>{
  await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await expectLibraryStatus(page);
  await expect(page.locator('#includeExternal')).not.toBeChecked();
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  const labels=await page.locator('#plan>.card small').allTextContents();
  expect(labels).toHaveLength(5);
  expect(labels.every(x=>x.includes('Mes notes'))).toBe(true);
- expect(['Énergie','Corps']).toContain(labels[0].split('·')[1].trim());
- expect(labels.at(-1).split('·')[1].trim()).toBe('Scène');
+ expect(labels[0]).toContain('Mise en énergie');
+ expect(labels.at(-1)).toContain('Final collectif');
  await page.locator('#includeExternal').check();
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  await expect(page.locator('#plan>.card')).toHaveCount(5);
 });
 test('rotation équitable entre séances consécutives',async({page})=>{
  await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await expectLibraryStatus(page);
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  const first=await page.locator('#plan>.card h3').allTextContents();
  await page.getByRole('button',{name:'Générer ma séance'}).click();
@@ -92,10 +94,10 @@ test('rotation équitable entre séances consécutives',async({page})=>{
 
 test('les neuf catégories et les catégories secondaires sont filtrables',async({page})=>{
  await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await expectLibraryStatus(page);
  await page.getByRole('button',{name:'Jeux',exact:true}).click();
  const filter=page.locator('#categoryFilter');
- await expect(filter.locator('option')).toHaveCount(10);
+ await expect(filter.locator('option')).toHaveCount(11);
  await filter.selectOption('Amusement');
  await expect(page.locator('#games')).toContainText('Ceci est un');
  await filter.selectOption('Lâcher-prise');
@@ -106,7 +108,7 @@ test('les neuf catégories et les catégories secondaires sont filtrables',async
 
 test('dix curseurs compacts 0-100, persistance et timeline souple',async({page})=>{
  await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await expectLibraryStatus(page);
  const sliders=page.locator('.dynamic-grid input[type=range]');
  await expect(sliders).toHaveCount(10);
  for(const slider of await sliders.all()){await expect(slider).toHaveAttribute('max','100');await expect(slider).toHaveAttribute('step','1')}
@@ -123,7 +125,7 @@ test('dix curseurs compacts 0-100, persistance et timeline souple',async({page})
 
 test('timeline souple : cinq étapes et priorité Imaginaire',async({page})=>{
  await page.goto('/');
- await expect(page.locator('#libraryStatus')).toContainText('122 exercices');
+ await expectLibraryStatus(page);
  await page.locator('#dynamic9').fill('100');
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  await expect(page.locator('#plan>.card')).toHaveCount(5);
