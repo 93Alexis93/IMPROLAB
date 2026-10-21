@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const fs = require('node:fs');
-const { openApp, reloadApp, waitForReady, library } = require('./helpers.cjs');
+const { openApp, openCachedApp, reloadApp, waitForReady, library } = require('./helpers.cjs');
 
 const validPayload = html => ({ format: 'impro-lab-session', version: 1, exportedAt: '2026-10-21T00:00:00.000Z', html });
 const oneCard = '<div class="card"><small>5 min · Corps</small><h3>Exercice de test</h3><p>Une règle de test.</p></div>';
@@ -110,8 +110,8 @@ test('mode hors ligne : le service worker conserve la bibliothèque après recha
   });
   expect(swReady, 'service worker actif et contrôlant la page').toBe(true);
   await context.setOffline(true);
-  // Navigation vers la même URL : WebKit peut renvoyer une erreur interne à page.reload() hors ligne.
-  await openApp(page);
+  // Recharger l’URL explicitement précachée ; WebKit peut échouer sur la racine / en mode hors ligne.
+  await openCachedApp(page);
   await expect(page.locator('#libraryStatus')).toContainText(`${library.exercices.length} exercices`);
   await page.getByRole('button', { name: 'Jeux' }).click();
   expect(await page.locator('#games .card').count()).toBeGreaterThan(0);
