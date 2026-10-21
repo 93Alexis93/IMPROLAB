@@ -2825,22 +2825,27 @@
       "section": "Saison 3",
       "numero_source": 1,
       "texte_original": "Le mot qui claque : on fait un mouvement du bras de haut en bas, on claque des doigts quand on arrive en bas. On doit dire un mot au moment où on claque, et le suivant doit le dire au prochain clap en gardant un lien avec uniquement le mot d’avant. Si on trouve pas un mot le tour est sauté.",
-      "regle_clarifiee": null,
-      "statut": "notes originales",
-      "eligible_generateur": false,
+      "regle_clarifiee": "Les joueurs se placent en cercle. À tour de rôle, chacun effectue un mouvement du bras de haut en bas et claque des doigts lorsqu’il arrive en bas. Au moment du claquement, il prononce un mot. Le joueur suivant fait de même et doit proposer un mot qui présente un lien avec le mot prononcé juste avant, et uniquement celui-ci. L’association est libre. Si un joueur ne trouve pas de mot, son tour est sauté et le jeu continue avec le joueur suivant.",
+      "statut": "validée par le coach",
+      "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
       "niveau": "à évaluer",
       "effectif_conseille": "à évaluer",
-      "qualite_fiche": "notes à relire",
+      "qualite_fiche": "clarifiée et validée par le coach",
       "conseils_animation": {
         "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      }
+      },
+      "categories_secondaires": [
+        "Énergie",
+        "Écoute",
+        "Lâcher-prise"
+      ]
     },
     {
       "id": "3-2",
