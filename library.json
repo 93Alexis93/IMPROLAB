@@ -5,7 +5,7 @@
   "exercices": [
     {
       "id": "1-1",
-      "titre": "Chawafu/Samurai lever les bras envoyer le Sa à quelqu’un, il lève",
+      "titre": "Sa, Mu, Raï !",
       "section": "Saison 1",
       "numero_source": 1,
       "texte_original": "Chawafu/Samurai lever les bras envoyer le Sa à quelqu’un, il lève les bras pour recevoir le sa et dit Mu, à ce moment ses deux voisins font un mouvement de sabre vers lui en disant Raï",
@@ -28,7 +28,7 @@
     },
     {
       "id": "1-2",
-      "titre": "1-2-3",
+      "titre": "Un, deux, trois… en mouvement",
       "section": "Saison 1",
       "numero_source": 2,
       "texte_original": "1 - 2 - 3 tape dans les mains petit saut",
@@ -51,7 +51,7 @@
     },
     {
       "id": "1-3",
-      "titre": "Ceci est un (deux noms rigolo genre poindon et gogli) ceci est un",
+      "titre": "C’est quoi, ce poindon ?",
       "section": "Saison 1",
       "numero_source": 3,
       "texte_original": "Ceci est un (deux noms rigolo genre poindon et gogli) ceci est un à répéter un quoi on se retourne ça recommence",
@@ -80,7 +80,7 @@
     },
     {
       "id": "1-4",
-      "titre": "Un mot chacun avec rythme pour une impro sur un thème",
+      "titre": "Un mot à la fois, une histoire à la fois",
       "section": "Saison 1",
       "numero_source": 4,
       "texte_original": "Un mot chacun avec rythme pour une impro sur un thème",
@@ -109,7 +109,7 @@
     },
     {
       "id": "1-5",
-      "titre": "Jeu du zombie se délivrer en regardant quelqu’un qui doit prononc",
+      "titre": "Le zombie a dit ton nom !",
       "section": "Saison 1",
       "numero_source": 5,
       "texte_original": "Jeu du zombie se délivrer en regardant quelqu’un qui doit prononcer un autre nom",
@@ -138,7 +138,7 @@
     },
     {
       "id": "1-6",
-      "titre": "Compter collectivement chacun si deux personnes comptent en même ",
+      "titre": "Le compte à plusieurs",
       "section": "Saison 1",
       "numero_source": 6,
       "texte_original": "Compter collectivement chacun si deux personnes comptent en même temps on recommence à 1",
@@ -165,7 +165,7 @@
     },
     {
       "id": "1-7",
-      "titre": "Balles de couleur",
+      "titre": "La jonglerie invisible",
       "section": "Saison 1",
       "numero_source": 7,
       "texte_original": "Se donner des balles de couleur",
@@ -191,7 +191,7 @@
     },
     {
       "id": "1-8",
-      "titre": "Cowboy dit nom on doit tirer si on est un des voisins de la perso",
+      "titre": "Duel au cercle",
       "section": "Saison 1",
       "numero_source": 8,
       "texte_original": "Cowboy dit nom on doit tirer si on est un des voisins de la personne appelé qui elle se baisse",
@@ -219,7 +219,7 @@
     },
     {
       "id": "1-9",
-      "titre": "Le jeu du voyant je suis voyant et je sais que parmi vous… jusqu’",
+      "titre": "Le voyant et sa prédiction",
       "section": "Saison 1",
       "numero_source": 9,
       "texte_original": "Le jeu du voyant je suis voyant et je sais que parmi vous… jusqu’à qu’il n’y en ait qu’un, si tout le monde s’en va c’est perdu",
@@ -247,7 +247,7 @@
     },
     {
       "id": "1-10",
-      "titre": "Danse ",
+      "titre": "La danse contagieuse",
       "section": "Saison 1",
       "numero_source": 10,
       "texte_original": "Danse : un participant fait un mouvement tout le monde doit suivre jusqu’à ce que quelqu’un fasse un autre geste",
@@ -275,7 +275,7 @@
     },
     {
       "id": "1-11",
-      "titre": "On forme un losange, il y a 4 sommet. Un sommmet commence à danse",
+      "titre": "Le losange des danseurs",
       "section": "Saison 1",
       "numero_source": 11,
       "texte_original": "On forme un losange, il y a 4 sommet. Un sommmet commence à danser puis va passer le relais au sommet de gauche ou droite en fonction de où va son pas de danseDans le but de regarder tous au même endroit",
@@ -304,7 +304,7 @@
     },
     {
       "id": "1-12",
-      "titre": "Energie a se passer en frappant dans les mains ",
+      "titre": "L’énergie frappée",
       "section": "Saison 1",
       "numero_source": 12,
       "texte_original": "Energie a se passer en frappant dans les mains : au début on frappe une fois en direction du suivant ou deux fois en se retournant pour faire passer l’énergie. Aller vite et ne pas attendre la fin. Recommencer en doublant à chaque fois les tapements de main exemple 4 et 8.",
@@ -332,7 +332,7 @@
     },
     {
       "id": "1-13",
-      "titre": "Jeu du SAV avec une personne qui ne sait pas quel objet elle ramè",
+      "titre": "Le SAV de l’objet mystère",
       "section": "Saison 1",
       "numero_source": 13,
       "texte_original": "Jeu du SAV avec une personne qui ne sait pas quel objet elle ramène.",
@@ -361,7 +361,7 @@
     },
     {
       "id": "1-14",
-      "titre": "Jeux des mots à deviner pendant un débat, un entretien d’embauche",
+      "titre": "Des mots mimés dans la bouche",
       "section": "Saison 1",
       "numero_source": 14,
       "texte_original": "Jeux des mots à deviner pendant un débat, un entretien d’embauche ou un débat. Des gens miment, et les chercheurs doivent trouver en l’intégrant dans la situation",
@@ -391,7 +391,7 @@
     },
     {
       "id": "1-15",
-      "titre": "Compter jusqu’à 7 pour faire passer l’énergie à droite ou à gauch",
+      "titre": "Le compte à rebours de l’énergie",
       "section": "Saison 1",
       "numero_source": 15,
       "texte_original": "Compter jusqu’à 7 pour faire passer l’énergie à droite ou à gauche en se tapant sur l’épaule . A 7 on envoie l’énergie avec les mains a qui on veut. On recommence ensuite en changeant le 3 par un jour de la semaine, puis le 5 par le 3, puis le 1 envoie l’énergie en tapant du pied",
@@ -419,7 +419,7 @@
     },
     {
       "id": "1-16",
-      "titre": "Faire Ceci est mon nez en pointant son genoux, l’autre pointe le ",
+      "titre": "Le ceci inversé",
       "section": "Saison 1",
       "numero_source": 16,
       "texte_original": "Faire Ceci est mon nez en pointant son genoux, l’autre pointe le genou et du ceci est mon pied etc….",
@@ -447,7 +447,7 @@
     },
     {
       "id": "1-17",
-      "titre": "Situation ",
+      "titre": "Bonne nouvelle, mauvaise nouvelle",
       "section": "Saison 1",
       "numero_source": 17,
       "texte_original": "Situation : on part d’une situation, lautre dit ah c’est cool on le contredit puis il dit ah c’est pas cool on le contredit encore et ainsi de suite",
@@ -476,7 +476,7 @@
     },
     {
       "id": "1-18",
-      "titre": "Jeux de danse ",
+      "titre": "La danse au nombre exact",
       "section": "Saison 1",
       "numero_source": 18,
       "texte_original": "Jeux de danse : 10 personnes dansent au début puis le maître du jeu dit un nombre et ce nombre exact de personnes doit danser",
@@ -505,7 +505,7 @@
     },
     {
       "id": "1-19",
-      "titre": "En binôme ",
+      "titre": "Ton problème, ma solution improbable",
       "section": "Saison 1",
       "numero_source": 19,
       "texte_original": "En binôme : chacun trouve Un problème un objet, chacun doit régler le problème de l’autre avec son objet",
@@ -534,7 +534,7 @@
     },
     {
       "id": "1-20",
-      "titre": "Impro en binôme, on donne un thème et un des deux ne peux dire qu",
+      "titre": "Oui, d’accord, on y va !",
       "section": "Saison 1",
       "numero_source": 20,
       "texte_original": "Impro en binôme, on donne un thème et un des deux ne peux dire que les cinq mots, Oui d’accord on y va, pour un des deux",
@@ -592,7 +592,7 @@
     },
     {
       "id": "1-22",
-      "titre": "Voleur de réplique deux binômes et on doit voler la dernière phra",
+      "titre": "Voleurs de répliques",
       "section": "Saison 1",
       "numero_source": 22,
       "texte_original": "Voleur de réplique deux binômes et on doit voler la dernière phrase de l’autre binôme qui se fige jusqu’à re voler une phrase",
@@ -619,7 +619,7 @@
     },
     {
       "id": "1-23",
-      "titre": "Le livre —-> un binôme, l’un mis des phrases d’un livre choisis a",
+      "titre": "Le livre qui mène la scène",
       "section": "Saison 1",
       "numero_source": 23,
       "texte_original": "Le livre —-> un binôme, l’un mis des phrases d’un livre choisis au hasard l’autre improvisé normalement",
@@ -648,7 +648,7 @@
     },
     {
       "id": "1-24",
-      "titre": "Jeu de l’ordre alphabétique ",
+      "titre": "Rangez-vous par ordre… inventé !",
       "section": "Saison 1",
       "numero_source": 24,
       "texte_original": "Jeu de l’ordre alphabétique : rangez vous dans l’ordre alphabétique de vos prénoms , puis de vos métiers si y en a un qui marche pas on continue dans l’ordre alphabétique ça a pas besoin d’être en vrai",
@@ -763,7 +763,7 @@
     },
     {
       "id": "1-28",
-      "titre": "Traducteur interviewé journaliste ",
+      "titre": "Le traducteur incontrôlable",
       "section": "Saison 1",
       "numero_source": 28,
       "texte_original": "Traducteur interviewé journaliste : l’interviewé parle en langue imaginaire le traducteur traduit au journaliste, le journaliste pose une question au traducteur qui traduit etc… (astuce possibilité pour le traducteur de dire le contraire)",
@@ -786,7 +786,7 @@
     },
     {
       "id": "1-29",
-      "titre": "Carré d’émotions ",
+      "titre": "Le carré des émotions",
       "section": "Saison 1",
       "numero_source": 29,
       "texte_original": "Carré d’émotions : 4 émotions sont présentes  et matérialisée par 4 zone chaque joueur doit jouer l’histoire avec l’émotion correspondant à sa zone géographique",
