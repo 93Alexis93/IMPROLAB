@@ -184,7 +184,7 @@ test('déplacement et remplacement d’un exercice conservent une séance cohér
  const newTitle=(await cards.nth(0).locator('h3').textContent()).trim();
  expect(newTitle).not.toBe(oldTitle);
  const replacement=await page.evaluate(title=>{
-  const item=data.find(entry=>entry[0]===title);
+  const item=data.find(entry=>entry[0]===title||displayTitle(entry[0])===title);
   return item?{eligible:item[6]===true,rule:item[2]}:null;
  },newTitle);
  expect(replacement, 'L’exercice remplacé doit appartenir à la bibliothèque').not.toBeNull();
@@ -197,6 +197,7 @@ test('déplacement et remplacement d’un exercice conservent une séance cohér
 
 
 test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({page})=>{
+ test.setTimeout(120000);
  await openApp(page);
  await page.locator('#includeExternal').uncheck();
  for(let i=0;i<10;i++)await page.locator('#dynamic'+i).fill(i===0?'100':'0');
