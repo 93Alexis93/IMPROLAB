@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "source": "Cahier de coach – Improvisation, rubrique « Bonus : Rappels essentiels pour coacher »",
+  "note": "Les formulations originales sont conservées à l’identique. Les titres, développements et exemples sont des versions éditoriales validées par Alexis. Le principe 4 n’est pas inclus car il reste à valider.",
+  "principes": [
+    {
+      "id": 1,
+      "titre": "L’art de rater",
+      "formulation_originale": "L’improvisation c’est l’art de rater",
+      "principe": "L’improvisation, c’est oser jouer sans chercher à réussir parfaitement. Une erreur, un oubli ou un geste maladroit peuvent devenir des occasions de jeu. Accepte l’imprévu et transforme-le en proposition pour la scène, plutôt que de le nier ou de te bloquer.",
+      "exemple": "Tu te trompes dans le prénom de ton partenaire ? Au lieu de paniquer, lance : « Depuis trente ans qu’on se connaît, j’ai toujours eu du mal avec ton prénom ! »",
+      "statut": "validé"
+    },
+    {
+      "id": 2,
+      "titre": "Le « oui, et… »",
+      "formulation_originale": "Oui, et… : accepter, amplifier, construire.",
+      "principe": "Attention au refus de jouer. En impro 90% du temps accueille la proposition de ton partenaire et ajoute-lui quelque chose qui fait avancer la scène. Ne te contente pas d’accepter : enrichis, précise ou développe ce qui vient d’être posé. Construisez ensemble plutôt que de chercher chacun votre propre idée.",
+      "exemple": "A : « J’ai adopté un dragon ! » B : « Génial ! Je lui ai aménagé la cave, mais il a déjà brûlé la chaudière ! »",
+      "statut": "validé"
+    },
+    {
+      "id": 3,
+      "titre": "L’écoute active",
+      "formulation_originale": "Écoute active : ton partenaire a toujours raison.",
+      "principe": "Écoute vraiment ton partenaire : ses paroles, ses gestes, ses émotions et ce qu’ils changent dans la scène. Considère ses propositions comme des réalités de jeu et rebondis dessus plutôt que de rester enfermé dans tes idées. Être à l’écoute, c’est aussi savoir s’adapter et laisser évoluer son personnage.",
+      "exemple": "A : « Tu as encore oublié notre anniversaire de mariage ! » B, surpris : « Tu as raison… et j’ai même oublié pourquoi nous nous sommes mariés ! »",
+      "statut": "validé"
+    }
+  ]
+}
