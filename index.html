@@ -134,7 +134,7 @@ const OBJECTIVE_GUIDANCE={
  'Cohésion':['Renforcer la confiance et le sentiment de jouer ensemble.','Les exercices demandent aux participants de se soutenir et de faire une place à chacun.','À observer : une attention collective, des relais entre joueurs et une réussite partagée.'],
  'Imaginaire':['Développer la capacité à inventer un univers et à le rendre concret pour le public.','Les exercices stimulent les images, les personnages et les détails qui nourrissent la fiction.','À observer : des propositions précises, partagées et réutilisées dans le jeu.']
 };
-function buildPrincipalObjective(games){
+function buildPrincipalObjective(games,parts=[]){
  const scores={};
  games.forEach(g=>{
   const primary=g[1];
@@ -143,8 +143,42 @@ function buildPrincipalObjective(games){
  });
  const ranked=Object.keys(scores).sort((a,b)=>(scores[b]-scores[a])||((getDynamics()[b]||0)-(getDynamics()[a]||0)));
  const category=ranked[0]||'Scène';
- const lines=OBJECTIVE_GUIDANCE[category]||OBJECTIVE_GUIDANCE['Scène'];
- return '<div class="card session-objective"><strong>Objectif principal de la séance : '+escapeText(category)+'</strong>'+lines.map(line=>'<p>'+escapeText(line)+'</p>').join('')+'</div>';
+ const goals={
+  'Énergie':'mettre le groupe en disponibilité de jeu et installer une énergie commune',
+  'Écoute':'développer l’écoute collective et la capacité à rebondir sur les propositions des partenaires',
+  'Corps':'faire du corps et de l’espace des ressources pour jouer et raconter',
+  'Construction':'apprendre à faire avancer une improvisation avec des propositions concrètes et cohérentes',
+  'Scène':'réinvestir les outils travaillés dans une scène jouée collectivement',
+  'Émotions':'explorer des émotions lisibles et leur influence sur les relations entre personnages',
+  'Amusement':'installer le plaisir de jouer et le droit d’essayer sans peur de l’erreur',
+  'Lâcher-prise':'oser proposer, accueillir l’imprévu et s’adapter aux idées des partenaires',
+  'Cohésion':'renforcer la confiance et le sentiment de jouer ensemble',
+  'Imaginaire':'inventer un univers commun et rendre ses détails concrets pour le public'
+ };
+ const describeRule=g=>{
+  let rule=String(g&&g[2]||g&&g[4]||'').replace(/\\s+/g,' ').trim();
+  if(!rule)return '';
+  const first=rule.split(/(?<=[.!?])\\s+/)[0].trim();
+  rule=first.length>=35&&first.length<=150?first:(rule.length>145?rule.slice(0,142).replace(/\\s+\\S*$/,'')+'…':rule);
+  return rule.replace(/[.!?]+$/,'');
+ };
+ const quoteGame=(g,i)=>{
+  const title=displayTitle(g&&g[0]||'cet exercice');
+  const rule=describeRule(g);
+  return '<b>'+escapeText(title)+'</b>'+(rule?' — '+escapeText(rule):'');
+ };
+ if(!games.length)return '<div class="card session-objective"><strong>Fil conducteur de la séance</strong><p>La séance n’a pas encore assez d’exercices pour formuler un objectif pédagogique personnalisé.</p></div>';
+ const first=games[0],last=games[games.length-1];
+ const middle=games.length>2?games[Math.floor((games.length-1)/2)]:games.length>1?games[1]:null;
+ const firstStage=parts[0]&&parts[0][2]?parts[0][2].name:'mise en route';
+ const lastStage=parts[games.length-1]&&parts[games.length-1][2]?parts[games.length-1][2].name:'fin de séance';
+ const progression=middle&&middle!==first&&middle!==last
+  ?'On démarre pendant la phase « '+firstStage+' » avec '+quoteGame(first,0)+'. Puis la phase intermédiaire s’appuie sur '+quoteGame(middle,1)+', pour faire évoluer le travail au-delà du premier exercice.'
+  :'On démarre avec '+quoteGame(first,0)+', puis on poursuit avec les autres jeux pour installer progressivement ce travail.';
+ const finale=last!==first
+  ?'La phase « '+lastStage+' » se termine avec '+quoteGame(last,games.length-1)+'. Elle permet de réinvestir le fil conducteur dans le dernier exercice, en s’appuyant sur sa consigne réelle.'
+  :'Le jeu retenu sert de point de départ : ajoute d’autres exercices pour construire une progression jusqu’à une scène finale.';
+ return '<div class="card session-objective"><strong>Fil conducteur : '+escapeText(category)+'</strong><p>Aujourd’hui, l’objectif est de '+escapeText(goals[category]||goals['Scène'])+'.</p><p>'+progression+'</p><p>'+finale+'</p></div>';
 }
 function generate(){
  const duration=+document.getElementById('duration').value;
@@ -186,7 +220,7 @@ function generate(){
  try{localStorage.setItem('impro-game-usage-v1',JSON.stringify(counts));}catch{}
  try{localStorage.setItem('impro-recent-games',JSON.stringify([...selected,...history].slice(0,80)));}catch{}
  try{localStorage.setItem('impro-session-rounds-v1',JSON.stringify([{signature,ids:selected,at:Date.now()},...rounds].slice(0,12)));}catch{}
- document.getElementById('plan').innerHTML=buildPrincipalObjective(selectedGames)+html;
+ document.getElementById('plan').innerHTML=buildPrincipalObjective(selectedGames,parts)+html;
  liveIndex=0;persistPlan();
 }
 function update(){let m=Math.floor(remaining/60),s=remaining%60;document.getElementById('timer').textContent=String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')}function start(){if(interval){clearInterval(interval);interval=null;return}interval=setInterval(()=>{if(remaining>0){remaining--;update()}else{clearInterval(interval);interval=null;alert('Temps écoulé !')}},1000)}function reset(){clearInterval(interval);interval=null;remaining=Math.max(1,+document.getElementById('mins').value||5)*60;update()}function draw(){let a=['Gare','Forêt','Restaurant','Ascenseur','Bibliothèque','Terrain de foot'],b=['Joie','Panique','Jalousie','Sérénité','Embarras'],c=['Touriste perdu','Prof enthousiaste','Pirate vegan','Magicien nul','Voisin'];let pick=x=>x[Math.floor(Math.random()*x.length)];document.getElementById('draw').textContent=pick(a)+' · '+pick(b)+' · '+pick(c)}
@@ -295,7 +329,7 @@ function pickRandomExercise(){
 function useRandomExercise(){if(!randomExerciseCurrent)return;const existing=planCards().some(c=>c.querySelector('h3')?.textContent===displayTitle(randomExerciseCurrent[0]));if(existing){document.getElementById('planSummary').textContent='Ce jeu est déjà dans la séance : il ne sera pas ajouté une seconde fois.';return}const plan=document.getElementById('plan');const card=document.createElement('div');card.className='card';const title=document.createElement('h3');title.className='exercise-title';title.textContent=displayTitle(randomExerciseCurrent[0]);title.style.color=categoryColor(randomExerciseCurrent[1]);const category=document.createElement('span');category.className='pill';category.textContent=randomExerciseCurrent[1];const duration=document.createElement('small');duration.textContent='5 min';card.append(title,category);const coachPanel=document.createElement('div');coachPanel.innerHTML=coachDetailsHtml(randomExerciseCurrent[0],randomExerciseCurrent[3]);if(coachPanel.firstElementChild)card.append(...coachPanel.childNodes);card.append(duration);plan.append(card);document.getElementById('planSummary').textContent='Exercice ajouté à la séance et transmis à la régie.';liveIndex=liveItems().length-1;document.getElementById('liveMode').value='session';liveModeChange();document.getElementById('liveMinutes').value=Math.max(1,Number(randomExerciseCurrent.duree_minutes)||5);liveSetDuration();tab('live');document.getElementById('liveTitle').scrollIntoView({block:'nearest'});}
 function coachDetailsHtml(title){const ex=(libraryPayload&&Array.isArray(libraryPayload.exercices)?libraryPayload.exercices:[]).find(item=>item.titre===title||displayTitle(item.titre)===title);if(!ex)return '';const ap=ex.accompagnement_pedagogique||{};const coach=ex.validation_coach||{};const consigne=String(ap.consigne||coach.consigne||coach.consigne_courte||'').trim();const variante=String(ap.variante||coach.variante||'').trim();const objectifProf=String(ap.objectif_prof||'').trim();const objectifEleves=String(ap.objectif_eleves||'').trim();const complexification=String(coach.complexification||'').trim();const explication=String(ex.regle_clarifiee||ex.texte_original||'').trim();const menu=(label,value)=>value?'<details class="coach-quick"><summary>'+label+'</summary><p>'+escapeText(value)+'</p></details>':'';const auteurConsigne=String(ex.auteur_consigne_courte||'Assistant d’Alexis');const attribution='<p class="coach-attribution"><strong>Créateur du jeu :</strong> Alexis. <strong>Consigne :</strong> '+escapeText(auteurConsigne)+'. <strong>Variante :</strong> '+escapeText(String(ap.auteur_variante||"Assistant d’Alexis"))+'. <strong>Adaptations facile/difficile :</strong> '+escapeText(String((ex.conseils_animation||{}).auteur_variantes||"Assistant d’Alexis"))+'. <strong>Autres propositions pédagogiques :</strong> Assistant d’Alexis.</p>';return menu('🎓 Consigne',consigne)+menu('🔀 Variante',variante)+menu('🎯 Objectif du prof',objectifProf)+menu('🌱 Objectif des élèves',objectifEleves)+menu('🚀 Complexification',complexification)+menu('📖 Explication complète du jeu',explication)+attribution;}
 function classify(g){if(g.objectif_pedagogique)return g.objectif_pedagogique;let t=(g.titre+' '+g.texte_original).toLowerCase();if(/émotion|emotion/.test(t))return 'Émotions';if(/regard|écoute|compter|balle|prénom|fil d/.test(t))return 'Écoute';if(/mime|mimé|march|geste|corps|danse|machine/.test(t))return 'Corps';if(/scène|impro|personnage|débat|interview|télé|radio/.test(t))return 'Scène';if(/histoire|lettre|plate.forme|construction|raconter/.test(t))return 'Construction';return 'Énergie'}
-async function loadLibrary(){try{let response=await fetch('library.json?v=20261022-v21-espaces-titres',{cache:'no-store'});if(!response.ok)throw Error('HTTP '+response.status);let payload=await response.json();if(!Array.isArray(payload.exercices)||payload.exercices.length<122)throw Error('Bibliothèque incomplète');libraryPayload=payload;const coachLists=payload.ressource_cahier_coach&&payload.ressource_cahier_coach.listes||{};for(const [category,items] of Object.entries(coachLists)){if(!Object.prototype.hasOwnProperty.call(DRAW_DEFAULTS,category))continue;const merged=[...new Set([...items,...(DRAW_DEFAULTS[category]||[])])];DRAW_DEFAULTS[category]=category==='Mot'?merged.slice(0,400):merged;drawLists[category]=category==='Mot'?[...new Set([...items,...(drawLists[category]||DRAW_DEFAULTS[category])])].slice(0,400):[...new Set([...items,...(drawLists[category]||[])])];}try{localStorage.setItem('impro-draw-lists-v4',JSON.stringify(drawLists));}catch{}drawInit();data=payload.exercices.map(g=>[g.titre,classify(g),g.regle_clarifiee||g.texte_original,g.variante_college||'',g.texte_original,!!g.regle_clarifiee,!!g.eligible_generateur,g.source_url||'',g.origine||'notes_personnelles',g.qualite_fiche||'',g.conseils_animation||null,Array.isArray(g.categories_secondaires)?g.categories_secondaires.filter(c=>c!==classify(g)):[],g.statut||'']);document.getElementById('manualGame').innerHTML=data.map((g,i)=>'<option value="'+i+'" style="color:'+categoryColor(g[1])+'">'+escapeText(displayTitle(g[0]))+'</option>').join('');renderGames();document.getElementById('libraryStatus').textContent=data.length+' exercices chargés';}catch(err){document.getElementById('libraryStatus').textContent='Bibliothèque complète indisponible : '+err.message;}}
+async function loadLibrary(){try{let response=await fetch('library.json?v=20261022-v22-objectif-narratif',{cache:'no-store'});if(!response.ok)throw Error('HTTP '+response.status);let payload=await response.json();if(!Array.isArray(payload.exercices)||payload.exercices.length<122)throw Error('Bibliothèque incomplète');libraryPayload=payload;const coachLists=payload.ressource_cahier_coach&&payload.ressource_cahier_coach.listes||{};for(const [category,items] of Object.entries(coachLists)){if(!Object.prototype.hasOwnProperty.call(DRAW_DEFAULTS,category))continue;const merged=[...new Set([...items,...(DRAW_DEFAULTS[category]||[])])];DRAW_DEFAULTS[category]=category==='Mot'?merged.slice(0,400):merged;drawLists[category]=category==='Mot'?[...new Set([...items,...(drawLists[category]||DRAW_DEFAULTS[category])])].slice(0,400):[...new Set([...items,...(drawLists[category]||[])])];}try{localStorage.setItem('impro-draw-lists-v4',JSON.stringify(drawLists));}catch{}drawInit();data=payload.exercices.map(g=>[g.titre,classify(g),g.regle_clarifiee||g.texte_original,g.variante_college||'',g.texte_original,!!g.regle_clarifiee,!!g.eligible_generateur,g.source_url||'',g.origine||'notes_personnelles',g.qualite_fiche||'',g.conseils_animation||null,Array.isArray(g.categories_secondaires)?g.categories_secondaires.filter(c=>c!==classify(g)):[],g.statut||'']);document.getElementById('manualGame').innerHTML=data.map((g,i)=>'<option value="'+i+'" style="color:'+categoryColor(g[1])+'">'+escapeText(displayTitle(g[0]))+'</option>').join('');renderGames();document.getElementById('libraryStatus').textContent=data.length+' exercices chargés';}catch(err){document.getElementById('libraryStatus').textContent='Bibliothèque complète indisponible : '+err.message;}}
 
 const DRAW_DEFAULTS={
  "Thème": [
@@ -1015,5 +1049,5 @@ initRandomDynamics();
 rosterLoad();
 drawInit();
 loadLibrary();
-if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=20261022-v21-espaces-titres',{updateViaCache:'none'}).then(reg=>reg.update()).catch(e=>console.warn('Mode hors ligne indisponible',e)));
+if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=20261022-v22-objectif-narratif',{updateViaCache:'none'}).then(reg=>reg.update()).catch(e=>console.warn('Mode hors ligne indisponible',e)));
 try{const saved=localStorage.getItem('impro-last-plan')||'';if(saved){const doc=new DOMParser().parseFromString(saved,'text/html');const safe=document.createElement('div');doc.querySelectorAll('.card').forEach(c=>{const el=document.createElement('div');el.className='card';if(c.classList.contains('session-objective')){el.classList.add('session-objective');const heading=document.createElement('strong');heading.textContent=c.querySelector('strong')?.textContent||'Objectif principal de la séance';el.append(heading);c.querySelectorAll('p').forEach(n=>{const p=document.createElement('p');p.textContent=n.textContent;el.append(p)});safe.append(el);return}for(const [tag,source] of [['small','small'],['h3','h3'],['p','p']]){const n=c.querySelector(source);if(n){const item=document.createElement(tag);item.textContent=n.textContent;el.append(item)}}if(el.querySelector('h3'))safe.append(el)});document.getElementById('plan').replaceChildren(...safe.children)}}catch(e){console.warn('Séance précédente illisible',e)}refreshEditor();try{if(sessionStorage.getItem('improlab-welcome-seen')==='1')document.getElementById('welcomeScreen')?.remove()}catch{}</script></body></html>
