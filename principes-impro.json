@@ -50,6 +50,14 @@
       "principe": "Ne cherche pas à inventer constamment des idées extraordinaires ou des rebondissements compliqués. Appuie-toi sur ce qui est déjà présent dans la scène : un geste, une émotion, un objet ou une relation. Une proposition simple, jouée avec sincérité et précision, peut devenir très drôle ou très touchante. Fais confiance au jeu plutôt qu’à la recherche de la bonne idée.",
       "exemple": "A : « Tu trembles. » B : « J’ai peur. » A : « De quoi ? » B : « De te dire que j’ai peur. »",
       "statut": "validé"
+    },
+    {
+      "id": 7,
+      "titre": "Montre, ne raconte pas",
+      "formulation_originale": "Montre plutôt que raconter : l’action d’abord.",
+      "principe": "Fais vivre la situation par les gestes, les paroles et les réactions des personnages plutôt que de simplement expliquer ce qui se passe. Privilégie l’action : elle permet au public de comprendre et de ressentir la scène. Si ton personnage est triste, fais-le exister dans son comportement plutôt que de seulement annoncer sa tristesse. Donne à voir, laisse le public découvrir.",
+      "exemple": "Au lieu de dire : « Je suis épuisé », le personnage lutte pour garder les yeux ouverts, s’endort debout et répond à côté de la conversation.",
+      "statut": "validé"
     }
   ]
 }
