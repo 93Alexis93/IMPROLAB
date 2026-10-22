@@ -23,7 +23,7 @@ assert.deepEqual(sortedOriginCounts, baseline.comptages_origine, 'Répartition d
 
 assert.ok(lib.exercices.filter(e => e.origine === 'notes_personnelles' && e.regle_clarifiee).length >= 22, 'Pas assez de règles personnelles clarifiées');
 for (const e of lib.exercices) assert.equal(typeof e.texte_original, 'string', `Fiche ${e.id}, champ « texte_original » : doit être une chaîne`);
-for (const fn of ['generate','refreshEditor','moveExercise','changeMinutes','replaceExercise','removeExercise','exportSession','importSession','liveNext','livePrevious','liveToggle','loadLibrary']) assert.ok(script.includes('function '+fn+'('), 'Fonction manquante : '+fn);
+for (const fn of ['generate','refreshEditor','moveExercise','changeMinutes','replaceExercise','removeExercise','clearSession','exportSession','importSession','liveNext','livePrevious','liveToggle','loadLibrary']) assert.ok(script.includes('function '+fn+'('), 'Fonction manquante : '+fn);
 for (const name of ['seance','jeux','groupes','historique','live']) assert.ok(html.includes('id="'+name+'"'), 'Section absente : '+name);
 for (const name of ['principes','cahier','random','public','plan','manualGame','libraryStatus','liveStart','randomExerciseUse']) assert.ok(html.includes('id="'+name+'"'), 'Élément absent : '+name);
 for (const file of ['sw.js','manifest.webmanifest','icon.svg']) assert.ok(fs.existsSync(file), 'Fichier manquant : '+file);
