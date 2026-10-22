@@ -944,7 +944,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "En cercle, chacun incarne une carte dans la hiérarchie annoncée. Gardez le rythme de deux frappes sur les cuisses puis deux dans les mains ; suivez les règles d’échange de place et de carte.",
+        "consigne_courte": "Les joueurs se placent en cercle. Chacun représente une carte dans une hiérarchie allant de l'As à la carte la plus basse (par exemple le 7). Tous gardent le rythme : deux frappes sur les cuisses, puis deux dans les mains. Le joueur actif annonce sa propre carte pendant les frappes sur les cuisses, puis appelle la carte d'un autre joueur pendant les frappes dans les mains. Le joueur appelé prend immédiatement le relais et annonce à son tour sa carte, puis celle d'un autre joueur. Celui qui se trompe descend en bas de la hiérarchie ; les cartes des autres joueurs sont réattribuées en conséquence.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -1201,7 +1201,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Quatre joueurs : trois partagent le même type de personnage, le quatrième donne une information banale. Le premier réagit à 30 % d’émotion ; les suivants reprennent l’échange en la faisant monter à 60 %, puis à 100 %.",
+        "consigne_courte": "Quatre joueurs : trois jouent le même type de personnage, le quatrième un autre. Une scène banale déclenche une émotion jouée d’abord à 30 %, puis à 60 %, enfin à 100 % par les trois personnages.",
         "variante_facile": "Jouer une émotion simple avec une intensité modérée.",
         "variante_difficile": "Faire évoluer progressivement l'émotion pendant la scène.",
         "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
