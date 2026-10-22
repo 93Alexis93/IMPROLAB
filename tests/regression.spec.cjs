@@ -200,7 +200,7 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
  test.setTimeout(120000);
  await openApp(page);
  await page.locator('#includeExternal').uncheck();
- for(let i=0;i<10;i++)await page.locator('#dynamic'+i).fill(i===0?'100':'0');
+ for(let i=0;i<10;i++)await page.locator('#dynamic'+i).evaluate((el,value)=>{el.value=value;el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}));},i===0?'100':'0');
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  const cards=page.locator('#plan>.card').filter({has:page.locator('h3')});
  await expect(cards).toHaveCount(5);
