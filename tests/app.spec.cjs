@@ -20,6 +20,23 @@ test('boutons sous le chrono restent sur une seule ligne sans plein écran',asyn
 
 test('titres des fiches : article affiché et couleur de catégorie principale',async({page})=>{const result=await page.evaluate(()=>{const titles=data.map(g=>displayTitle(g[0]));const missing=titles.filter(t=>! /^(?:Le |La |Les |Un\b|Une\b|Des |L['’])/i.test(t));const cardHtml=card(data.find(g=>g[0]==='Duel au cercle'));return {count:titles.length,missing,display:displayTitle('Abécédaire'),hasColor:cardHtml.includes('color:'+categoryColor('Énergie'))};});expect(result.count).toBeGreaterThanOrEqual(122);expect(result.missing).toEqual([]);expect(result.display).toBe('L’Abécédaire');expect(result.hasColor).toBe(true)});
 
+test('accueil ouvre le premier bouton et recherche principes/conseils',async({page})=>{
+  await expect(page.locator('#random')).toBeVisible();
+  await expect(page.locator('#seance')).toBeHidden();
+  await expect(page.locator('nav button').first()).toHaveAttribute('aria-current','page');
+  await page.getByRole('button',{name:'🧭 Principes et conseils'}).click();
+  await page.locator('#principesSearch').fill('dragon');
+  await expect(page.locator('#principesSearchResults')).toBeVisible();
+  await expect(page.locator('#principesSearchResults')).toContainText('Le « oui, et… »');
+  await expect(page.locator('#principesSearchResults')).toContainText('Exemple concret');
+  await expect(page.locator('#principesSearchCount')).toContainText('résultat');
+  await page.locator('#principesSearch').fill('silence');
+  await expect(page.locator('#principesSearchResults')).toContainText('Ose les silences');
+  await page.locator('#principesSearch').fill('mot-clé introuvable xyz');
+  await expect(page.locator('#principesSearchResults')).toContainText('Aucun principe ni conseil');
+  await page.locator('#principesSearch').fill('');
+  await expect(page.locator('#principesHome')).toBeVisible();
+});
 test('principes et conseils accessibles en deux entrées',async({page})=>{
   await expect(page.locator('header .home-motto')).toHaveText('L’impro c’est l’art de rater !');
   await page.getByRole('button',{name:'🧭 Principes et conseils'}).click();
