@@ -19,3 +19,15 @@ test('boutons sous le chrono restent sur une seule ligne sans plein écran',asyn
 
 
 test('titres des fiches : article affiché et couleur de catégorie principale',async({page})=>{const result=await page.evaluate(()=>{const titles=data.map(g=>displayTitle(g[0]));const missing=titles.filter(t=>! /^(?:Le |La |Les |Un\b|Une\b|Des |L['’])/i.test(t));const cardHtml=card(data.find(g=>g[0]==='Duel au cercle'));return {count:titles.length,missing,display:displayTitle('Abécédaire'),hasColor:cardHtml.includes('color:'+categoryColor('Énergie'))};});expect(result.count).toBeGreaterThanOrEqual(122);expect(result.missing).toEqual([]);expect(result.display).toBe('L’Abécédaire');expect(result.hasColor).toBe(true)});
+
+test('conseils d’impro et devise d’accueil',async({page})=>{
+  await expect(page.locator('header .home-motto')).toHaveText('L’impro c’est l’art de rater !');
+  await page.getByRole('button',{name:'🧭 Principe et conseil'}).click();
+  await expect(page.locator('#principes')).toBeVisible();
+  await expect(page.locator('#principes details.advice-panel')).toHaveCount(4);
+  await expect(page.locator('#adviceBeginnerContent .advice-card')).toHaveCount(10);
+  await expect(page.locator('#adviceMediumContent .advice-card')).toHaveCount(10);
+  await expect(page.locator('#adviceProContent .advice-card')).toHaveCount(10);
+  await expect(page.locator('#principesContent')).toContainText('Le oui et');
+  await expect(page.locator('#adviceMediumContent')).toContainText('Engage-toi dans tes choix');
+});
