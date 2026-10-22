@@ -180,14 +180,14 @@ function buildPrincipalObjective(games,parts=[]){
   :'Le jeu retenu sert de point de départ : ajoute d’autres exercices pour construire une progression jusqu’à une scène finale.';
  return '<div class="card session-objective"><strong>Fil conducteur : '+escapeText(category)+'</strong><p>Aujourd’hui, l’objectif est de '+escapeText(goals[category]||goals['Scène'])+'.</p><p>'+progression+'</p><p>'+finale+'</p></div>';
 }
+function isEligibleGame(g,{includeExternal=true}={}){return !!(g&&g[6]&&g[5]&&g[2]&&g[2].trim().length>20&&!['notes originales','proposition à valider','à confirmer'].includes((g[12]||'').toLowerCase())&&g[9]!=='incomplète'&&(includeExternal||g[8]==='notes_personnelles'))}
 function generate(){
  const duration=+document.getElementById('duration').value;
  const adult=document.getElementById('public').selectedIndex===1;
  const dynamics=getDynamics();
  const mins=buildTimelineMinutes(duration);
  const parts=SOFT_TIMELINE.map((stage,i)=>[timelineCategory(stage,dynamics),mins[i],stage]);
- function isEligibleGame(g,{includeExternal=true}={}){return !!(g&&g[6]&&g[5]&&g[2]&&g[2].trim().length>20&&!['notes originales','proposition à valider','à confirmer'].includes((g[12]||'').toLowerCase())&&g[9]!=='incomplète'&&(includeExternal||g[8]==='notes_personnelles'))}
-const allowed=data.filter(g=>isEligibleGame(g,{includeExternal:true}));
+ const allowed=data.filter(g=>isEligibleGame(g,{includeExternal:true}));
  if(allowed.length<5){alert('Pas assez d’exercices disponibles. Vérifie le statut de la bibliothèque dans l’onglet Jeux.');return}
  const includeExternal=document.getElementById('includeExternal').checked;
  const candidates=allowed.filter(g=>isEligibleGame(g,{includeExternal}));
