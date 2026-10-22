@@ -43,6 +43,7 @@ assert.ok(durationOptions.every((duration, index) => index === 0 || duration - d
 assert.match(durationMarkup, /value="55" selected/, 'La durée par défaut doit être de 55 minutes');
 assert.ok(script.includes('function buildTimelineMinutes(duration)'), 'Répartition dynamique des durées absente');
 assert.ok(script.includes('function buildPrincipalObjective(games)'), 'Objectif pédagogique principal absent');
+assert.ok(script.includes('session-coach') && script.includes('Pour relancer :') && script.includes('À surveiller :'),'Mode Coach absent des exercices de séance');
 assert.ok(script.includes('buildPrincipalObjective(selectedGames)'), 'Objectif calculé à partir des exercices sélectionnés absent');
 for (const feature of ['touchstart','touchend','Date.now()-liveAnchor','impro-favorites','impro-recent-games','serviceWorker.register','planSummary']) assert.ok(html.includes(feature), 'Fonction manquante : '+feature);
 const manifest = JSON.parse(fs.readFileSync('manifest.webmanifest','utf8'));
