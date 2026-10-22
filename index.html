@@ -130,7 +130,6 @@ function generate(){
  const duration=+document.getElementById('duration').value;
  const adult=document.getElementById('public').selectedIndex===1;
  const dynamics=getDynamics();
- const times={45:[6,8,8,15,8],55:[7,10,12,18,8],60:[8,11,13,20,8],90:[12,17,20,28,13]};
  const mins=buildTimelineMinutes(duration);
  const parts=SOFT_TIMELINE.map((stage,i)=>[timelineCategory(stage,dynamics),mins[i],stage]);
  const allowed=data.filter(g=>g[6]&&g[5]&&g[2]&&g[2].trim().length>20&&!['notes originales','proposition à valider','à confirmer'].includes((g[12]||'').toLowerCase()));
