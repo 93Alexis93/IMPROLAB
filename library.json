@@ -19,7 +19,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "En cercle, un joueur envoie un « Sa » à quelqu’un en levant les bras vers lui. Le destinataire lève les bras et répond « Mu ». Ses deux voisins font aussitôt un mouvement de sabre vers lui en disant « Raï ». C’est le joueur qui vient de dire « Mu » qui envoie ensuite le « Sa » suivant. On enchaîne sans perdre le rythme.",
+        "consigne_courte": "En cercle, envoie « Sa » à quelqu’un en levant les bras. Il répond « Mu » en levant les bras ; ses deux voisins miment un coup de sabre en disant « Raï ». Celui qui a dit « Mu » relance un « Sa ».",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
@@ -42,9 +42,9 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée",
       "conseils_animation": {
-        "consigne_courte": "En binôme, A dit « un », B dit « deux », A dit « trois », puis B reprend à « un ». Les joueurs se regardent dans les yeux et accélèrent. Remplacer progressivement « un » par un claquement de mains ou de doigts, puis « trois » par une montée de genou.",
+        "consigne_courte": "En binôme, comptez en alternance « un, deux, trois », puis recommencez. Regardez-vous et accélérez progressivement.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
-        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "variante_difficile": "Quand le groupe maîtrise le comptage, remplacer progressivement « un » par un claquement de mains ou de doigts, puis « trois » par une montée de genou.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       }
@@ -94,7 +94,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "L’animateur propose un thème. Les joueurs construisent ensemble une improvisation verbale en prononçant chacun un seul mot à leur tour. Ils doivent respecter un rythme régulier tout en donnant du sens à la phrase ou à l’histoire collective.",
+        "consigne_courte": "À partir d’un thème, construisez une histoire collective en disant chacun un seul mot à votre tour, avec un rythme régulier et du sens.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
@@ -123,7 +123,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs se placent en cercle. Un zombie avance vers une personne pour la toucher. La personne menacée cherche le regard d’un autre joueur ; celui-ci doit rapidement prononcer le prénom d’une nouvelle cible. Le zombie change alors de direction et poursuit cette nouvelle personne. Tant qu’il ne touche personne, il reste zombie. Dès qu’il réussit à toucher quelqu’un, cette personne devient le nouveau zombie.",
+        "consigne_courte": "En cercle, le zombie avance pour toucher une personne. Celle-ci cherche le regard d’un autre joueur, qui annonce une nouvelle cible ; le zombie change de direction. Si quelqu’un est touché, il devient le nouveau zombie.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
@@ -152,7 +152,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Le groupe tente de compter collectivement à partir de 1, sans fixer l’ordre des prises de parole. Chaque joueur peut annoncer le nombre suivant. Si deux personnes parlent simultanément, tout le groupe recommence à 1.",
+        "consigne_courte": "Comptez ensemble à partir de 1, sans ordre de parole fixé. Si deux joueurs annoncent un nombre en même temps, recommencez à 1.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
@@ -179,9 +179,9 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée",
       "conseils_animation": {
-        "consigne_courte": "L’animateur introduit une balle imaginaire de couleur. En se déplaçant, les joueurs la passent en disant « Je te donne la balle [couleur] ». On s’arrête pour retrouver le détenteur, puis on recommence avec plusieurs balles et on vérifie qu’aucune n’a disparu.",
+        "consigne_courte": "Faites circuler une balle imaginaire colorée en disant « Je te donne la balle [couleur] ». Arrêtez-vous pour retrouver qui la détient.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
-        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "variante_difficile": "Pour complexifier, ajoutez plusieurs balles imaginaires et vérifiez qu’aucune ne disparaît.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
@@ -205,7 +205,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs forment un cercle. L’animateur annonce le prénom d’un participant. Celui-ci doit immédiatement se baisser ; ses deux voisins se font face et miment un duel de cowboys en tirant l’un sur l’autre, en disant « Pan ! ». On peut éliminer un joueur s’il ne se baisse pas lorsqu’il est appelé ou s’il oublie de tirer en disant « Pan ! » lorsqu’il est voisin de la personne appelée. On recommence avec un autre prénom.",
+        "consigne_courte": "En cercle, l’animateur appelle un prénom : la personne appelée se baisse et ses voisins se font face pour un duel mimé en disant « Pan ! ». On peut éliminer ceux qui réagissent mal, puis appeler un autre prénom.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -233,7 +233,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Un voyant annonce : « Je suis voyant et je sais que parmi vous… », puis donne une caractéristique. Les joueurs avancent progressivement ; ceux qui ne sont pas concernés par l’affirmation arrêtent d’avancer. Le voyant poursuit ses annonces pour qu’il ne reste finalement qu’une personne en mouvement. Si tout le monde s’arrête, il a perdu.",
+        "consigne_courte": "Le voyant annonce « Je suis voyant et je sais que parmi vous… » puis une caractéristique. Les joueurs concernés avancent, les autres s’arrêtent. Continuez jusqu’à ce qu’une seule personne avance ; si tout le monde s’arrête, le voyant perd.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -261,7 +261,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs dansent ensemble. Un participant propose un mouvement que tout le groupe reproduit. Dès qu’un autre joueur propose un nouveau geste, les autres l’adoptent à leur tour. La danse évolue ainsi grâce aux initiatives successives des participants.",
+        "consigne_courte": "Dansez ensemble : chacun peut proposer un mouvement que tout le groupe reprend, jusqu’à ce qu’un autre geste le remplace.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
@@ -289,7 +289,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Quatre joueurs occupent les sommets d’un losange, tous tournés dans la même direction. Celui qui est devant mène une danse que les autres reproduisent. Quand ses pas orientent le groupe vers la gauche ou la droite, le joueur qui se retrouve à l’avant prend le relais et devient meneur. On peut ajouter d’autres danseurs à l’intérieur du losange : ils suivent les mouvements, mais ne deviennent jamais meneurs.",
+        "consigne_courte": "Quatre joueurs forment un losange et suivent le meneur placé devant. Quand un déplacement vers la gauche ou la droite change qui est devant, le nouveau joueur mène la danse. Les danseurs ajoutés au centre suivent sans mener.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
@@ -318,9 +318,9 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs forment un cercle et transmettent une énergie par des frappements de mains. Une frappe en direction du voisin fait continuer le signal dans le même sens ; deux frappes accompagnées d’un retournement inversent le sens de circulation. Le groupe cherche à accélérer sans attendre la fin du geste précédent. Dans les manches suivantes, on double le nombre de frappes nécessaires, par exemple quatre puis huit.",
+        "consigne_courte": "En cercle, faites circuler l’énergie par des frappes de mains : une frappe vers le voisin poursuit dans le même sens ; deux frappes et un retournement inversent le sens.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
-        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "variante_difficile": "Pour complexifier, doublez le nombre de frappes nécessaires à chaque manche (par exemple quatre, puis huit).",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
@@ -346,7 +346,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Une scène se déroule au service après-vente. Le client vient rapporter un objet dont il ignore l’identité ; l’employé et le public savent de quel objet il s’agit. Le client improvise une réclamation, écoute les réponses de l’employé et tente de comprendre ce qu’il est censé rapporter, sans sortir de la situation.",
+        "consigne_courte": "Au SAV, le client ignore quel objet il rapporte, contrairement à l’employé et au public. Il formule sa réclamation et tente de deviner l’objet grâce aux réponses, sans sortir de la situation.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -375,7 +375,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Avant la scène, le public choisit des mots en l’absence des débatteurs. Pendant un débat ou un entretien d’embauche improvisé, des joueurs miment ces mots pour un seul des comédiens. Celui-ci doit les deviner et les glisser naturellement dans ses répliques, sans interrompre la situation. Son partenaire poursuit la scène sans voir les mimes. Lorsqu’un mot est correctement deviné et intégré à la scène, le public applaudit.",
+        "consigne_courte": "Le public choisit des mots sans que les débatteurs les entendent. Des joueurs les miment pour un seul comédien, qui doit les deviner et les placer naturellement dans le débat ou l’entretien ; le public applaudit chaque mot intégré.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
@@ -405,9 +405,9 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs forment un cercle et comptent collectivement de 1 à 7 en faisant circuler l’énergie. Pour transmettre au voisin de droite ou de gauche, on se tape sur l’épaule correspondante. À 7, le joueur désigne avec les mains n’importe quel participant, qui reprend à 1. Lorsque le groupe maîtrise le jeu, on ajoute des contraintes successives : remplacer le 3 par un jour de la semaine, puis dire « trois » à la place de 5, tout en conservant aussi le 3 initial, et enfin remplacer le 1 par un geste du pied.",
+        "consigne_courte": "En cercle, comptez de 1 à 7 en faisant circuler l’énergie vers un voisin par une tape sur l’épaule correspondante. À 7, désignez quelqu’un qui reprend à 1.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
-        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "variante_difficile": "Quand le groupe maîtrise le compte, remplacez le 3 par un jour de la semaine, dites aussi « trois » à la place de 5 tout en conservant le 3 initial, puis remplacez le 1 par un geste du pied.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
@@ -433,7 +433,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux joueurs se font face. Le premier désigne une partie de son corps tout en en nommant une autre : par exemple, il pointe son genou et dit « Ceci est mon nez ». Le deuxième doit réagir rapidement en désignant la partie du corps annoncée, tout en prononçant le nom d’une autre partie du corps. L’échange se poursuit sans hésitation.",
+        "consigne_courte": "À deux, désignez une partie du corps tout en en nommant une autre (« ceci est mon nez » en pointant le genou). Le partenaire montre la partie nommée et annonce à son tour un autre nom, sans hésiter.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -461,7 +461,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux joueurs improvisent une histoire à partir d’une situation initiale. Le premier annonce un événement. Son partenaire répond « Ah, c’est cool ! ». Le premier ajoute alors une information qui transforme cet événement en mauvaise nouvelle. Le partenaire répond « Ah, c’est pas cool ! ». Le premier apporte une nouvelle information qui inverse encore la situation. Ils continuent ainsi en alternant les bonnes et les mauvaises nouvelles.",
+        "consigne_courte": "À deux, construisez une histoire en alternant bonnes et mauvaises nouvelles : l’un annonce un événement, l’autre répond « Ah, c’est cool ! » ; une nouvelle information inverse la situation et appelle « Ah, c’est pas cool ! », puis alternez.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -490,7 +490,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Une dizaine de joueurs dansent librement dans l’espace. L’animateur annonce soudain un nombre. Sans se concerter, les participants doivent s’organiser pour que seul le nombre exact de joueurs annoncé continue à danser. Les autres s’immobilisent. L’animateur propose ensuite un autre nombre et le groupe doit s’adapter rapidement.",
+        "consigne_courte": "Dansez librement. À chaque nombre annoncé, organisez-vous sans parler pour que seuls autant de joueurs continuent à danser ; les autres s’immobilisent. Recommencez avec un autre nombre.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
@@ -519,7 +519,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Par deux, chacun imagine de son côté un problème et choisit un objet. Les deux joueurs découvrent ensuite les propositions de l’autre, sans les avoir annoncées à l’avance. Chacun doit résoudre le problème de son partenaire en utilisant son propre objet, même si l’association paraît absurde.",
+        "consigne_courte": "Chacun imagine secrètement un problème et choisit un objet. Révélez vos idées, puis résolvez le problème de l’autre avec l’objet que vous avez choisi, même si l’association est absurde.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -548,7 +548,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux joueurs improvisent une scène sur un thème donné. L’un peut parler librement ; l’autre ne peut utiliser que les cinq mots « Oui », « d’accord », « on », « y », « va », séparément ou combinés. Il varie son intonation, ses gestes et ses expressions pour exprimer différentes intentions malgré cette contrainte. Son partenaire construit la scène en tenant compte de ses réactions.",
+        "consigne_courte": "À deux, improvisez sur un thème : l’un parle librement, l’autre n’utilise que « Oui », « d’accord », « on », « y », « va », seuls ou combinés. Le partenaire construit la scène à partir de ses réactions.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
@@ -577,7 +577,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs construisent ensemble une histoire improvisée. Le premier commence sa réplique par A, le suivant par B, puis C, et ainsi de suite. Chacun poursuit l'histoire en respectant sa lettre. L'animateur peut interdire les prénoms ou d'autres types de mots.",
+        "consigne_courte": "Inventez une histoire collective : les répliques commencent successivement par A, B, C, etc. L’animateur peut interdire certains types de mots.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
@@ -606,7 +606,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux binômes jouent deux scènes en alternance ; elles peuvent appartenir à la même histoire ou être indépendantes. Lorsqu’un binôme reprend la dernière réplique de l’autre pour l’intégrer à sa scène, l’autre binôme se fige. Il attend de pouvoir à son tour voler une réplique pour reprendre le jeu. L’enjeu est d’intégrer la phrase empruntée de façon fluide.",
+        "consigne_courte": "Deux binômes jouent des scènes en alternance. Quand l’un reprend la dernière réplique de l’autre dans sa propre scène, l’autre se fige jusqu’à ce qu’il puisse à son tour voler une réplique. Intégrez-la naturellement.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -633,7 +633,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux comédiens improvisent une scène. L’un utilise un livre : il ouvre une page au hasard, puis choisit sur cette page les phrases qu’il prononce. Son partenaire parle librement et intègre ces répliques dans l’histoire. Le lecteur ne choisit pas la page, mais choisit la phrase. Le dialogue doit rester fluide, sans longues interruptions pour chercher du texte.",
+        "consigne_courte": "À deux, jouez une scène : un comédien ouvre un livre à une page au hasard et choisit les phrases qu’il lit ; son partenaire les intègre librement. Gardez un dialogue fluide, sans longues recherches.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
@@ -662,7 +662,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs se rangent dans l'ordre alphabétique selon une caractéristique annoncée : leurs prénoms, puis leurs métiers, par exemple. Les réponses peuvent être inventées. Si une proposition ne convient pas, le groupe poursuit pour retrouver un ordre cohérent.",
+        "consigne_courte": "Rangez-vous par ordre alphabétique selon la caractéristique annoncée (prénom, métier…). Les réponses peuvent être inventées ; ajustez-vous jusqu’à obtenir un ordre cohérent.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
@@ -690,7 +690,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux joueurs comptent ensemble jusqu'à trois puis disent simultanément un mot. Deux autres cherchent chacun un mot reliant les deux précédents et le disent simultanément après un nouveau compte. Les binômes se succèdent jusqu'à prononcer le même mot. Tous concluent : « Et c'est la convergenceeee ! »",
+        "consigne_courte": "Deux joueurs disent chacun un mot en même temps après avoir compté jusqu’à trois. Les binômes suivants proposent simultanément des mots reliant les précédents ; continuez jusqu’à dire le même mot, puis criez « Et c’est la convergenceeee ! »",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
@@ -719,7 +719,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux joueurs improvisent une anecdote. Le premier raconte un événement puis pose une question comme « Tu sais pas qui il y avait ? ». Le second invente immédiatement une réponse. Le premier l'accepte, poursuit et pose une autre question. L'histoire avance ainsi spontanément.",
+        "consigne_courte": "À deux, inventez une anecdote. Le premier raconte puis pose une question ; le second invente aussitôt une réponse que le premier accepte avant de relancer avec une nouvelle question.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
@@ -748,7 +748,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux binômes participent. Dans chacun, un comédien joue sans parler et ouvre et ferme la bouche pendant que son doubleur fournit les paroles. Les doubleurs sont assis de biais par rapport aux comédiens doublés ou allongés devant le public. Les deux personnages jouent ensemble tandis que leurs doubleurs improvisent les dialogues.",
+        "consigne_courte": "Deux binômes jouent : dans chacun, un comédien mime sans parler et son doubleur improvise ses paroles. Les deux personnages interagissent dans la même scène.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
@@ -777,9 +777,9 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Trois rôles sont répartis entre les participants : l’interviewé, le traducteur et le journaliste. L’interviewé commence par se présenter dans une langue imaginaire. Le traducteur traduit ses propos au journaliste. Le journaliste pose ensuite une question au traducteur, qui la transmet à l’interviewé. Celui-ci répond dans sa langue imaginaire et le traducteur rend sa réponse compréhensible au journaliste. Variante : le traducteur peut volontairement dire le contraire de ce que l’interviewé a exprimé.",
+        "consigne_courte": "À trois, jouez journaliste, traducteur et interviewé : l’interviewé parle une langue imaginaire, le traducteur rend ses propos compréhensibles, puis transmet les questions du journaliste et traduit les réponses.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
-        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "variante_difficile": "Variante : le traducteur peut volontairement traduire le contraire de ce que dit l’interviewé.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       }
@@ -800,7 +800,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "L’espace de jeu est divisé en quatre zones, chacune associée à une émotion différente : par exemple joie, colère, peur et tristesse. Les comédiens improvisent une scène. Dès qu’un personnage entre dans une zone, il adopte l’émotion qui lui correspond, tout en poursuivant l’histoire. Ses émotions évoluent donc au fil de ses déplacements.",
+        "consigne_courte": "Divisez l’espace en quatre zones, chacune liée à une émotion. Pendant la scène, adoptez l’émotion de chaque zone dès que vous y entrez, sans interrompre l’histoire.",
         "variante_facile": "Jouer une émotion simple avec une intensité modérée.",
         "variante_difficile": "Faire évoluer progressivement l'émotion pendant la scène.",
         "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
@@ -829,7 +829,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Quatre comédiens se placent aux quatre sommets d’un carré. Chaque joueur joue dans deux histoires différentes, une avec chacun de ses voisins. Au départ, chaque binôme définit ses personnages et son lieu. Le binôme situé face au public commence sa scène. Au signal du maître de cérémonie, les quatre joueurs tournent ensemble d’un quart de tour : le nouveau binôme de devant reprend sa propre histoire. Les scènes alternent au fil des rotations.",
+        "consigne_courte": "Quatre comédiens forment un carré et préparent deux histoires, une avec chaque voisin. Le binôme de devant joue ; au signal, tous tournent d’un quart de tour et le nouveau binôme de devant reprend sa propre histoire.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
@@ -858,7 +858,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "L’animateur désigne une personne fictive et donne au groupe deux ou trois informations à son sujet. Les joueurs passent ensuite chacun leur tour pour laisser un message sur son répondeur téléphonique. Chaque message invente une relation, un événement ou une situation en lien avec ce personnage. Au fil des messages, le public découvre progressivement sa vie et sa personnalité.",
+        "consigne_courte": "L’animateur présente une personne fictive avec deux ou trois informations. Chacun laisse à son tour un message sur son répondeur, révélant une relation, un événement ou un aspect de sa vie.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -887,7 +887,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Un joueur s’installe au centre de l’espace. Le groupe définit deux ou trois caractéristiques de son personnage. Les autres improvisateurs viennent à tour de rôle le rencontrer pour un entretien très court. Selon le thème choisi, il peut s’agir d’un rendez-vous amoureux ou d’un recrutement professionnel. Chaque nouvel interlocuteur propose une personnalité et une situation différentes, auxquelles le personnage central doit réagir.",
+        "consigne_courte": "Un joueur incarne un personnage défini par deux ou trois caractéristiques. Les autres viennent à tour de rôle pour un entretien très court, amoureux ou professionnel, avec des personnages et situations différents.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
@@ -916,7 +916,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Choisissez une émotion et faites-la comprendre par le corps, la voix et la situation.",
+        "consigne_courte": "En cercle, transmettez un Saint Graal imaginaire avec une émotion jouée à 10 % de son intensité. Le receveur reprend l’objet et le transmet à son tour.",
         "variante_facile": "Jouer une émotion simple avec une intensité modérée.",
         "variante_difficile": "Faire évoluer progressivement l'émotion pendant la scène.",
         "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
@@ -971,7 +971,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Quatre comédiens improvisent une scène avec deux personnages, chacun incarné par un binôme. Le premier binôme, dont les deux comédiens sont collés, construit ses phrases en prononçant alternativement un mot chacun. Le second binôme parle simultanément : ses deux comédiens essaient de prononcer exactement les mêmes mots au même moment. Faire traîner les mots aide à se synchroniser. Les deux personnages collectifs improvisent ainsi un dialogue.",
+        "consigne_courte": "Quatre comédiens jouent deux personnages, chacun incarné par un binôme : dans le premier, les partenaires disent un mot chacun à tour de rôle ; dans le second, ils tentent de prononcer exactement les mêmes mots simultanément.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
@@ -1031,7 +1031,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "L’animateur propose des phrases difficiles à articuler, comme « Panier piano », « Quatre tartes crues, quatre tartes cuites » ou « Suis-je chez ce cher Serge ? ». Les joueurs les prononcent distinctement, puis essaient d’accélérer sans perdre l’articulation. On peut varier le volume, le rythme et l’intonation.",
+        "consigne_courte": "Répétez distinctement les phrases difficiles proposées par l’animateur, puis essayez de les accélérer sans perdre l’articulation.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -1059,7 +1059,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Un joueur lance à un autre : « Donne-moi une liste de cinq… », en précisant un thème. Le joueur interrogé donne cinq réponses, une par une. Entre chaque réponse, les autres comptent jusqu’à cinq pour maintenir la pression. Après la cinquième, le groupe scande en rythme : « Et ça fait cinq ! ». Celui qui vient de répondre lance à son tour un nouveau défi à un autre joueur.",
+        "consigne_courte": "Lance à quelqu’un « Donne-moi cinq… » avec un thème. Il donne cinq réponses, une par une, pendant que le groupe compte jusqu’à cinq entre chaque. Scandez « Et ça fait cinq ! », puis il lance un nouveau défi.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -1087,7 +1087,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs doivent compter collectivement de 1 à 20, sans désigner à l’avance qui parlera. N’importe qui peut annoncer le nombre suivant, mais chaque nombre doit être prononcé par une seule personne. Si deux joueurs parlent simultanément, la tentative échoue et le groupe recommence à 1. L’objectif est d’atteindre 20 grâce à l’écoute et à l’attention mutuelle.",
+        "consigne_courte": "Comptez ensemble de 1 à 20 sans ordre de parole fixé. Chaque nombre ne doit être dit qu’une fois ; si deux joueurs parlent en même temps, recommencez à 1.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
@@ -1114,7 +1114,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Un premier joueur entre dans l’espace et répète un mouvement accompagné d’un son. Un deuxième le rejoint et ajoute un autre mouvement répétitif et un bruit qui complètent la machine. Les autres arrivent progressivement, chacun apportant sa propre pièce. Le groupe poursuit jusqu’à former une grande machine humaine dont les mouvements et les sons fonctionnent ensemble.",
+        "consigne_courte": "Un joueur entre et répète un mouvement avec un son. Les autres rejoignent la machine humaine un par un, chacun ajoutant un mouvement et un bruit qui complètent l’ensemble.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
@@ -1144,7 +1144,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Un premier joueur annonce un mot. Chacun son tour, les autres proposent un mot associé uniquement au mot précédent, et non à un mot plus ancien de la chaîne. Une fois le dernier mot annoncé, le groupe remonte la chaîne à l’envers. Chaque joueur explique son association en disant : « J’ai dit ceci parce que tu as dit cela », jusqu’à retrouver le mot de départ.",
+        "consigne_courte": "Chacun donne un mot associé uniquement au mot précédent. À la fin, remontez la chaîne à l’envers et expliquez chaque association (« J’ai dit ceci parce que tu as dit cela ») jusqu’au mot de départ.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -1173,7 +1173,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs forment un cercle. Un joueur regarde son voisin et tous deux frappent simultanément dans leurs mains. Le voisin transmet de la même manière le signal au suivant. Une fois le rythme installé, un joueur devient « bloqué » : il ne peut plus applaudir. Si le signal arrive jusqu’à lui, le groupe perd. Pour le libérer, un autre joueur établit un contact visuel avec lui ; le joueur bloqué regarde à son tour ce partenaire et ils échangent leurs places. Le jeu reprend ensuite.",
+        "consigne_courte": "En cercle, transmettez un clap avec un regard au voisin. Un joueur devient bloqué et ne peut plus applaudir ; pour le libérer, un autre le regarde, échange un regard avec lui et ils changent de place. Si le signal arrive au joueur bloqué, le groupe perd.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
@@ -1261,7 +1261,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs forment deux colonnes face à face. Chaque binôme joue un échange court. Le premier joueur annonce : « Je suis en train de faire… », en inventant une action. Le deuxième répond : « Je suis… », en nommant une émotion. Le premier propose alors une justification : « Tu es comme ça parce que… ». Le deuxième accepte et développe : « Oui, je suis comme ça parce que… ». Les joueurs changent ensuite de partenaire pour recommencer avec d’autres actions et émotions.",
+        "consigne_courte": "En deux colonnes face à face, échangez par binômes : A annonce une action, B nomme une émotion, A en donne la raison et B l’accepte puis la développe. Changez ensuite de partenaire.",
         "variante_facile": "Jouer une émotion simple avec une intensité modérée.",
         "variante_difficile": "Faire évoluer progressivement l'émotion pendant la scène.",
         "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
@@ -1290,7 +1290,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs travaillent par deux pour poser rapidement les bases d’une improvisation : qui ils sont, ce qu’ils font et où ils se trouvent. Le premier annonce qui il est, le second précise sa propre identité ; le duo établit ensuite l’action et le lieu dans ses répliques. On peut réaliser cette plateforme en seulement deux échanges si chaque prise de parole apporte deux informations parmi « qui, qui, quoi, où ». Une scène peut ensuite se construire sur cette base.",
+        "consigne_courte": "À deux, posez rapidement les bases d’une scène : qui vous êtes, ce que vous faites et où vous êtes. Chaque réplique apporte des informations ; vous pouvez établir la plateforme en deux échanges, puis poursuivre la scène.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
@@ -1318,7 +1318,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux, trois ou quatre comédiens jouent une scène en accomplissant physiquement une action commune, tout en discutant d’un sujet sans rapport. Par exemple, ils miment le fait de peindre un mur en parlant de leur dernière rupture amoureuse. L’action doit rester visible et crédible pendant que la conversation se développe indépendamment. L’enjeu est de mener simultanément une activité physique et un dialogue.",
+        "consigne_courte": "À deux, trois ou quatre, mimez une action physique commune tout en discutant d’un sujet sans rapport. L’action doit rester visible et crédible pendant que la conversation avance.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
@@ -1346,7 +1346,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "consigne_courte": "En cercle, transmettez le signal « A-SO-CA » avec les gestes associés et en indiquant à chaque étape le joueur suivant. Suivez le rythme et la direction du geste.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -1403,7 +1403,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Trois comédiens improvisent une scène avec des contraintes de regard différentes. Le premier regarde uniquement le fond de la scène, le deuxième regarde uniquement le public et le troisième regarde uniquement le comédien qui regarde le public. L’histoire progresse malgré ces contraintes. Lorsqu’un participant change de direction de regard, les autres doivent adapter leurs regards pour respecter à nouveau les contraintes. Les personnages et les rôles dans l’histoire ne changent pas.",
+        "consigne_courte": "Trois comédiens jouent une scène avec des règles de regard : l’un regarde le fond, l’autre le public, le troisième celui qui regarde le public. Si un regard change, les autres s’ajustent ; les personnages et rôles restent les mêmes.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
@@ -1431,7 +1431,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs se déplacent librement dans l’espace. Au signal « Stop ! » de l’animateur, chacun adopte immédiatement l’une des trois positions : assis, debout ou penché. Sans se concerter, le groupe cherche à obtenir une répartition aussi équilibrée que possible entre les trois positions. Par exemple, avec neuf joueurs, trois dans chaque position ; avec sept joueurs, une répartition de trois, deux et deux. Si l’équilibre est atteint, le groupe gagne la manche.",
+        "consigne_courte": "Au signal « Stop ! », chacun prend une position (assis, debout ou penché). Sans se concerter, répartissez-vous le plus équitablement possible entre les trois positions ; si l’équilibre est atteint, la manche est gagnée.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
@@ -1488,7 +1488,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux comédiens commencent une improvisation dans un lieu où les passages sont naturels, par exemple une gare. Les autres joueurs peuvent entrer brièvement dans la scène, puis en ressortir rapidement. Chaque intervention sert à apporter une information, enrichir la situation ou rebondir sur une réplique ou une action déjà présente. Les deux personnages principaux poursuivent leur histoire en intégrant ces interventions.",
+        "consigne_courte": "Deux comédiens lancent une scène dans un lieu de passage. Les autres peuvent entrer brièvement pour apporter une information ou rebondir sur la scène, puis ressortir ; les personnages principaux poursuivent leur histoire.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
@@ -1545,7 +1545,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Le groupe choisit un premier joueur. Tous les autres dirigent leur regard vers lui pendant au moins dix secondes, sans détourner les yeux. Le joueur observé choisit ensuite une autre personne en la regardant. Tout le groupe déplace alors son attention vers cette nouvelle personne pendant au moins dix secondes. Le processus se poursuit en transmettant ainsi le regard collectif d’un joueur à l’autre.",
+        "consigne_courte": "Choisissez une personne à regarder collectivement pendant au moins dix secondes. Elle choisit ensuite quelqu’un d’autre par le regard ; tout le groupe déplace son attention. Continuez de personne en personne.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
@@ -1573,7 +1573,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs marchent librement dans l’espace, puis s’immobilisent au signal de l’animateur. Un premier joueur adresse un mot à une personne de son choix. Celle-ci transmet à son tour un mot à un autre joueur, et ainsi de suite. Quand cette première circulation fonctionne, l’animateur lance un deuxième mot, puis un troisième, afin que plusieurs chaînes de transmission se déroulent simultanément. Les joueurs doivent rester attentifs aux mots qui circulent et aux personnes qui les sollicitent.",
+        "consigne_courte": "En marchant, arrêtez-vous au signal. Un joueur transmet un mot à quelqu’un, qui le transmet à son tour ; quand la chaîne fonctionne, l’animateur lance d’autres mots pour faire circuler plusieurs chaînes simultanément.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
@@ -1600,7 +1600,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Tous les joueurs se placent sur une même ligne, face au public. Les deux joueurs du milieu avancent et se placent dos à dos. L’animateur annonce un mot : dès qu’ils l’entendent, les deux comédiens se retournent et commencent une improvisation très courte, d’environ dix secondes. L’animateur interrompt la scène quand il le souhaite. Les deux joueurs rejoignent les extrémités de la ligne, puis les deux nouveaux joueurs du centre avancent à leur tour. Les scènes s’enchaînent rapidement.",
+        "consigne_courte": "Les joueurs font une ligne face au public. Les deux du milieu avancent, dos à dos ; au mot de l’animateur, ils se retournent et improvisent environ dix secondes. Au signal d’arrêt, ils rejoignent les extrémités et les suivants prennent place.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
@@ -1630,7 +1630,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Plusieurs binômes représentent chacun une chaîne de télévision. L’animateur joue le rôle de la télécommande et passe d’une chaîne à l’autre. Seul le binôme de la chaîne sélectionnée joue. Lorsqu’on revient sur une chaîne, celle-ci peut reprendre son émission précédente ou en proposer une nouvelle.",
+        "consigne_courte": "Chaque binôme joue une chaîne de télévision. L’animateur passe d’une chaîne à l’autre : seul le binôme sélectionné joue et, lorsqu’il revient à l’écran, reprend ou renouvelle son émission.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
@@ -1659,7 +1659,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "En binôme, compter jusqu’à trois et choisir simultanément un geste et une réplique parmi « Je mange » (se pointer), « Tu manges » (pointer l’autre), « Caca » (losange avec les mains) et « Homard » (pinces en l’air). Jeu comique inspiré du chifoumi, sans véritable gagnant : les combinaisons produisent des situations absurdes, notamment l’idée qu’il vaut mieux ne pas manger du caca.",
+        "consigne_courte": "À deux, comptez jusqu’à trois puis choisissez simultanément un geste et une réplique : « Je mange », « Tu manges », « Caca » ou « Homard ». Jouez les combinaisons absurdes sans chercher de véritable gagnant.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -1687,7 +1687,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs se placent en cercle. L’animateur annonce une catégorie, par exemple « un sport aquatique », « une marque de voiture », « un film d’action » ou « quelque chose à ne pas dire à un mariage ». Les participants répondent chacun leur tour, rapidement, en donnant une proposition différente. Toute hésitation trop longue ou réponse déjà donnée entraîne l’élimination. Le jeu continue jusqu’au dernier joueur restant.",
+        "consigne_courte": "L’animateur annonce une catégorie. Répondez chacun votre tour, rapidement, avec une proposition différente. Une longue hésitation ou une réponse déjà donnée élimine ; continuez jusqu’au dernier joueur.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -1715,7 +1715,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Un joueur propose un mouvement. Le groupe le reproduit en avançant puis en reculant, en le déformant progressivement. À partir de cette transformation, les participants cherchent à faire émerger un mot, un verbe ou une phrase. Le mouvement devient ainsi un point de départ pour une association d’idées ou une proposition improvisée.",
+        "consigne_courte": "Un joueur propose un mouvement. Reproduisez-le en avançant puis en reculant et déformez-le progressivement, jusqu’à faire émerger un mot, un verbe ou une phrase.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
@@ -1771,7 +1771,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Trois comédiens composent des images figées, comme des diapositives projetées. Un ou deux autres joueurs présentent et racontent ces images devant le public, en improvisant les explications. Le thème peut être, par exemple, « Notre voyage à Rome » ou « La fête de fin d’année du club de tennis ». Les présentateurs inventent une histoire cohérente à partir des poses proposées par les trois comédiens.",
+        "consigne_courte": "Trois comédiens composent des images figées. Un ou deux présentateurs les racontent devant le public et improvisent une histoire cohérente à partir des poses.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
@@ -1800,7 +1800,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs se placent en ligne ou s’assoient dans un ordre défini. Un « roi » propose un thème de départ. Chacun ajoute à tour de rôle environ trois mots pour construire une seule histoire collective. Les interventions doivent s’enchaîner rapidement, sans temps de réflexion. Le roi arbitre : il peut éliminer un joueur qui prend trop de temps, dépasse la longueur autorisée ou ne fait pas avancer l’histoire. Le jeu continue avec les participants restants.",
+        "consigne_courte": "En ligne ou assis dans un ordre défini, construisez une histoire en ajoutant environ trois mots chacun à votre tour. Le roi choisit le thème et peut éliminer ceux qui tardent, dépassent la longueur ou ne font pas avancer l’histoire.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
@@ -1829,7 +1829,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux joueurs se font face. Ensemble, ils disent « Un, deux, trois ! », frappent dans leurs mains, puis orientent simultanément leurs deux mains vers le haut, le bas, la droite ou la gauche. Si leurs directions diffèrent, ils recommencent le cycle. Si elles sont identiques, ils ajoutent une séquence : frapper dans leurs propres mains, taper dans les mains du partenaire, puis frapper à nouveau dans leurs propres mains, avant de continuer. Le rythme doit rester fluide.",
+        "consigne_courte": "À deux, dites « Un, deux, trois », frappez dans vos mains et montrez simultanément une direction. Si elles diffèrent, recommencez ; si elles concordent, ajoutez la séquence de frappes décrite, en gardant le rythme.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -1857,7 +1857,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "consigne_courte": "Chaque groupe représente les habitants d’un appartement dans un immeuble imaginaire. Jouez les relations et les situations de votre étage, en tenant compte des autres appartements.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
@@ -1912,7 +1912,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux comédiens racontent une histoire ensemble. Dès que l'un marque une micro-hésitation, l'autre l'interrompt en disant « Tout à fait, Jean-Pierre ! », reprend la fin de sa phrase et poursuit l'histoire. Au prochain moment d'hésitation, le partenaire peut reprendre à son tour la narration. Le jeu repose sur l'écoute et la continuité du récit.",
+        "consigne_courte": "À deux, racontez une histoire. Dès que l’un hésite, l’autre dit « Tout à fait, Jean-Pierre ! », reprend la fin de sa phrase et continue ; au prochain flottement, les rôles peuvent s’inverser.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
@@ -1969,7 +1969,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs forment un cercle. Un premier joueur mime une action au centre, par exemple pêcher un brochet. Un autre le rejoint, se met dans l'action et demande « Tu fais quoi ? » Le premier répond en annonçant une action complètement différente, par exemple « Je suis en train de marier ma fille. » Le nouveau joueur se met alors à mimer cette nouvelle action. Un troisième entre et lui demande à son tour « Tu fais quoi ? » ; le jeu continue de la même manière.",
+        "consigne_courte": "Un joueur mime une action au centre. Un autre le rejoint, demande « Tu fais quoi ? », puis mime l’action complètement différente qu’il annonce. Un troisième arrive et la chaîne continue.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
@@ -1998,7 +1998,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Un binôme improvise une scène de deux minutes en s'inspirant librement des phrases proposées : « Tu as l'air fatigué », « C'était aujourd'hui », « C'est pour ça que tu portes cette tenue », « Tu sais ce qu'il/elle va en penser ». Les phrases ne sont pas toutes obligatoires et aucun ordre n'est imposé. Les joueurs peuvent utiliser celles qui font avancer leur scène.",
+        "consigne_courte": "À deux, improvisez deux minutes à partir des phrases proposées. Elles sont facultatives et peuvent être utilisées dans n’importe quel ordre si elles font avancer la scène.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
@@ -2026,9 +2026,9 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les participants marchent dans l’espace en cherchant une démarche naturelle, sans rythme ni trajet répétitif. Chacun pointe un élément de la salle et en dit le nom. Dans un deuxième temps, il pointe un élément mais nomme celui qui avait été pointé juste avant. Variante : pointer un élément et nommer un autre élément présent dans la salle.",
+        "consigne_courte": "En marchant naturellement, pointez un élément de la salle et nommez-le. Au deuxième tour, pointez un élément mais nommez celui qui avait été montré juste avant.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
-        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "variante_difficile": "Variante : pointez un élément et nommez un autre élément présent dans la salle.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
@@ -2144,7 +2144,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "En binôme, A offre un cadeau imaginaire à B. B remercie A et annonce ce que représente le cadeau, puis les rôles s’inversent. Au deuxième niveau, A ajoute un détail physique au cadeau. Au troisième niveau, B explique pourquoi ce cadeau correspond bien à son personnage. On progresse par niveaux en gardant la proposition du partenaire et en développant l’imaginaire.",
+        "consigne_courte": "À deux, A offre un cadeau imaginaire ; B le nomme puis remercie, et les rôles s’inversent. Ensuite, ajoutez un détail physique au cadeau, puis expliquez pourquoi il convient au personnage.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
@@ -2173,7 +2173,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs sont répartis en équipes. À tour de rôle, un joueur pioche un papier préparé par l’animateur, sur lequel figure une chose à faire deviner (par exemple un film très connu, une expression française ou une action), puis la mime pour que sa propre équipe trouve la réponse.",
+        "consigne_courte": "À tour de rôle, piochez un papier (film, expression, action…) et mimez-le pour que votre équipe devine.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
@@ -2202,7 +2202,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Le groupe crée un premier parcours de pointage : chaque personne pointe quelqu’un et lui transmet un mot, qui doit s’enchaîner de façon cohérente avec le précédent. Une fois la chaîne mémorisée, le groupe la rejoue dans le même ordre uniquement avec le regard, sans parler. Le groupe crée ensuite un deuxième parcours différent, avec une nouvelle chaîne de mots, et essaie de suivre les deux parcours simultanément avec le regard. Si cela fonctionne, on peut ajouter un troisième parcours.",
+        "consigne_courte": "Créez un parcours de pointage où chaque joueur transmet un mot lié au précédent. Rejouez-le ensuite uniquement avec le regard, puis créez un deuxième parcours et tentez de suivre les deux simultanément ; ajoutez-en un troisième si possible.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
@@ -2230,7 +2230,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Trois joueurs incarnent des personnages qui regardent ensemble un album de cinq photos cohérentes entre elles. En décrivant les personnages et en réagissant aux photos, ils inventent des prénoms, des habitudes, des détails et des relations. Ils tirent des fils entre les différentes photos pour construire une histoire commune et faire apparaître les liens entre elles.",
+        "consigne_courte": "Trois joueurs regardent ensemble un album de cinq photos cohérentes. En décrivant et commentant les images, inventez personnages, relations et détails pour construire une histoire commune.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
@@ -2259,7 +2259,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux joueurs improvisent une correspondance écrite. A écrit une lettre à B, qui la lit en silence pendant qu’il la reçoit. Puis B écrit sa réponse pendant que A la lit. Les deux joueurs poursuivent ainsi leur échange et font évoluer leur histoire uniquement par leurs lettres.",
+        "consigne_courte": "À deux, échangez uniquement par lettres écrites : A écrit à B, B lit en silence puis répond pendant qu’A lit. Faites évoluer l’histoire au fil de la correspondance.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
@@ -2287,7 +2287,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Plusieurs binômes représentent chacun une émission de radio ou une chaîne YouTube. L’animateur joue le rôle de la télécommande et passe d’une émission à l’autre. Seul le binôme sélectionné joue. Lorsqu’il revient sur une émission, le binôme peut reprendre son émission précédente ou en proposer une nouvelle.",
+        "consigne_courte": "Chaque binôme joue une émission de radio ou une chaîne YouTube. L’animateur change d’émission : seul le binôme sélectionné joue, et peut reprendre ou renouveler son contenu au retour.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
@@ -2314,7 +2314,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Tout le groupe se déplace dans l’espace. L’animateur donne des consignes pour qu’un nombre précis de personnes s’arrête : une seule, puis deux, puis trois, etc. On inverse ensuite le principe : tout le monde s’arrête et un nombre précis de personnes doit marcher, en commençant par une, puis deux, etc. Les joueurs doivent rester attentifs et ajuster leurs déplacements pour respecter le nombre demandé.",
+        "consigne_courte": "Tout le monde se déplace. À l’annonce d’un nombre, faites en sorte que ce nombre exact de joueurs s’arrête ; ensuite, inversez la consigne : tout le monde s’arrête et le nombre annoncé marche.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
@@ -2342,7 +2342,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Un joueur commence à raconter une histoire à voix haute. Trois autres joueurs se tiennent derrière lui et écoutent attentivement. À la moindre petite hésitation du narrateur, l’un des trois prend immédiatement le relais et continue l’histoire à sa place. Le récit avance ainsi de joueur en joueur, en gardant autant que possible sa cohérence.",
+        "consigne_courte": "Un joueur raconte une histoire ; trois autres l’écoutent derrière lui. À la moindre hésitation, l’un d’eux prend immédiatement le relais et poursuit le récit.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
@@ -2393,7 +2393,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs se placent en cercle. Chaque binôme se regarde et réalise en même temps un geste accompagné d’un son. Le geste et le son sont transmis de binôme en binôme jusqu’à faire un tour complet du cercle. Au deuxième tour, chaque binôme répète deux fois son geste et son son. Le groupe poursuit ensuite en accélérant progressivement le rythme.",
+        "consigne_courte": "En cercle, chaque binôme se regarde et crée simultanément un geste avec un son. Transmettez-le de binôme en binôme ; au deuxième tour, répétez-le deux fois, puis accélérez.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
@@ -2422,7 +2422,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs se mettent par deux et improvisent une situation mimée, par exemple repeindre un salon ou tailler une haie. À un moment, l’un demande à son partenaire : « Tu peux me passer le/la… ? » L’autre annonce verbalement le nom de l’objet, puis le lui passe sous forme mimée. Le premier doit alors justifier pourquoi il en avait besoin, en restant dans la situation. Le binôme répète la séquence, puis les joueurs inversent les rôles.",
+        "consigne_courte": "À deux, mimez une activité. L’un demande « Tu peux me passer le/la… ? » ; l’autre nomme puis mime l’objet. Le demandeur explique pourquoi il en a besoin, puis recommencez en inversant les rôles.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
@@ -2451,7 +2451,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Un joueur, le « dauphin », sort momentanément de la pièce. Le groupe choisit une action qu’il devra découvrir. Lorsqu’il revient, il propose différentes actions pour essayer de trouver celle qui a été choisie. Par exemple, il peut s’asseoir à un endroit de la pièce ou se faire des oreilles de lapin. Le public l’aide grâce à ses applaudissements : ils deviennent plus rythmés et plus forts à mesure qu’il se rapproche de la bonne action. Lorsqu’il la trouve, le groupe fait un applaudissement final.",
+        "consigne_courte": "Un joueur sort. Le groupe choisit une action à découvrir ; à son retour, il essaie différentes actions et le public guide sa recherche par des applaudissements de plus en plus forts à mesure qu’il s’approche de la bonne réponse.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -2480,7 +2480,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Trois comédiens incarnent ensemble un seul personnage : le premier joue le personnage et réalise ses actions ; le deuxième double sa voix en se tenant légèrement en retrait de la scène ; le troisième joue les mains du personnage. Les trois comédiens doivent se coordonner pour donner l’impression d’un personnage unique. Autre possibilité mentionnée dans la note originale : un comédien reproduit les actions d’un autre.",
+        "consigne_courte": "Trois comédiens jouent un seul personnage : l’un agit, l’autre lui prête sa voix et le troisième joue ses mains. Coordonnez-vous pour créer un personnage unique. La note originale mentionne aussi le jeu en miroir.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
@@ -2503,7 +2503,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée",
       "conseils_animation": {
-        "consigne_courte": "Deux joueurs débattent d’un sujet absurde. Sur les côtés, deux équipes de deux mimeurs miment des mots choisis par le public. Les débatteurs doivent placer trois de ces mots ; le public applaudit lorsqu’ils y parviennent.",
+        "consigne_courte": "Deux joueurs débattent d’un sujet absurde pendant que deux équipes miment des mots choisis par le public. Les débatteurs doivent en placer trois ; le public applaudit quand ils y arrivent.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
@@ -2529,7 +2529,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs forment des groupes : deux personnes constituent une maison et se tiennent face à face, bras tendus, en jonglant avec les mains ; la créature se place sous leurs bras. À « Maison », les maisons changent de place. À « Créature », toutes les créatures changent de maison. À « Inondations », les maisons se défont et les joueurs reforment des groupes. Les joueurs libres profitent d’un changement pour entrer simplement dans un groupe.",
+        "consigne_courte": "Deux joueurs forment une maison, bras tendus, et une créature se place dessous. À « Maison », les maisons changent de place ; à « Créature », toutes les créatures changent de maison ; à « Inondations », les groupes se défont et se reforment. Les joueurs libres rejoignent un groupe.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -2558,7 +2558,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Jusqu’à six joueurs se mettent en ligne. L’animateur donne un mot inconnu et chacun improvise une définition, comme s’il était un expert du dictionnaire.",
+        "consigne_courte": "En ligne, jusqu’à six joueurs proposent chacun une définition improvisée du mot inconnu donné par l’animateur, comme des experts du dictionnaire.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -2586,7 +2586,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs sont en cercle et construisent une histoire collective en s’appuyant sur des amorces : « Il était une fois… », « Tous les jours… », « Mais un jour… », « À cause de ça… », « Grâce à ça… ». Ils poursuivent le récit à tour de rôle et peuvent terminer par une morale. La note originale mentionne aussi « depuis » et une variante autour de « tous les jours » par groupes de trois, dont le fonctionnement reste à préciser.",
+        "consigne_courte": "En cercle, construisez une histoire à tour de rôle avec les amorces « Il était une fois », « Tous les jours », « Mais un jour », « À cause de ça » et « Grâce à ça ». Vous pouvez conclure par une morale.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
@@ -2614,7 +2614,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs se mettent par deux. Le premier mime une action. Le deuxième annonce clairement l’action qu’il pense avoir comprise, par exemple : « Ah, c’est cool, tu … ! ». Le premier valide cette proposition en poursuivant et en construisant l’action ; le deuxième continue ensuite la construction à son tour. L’exercice s’arrête après un temps défini par l’animateur.",
+        "consigne_courte": "À deux, l’un mime une action et l’autre annonce ce qu’il croit voir (« Ah, c’est cool, tu… »). Le mimeur valide et développe cette proposition, puis son partenaire poursuit. Arrêtez au signal de l’animateur.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
@@ -2754,7 +2754,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Un comédien incarne un expert dans un domaine et en fait une présentation au public. Pendant cette présentation, le public lui impose des contraintes ou des événements imprévus qu’il doit intégrer à son intervention : il pleut sur lui, le sol est glissant, un rat passe devant lui ou son dos le démange énormément.",
+        "consigne_courte": "Jouez un expert qui présente son domaine. Le public lui impose des contraintes ou des imprévus qu’il doit intégrer à sa présentation.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -2783,7 +2783,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "En cercle, le groupe construit collectivement l’image d’un lieu à partir d’un premier mot. À tour de rôle, chaque participant ajoute un mot pour enrichir la description. Ce mot peut préciser un élément déjà évoqué ou introduire un nouvel élément. L’objectif est de faire émerger ensemble un lieu à partir des propositions successives.",
+        "consigne_courte": "En cercle, construisez ensemble la description d’un lieu imaginaire, un mot à la fois. Chaque proposition enrichit un élément déjà cité ou en ajoute un nouveau.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -2811,7 +2811,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Le joueur se déplace à la place de la personne dont il annonce le prénom, et cette personne poursuit le jeu.",
+        "consigne_courte": "Annonce le prénom d’un joueur et prends sa place ; le joueur appelé poursuit le jeu. La note originale prévoit aussi de mélanger le cercle et, plus tard, de lancer deux appels simultanés.",
         "variante_facile": "Jouer lentement, en ne désignant qu’une personne à la fois et en laissant le temps de rejoindre la place.",
         "variante_difficile": "Lancer deux appels simultanés, comme le permet la note originale, lorsque le groupe maîtrise la règle.",
         "points_vigilance": "Vérifier que chacun comprend qui doit bouger et qui poursuit le jeu ; éviter les déplacements précipités.",
@@ -2839,7 +2839,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée et validée par le coach",
       "conseils_animation": {
-        "consigne_courte": "Les joueurs se placent en cercle. À tour de rôle, chacun effectue un mouvement du bras de haut en bas et claque des doigts lorsqu’il arrive en bas. Au moment du claquement, il prononce un mot. Le joueur suivant fait de même et doit proposer un mot qui présente un lien avec le mot prononcé juste avant, et uniquement celui-ci. L’association est libre. Si un joueur ne trouve pas de mot, son tour est sauté et le jeu continue avec le joueur suivant.",
+        "consigne_courte": "En cercle, chacun fait un mouvement du bras et claque des doigts en disant un mot lié uniquement au mot précédent. Si un joueur ne trouve rien, son tour est sauté et le jeu continue.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
@@ -2867,7 +2867,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée",
       "conseils_animation": {
-        "consigne_courte": "Improvisation sans contrainte particulière.",
+        "consigne_courte": "Improvisation libre, sans contrainte particulière.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
