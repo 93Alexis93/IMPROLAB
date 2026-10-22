@@ -78,22 +78,26 @@ function chooseDynamicGame(pool,slot,weights,counts,history){
  const scored=source.map(g=>{let score=0;for(const c of IMPRO_CATEGORIES)score+=(weights[c]||0)*gameAffinity(g,c);score+=gameAffinity(g,slot)*8;score-=(counts[g[0]]||0)*3;if(recent.has(g[0]))score-=Math.max(8,Math.abs(score)*0.25);return {g,score}});
  return flexibleScorePick(scored)||pool[Math.floor(Math.random()*pool.length)];
 }
-function chooseTimelineGame(pool,stage,weights,counts,history){
- const recent=new Set(history.slice(0,25));
- // Tant qu'il existe assez de jeux moins récemment utilisés, on les privilégie franchement.
+function chooseTimelineGame(pool,stage,weights,counts,history,freedom=0){
+ const recent=new Set(history);
  const fresh=pool.filter(g=>!recent.has(g[0]));
- const source=fresh.length>=Math.min(8,pool.length)?fresh:pool;
+ const source=fresh.length>=Math.min(8,pool.length)?fresh:(pool.length>1?pool: fresh);
+ if(freedom>=3){
+  // Après trois séances de suite avec les mêmes réglages, la diversité prend le dessus.
+  return source[Math.floor(Math.random()*source.length)]||pool[Math.floor(Math.random()*pool.length)];
+ }
  const scored=source.map(g=>{
   let score=0;
-  for(const c of IMPRO_CATEGORIES)score+=(weights[c]||0)/20*gameAffinity(g,c);
+  const sliderInfluence=freedom>=2?0.12:freedom===1?0.4:1;
+  for(const c of IMPRO_CATEGORIES)score+=(weights[c]||0)/20*gameAffinity(g,c)*sliderInfluence;
   const timelineFit=Math.max(...stage.focus.map(c=>gameAffinity(g,c)*(0.65+(weights[c]||0)/100)));
-  score+=timelineFit*3.5;
-  score+=(weights[g[1]]||0)/100*0.7;
+  score+=timelineFit*3.5*sliderInfluence;
+  score+=(weights[g[1]]||0)/100*0.7*sliderInfluence;
   score-=(counts[g[0]]||0)*2;
   if(recent.has(g[0]))score-=10;
   return {g,score};
  });
- return flexibleScorePick(scored)||pool[Math.floor(Math.random()*pool.length)];
+ return flexibleScorePick(scored)||source[Math.floor(Math.random()*source.length)]||pool[Math.floor(Math.random()*pool.length)];
 }
 function updateDynamic(i){const el=document.getElementById('dynamic'+i);const n=Number(el.value);document.getElementById('dynamicValue'+i).textContent=n+' %';el.style.setProperty('--fill',n+'%');try{const saved=JSON.parse(localStorage.getItem('impro-session-dynamics-v1')||'{}');saved[IMPRO_CATEGORIES[i]]=n;localStorage.setItem('impro-session-dynamics-v1',JSON.stringify(saved))}catch{}}
 function resetDynamics(){for(let i=0;i<IMPRO_CATEGORIES.length;i++){document.getElementById('dynamic'+i).value=DEFAULT_DYNAMICS[IMPRO_CATEGORIES[i]]*20;updateDynamic(i)}}
@@ -156,15 +160,23 @@ function generate(){
  if(candidates.length<5){alert('Pas assez de jeux disponibles pour créer une séance.');return}
  let history=[];try{history=JSON.parse(localStorage.getItem('impro-recent-games')||'[]');if(!Array.isArray(history))history=[]}catch{}
  let counts={};try{counts=JSON.parse(localStorage.getItem('impro-game-usage-v1')||'{}')||{}}catch{}
+ let rounds=[];try{rounds=JSON.parse(localStorage.getItem('impro-session-rounds-v1')||'[]');if(!Array.isArray(rounds))rounds=[]}catch{}
+ const signature=JSON.stringify({duration,includeExternal,dynamics:Object.fromEntries(IMPRO_CATEGORIES.map(c=>[c,Math.round(dynamics[c]||0)]))});
+ let sameRun=0;
+ for(const round of rounds){if(round.signature===signature)sameRun++;else break}
+ const protectedIds=[...new Set(rounds.slice(0,3).flatMap(round=>Array.isArray(round.ids)?round.ids:[]))];
  const selected=[];
  const selectedGames=[];
  let html='';
  for(let i=0;i<parts.length;i++){
   const [category,minutes,stage]=parts[i];
-  const unused=candidates.filter(g=>!selected.includes(g[0])&&g[9]!=='incomplète');
+  let unused=candidates.filter(g=>!selected.includes(g[0])&&g[9]!=='incomplète'&&!protectedIds.includes(g[0])&&!history.slice(0,25).includes(g[0]));
+  // Si les règles anti-répétition épuisent les possibilités, on relâche d'abord l'historique long,
+  // puis les trois dernières séances, sans jamais autoriser un doublon dans la séance actuelle.
+  if(!unused.length)unused=candidates.filter(g=>!selected.includes(g[0])&&g[9]!=='incomplète'&&!protectedIds.includes(g[0]));
+  if(!unused.length)unused=candidates.filter(g=>!selected.includes(g[0])&&g[9]!=='incomplète');
   if(!unused.length)break;
-  // Préférence souple : les priorités personnelles dominent, l'étape favorise les jeux adaptés.
-  const g=chooseTimelineGame(unused,stage,dynamics,counts,history);
+  const g=chooseTimelineGame(unused,stage,dynamics,counts,history.concat(protectedIds),sameRun);
   selected.push(g[0]);
   selectedGames.push(g);
   counts[g[0]]=(counts[g[0]]||0)+1;
@@ -173,6 +185,7 @@ function generate(){
  }
  try{localStorage.setItem('impro-game-usage-v1',JSON.stringify(counts));}catch{}
  try{localStorage.setItem('impro-recent-games',JSON.stringify([...selected,...history].slice(0,80)));}catch{}
+ try{localStorage.setItem('impro-session-rounds-v1',JSON.stringify([{signature,ids:selected,at:Date.now()},...rounds].slice(0,12)));}catch{}
  document.getElementById('plan').innerHTML=buildPrincipalObjective(selectedGames)+html;
  liveIndex=0;persistPlan();
 }
@@ -268,9 +281,11 @@ function pickRandomExercise(){
  const result=document.getElementById('randomExerciseResult'),use=document.getElementById('randomExerciseUse');
  if(!pool.length){randomExerciseCurrent=null;result.textContent='Aucun exercice validé ne correspond à ces catégories. Essaie d’en cocher davantage.';use.hidden=true;return}
  let history=[];try{history=JSON.parse(localStorage.getItem('impro-recent-games')||'[]');if(!Array.isArray(history))history=[]}catch{}
- const recent=new Set(history.slice(0,25));
- const fresh=pool.filter(g=>!recent.has(g[0]));
- const source=fresh.length?fresh:pool;
+ let rounds=[];try{rounds=JSON.parse(localStorage.getItem('impro-session-rounds-v1')||'[]');if(!Array.isArray(rounds))rounds=[]}catch{}
+ const recent=new Set([...history.slice(0,25),...rounds.slice(0,3).flatMap(round=>Array.isArray(round.ids)?round.ids:[])]);
+ let source=pool.filter(g=>!recent.has(g[0]));
+ if(!source.length)source=pool.filter(g=>!history.slice(0,5).includes(g[0]));
+ if(!source.length)source=pool;
  const scored=source.map(g=>{let score=0;for(const c of IMPRO_CATEGORIES)score+=(weights[c]||0)*gameAffinity(g,c);return {g,score}});
  randomExerciseCurrent=flexibleScorePick(scored)||source[Math.floor(Math.random()*source.length)];
  try{localStorage.setItem('impro-recent-games',JSON.stringify([randomExerciseCurrent[0],...history.filter(x=>x!==randomExerciseCurrent[0])].slice(0,80)))}catch{}
@@ -280,7 +295,7 @@ function pickRandomExercise(){
 function useRandomExercise(){if(!randomExerciseCurrent)return;const existing=planCards().some(c=>c.querySelector('h3')?.textContent===displayTitle(randomExerciseCurrent[0]));if(existing){document.getElementById('planSummary').textContent='Ce jeu est déjà dans la séance : il ne sera pas ajouté une seconde fois.';return}const plan=document.getElementById('plan');const card=document.createElement('div');card.className='card';const title=document.createElement('h3');title.className='exercise-title';title.textContent=displayTitle(randomExerciseCurrent[0]);title.style.color=categoryColor(randomExerciseCurrent[1]);const category=document.createElement('span');category.className='pill';category.textContent=randomExerciseCurrent[1];const duration=document.createElement('small');duration.textContent='5 min';card.append(title,category);const coachPanel=document.createElement('div');coachPanel.innerHTML=coachDetailsHtml(randomExerciseCurrent[0],randomExerciseCurrent[3]);if(coachPanel.firstElementChild)card.append(...coachPanel.childNodes);card.append(duration);plan.append(card);document.getElementById('planSummary').textContent='Exercice ajouté à la séance et transmis à la régie.';liveIndex=liveItems().length-1;document.getElementById('liveMode').value='session';liveModeChange();document.getElementById('liveMinutes').value=Math.max(1,Number(randomExerciseCurrent.duree_minutes)||5);liveSetDuration();tab('live');document.getElementById('liveTitle').scrollIntoView({block:'nearest'});}
 function coachDetailsHtml(title){const ex=(libraryPayload&&Array.isArray(libraryPayload.exercices)?libraryPayload.exercices:[]).find(item=>item.titre===title||displayTitle(item.titre)===title);if(!ex)return '';const ap=ex.accompagnement_pedagogique||{};const coach=ex.validation_coach||{};const consigne=String(ap.consigne||coach.consigne||coach.consigne_courte||'').trim();const variante=String(ap.variante||coach.variante||'').trim();const objectifProf=String(ap.objectif_prof||'').trim();const objectifEleves=String(ap.objectif_eleves||'').trim();const complexification=String(coach.complexification||'').trim();const explication=String(ex.regle_clarifiee||ex.texte_original||'').trim();const menu=(label,value)=>value?'<details class="coach-quick"><summary>'+label+'</summary><p>'+escapeText(value)+'</p></details>':'';const auteurConsigne=String(ex.auteur_consigne_courte||'Assistant d’Alexis');const attribution='<p class="coach-attribution"><strong>Créateur du jeu :</strong> Alexis. <strong>Consigne :</strong> '+escapeText(auteurConsigne)+'. <strong>Variante :</strong> '+escapeText(String(ap.auteur_variante||"Assistant d’Alexis"))+'. <strong>Adaptations facile/difficile :</strong> '+escapeText(String((ex.conseils_animation||{}).auteur_variantes||"Assistant d’Alexis"))+'. <strong>Autres propositions pédagogiques :</strong> Assistant d’Alexis.</p>';return menu('🎓 Consigne',consigne)+menu('🔀 Variante',variante)+menu('🎯 Objectif du prof',objectifProf)+menu('🌱 Objectif des élèves',objectifEleves)+menu('🚀 Complexification',complexification)+menu('📖 Explication complète du jeu',explication)+attribution;}
 function classify(g){if(g.objectif_pedagogique)return g.objectif_pedagogique;let t=(g.titre+' '+g.texte_original).toLowerCase();if(/émotion|emotion/.test(t))return 'Émotions';if(/regard|écoute|compter|balle|prénom|fil d/.test(t))return 'Écoute';if(/mime|mimé|march|geste|corps|danse|machine/.test(t))return 'Corps';if(/scène|impro|personnage|débat|interview|télé|radio/.test(t))return 'Scène';if(/histoire|lettre|plate.forme|construction|raconter/.test(t))return 'Construction';return 'Énergie'}
-async function loadLibrary(){try{let response=await fetch('library.json?v=20261022-v19-generateur-souple',{cache:'no-store'});if(!response.ok)throw Error('HTTP '+response.status);let payload=await response.json();if(!Array.isArray(payload.exercices)||payload.exercices.length<122)throw Error('Bibliothèque incomplète');libraryPayload=payload;const coachLists=payload.ressource_cahier_coach&&payload.ressource_cahier_coach.listes||{};for(const [category,items] of Object.entries(coachLists)){if(!Object.prototype.hasOwnProperty.call(DRAW_DEFAULTS,category))continue;const merged=[...new Set([...items,...(DRAW_DEFAULTS[category]||[])])];DRAW_DEFAULTS[category]=category==='Mot'?merged.slice(0,400):merged;drawLists[category]=category==='Mot'?[...new Set([...items,...(drawLists[category]||DRAW_DEFAULTS[category])])].slice(0,400):[...new Set([...items,...(drawLists[category]||[])])];}try{localStorage.setItem('impro-draw-lists-v4',JSON.stringify(drawLists));}catch{}drawInit();data=payload.exercices.map(g=>[g.titre,classify(g),g.regle_clarifiee||g.texte_original,g.variante_college||'',g.texte_original,!!g.regle_clarifiee,!!g.eligible_generateur,g.source_url||'',g.origine||'notes_personnelles',g.qualite_fiche||'',g.conseils_animation||null,Array.isArray(g.categories_secondaires)?g.categories_secondaires.filter(c=>c!==classify(g)):[],g.statut||'']);document.getElementById('manualGame').innerHTML=data.map((g,i)=>'<option value="'+i+'" style="color:'+categoryColor(g[1])+'">'+escapeText(displayTitle(g[0]))+'</option>').join('');renderGames();document.getElementById('libraryStatus').textContent=data.length+' exercices chargés';}catch(err){document.getElementById('libraryStatus').textContent='Bibliothèque complète indisponible : '+err.message;}}
+async function loadLibrary(){try{let response=await fetch('library.json?v=20261022-v20-diversite-3-generations',{cache:'no-store'});if(!response.ok)throw Error('HTTP '+response.status);let payload=await response.json();if(!Array.isArray(payload.exercices)||payload.exercices.length<122)throw Error('Bibliothèque incomplète');libraryPayload=payload;const coachLists=payload.ressource_cahier_coach&&payload.ressource_cahier_coach.listes||{};for(const [category,items] of Object.entries(coachLists)){if(!Object.prototype.hasOwnProperty.call(DRAW_DEFAULTS,category))continue;const merged=[...new Set([...items,...(DRAW_DEFAULTS[category]||[])])];DRAW_DEFAULTS[category]=category==='Mot'?merged.slice(0,400):merged;drawLists[category]=category==='Mot'?[...new Set([...items,...(drawLists[category]||DRAW_DEFAULTS[category])])].slice(0,400):[...new Set([...items,...(drawLists[category]||[])])];}try{localStorage.setItem('impro-draw-lists-v4',JSON.stringify(drawLists));}catch{}drawInit();data=payload.exercices.map(g=>[g.titre,classify(g),g.regle_clarifiee||g.texte_original,g.variante_college||'',g.texte_original,!!g.regle_clarifiee,!!g.eligible_generateur,g.source_url||'',g.origine||'notes_personnelles',g.qualite_fiche||'',g.conseils_animation||null,Array.isArray(g.categories_secondaires)?g.categories_secondaires.filter(c=>c!==classify(g)):[],g.statut||'']);document.getElementById('manualGame').innerHTML=data.map((g,i)=>'<option value="'+i+'" style="color:'+categoryColor(g[1])+'">'+escapeText(displayTitle(g[0]))+'</option>').join('');renderGames();document.getElementById('libraryStatus').textContent=data.length+' exercices chargés';}catch(err){document.getElementById('libraryStatus').textContent='Bibliothèque complète indisponible : '+err.message;}}
 
 const DRAW_DEFAULTS={
  "Thème": [
@@ -1000,5 +1015,5 @@ initRandomDynamics();
 rosterLoad();
 drawInit();
 loadLibrary();
-if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=20261022-v19-generateur-souple',{updateViaCache:'none'}).then(reg=>reg.update()).catch(e=>console.warn('Mode hors ligne indisponible',e)));
+if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=20261022-v20-diversite-3-generations',{updateViaCache:'none'}).then(reg=>reg.update()).catch(e=>console.warn('Mode hors ligne indisponible',e)));
 try{const saved=localStorage.getItem('impro-last-plan')||'';if(saved){const doc=new DOMParser().parseFromString(saved,'text/html');const safe=document.createElement('div');doc.querySelectorAll('.card').forEach(c=>{const el=document.createElement('div');el.className='card';if(c.classList.contains('session-objective')){el.classList.add('session-objective');const heading=document.createElement('strong');heading.textContent=c.querySelector('strong')?.textContent||'Objectif principal de la séance';el.append(heading);c.querySelectorAll('p').forEach(n=>{const p=document.createElement('p');p.textContent=n.textContent;el.append(p)});safe.append(el);return}for(const [tag,source] of [['small','small'],['h3','h3'],['p','p']]){const n=c.querySelector(source);if(n){const item=document.createElement(tag);item.textContent=n.textContent;el.append(item)}}if(el.querySelector('h3'))safe.append(el)});document.getElementById('plan').replaceChildren(...safe.children)}}catch(e){console.warn('Séance précédente illisible',e)}refreshEditor();try{if(sessionStorage.getItem('improlab-welcome-seen')==='1')document.getElementById('welcomeScreen')?.remove()}catch{}</script></body></html>
