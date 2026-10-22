@@ -12,6 +12,22 @@ for(const duration of ['45','55','60','90']){
   expect(new Set(names).size).toBe(5);
  });
 }
+test('mode Coach accessible dans chaque exercice de la séance',async({page})=>{
+ await openApp(page);
+ await page.getByRole('button',{name:'Générer ma séance'}).click();
+ const cards=page.locator('#plan>.card').filter({has:page.locator('h3')});
+ await expect(cards).toHaveCount(5);
+ for(let i=0;i<5;i++){
+  const card=cards.nth(i);
+  const coach=card.locator('details.session-coach');
+  await expect(coach).toHaveCount(1);
+  await coach.locator('summary').click();
+  await expect(coach).toContainText('Consigne de la fiche');
+  await expect(coach).toContainText('Pour relancer');
+  await expect(coach).toContainText('À surveiller');
+  await expect(coach).toContainText('pistes génériques');
+ }
+});
 test('édition, suppression, rechargement, groupe et export',async({page})=>{
  await openApp(page);
  
