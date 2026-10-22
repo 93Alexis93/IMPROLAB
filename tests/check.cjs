@@ -32,9 +32,16 @@ for (const e of lib.exercices) {
   assert.equal(typeof e.eligible_generateur, 'boolean', `Fiche ${e.id}, champ « eligible_generateur » : booléen attendu`);
 }
 assert.ok(lib.exercices.some(e => e.eligible_generateur), 'Le générateur ne possède aucune fiche éligible');
-const timeStart = script.indexOf('const times={');
-const timeProfiles = timeStart < 0 ? '' : script.slice(timeStart + 'const times={'.length, script.indexOf('}', timeStart));
-for (const duration of [45,55,60,90]) assert.ok(timeProfiles.includes(duration+':['), 'Profil '+duration+' min absent');
+const durationMarkup = html.match(/<select id="duration" aria-label="Durée de la séance">([\\s\\S]*?)<\\/select>/)?.[1] || '';
+const durationOptions = [...durationMarkup.matchAll(/<option value="(\\d+)"/g)].map(match => Number(match[1]));
+assert.equal(durationOptions.length, 18, 'Le menu doit proposer 18 durées');
+assert.equal(durationOptions[0], 35, 'La durée minimale doit être de 35 minutes');
+assert.equal(durationOptions.at(-1), 120, 'La durée maximale doit être de 120 minutes');
+assert.ok(durationOptions.every((duration, index) => index === 0 || duration - durationOptions[index - 1] === 5), 'Les durées doivent progresser par pas de 5 minutes');
+assert.match(durationMarkup, /value="55" selected/, 'La durée par défaut doit être de 55 minutes');
+assert.ok(script.includes('function buildTimelineMinutes(duration)'), 'Répartition dynamique des durées absente');
+assert.ok(script.includes('function buildPrincipalObjective(games)'), 'Objectif pédagogique principal absent');
+assert.ok(script.includes('buildPrincipalObjective(selectedGames)'), 'Objectif calculé à partir des exercices sélectionnés absent');
 for (const feature of ['touchstart','touchend','Date.now()-liveAnchor','impro-favorites','impro-recent-games','serviceWorker.register','planSummary']) assert.ok(html.includes(feature), 'Fonction manquante : '+feature);
 const manifest = JSON.parse(fs.readFileSync('manifest.webmanifest','utf8'));
 assert.equal(manifest.display,'standalone','Manifest : champ « display » doit valoir standalone');
