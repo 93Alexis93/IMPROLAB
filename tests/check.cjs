@@ -32,9 +32,18 @@ for (const e of lib.exercices) {
   assert.equal(typeof e.eligible_generateur, 'boolean', `Fiche ${e.id}, champ « eligible_generateur » : booléen attendu`);
 }
 assert.ok(lib.exercices.some(e => e.eligible_generateur), 'Le générateur ne possède aucune fiche éligible');
-const timeStart = script.indexOf('const times={');
-const timeProfiles = timeStart < 0 ? '' : script.slice(timeStart + 'const times={'.length, script.indexOf('}', timeStart));
-for (const duration of [45,55,60,90]) assert.ok(timeProfiles.includes(duration+':['), 'Profil '+duration+' min absent');
+const durationStart = html.indexOf('<select id="duration" aria-label="Durée de la séance">');
+const durationEnd = html.indexOf('</select>', durationStart);
+const durationMarkup = durationStart < 0 || durationEnd < 0 ? '' : html.slice(durationStart, durationEnd);
+const durationOptions = [...durationMarkup.matchAll(/<option value="(\d+)"/g)].map(match => Number(match[1]));
+assert.equal(durationOptions.length, 18, 'Le menu doit proposer 18 durées');
+assert.equal(durationOptions[0], 35, 'La durée minimale doit être de 35 minutes');
+assert.equal(durationOptions.at(-1), 120, 'La durée maximale doit être de 120 minutes');
+assert.ok(durationOptions.every((duration, index) => index === 0 || duration - durationOptions[index - 1] === 5), 'Les durées doivent progresser par pas de 5 minutes');
+assert.match(durationMarkup, /value="55" selected/, 'La durée par défaut doit être de 55 minutes');
+assert.ok(script.includes('function buildTimelineMinutes(duration)'), 'Répartition dynamique des durées absente');
+assert.ok(script.includes('function buildPrincipalObjective(games)'), 'Objectif pédagogique principal absent');
+assert.ok(script.includes('buildPrincipalObjective(selectedGames)'), 'Objectif calculé à partir des exercices sélectionnés absent');
 for (const feature of ['touchstart','touchend','Date.now()-liveAnchor','impro-favorites','impro-recent-games','serviceWorker.register','planSummary']) assert.ok(html.includes(feature), 'Fonction manquante : '+feature);
 const manifest = JSON.parse(fs.readFileSync('manifest.webmanifest','utf8'));
 assert.equal(manifest.display,'standalone','Manifest : champ « display » doit valoir standalone');
@@ -80,7 +89,7 @@ assert.ok(script.includes('(x.g[11]||[]).includes(cat)'),'Filtre secondaire abse
 assert.ok(script.includes('function gameAffinity(g,category)'),'Prise en compte des catégories secondaires absente');
 assert.ok(script.includes('SOFT_TIMELINE') && script.includes('chooseTimelineGame'),'Timeline souple manquante');
 for (let i=0;i<10;i++) assert.ok(html.includes('id="dynamic'+i+'"'),'Curseur dynamique absent : '+i);
-for (const profile of ['45:[6,8,8,15,8]','55:[7,10,12,18,8]','60:[8,11,13,20,8]','90:[12,17,20,28,13]']) assert.ok(script.includes(profile),'Profil de durée absent : '+profile);
+assert.ok(script.includes('buildTimelineMinutes(duration)') && script.includes('buildPrincipalObjective(selectedGames)'), 'Générateur adaptatif et objectif pédagogique absents');
 
 assert.ok(script.includes('impro-session-dynamics-v1') && script.includes('impro-random-dynamics-v1') && script.includes('chooseDynamicGame'),'Curseurs indépendants absents');
 assert.ok(html.includes('Trois repères pour commencer') && html.includes('welcome-tutorial'),'Tutoriel d’accueil absent');
