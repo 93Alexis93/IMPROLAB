@@ -89,7 +89,7 @@ assert.ok(script.includes('(x.g[11]||[]).includes(cat)'),'Filtre secondaire abse
 assert.ok(script.includes('function gameAffinity(g,category)'),'Prise en compte des catégories secondaires absente');
 assert.ok(script.includes('SOFT_TIMELINE') && script.includes('chooseTimelineGame'),'Timeline souple manquante');
 for (let i=0;i<10;i++) assert.ok(html.includes('id="dynamic'+i+'"'),'Curseur dynamique absent : '+i);
-for (const profile of ['45:[6,8,8,15,8]','55:[7,10,12,18,8]','60:[8,11,13,20,8]','90:[12,17,20,28,13]']) assert.ok(script.includes(profile),'Profil de durée absent : '+profile);
+assert.ok(script.includes('buildTimelineMinutes(duration)') && script.includes('buildPrincipalObjective(selectedGames)'), 'Générateur adaptatif et objectif pédagogique absents');
 
 assert.ok(script.includes('impro-session-dynamics-v1') && script.includes('impro-random-dynamics-v1') && script.includes('chooseDynamicGame'),'Curseurs indépendants absents');
 assert.ok(html.includes('Trois repères pour commencer') && html.includes('welcome-tutorial'),'Tutoriel d’accueil absent');
