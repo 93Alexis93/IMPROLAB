@@ -194,3 +194,54 @@ test('déplacement et remplacement d’un exercice conservent une séance cohér
  await expect(page.locator('#plan>.card')).toHaveCount(5);
  await expect(page.locator('#plan>.card').first().locator('h3')).toHaveText(newTitle);
 });
+
+
+test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({page})=>{
+ await openApp(page);
+ await page.locator('#includeExternal').uncheck();
+ for(let i=0;i<10;i++)await page.locator('#dynamic'+i).fill(i===0?'100':'0');
+ await page.getByRole('button',{name:'Générer ma séance'}).click();
+ const cards=page.locator('#plan>.card').filter({has:page.locator('h3')});
+ await expect(cards).toHaveCount(5);
+ for(let cardIndex=0;cardIndex<5;cardIndex++){
+  for(let turn=0;turn<20;turn++){
+   const card=cards.nth(cardIndex);
+   const before=await card.locator('h3').textContent();
+   const stage=await card.getAttribute('data-stage-index');
+   const category=await card.getAttribute('data-category');
+   await card.getByRole('button',{name:'🔄 Remplacer'}).click();
+   const title=(await card.locator('h3').textContent()).trim();
+   expect(title).not.toBe(before);
+   expect(await card.getAttribute('data-stage-index')).toBe(stage);
+   expect(await card.getAttribute('data-category')).toBe(category);
+   const state=await page.evaluate(({title,category})=>{
+    const item=data.find(g=>displayTitle(g[0])===title||g[0]===title);
+    const eligible=g=>!!(g&&g[6]&&g[5]&&g[2]&&g[2].trim().length>20&&!['notes originales','proposition à valider','à confirmer'].includes((g[12]||'').toLowerCase())&&g[9]!=='incomplète'&&g[8]==='notes_personnelles');
+    const peers=Array.from(document.querySelectorAll('#plan>.card h3')).map(n=>n.textContent.trim());
+    const primary=data.filter(g=>eligible(g)&&g[1]===category&&!peers.filter(x=>x!==title).includes(displayTitle(g[0]))&&!peers.filter(x=>x!==title).includes(g[0]));
+    const secondary=data.filter(g=>eligible(g)&&(g[11]||[]).includes(category)&&!peers.filter(x=>x!==title).includes(displayTitle(g[0]))&&!peers.filter(x=>x!==title).includes(g[0]));
+    return {item:item&&{eligible:eligible(item),category:item[1],secondary:item[11]||[]},primaryAvailable:primary.length>0,secondaryAvailable:secondary.length>0,peers};
+   },{title,category});
+   expect(state.item,'remplaçant trouvé dans la bibliothèque').not.toBeNull();
+   expect(state.item.eligible,'aucune fiche inadmissible').toBe(true);
+   expect(state.peers.length).toBe(new Set(state.peers).size);
+   if(state.primaryAvailable)expect(state.item.category).toBe(category);
+   else if(state.secondaryAvailable)expect(state.item.secondary).toContain(category);
+  }
+ }
+ await page.getByRole('button',{name:'Enregistrer',exact:true}).click();
+ await page.getByRole('button',{name:'Historique'}).click();
+ await page.getByRole('button',{name:'Réutiliser'}).click();
+ await page.locator('#plan>.card').filter({has:page.locator('h3')}).first().getByRole('button',{name:'🔄 Remplacer'}).click();
+ await expect(page.locator('#plan>.card h3').first()).toBeVisible();
+ await page.getByRole('button',{name:'Importer',exact:false}).click();
+ const legacyHtml='<div class="card"><small>8 min</small><h3>Exercice ancien</h3><p>Ancienne règle de test suffisamment longue pour l’import.</p></div>';
+ const legacyPayload=JSON.stringify({format:'impro-lab-session',version:1,html:legacyHtml});
+ await page.locator('#importSession').setInputFiles({name:'legacy.json',mimeType:'application/json',buffer:Buffer.from(legacyPayload)});
+ await expect(page.locator('#plan>.card h3')).toHaveText('Exercice ancien');
+ await page.locator('#plan>.card').first().getByRole('button',{name:'🔄 Remplacer'}).click();
+ await expect(page.locator('#plan>.card h3').first()).not.toHaveText('Exercice ancien');
+ await page.evaluate(()=>{for(const g of data)g[6]=false});
+ await page.locator('#plan>.card').first().getByRole('button',{name:'🔄 Remplacer'}).click();
+ await expect(page.locator('#planSummary')).toContainText('Aucun autre jeu admissible disponible');
+});
