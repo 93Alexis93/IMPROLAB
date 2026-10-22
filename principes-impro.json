@@ -42,6 +42,14 @@
       "principe": "Avant de chercher une intrigue originale, intéresse-toi à la relation entre les personnages. Qui sont-ils l’un pour l’autre ? Que ressentent-ils ? Que veulent-ils obtenir de l’autre ? Fais vivre leur complicité, leur conflit ou leur malaise : l’histoire se construira à partir de ce qui se passe entre eux.",
       "exemple": "A : « Tu as encore mangé le dernier yaourt. » B : « C’était celui que tu m’avais acheté pour me réconcilier avec toi. » A : « Je sais… c’est pour ça que je l’ai mangé. »",
       "statut": "validé"
+    },
+    {
+      "id": 6,
+      "titre": "Reste simple",
+      "formulation_originale": "Moins tu cherches, plus tu trouves : reste simple.",
+      "principe": "Ne cherche pas à inventer constamment des idées extraordinaires ou des rebondissements compliqués. Appuie-toi sur ce qui est déjà présent dans la scène : un geste, une émotion, un objet ou une relation. Une proposition simple, jouée avec sincérité et précision, peut devenir très drôle ou très touchante. Fais confiance au jeu plutôt qu’à la recherche de la bonne idée.",
+      "exemple": "A : « Tu trembles. » B : « J’ai peur. » A : « De quoi ? » B : « De te dire que j’ai peur. »",
+      "statut": "validé"
     }
   ]
 }
