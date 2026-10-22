@@ -7,71 +7,200 @@
       "id": 1,
       "titre": "L’art de rater",
       "formulation_originale": "L’improvisation c’est l’art de rater",
-      "principe": "L’improvisation, c’est oser jouer sans chercher à réussir parfaitement. Une erreur, un oubli ou un geste maladroit peuvent devenir des occasions de jeu. Accepte l’imprévu et transforme-le en proposition pour la scène, plutôt que de le nier ou de te bloquer.",
+      "principe": "Ose jouer sans chercher la perfection. Une erreur, un oubli ou un geste maladroit peut devenir une proposition : accueille l’imprévu et fais-en un moteur de scène.",
       "exemple": "Tu te trompes dans le prénom de ton partenaire ? Au lieu de paniquer, lance : « Depuis trente ans qu’on se connaît, j’ai toujours eu du mal avec ton prénom ! »",
       "statut": "validé",
       "niveau_difficulte": "Débutant",
-      "couleur": "#2E9D62"
+      "couleur": "#2E9D62",
+      "categories_titre": [
+        {
+          "nom": "Lâcher-prise",
+          "couleur": "#8ce0ce"
+        },
+        {
+          "nom": "Amusement",
+          "couleur": "#ffe16b"
+        }
+      ],
+      "conseils": {
+        "amateur": "Si tu te trompes, ne t’excuse pas et ne recommence pas : continue la scène en intégrant ton erreur.",
+        "moyen": "Transforme volontairement un raté en information sur ton personnage ou votre relation.",
+        "pro": "Laisse l’accident modifier réellement la scène ; évite de le signaler comme une simple blague si le jeu peut aller plus loin."
+      }
     },
     {
       "id": 2,
       "titre": "Le « oui, et… »",
       "formulation_originale": "Oui, et… : accepter, amplifier, construire.",
-      "principe": "Attention au refus de jouer. En impro 90% du temps accueille la proposition de ton partenaire et ajoute-lui quelque chose qui fait avancer la scène. Ne te contente pas d’accepter : enrichis, précise ou développe ce qui vient d’être posé. Construisez ensemble plutôt que de chercher chacun votre propre idée.",
+      "principe": "Accueille la proposition de ton partenaire et ajoute quelque chose qui fait avancer la scène. Précise, enrichis ou développe ce qui est posé : construisez ensemble au lieu de poursuivre chacun votre idée.",
       "exemple": "A : « J’ai adopté un dragon ! » B : « Génial ! Je lui ai aménagé la cave, mais il a déjà brûlé la chaudière ! »",
       "statut": "validé",
       "niveau_difficulte": "Débutant",
-      "couleur": "#2E9D62"
+      "couleur": "#2E9D62",
+      "categories_titre": [
+        {
+          "nom": "Écoute",
+          "couleur": "#62c7ff"
+        },
+        {
+          "nom": "Cohésion",
+          "couleur": "#a6d779"
+        },
+        {
+          "nom": "Construction",
+          "couleur": "#b59aff"
+        }
+      ],
+      "conseils": {
+        "amateur": "Reprends un élément précis de la dernière réplique et ajoute une information simple.",
+        "moyen": "Ajoute une conséquence concrète à la proposition, plutôt qu’une idée sans lien.",
+        "pro": "Fais évoluer la proposition sans écraser celle du partenaire : cherche l’ajout qui ouvre le plus de jeu pour vous deux."
+      }
     },
     {
       "id": 3,
       "titre": "L’écoute active",
       "formulation_originale": "Écoute active : ton partenaire a toujours raison.",
-      "principe": "Écoute vraiment ton partenaire : ses paroles, ses gestes, ses émotions et ce qu’ils changent dans la scène. Considère ses propositions comme des réalités de jeu et rebondis dessus plutôt que de rester enfermé dans tes idées. Être à l’écoute, c’est aussi savoir s’adapter et laisser évoluer son personnage.",
+      "principe": "Écoute les paroles, les gestes et les émotions de ton partenaire. Prends ses propositions comme des réalités de jeu, rebondis dessus et adapte ton personnage à ce qui change dans la scène.",
       "exemple": "A : « Tu as encore oublié notre anniversaire de mariage ! » B, surpris : « Tu as raison… et j’ai même oublié pourquoi nous nous sommes mariés ! »",
       "statut": "validé",
       "niveau_difficulte": "Débutant",
-      "couleur": "#2E9D62"
+      "couleur": "#2E9D62",
+      "categories_titre": [
+        {
+          "nom": "Écoute",
+          "couleur": "#62c7ff"
+        },
+        {
+          "nom": "Émotions",
+          "couleur": "#ee94e4"
+        },
+        {
+          "nom": "Cohésion",
+          "couleur": "#a6d779"
+        }
+      ],
+      "conseils": {
+        "amateur": "Après chaque réplique, montre par ta réaction que tu as entendu ce qui vient d’être dit.",
+        "moyen": "Écoute aussi le rythme, le regard et la posture : ils peuvent compter autant que les mots.",
+        "pro": "Laisse une information inattendue transformer ton intention, ton statut ou ta relation, au lieu de revenir à ton idée initiale."
+      }
     },
     {
       "id": 4,
       "titre": "Prends ton temps",
       "formulation_originale": "Prends ton temps : un silence crée du sens.",
-      "principe": "Ne cherche pas à remplir chaque instant par des paroles ou des actions. Un silence peut exprimer une émotion, créer une tension ou laisser au public le temps de comprendre. Prends le temps de regarder, de ressentir et de laisser une réaction exister. Le rythme d’une scène se construit aussi avec ce qui ne se dit pas.",
+      "principe": "Ne remplis pas chaque instant de paroles ou d’actions. Un silence peut exprimer une émotion, créer une tension ou laisser le public comprendre. Regarde, ressens et laisse les réactions exister : le rythme se construit aussi dans ce qui ne se dit pas.",
       "exemple": "A : « J’ai quelque chose à t’avouer… » B ne répond pas, le regarde longuement, puis murmure : « Tu as encore adopté un chat ? »",
       "statut": "validé",
       "niveau_difficulte": "Moyen",
-      "couleur": "#D99A18"
+      "couleur": "#D99A18",
+      "categories_titre": [
+        {
+          "nom": "Émotions",
+          "couleur": "#ee94e4"
+        },
+        {
+          "nom": "Scène",
+          "couleur": "#ff7caa"
+        },
+        {
+          "nom": "Écoute",
+          "couleur": "#62c7ff"
+        }
+      ],
+      "conseils": {
+        "amateur": "Après une phrase importante, compte mentalement jusqu’à deux avant de répondre.",
+        "moyen": "Soutiens le silence par le regard, la posture ou une action discrète : il doit rester vivant.",
+        "pro": "Joue sur la durée du silence pour faire évoluer la tension, sans imposer au public une seule interprétation."
+      }
     },
     {
       "id": 5,
       "titre": "Joue la relation",
       "formulation_originale": "Joue la relation, pas l’idée : l’intrigue vient après.",
-      "principe": "Avant de chercher une intrigue originale, intéresse-toi à la relation entre les personnages. Qui sont-ils l’un pour l’autre ? Que ressentent-ils ? Que veulent-ils obtenir de l’autre ? Fais vivre leur complicité, leur conflit ou leur malaise : l’histoire se construira à partir de ce qui se passe entre eux.",
+      "principe": "Avant d’inventer une intrigue, explore la relation : qui êtes-vous l’un pour l’autre, que ressentez-vous et qu’attendez-vous de l’autre ? Fais vivre la complicité, le conflit ou le malaise ; l’histoire naîtra de cette relation.",
       "exemple": "A : « Tu as encore mangé le dernier yaourt. » B : « C’était celui que tu m’avais acheté pour me réconcilier avec toi. » A : « Je sais… c’est pour ça que je l’ai mangé. »",
       "statut": "validé",
       "niveau_difficulte": "Moyen",
-      "couleur": "#D99A18"
+      "couleur": "#D99A18",
+      "categories_titre": [
+        {
+          "nom": "Scène",
+          "couleur": "#ff7caa"
+        },
+        {
+          "nom": "Émotions",
+          "couleur": "#ee94e4"
+        },
+        {
+          "nom": "Construction",
+          "couleur": "#b59aff"
+        }
+      ],
+      "conseils": {
+        "amateur": "Décidez par le jeu d’un lien simple : amis, collègues, famille ou inconnus qui se connaissent déjà.",
+        "moyen": "Donne à chaque personnage un désir lié à l’autre et fais-le apparaître dans les répliques ou les actions.",
+        "pro": "Fais évoluer la relation au fil de la scène : rapprochement, déséquilibre, rupture ou réconciliation, sans annoncer ces étapes."
+      }
     },
     {
       "id": 6,
       "titre": "Reste simple",
       "formulation_originale": "Moins tu cherches, plus tu trouves : reste simple.",
-      "principe": "Ne cherche pas à inventer constamment des idées extraordinaires ou des rebondissements compliqués. Appuie-toi sur ce qui est déjà présent dans la scène : un geste, une émotion, un objet ou une relation. Une proposition simple, jouée avec sincérité et précision, peut devenir très drôle ou très touchante. Fais confiance au jeu plutôt qu’à la recherche de la bonne idée.",
+      "principe": "Ne cherche pas l’idée brillante à tout prix. Appuie-toi sur ce qui est déjà là — un geste, une émotion, un objet ou une relation. Une proposition simple et sincère peut toucher ou faire rire davantage qu’une accumulation d’idées.",
       "exemple": "A : « Tu trembles. » B : « J’ai peur. » A : « De quoi ? » B : « De te dire que j’ai peur. »",
       "statut": "validé",
       "niveau_difficulte": "Moyen",
-      "couleur": "#D99A18"
+      "couleur": "#D99A18",
+      "categories_titre": [
+        {
+          "nom": "Lâcher-prise",
+          "couleur": "#8ce0ce"
+        },
+        {
+          "nom": "Imaginaire",
+          "couleur": "#f6a7ff"
+        },
+        {
+          "nom": "Construction",
+          "couleur": "#b59aff"
+        }
+      ],
+      "conseils": {
+        "amateur": "Reprends un détail présent dans le décor imaginaire ou dans la dernière réplique.",
+        "moyen": "Développe une seule idée pendant plusieurs échanges avant d’en introduire une nouvelle.",
+        "pro": "Résiste à la surenchère : cherche la conséquence la plus juste et la plus féconde d’un détail déjà installé."
+      }
     },
     {
       "id": 7,
       "titre": "Montre, ne raconte pas",
       "formulation_originale": "Montre plutôt que raconter : l’action d’abord.",
-      "principe": "Fais vivre la situation par les gestes, les paroles et les réactions des personnages plutôt que de simplement expliquer ce qui se passe. Privilégie l’action : elle permet au public de comprendre et de ressentir la scène. Si ton personnage est triste, fais-le exister dans son comportement plutôt que de seulement annoncer sa tristesse. Donne à voir, laisse le public découvrir.",
+      "principe": "Fais comprendre la situation par les gestes, les paroles et les réactions plutôt qu’en l’expliquant. Fais exister l’émotion dans le comportement du personnage : donne à voir et laisse le public découvrir.",
       "exemple": "Au lieu de dire : « Je suis épuisé », le personnage lutte pour garder les yeux ouverts, s’endort debout et répond à côté de la conversation.",
       "statut": "validé",
       "niveau_difficulte": "Pro",
-      "couleur": "#805AD5"
+      "couleur": "#805AD5",
+      "categories_titre": [
+        {
+          "nom": "Corps",
+          "couleur": "#70dfae"
+        },
+        {
+          "nom": "Scène",
+          "couleur": "#ff7caa"
+        },
+        {
+          "nom": "Émotions",
+          "couleur": "#ee94e4"
+        }
+      ],
+      "conseils": {
+        "amateur": "Choisis un geste visible qui montre ton émotion avant de la nommer.",
+        "moyen": "Fais passer l’information par une action concrète et laisse ton partenaire y réagir.",
+        "pro": "Combine corps, voix, rythme et espace pour révéler l’état du personnage sans surligner le message."
+      }
     }
   ]
 }
