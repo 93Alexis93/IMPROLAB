@@ -34,6 +34,14 @@
       "principe": "Ne cherche pas à remplir chaque instant par des paroles ou des actions. Un silence peut exprimer une émotion, créer une tension ou laisser au public le temps de comprendre. Prends le temps de regarder, de ressentir et de laisser une réaction exister. Le rythme d’une scène se construit aussi avec ce qui ne se dit pas.",
       "exemple": "A : « J’ai quelque chose à t’avouer… » B ne répond pas, le regarde longuement, puis murmure : « Tu as encore adopté un chat ? »",
       "statut": "validé"
+    },
+    {
+      "id": 5,
+      "titre": "Joue la relation",
+      "formulation_originale": "Joue la relation, pas l’idée : l’intrigue vient après.",
+      "principe": "Avant de chercher une intrigue originale, intéresse-toi à la relation entre les personnages. Qui sont-ils l’un pour l’autre ? Que ressentent-ils ? Que veulent-ils obtenir de l’autre ? Fais vivre leur complicité, leur conflit ou leur malaise : l’histoire se construira à partir de ce qui se passe entre eux.",
+      "exemple": "A : « Tu as encore mangé le dernier yaourt. » B : « C’était celui que tu m’avais acheté pour me réconcilier avec toi. » A : « Je sais… c’est pour ça que je l’ai mangé. »",
+      "statut": "validé"
     }
   ]
 }
