@@ -9,7 +9,9 @@
       "formulation_originale": "L’improvisation c’est l’art de rater",
       "principe": "L’improvisation, c’est oser jouer sans chercher à réussir parfaitement. Une erreur, un oubli ou un geste maladroit peuvent devenir des occasions de jeu. Accepte l’imprévu et transforme-le en proposition pour la scène, plutôt que de le nier ou de te bloquer.",
       "exemple": "Tu te trompes dans le prénom de ton partenaire ? Au lieu de paniquer, lance : « Depuis trente ans qu’on se connaît, j’ai toujours eu du mal avec ton prénom ! »",
-      "statut": "validé"
+      "statut": "validé",
+      "niveau_difficulte": "Débutant",
+      "couleur": "#2E9D62"
     },
     {
       "id": 2,
@@ -17,7 +19,9 @@
       "formulation_originale": "Oui, et… : accepter, amplifier, construire.",
       "principe": "Attention au refus de jouer. En impro 90% du temps accueille la proposition de ton partenaire et ajoute-lui quelque chose qui fait avancer la scène. Ne te contente pas d’accepter : enrichis, précise ou développe ce qui vient d’être posé. Construisez ensemble plutôt que de chercher chacun votre propre idée.",
       "exemple": "A : « J’ai adopté un dragon ! » B : « Génial ! Je lui ai aménagé la cave, mais il a déjà brûlé la chaudière ! »",
-      "statut": "validé"
+      "statut": "validé",
+      "niveau_difficulte": "Débutant",
+      "couleur": "#2E9D62"
     },
     {
       "id": 3,
@@ -25,7 +29,9 @@
       "formulation_originale": "Écoute active : ton partenaire a toujours raison.",
       "principe": "Écoute vraiment ton partenaire : ses paroles, ses gestes, ses émotions et ce qu’ils changent dans la scène. Considère ses propositions comme des réalités de jeu et rebondis dessus plutôt que de rester enfermé dans tes idées. Être à l’écoute, c’est aussi savoir s’adapter et laisser évoluer son personnage.",
       "exemple": "A : « Tu as encore oublié notre anniversaire de mariage ! » B, surpris : « Tu as raison… et j’ai même oublié pourquoi nous nous sommes mariés ! »",
-      "statut": "validé"
+      "statut": "validé",
+      "niveau_difficulte": "Débutant",
+      "couleur": "#2E9D62"
     },
     {
       "id": 4,
@@ -33,7 +39,9 @@
       "formulation_originale": "Prends ton temps : un silence crée du sens.",
       "principe": "Ne cherche pas à remplir chaque instant par des paroles ou des actions. Un silence peut exprimer une émotion, créer une tension ou laisser au public le temps de comprendre. Prends le temps de regarder, de ressentir et de laisser une réaction exister. Le rythme d’une scène se construit aussi avec ce qui ne se dit pas.",
       "exemple": "A : « J’ai quelque chose à t’avouer… » B ne répond pas, le regarde longuement, puis murmure : « Tu as encore adopté un chat ? »",
-      "statut": "validé"
+      "statut": "validé",
+      "niveau_difficulte": "Moyen",
+      "couleur": "#D99A18"
     },
     {
       "id": 5,
@@ -41,7 +49,9 @@
       "formulation_originale": "Joue la relation, pas l’idée : l’intrigue vient après.",
       "principe": "Avant de chercher une intrigue originale, intéresse-toi à la relation entre les personnages. Qui sont-ils l’un pour l’autre ? Que ressentent-ils ? Que veulent-ils obtenir de l’autre ? Fais vivre leur complicité, leur conflit ou leur malaise : l’histoire se construira à partir de ce qui se passe entre eux.",
       "exemple": "A : « Tu as encore mangé le dernier yaourt. » B : « C’était celui que tu m’avais acheté pour me réconcilier avec toi. » A : « Je sais… c’est pour ça que je l’ai mangé. »",
-      "statut": "validé"
+      "statut": "validé",
+      "niveau_difficulte": "Moyen",
+      "couleur": "#D99A18"
     },
     {
       "id": 6,
@@ -49,7 +59,9 @@
       "formulation_originale": "Moins tu cherches, plus tu trouves : reste simple.",
       "principe": "Ne cherche pas à inventer constamment des idées extraordinaires ou des rebondissements compliqués. Appuie-toi sur ce qui est déjà présent dans la scène : un geste, une émotion, un objet ou une relation. Une proposition simple, jouée avec sincérité et précision, peut devenir très drôle ou très touchante. Fais confiance au jeu plutôt qu’à la recherche de la bonne idée.",
       "exemple": "A : « Tu trembles. » B : « J’ai peur. » A : « De quoi ? » B : « De te dire que j’ai peur. »",
-      "statut": "validé"
+      "statut": "validé",
+      "niveau_difficulte": "Moyen",
+      "couleur": "#D99A18"
     },
     {
       "id": 7,
@@ -57,7 +69,9 @@
       "formulation_originale": "Montre plutôt que raconter : l’action d’abord.",
       "principe": "Fais vivre la situation par les gestes, les paroles et les réactions des personnages plutôt que de simplement expliquer ce qui se passe. Privilégie l’action : elle permet au public de comprendre et de ressentir la scène. Si ton personnage est triste, fais-le exister dans son comportement plutôt que de seulement annoncer sa tristesse. Donne à voir, laisse le public découvrir.",
       "exemple": "Au lieu de dire : « Je suis épuisé », le personnage lutte pour garder les yeux ouverts, s’endort debout et répond à côté de la conversation.",
-      "statut": "validé"
+      "statut": "validé",
+      "niveau_difficulte": "Pro",
+      "couleur": "#805AD5"
     }
   ]
 }
