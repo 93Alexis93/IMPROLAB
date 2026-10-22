@@ -1758,7 +1758,8 @@
       "section": "e06d3824ce7fe9d889afb6c6b4a695b391d91a589f60e55ab754998f643970c9",
       "statut": "247f86420c2bffefbb302453e3005a4b5fc39b0177b4e51335cdcae56c3ed6d8",
       "texte_original": "4700594e9e169134e85f47139f320e88ed5f58c36f6cf22ab1baf76074d40da4",
-      "titre": "b9c94678dd399568456e92f05b73dda3aad7e36cbc685684c7a5a24eb1d3d27e"
+      "titre": "b9c94678dd399568456e92f05b73dda3aad7e36cbc685684c7a5a24eb1d3d27e",
+      "validation_coach": "4e085db0a73f557abe157d5152daf7ebc1048c58f5f2f35c1f611ce681eb07cc"
     },
     "2-34": {
       "categories_secondaires": "9032f98fe3b7ba80c43a50bc58d8f2a7645e7984ae615662d9c4d4adb7a4388c",
@@ -1776,7 +1777,8 @@
       "section": "e06d3824ce7fe9d889afb6c6b4a695b391d91a589f60e55ab754998f643970c9",
       "statut": "247f86420c2bffefbb302453e3005a4b5fc39b0177b4e51335cdcae56c3ed6d8",
       "texte_original": "02cf34d289c5944c75855bcd5282ce6a430a2c96f766ee819f11d2cad22b3b8b",
-      "titre": "dda6d21a6e6ba45d39214ea2a9287db681c7b7a6adacd655661c447a53d73679"
+      "titre": "dda6d21a6e6ba45d39214ea2a9287db681c7b7a6adacd655661c447a53d73679",
+      "validation_coach": "87430d1efdf4adb19d0fff4fb5c0d0796a0451c2d2a3ab002f9ae4bf1759f44c"
     },
     "2-35": {
       "categories_secondaires": "5835b24e5f0358da739667967ddc068ab3e365fc80e663e8c1eb2021c441be5e",
@@ -1794,7 +1796,8 @@
       "section": "e06d3824ce7fe9d889afb6c6b4a695b391d91a589f60e55ab754998f643970c9",
       "statut": "247f86420c2bffefbb302453e3005a4b5fc39b0177b4e51335cdcae56c3ed6d8",
       "texte_original": "e0ef323053d4fcde3775442f73c907faa3ff43f3b0c0d50a31c1023c0c4037d8",
-      "titre": "9e48fbc7840466e9d47580e8cec013ad0da2ce377cbeb63c31864ea9902c95c1"
+      "titre": "9e48fbc7840466e9d47580e8cec013ad0da2ce377cbeb63c31864ea9902c95c1",
+      "validation_coach": "428ad8e9ab60672f65e3cace0d717472df1e5f478d196d76c497e1ef4f04ce7d"
     },
     "2-36": {
       "categories_secondaires": "651d9e8870a02dab6de0a424d8376ba8ba4d5f42992bdb1f32d8fd2c489728c4",
@@ -1813,7 +1816,8 @@
       "section": "e06d3824ce7fe9d889afb6c6b4a695b391d91a589f60e55ab754998f643970c9",
       "statut": "247f86420c2bffefbb302453e3005a4b5fc39b0177b4e51335cdcae56c3ed6d8",
       "texte_original": "8859ac0c03b6647ccbf1e3d43525746a03b4d7568c02165a22ff330dbada1678",
-      "titre": "2933e12123f051ad18a2db70b7cf73c83d8b382a052e8748997e20ec40b0d7bd"
+      "titre": "2933e12123f051ad18a2db70b7cf73c83d8b382a052e8748997e20ec40b0d7bd",
+      "validation_coach": "c23c2712b67dc7a2d81f5fe15c341f7f38c35110e4f70631035224319f57d71c"
     },
     "3-1": {
       "categories_secondaires": "d1bf33aca5ac4caad5b964e2092220dbc2ac8d753a2161272b81207382b95974",
@@ -1831,7 +1835,8 @@
       "section": "f0769c5a9bb365fc0b26b9986daa3755c6f8622bb8a10b6b07c5aa5b6479777d",
       "statut": "247f86420c2bffefbb302453e3005a4b5fc39b0177b4e51335cdcae56c3ed6d8",
       "texte_original": "306e204d5c74724f8fc1af8c118ccdd3ee285904b252aa286841503cb5b737cd",
-      "titre": "4dc245db7f6b2d275b790c6b3c2295f0188bc9a6ad8d9b774572504e54203f36"
+      "titre": "4dc245db7f6b2d275b790c6b3c2295f0188bc9a6ad8d9b774572504e54203f36",
+      "validation_coach": "fd669eb993b17ed0578b3f4980525baddee39a30b731ad7c051baab9c03b09ac"
     },
     "3-2": {
       "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
@@ -1862,11 +1867,12 @@
       "objectif_pedagogique": "cf3d2d73147e8148346b2380374569c38b3df2ebe30ac0dbf0a161f9520e0984",
       "origine": "47d90db6e52c08a34169d5ef35f260056711c2b73027e38106841920ec5c8643",
       "qualite_fiche": "ac25ab690c072f101a72a54a43688747a2fdbdec2fecfeee5ce7a4f395597e56",
-      "regle_clarifiee": "fcb3bcab20d6b72ca276fc8286edfba28cd36e52b13675fa7b01d11d345aff9e",
+      "regle_clarifiee": "b38de319a25b69c29ac318981a83628d85f8e003663597e130c44d8e3351025b",
       "section": "f0769c5a9bb365fc0b26b9986daa3755c6f8622bb8a10b6b07c5aa5b6479777d",
       "statut": "247f86420c2bffefbb302453e3005a4b5fc39b0177b4e51335cdcae56c3ed6d8",
       "texte_original": "339edbc2c9f9ab2a1665538baefac714d6f77d05380c685c6c10d75cc0e5ff7f",
-      "titre": "abf6052ab17b4c1d2198eeee03328b785e6889162638d8fa4e4319dd90ae4e25"
+      "titre": "abf6052ab17b4c1d2198eeee03328b785e6889162638d8fa4e4319dd90ae4e25",
+      "validation_coach": "ad1352f711a61271c566d2d861222c2f96853c3fb21b7c6bfcaf3d421e8890e9"
     },
     "3-4": {
       "categories_secondaires": "1bae70890f7eb5b55c54df76df5fc0299ca9a77203896b8f43c971c3de6b1980",
@@ -1880,11 +1886,12 @@
       "objectif_pedagogique": "cf3d2d73147e8148346b2380374569c38b3df2ebe30ac0dbf0a161f9520e0984",
       "origine": "47d90db6e52c08a34169d5ef35f260056711c2b73027e38106841920ec5c8643",
       "qualite_fiche": "ac25ab690c072f101a72a54a43688747a2fdbdec2fecfeee5ce7a4f395597e56",
-      "regle_clarifiee": "708779026f02470d7807f8d7654e268e4806191da0c78ebd22753e4f268f9936",
+      "regle_clarifiee": "b25176be0effe94ed14e05e7399a69ddb80f1271ebbbea946c706b182a9bea23",
       "section": "f0769c5a9bb365fc0b26b9986daa3755c6f8622bb8a10b6b07c5aa5b6479777d",
       "statut": "247f86420c2bffefbb302453e3005a4b5fc39b0177b4e51335cdcae56c3ed6d8",
       "texte_original": "87c904d9be099bdd53dd18d491b88e449c11b39134052e3d3e7120be625cb678",
-      "titre": "cf4139ecbb4aaebdc933a3eb1042ae72287b1dccd23ea8daf050157a0e6486e8"
+      "titre": "cf4139ecbb4aaebdc933a3eb1042ae72287b1dccd23ea8daf050157a0e6486e8",
+      "validation_coach": "a8a70e53ec8f83390052292b70ef35d222d7da402c65049a308856ae663a2bde"
     },
     "3-5": {
       "categories_secondaires": "01bd81e1789a5dc0b7cba4800c673f1731ac6072f49c8f51463ce63f2e1be8f4",
@@ -1902,7 +1909,8 @@
       "section": "f0769c5a9bb365fc0b26b9986daa3755c6f8622bb8a10b6b07c5aa5b6479777d",
       "statut": "247f86420c2bffefbb302453e3005a4b5fc39b0177b4e51335cdcae56c3ed6d8",
       "texte_original": "10b76a41ff9fbe07ab2e7258660cd32db390dbacbcf5ca07514338c1235262d9",
-      "titre": "5ef4cb168a005d5167ea662cef0a1832f0f1340b52092fec9a68455865ba6a17"
+      "titre": "5ef4cb168a005d5167ea662cef0a1832f0f1340b52092fec9a68455865ba6a17",
+      "validation_coach": "352839da6283d0e2a552156a9fd6e3bddd8873002d1cee2e07c2dfb866ac6c6d"
     },
     "WEB-001": {
       "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
