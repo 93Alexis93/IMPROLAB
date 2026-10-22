@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "source": "Cahier de coach – Improvisation, rubrique « Bonus : Rappels essentiels pour coacher »",
-  "note": "Les formulations originales sont conservées à l’identique. Les titres, développements et exemples sont des versions éditoriales validées par Alexis. Le principe 4 n’est pas inclus car il reste à valider.",
+  "note": "Les formulations originales sont conservées à l’identique. Les titres, développements et exemples sont des versions éditoriales validées par Alexis.",
   "principes": [
     {
       "id": 1,
@@ -25,6 +25,14 @@
       "formulation_originale": "Écoute active : ton partenaire a toujours raison.",
       "principe": "Écoute vraiment ton partenaire : ses paroles, ses gestes, ses émotions et ce qu’ils changent dans la scène. Considère ses propositions comme des réalités de jeu et rebondis dessus plutôt que de rester enfermé dans tes idées. Être à l’écoute, c’est aussi savoir s’adapter et laisser évoluer son personnage.",
       "exemple": "A : « Tu as encore oublié notre anniversaire de mariage ! » B, surpris : « Tu as raison… et j’ai même oublié pourquoi nous nous sommes mariés ! »",
+      "statut": "validé"
+    },
+    {
+      "id": 4,
+      "titre": "Prends ton temps",
+      "formulation_originale": "Prends ton temps : un silence crée du sens.",
+      "principe": "Ne cherche pas à remplir chaque instant par des paroles ou des actions. Un silence peut exprimer une émotion, créer une tension ou laisser au public le temps de comprendre. Prends le temps de regarder, de ressentir et de laisser une réaction exister. Le rythme d’une scène se construit aussi avec ce qui ne se dit pas.",
+      "exemple": "A : « J’ai quelque chose à t’avouer… » B ne répond pas, le regarde longuement, puis murmure : « Tu as encore adopté un chat ? »",
       "statut": "validé"
     }
   ]
