@@ -32,8 +32,10 @@ for (const e of lib.exercices) {
   assert.equal(typeof e.eligible_generateur, 'boolean', `Fiche ${e.id}, champ « eligible_generateur » : booléen attendu`);
 }
 assert.ok(lib.exercices.some(e => e.eligible_generateur), 'Le générateur ne possède aucune fiche éligible');
-const durationMarkup = html.match(/<select id="duration" aria-label="Durée de la séance">([\\s\\S]*?)<\\/select>/)?.[1] || '';
-const durationOptions = [...durationMarkup.matchAll(/<option value="(\\d+)"/g)].map(match => Number(match[1]));
+const durationStart = html.indexOf('<select id="duration" aria-label="Durée de la séance">');
+const durationEnd = html.indexOf('</select>', durationStart);
+const durationMarkup = durationStart < 0 || durationEnd < 0 ? '' : html.slice(durationStart, durationEnd);
+const durationOptions = [...durationMarkup.matchAll(/<option value="(\d+)"/g)].map(match => Number(match[1]));
 assert.equal(durationOptions.length, 18, 'Le menu doit proposer 18 durées');
 assert.equal(durationOptions[0], 35, 'La durée minimale doit être de 35 minutes');
 assert.equal(durationOptions.at(-1), 120, 'La durée maximale doit être de 120 minutes');
