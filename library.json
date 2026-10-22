@@ -205,7 +205,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "En cercle, l’animateur appelle un prénom : la personne appelée se baisse et ses voisins se font face pour un duel mimé en disant « Pan ! ». On peut éliminer la personne appelée qui ne se baisse pas ou un voisin qui oublie « Pan ! ».",
+        "consigne_courte": "En cercle, l’animateur appelle un prénom : la personne se baisse ; ses voisins se font face et tirent en mimant un duel, « Pan ! ». Éliminez si la personne ne se baisse pas ou si un voisin oublie « Pan ! ».",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -690,7 +690,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Après « un, deux, trois », deux joueurs disent un mot simultanément. Les binômes suivants proposent simultanément un mot reliant les précédents ; continuez jusqu’à trouver le même, puis criez « Et c’est la convergenceeee ! »",
+        "consigne_courte": "Après un compte à trois, deux joueurs disent un mot ensemble. Les binômes suivants proposent un mot reliant les précédents ; continuez jusqu’à dire le même mot, puis criez « convergence ! »",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
@@ -777,7 +777,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "À trois, jouez journaliste, traducteur et interviewé : l’interviewé parle une langue imaginaire, le traducteur traduit, transmet les questions et traduit les réponses. Le journaliste ne s’adresse qu’au traducteur ; le partenaire ne voit pas les mimes.",
+        "consigne_courte": "À trois, l’interviewé parle une langue imaginaire ; le traducteur transmet ses propos et les questions du journaliste, puis traduit les réponses. Le journaliste s’adresse au traducteur.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Variante : le traducteur peut volontairement traduire le contraire de ce que dit l’interviewé.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
@@ -916,7 +916,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "En cercle, transmettez le Saint Graal avec une émotion à 10 %. Le receveur dit « J’ai le Saint Graal » en l’amplifiant ; ses voisins amplifient encore, puis les voisins suivants s’exclament « N’est-ce pas génial… ! ». Relancez.",
+        "consigne_courte": "En cercle, transmettez le Saint Graal en exprimant une émotion à 10 %. Le receveur et les voisins amplifient progressivement l’émotion ; le détenteur transmet ensuite le Graal à quelqu’un d’autre.",
         "variante_facile": "Jouer une émotion simple avec une intensité modérée.",
         "variante_difficile": "Amplifiez l’émotion par étapes : le receveur dit « J’ai le Saint Graal », ses deux voisins « Il/elle a le Saint Graal », puis les voisins suivants « N’est-ce pas génial d’avoir le Saint Graal ! ».",
         "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
@@ -2480,9 +2480,9 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Trois comédiens jouent un personnage : l’un agit, l’autre lui prête sa voix et le troisième joue ses mains. Coordonnez-vous pour créer un personnage unique. La note originale mentionne aussi qu’un comédien reproduit les actions d’un autre.",
+        "consigne_courte": "Trois comédiens jouent un personnage : l’un agit, l’autre lui prête sa voix et le troisième joue ses mains. Coordonnez-vous pour créer un personnage unique.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
-        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "variante_difficile": "Autre possibilité de la note originale : un comédien reproduit les actions d’un autre.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       }
@@ -2529,7 +2529,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux joueurs se font face, bras tendus, pour former une maison ; une créature se place dessous. À « Maison », les maisons changent de place ; à « Créature », les créatures changent de maison ; à « Inondations », les groupes se reforment. Les joueurs libres rejoignent un groupe.",
+        "consigne_courte": "Deux joueurs se font face, bras tendus, pour former une maison ; une créature se place dessous. « Maison » : les maisons changent ; « Créature » : les créatures changent de maison ; « Inondations » : les groupes se reforment. Les joueurs libres rejoignent un groupe.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
