@@ -2960,7 +2960,7 @@
       ],
       "validation_coach": {
         "reference_lot": "3-02",
-        "consigne": "Deux comédiens commencent une improvisation. Quand quelqu’un claque des mains, il prend la place d’un comédien en reproduisant exactement sa posture et lance une nouvelle improvisation.",
+        "consigne": "Deux comédiens lancent une improvisation. Un participant claque des mains : les comédiens figent leur posture, puis il remplace l’un d’eux en reprenant exactement sa position et démarre une nouvelle improvisation. Variante : poursuivre la même scène avec le même personnage.",
         "consigne_validee": true,
         "complexification": "Marquez des postures très distinctes pour faciliter les reprises. Variante possible : conserver la même improvisation et le même personnage à chaque remplacement.",
         "complexification_validee": true,
@@ -3001,7 +3001,7 @@
       ],
       "validation_coach": {
         "reference_lot": "3-04",
-        "consigne": "Deux comédiens improvisent. À chaque clap, l’animateur fait entrer ou remplacer un comédien et impose ou retire une contrainte : dernière phrase uniquement, un seul mot, sans parole, en rimes ou accroupi avec justification. Tout le monde passe.",
+        "consigne": "Deux comédiens improvisent. À chaque clap de l’animateur, un joueur entre et remplace un comédien en reprenant sa posture. L’animateur lui impose une contrainte de jeu, qu’il peut ensuite retirer ou remplacer. Tout le monde passe.",
         "consigne_validee": true,
         "complexification": "Enchaîner plusieurs contraintes, puis les retirer à des moments imprévisibles.",
         "complexification_validee": true,
