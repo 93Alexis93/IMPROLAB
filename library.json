@@ -1201,7 +1201,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Quatre joueurs participent. Trois interprètent le même type de personnage, tandis que le quatrième joue un rôle différent. Le premier personnage arrive et demande : « Qu’est-ce qui se passe ? ». Le quatrième répond par une information banale, par exemple : « J’ai acheté des bananes. » Le premier réagit avec une émotion jouée à 30 %. Le deuxième arrive, reproduit l’échange et porte cette même émotion à 60 %, entraînant le premier avec lui. Le troisième arrive à son tour et tous trois expriment ensemble l’émotion à 100 %.",
+        "consigne_courte": "Quatre joueurs : trois partagent le même type de personnage, le quatrième donne une information banale. Le premier réagit à 30 % d’émotion ; les suivants reprennent l’échange en la faisant monter à 60 %, puis à 100 %.",
         "variante_facile": "Jouer une émotion simple avec une intensité modérée.",
         "variante_difficile": "Faire évoluer progressivement l'émotion pendant la scène.",
         "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
@@ -2529,7 +2529,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux joueurs se font face, bras tendus, pour former une maison ; une créature se place dessous. « Maison » : les maisons changent ; « Créature » : les créatures changent de maison ; « Inondations » : les groupes se reforment. Les joueurs libres rejoignent un groupe.",
+        "consigne_courte": "Deux joueurs forment une maison, bras tendus, et une créature se place dessous. « Maison » : les maisons changent ; « Créature » : les créatures changent de maison ; « Inondations » : tout le monde reforme des groupes.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
