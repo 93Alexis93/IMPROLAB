@@ -1189,10 +1189,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "L’animateur présente une personne fictive avec 2–3 infos. Chacun laisse un message sur son répondeur, révélant une relation, un événement ou un aspect de sa vie.",
-        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
-        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "variante_facile": "Donnez un nom fictif et deux indices ; chaque joueur laisse un message d’une phrase.",
+        "variante_difficile": "Chaque message révèle un nouvel indice et fait écho à un message précédent.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Construction",
@@ -1202,11 +1203,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "L’animateur présente une personne fictive avec 2–3 infos. Chacun laisse un message sur son répondeur, révélant une relation, un événement ou un aspect de sa vie.",
-        "variante": "Faites une première manche guidée, puis rejouez en changeant un seul paramètre pour approfondir sans alourdir la règle.",
+        "variante": "Choisissez un personnage avec un secret ; chaque message révèle un indice sans tout expliquer.",
         "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
         "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1227,10 +1229,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Un joueur incarne un personnage défini par 2–3 traits. Les autres viennent à tour de rôle pour un entretien très court, amoureux ou professionnel, avec des personnages différents.",
-        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
-        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "variante_facile": "Choisissez un seul cadre et donnez deux traits au personnage central.",
+        "variante_difficile": "Chaque candidat adopte une stratégie distincte et réagit à ce qui s’est passé avant.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Construction",
@@ -1240,11 +1243,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "Un joueur incarne un personnage défini par 2–3 traits. Les autres viennent à tour de rôle pour un entretien très court, amoureux ou professionnel, avec des personnages différents.",
-        "variante": "Faites une première manche guidée, puis rejouez en changeant un seul paramètre pour approfondir sans alourdir la règle.",
+        "variante": "Le personnage central garde son objectif mais adapte sa réaction aux entretiens précédents.",
         "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
         "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1265,10 +1269,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, transmettez le Saint Graal avec une émotion à 10 %. Le receveur et les voisins amplifient l’émotion ; le détenteur transmet ensuite le Graal à quelqu’un d’autre.",
-        "variante_facile": "Jouer une émotion simple avec une intensité modérée.",
-        "variante_difficile": "Amplifiez l’émotion par étapes : le receveur dit « J’ai le Saint Graal », ses deux voisins « Il/elle a le Saint Graal », puis les voisins suivants « N’est-ce pas génial d’avoir le Saint Graal ! ».",
+        "variante_facile": "Jouez une émotion à faible intensité et répétez les quatre répliques dans l’ordre.",
+        "variante_difficile": "Augmentez l’émotion par paliers nets en gardant les gestes et les répliques compréhensibles.",
         "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Lâcher-prise",
@@ -1277,11 +1282,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "En cercle, transmettez le Saint Graal avec une émotion à 10 %. Le receveur et les voisins amplifient l’émotion ; le détenteur transmet ensuite le Graal à quelqu’un d’autre.",
-        "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
+        "variante": "Associez une émotion et une intention précises ; chaque groupe de voisins amplifie sans perdre la lisibilité.",
         "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
         "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1302,10 +1308,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, chacun incarne une carte dans une hiérarchie. Gardez le rythme : deux frappes sur les cuisses, puis deux dans les mains. Annoncez votre carte sur les cuisses, puis appelez celle d’un autre dans les mains ; l’appelé enchaîne. En cas d’erreur, le joueur descend au dernier rang et la hiérarchie est réajustée.",
-        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
-        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "variante_facile": "Commencez à quatre cartes et marquez lentement le rythme cuisses-cuisses-mains-mains.",
+        "variante_difficile": "Accélérez en mémorisant les nouvelles places après chaque erreur.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Écoute",
@@ -1313,11 +1320,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "En cercle, chacun incarne une carte dans une hiérarchie. Gardez le rythme : deux frappes sur les cuisses, puis deux dans les mains. Annoncez votre carte sur les cuisses, puis appelez celle d’un autre dans les mains ; l’appelé enchaîne. En cas d’erreur, le joueur descend au dernier rang et la hiérarchie est réajustée.",
-        "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
+        "variante": "Quand le rythme est stable, le joueur appelé doit regarder son interlocuteur avant d’annoncer sa carte.",
         "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
         "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1338,10 +1346,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Quatre comédiens jouent deux personnages en binômes : dans l’un, ils disent un mot chacun à tour de rôle ; dans l’autre, ils prononcent exactement les mêmes mots ensemble.",
-        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
-        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "variante_facile": "Le premier personnage parle en alternant un mot par joueur ; le second répète une phrase courte ensemble.",
+        "variante_difficile": "Donnez aux personnages des objectifs opposés et gardez le mode de parole imposé.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Construction",
@@ -1351,11 +1360,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "Quatre comédiens jouent deux personnages en binômes : dans l’un, ils disent un mot chacun à tour de rôle ; dans l’autre, ils prononcent exactement les mêmes mots ensemble.",
-        "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
+        "variante": "Créez un dialogue avec relation et enjeu ; les binômes gardent leur mode de parole malgré les changements.",
         "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
         "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1376,10 +1386,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Quatre publicitaires assis inventent une publicité à tour de rôle : chacun ajoute une idée en commençant par « Ah ouais, et ensuite… ». À chaque proposition, l’enthousiasme du groupe augmente pendant cinq ou six ajouts, jusqu’à l’explosion de joie finale. Poussez alors les chaises et jouez immédiatement la publicité créée.",
-        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
-        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "variante_facile": "Choisissez un produit banal et faites une seule proposition par joueur.",
+        "variante_difficile": "Faites monter l’enthousiasme à chaque idée jusqu’à une chute publicitaire jouable.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Scène",
@@ -1391,11 +1402,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "Quatre publicitaires assis inventent une publicité à tour de rôle : chacun ajoute une idée en commençant par « Ah ouais, et ensuite… ». À chaque proposition, l’enthousiasme du groupe augmente pendant cinq ou six ajouts, jusqu’à l’explosion de joie finale. Poussez alors les chaises et jouez immédiatement la publicité créée.",
-        "variante": "Faites une première manche guidée, puis rejouez en changeant un seul paramètre pour approfondir sans alourdir la règle.",
+        "variante": "Fixez produit et public cible ; les idées deviennent extravagantes mais forment une publicité avec début, montée et chute.",
         "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
         "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1416,10 +1428,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Répétez distinctement les phrases difficiles proposées par l’animateur, puis essayez de les accélérer sans perdre l’articulation.",
-        "variante_facile": "Commencez par une phrase courte, prononcée lentement et distinctement.",
-        "variante_difficile": "Accélérez, puis variez le volume, le rythme et l’intonation sans perdre l’articulation.",
+        "variante_facile": "Commencez par un virelangue court, lentement, en articulant chaque syllabe.",
+        "variante_difficile": "Variez vitesse et intonation sans perdre l’articulation.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Énergie",
@@ -1428,11 +1441,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "Répétez distinctement les phrases difficiles proposées par l’animateur, puis essayez de les accélérer sans perdre l’articulation.",
-        "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
+        "variante": "Enchaînez deux virelangues puis essayez une version chuchotée ou solennelle : priorité à la précision.",
         "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
         "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1453,10 +1467,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lance « Donne-moi cinq… » avec un thème. La personne donne cinq réponses, pendant que le groupe compte jusqu’à cinq entre elles. Scandez « Et ça fait cinq ! », puis elle relance.",
-        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
-        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "variante_facile": "Choisissez une catégorie connue et accordez cinq secondes par réponse.",
+        "variante_difficile": "Réduisez le temps et choisissez des catégories plus précises.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Énergie",
@@ -1465,11 +1480,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "Lance « Donne-moi cinq… » avec un thème. La personne donne cinq réponses, pendant que le groupe compte jusqu’à cinq entre elles. Scandez « Et ça fait cinq ! », puis elle relance.",
-        "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
+        "variante": "Demandez cinq réponses originales et distinctes ; après chaque série, le joueur choisit le prochain défi.",
         "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
         "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1490,10 +1506,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Comptez ensemble de 1 à 20 sans ordre de parole fixé. Chaque nombre ne doit être dit qu’une fois ; si deux joueurs parlent en même temps, recommencez à 1.",
-        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
-        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "variante_facile": "Comptez jusqu’à cinq puis dix en laissant un silence entre les nombres.",
+        "variante_difficile": "Visez vingt sans signal convenu ; recommencez en cas de chevauchement.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Cohésion",
@@ -1501,11 +1518,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "Comptez ensemble de 1 à 20 sans ordre de parole fixé. Chaque nombre ne doit être dit qu’une fois ; si deux joueurs parlent en même temps, recommencez à 1.",
-        "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
+        "variante": "Une fois vingt réussi plusieurs fois, essayez yeux fermés seulement si tout le monde est à l’aise et immobile.",
         "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
         "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1526,10 +1544,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Un joueur entre et répète un mouvement avec un son. Les autres rejoignent la machine humaine un par un, chacun ajoutant un mouvement et un bruit qui complètent l’ensemble.",
-        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
-        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "variante_facile": "Construisez une machine à trois joueurs avec un mouvement et un son faciles chacun.",
+        "variante_difficile": "Ajoutez des pièces complémentaires et faites varier progressivement la vitesse.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Construction",
@@ -1540,11 +1559,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "Un joueur entre et répète un mouvement avec un son. Les autres rejoignent la machine humaine un par un, chacun ajoutant un mouvement et un bruit qui complètent l’ensemble.",
-        "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
+        "variante": "Donnez une fonction à la machine et jouez démarrage, accélération, panne puis reprise.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1565,10 +1585,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Chacun propose un mot lié uniquement au précédent. À la fin, remontez la chaîne et expliquez chaque lien (« J’ai dit ceci parce que tu as dit cela ») jusqu’au mot de départ.",
-        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
-        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "variante_facile": "Faites une chaîne de quatre mots et rappelez la règle du mot précédent.",
+        "variante_difficile": "Allongez la chaîne et justifiez les associations en remontant dans l’ordre exact.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Construction",
@@ -1578,11 +1599,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "Chacun propose un mot lié uniquement au précédent. À la fin, remontez la chaîne et expliquez chaque lien (« J’ai dit ceci parce que tu as dit cela ») jusqu’au mot de départ.",
-        "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
+        "variante": "Créez une longue chaîne sans répétition ; chaque justification doit retrouver précisément le lien précédent.",
         "objectif_prof": "Construire une proposition commune en respectant les apports précédents et la contrainte du jeu.",
         "objectif_eleves": "J’apprends à écouter ce qui vient d’être dit et à ajouter une idée qui fait avancer le jeu.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1603,10 +1625,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, transmettez un clap avec le regard. Un joueur bloqué ne peut applaudir : libérez-le par un échange de regards et de places. Si le clap l’atteint avant, le groupe perd.",
-        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
-        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "variante_facile": "Faites circuler le clap lentement, sans joueur bloqué.",
+        "variante_difficile": "Ajoutez un joueur bloqué et libérez-le par regard et échange de places.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Cohésion",
@@ -1615,11 +1638,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "En cercle, transmettez un clap avec le regard. Un joueur bloqué ne peut applaudir : libérez-le par un échange de regards et de places. Si le clap l’atteint avant, le groupe perd.",
-        "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
+        "variante": "Introduisez deux joueurs bloqués, libérés l’un après l’autre, sans casser le rythme ni la sécurité.",
         "objectif_prof": "Développer l’adaptation immédiate à une contrainte tout en gardant une scène lisible.",
         "objectif_eleves": "J’apprends à m’adapter à une consigne nouvelle sans bloquer la scène.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1640,10 +1664,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Quatre joueurs : trois partagent le même type de personnage, le quatrième donne une information banale. L’émotion passe de 30 % à 60 %, puis à 100 % à l’arrivée des suivants.",
-        "variante_facile": "Jouer une émotion simple avec une intensité modérée.",
-        "variante_difficile": "Faire évoluer progressivement l'émotion pendant la scène.",
+        "variante_facile": "Utilisez une information neutre et jouez une émotion à 30 % sans crier.",
+        "variante_difficile": "Faites distinguer nettement les paliers 30 %, 60 % et 100 %.",
         "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Corps",
@@ -1654,11 +1679,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "Quatre joueurs : trois partagent le même type de personnage, le quatrième donne une information banale. L’émotion passe de 30 % à 60 %, puis à 100 % à l’arrivée des suivants.",
-        "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
+        "variante": "Faites monter une émotion par paliers tout en gardant l’information de départ et des réactions lisibles.",
         "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
         "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1679,10 +1705,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Quatre chaises forment un taxi. Le chauffeur choisit une émotion ; les passagers montent un à un, chacun avec sa propre émotion et une justification. À chaque arrivée, tous adoptent l’émotion du nouvel arrivant. Une fois le taxi plein, les passagers descendent dans l’ordre inverse ; les joueurs restants reprennent l’émotion du dernier passager jusqu’au chauffeur seul.",
-        "variante_facile": "Jouer une émotion simple avec une intensité modérée.",
-        "variante_difficile": "Faire évoluer progressivement l'émotion pendant la scène.",
+        "variante_facile": "Commencez avec le chauffeur et un seul passager, sur un trajet très court.",
+        "variante_difficile": "Chaque nouveau passager impose son émotion à tout le taxi ; inversez l’ordre de sortie.",
         "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Scène",
@@ -1693,11 +1720,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "Quatre chaises forment un taxi. Le chauffeur choisit une émotion ; les passagers montent un à un, chacun avec sa propre émotion et une justification. À chaque arrivée, tous adoptent l’émotion du nouvel arrivant. Une fois le taxi plein, les passagers descendent dans l’ordre inverse ; les joueurs restants reprennent l’émotion du dernier passager jusqu’au chauffeur seul.",
-        "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
+        "variante": "Chaque passager donne une raison concrète à son émotion ; les changements s’inversent dans l’ordre des départs.",
         "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
         "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1718,10 +1746,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En deux colonnes, A annonce une action, B nomme une émotion, A en donne la raison et B l’accepte puis la développe. Changez ensuite de partenaire.",
-        "variante_facile": "Jouer une émotion simple avec une intensité modérée.",
-        "variante_difficile": "Faire évoluer progressivement l'émotion pendant la scène.",
+        "variante_facile": "Proposez une action et une émotion simples ; suivez les quatre répliques.",
+        "variante_difficile": "Développez chaque justification et changez rapidement de partenaire.",
         "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Construction",
@@ -1731,11 +1760,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "En deux colonnes, A annonce une action, B nomme une émotion, A en donne la raison et B l’accepte puis la développe. Changez ensuite de partenaire.",
-        "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
+        "variante": "Transformez la justification en mini-histoire où l’action et l’émotion finissent par se rejoindre.",
         "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
         "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1756,10 +1786,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "À deux, définissez vite qui vous êtes, ce que vous faites et où vous êtes. Chaque réplique apporte ces infos ; posez la base en deux échanges si possible.",
-        "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
-        "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
+        "variante_facile": "Donnez à chaque joueur une identité, un lieu et une action de départ.",
+        "variante_difficile": "Chaque réplique apporte deux informations parmi qui, où et quoi.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Scène",
@@ -1768,11 +1799,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "À deux, définissez vite qui vous êtes, ce que vous faites et où vous êtes. Chaque réplique apporte ces infos ; posez la base en deux échanges si possible.",
-        "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
+        "variante": "Établissez les informations en deux échanges puis faites naître un enjeu qui en découle.",
         "objectif_prof": "Stimuler l’imaginaire partagé et la cohérence des propositions collectives.",
         "objectif_eleves": "J’apprends à inventer des détails et à les relier aux idées des autres.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1793,10 +1825,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "À deux, trois ou quatre, mimez une action physique commune tout en discutant d’un sujet sans rapport. L’action doit rester visible et crédible pendant que la conversation avance.",
-        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
-        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "variante_facile": "Choisissez une action physique simple et sûre, avec une conversation sans rapport.",
+        "variante_difficile": "Maintenez l’action physique précise malgré une conversation qui évolue.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Scène",
@@ -1805,11 +1838,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "À deux, trois ou quatre, mimez une action physique commune tout en discutant d’un sujet sans rapport. L’action doit rester visible et crédible pendant que la conversation avance.",
-        "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
+        "variante": "Faites évoluer l’action collective en plusieurs étapes sans interrompre la conversation indépendante.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1830,10 +1864,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, « A » (main sur la tête) indique une direction ; « SO » (main sur le torse) indique la suivante ; « CA » lance le signal vers un joueur choisi, qui reprend à « A ».",
-        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
-        "variante_difficile": "Quand l’enchaînement est maîtrisé, éliminez les joueurs qui se trompent ; ils tournent autour du cercle en répétant « ASOCA » pour déconcentrer les autres.",
+        "variante_facile": "Répétez A-SO-CA lentement sans élimination.",
+        "variante_difficile": "Accélérez puis ajoutez la distraction des joueurs éliminés sans gêner le cercle.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Écoute",
@@ -1843,11 +1878,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "En cercle, « A » (main sur la tête) indique une direction ; « SO » (main sur le torse) indique la suivante ; « CA » lance le signal vers un joueur choisi, qui reprend à « A ».",
-        "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
+        "variante": "Augmentez le rythme et ajoutez la distraction seulement quand le cercle reste précis ; aucune bousculade.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1868,10 +1904,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Formez deux files face à face, les joueurs de chaque équipe se tenant la main. Seuls les premiers gardent les yeux ouverts. L’animateur lance une pièce : sur « face », restez immobiles ; sur « pile », transmettez une pression de main jusqu’au dernier, qui lève le bras. L’équipe la plus rapide avance d’une place ; continuez jusqu’au retour du dernier à la première place.",
-        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
-        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "variante_facile": "Entraînez-vous à transmettre la pression de main sans chronomètre.",
+        "variante_difficile": "Alternez « face » et « pile » en gardant une réaction immédiate et sans anticipation.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Écoute",
@@ -1880,11 +1917,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "Formez deux files face à face, les joueurs de chaque équipe se tenant la main. Seuls les premiers gardent les yeux ouverts. L’animateur lance une pièce : sur « face », restez immobiles ; sur « pile », transmettez une pression de main jusqu’au dernier, qui lève le bras. L’équipe la plus rapide avance d’une place ; continuez jusqu’au retour du dernier à la première place.",
-        "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
+        "variante": "Gardez le rythme rapide mais équitable : le signal part seulement sur pile, sans anticipation.",
         "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
         "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1905,10 +1943,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Trois comédiens jouent : l’un regarde le fond, l’autre le public, le troisième le comédien qui regarde le public. Si un regard change, les autres s’ajustent sans changer de rôle.",
-        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
-        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "variante_facile": "Faites une scène courte et vérifiez les contraintes de regard avant de continuer.",
+        "variante_difficile": "Ajoutez un changement de regard qui oblige les autres à s’adapter sans changer les rôles.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Scène",
@@ -1917,11 +1956,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "Trois comédiens jouent : l’un regarde le fond, l’autre le public, le troisième le comédien qui regarde le public. Si un regard change, les autres s’ajustent sans changer de rôle.",
-        "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
+        "variante": "Construisez un enjeu clair ; les changements de regard déclenchent le jeu sans changer les rôles.",
         "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
         "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1942,10 +1982,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Au « Stop ! », prenez une position : assis, debout ou penché. Sans parler, répartissez-vous le plus également possible ; si l’équilibre est atteint, vous gagnez.",
-        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
-        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "variante_facile": "Expliquez les trois positions et faites un arrêt d’essai sans chercher la vitesse.",
+        "variante_difficile": "Annoncez les nombres rapidement et cherchez une répartition équilibrée sans concertation.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Corps",
@@ -1954,11 +1995,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "Au « Stop ! », prenez une position : assis, debout ou penché. Sans parler, répartissez-vous le plus également possible ; si l’équilibre est atteint, vous gagnez.",
-        "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
+        "variante": "Variez les nombres et raccourcissez le temps de réaction ; vérifiez ensemble si la répartition est aussi équilibrée que possible.",
         "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
         "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -1979,10 +2021,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Deux jouent, deux attendent : gardez deux joueurs en scène. Une entrée remplace un comédien ; une sortie fait entrer un joueur en attente. Si deux entrent, les deux sortent.",
-        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
-        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "variante_facile": "Rappelez qu’il doit toujours y avoir exactement deux personnages en scène.",
+        "variante_difficile": "Entraînez les remplacements sur signal, puis faites avancer l’histoire à chaque entrée.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Écoute",
@@ -1992,11 +2035,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "Deux jouent, deux attendent : gardez deux joueurs en scène. Une entrée remplace un comédien ; une sortie fait entrer un joueur en attente. Si deux entrent, les deux sortent.",
-        "variante": "Faites une première manche guidée, puis rejouez en changeant un seul paramètre pour approfondir sans alourdir la règle.",
+        "variante": "Chaque remplacement fait avancer la situation, sans pause ni confusion et avec exactement deux personnages.",
         "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
         "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -2017,10 +2061,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Deux comédiens jouent dans un lieu de passage. Les autres entrent brièvement pour apporter une information ou rebondir, puis ressortent ; les deux personnages poursuivent la scène.",
-        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
-        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "variante_facile": "Choisissez une gare ou un autre lieu de passage évident.",
+        "variante_difficile": "Chaque visiteur doit modifier la situation principale, qui doit rester cohérente.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Construction",
@@ -2030,11 +2075,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "Deux comédiens jouent dans un lieu de passage. Les autres entrent brièvement pour apporter une information ou rebondir, puis ressortent ; les deux personnages poursuivent la scène.",
-        "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
+        "variante": "Donnez un objectif aux personnages principaux ; chaque passage aide, complique ou transforme cet objectif.",
         "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
         "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -2055,10 +2101,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, tous lèvent un bras. Un joueur en pointe un autre ; celui-ci désigne quelqu’un qui a encore le bras levé, puis baisse le sien. Continuez jusqu’à ce que tous soient intégrés à la chaîne. Rejouez ensuite la chaîne en vous regardant et en imitant les mouvements de la personne désignée : d’abord sobrement, puis en les amplifiant.",
-        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
-        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "variante_facile": "Faites la chaîne de pointages sans imitation, bras levés.",
+        "variante_difficile": "Imitez puis amplifiez les gestes tout en gardant l’ordre de la chaîne.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Corps",
@@ -2067,11 +2114,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "En cercle, tous lèvent un bras. Un joueur en pointe un autre ; celui-ci désigne quelqu’un qui a encore le bras levé, puis baisse le sien. Continuez jusqu’à ce que tous soient intégrés à la chaîne. Rejouez ensuite la chaîne en vous regardant et en imitant les mouvements de la personne désignée : d’abord sobrement, puis en les amplifiant.",
-        "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
+        "variante": "Ajoutez une émotion commune au deuxième tour sans perdre l’ordre ni faire de gestes dangereux.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -2092,10 +2140,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Regardez collectivement une personne pendant dix secondes. Elle en choisit une autre par le regard ; tout le groupe déplace son attention. Continuez de personne en personne.",
-        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
-        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "variante_facile": "Commencez par regarder chaque personne cinq secondes, sans obligation de maintenir le regard.",
+        "variante_difficile": "Maintenez dix secondes et faites circuler le regard sans ordre annoncé, sans le forcer.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Cohésion",
@@ -2104,11 +2153,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "Regardez collectivement une personne pendant dix secondes. Elle en choisit une autre par le regard ; tout le groupe déplace son attention. Continuez de personne en personne.",
-        "variante": "Faites une première manche guidée, puis rejouez en changeant un seul paramètre pour approfondir sans alourdir la règle.",
+        "variante": "Faites circuler le regard sans ordre annoncé ; ne forcez jamais le contact visuel.",
         "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
         "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -2129,10 +2179,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Marchez puis arrêtez-vous au signal. Un joueur transmet un mot à un autre, qui le transmet à son tour. Quand la chaîne fonctionne, l’animateur lance d’autres mots en parallèle.",
-        "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
-        "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
+        "variante_facile": "Faites circuler un seul mot entre joueurs immobiles.",
+        "variante_difficile": "Faites circuler trois mots simultanément et restituez ensuite leurs trajets.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Énergie",
@@ -2140,11 +2191,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "Marchez puis arrêtez-vous au signal. Un joueur transmet un mot à un autre, qui le transmet à son tour. Quand la chaîne fonctionne, l’animateur lance d’autres mots en parallèle.",
-        "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
+        "variante": "Faites circuler trois mots simultanément et restituez ensuite leurs trajets.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -2165,10 +2217,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En ligne, les deux joueurs du milieu avancent dos à dos. Au mot annoncé, ils se retournent et improvisent dix secondes ; puis ils rejoignent les extrémités et les suivants jouent.",
-        "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
-        "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
+        "variante_facile": "Jouez une scène de dix secondes avec un mot de départ facile.",
+        "variante_difficile": "Imposez un mot inattendu et un changement d’émotion, sans dépasser dix secondes.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Scène",
@@ -2179,11 +2232,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "En ligne, les deux joueurs du milieu avancent dos à dos. Au mot annoncé, ils se retournent et improvisent dix secondes ; puis ils rejoignent les extrémités et les suivants jouent.",
-        "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
+        "variante": "Imposez un mot inattendu et un changement d’émotion ; concluez en dix secondes sans précipiter la parole.",
         "objectif_prof": "Stimuler l’imaginaire partagé et la cohérence des propositions collectives.",
         "objectif_eleves": "J’apprends à inventer des détails et à les relier aux idées des autres.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -2204,10 +2258,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Chaque binôme joue une chaîne TV. L’animateur change de chaîne : seul le binôme sélectionné joue ; au retour, il reprend ou renouvelle son émission.",
-        "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
-        "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
+        "variante_facile": "Commencez avec deux chaînes de télévision et des émissions très reconnaissables.",
+        "variante_difficile": "Zappez rapidement puis reprenez précisément l’action au retour sur une chaîne.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Construction",
@@ -2217,11 +2272,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "Chaque binôme joue une chaîne TV. L’animateur change de chaîne : seul le binôme sélectionné joue ; au retour, il reprend ou renouvelle son émission.",
-        "variante": "Faites une première manche guidée, puis rejouez en changeant un seul paramètre pour approfondir sans alourdir la règle.",
+        "variante": "Zappez vite et reprenez précisément l’action lors du retour à une chaîne.",
         "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
         "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -2242,10 +2298,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En binôme, comptez jusqu’à trois puis choisissez simultanément un geste et une réplique : « Je mange » (se désigner), « Tu manges » (pointer l’autre), « Caca » (former un losange avec les mains) ou « Homard » (pinces en l’air). Comme au chifoumi, les combinaisons créent des situations absurdes ; il n’y a pas de véritable gagnant.",
-        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
-        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "variante_facile": "Répétez les quatre gestes et choix lentement en binôme.",
+        "variante_difficile": "Accélérez le compte et jouez chaque combinaison comme une impulsion comique lisible.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Amusement",
@@ -2254,11 +2311,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "En binôme, comptez jusqu’à trois puis choisissez simultanément un geste et une réplique : « Je mange » (se désigner), « Tu manges » (pointer l’autre), « Caca » (former un losange avec les mains) ou « Homard » (pinces en l’air). Comme au chifoumi, les combinaisons créent des situations absurdes ; il n’y a pas de véritable gagnant.",
-        "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
+        "variante": "Après chaque combinaison, inventez une mini-situation absurde puis relancez le compte à trois.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
@@ -2279,10 +2337,11 @@
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "L’animateur annonce une catégorie. Répondez vite chacun votre tour, sans répéter une réponse. Une longue hésitation ou un doublon élimine ; continuez jusqu’au dernier joueur.",
-        "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
-        "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
+        "variante_facile": "Choisissez une catégorie facile et jouez un tour d’essai sans élimination.",
+        "variante_difficile": "Accélérez et exigez des réponses inédites ; les joueurs sortis deviennent arbitres.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
+        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
+        "auteur_variantes": "Assistant d’Alexis"
       },
       "categories_secondaires": [
         "Amusement",
@@ -2291,11 +2350,12 @@
       ],
       "accompagnement_pedagogique": {
         "consigne": "L’animateur annonce une catégorie. Répondez vite chacun votre tour, sans répéter une réponse. Une longue hésitation ou un doublon élimine ; continuez jusqu’au dernier joueur.",
-        "variante": "Faites une première manche guidée, puis rejouez en changeant un seul paramètre pour approfondir sans alourdir la règle.",
+        "variante": "Alternez catégories concrètes et imaginatives ; les joueurs éliminés peuvent arbitrer les répétitions ou proposer la catégorie suivante.",
         "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
         "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
         "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
+        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
