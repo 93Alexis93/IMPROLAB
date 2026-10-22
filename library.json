@@ -155,7 +155,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "En cercle, le zombie poursuit une cible. Celle-ci cherche un regard ; le joueur regardé nomme une nouvelle cible. Le zombie change de direction ; la personne touchée devient zombie.",
+        "consigne_courte": "Le zombie poursuit une cible. Celle-ci cherche un regard ; le joueur regardé nomme une nouvelle cible. Le zombie change de direction ; la personne touchée devient zombie.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
@@ -1867,7 +1867,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux joueurs improvisent, deux attendent. Il doit toujours y avoir deux personnages : une entrée fait sortir quelqu’un, une sortie fait entrer un joueur en attente ; si deux entrent, les deux sortent.",
+        "consigne_courte": "Deux joueurs improvisent, deux attendent. Il doit toujours y en avoir deux sur scène : chaque entrée remplace un joueur, chaque sortie fait entrer un autre ; si les deux entrent, les deux sortent.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
@@ -3241,7 +3241,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux joueurs forment une maison, bras tendus ; une créature se place dessous. « Maison » : les maisons changent ; « Créature » : les créatures changent ; « Inondations » : reformez les groupes.",
+        "consigne_courte": "Deux joueurs font la maison, bras tendus ; une créature se place dessous. « Maison » : les maisons changent ; « Créature » : les créatures changent ; « Inondations » : reformez les groupes.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
