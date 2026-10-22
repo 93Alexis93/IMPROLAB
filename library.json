@@ -2998,7 +2998,18 @@
         "Construction",
         "Amusement",
         "Lâcher-prise"
-      ]
+      ],
+      "validation_coach": {
+        "reference_lot": "3-04",
+        "consigne": "Deux comédiens improvisent. À chaque clap, l’animateur fait entrer ou remplacer un comédien et impose ou retire une contrainte : dernière phrase uniquement, un seul mot, sans parole, en rimes ou accroupi avec justification. Tout le monde passe.",
+        "consigne_validee": true,
+        "complexification": "Enchaîner plusieurs contraintes, puis les retirer à des moments imprévisibles.",
+        "complexification_validee": true,
+        "objectif_detaille": "Développer l’adaptation, la spontanéité et l’intégration de contraintes en improvisation.",
+        "objectif_valide": true,
+        "validation_globale": true,
+        "remarques": null
+      }
     },
     {
       "id": "3-5",
@@ -3026,7 +3037,18 @@
         "Écoute",
         "Amusement",
         "Lâcher-prise"
-      ]
+      ],
+      "validation_coach": {
+        "reference_lot": "3-05",
+        "consigne": "Un comédien parle sans s’arrêter pendant 30 secondes. Le public répète chaque « euh ». L’animateur peut ajouter ou retirer des contraintes pendant le discours.",
+        "consigne_validee": true,
+        "complexification": "Enchaîner les contraintes : questions uniquement, mot interdit ou imposé, émotions changeantes, et autres contraintes prévues dans les règles de la fiche.",
+        "complexification_validee": true,
+        "objectif_detaille": "Développer la fluidité verbale, la réactivité, l’écoute et le lâcher-prise.",
+        "objectif_valide": true,
+        "validation_globale": true,
+        "remarques": null
+      }
     },
     {
       "id": "WEB-001",
