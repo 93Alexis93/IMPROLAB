@@ -951,5 +951,5 @@ initRandomDynamics();
 rosterLoad();
 drawInit();
 loadLibrary();
-if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=20261021-v3-category-filter',{updateViaCache:'none'}).then(reg=>reg.update()).catch(e=>console.warn('Mode hors ligne indisponible',e)));
+if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=20261022-v4-advice',{updateViaCache:'none'}).then(reg=>reg.update()).catch(e=>console.warn('Mode hors ligne indisponible',e)));
 try{const saved=localStorage.getItem('impro-last-plan')||'';if(saved){const doc=new DOMParser().parseFromString(saved,'text/html');const safe=document.createElement('div');doc.querySelectorAll('.card').forEach(c=>{const el=document.createElement('div');el.className='card';for(const [tag,source] of [['small','small'],['h3','h3'],['p','p']]){const n=c.querySelector(source);if(n){const item=document.createElement(tag);item.textContent=n.textContent;el.append(item)}}if(el.querySelector('h3'))safe.append(el)});document.getElementById('plan').replaceChildren(...safe.children)}}catch(e){console.warn('Séance précédente illisible',e)}refreshEditor();</script></body></html>
