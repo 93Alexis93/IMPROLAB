@@ -26,7 +26,7 @@
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Mettez-vous en place et suivez la règle annoncée. Restez attentifs aux autres, attendez votre tour et faites circuler le jeu sans commenter.",
+        "consigne": "En cercle, envoie « Sa » en levant les bras. Le destinataire répond « Mu » ; ses voisins miment un coup de sabre en disant « Raï ». Celui qui a dit « Mu » relance « Sa ».",
         "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
@@ -57,7 +57,7 @@
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Jouez la situation en binôme en respectant la règle. Regardez votre partenaire, accueillez ses propositions et faites évoluer le jeu.",
+        "consigne": "En binôme, comptez en alternance « un, deux, trois », puis recommencez. Regardez-vous et accélérez progressivement.",
         "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
@@ -94,7 +94,7 @@
         "Imaginaire"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Mettez-vous en place et suivez la règle annoncée. Restez attentifs aux autres, attendez votre tour et faites circuler le jeu sans commenter.",
+        "consigne": "En cercle, passez l’objet imaginaire en répétant « Tiens, ceci est un poindon ». Le receveur demande « Un quoi ? » ; la question remonte de joueur en joueur jusqu’au lanceur, qui répond « Un poindon ! ». La réponse redescend jusqu’au receveur, qui conclut « Ah d’accord ! » puis transmet l’objet. Gardez l’ordre des répliques et le rythme.",
         "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
         "objectif_prof": "Stimuler l’imaginaire partagé et la cohérence des propositions collectives.",
         "objectif_eleves": "J’apprends à inventer des détails et à les relier aux idées des autres.",
@@ -131,7 +131,7 @@
         "Cohésion"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Écoutez la règle et observez la démonstration. Essayez franchement, restez attentifs au groupe et poursuivez le jeu sans chercher la perfection.",
+        "consigne": "À partir d’un thème, construisez une histoire collective en disant chacun un seul mot à votre tour, avec un rythme régulier et du sens.",
         "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
         "objectif_prof": "Construire une proposition commune en respectant les apports précédents et la contrainte du jeu.",
         "objectif_eleves": "J’apprends à écouter ce qui vient d’être dit et à ajouter une idée qui fait avancer le jeu.",
@@ -168,7 +168,7 @@
         "Lâcher-prise"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Mettez-vous en place et suivez la règle annoncée. Restez attentifs aux autres, attendez votre tour et faites circuler le jeu sans commenter.",
+        "consigne": "Le zombie poursuit une cible. Celle-ci cherche un regard ; le joueur regardé nomme une nouvelle cible. Le zombie change de direction ; la personne touchée devient zombie.",
         "variante": "Faites une première manche guidée, puis rejouez en changeant un seul paramètre pour approfondir sans alourdir la règle.",
         "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
         "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
@@ -203,7 +203,7 @@
         "Lâcher-prise"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Mettez-vous en place et suivez la règle annoncée. Restez attentifs aux autres, attendez votre tour et faites circuler le jeu sans commenter.",
+        "consigne": "Comptez ensemble à partir de 1, sans ordre de parole fixé. Si deux joueurs annoncent un nombre en même temps, recommencez à 1.",
         "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
         "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
         "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
@@ -237,7 +237,7 @@
         "Imaginaire"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Écoutez la règle et observez la démonstration. Essayez franchement, restez attentifs au groupe et poursuivez le jeu sans chercher la perfection.",
+        "consigne": "En vous déplaçant, faites circuler une balle imaginaire colorée en disant « Je te donne la balle [couleur] ». Arrêtez-vous pour retrouver qui la détient.",
         "variante": "Faites une première manche guidée, puis rejouez en changeant un seul paramètre pour approfondir sans alourdir la règle.",
         "objectif_prof": "Stimuler l’imaginaire partagé et la cohérence des propositions collectives.",
         "objectif_eleves": "J’apprends à inventer des détails et à les relier aux idées des autres.",
@@ -273,7 +273,7 @@
         "Amusement"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Mettez-vous en place et suivez la règle annoncée. Restez attentifs aux autres, attendez votre tour et faites circuler le jeu sans commenter.",
+        "consigne": "En cercle, l’animateur appelle un prénom : la personne se baisse, ses voisins miment un duel « Pan ! ». Éliminez si elle ne se baisse pas ou si un voisin oublie de tirer.",
         "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
@@ -309,7 +309,7 @@
         "Amusement"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Écoutez la règle et observez la démonstration. Essayez franchement, restez attentifs au groupe et poursuivez le jeu sans chercher la perfection.",
+        "consigne": "Le voyant annonce une caractéristique. Les concernés avancent, les autres s’arrêtent. Continuez jusqu’à une seule personne en mouvement ; si tous s’arrêtent, le voyant perd.",
         "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
@@ -345,7 +345,7 @@
         "Lâcher-prise"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Mettez-vous en place et suivez la règle annoncée. Restez attentifs aux autres, attendez votre tour et faites circuler le jeu sans commenter.",
+        "consigne": "Dansez ensemble : chacun peut proposer un mouvement que tout le groupe reprend, jusqu’à ce qu’un autre geste le remplace.",
         "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
@@ -382,7 +382,7 @@
         "Énergie"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Écoutez la règle et observez la démonstration. Essayez franchement, restez attentifs au groupe et poursuivez le jeu sans chercher la perfection.",
+        "consigne": "Quatre joueurs forment un losange et suivent le meneur devant. Quand un déplacement change qui est à l’avant, ce joueur mène. Les danseurs au centre suivent sans mener.",
         "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
@@ -418,7 +418,7 @@
         "Cohésion"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Mettez-vous en place et suivez la règle annoncée. Restez attentifs aux autres, attendez votre tour et faites circuler le jeu sans commenter.",
+        "consigne": "En cercle, une frappe vers le voisin fait circuler l’énergie dans le même sens ; deux frappes et un retournement inversent le sens. Accélérez progressivement.",
         "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
@@ -455,7 +455,7 @@
         "Imaginaire"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Écoutez la règle et observez la démonstration. Essayez franchement, restez attentifs au groupe et poursuivez le jeu sans chercher la perfection.",
+        "consigne": "Au SAV, le client ignore l’objet qu’il rapporte, contrairement à l’employé et au public. Il réclame et tente de le deviner grâce aux réponses, sans sortir de la situation.",
         "variante": "Partez d’un objet ou d’un lieu simple et laissez chacun ajouter un détail cohérent. Pour aller plus loin, faites évoluer le lieu ou révélez une information nouvelle.",
         "objectif_prof": "Stimuler l’imaginaire partagé et la cohérence des propositions collectives.",
         "objectif_eleves": "J’apprends à inventer des détails et à les relier aux idées des autres.",
@@ -493,7 +493,7 @@
         "Imaginaire"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Écoutez la règle et observez la démonstration. Essayez franchement, restez attentifs au groupe et poursuivez le jeu sans chercher la perfection.",
+        "consigne": "Le public choisit des mots secrets. Des joueurs les miment pour un comédien, qui les devine et les place dans le débat ou l’entretien ; le public applaudit chaque mot intégré.",
         "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
@@ -529,7 +529,7 @@
         "Cohésion"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Mettez-vous en place et suivez la règle annoncée. Restez attentifs aux autres, attendez votre tour et faites circuler le jeu sans commenter.",
+        "consigne": "En cercle, comptez de 1 à 7 en transmettant l’énergie par une tape sur l’épaule correspondante. À 7, désignez avec les mains n’importe quel joueur, qui reprend à 1.",
         "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
         "objectif_prof": "Développer l’adaptation immédiate à une contrainte tout en gardant une scène lisible.",
         "objectif_eleves": "J’apprends à m’adapter à une consigne nouvelle sans bloquer la scène.",
@@ -565,7 +565,7 @@
         "Lâcher-prise"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Jouez la situation en binôme en respectant la règle. Regardez votre partenaire, accueillez ses propositions et faites évoluer le jeu.",
+        "consigne": "À deux, montrez une partie du corps en en nommant une autre. Le partenaire montre la partie nommée et annonce à son tour un autre nom, sans hésiter.",
         "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
@@ -602,7 +602,7 @@
         "Lâcher-prise"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Jouez la situation en binôme en respectant la règle. Regardez votre partenaire, accueillez ses propositions et faites évoluer le jeu.",
+        "consigne": "A annonce un événement ; B répond « Ah, c’est cool ! ». A ajoute une mauvaise nouvelle, B dit « Ah, c’est pas cool ! ». Continuez en alternant les nouvelles.",
         "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
         "objectif_prof": "Construire une proposition commune en respectant les apports précédents et la contrainte du jeu.",
         "objectif_eleves": "J’apprends à écouter ce qui vient d’être dit et à ajouter une idée qui fait avancer le jeu.",
@@ -639,7 +639,7 @@
         "Amusement"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Écoutez la règle et observez la démonstration. Essayez franchement, restez attentifs au groupe et poursuivez le jeu sans chercher la perfection.",
+        "consigne": "Dansez librement. À chaque nombre annoncé, organisez-vous sans parler pour que ce nombre exact continue à danser ; les autres s’immobilisent.",
         "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
@@ -676,7 +676,7 @@
         "Amusement"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Jouez la situation en binôme en respectant la règle. Regardez votre partenaire, accueillez ses propositions et faites évoluer le jeu.",
+        "consigne": "Chacun imagine secrètement un problème et choisit un objet. Révélez-les, puis résolvez le problème de l’autre avec votre objet, même si l’association est absurde.",
         "variante": "Partez d’un objet ou d’un lieu simple et laissez chacun ajouter un détail cohérent. Pour aller plus loin, faites évoluer le lieu ou révélez une information nouvelle.",
         "objectif_prof": "Stimuler l’imaginaire partagé et la cohérence des propositions collectives.",
         "objectif_eleves": "J’apprends à inventer des détails et à les relier aux idées des autres.",
@@ -713,7 +713,7 @@
         "Amusement"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Jouez la situation en binôme en respectant la règle. Regardez votre partenaire, accueillez ses propositions et faites évoluer le jeu.",
+        "consigne": "À deux, improvisez sur un thème : l’un parle librement, l’autre n’utilise que « Oui », « d’accord », « on », « y », « va ». Le partenaire rebondit sur ses réactions.",
         "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
         "objectif_prof": "Développer l’adaptation immédiate à une contrainte tout en gardant une scène lisible.",
         "objectif_eleves": "J’apprends à m’adapter à une consigne nouvelle sans bloquer la scène.",
@@ -750,7 +750,7 @@
         "Lâcher-prise"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Écoutez la règle et observez la démonstration. Essayez franchement, restez attentifs au groupe et poursuivez le jeu sans chercher la perfection.",
+        "consigne": "Inventez une histoire collective : les répliques commencent successivement par A, B, C, etc. L’animateur peut interdire certains types de mots.",
         "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
         "objectif_prof": "Construire une proposition commune en respectant les apports précédents et la contrainte du jeu.",
         "objectif_eleves": "J’apprends à écouter ce qui vient d’être dit et à ajouter une idée qui fait avancer le jeu.",
@@ -785,7 +785,7 @@
         "Construction"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Jouez la situation en binôme en respectant la règle. Regardez votre partenaire, accueillez ses propositions et faites évoluer le jeu.",
+        "consigne": "Deux binômes jouent en alternance. Quand l’un reprend la dernière réplique de l’autre, celui-ci se fige jusqu’à pouvoir voler à son tour une réplique. Intégrez-la naturellement.",
         "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
         "objectif_prof": "Construire une proposition commune en respectant les apports précédents et la contrainte du jeu.",
         "objectif_eleves": "J’apprends à écouter ce qui vient d’être dit et à ajouter une idée qui fait avancer le jeu.",
@@ -822,7 +822,7 @@
         "Imaginaire"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Jouez la situation en binôme en respectant la règle. Regardez votre partenaire, accueillez ses propositions et faites évoluer le jeu.",
+        "consigne": "À deux, jouez une scène : un comédien ouvre un livre à une page au hasard et choisit les phrases à lire ; l’autre les intègre. Gardez un dialogue fluide, sans longues recherches.",
         "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
         "objectif_prof": "Construire une proposition commune en respectant les apports précédents et la contrainte du jeu.",
         "objectif_eleves": "J’apprends à écouter ce qui vient d’être dit et à ajouter une idée qui fait avancer le jeu.",
@@ -858,7 +858,7 @@
         "Amusement"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Écoutez la règle et observez la démonstration. Essayez franchement, restez attentifs au groupe et poursuivez le jeu sans chercher la perfection.",
+        "consigne": "Rangez-vous par ordre alphabétique selon la caractéristique annoncée (prénom, métier…). Les réponses peuvent être inventées ; ajustez-vous jusqu’à obtenir un ordre cohérent.",
         "variante": "Faites une première manche guidée, puis rejouez en changeant un seul paramètre pour approfondir sans alourdir la règle.",
         "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
         "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
@@ -895,7 +895,7 @@
         "Amusement"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Jouez la situation en binôme en respectant la règle. Regardez votre partenaire, accueillez ses propositions et faites évoluer le jeu.",
+        "consigne": "Après un compte à trois, deux joueurs disent un mot ensemble. Les binômes suivants proposent un mot lié aux précédents ; continuez jusqu’au même mot, puis criez « convergence ! »",
         "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
         "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
         "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
@@ -932,7 +932,7 @@
         "Amusement"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Jouez la situation en binôme en respectant la règle. Regardez votre partenaire, accueillez ses propositions et faites évoluer le jeu.",
+        "consigne": "À deux, inventez une anecdote. Le premier raconte puis questionne ; le second invente une réponse, que le premier accepte avant de relancer avec une autre question.",
         "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
         "objectif_prof": "Construire une proposition commune en respectant les apports précédents et la contrainte du jeu.",
         "objectif_eleves": "J’apprends à écouter ce qui vient d’être dit et à ajouter une idée qui fait avancer le jeu.",
@@ -969,7 +969,7 @@
         "Amusement"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Jouez la situation en binôme en respectant la règle. Regardez votre partenaire, accueillez ses propositions et faites évoluer le jeu.",
+        "consigne": "Deux binômes jouent : dans chacun, un comédien mime sans parler et son doubleur improvise ses paroles. Les deux personnages interagissent dans la même scène.",
         "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
         "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
         "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
@@ -1000,7 +1000,7 @@
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Écoutez la règle et observez la démonstration. Essayez franchement, restez attentifs au groupe et poursuivez le jeu sans chercher la perfection.",
+        "consigne": "À trois, l’interviewé parle une langue imaginaire ; le traducteur transmet ses propos et les questions du journaliste, puis traduit les réponses.",
         "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
         "objectif_prof": "Stimuler l’imaginaire partagé et la cohérence des propositions collectives.",
         "objectif_eleves": "J’apprends à inventer des détails et à les relier aux idées des autres.",
@@ -1037,7 +1037,7 @@
         "Amusement"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Écoutez la règle et observez la démonstration. Essayez franchement, restez attentifs au groupe et poursuivez le jeu sans chercher la perfection.",
+        "consigne": "Divisez l’espace en quatre zones, chacune liée à une émotion. Pendant la scène, adoptez l’émotion de chaque zone dès que vous y entrez, sans interrompre l’histoire.",
         "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
         "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
         "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
@@ -1074,7 +1074,7 @@
         "Cohésion"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Écoutez la règle et observez la démonstration. Essayez franchement, restez attentifs au groupe et poursuivez le jeu sans chercher la perfection.",
+        "consigne": "Quatre joueurs forment un carré et préparent deux histoires, une avec chaque voisin. Le binôme de devant joue ; au signal, tous tournent d’un quart et l’autre histoire reprend.",
         "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
         "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
         "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
@@ -1111,7 +1111,7 @@
         "Lâcher-prise"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Mettez-vous en place et suivez la règle annoncée. Restez attentifs aux autres, attendez votre tour et faites circuler le jeu sans commenter.",
+        "consigne": "L’animateur présente une personne fictive avec 2–3 infos. Chacun laisse un message sur son répondeur, révélant une relation, un événement ou un aspect de sa vie.",
         "variante": "Faites une première manche guidée, puis rejouez en changeant un seul paramètre pour approfondir sans alourdir la règle.",
         "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
         "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
