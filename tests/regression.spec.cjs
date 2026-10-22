@@ -33,6 +33,19 @@ test('édition, suppression, rechargement, groupe et export',async({page})=>{
  const content=await page.locator('#groupsResult').innerText();
  for(let i=1;i<=13;i++)expect(content).toContain('Élève '+i);
 });
+test('effacement en un clic de toute la séance sans supprimer l’historique',async({page})=>{
+ await openApp(page);
+ await page.getByRole('button',{name:'Générer ma séance'}).click();
+ await expect(page.locator('#plan>.card')).toHaveCount(5);
+ page.once('dialog',dialog=>dialog.accept());
+ await page.getByRole('button',{name:/Effacer toute la séance/}).click();
+ await expect(page.locator('#plan>.card')).toHaveCount(0);
+ await expect(page.locator('#planSummary')).toContainText('Aucun exercice');
+ await reloadApp(page);
+ await expect(page.locator('#plan>.card')).toHaveCount(0);
+ await expect(page.locator('#planSummary')).toContainText('Aucun exercice');
+});
+
 test('navigation clavier du mode animateur',async({page})=>{
  await openApp(page);
  
