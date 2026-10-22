@@ -156,10 +156,10 @@ function buildPrincipalObjective(games,parts=[]){
   'Imaginaire':'inventer un univers commun et rendre ses détails concrets pour le public'
  };
  const describeRule=g=>{
-  let rule=String(g&&g[2]||g&&g[4]||'').replace(/\\s+/g,' ').trim();
+  let rule=String(g&&g[2]||g&&g[4]||'').replace(/\s+/g,' ').trim();
   if(!rule)return '';
-  const first=rule.split(/(?<=[.!?])\\s+/)[0].trim();
-  rule=first.length>=35&&first.length<=150?first:(rule.length>145?rule.slice(0,142).replace(/\\s+\\S*$/,'')+'…':rule);
+  const first=rule.split(/(?<=[.!?])\s+/)[0].trim();
+  rule=first.length>=35&&first.length<=150?first:(rule.length>145?rule.slice(0,142).replace(/\s+\\S*$/,'')+'…':rule);
   return rule.replace(/[.!?]+$/,'');
  };
  const quoteGame=(g,i)=>{
