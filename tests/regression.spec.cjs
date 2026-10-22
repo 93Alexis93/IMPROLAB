@@ -38,9 +38,13 @@ test('effacement en un clic de toute la séance sans supprimer l’historique',a
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  await expect(page.locator('#plan>.card')).toHaveCount(5);
  page.once('dialog',dialog=>dialog.accept());
+ await page.getByRole('button',{name:'Enregistrer',exact:true}).click();
+ page.once('dialog',dialog=>dialog.accept());
  await page.getByRole('button',{name:/Effacer toute la séance/}).click();
  await expect(page.locator('#plan>.card')).toHaveCount(0);
  await expect(page.locator('#planSummary')).toContainText('Aucun exercice');
+ await page.getByRole('button',{name:'Historique'}).click();
+ await expect(page.getByRole('button',{name:'Réutiliser'})).toBeVisible();
  await reloadApp(page);
  await expect(page.locator('#plan>.card')).toHaveCount(0);
  await expect(page.locator('#planSummary')).toContainText('Aucun exercice');
