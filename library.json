@@ -2736,7 +2736,18 @@
         "Écoute",
         "Imaginaire",
         "Scène"
-      ]
+      ],
+      "validation_coach": {
+        "reference_lot": "2-33",
+        "consigne": "En binôme, A donne une relation. B lui donne une couleur particulière. Puis A propose une routine et B raconte un souvenir partagé ou lié à cette relation.",
+        "consigne_validee": true,
+        "complexification": "Après le premier passage, rejouez la même relation en faisant évoluer la routine et le souvenir pour révéler de nouveaux aspects des personnages.",
+        "complexification_validee": true,
+        "objectif_detaille": "Construire une relation entre deux personnages en enrichissant progressivement leur histoire commune.",
+        "objectif_valide": true,
+        "validation_globale": true,
+        "remarques": null
+      }
     },
     {
       "id": "2-34",
@@ -2765,7 +2776,18 @@
         "Imaginaire",
         "Corps",
         "Amusement"
-      ]
+      ],
+      "validation_coach": {
+        "reference_lot": "2-34",
+        "consigne": "Un comédien présente un sujet dont il est expert. Le public lui impose des contraintes qu’il doit intégrer à sa présentation.",
+        "consigne_validee": true,
+        "complexification": "Le public propose plusieurs contraintes successives, que l’expert doit intégrer immédiatement tout en poursuivant sa présentation.",
+        "complexification_validee": true,
+        "objectif_detaille": "Développer la réactivité et la capacité à intégrer des propositions imprévues sans abandonner son fil conducteur.",
+        "objectif_valide": true,
+        "validation_globale": true,
+        "remarques": null
+      }
     },
     {
       "id": "2-35",
@@ -2793,7 +2815,18 @@
         "Imaginaire",
         "Écoute",
         "Cohésion"
-      ]
+      ],
+      "validation_coach": {
+        "reference_lot": "2-35",
+        "consigne": "En cercle, partez d’un mot. Chacun ajoute un mot à son tour pour créer collectivement un lieu. Chaque nouveau mot peut préciser un élément déjà évoqué ou en introduire un nouveau.",
+        "consigne_validee": true,
+        "complexification": "Une fois le lieu créé, faites-en le tour oralement : chacun ajoute un détail concret qui permet de mieux se le représenter, sans effacer les éléments déjà proposés.",
+        "complexification_validee": true,
+        "objectif_detaille": "Développer l’imagination collective et la capacité à enrichir une proposition en s’appuyant sur celles des autres.",
+        "objectif_valide": true,
+        "validation_globale": true,
+        "remarques": null
+      }
     },
     {
       "id": "2-36",
@@ -2821,7 +2854,18 @@
         "Cohésion",
         "Énergie"
       ],
-      "remarque_coach": "Aucune"
+      "remarque_coach": "Aucune",
+      "validation_coach": {
+        "reference_lot": "2-36",
+        "consigne": "En cercle, chacun dit son prénom une fois. Puis tout le monde doit dire le prénom de son voisin de gauche. Mélangez ensuite le cercle et recommencez. Enfin, une personne prend la place d’un autre en disant son prénom ; la personne appelée continue à son tour.",
+        "consigne_validee": true,
+        "complexification": "Quand le groupe maîtrise le jeu, faites entrer deux personnes en même temps pour augmenter la difficulté et solliciter l’attention de tout le cercle.",
+        "complexification_validee": true,
+        "objectif_detaille": "Mémoriser les prénoms, renforcer l’attention au groupe et développer la réactivité dans les échanges.",
+        "objectif_valide": true,
+        "validation_globale": true,
+        "remarques": null
+      }
     },
     {
       "id": "3-1",
@@ -2849,7 +2893,18 @@
         "Énergie",
         "Écoute",
         "Lâcher-prise"
-      ]
+      ],
+      "validation_coach": {
+        "reference_lot": "3-01",
+        "consigne": "En cercle, chacun fait un mouvement du bras de haut en bas et claque des doigts en arrivant en bas, en disant un mot au même moment. Le joueur suivant dit un mot lié uniquement au mot précédent, au moment de son clap. Si un joueur ne trouve pas de mot, son tour est sauté.",
+        "consigne_validee": true,
+        "complexification": "Augmentez progressivement le rythme des claps pour travailler la réactivité, sans supprimer la règle du lien avec le mot précédent.",
+        "complexification_validee": true,
+        "objectif_detaille": "Développer l’écoute immédiate, les associations d’idées et la réactivité verbale.",
+        "objectif_valide": true,
+        "validation_globale": true,
+        "remarques": null
+      }
     },
     {
       "id": "3-2",
@@ -2902,7 +2957,18 @@
         "Construction",
         "Lâcher-prise",
         "Amusement"
-      ]
+      ],
+      "validation_coach": {
+        "reference_lot": "3-02",
+        "consigne": "Deux comédiens commencent une improvisation. Quand quelqu’un claque des mains, il prend la place d’un comédien en reproduisant exactement sa posture et lance une nouvelle improvisation.",
+        "consigne_validee": true,
+        "complexification": "Marquez des postures très distinctes pour faciliter les reprises. Variante possible : conserver la même improvisation et le même personnage à chaque remplacement.",
+        "complexification_validee": true,
+        "objectif_detaille": "Travailler l’observation corporelle, la spontanéité et la capacité à lancer une nouvelle situation à partir d’une posture existante.",
+        "objectif_valide": true,
+        "validation_globale": true,
+        "remarques": null
+      }
     },
     {
       "id": "3-4",
