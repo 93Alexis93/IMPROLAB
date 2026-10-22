@@ -153,7 +153,8 @@ function generate(){
   selectedGames.push(g);
   counts[g[0]]=(counts[g[0]]||0)+1;
   const note=!adult?'<p><b>Conseil collège :</b> '+escapeText(g[3]||'Démonstration courte, consigne simple et droit à l’erreur. Faire participer tout le groupe.')+'</p>':'';
-  html+='<div class="card"><small>'+minutes+' min · '+escapeText(stage.name)+' · '+escapeText(category)+'</small><h3 class="exercise-title">'+escapeText(displayTitle(g[0]))+'</h3><p>'+escapeText(g[2])+'</p>'+note+'</div>';
+  const coach=g[10]?'<details class="coach-tips session-coach"><summary>🎓 Mode Coach · consigne, relance, vigilance</summary><p><b>Consigne de la fiche :</b> '+escapeText(g[2])+'</p><p><b>Pour relancer :</b> '+escapeText(g[10].variante_facile||'Aucune variante renseignée.')+' '+(g[10].variante_difficile?' Variante plus exigeante : '+escapeText(g[10].variante_difficile):'')+'</p><p><b>À surveiller :</b> '+escapeText(g[10].points_vigilance||'Aucun point de vigilance renseigné.')+'</p><small>Les variantes et points de vigilance de cette fiche sont des pistes génériques proposées par l’assistant, à adapter et à valider en atelier. La règle clarifiée reste prioritaire.</small></details>':'';
+  html+='<div class="card"><small>'+minutes+' min · '+escapeText(stage.name)+' · '+escapeText(category)+'</small><h3 class="exercise-title">'+escapeText(displayTitle(g[0]))+'</h3><p>'+escapeText(g[2])+'</p>'+note+coach+'</div>';
  }
  try{localStorage.setItem('impro-game-usage-v1',JSON.stringify(counts));}catch{}
  try{localStorage.setItem('impro-recent-games',JSON.stringify([...selected,...history].slice(0,80)));}catch{}
@@ -978,5 +979,5 @@ initRandomDynamics();
 rosterLoad();
 drawInit();
 loadLibrary();
-if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=20261022-v9-clear-session',{updateViaCache:'none'}).then(reg=>reg.update()).catch(e=>console.warn('Mode hors ligne indisponible',e)));
+if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js?v=20261022-v10-session-coach',{updateViaCache:'none'}).then(reg=>reg.update()).catch(e=>console.warn('Mode hors ligne indisponible',e)));
 try{const saved=localStorage.getItem('impro-last-plan')||'';if(saved){const doc=new DOMParser().parseFromString(saved,'text/html');const safe=document.createElement('div');doc.querySelectorAll('.card').forEach(c=>{const el=document.createElement('div');el.className='card';if(c.classList.contains('session-objective')){el.classList.add('session-objective');const heading=document.createElement('strong');heading.textContent=c.querySelector('strong')?.textContent||'Objectif principal de la séance';el.append(heading);c.querySelectorAll('p').forEach(n=>{const p=document.createElement('p');p.textContent=n.textContent;el.append(p)});safe.append(el);return}for(const [tag,source] of [['small','small'],['h3','h3'],['p','p']]){const n=c.querySelector(source);if(n){const item=document.createElement(tag);item.textContent=n.textContent;el.append(item)}}if(el.querySelector('h3'))safe.append(el)});document.getElementById('plan').replaceChildren(...safe.children)}}catch(e){console.warn('Séance précédente illisible',e)}refreshEditor();try{if(sessionStorage.getItem('improlab-welcome-seen')==='1')document.getElementById('welcomeScreen')?.remove()}catch{}</script></body></html>
