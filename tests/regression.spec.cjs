@@ -214,14 +214,14 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
    expect(title).not.toBe(before);
    expect(await card.getAttribute('data-stage-index')).toBe(stage);
    expect(await card.getAttribute('data-category')).toBe(category);
-   const state=await page.evaluate(({title,category})=>{
+   const state=await page.evaluate(({title,category,before})=>{
     const item=data.find(g=>displayTitle(g[0])===title||g[0]===title);
     const eligible=g=>!!(g&&g[6]&&g[5]&&g[2]&&g[2].trim().length>20&&!['notes originales','proposition à valider','à confirmer'].includes((g[12]||'').toLowerCase())&&g[9]!=='incomplète'&&g[8]==='notes_personnelles');
     const peers=Array.from(document.querySelectorAll('#plan>.card h3')).map(n=>n.textContent.trim());
-    const primary=data.filter(g=>eligible(g)&&g[1]===category&&!peers.filter(x=>x!==title).includes(displayTitle(g[0]))&&!peers.filter(x=>x!==title).includes(g[0]));
-    const secondary=data.filter(g=>eligible(g)&&(g[11]||[]).includes(category)&&!peers.filter(x=>x!==title).includes(displayTitle(g[0]))&&!peers.filter(x=>x!==title).includes(g[0]));
+    const primary=data.filter(g=>eligible(g)&&g[1]===category&&displayTitle(g[0])!==before&&g[0]!==before&&!peers.filter(x=>x!==title).includes(displayTitle(g[0]))&&!peers.filter(x=>x!==title).includes(g[0]));
+    const secondary=data.filter(g=>eligible(g)&&(g[11]||[]).includes(category)&&displayTitle(g[0])!==before&&g[0]!==before&&!peers.filter(x=>x!==title).includes(displayTitle(g[0]))&&!peers.filter(x=>x!==title).includes(g[0]));
     return {item:item&&{eligible:eligible(item),category:item[1],secondary:item[11]||[]},primaryAvailable:primary.length>0,secondaryAvailable:secondary.length>0,peers};
-   },{title,category});
+   },{title,category,before});
    expect(state.item,'remplaçant trouvé dans la bibliothèque').not.toBeNull();
    expect(state.item.eligible,'aucune fiche inadmissible').toBe(true);
    expect(state.peers.length).toBe(new Set(state.peers).size);
@@ -229,12 +229,25 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
    else if(state.secondaryAvailable)expect(state.item.secondary).toContain(category);
   }
  }
+ const manualIndex=await page.evaluate(()=>{
+  const used=Array.from(document.querySelectorAll('#plan>.card h3')).map(n=>n.textContent.trim());
+  return data.findIndex(g=>g[6]&&g[5]&&g[2]&&g[2].trim().length>20&&!['notes originales','proposition à valider','à confirmer'].includes((g[12]||'').toLowerCase())&&g[9]!=='incomplète'&&g[8]==='notes_personnelles'&&!used.includes(g[0])&&!used.includes(displayTitle(g[0])));
+ });
+ expect(manualIndex).toBeGreaterThanOrEqual(0);
+ await page.locator('#manualGame').selectOption(String(manualIndex));
+ await page.getByRole('button',{name:'Ajouter',exact:true}).click();
+ const manualCard=page.locator('#plan>.card').filter({has:page.locator('h3')}).last();
+ const manualTitle=await manualCard.locator('h3').textContent();
+ await manualCard.getByRole('button',{name:'🔄 Remplacer'}).click();
+ expect((await manualCard.locator('h3').textContent()).trim()).not.toBe(manualTitle.trim());
+ await reloadApp(page);
+ await page.locator('#plan>.card').filter({has:page.locator('h3')}).first().getByRole('button',{name:'🔄 Remplacer'}).click();
+ page.once('dialog',dialog=>dialog.accept());
  await page.getByRole('button',{name:'Enregistrer',exact:true}).click();
  await page.getByRole('button',{name:'Historique'}).click();
  await page.getByRole('button',{name:'Réutiliser'}).click();
  await page.locator('#plan>.card').filter({has:page.locator('h3')}).first().getByRole('button',{name:'🔄 Remplacer'}).click();
  await expect(page.locator('#plan>.card h3').first()).toBeVisible();
- await page.getByRole('button',{name:'Importer',exact:false}).click();
  const legacyHtml='<div class="card"><small>8 min</small><h3>Exercice ancien</h3><p>Ancienne règle de test suffisamment longue pour l’import.</p></div>';
  const legacyPayload=JSON.stringify({format:'impro-lab-session',version:1,html:legacyHtml});
  await page.locator('#importSession').setInputFiles({name:'legacy.json',mimeType:'application/json',buffer:Buffer.from(legacyPayload)});
