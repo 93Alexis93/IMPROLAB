@@ -50,14 +50,14 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée",
       "conseils_animation": {
-        "consigne_courte": "En binôme, comptez en alternance « un, deux, trois », puis recommencez. Regardez-vous et accélérez progressivement.",
+        "consigne_courte": "En binôme, dites « un, deux, trois » à tour de rôle en vous regardant et en accélérant. Remplacez progressivement « un » par un claquement de mains ou de doigts, puis « trois » par une montée de genou.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Quand le groupe maîtrise le comptage, remplacer progressivement « un » par un claquement de mains ou de doigts, puis « trois » par une montée de genou.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "En binôme, comptez en alternance « un, deux, trois », puis recommencez. Regardez-vous et accélérez progressivement.",
+        "consigne": "En binôme, dites « un, deux, trois » à tour de rôle en vous regardant et en accélérant. Remplacez progressivement « un » par un claquement de mains ou de doigts, puis « trois » par une montée de genou.",
         "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
@@ -227,7 +227,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée",
       "conseils_animation": {
-        "consigne_courte": "En vous déplaçant, faites circuler une balle imaginaire colorée en disant « Je te donne la balle [couleur] ». Arrêtez-vous pour retrouver qui la détient.",
+        "consigne_courte": "En vous déplaçant, faites circuler une balle imaginaire colorée en disant « Je te donne la balle [couleur] ». Arrêtez-vous pour retrouver son détenteur, puis ajoutez plusieurs balles et vérifiez qu’aucune ne disparaît.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Pour complexifier, ajoutez plusieurs balles imaginaires et vérifiez qu’aucune ne disparaît.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
@@ -237,7 +237,7 @@
         "Imaginaire"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "En vous déplaçant, faites circuler une balle imaginaire colorée en disant « Je te donne la balle [couleur] ». Arrêtez-vous pour retrouver qui la détient.",
+        "consigne": "En vous déplaçant, faites circuler une balle imaginaire colorée en disant « Je te donne la balle [couleur] ». Arrêtez-vous pour retrouver son détenteur, puis ajoutez plusieurs balles et vérifiez qu’aucune ne disparaît.",
         "variante": "Faites une première manche guidée, puis rejouez en changeant un seul paramètre pour approfondir sans alourdir la règle.",
         "objectif_prof": "Stimuler l’imaginaire partagé et la cohérence des propositions collectives.",
         "objectif_eleves": "J’apprends à inventer des détails et à les relier aux idées des autres.",
@@ -517,7 +517,7 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "En cercle, comptez de 1 à 7 en transmettant l’énergie par une tape sur l’épaule correspondante. À 7, désignez avec les mains n’importe quel joueur, qui reprend à 1.",
+        "consigne_courte": "En cercle, comptez de 1 à 7 en transmettant l’énergie par une tape sur l’épaule correspondante. À 7, désignez un joueur qui reprend à 1. Ajoutez ensuite les contraintes : remplacer 3 par un jour, dire « trois » à la place de 5 tout en gardant le 3 initial, puis remplacer 1 par un geste du pied.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Quand le groupe maîtrise le compte, remplacez le 3 par un jour de la semaine, dites aussi « trois » à la place de 5 tout en conservant le 3 initial, puis remplacez le 1 par un geste du pied.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
@@ -529,7 +529,7 @@
         "Cohésion"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "En cercle, comptez de 1 à 7 en transmettant l’énergie par une tape sur l’épaule correspondante. À 7, désignez avec les mains n’importe quel joueur, qui reprend à 1.",
+        "consigne": "En cercle, comptez de 1 à 7 en transmettant l’énergie par une tape sur l’épaule correspondante. À 7, désignez un joueur qui reprend à 1. Ajoutez ensuite les contraintes : remplacer 3 par un jour, dire « trois » à la place de 5 tout en gardant le 3 initial, puis remplacer 1 par un geste du pied.",
         "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
         "objectif_prof": "Développer l’adaptation immédiate à une contrainte tout en gardant une scène lisible.",
         "objectif_eleves": "J’apprends à m’adapter à une consigne nouvelle sans bloquer la scène.",
@@ -993,14 +993,14 @@
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "À trois, l’interviewé parle une langue imaginaire ; le traducteur transmet ses propos et les questions du journaliste, puis traduit les réponses.",
+        "consigne_courte": "À trois, l’interviewé parle une langue imaginaire ; le traducteur transmet ses propos et les questions du journaliste, puis traduit les réponses. Variante : le traducteur peut volontairement dire le contraire.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Variante : le traducteur peut volontairement traduire le contraire de ce que dit l’interviewé.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "À trois, l’interviewé parle une langue imaginaire ; le traducteur transmet ses propos et les questions du journaliste, puis traduit les réponses.",
+        "consigne": "À trois, l’interviewé parle une langue imaginaire ; le traducteur transmet ses propos et les questions du journaliste, puis traduit les réponses. Variante : le traducteur peut volontairement dire le contraire.",
         "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
         "objectif_prof": "Stimuler l’imaginaire partagé et la cohérence des propositions collectives.",
         "objectif_eleves": "J’apprends à inventer des détails et à les relier aux idées des autres.",
@@ -3908,14 +3908,14 @@
       "source_url": "https://dramaresource.com/ten-second-objects/",
       "qualite_fiche": "source vérifiée et reformulée",
       "conseils_animation": {
-        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "consigne_courte": "En équipes de 4 à 6, le meneur annonce un objet. En 10 secondes, composez collectivement sa silhouette avec vos corps. Observez les créations, puis recommencez avec un nouvel objet.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "consigne": "En équipes de 4 à 6, le meneur annonce un objet. En 10 secondes, composez collectivement sa silhouette avec vos corps. Observez les créations, puis recommencez avec un nouvel objet.",
         "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
         "objectif_prof": "Stimuler l’imaginaire partagé et la cohérence des propositions collectives.",
         "objectif_eleves": "J’apprends à inventer des détails et à les relier aux idées des autres.",
@@ -3941,14 +3941,14 @@
       "source_url": "https://dramaresource.com/three-changes/",
       "qualite_fiche": "source vérifiée et reformulée",
       "conseils_animation": {
-        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "consigne_courte": "À deux, placez-vous dos à dos et changez trois détails visibles de votre tenue ou posture. Retournez-vous et repérez les changements de votre partenaire.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "consigne": "À deux, placez-vous dos à dos et changez trois détails visibles de votre tenue ou posture. Retournez-vous et repérez les changements de votre partenaire.",
         "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
@@ -3974,14 +3974,14 @@
       "source_url": "https://dramaresource.com/soundscapes/",
       "qualite_fiche": "source vérifiée et reformulée",
       "conseils_animation": {
-        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "consigne_courte": "Choisissez un lieu. Chacun crée avec sa voix ou son corps un son de ce lieu ; le meneur module volumes et silences pour composer un paysage sonore collectif.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "consigne": "Choisissez un lieu. Chacun crée avec sa voix ou son corps un son de ce lieu ; le meneur module volumes et silences pour composer un paysage sonore collectif.",
         "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
         "objectif_prof": "Stimuler l’imaginaire partagé et la cohérence des propositions collectives.",
         "objectif_eleves": "J’apprends à inventer des détails et à les relier aux idées des autres.",
@@ -4007,14 +4007,14 @@
       "source_url": "https://dramaresource.com/status-pictures/",
       "qualite_fiche": "source vérifiée et reformulée",
       "conseils_animation": {
-        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "consigne_courte": "À deux, créez une image fixe montrant une relation de statut. Les observateurs proposent des interprétations, puis rejouez en inversant les positions.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "consigne": "À deux, créez une image fixe montrant une relation de statut. Les observateurs proposent des interprétations, puis rejouez en inversant les positions.",
         "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
         "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
         "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
@@ -4040,14 +4040,14 @@
       "source_url": "https://dramaresource.com/what-are-you-doing/",
       "qualite_fiche": "source vérifiée et reformulée",
       "conseils_animation": {
-        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "consigne_courte": "En cercle, mimez une action. Le joueur suivant demande « Que fais-tu ? » ; sans arrêter votre mime, répondez par une autre action. Le suivant mime cette nouvelle action et le jeu continue.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "consigne": "En cercle, mimez une action. Le joueur suivant demande « Que fais-tu ? » ; sans arrêter votre mime, répondez par une autre action. Le suivant mime cette nouvelle action et le jeu continue.",
         "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
@@ -4073,14 +4073,14 @@
       "source_url": "https://improvencyclopedia.org/games/Group_Environment.html",
       "qualite_fiche": "source vérifiée et reformulée",
       "conseils_animation": {
-        "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "consigne_courte": "Le premier joueur entre dans l’espace imaginaire et définit une porte. Chacun ajoute ensuite un objet mimé en respectant ceux déjà placés. À la fin, jouez une scène dans ce décor commun.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "consigne": "Le premier joueur entre dans l’espace imaginaire et définit une porte. Chacun ajoute ensuite un objet mimé en respectant ceux déjà placés. À la fin, jouez une scène dans ce décor commun.",
         "variante": "Partez d’un objet ou d’un lieu simple et laissez chacun ajouter un détail cohérent. Pour aller plus loin, faites évoluer le lieu ou révélez une information nouvelle.",
         "objectif_prof": "Stimuler l’imaginaire partagé et la cohérence des propositions collectives.",
         "objectif_eleves": "J’apprends à inventer des détails et à les relier aux idées des autres.",
@@ -4106,14 +4106,14 @@
       "source_url": "https://www.theatrefolk.com/blog/improv-game-yes-and-and-no-but",
       "qualite_fiche": "source vérifiée et reformulée",
       "conseils_animation": {
-        "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "consigne_courte": "À deux, improvisez en acceptant et enrichissant les propositions. Au signal, l’un réoriente la scène par un refus constructif, sans la bloquer.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "consigne": "À deux, improvisez en acceptant et enrichissant les propositions. Au signal, l’un réoriente la scène par un refus constructif, sans la bloquer.",
         "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
         "objectif_prof": "Construire une proposition commune en respectant les apports précédents et la contrainte du jeu.",
         "objectif_eleves": "J’apprends à écouter ce qui vient d’être dit et à ajouter une idée qui fait avancer le jeu.",
@@ -4139,14 +4139,14 @@
       "source_url": "https://dramaresource.com/family-portraits/",
       "qualite_fiche": "source vérifiée et reformulée",
       "conseils_animation": {
-        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "consigne_courte": "En petits groupes, créez une photo de famille fictive avec des poses qui suggèrent personnages et relations. Le public devine l’histoire de cette famille.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "consigne": "En petits groupes, créez une photo de famille fictive avec des poses qui suggèrent personnages et relations. Le public devine l’histoire de cette famille.",
         "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
         "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
         "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
@@ -4173,14 +4173,14 @@
       "source_nom": "Improwiki",
       "qualite_fiche": "adaptation sourcée à tester en atelier",
       "conseils_animation": {
-        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "consigne_courte": "Deux joueurs au centre disent simultanément un mot après un décompte. Le groupe cherche un mot reliant les deux propositions ; recommencez avec un autre duo.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "consigne": "Deux joueurs au centre disent simultanément un mot après un décompte. Le groupe cherche un mot reliant les deux propositions ; recommencez avec un autre duo.",
         "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
         "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
         "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
@@ -4207,14 +4207,14 @@
       "source_nom": "Improwiki",
       "qualite_fiche": "adaptation sourcée à tester en atelier",
       "conseils_animation": {
-        "consigne_courte": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "consigne_courte": "Trois joueurs forment un triangle. L’un envoie un applaudissement à un autre ; le troisième prend l’initiative d’en envoyer un nouveau. Accélérez progressivement en restant attentifs.",
         "variante_facile": "Faire une manche d'essai lente avec un signal très visible.",
         "variante_difficile": "Réduire les signaux ou accélérer uniquement lorsque le groupe réussit.",
         "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Observez les partenaires, puis réagissez à leur proposition plutôt que d'anticiper votre tour.",
+        "consigne": "Trois joueurs forment un triangle. L’un envoie un applaudissement à un autre ; le troisième prend l’initiative d’en envoyer un nouveau. Accélérez progressivement en restant attentifs.",
         "variante": "Faites une première manche guidée, puis rejouez en changeant un seul paramètre pour approfondir sans alourdir la règle.",
         "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
         "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
@@ -4241,14 +4241,14 @@
       "source_nom": "Improwiki",
       "qualite_fiche": "adaptation sourcée à tester en atelier",
       "conseils_animation": {
-        "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "consigne_courte": "Un joueur raconte une histoire ; trois partenaires demandent chacun plus d’action, d’émotion ou de détails. Le narrateur adapte immédiatement son récit à chaque demande.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "consigne": "Un joueur raconte une histoire ; trois partenaires demandent chacun plus d’action, d’émotion ou de détails. Le narrateur adapte immédiatement son récit à chaque demande.",
         "variante": "Commencez sans contrainte supplémentaire. Rejouez ensuite avec une contrainte légère (émotion, point de vue, mot imposé ou durée) en préservant l’écoute.",
         "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
         "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
@@ -4275,14 +4275,14 @@
       "source_nom": "Improwiki",
       "qualite_fiche": "adaptation sourcée à tester en atelier",
       "conseils_animation": {
-        "consigne_courte": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "consigne_courte": "Deux à quatre joueurs improvisent. Dès qu’un joueur ne sait plus comment poursuivre, il appelle « À l’aide ! » ; un partenaire entre et relance la scène par une proposition concrète.",
         "variante_facile": "Donner un lieu, une relation et un objectif simples avant de commencer.",
         "variante_difficile": "Ajouter un changement de statut ou une contrainte de jeu à mi-scène.",
         "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Définissez qui vous êtes, où vous êtes et ce que vous voulez ; jouez une action plutôt que tout expliquer.",
+        "consigne": "Deux à quatre joueurs improvisent. Dès qu’un joueur ne sait plus comment poursuivre, il appelle « À l’aide ! » ; un partenaire entre et relance la scène par une proposition concrète.",
         "variante": "Faites une première manche guidée, puis rejouez en changeant un seul paramètre pour approfondir sans alourdir la règle.",
         "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
         "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
@@ -4309,14 +4309,14 @@
       "source_nom": "Improwiki",
       "qualite_fiche": "adaptation sourcée à tester en atelier",
       "conseils_animation": {
-        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "consigne_courte": "Formez deux files face à face. Le premier dit un nom, son vis-à-vis associe spontanément un adjectif. Puis chacun rejoint l’arrière de l’autre file. Cherchez le rythme, pas la performance.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "consigne": "Formez deux files face à face. Le premier dit un nom, son vis-à-vis associe spontanément un adjectif. Puis chacun rejoint l’arrière de l’autre file. Cherchez le rythme, pas la performance.",
         "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
         "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
         "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
@@ -4343,14 +4343,14 @@
       "source_nom": "Soul Into Art",
       "qualite_fiche": "adaptation sourcée à tester en atelier",
       "conseils_animation": {
-        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "consigne_courte": "À deux, face à face, l’un réalise des gestes lents et l’autre les reproduit comme un miroir. Ensuite, essayez de bouger ensemble sans meneur désigné.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "consigne": "À deux, face à face, l’un réalise des gestes lents et l’autre les reproduit comme un miroir. Ensuite, essayez de bouger ensemble sans meneur désigné.",
         "variante": "Faites une première manche sans paroles et avec des gestes lisibles. Rejouez ensuite en ajoutant une intention précise, une émotion ou une transformation.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
@@ -4377,14 +4377,14 @@
       "source_nom": "Soul Into Art",
       "qualite_fiche": "adaptation sourcée à tester en atelier",
       "conseils_animation": {
-        "consigne_courte": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "consigne_courte": "En cercle, transmettez une impulsion par le regard et un geste vers un autre joueur, en alternant « Zip », « Zap » et « Zop ». Cherchez la fluidité et l’attention collective, sans élimination.",
         "variante_facile": "Ralentir le rythme et autoriser une pause pour comprendre la règle.",
         "variante_difficile": "Accélérer progressivement ou ajouter un second signal après une manche réussie.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Lancez le jeu avec une démonstration à deux ou trois. Cherchez un rythme collectif sans éliminer personne.",
+        "consigne": "En cercle, transmettez une impulsion par le regard et un geste vers un autre joueur, en alternant « Zip », « Zap » et « Zop ». Cherchez la fluidité et l’attention collective, sans élimination.",
         "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
@@ -4411,14 +4411,14 @@
       "source_nom": "Soul Into Art",
       "qualite_fiche": "adaptation sourcée à tester en atelier",
       "conseils_animation": {
-        "consigne_courte": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "consigne_courte": "Marchez dans l’espace sans vous heurter. Le meneur annonce des rythmes, des arrêts et des changements de direction ; restez attentifs aux espaces libres et aux autres.",
         "variante_facile": "Commencer sans paroles, avec des gestes lents et des situations simples.",
         "variante_difficile": "Introduire un changement d'intention ou une contrainte d'espace.",
         "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Utilisez votre posture, vos déplacements et vos gestes pour communiquer clairement.",
+        "consigne": "Marchez dans l’espace sans vous heurter. Le meneur annonce des rythmes, des arrêts et des changements de direction ; restez attentifs aux espaces libres et aux autres.",
         "variante": "Installez d’abord le mécanisme lentement, puis accélérez. Quand le groupe est à l’aise, ajoutez un changement de direction ou un signal.",
         "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
         "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
@@ -4445,14 +4445,14 @@
       "source_nom": "Soul Into Art",
       "qualite_fiche": "adaptation sourcée à tester en atelier",
       "conseils_animation": {
-        "consigne_courte": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "consigne_courte": "À deux, construisez une scène simple : chaque réplique accepte un élément précédent et ajoute une information jouable. Recommencez avec un autre lieu ou objectif.",
         "variante_facile": "Construire une histoire courte à deux avec un lieu imposé.",
         "variante_difficile": "Faire intervenir davantage de partenaires tout en gardant la cohérence.",
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       },
       "accompagnement_pedagogique": {
-        "consigne": "Écoutez ce qui vient d'être proposé et ajoutez un élément qui aide l'histoire à avancer.",
+        "consigne": "À deux, construisez une scène simple : chaque réplique accepte un élément précédent et ajoute une information jouable. Recommencez avec un autre lieu ou objectif.",
         "variante": "Partez d’un objet ou d’un lieu simple et laissez chacun ajouter un détail cohérent. Pour aller plus loin, faites évoluer le lieu ou révélez une information nouvelle.",
         "objectif_prof": "Stimuler l’imaginaire partagé et la cohérence des propositions collectives.",
         "objectif_eleves": "J’apprends à inventer des détails et à les relier aux idées des autres.",
