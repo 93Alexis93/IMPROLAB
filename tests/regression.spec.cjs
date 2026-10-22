@@ -223,7 +223,7 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
     const secondary=data.filter(g=>eligible(g)&&(g[11]||[]).includes(category)&&displayTitle(g[0])!==before&&g[0]!==before&&!peers.filter(x=>x!==title).includes(displayTitle(g[0]))&&!peers.filter(x=>x!==title).includes(g[0]));
     return {item:item&&{eligible:eligible(item),category:item[1],secondary:item[11]||[]},primaryAvailable:primary.length>0,secondaryAvailable:secondary.length>0,peers};
    },{title,category,before});
-   expect(state.item,'remplaçant trouvé dans la bibliothèque').not.toBeNull();
+   expect(state.item,'remplaçant trouvé dans la bibliothèque').toBeTruthy();
    expect(state.item.eligible,'aucune fiche inadmissible').toBe(true);
    expect(state.peers.length).toBe(new Set(state.peers).size);
    if(state.primaryAvailable)expect(state.item.category).toBe(category);
@@ -236,7 +236,7 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
  });
  expect(manualIndex).toBeGreaterThanOrEqual(0);
  await page.locator('#manualGame').selectOption(String(manualIndex));
- await page.getByRole('button',{name:'Ajouter',exact:true}).click();
+ await page.getByRole('button',{name:/Ajouter/}).click();
  const manualCard=page.locator('#plan>.card').filter({has:page.locator('h3')}).last();
  const manualTitle=await manualCard.locator('h3').textContent();
  await manualCard.getByRole('button',{name:'🔄 Remplacer'}).click();
