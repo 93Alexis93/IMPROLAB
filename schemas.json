@@ -16,7 +16,7 @@
     },
     "1-12": {
       "type": "circle-direction",
-      "caption": "Une frappe continue le signal ; deux frappes et un retournement inversent le sens."
+      "caption": "Une frappe continue dans le même sens ; deux frappes avec retournement inversent le sens. Les manches suivantes doublent les frappes : quatre, puis huit."
     },
     "1-29": {
       "type": "four-zones",
@@ -28,7 +28,7 @@
     },
     "1-42": {
       "type": "circle-transmission",
-      "caption": "Le regard et le clap transmettent le signal autour du cercle."
+      "caption": "Le clap passe avec le regard ; un joueur bloqué doit être libéré par un échange de regards et de places."
     },
     "1-48": {
       "type": "circle-transmission",
@@ -36,7 +36,7 @@
     },
     "1-49": {
       "type": "two-lines",
-      "caption": "Deux files face à face ; une pression de main circule dans chaque file."
+      "caption": "Deux files face à face : sur « pile », une pression de main rejoint le dernier, qui lève le bras ; l’équipe gagnante avance."
     },
     "1-52": {
       "type": "stage-entries",
