@@ -148,3 +148,5 @@ test('tirage rapide depuis l’accueil : exercice validé et accès à sa fiche'
   await expect(page.locator('#search')).toHaveValue(rawTitle);
   await expect(page.locator('#games')).toContainText(title);
 });
+
+test('séance : ouverture énergisante et dernière fiche de catégorie principale Scène',async({page})=>{await page.evaluate(()=>generate());const result=await page.evaluate(()=>{const cards=[...document.querySelectorAll('#plan>.card[data-stage-index]')];const title=card=>card.querySelector('h3')?.textContent;const first=data.find(g=>displayTitle(g[0])===title(cards[0]));const last=data.find(g=>displayTitle(g[0])===title(cards.at(-1)));return {count:cards.length,first:first&&{primary:first[1],secondary:first[11]||[]},last:last&&{primary:last[1],secondary:last[11]||[]}}});expect(result.count).toBe(5);expect(['Énergie','Lâcher-prise','Amusement'].some(c=>result.first?.primary===c||result.first?.secondary.includes(c))).toBe(true);expect(result.last?.primary).toBe('Scène')});
