@@ -68,6 +68,7 @@ for (const e of lib.exercices) {
   for (const key of ['consigne_courte','variante_facile','variante_difficile','points_vigilance','statut']) assert.ok(e.conseils_animation[key], `Fiche ${e.id}, champ « conseils_animation.${key} » : conseil manquant`);
 }
 assert.ok(html.includes('Fiche animateur'),'Fiches animateur absentes');
+assert.ok(script.includes('return schemaMarkup([ex.titre])+menu('), 'Les schémas doivent aussi être disponibles dans les fiches coach');
 assert.equal(lib.categories_pedagogiques.length,10,'Nombre de catégories pédagogiques inattendu');
 const categories = ['Énergie','Écoute','Corps','Construction','Scène','Émotions','Amusement','Lâcher-prise','Cohésion','Imaginaire'];
 assert.deepEqual(lib.categories_pedagogiques,categories,'Liste des catégories pédagogiques modifiée');
