@@ -326,3 +326,37 @@ nav[aria-label="Navigation principale"]>button[aria-current="page"]{background:v
 
 /* Les règles globales des labels ne doivent jamais annuler l’attribut hidden. */
 label[hidden], .guided-prep [hidden]{display:none!important}
+
+
+/* Impression utile : la séance et les fiches doivent rester lisibles sur papier. */
+@page{size:A4;margin:14mm}
+@media print{
+  :root{color-scheme:light}
+  html,body{background:#fff!important;color:#171717!important;font:10.5pt/1.4 Arial,Helvetica,sans-serif!important}
+  body{margin:0!important;padding:0!important}
+  header,nav,.more-navigation,.home-actions,.guided-prep,.edit-actions,
+  #search,.filter-row,#gamesCount,#libraryStatus,.favorite,
+  #live button,#live input,#live select,.regie-toolbar,.regie-options,
+  .regie-players,.live-controls,button,input,select,textarea,
+  .welcome-tutorial,[role="dialog"]{display:none!important}
+  main,section,#seance,#jeux{display:block!important;max-width:none!important;margin:0!important;padding:0!important}
+  section[hidden]{display:none!important}
+  h1,h2,h3,h4{color:#171717!important;break-after:avoid}
+  h1,h2{font-family:Georgia,"Times New Roman",serif!important}
+  #plan{display:block!important}
+  #plan>.card,.card,.exercise-schema,.coach-quick{background:#fff!important;color:#171717!important;box-shadow:none!important;border:0!important;border-top:1px solid #888!important;border-radius:0!important;padding:7mm 0!important;margin:0!important;break-inside:avoid}
+  #plan>.card{break-inside:avoid-page}
+  #plan>.card h3,.exercise-title{font-size:15pt!important;color:#171717!important}
+  #plan p,#games p,.coach-quick p{color:#171717!important}
+  .pill,.muted,.coach-attribution,small{color:#333!important}
+  details{break-inside:avoid}
+  details:not([open])>*:not(summary){display:block!important}
+  .exercise-schema{grid-template-columns:34mm minmax(0,1fr)!important;gap:5mm!important}
+  .exercise-schema svg{max-width:32mm!important;color:#171717!important}
+  .exercise-schema figcaption{font-size:9pt!important}
+  a{color:#171717!important;text-decoration:underline}
+  a[href]::after{content:" (" attr(href) ")";font-size:8pt;overflow-wrap:anywhere}
+  #live{background:#fff!important;color:#171717!important}
+  #liveTitle,#liveRule,#liveCoachPanel{color:#171717!important}
+  .guided-note{display:none!important}
+}
