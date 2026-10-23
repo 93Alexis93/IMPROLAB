@@ -69,6 +69,11 @@ test('ambiances guidées : application cohérente et réinitialisation',async({p
   expect(values['Énergie']).toBe(20);
   expect(values['Corps']).toBe(20);
   expect(await page.locator('#randomDynamic0').inputValue()).toBe(await page.locator('#dynamic0').inputValue());
+  await page.locator('[data-ambiance="stage"]').uncheck();
+  await page.locator('[data-ambiance="listen"]').uncheck();
+  await page.getByRole('button',{name:'Appliquer les ambiances'}).click();
+  const restored=await page.evaluate(()=>Object.fromEntries(IMPRO_CATEGORIES.map((c,i)=>[c,Number(document.getElementById('dynamic'+i).value)])));
+  expect(restored).toEqual(Object.fromEntries(IMPRO_CATEGORIES.map(c=>[c,DEFAULT_DYNAMICS[c]*20])));
   await page.evaluate(()=>tab('random'));
   await page.locator('#random').getByRole('button',{name:/Réinitialiser/}).click();
   await expect(page.locator('[data-ambiance="stage"]')).not.toBeChecked();
