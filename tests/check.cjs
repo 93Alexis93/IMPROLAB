@@ -64,6 +64,12 @@ assert.ok(stylesheet.includes('@page{size:A4'), 'Mise en page A4 à l’impressi
 assert.ok(stylesheet.includes('@media print{') && stylesheet.includes('#plan>.card'), 'Styles d’impression des séances absents');
 assert.ok(stylesheet.includes('.exercise-schema svg{max-width:32mm'), 'Les schémas doivent être adaptés à l’impression');
 assert.ok(script.includes('function applyAmbiances()'), 'Application des ambiances absente');
+assert.ok(script.includes("const AMBIANCE_CATEGORIES="), 'Correspondance entre ambiances et catégories absente');
+for (const key of ['energy','listen','release','story','stage','emotion']) assert.ok(html.includes('data-ambiance="'+key+'"'), 'Ambiance guidée absente : '+key);
+assert.ok(script.includes("localStorage.setItem('impro-session-dynamics-v1'") && script.includes("localStorage.setItem('impro-random-dynamics-v1'"), 'Persistance partagée des curseurs absente');
+assert.ok(script.includes("other.value=n") && script.includes("document.getElementById('dynamic'+i)"), 'Synchronisation des curseurs entre les deux générateurs absente');
+assert.ok(html.includes('min-height:44px') || fs.readFileSync('styles.css','utf8').includes('min-height:44px'), 'Cibles tactiles de 44 px absentes');
+
 assert.ok(script.includes('data.filter(g=>isEligibleGame(g,{includeExternal:false,includeIncomplete:false}))'), 'Le tirage rapide doit réutiliser les règles canoniques d’éligibilité');
 
 
