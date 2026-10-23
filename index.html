@@ -272,8 +272,9 @@ function replaceExercise(i){
  if(stageIndex>=0)c.dataset.stageIndex=String(stageIndex);
  if(category)c.dataset.category=category;
  c.querySelector('h3').textContent=displayTitle(g[0]);
- let p=c.querySelector('p');if(p)p.textContent=g[2];
- c.querySelectorAll('.coach-quick').forEach(el=>el.remove());
+ const ruleParagraph=Array.from(c.children).find(el=>el.tagName==='P'&&!el.classList.contains('coach-attribution'));
+ if(ruleParagraph)ruleParagraph.textContent=g[2];
+ c.querySelectorAll('.coach-quick,.coach-attribution').forEach(el=>el.remove());
  const panel=document.createElement('div');panel.innerHTML=coachDetailsHtml(g[0],g[3]);c.append(...panel.childNodes);
  persistPlan()
 }
