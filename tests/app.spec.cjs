@@ -124,3 +124,21 @@ test('navigation principale : aucune erreur JavaScript de page',async({page})=>{
   }
   expect(pageErrors).toEqual([]);
 });
+
+test('tirage rapide depuis l’accueil : exercice validé et accès à sa fiche',async({page})=>{
+  await page.evaluate(()=>tab('home'));
+  await page.getByRole('button',{name:/Tirer un exercice/}).last().click();
+  const result=page.locator('#homeQuickResult');
+  await expect(result.locator('h4')).toBeVisible();
+  await expect(result.locator('p').first()).toBeVisible();
+  const title=await result.locator('h4').innerText();
+  const eligible=await page.evaluate(name=>{
+    const game=data.find(g=>g[0]===name);
+    return !!game&&isEligibleGame(game,{includeExternal:false,includeIncomplete:false});
+  },title);
+  expect(eligible).toBe(true);
+  await result.getByRole('button',{name:'Voir la fiche'}).click();
+  await expect(page.locator('#jeux')).toBeVisible();
+  await expect(page.locator('#search')).toHaveValue(title);
+  await expect(page.locator('#games')).toContainText(title);
+});
