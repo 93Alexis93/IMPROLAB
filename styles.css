@@ -315,3 +315,11 @@ nav[aria-label="Navigation principale"]>button[aria-current="page"]{background:v
 .advanced-dynamics{margin:1.2rem 0}
 .advanced-dynamics>summary{cursor:pointer;font-weight:800;min-height:48px;display:flex;align-items:center}
 @media(max-width:600px){.guided-basics,.ambiance-picker{grid-template-columns:1fr}.guided-prep{padding:1rem 0}.guided-basics{gap:.7rem}}
+
+/* Schémas de fiches : SVG sobres et imprimables */
+.exercise-schema{margin:1rem 0;padding:.8rem 0;border-top:1px solid #d8cfc1;border-bottom:1px solid #d8cfc1;display:grid;grid-template-columns:minmax(110px,170px) minmax(0,1fr);gap:1rem;align-items:center;color:var(--ink,#25231f)}
+.exercise-schema svg{display:block;width:100%;max-width:170px;height:auto;overflow:visible}
+.exercise-schema figcaption{font-size:.9rem;line-height:1.5}
+.exercise-schema figcaption span{display:block;font-size:.8rem;opacity:.78;margin-top:.3rem}
+@media(max-width:420px){.exercise-schema{grid-template-columns:105px minmax(0,1fr);gap:.7rem}.exercise-schema figcaption{font-size:.82rem}}
+@media print{.exercise-schema{break-inside:avoid;border-color:#777}.exercise-schema svg{max-width:140px;color:#222}.exercise-schema figcaption span{opacity:1}}
