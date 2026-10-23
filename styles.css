@@ -297,3 +297,21 @@ nav[aria-label="Navigation principale"]>button[aria-current="page"]{background:v
 .home-result-actions button+button{background:transparent;color:var(--ink,#25231f)}
 .home-resume{margin-top:2rem;padding:1rem 0;border-top:1px solid #d8cfc1}
 @media(max-width:600px){nav[aria-label="Navigation principale"]{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.35rem}nav[aria-label="Navigation principale"]>button{width:100%;padding:.55rem .35rem}.more-navigation{grid-column:1/-1;margin:0}.more-navigation>summary{justify-content:center}.more-navigation-menu{left:0;right:0}.home-actions{grid-template-columns:1fr;gap:.6rem}.home-action{padding:1rem 0}}
+
+/* Préparation guidée */
+.guided-prep{margin:1.2rem 0 1.5rem;padding:clamp(1rem,3vw,1.6rem) 0;border-top:2px solid var(--curtain,#9b303b);border-bottom:1px solid #d8cfc1}
+.guided-heading h3{font:700 clamp(1.5rem,3.5vw,2.2rem)/1.15 Georgia,"Times New Roman",serif;margin:.55rem 0}
+.guided-heading p{line-height:1.55;max-width:680px}
+.guided-basics{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin:1rem 0}
+.guided-basics label{display:grid;gap:.4rem;font-weight:700}
+.guided-basics select{min-height:46px;max-width:100%;padding:.6rem;border:1px solid #a99f91;background:#fffdf8;color:#25231f;border-radius:4px}
+.ambiance-picker{border:1px solid #d8cfc1;padding:1rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem 1rem;margin:1rem 0}
+.ambiance-picker legend{font-weight:800;padding:0 .3rem}
+.ambiance-picker legend span{font-weight:400;font-size:.85em}
+.ambiance-picker label{display:flex;gap:.6rem;align-items:center;min-height:44px;line-height:1.3}
+.ambiance-picker input{width:20px;height:20px;accent-color:var(--curtain,#9b303b);flex-shrink:0}
+.guided-prep>button{min-height:46px;padding:.65rem 1rem;border:0;border-radius:4px;background:var(--curtain,#9b303b);color:#fff}
+.guided-note{font-size:.9rem;line-height:1.5}
+.advanced-dynamics{margin:1.2rem 0}
+.advanced-dynamics>summary{cursor:pointer;font-weight:800;min-height:48px;display:flex;align-items:center}
+@media(max-width:600px){.guided-basics,.ambiance-picker{grid-template-columns:1fr}.guided-prep{padding:1rem 0}.guided-basics{gap:.7rem}}
