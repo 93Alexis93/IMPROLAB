@@ -80,6 +80,7 @@ assert.ok(stylesheet.includes('@page{size:A4'), 'Mise en page A4 à l’impressi
 assert.ok(stylesheet.includes('@media print{') && stylesheet.includes('#plan>.card'), 'Styles d’impression des séances absents');
 assert.ok(stylesheet.includes('.exercise-schema svg{max-width:32mm'), 'Les schémas doivent être adaptés à l’impression');
 assert.ok(script.includes('function applyAmbiances()'), 'Application des ambiances absente');
+assert.ok(script.includes('if(!checked.length){for(let i=0;i<IMPRO_CATEGORIES.length;i++){const c=IMPRO_CATEGORIES[i],main=document.getElementById(\'dynamic\'+i);if(main){main.value=DEFAULT_DYNAMICS[c]*20;updateDynamic(i)}}status.textContent=\'Aucune ambiance sélectionnée : priorités habituelles restaurées.\';return}'), 'Sans ambiance sélectionnée, les curseurs doivent retrouver les priorités habituelles');
 assert.ok(script.includes("function resetDynamics(){") && script.includes("document.querySelectorAll('[data-ambiance]').forEach(el=>el.checked=false)"), 'La réinitialisation doit effacer les ambiances sélectionnées');
 assert.ok(script.includes("const AMBIANCE_CATEGORIES="), 'Correspondance entre ambiances et catégories absente');
 for (const key of ['energy','listen','release','story','stage','emotion']) assert.ok(html.includes('data-ambiance="'+key+'"'), 'Ambiance guidée absente : '+key);
