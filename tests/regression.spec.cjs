@@ -15,7 +15,7 @@ for(const duration of ['45','55','60','90']){
 test('mode Coach accessible dans chaque exercice de la séance',async({page})=>{
  await openApp(page);
  await page.getByRole('button',{name:'Générer ma séance'}).click();
- const cards=page.locator('#plan>.card').filter({has:page.locator('h3')});
+ const cards=page.locator('#plan>.card:not(.session-objective)');
  await expect(cards).toHaveCount(5);
  for(let i=0;i<5;i++){
   const card=cards.nth(i);
@@ -172,7 +172,7 @@ test('timeline souple : cinq étapes et priorité Imaginaire',async({page})=>{
 test('déplacement et remplacement d’un exercice conservent une séance cohérente',async({page})=>{
  await openApp(page);
  await page.getByRole('button',{name:'Générer ma séance'}).click();
- const cards=page.locator('#plan>.card');
+ const cards=page.locator('#plan>.card:not(.session-objective)');
  await expect(cards).toHaveCount(5);
  const initial=await cards.locator('h3').allTextContents();
  await cards.nth(0).getByRole('button',{name:'Descendre exercice 1'}).click();
@@ -189,10 +189,10 @@ test('déplacement et remplacement d’un exercice conservent une séance cohér
  },newTitle);
  expect(replacement, 'L’exercice remplacé doit appartenir à la bibliothèque').not.toBeNull();
  expect(replacement.eligible).toBe(true);
- await expect(cards.nth(0).locator('p').first()).toHaveText(replacement.rule);
+ await expect(cards.nth(0).locator('.coach-quick').filter({hasText:'Explication complète du jeu'})).toContainText(replacement.rule);
  await reloadApp(page);
- await expect(page.locator('#plan>.card')).toHaveCount(5);
- await expect(page.locator('#plan>.card').first().locator('h3')).toHaveText(newTitle);
+ await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(5);
+ await expect(page.locator('#plan>.card:not(.session-objective)').first().locator('h3')).toHaveText(newTitle);
 });
 
 
@@ -202,7 +202,7 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
  await page.locator('#includeExternal').uncheck();
  for(let i=0;i<10;i++)await page.locator('#dynamic'+i).evaluate((el,value)=>{el.value=value;el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}));},i===0?'100':'0');
  await page.getByRole('button',{name:'Générer ma séance'}).click();
- const cards=page.locator('#plan>.card').filter({has:page.locator('h3')});
+ const cards=page.locator('#plan>.card:not(.session-objective)');
  await expect(cards).toHaveCount(5);
  for(let cardIndex=0;cardIndex<5;cardIndex++){
   for(let turn=0;turn<20;turn++){
