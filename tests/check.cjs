@@ -63,9 +63,11 @@ assert.ok(fs.readFileSync('sw.js','utf8').includes('library.json'),'Service work
 assert.ok(fs.existsSync('schemas.json'), 'Schémas pédagogiques absents');
 const schemaData = JSON.parse(fs.readFileSync('schemas.json', 'utf8'));
 assert.equal(Object.keys(schemaData.fiches || {}).length, 13, 'Le premier lot doit contenir 13 schémas');
+const supportedSchemaTypes = new Set(['circle-transmission','circle-duel','circle-direction','diamond-leader','square-pairs','four-zones','two-lines','stage-entries','line-center-pair']);
 for (const [id, schema] of Object.entries(schemaData.fiches)) {
   assert.ok(lib.exercices.some(exercice => exercice.id === id), `Schéma sans fiche correspondante : ${id}`);
-  assert.ok(schema && typeof schema.type === 'string' && typeof schema.caption === 'string' && schema.caption.trim().length > 0, `Schéma mal formé : ${id}`);
+  assert.ok(schema && typeof schema.type === 'string' && supportedSchemaTypes.has(schema.type), `Type de schéma non rendu : ${id} (${schema?.type})`);
+  assert.ok(typeof schema.caption === 'string' && schema.caption.trim().length > 0, `Légende de schéma absente : ${id}`);
 }
 assert.ok(schemaData.fiches['1-12'].caption.includes('quatre') && schemaData.fiches['1-12'].caption.includes('huit'), 'Le schéma 1-12 doit rappeler le doublement des frappes');
 assert.ok(schemaData.fiches['1-42'].caption.includes('libéré'), 'Le schéma 1-42 doit rappeler la délivrance');
