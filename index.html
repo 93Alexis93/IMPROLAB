@@ -272,11 +272,15 @@ function generate(){
  let html='';
  for(let i=0;i<parts.length;i++){
   const [category,minutes,stage]=parts[i];
-  let unused=candidates.filter(g=>isEligibleGame(g,{includeExternal,includeIncomplete:false})&&!selected.includes(g[0])&&!protectedIds.includes(g[0])&&!history.slice(0,25).includes(g[0]));
-  // Si les règles anti-répétition épuisent les possibilités, on relâche d'abord l'historique long,
-  // puis les trois dernières séances, sans jamais autoriser un doublon dans la séance actuelle.
-  if(!unused.length)unused=candidates.filter(g=>isEligibleGame(g,{includeExternal,includeIncomplete:false})&&!selected.includes(g[0])&&!protectedIds.includes(g[0]));
-  if(!unused.length)unused=candidates.filter(g=>isEligibleGame(g,{includeExternal,includeIncomplete:false})&&!selected.includes(g[0]));
+  // Contraintes pédagogiques fixes : démarrer avec énergie/lâcher-prise/amusement,
+  // et terminer par un exercice dont la catégorie principale est Scène.
+  const stageEligible=g=>i===0
+   ? ['Énergie','Lâcher-prise','Amusement'].some(c=>g[1]===c||(g[11]||[]).includes(c))
+   : i===parts.length-1 ? g[1]==='Scène' : true;
+  let unused=candidates.filter(g=>stageEligible(g)&&isEligibleGame(g,{includeExternal,includeIncomplete:false})&&!selected.includes(g[0])&&!protectedIds.includes(g[0])&&!history.slice(0,25).includes(g[0]));
+  // Relâcher l'historique avant les séances précédentes, sans relâcher la contrainte pédagogique.
+  if(!unused.length)unused=candidates.filter(g=>stageEligible(g)&&isEligibleGame(g,{includeExternal,includeIncomplete:false})&&!selected.includes(g[0])&&!protectedIds.includes(g[0]));
+  if(!unused.length)unused=candidates.filter(g=>stageEligible(g)&&isEligibleGame(g,{includeExternal,includeIncomplete:false})&&!selected.includes(g[0]));
   if(!unused.length)break;
   const g=chooseTimelineGame(unused,stage,dynamics,counts,history.concat(protectedIds),sameRun);
   selected.push(g[0]);
