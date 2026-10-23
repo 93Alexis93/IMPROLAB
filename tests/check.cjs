@@ -64,6 +64,7 @@ assert.ok(stylesheet.includes('@page{size:A4'), 'Mise en page A4 à l’impressi
 assert.ok(stylesheet.includes('@media print{') && stylesheet.includes('#plan>.card'), 'Styles d’impression des séances absents');
 assert.ok(stylesheet.includes('.exercise-schema svg{max-width:32mm'), 'Les schémas doivent être adaptés à l’impression');
 assert.ok(script.includes('function applyAmbiances()'), 'Application des ambiances absente');
+assert.ok(script.includes("function resetDynamics(){") && script.includes("document.querySelectorAll('[data-ambiance]').forEach(el=>el.checked=false)"), 'La réinitialisation doit effacer les ambiances sélectionnées');
 assert.ok(script.includes("const AMBIANCE_CATEGORIES="), 'Correspondance entre ambiances et catégories absente');
 for (const key of ['energy','listen','release','story','stage','emotion']) assert.ok(html.includes('data-ambiance="'+key+'"'), 'Ambiance guidée absente : '+key);
 assert.ok(script.includes("localStorage.setItem('impro-session-dynamics-v1'") && script.includes("localStorage.setItem('impro-random-dynamics-v1'"), 'Persistance partagée des curseurs absente');
