@@ -42,7 +42,7 @@ assert.equal(durationOptions.at(-1), 120, 'La durée maximale doit être de 120 
 assert.ok(durationOptions.every((duration, index) => index === 0 || duration - durationOptions[index - 1] === 5), 'Les durées doivent progresser par pas de 5 minutes');
 assert.match(durationMarkup, /value="55" selected/, 'La durée par défaut doit être de 55 minutes');
 assert.ok(script.includes('function buildTimelineMinutes(duration)'), 'Répartition dynamique des durées absente');
-const timelineSource = script.match(/function buildTimelineMinutes\\(duration\\)\\{[\\s\\S]*?\\n\\}/);
+const timelineSource = script.match(/function buildTimelineMinutes\(duration\)\{[\s\S]*?\n\}/);
 assert.ok(timelineSource, 'La fonction de répartition des durées doit pouvoir être isolée pour les tests');
 const buildTimelineMinutes = new Function(timelineSource[0] + '; return buildTimelineMinutes;')();
 for (let duration = 35; duration <= 120; duration += 5) {
