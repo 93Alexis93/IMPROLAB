@@ -233,22 +233,22 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
  }
  const manualIndex=await page.evaluate(()=>{
   const used=Array.from(document.querySelectorAll('#plan>.card h3')).map(n=>n.textContent.trim());
-  return data.findIndex(g=>g[6]&&g[5]&&g[2]&&g[2].trim().length>20&&!['notes originales','proposition à valider','à confirmer'].includes((g[12]||'').toLowerCase())&&g[8]==='notes_personnelles'&&!used.includes(g[0])&&!used.includes(displayTitle(g[0])));
+  return data.findIndex(g=>g[6]&&g[5]&&g[2]&&g[2].trim().length>20&&!['notes originales','proposition à valider','à confirmer'].includes((g[12]||'').toLowerCase())&&g[9]!=='incomplète'&&g[8]==='notes_personnelles'&&!used.includes(g[0])&&!used.includes(displayTitle(g[0])));
  });
  expect(manualIndex).toBeGreaterThanOrEqual(0);
  await page.locator('#manualGame').selectOption(String(manualIndex));
  await page.getByRole('button',{name:/Ajouter/}).click();
- const manualCard=page.locator('#plan>.card:not(.session-objective).last();
+ const manualCard=page.locator('#plan>.card:not(.session-objective)').last();
  const manualTitle=await manualCard.locator('h3').textContent();
  await manualCard.getByRole('button',{name:'🔄 Remplacer'}).click();
  expect((await manualCard.locator('h3').textContent()).trim()).not.toBe(manualTitle.trim());
  await reloadApp(page);
- await page.locator('#plan>.card:not(.session-objective).first().getByRole('button',{name:'🔄 Remplacer'}).click();
+ await page.locator('#plan>.card:not(.session-objective)').first().getByRole('button',{name:'🔄 Remplacer'}).click();
  page.once('dialog',dialog=>dialog.accept());
  await page.getByRole('button',{name:'Enregistrer',exact:true}).click();
  await page.getByRole('button',{name:'Historique'}).click();
  await page.getByRole('button',{name:'Réutiliser'}).click();
- await page.locator('#plan>.card:not(.session-objective).first().getByRole('button',{name:'🔄 Remplacer'}).click();
+ await page.locator('#plan>.card:not(.session-objective)').first().getByRole('button',{name:'🔄 Remplacer'}).click();
  await expect(page.locator('#plan>.card h3').first()).toBeVisible();
  const legacyHtml='<div class="card"><small>8 min</small><h3>Exercice ancien</h3><p>Ancienne règle de test suffisamment longue pour l’import.</p></div>';
  const legacyPayload=JSON.stringify({format:'impro-lab-session',version:1,html:legacyHtml});
