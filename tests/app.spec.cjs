@@ -98,3 +98,29 @@ test('mise en page responsive : 360, 390, 768 et 1280 px',async({page})=>{
     expect(metrics.body, `Débordement du body à ${width}px`).toBeLessThanOrEqual(width+3);
   }
 });
+
+test('impression A4 : séance et schéma restent visibles',async({page})=>{
+  await page.evaluate(()=>{tab('seance');generate()});
+  await page.emulateMedia({media:'print'});
+  await expect(page.locator('#seance')).toBeVisible();
+  await expect(page.locator('#plan .card').first()).toBeVisible();
+  const printStyles=await page.locator('#plan .card').first().evaluate(el=>({
+    pageRule:[...document.styleSheets].some(sheet=>{try{return [...sheet.cssRules].some(rule=>rule.type===CSSRule.PAGE_RULE&&/A4/.test(rule.cssText))}catch{return false}}),
+    display:getComputedStyle(el).display,
+    color:getComputedStyle(el).color
+  }));
+  expect(printStyles.pageRule).toBe(true);
+  expect(printStyles.display).not.toBe('none');
+  await page.evaluate(()=>tab('jeux'));
+  await expect.poll(()=>page.locator('#jeux .exercise-schema svg').count()).toBeGreaterThan(0);
+  await expect(page.locator('#jeux .exercise-schema').first()).toBeVisible();
+});
+test('navigation principale : aucune erreur JavaScript de page',async({page})=>{
+  const pageErrors=[];
+  page.on('pageerror',error=>pageErrors.push(error.message));
+  for(const section of ['home','seance','jeux','live','random','groupes','cahier','principes','historique']){
+    await page.evaluate(id=>tab(id),section);
+    await expect(page.locator('#'+section)).toBeVisible();
+  }
+  expect(pageErrors).toEqual([]);
+});
