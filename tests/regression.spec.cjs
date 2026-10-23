@@ -198,6 +198,7 @@ test('déplacement et remplacement d’un exercice conservent une séance cohér
 
 test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({page})=>{
  test.setTimeout(120000);
+ const runtimeErrors=[];page.on('pageerror',error=>runtimeErrors.push(error.message));
  await openApp(page);
  await page.locator('#includeExternal').uncheck();
  for(let i=0;i<10;i++)await page.locator('#dynamic'+i).evaluate((el,value)=>{el.value=value;el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}));},i===0?'100':'0');
@@ -258,4 +259,5 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
  await page.evaluate(()=>{for(const g of data)g[6]=false});
  await page.locator('#plan>.card').first().getByRole('button',{name:'🔄 Remplacer'}).click();
  await expect(page.locator('#planSummary')).toContainText('Aucun autre jeu admissible disponible');
+ expect(runtimeErrors,'aucune exception JavaScript pendant les remplacements, imports et historique').toEqual([]);
 });
