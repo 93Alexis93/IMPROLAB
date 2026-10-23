@@ -137,5 +137,14 @@ for (let i=0;i<10;i++) assert.ok(html.includes('id="randomDynamic'+i+'"'),'Curse
 assert.ok(script.includes('function getRandomDynamics()') && script.includes('function updateRandomDynamic(i)'),'Priorités du générateur absentes');
 assert.ok(html.includes('Object.prototype.hasOwnProperty.call(DRAW_DEFAULTS,category)'),'Les listes du cahier ne doivent pas créer de catégories de tirage inconnues');
 
+
+const sw = fs.readFileSync(path.join(__dirname, '..', 'sw.js'), 'utf8');
+assert.match(sw, /const CACHE='impro-lab-offline-v36-refonte-ux-ui'/, 'Version du cache hors ligne inattendue');
+for (const asset of ['./index.html','./styles.css','./schemas.json','./library.json']) {
+  assert.ok(sw.includes("'"+asset+"'"), 'Ressource essentielle absente du cache hors ligne : '+asset);
+}
+assert.ok(sw.includes("caches.match(e.request,{ignoreSearch:true})"), 'Le cache hors ligne doit ignorer les paramètres de requête');
+assert.ok(sw.includes("caches.delete(k)"), 'Le service worker doit supprimer les anciens caches');
+
 console.log('IMPRO LAB : contrôles statiques et cohérence des données OK');
 console.log('Timeline souple et dix curseurs OK');
