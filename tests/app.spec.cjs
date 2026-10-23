@@ -69,6 +69,7 @@ test('ambiances guidées : application cohérente et réinitialisation',async({p
   expect(values['Énergie']).toBe(20);
   expect(values['Corps']).toBe(20);
   expect(await page.locator('#randomDynamic0').inputValue()).toBe(await page.locator('#dynamic0').inputValue());
+  await page.evaluate(()=>tab('random'));
   await page.locator('#random').getByRole('button',{name:/Réinitialiser/}).click();
   await expect(page.locator('[data-ambiance="stage"]')).not.toBeChecked();
   await expect(page.locator('[data-ambiance="listen"]')).not.toBeChecked();
