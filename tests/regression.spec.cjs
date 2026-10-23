@@ -217,7 +217,7 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
    expect(await card.getAttribute('data-category')).toBe(category);
    const state=await page.evaluate(({title,category,before})=>{
     const item=data.find(g=>displayTitle(g[0])===title||g[0]===title);
-    const eligible=g=>!!(g&&g[6]&&g[5]&&g[2]&&g[2].trim().length>20&&!['notes originales','proposition à valider','à confirmer'].includes((g[12]||'').toLowerCase())&&g[9]!=='incomplète'&&g[8]==='notes_personnelles');
+    const eligible=g=>!!(g&&g[6]&&g[5]&&g[2]&&g[2].trim().length>20&&!['notes originales','proposition à valider','à confirmer'].includes((g[12]||'').toLowerCase())&&g[8]==='notes_personnelles');
     const peers=Array.from(document.querySelectorAll('#plan>.card h3')).map(n=>n.textContent.trim());
     const primary=data.filter(g=>eligible(g)&&g[1]===category&&displayTitle(g[0])!==before&&g[0]!==before&&!peers.filter(x=>x!==title).includes(displayTitle(g[0]))&&!peers.filter(x=>x!==title).includes(g[0]));
     const secondary=data.filter(g=>eligible(g)&&(g[11]||[]).includes(category)&&displayTitle(g[0])!==before&&g[0]!==before&&!peers.filter(x=>x!==title).includes(displayTitle(g[0]))&&!peers.filter(x=>x!==title).includes(g[0]));
@@ -232,7 +232,7 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
  }
  const manualIndex=await page.evaluate(()=>{
   const used=Array.from(document.querySelectorAll('#plan>.card h3')).map(n=>n.textContent.trim());
-  return data.findIndex(g=>g[6]&&g[5]&&g[2]&&g[2].trim().length>20&&!['notes originales','proposition à valider','à confirmer'].includes((g[12]||'').toLowerCase())&&g[9]!=='incomplète'&&g[8]==='notes_personnelles'&&!used.includes(g[0])&&!used.includes(displayTitle(g[0])));
+  return data.findIndex(g=>g[6]&&g[5]&&g[2]&&g[2].trim().length>20&&!['notes originales','proposition à valider','à confirmer'].includes((g[12]||'').toLowerCase())&&g[8]==='notes_personnelles'&&!used.includes(g[0])&&!used.includes(displayTitle(g[0])));
  });
  expect(manualIndex).toBeGreaterThanOrEqual(0);
  await page.locator('#manualGame').selectOption(String(manualIndex));
