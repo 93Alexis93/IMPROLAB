@@ -214,6 +214,7 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
    await card.getByRole('button',{name:'🔄 Remplacer'}).click();
    const title=(await card.locator('h3').textContent()).trim();
    expect(title).not.toBe(before);
+   await expect(card.locator('.coach-attribution')).toHaveCount(1);
    expect(await card.getAttribute('data-stage-index')).toBe(stage);
    expect(await card.getAttribute('data-category')).toBe(category);
    const state=await page.evaluate(({title,category,before})=>{
