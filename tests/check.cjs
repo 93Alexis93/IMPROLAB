@@ -49,6 +49,18 @@ for (const feature of ['touchstart','touchend','Date.now()-liveAnchor','impro-fa
 const manifest = JSON.parse(fs.readFileSync('manifest.webmanifest','utf8'));
 assert.equal(manifest.display,'standalone','Manifest : champ « display » doit valoir standalone');
 assert.ok(fs.readFileSync('sw.js','utf8').includes('library.json'),'Service worker : bibliothèque absente du cache');
+assert.ok(fs.existsSync('schemas.json'), 'Schémas pédagogiques absents');
+const schemaData = JSON.parse(fs.readFileSync('schemas.json', 'utf8'));
+assert.equal(Object.keys(schemaData.fiches || {}).length, 13, 'Le premier lot doit contenir 13 schémas');
+for (const [id, schema] of Object.entries(schemaData.fiches)) {
+  assert.ok(lib.exercices.some(exercice => exercice.id === id), `Schéma sans fiche correspondante : ${id}`);
+  assert.ok(schema && typeof schema.type === 'string' && typeof schema.caption === 'string', `Schéma mal formé : ${id}`);
+}
+assert.ok(fs.readFileSync('sw.js','utf8').includes('schemas.json'), 'Service worker : schémas absents du cache');
+assert.ok(html.includes('id="guidedDuration"') && html.includes('data-ambiance="energy"'), 'Préparation guidée absente');
+assert.ok(script.includes('function applyAmbiances()'), 'Application des ambiances absente');
+assert.ok(script.includes('data.filter(g=>isEligibleGame(g,{includeExternal:false,includeIncomplete:false}))'), 'Le tirage rapide doit réutiliser les règles canoniques d’éligibilité');
+
 
 for (const e of lib.exercices) {
   assert.ok(e.conseils_animation, `Fiche ${e.id}, champ « conseils_animation » : conseils manquants`);
