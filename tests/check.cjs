@@ -42,9 +42,9 @@ assert.equal(durationOptions.at(-1), 120, 'La durée maximale doit être de 120 
 assert.ok(durationOptions.every((duration, index) => index === 0 || duration - durationOptions[index - 1] === 5), 'Les durées doivent progresser par pas de 5 minutes');
 assert.match(durationMarkup, /value="55" selected/, 'La durée par défaut doit être de 55 minutes');
 assert.ok(script.includes('function buildTimelineMinutes(duration)'), 'Répartition dynamique des durées absente');
-assert.ok(script.includes('function buildPrincipalObjective(games)'), 'Objectif pédagogique principal absent');
-assert.ok(script.includes('session-coach') && script.includes('Pour relancer :') && script.includes('À surveiller :'),'Mode Coach absent des exercices de séance');
-assert.ok(script.includes('buildPrincipalObjective(selectedGames)'), 'Objectif calculé à partir des exercices sélectionnés absent');
+assert.ok(/function buildPrincipalObjective\(games(?:,parts=\[\])?\)/.test(script), 'Objectif pédagogique principal absent');
+assert.ok(script.includes('function coachDetailsHtml(') && script.includes('class="coach-quick"') && script.includes('🎓 Consigne') && script.includes('📖 Explication complète du jeu'),'Fiche d’accompagnement pédagogique absente des exercices de séance');
+assert.ok(/buildPrincipalObjective\(selectedGames(?:,parts)?\)/.test(script), 'Objectif calculé à partir des exercices sélectionnés absent');
 for (const feature of ['touchstart','touchend','Date.now()-liveAnchor','impro-favorites','impro-recent-games','serviceWorker.register','planSummary']) assert.ok(html.includes(feature), 'Fonction manquante : '+feature);
 const manifest = JSON.parse(fs.readFileSync('manifest.webmanifest','utf8'));
 assert.equal(manifest.display,'standalone','Manifest : champ « display » doit valoir standalone');
@@ -90,7 +90,7 @@ assert.ok(script.includes('(x.g[11]||[]).includes(cat)'),'Filtre secondaire abse
 assert.ok(script.includes('function gameAffinity(g,category)'),'Prise en compte des catégories secondaires absente');
 assert.ok(script.includes('SOFT_TIMELINE') && script.includes('chooseTimelineGame'),'Timeline souple manquante');
 for (let i=0;i<10;i++) assert.ok(html.includes('id="dynamic'+i+'"'),'Curseur dynamique absent : '+i);
-assert.ok(script.includes('buildTimelineMinutes(duration)') && script.includes('buildPrincipalObjective(selectedGames)'), 'Générateur adaptatif et objectif pédagogique absents');
+assert.ok(script.includes('buildTimelineMinutes(duration)') && /buildPrincipalObjective\(selectedGames(?:,parts)?\)/.test(script), 'Générateur adaptatif et objectif pédagogique absents');
 
 assert.ok(script.includes('impro-session-dynamics-v1') && script.includes('impro-random-dynamics-v1') && script.includes('chooseDynamicGame'),'Curseurs indépendants absents');
 assert.ok(html.includes('Trois repères pour commencer') && html.includes('welcome-tutorial'),'Tutoriel d’accueil absent');
