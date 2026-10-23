@@ -57,3 +57,29 @@ test('principes et conseils accessibles en deux entrées',async({page})=>{
   await expect(page.locator('#adviceBeginnerContent .advice-card-content details')).toHaveCount(20);
 });
 test('principes classés par niveau avec principe et exemple repliables',async({page})=>{await page.evaluate(()=>{tab('principes');openPrincipesView('principesContent')});const root=page.locator('#principesContent');await expect(root.locator('.principle-level')).toHaveCount(4);await expect(root.locator('.principle-level:not(.principle-extra) .principle-item')).toHaveCount(17);await expect(root.locator('.principle-example')).toHaveCount(17);await expect(root.locator('.principle-example').first()).not.toHaveAttribute('open','');await root.locator('.principle-level').first().locator(':scope > summary').click();await expect(root.locator('.principle-level').first()).toHaveAttribute('open','');await root.locator('.principle-item').first().locator('> summary').click();await expect(root.locator('.principle-item').first()).toHaveAttribute('open','');await root.locator('.principle-example').first().locator('> summary').click();await expect(root.locator('.principle-example').first()).toHaveAttribute('open','');await expect(root).toContainText('Depuis trente ans qu’on se connaît, j’ai toujours eu du mal avec ton prénom !');await expect(root).toContainText('Montre, ne raconte pas');await expect(root).toContainText('Respecte la logique de ton univers');await expect(root).toContainText('Laisse les conséquences transformer le monde');const colors=await root.locator('.principle-item > summary b').evaluateAll(nodes=>[...new Set(nodes.map(n=>getComputedStyle(n).color))]);expect(colors).toHaveLength(3)});
+
+test('ambiances guidées : application cohérente et réinitialisation',async({page})=>{
+  await page.locator('[data-ambiance="stage"]').check();
+  await page.locator('[data-ambiance="listen"]').check();
+  await page.getByRole('button',{name:'Appliquer les ambiances'}).click();
+  const values=await page.evaluate(()=>Object.fromEntries(IMPRO_CATEGORIES.map((c,i)=>[c,Number(document.getElementById('dynamic'+i).value)])));
+  expect(values['Scène']).toBe(80);
+  expect(values['Écoute']).toBe(80);
+  expect(values['Cohésion']).toBe(80);
+  expect(values['Énergie']).toBe(20);
+  expect(values['Corps']).toBe(20);
+  expect(await page.locator('#randomDynamic0').inputValue()).toBe(await page.locator('#dynamic0').inputValue());
+  await page.locator('#random').getByRole('button',{name:/Réinitialiser/}).click();
+  await expect(page.locator('[data-ambiance="stage"]')).not.toBeChecked();
+  await expect(page.locator('[data-ambiance="listen"]')).not.toBeChecked();
+  await expect(page.locator('#ambianceStatus')).toContainText('restaurées');
+});
+
+test('schémas indicatifs accessibles dans la bibliothèque',async({page})=>{
+  await page.evaluate(()=>tab('jeux'));
+  await expect.poll(()=>page.locator('#jeux .exercise-schema svg').count()).toBeGreaterThan(0);
+  const schema=page.locator('#jeux .exercise-schema svg').first();
+  await expect(schema).toHaveAttribute('role','img');
+  await expect(schema).toHaveAttribute('aria-label',/^Schéma :/);
+  await expect(page.locator('#jeux .exercise-schema figcaption').first()).toContainText('Schéma indicatif');
+});
