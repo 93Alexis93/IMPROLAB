@@ -4,7 +4,7 @@
   "fiches": {
     "1-1": {
       "type": "circle-transmission",
-      "caption": "Un signal « Sa » est envoyé à un joueur ; ses voisins réagissent au « Mu »."
+      "caption": "Un joueur envoie « Sa » ; le joueur visé répond « Mu », puis ses deux voisins font le mouvement de sabre « Raï »."
     },
     "1-8": {
       "type": "circle-duel",
@@ -12,7 +12,7 @@
     },
     "1-11": {
       "type": "diamond-leader",
-      "caption": "Quatre joueurs aux sommets d’un losange ; le joueur à l’avant mène."
+      "caption": "Un joueur d’un sommet danse puis passe le relais à gauche ou à droite selon son pas, pour orienter progressivement le groupe dans la même direction."
     },
     "1-12": {
       "type": "circle-direction",
