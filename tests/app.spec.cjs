@@ -84,3 +84,17 @@ test('schémas indicatifs accessibles dans la bibliothèque',async({page})=>{
   await expect(schema).toHaveAttribute('aria-label',/^Schéma :/);
   await expect(page.locator('#jeux .exercise-schema figcaption').first()).toContainText('Schéma indicatif');
 });
+
+test('mise en page responsive : 360, 390, 768 et 1280 px',async({page})=>{
+  for(const width of [360,390,768,1280]){
+    await page.setViewportSize({width,height:900});
+    await reloadApp(page);
+    const metrics=await page.evaluate(()=>({
+      viewport:innerWidth,
+      document:document.documentElement.scrollWidth,
+      body:document.body.scrollWidth
+    }));
+    expect(metrics.document, `Débordement horizontal à ${width}px`).toBeLessThanOrEqual(width+3);
+    expect(metrics.body, `Débordement du body à ${width}px`).toBeLessThanOrEqual(width+3);
+  }
+});
