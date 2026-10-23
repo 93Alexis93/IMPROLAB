@@ -4,7 +4,9 @@
   "ordre_ids": "985c2353dce58f29ae9daab5ebb212833bbe261b4d9dcd363e82fcb60472f5a2",
   "fiches": {
     "1-1": {
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "accompagnement_pedagogique": "9634129986be5f64ed80cd909dc020155509f14712903a09733dec966c1b2d34",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "8a172da0ac6bf28dd4689cf44c0383a4768b3d6b22de1787879aad18d134e98e",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -21,7 +23,9 @@
       "titre": "26cb900c62abd574499c7e962b1ae74aa71950b193d7470e9505f0eba640781f"
     },
     "1-2": {
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "accompagnement_pedagogique": "901ee3bdc1886e08254a3480a3946646383dae5b0f4b4c49cd5acd4846bc66fa",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "e16726e37ef9fab06ea5af7d372f9846dee44d2873ec351ed6c4084704879dfc",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -38,8 +42,10 @@
       "titre": "4d61379487647e8c7b3cf0e0dfac37321e198b89be3efd5474afadf9dfcce8f3"
     },
     "1-3": {
+      "accompagnement_pedagogique": "4019cba1a2bcab6925e1d7ca75f40476b07d44a43f337c0f5b20e04b4a7df892",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "2d6e7d3fd0d433979c6189f7212583b113cd9be257a2ce6067434f7979f97e9d",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "a59e10088639d2c9ef2df2addc5a2bc13eab40b5a2aabbb9cbf7db12bc7654bd",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -56,8 +62,10 @@
       "titre": "188087657068275540ab8245bc5ad79c38af56b299372a6532d441ae03910c39"
     },
     "1-4": {
+      "accompagnement_pedagogique": "cf7b89f47ab23c0f5daace6f38a5bf928c1cf7b7d77d30b34ffe8f6f9fb4c0ba",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "51a2578a943f3c1ccc5376174cc7d5d31e0111c987010755932b30c0ceac6dfa",
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "conseils_animation": "ae3a8c03e90849c1af3d1871b42b2c641700ae2bd7a8d9be5d8111af79786801",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
@@ -74,8 +82,10 @@
       "titre": "5d332c428254d8a47a8e0048ba57f2f906c703de3451140375b0992e1e1c5c30"
     },
     "1-5": {
+      "accompagnement_pedagogique": "4104c081b1a76da9e9fe2bd8289989c772f65bf74a713fb9ee0892262dcc4ac1",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "7f75eb8d3b0604520a5a3649895e988217a2513df9eac9c7db51531d6c6f49ea",
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "conseils_animation": "0577471a4ebf0cfb13f47b72f52083b493d5d48f96c42c4d413021d374aa0600",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -92,8 +102,10 @@
       "titre": "86b7bf55d10c5c5bdf9fe4af424d07cc685f420e7dc567cee333993aba612c37"
     },
     "1-6": {
+      "accompagnement_pedagogique": "abe8bff161cba41feb16b18420b7c249af77d84ab19852c664df317b15edac3a",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "dc10dd3875a7408484305ea3baaf7f8796d5f3d5fce64491babe5f8477e98ae9",
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "conseils_animation": "b9275fefce568c393a927771a59e0720eabdfbb6dd120cf3994a714fba8da4fa",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -110,8 +122,10 @@
       "titre": "1e9ae9a0b2219aa35a188ceb08ad4ef31ffd9c6eba85e619afe43d5e9fdc5e69"
     },
     "1-7": {
+      "accompagnement_pedagogique": "498f6edbcd79f7cfe32e7d151c2819a939a1efa78e51e8a6c2e738452fd7c4ab",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "f0aa7ec116e32c9d25360fd91e5ac97a26955e8f8140c13c851072dd0c66df07",
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "conseils_animation": "c6540734a0c0128ee256771d57aeb5750ea13096f8597480fe1e23b17eda9bc1",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
@@ -128,8 +142,10 @@
       "titre": "6fc78b3e3c19796cbf96d7f67d2768edd9bd9c274c88a173c3ccb1c95b868155"
     },
     "1-8": {
+      "accompagnement_pedagogique": "bf5f848ee363170d6b0ab8582a1a232a03e5bf5ecfafd3bd868f828faa174c9c",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "889abf03ad9042677550f069693ce87b3aba53db04813fb54ce579c30969a7ac",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "2e5bcf25044997e27faad2db2cbe776ac96b524eb6090cff29c736fa79ad5c19",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -146,8 +162,10 @@
       "titre": "c5ccf9ad2b034f336bae4dab25e98b9ea310ca7594d95328675d7cccdc3b48af"
     },
     "1-9": {
+      "accompagnement_pedagogique": "3123124666b37e16213b4f1b9d953944ebd8b9df600a681c78511ac7bb99557f",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "0ed907b0019613281a874e1c1c9836839079c44bdacff40e2edcad4e049f62ff",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "f1abf7c4c59142d3366732367049890c28c851713ea5c48a7231025b1b9dd5cd",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -164,8 +182,10 @@
       "titre": "405f1b76fc0395ee5be36d48c79600bfad3646a204af2932eb71cb449d410482"
     },
     "1-10": {
+      "accompagnement_pedagogique": "bbbe0356cad76276f4f4cd9d734cdf3a1ce3e161d08241792e164979e09117ec",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "467aed5cc272aca47f7510e881f65ec80c974818c166e6fce93db669f4d33850",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "fa0c2256d82c429f143131f645dd66a824e0adb9f58f7a6d4a68b363a6458e42",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -182,8 +202,10 @@
       "titre": "8fb61bd738a182ef13ec71b797fa32b40bfc71ce46da6fb3e0d825b8b4df2c79"
     },
     "1-11": {
+      "accompagnement_pedagogique": "600eae49b52ba8c1a37a27bc3ca0c70f8e8a6f29d26aa71d7ca7a5b1c841cb77",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "87c564331591c7827893558f70ef66e2cd77a983fb73fa75f51912d691a6178a",
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "conseils_animation": "f1805c32607d9dd18ef7355b1bec344344b6d662f690cd751c4f2294038adc4d",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -200,8 +222,10 @@
       "titre": "0727f5314ca9a951e002cb2fcc4b0d00e202f026abbc41d88976767bbcb51539"
     },
     "1-12": {
+      "accompagnement_pedagogique": "b1c7093db879f06afb3b57ccfbec03a1439572014ed2e5afb2c94da7129a7248",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "1f619a51d0b556139b694eb0e902522a79a27534b5c535a4967f8b437990918f",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "d1f71664dd61fe3fd69324788598ed0d033ab22f4f1708aa1da6d861069efb3f",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -218,8 +242,10 @@
       "titre": "07bdb98bcf784b53decbb5658e84a9f6587407246b472fca24d88c9595a1bbb9"
     },
     "1-13": {
+      "accompagnement_pedagogique": "f7876ed628a07984c3c8c9135ac630956da7f81f24ae0213702599c971ab2b4f",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "3df72b9ea11d239d856ac131cde6b6ccde3ba9b694146b4087b9836e1aac578f",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "678b442414145fa2cd21bfd82f97a0e9539ebc2ee950efbf8de6d06eecc2cfd5",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
@@ -236,8 +262,10 @@
       "titre": "59d840bf1ace2106e451d79f2fa4e5565feef291d463b87b5c9882ea2d2a6805"
     },
     "1-14": {
+      "accompagnement_pedagogique": "c4e8bdda9e168b01c819e4a9ce15263858dc18b6e6acaa775064e91a16cf6626",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "8b8cbe1f73c9766fbb34c47306b96e56f25e3b4bf36a9a764357d10b76b06c22",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "f5dfac5d8b6817f6cca52cc751ad39f6d53c5e9baf8efb1d355cf6b285d51865",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -254,8 +282,10 @@
       "titre": "e931980e51a951e8d7c1a7ec1cbcddc651631d5e084a463a87e1d337e2abc091"
     },
     "1-15": {
+      "accompagnement_pedagogique": "c800b778caacb49689fd1e3b942641afa8eb6620caf1e6f13076b9ce6654bdd9",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "89e47f5f2c2b6740a3c800fb01e2a6754d8290acdca3de62206bf0b43e70bea0",
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "conseils_animation": "f107627872cacccabe30e1bf8a58c392721d9f377e6626cf7b43d4f9ddb7c428",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -272,8 +302,10 @@
       "titre": "4e0e808aaced618e2aeaa721e1cc56a0c6af848ab8241cbe0b7d06896e4e5331"
     },
     "1-16": {
+      "accompagnement_pedagogique": "c64ae4bceb715bf3f5554875bac8e0fbc6a264607e4a149257253df3222da0ca",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "0c806f501b3f25fa63477d23e1439a24334f23e84c9cbd545e8f7b30b7d57e83",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "e3bc79e216729005d16a39606a4191baacdd500c72735bf2bceaa2d6c12ddc81",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -290,8 +322,10 @@
       "titre": "18a5b180d36b1a151583509b6389fffe9dfed6fdca0f9dd24e064328ffe85cc2"
     },
     "1-17": {
+      "accompagnement_pedagogique": "45af15da6f3c72bbdade6b89980a9a78b879496c9401fd8995f26d5540379000",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "1357ddcf6e4939500c974c22816c08c0d990579f0fed9f5abef5f33db558bc85",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "86151a779f907e645f0c5c5709d55cdfeeec2544fd2e2b0a5d80945c74141401",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -308,8 +342,10 @@
       "titre": "c9e73138fa54dca600c5efc89e8517b0d11cde7977bb73e2bb575cae66c9cb2e"
     },
     "1-18": {
+      "accompagnement_pedagogique": "dc9752f7e72a8ec8c8def8255545fb363708dbc2bc19ce0709896da0d24d0507",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "255d1c0373ef9d1dff2f42ebe059471443508c4bb45694366b98a9b1f25f20df",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "212624ce1ceee68b5c2382545d0fef92c439ef3e69230e6953e85b1b5df808aa",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -326,8 +362,10 @@
       "titre": "5613bce6ba4efae4099c2bc46909e3331b5413426f559dfdc2499766817ede0e"
     },
     "1-19": {
+      "accompagnement_pedagogique": "25c55050e9152fe5d98b5d45c5ce71339d9c098eeeae66488e0bb6d6cef38928",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "572207e2be1c0ac06bff126cdf661b34ad6bdeb45ab7326abf0a481ca42b2b39",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "93be5509173a876ce5911b4c9694129c17384630782729280f82e3e0c27ecd88",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -344,8 +382,10 @@
       "titre": "d1f073194a13c443093d09884ccdd6fc96a944effb73f0bb6bcf1a811887c680"
     },
     "1-20": {
+      "accompagnement_pedagogique": "45ac69e132e608beb22b82d6c6dfb695e45e61c7906d78bcb455c00b72bc36a9",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "2906b3f884e0efa650b3bfecbdea49bf2cdf0db7d05cc36646b67a04866c2362",
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "conseils_animation": "978ec0aa054e08beabf1eb7f0ec4f3526afd27fca996fab1bb205fff9c678143",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -362,8 +402,10 @@
       "titre": "ed4adef930c1cd6969c5852d69d50c26158879f671052a95aa7776051b83d2a6"
     },
     "1-21": {
+      "accompagnement_pedagogique": "bb9c330e73f52341c0d857992dcca91ba90167f2161d2163518b2435f1e56ab9",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "1357ddcf6e4939500c974c22816c08c0d990579f0fed9f5abef5f33db558bc85",
-      "conseils_animation": "e6a4cf8cc031ca6cc12f4085e34a4a776b9cf01bc171ae22555a9c7f5f7c6992",
+      "conseils_animation": "0dde31805d174d000a78b6a4b88a398dbfff4a539c5288cc46f9109f8713e726",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -380,8 +422,10 @@
       "titre": "a4eb314bc5e72294679e1fb421917978b54c980770698b8b3b0ec3390ba7aed6"
     },
     "1-22": {
+      "accompagnement_pedagogique": "8110b468eb4d41675b5fe3e844e0155bb39f58c538964962265199154d3d7edc",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "f1b3b4337d09795d903ab3c4eb02e47295bffb28ab7c9873f311eaf645e6bb7f",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "7fb20229dd1afa70badf709c1bb050b5ee72239b1fe6dd74a32a017dfb973116",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -398,8 +442,10 @@
       "titre": "510c58bf49a9f71e71eb2c6304853f9fe50651ded93fa17faf95aca9383954db"
     },
     "1-23": {
+      "accompagnement_pedagogique": "02eacbfc4d65440c3c4bbb428d3294db2a7235d58c057551ce947cad56bf0708",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "a41e7f364f5ed5e4c35cae952a12f486932d390a4a7c3b42262e4cc93e2dd37a",
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "conseils_animation": "ba0463cb4b620cfcc98840f1fd57b2246bcfe0d70e56f191cf08f28b4889699d",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -416,8 +462,10 @@
       "titre": "111421abdf68fae236895735722dff00bb4bb8827c6134b41b89cf60a8f9b277"
     },
     "1-24": {
+      "accompagnement_pedagogique": "5c56882ef04561de1736e3d84e3c17971f8e7f2b39d430196bcbd8b58f2de283",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "c0141802decd46d159334c81d24550c29a44f9ef0896a2816f5bb28c01149e3d",
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "conseils_animation": "9c395efef5dfacee4ef5d52faa41d1036453157783cd20b7288844b769c65ff6",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -434,8 +482,10 @@
       "titre": "b6def555b4dfad9b477f4d8a13f5d5c85cb57320f994f697d4506b770829d880"
     },
     "1-25": {
+      "accompagnement_pedagogique": "1b225c0affc4885e48ccf252e87ea08a10f3e7cdf727e29cbcbabb9b75b61b5b",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "04f05fcf6e1851ba7d7958c7eaa29d13bd05ff2def495391da5fc99ae7ef74ee",
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "conseils_animation": "d14eed6387c2f2605296932e72d99fc162183d09ddc03b26037940a07a37a375",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -452,8 +502,10 @@
       "titre": "c5d82eccabf535bbc480519db790a0ec5e7741ffa414cfe2319d889cee10bcfb"
     },
     "1-26": {
+      "accompagnement_pedagogique": "9b77f8820f6174f46a33b600b1d472004017ef0bec39ce697e1e46122f79c20f",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "301890e36dac5caad55fb56dacb614582481f676835745ed4d592d7f0d9ab2d8",
-      "conseils_animation": "e6a4cf8cc031ca6cc12f4085e34a4a776b9cf01bc171ae22555a9c7f5f7c6992",
+      "conseils_animation": "0e5f0ba98906aca61fe24cf4e1d973ab770d45664d0c36ff3b5b2311f4b11af1",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -470,8 +522,10 @@
       "titre": "2b4e2e46af49bc0546d004f8811c06aed5ea8414e402f9dbe86a0d3c8833df56"
     },
     "1-27": {
+      "accompagnement_pedagogique": "5173ec3268c1ee1ce5c3bcd7deb92d9b149827ff6fc6e2527e5e89cde071f158",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "2906b3f884e0efa650b3bfecbdea49bf2cdf0db7d05cc36646b67a04866c2362",
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "conseils_animation": "d7e391fc1acb52382cd425306278628dd9871c130274ec6729db0e939cc6b0fa",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -488,7 +542,9 @@
       "titre": "91665667b7cf4a811895cdff125a771f45a26f626452502684fd1bfa808999e0"
     },
     "1-28": {
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "accompagnement_pedagogique": "c2f18d07ea6ad7cb90184d3851e4fb70c779438cb59205061e64fed764ed195d",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "d49fdfa9f9a44d7c9859f0ec59cb8560e440bee8f9f430d9a8ddad25cdfd82ed",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
@@ -505,8 +561,10 @@
       "titre": "07f98c3b7f49cabba1d3d3e865a6dab05b13aef46f4e2a1ddb85af321e77784f"
     },
     "1-29": {
+      "accompagnement_pedagogique": "6207b51d5d8920db5a576d0d1b6dc2c017d601b1012d506c56689ed3b35f962d",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "710a2a751b88337d700543a9c91c345c51a004a5f0048567c814f52f3ff2ed36",
-      "conseils_animation": "e7bd44b98237f823182dc56a05f91be9b2963dd4e5db1cc5383259be9e84cb99",
+      "conseils_animation": "ef45e97abc9e1b8d3dc7bb4b4f2283d8c56838ea1ea8ca18e7223cb2661fc39d",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -523,8 +581,10 @@
       "titre": "ac7d094d34ae6f35281a164d1b733ba477ed0fefa21dfc36755667358429c1cb"
     },
     "1-30": {
+      "accompagnement_pedagogique": "ad0c14aa3b185eb60273e3a421c1b75b5cf980ffd32137ffd3fbe827b1350e65",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "92b725baa717f4f6fefb1cdc6143cc0c61a76df5f31f68a94b56b591f1c45206",
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "conseils_animation": "a68e3c41572494a20f76b145705fffee7c8d70aa82636c295880fe90539f5a41",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -541,8 +601,10 @@
       "titre": "a285f686668cfabd1449d1dd3f263d6d6935a11cfb677d13c172e5ff41add227"
     },
     "1-31": {
+      "accompagnement_pedagogique": "0da272992a0f58c921fd0c23f01352993219d9aecdf32e448509aa2703634e32",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "93f5270f92b132b83385a64a226284a2f87e730bc4c52fa16be6ec651a9f5a08",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "8d8fb48e31b3e4ed505620ffb21a43f0b0abba7e7fd78d068cff18594acf1086",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -559,8 +621,10 @@
       "titre": "a08b7bb4582d2001c44e17bf79b00575ddce03a1555584a77fee283c967c48f7"
     },
     "1-32": {
+      "accompagnement_pedagogique": "41ad4bfccf85e4c81c759d2c09de3bebea12e83b4cc87be3acfe0a1b907d198d",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "f01b98569572be2612f5def094447c1ea606f1717d4ba3b755efb88d500bef59",
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "conseils_animation": "e48d4193368937f6aad8d268bfce269e20904f1647963b5cdf8c05fc672fd167",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -577,8 +641,10 @@
       "titre": "cf6be9bc5d188a353e24fc38c0cde28c40683a9ace265f0f042a3177df0342d6"
     },
     "1-33": {
+      "accompagnement_pedagogique": "1efaf3118799f250547ad652a69a3f96763bc706dc91415ef8eb9d2eb77ad170",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "887390788335707fe10976d30739900af247c9fdef0725478020b73ccdbf2a72",
-      "conseils_animation": "e7bd44b98237f823182dc56a05f91be9b2963dd4e5db1cc5383259be9e84cb99",
+      "conseils_animation": "cf8bd689d49f308e4bcb325d151907e785090e7f514774ed6db75ecf39f9313f",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -595,8 +661,10 @@
       "titre": "92d62c95bba75d753f8737ded685bf73d0be700eda2465d940f81f0a5f678fc0"
     },
     "1-34": {
+      "accompagnement_pedagogique": "704d3387b77a75e0d7a977c681246e3c406ae99437412dadceb771c0d085e1d4",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "855054e80dfba1c5816f5a688367fa14fc77baa345ac2e64877d97ce0a42fa5d",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "86de44751748ad8a5c327e519247eac53db064c73fa8c260cf86a6ee65994c8d",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -613,8 +681,10 @@
       "titre": "23e7cf9e35080ce05cff74fea2b5c8d0541ca3265480028c5ed24e41fe6b66b4"
     },
     "1-35": {
+      "accompagnement_pedagogique": "cbe6f184b9b46ad4cf2943a0065dfb8d2243f6da94524663e5dabce3e5df22f3",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "0c65c24847c8218568d5a8a96199412683fec6a2aec58b5b720cdea1a0ca85ea",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "ec6afd6aafd80095d17fbed41a9fb10b2c5611e08131af184925e21a7488598c",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -631,8 +701,10 @@
       "titre": "7db14ced2fd542b906d148b09d3b409f582d96877a82a4ff04d658661f91d7d9"
     },
     "1-36": {
+      "accompagnement_pedagogique": "d200dea2d88a8a12968e013daade8efefbe42c3559b66bf6e6ceda3c9ced14a5",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "d7c7d36c7e87e7f0ae879463305982997bf3f88b97de6d327b11f93fe32b161e",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "4d7fb3b07e72da3e1cdd0256b69ffbf02555d59359efd32396c6b1d1dcfeb8f7",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -649,8 +721,10 @@
       "titre": "d83e7887208c24fb84bf243914a40ad33e54cf7d5cf74b8de9a09e1977fe1bd8"
     },
     "1-37": {
+      "accompagnement_pedagogique": "67846e8b0dd041a95c2a659ed05f6ca69ac168f6130033558426f8457a6ed915",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "f1fc0d6f1041c34147b73a42f5fdb6ef50f917abcb5ae8861becad3956b31d75",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "ec44b26f9a272359ae2de5045c6cfed31c4ed05c752c57ac214d580f065417d3",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -667,8 +741,10 @@
       "titre": "a933a341b3d51438444509f4ead4c4d402fd237ccf863b02dcd82efd66a885c5"
     },
     "1-38": {
+      "accompagnement_pedagogique": "62f1fb3bc36b1a902311a128e1148f3d5440ce3dbaa496cd02351382c46c0c4c",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "2b86896eb3615b47a60d416f2b01a6703ba16dbe37e4a80473fc117086757838",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "dc0431e1eb68d65995f3d2e580499cc8f40f18a91f04f63556ef63096c54bbf3",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -685,8 +761,10 @@
       "titre": "083929645ae061a10b82e46c458926b7e6fa36103330d5bac349168f97c880e6"
     },
     "1-39": {
+      "accompagnement_pedagogique": "631ac45e904031bc4b9d775c87d681c41b6c1773efbc800c79e85a7331c36e76",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "dc10dd3875a7408484305ea3baaf7f8796d5f3d5fce64491babe5f8477e98ae9",
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "conseils_animation": "17b3e7510cf16ad891e9150aef32b9a1b9d52eb2c397d53fffe936e949820767",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -703,8 +781,10 @@
       "titre": "83f95da467045c8d5fa5b4dfec6fefd564613d75ea92f39ba1dbe9bed4410756"
     },
     "1-40": {
+      "accompagnement_pedagogique": "226f43eff0914ab86bd2365710532f7b9e2ccfbe03b8e7859f522146448ba17d",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "576486cba759396be36fbb1775a0f77196135fd225f3dfc11fbbf32a9975a14c",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "0fc5c15b9a6f5c3c048279d930387e98390af88c708fe7c139756bd60974987a",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -721,8 +801,10 @@
       "titre": "376faa81487322dad32ce137257ce4f20cc21d68abc910fcd5329b832537e590"
     },
     "1-41": {
+      "accompagnement_pedagogique": "3fa977ec3af9ca12679964a2596efa40df8ad4d5b1292819d10e834b2cabb52e",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "fb431563f39ae8d1db00e5ba6026206948802ac3a090469008a1b0716362cc43",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "05d6327c12026240766d4bd8f9caf791b0e797bb6c331f456dafe2b2b9dce61f",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -739,8 +821,10 @@
       "titre": "a30e0954f96887e86b844f0f625e839c24c611a10b20150d6cf3a069987ce712"
     },
     "1-42": {
+      "accompagnement_pedagogique": "8b8dad74a2ab299825004d0e48aed3327422d030ef397eb1846b2ac2c601cdcd",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "fbaa741c85d796ac91a662ee7bb9c60749b0e8ed0b81055cbd17050746ef5ea1",
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "conseils_animation": "08fb9d1b82f7a6d9a7894c7cd20820db0a232ad367ec31ad952070857452133e",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -757,8 +841,10 @@
       "titre": "ab45e9331fba95327dcbac34afa81e1f063cfb1ac853f58a9f893624770c97de"
     },
     "1-43": {
+      "accompagnement_pedagogique": "83fffb48d23afc04eef0b67326ae2c2e72b04e05eca5fd5aa0a14c5352d43b80",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "b54e81828ca1eafced63b7d38966e2985037ee2ee660cb98f1fed7b10439d842",
-      "conseils_animation": "e7bd44b98237f823182dc56a05f91be9b2963dd4e5db1cc5383259be9e84cb99",
+      "conseils_animation": "00c8b1806fcad9ea78cd53006eda7237d70af5060a2d249a0b92d6f11c05a92c",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -775,8 +861,10 @@
       "titre": "74e034dae6110b08643d6345872152bff650c57f20845f2b30c39cd5feeb7fea"
     },
     "1-44": {
+      "accompagnement_pedagogique": "ec0a901e57e8024dc3655f2b4d897a7deb7e226525ffa3a5f0b12727ef7c0c5b",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "f7929737bb3d9a8fcddf37a92450ccdf624d0e659036302f2a70afb495fd1320",
-      "conseils_animation": "e7bd44b98237f823182dc56a05f91be9b2963dd4e5db1cc5383259be9e84cb99",
+      "conseils_animation": "bc504f21bba19902e6e3626ee3b9b7ce5b40eeaa0da56897a63d2af7a20fbeca",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -793,8 +881,10 @@
       "titre": "c3de1b490454a8ef0729166022a0b8d024025a3ab9d7342fb0e7b544696d8c43"
     },
     "1-45": {
+      "accompagnement_pedagogique": "fd4b10f372e57451353beb25599260c4683bae3aae82ac774a6cfee66faa8479",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "4cee85e0202d510438826d40c05835dd0fcff177888109184b567ceaf7cc758f",
-      "conseils_animation": "e7bd44b98237f823182dc56a05f91be9b2963dd4e5db1cc5383259be9e84cb99",
+      "conseils_animation": "5a14ce392169f86888871d7b922f8a9f4e62f37c82d2cf0385e9b7b8193b1474",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -811,8 +901,10 @@
       "titre": "562e238a3ee1a1def15f205115c0cc5e60a50466abc92c69955312e272a4ae59"
     },
     "1-46": {
+      "accompagnement_pedagogique": "450fdc6b6daf1a48a8774d0f310c96361f38bb469c06b0f044e376389fb1923d",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "01291cccc3872148e5347f60286d7e7085c8ecee2e044726ed568a72f97b68f0",
-      "conseils_animation": "e6a4cf8cc031ca6cc12f4085e34a4a776b9cf01bc171ae22555a9c7f5f7c6992",
+      "conseils_animation": "560e112748bce719dc34921f0784781711cbd49f1716c157532cbdd4e0f4effe",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -829,8 +921,10 @@
       "titre": "942544899aa0f14aa92fa1585123ee66c456f1488e867a718880d43f39e62925"
     },
     "1-47": {
+      "accompagnement_pedagogique": "f45b2bf139592c384300922f9f0405d3ef75f545046dd57f3f6077ec982af5f1",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "61c4907e1af4af2f95a7a38ea400c5e3b2fb5e9de7fde5e8649d8d9094a716c4",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "b032771ac153445f3288e4adb87d02d5539b3b1acad65d21f0be9aa35a5dba7b",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -847,8 +941,10 @@
       "titre": "8c0665a4ae4119f571a65b2917d14a2bcc91ab2de8fd3a4dc07b02dc2919d594"
     },
     "1-48": {
+      "accompagnement_pedagogique": "601744aeee7135ded8ba9927ac446ceb32a6b50c8e9aa567393cc387e980c533",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "01cf3a484b33579954e85187d6de2e8edf4aff597bf503bdf0d6694ce926d3d9",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "3f1a72401c24964eaae35536aa9d2ec6d644cc8301e778b8f1b8f3fca2687793",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -865,8 +961,10 @@
       "titre": "319d40b2e2c25746efac5e47ce00c3fcf79462f38e0e67557f3c9a3c8ba26705"
     },
     "1-49": {
+      "accompagnement_pedagogique": "0606b676f7f2eb40c53417659a586e9a21a8cb6a1708c1fb08d0697b875a5e32",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "d53ecfcd552a1aa79cde86b6f54da90c5a17c9df64e9b0a1fc66de8f8d5b2440",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "325e964a9148431a6912cb1ebf417287f98baf4caf320a7655d6a24ac407d230",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -883,8 +981,10 @@
       "titre": "1d91307f8bebac88505cbfaee595d0a4510b21f9c7f377931cdb1ceac4a9fb90"
     },
     "1-50": {
+      "accompagnement_pedagogique": "fc03ab64625c75f19d8c77aedaaa8b448336fde77ab22f177fc1106d0c5a026f",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "72e675d390eb8515f6b4a2e710470645cbaf6291ebac241361f73c2d09b9c9c5",
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "conseils_animation": "e4c2a993492b11cbb32e1f46ef977fe848dca58fcb42eb891d4ff53c828be9e0",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -901,8 +1001,10 @@
       "titre": "a3ab4970f078a1838aee265989bba56e02c7ee8766ce1b6c2faaa72fc28a7835"
     },
     "1-51": {
+      "accompagnement_pedagogique": "6e8b74c28b90e813627eafcd966e515be7ca41e77c62145e110af5fb9d864d41",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "1209754fcf037276b0fa015fdc04bf30515f047043c1beddbf150e2c0b9e86f3",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "984f79255dd80a942529a1cff10d214bf518ebc259a49f752d1ae9d824703993",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -919,8 +1021,10 @@
       "titre": "21f7b2778bb8d922915353032c31ad71178e67e4c83427c40977df7cd0e0efe9"
     },
     "1-52": {
+      "accompagnement_pedagogique": "67c51c395138d630c492d3035ebc82a93253651a9ef74307996e6f893411be12",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "2546052e77698e41369e0827b6a4c978001d61b985e3b37ba9f40e571031431d",
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "conseils_animation": "f7a3dff9f43b9b812d73de6c3749222f5714df9b590b369f39126ada080c3bda",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -937,8 +1041,10 @@
       "titre": "409bee86d4eeaafe352720de9fe7232a73d5867cdb724bef484f619745600f77"
     },
     "1-53": {
+      "accompagnement_pedagogique": "f1a9556f18e7a10913d109b36a9e50d3626876976910b35f8a94642588ae9b2c",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "4cee85e0202d510438826d40c05835dd0fcff177888109184b567ceaf7cc758f",
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "conseils_animation": "b3c721b22325624b98c19ab5cc2424e09ba49d67ce28049ac07681070e7986be",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -955,8 +1061,10 @@
       "titre": "254c48a3086e6d567e2e88ace0abffde9d60e122f62288fd7501de823f25049d"
     },
     "1-54": {
+      "accompagnement_pedagogique": "9443e543c80e246061aae9a7a96fa99759e346aa222288d28e8f4414d876213e",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "0c806f501b3f25fa63477d23e1439a24334f23e84c9cbd545e8f7b30b7d57e83",
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "conseils_animation": "3071a76ab544a63f4612a9d18c14220c55dd79be61aac3704dee4da9e5796a9f",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -973,8 +1081,10 @@
       "titre": "0b19e5a9bb5fc963daa3da0b9f8594c187897dc4d1c0ad77c7650e6539f59de3"
     },
     "1-55": {
+      "accompagnement_pedagogique": "ce49badcbd2858783e44fe876474ad2497bd87fb89c09abe62f7845dcf426dec",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "9e0c3b383b120cf22af4d6b4008d26f0126b14b6e5eb60276ce985b80ebfeb80",
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "conseils_animation": "9f657f92d93a1c5a4aa8b9e051927dc1f1c2ac130ffdb5ef6670a4d1c092811c",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -991,8 +1101,10 @@
       "titre": "8e6dd3851079bb0e97afdaadeaadef42bcd9fcfc6ec1845dbe0adb4b316b3bab"
     },
     "1-56": {
+      "accompagnement_pedagogique": "16931be66f156211dd08aff9bd5f44854cf993f66ebdc712c2eca71267b46495",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "5abc6b12035c1c5b6eeeb6773db58e8340c1a2f02df8094c143ae9941f541b49",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "03c45dc2916ddf73e06daee1e9ac389b2c530d61a154ccf052cb2ca266d0e3ca",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1009,8 +1121,10 @@
       "titre": "719535fad7061c50c9a0b6f19213b4c4a316acc4aff9f1c47cf2a33dbf8d4e18"
     },
     "1-57": {
+      "accompagnement_pedagogique": "f30febd74da2dbabdcc76a2bba481de95e06102b7e742ea733db0099efc28e57",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "9ca8f64b265134a52e361a1fb5c7e6d5c62259901b64e8789c65f4389e9ece6c",
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "conseils_animation": "440f5626790deebb1a69535aae2da384f3d3b4ebffc87438fe541af6a0ca0017",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1027,8 +1141,10 @@
       "titre": "dd2197c62847e20e103c24cd388edca2b54ee56422186222cbe98522e6ebba83"
     },
     "1-58": {
+      "accompagnement_pedagogique": "4bc44868ef777296f01f15e9ea1d334f44e60fb1e614cf71a1e801f7b005a7ab",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "4cee85e0202d510438826d40c05835dd0fcff177888109184b567ceaf7cc758f",
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "conseils_animation": "dce14381568633efbc1d19da2a88b9bd4dbcd18c64f6cb86644df8e9a91c4df2",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
@@ -1045,8 +1161,10 @@
       "titre": "5ae60037f32f93439683ad89a7ae5e118e77f2e128c0183eff715218e7d85929"
     },
     "1-59": {
+      "accompagnement_pedagogique": "b409683e12e0d1147d4d71cff134cb3c1b56bf9cf2c096bd7ae5a8e202134d13",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "37670f89f57eecee00aeb012c3f37df43dbc1b018a9e1494550b3b67fca714cb",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "4393d4385e7f94fece98c5b9fe40d39e3ba2d06eddfc3571d7a19ef0be2e0701",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1063,8 +1181,10 @@
       "titre": "3c45a1f476ec61cf8788137be2501e9690da0bda3660ef4d366be67fd6dcfd0d"
     },
     "1-60": {
+      "accompagnement_pedagogique": "293e18dd31ef073f2c37bb77af4e279cd6943fdd571cc578bd1a06a8f47743ee",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "515c8c4232f1a915d852ed1d5bb53756fef292f52d1a3724dea47567a957a231",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "5e83b10e193e543d31d5033e0ea4d24e12283f497b2f6186a60827caeb74e60c",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1081,8 +1201,10 @@
       "titre": "152c03a07d4735da0dc9adc8084400695b4d3352dfb7b134440ed78972e4d239"
     },
     "1-61": {
+      "accompagnement_pedagogique": "90c42905664496bb1a2160f660628d8a0312c8996046e41274f20e907141140e",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "e9680582e9bae1f50ad0aa47dec9a3a8e804f6eb21f6d906c93a16c35e59e399",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "777efc8062633b873bca9f578b24eaf66aa72beb645114ad217a8679d3c73305",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1099,8 +1221,10 @@
       "titre": "64cb41c36689645ef0fea488ac15f5bec19a72e496b9e59a9deaeb78449de7bf"
     },
     "1-62": {
+      "accompagnement_pedagogique": "a5b22ae97b63dbbc66720b52e29bdbafdf6de8e2f62edb62858a546853d0da3b",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "0ed907b0019613281a874e1c1c9836839079c44bdacff40e2edcad4e049f62ff",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "d4536fd9148d601461c1466b32272bda7062d73ca1868187adfbcf216a7e7315",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1117,8 +1241,10 @@
       "titre": "5cd660560e5c92e98652456bacd8d4a5a9433e51ffda919e0ce5f80b3779949d"
     },
     "1-63": {
+      "accompagnement_pedagogique": "b76c7a22da4cfbbfd7778e30b9f5e3f1ae4fc040d3b74f5a157702af2f061630",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "c55860f137468eae15a18508a7f443d535b0a36f3fd0012779ed84bbaa26bae7",
-      "conseils_animation": "e6a4cf8cc031ca6cc12f4085e34a4a776b9cf01bc171ae22555a9c7f5f7c6992",
+      "conseils_animation": "5607923a0fb867c3ff8254193e4058a985f449ac28f395928b78ef91f9f810bf",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1135,8 +1261,10 @@
       "titre": "efdea8d1c643ada3e16c4e3322b4dda2d36945c031e08fe81b8e2e418371e54d"
     },
     "1-64": {
+      "accompagnement_pedagogique": "af0d4d4d59e95b3694c5a42a36723d036148e53286659a8f7a86fcaccbb7bc0b",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "301890e36dac5caad55fb56dacb614582481f676835745ed4d592d7f0d9ab2d8",
-      "conseils_animation": "e6a4cf8cc031ca6cc12f4085e34a4a776b9cf01bc171ae22555a9c7f5f7c6992",
+      "conseils_animation": "2f75ce0ebddafe06885fe986314faeb91c63be6d7bd81e47614bfc81e4e8b3fd",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1153,8 +1281,10 @@
       "titre": "ad49ba3b5bdffbafeab92996f8dd8b8e61dd20b009677a348ee30751729169d6"
     },
     "2-1": {
+      "accompagnement_pedagogique": "b7a5e3088751936ddba5b5720f6889de42ba0d9d6deb38a788e28111a9d0836b",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "889abf03ad9042677550f069693ce87b3aba53db04813fb54ce579c30969a7ac",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "e3f3e4e8b282a4289361bd0f25298b8c50a225c90508b8596194c95a11fd27e2",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1171,8 +1301,10 @@
       "titre": "d4d2ddd3dc93b7026bf80ac8d6e7e8b5819f1d3fcdfa8533dc9174e331348fa9"
     },
     "2-2": {
+      "accompagnement_pedagogique": "7d7950bdf98a43283d233e125f2abf23906efcb0340ef3a954c1c4462be18efc",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "2baa8e0c206c1b87c9186e88178a3992b259d3889226f0d1d393c12bfe3b9b79",
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "conseils_animation": "98ee061eb5e8e019355769cbb8375a2ed9aca856c8b72c9947e43bfc2a5a405c",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1189,8 +1321,10 @@
       "titre": "c8efba21599c1e77c581f095d6d5f7c3cd57d3b526aa78836cc77590f17aa208"
     },
     "2-3": {
+      "accompagnement_pedagogique": "44cd3454d5e696f3397873aa5b21b91275ba0f4b44d9ea70e9be335834429524",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "b72449468a9c23ccbf0242607975d9d437cc0ea34ac2f9c270f99ca5cae3ea6b",
-      "conseils_animation": "6fb1cd15b2a6e5e8594c04fac69159203776e98c9a7684f001029499b953ea2c",
+      "conseils_animation": "75d98b9c81a089c621587ce9c67913c515398c41d98ffa58734a9a252e13d560",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1207,8 +1341,10 @@
       "titre": "c9ae97abb17cd650f200e6987702d8976db6a3c148139bfcaff31fae254553dd"
     },
     "2-4": {
+      "accompagnement_pedagogique": "808303d24bd7fa2aca81a96d14f6252d252ae13aa163d2ce639c0212dd5885c5",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "895cb540a7d896e69f36dba90a9f54b04396f6713eef7e9dd084a1bf92d9e70b",
-      "conseils_animation": "e6a4cf8cc031ca6cc12f4085e34a4a776b9cf01bc171ae22555a9c7f5f7c6992",
+      "conseils_animation": "a387768932ecf333a4ec2d5b0f29621179e40a069d67b24bf381f1ff6196274f",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1225,8 +1361,10 @@
       "titre": "e31418e9d5e8982272e481d5d668f15a741454794586099e1d5c016db38593b4"
     },
     "2-5": {
+      "accompagnement_pedagogique": "910a97248d0cfde590c5616adfdfe229de1443fafbc3f4b9e07ca3976d997e28",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "121282d935861007a03da63f4e2673003eee04fa6266bdfe726d306286135295",
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "conseils_animation": "341105ef91e59cb8c0c73d187aa8e5fc80d56f36081595842e705669c8c14b8c",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
@@ -1244,8 +1382,10 @@
       "type_fiche": "09505db61347bf91256486144b04ecf48397282eedabab863d8e2842f2333d1d"
     },
     "2-6": {
+      "accompagnement_pedagogique": "5d104493434c0f0052b871d8322a4c8cc60a78b0c8b4b52132ba60a1da1f251c",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "d08f86bb4fd2a5bb35b744c5160b517924045746b19ad15b0f20e7e520552398",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "421f586b36589513d36f8c6fdce895be493598f3b4847f7cf51e4e46da319549",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1262,8 +1402,10 @@
       "titre": "a1a84449ce1c6ac69d1ba646a8c02102be037bdc40541400c00a19bed1230551"
     },
     "2-7": {
+      "accompagnement_pedagogique": "9933ba75e5e588f931a04fb18f7ee3b62857605ccc638cd2361a8542cbb785b9",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "081fd9c0bac79f9034300180e49e92175c3723de5b08d368495d136425d7592a",
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "conseils_animation": "f108753a56f01200569f6615c5ddb694953bd84e5d6b4af5820758ef1bf50fde",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1280,8 +1422,10 @@
       "titre": "b7b7fb0073afcc53857d56f8b85d650a879bd45673e460b27329d54ba1033632"
     },
     "2-8": {
+      "accompagnement_pedagogique": "589ba4b3fb1fdcef190e820868b9432e6098036b35c6211ac3f26f4a45092835",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "04dacce7412f3388395fe41f734af22dd790dafe7cbe20e7f19dcc27598c0700",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "eab422741631a053d4413e23a27ebb90db9fe4f09af6adf85f36371930831ecf",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1299,8 +1443,10 @@
       "titre": "6f878e985f1eaaef5601118b846e4aa2e5cd7b46306b8173f8e257ca575cfab3"
     },
     "2-9": {
+      "accompagnement_pedagogique": "7213d3ff731a2a382839e84df16910f987981585b883d763f22f512d728fdcce",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "9489069c7aed260852769503301e772f1f0d2a37667a0c7959d8c153d6eb9097",
-      "conseils_animation": "e6a4cf8cc031ca6cc12f4085e34a4a776b9cf01bc171ae22555a9c7f5f7c6992",
+      "conseils_animation": "5563538f6152de606b5f07d1ccd5affa511f7c5d315f7e09f0d9220aabc0263e",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1318,8 +1464,10 @@
       "titre": "01ffb6ce8384e4383f9551e8da1009ff3c3b4728bbef964303f287446c7749d8"
     },
     "2-10": {
+      "accompagnement_pedagogique": "5e67ed76323a2972e0641b7434f2e3eab950a0c706e2cd66b6c93af60a7c88db",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "c0141802decd46d159334c81d24550c29a44f9ef0896a2816f5bb28c01149e3d",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "18b72cc5c6591322c190983661d5ec1328f5ed2d4f4f0b8d3e1b0eccea2c163b",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1337,8 +1485,10 @@
       "titre": "66f247e18f21311f6cf251e9039cf0e170cf1caf994bfd650b5cc462fa26461a"
     },
     "2-11": {
+      "accompagnement_pedagogique": "d0bab7732cb3fb801d4fccf509b4982a68ad0b5a99f2416b6809ce49c31fb996",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "47fc110ba89487a00da11e9b357f80c7e8751300245457eb7be01a8fc6a6b1ea",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "6ef63044a2f90af35f51d05e632fb76cb6be0925ce66d6c67198243cfc8ff1c2",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1356,8 +1506,10 @@
       "titre": "098484bccb348b036933c1cf23b44e571039c2bcd1abc1c5df9335001ed48d72"
     },
     "2-12": {
+      "accompagnement_pedagogique": "493f8b6bd6a48171814d898d0833d420eeeaf986ff13f9cf22e2b21543e8dba3",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "10fe152a9a5212ff31f90e7c8ad4382d46e3e6bbe586633dbd2c4b6a11246902",
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "conseils_animation": "b6b98ded3fbffb78a80220d09edde2ee24433c773f55ef1a2541d8e218c0e7ff",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1375,8 +1527,10 @@
       "titre": "1aa2ae9e928a7b9dcc9a85f2081a1f060c79754719d1b6454c980132e32c3c06"
     },
     "2-13": {
+      "accompagnement_pedagogique": "1c13ebc29bbe876a1a225ba84e7518f0db51177f06487d28b063b2aeba48afc3",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "32bcbd52c0cd81222048202a3b4f3809570505219d756f15c111f7476ccfff50",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "e509d7c83b4a2001ccc24a1e7c904156dc7bfb2b092e5d92001f3773c9e02a2f",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
@@ -1394,8 +1548,10 @@
       "titre": "9bd3e6b4f89ef3f759da3118f0384c7db0608e9b2fdb0e5839d076c690e6f304"
     },
     "2-14": {
+      "accompagnement_pedagogique": "5e70fcf19417e7138942d5413239136eae87970e543d8b7cf4418af56a2cb3e3",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "0612d886e57eb11d3dfd2a462663a509ce0e978f02995cd5163eabff024df384",
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "conseils_animation": "371ad1f89a5b56346591a94a20f619b507dd68e9b0029a7a4d799ed098c60f0c",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1413,8 +1569,10 @@
       "titre": "1a3c6eed6a5570dfd3d09c3ce6f98dfc61d2ce52d302d3f27f26e06ff2d618cc"
     },
     "2-15": {
+      "accompagnement_pedagogique": "7e9287ae738c825fabe52ed63fbbf58ecdd8be74bbfe64b1fb4c30ab17c06d42",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "8c095cfc6338e15eb13e7147fb139c7193443f8e7f8f829f375225593537f612",
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "conseils_animation": "8272af1636ffc505b93742cab1e14890d9132263d87eaf21954c71710cb8cf2d",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1432,8 +1590,10 @@
       "titre": "d9b3f996a65f9fe0a6ad5314fea7f1c475584088d3d2da3183d21a7743ffbf9d"
     },
     "2-16": {
+      "accompagnement_pedagogique": "3e27a5b6876d4b06395aef68327e4eebe2508d91155336b3ffb5de823b241bd6",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "92039edf59840f7909edcc33509fcc3fd5bca03f6064003c178c658238ba7a4d",
-      "conseils_animation": "e6a4cf8cc031ca6cc12f4085e34a4a776b9cf01bc171ae22555a9c7f5f7c6992",
+      "conseils_animation": "df2817dabab75b9f997f16347dba420956e418c14a908a4269cd469392489137",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
@@ -1451,8 +1611,10 @@
       "titre": "7dd477926c91ca0f25a73404da5b7f55a1958cf352a7540430df23279f6f212e"
     },
     "2-17": {
+      "accompagnement_pedagogique": "59564c48db6cd5aef43ea2ae2af546e7ee85ff2bfd87b7d9e2e7adad4b5e6e46",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "f0aa7ec116e32c9d25360fd91e5ac97a26955e8f8140c13c851072dd0c66df07",
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "conseils_animation": "14591a709213b5647eb51951a1e86651d6c1eb7b1fcaef227c539ea80c2c5e2b",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
@@ -1470,8 +1632,10 @@
       "titre": "daafea489f16e0db830c542abd7f5cacc1e00e1baa93ddb6791fcdd458524194"
     },
     "2-18": {
+      "accompagnement_pedagogique": "3f6ddf71cb86241789762ded0062097f64bf7edab543507340003d085541851f",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "855054e80dfba1c5816f5a688367fa14fc77baa345ac2e64877d97ce0a42fa5d",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "fd3269aae55522975c79939623b1fcfc361f711da42ffc80c1252c5c2b447b9d",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1489,8 +1653,10 @@
       "titre": "63ac1db5fece2267c65855f2584467e96b96426fc161ed348e9bf45aeee04968"
     },
     "2-19": {
+      "accompagnement_pedagogique": "8494d72498d64cfd20e26a939443cebf53c6567870f9bbd0aeb2118ac70df5aa",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "92039edf59840f7909edcc33509fcc3fd5bca03f6064003c178c658238ba7a4d",
-      "conseils_animation": "e6a4cf8cc031ca6cc12f4085e34a4a776b9cf01bc171ae22555a9c7f5f7c6992",
+      "conseils_animation": "b6d1fd1acbc7fb42c6da5d0e83b9b75af6f89c5f7a1fa6bd83b908b6a9f726f9",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1508,7 +1674,9 @@
       "titre": "b16c834fd15aa789531204fc1445c86438446e16d4acc16075fe3eb2f7454f1d"
     },
     "2-20": {
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "accompagnement_pedagogique": "5218e4f65d371e4b3bc48c1ae6bc3f9f1a07c9f03314878acb62c01ef38276c2",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "d0d7b0ec05e1276975e03e3ac334fd5d1a0b9b5ba8102ad45dd46a9f22859153",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
@@ -1525,8 +1693,10 @@
       "titre": "91ecc549f7865fa01d97b874e447fd14499ebaa05646a685cf640d14eb2040eb"
     },
     "2-21": {
+      "accompagnement_pedagogique": "c684a48dd40be705023d78920f1655f3e0530af6e3c5d5fe7a1dd9cf93397cde",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "1983582cb222f8e3e3831be91fcbc27995ee0f74b916cc37f2685e8b48d6896f",
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "conseils_animation": "2a90e6bdbf60296bdf32ac853bf99371f9f5e32ee551dddb4e42d2b2f9d6516c",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1544,8 +1714,10 @@
       "titre": "79d8c1ca360edbd98d2a08cfa921f85c7fcc81e59cc32871c9c8b0a4f8bf3da9"
     },
     "2-22": {
+      "accompagnement_pedagogique": "011c32663fdf515ca0a8312e1a40b9d0008b0cbb392a81bb030644eacf8ef384",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "ce6d7b13eeddef7ea2bc6489027daefcea93d0a8bad71b548d10ced64891916e",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "f1331952e4bab37da8359c19e35dadf7971420f4e24acfa57cb804a4c14f6bf8",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1563,8 +1735,10 @@
       "titre": "beff1563133b50f24e5daef66fd5f7c2b478cde9a73064f2b35c2eac155f02b2"
     },
     "2-23": {
+      "accompagnement_pedagogique": "98ae307db0360ef5d1341bab3c83d4944434feb3e479d291893bcaf41ebcd412",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "889abf03ad9042677550f069693ce87b3aba53db04813fb54ce579c30969a7ac",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "1305dbd146cf41e7615e1d40c0507c80b76426eeb8d823d6a6480ea697646f46",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1582,7 +1756,9 @@
       "titre": "eff8382cba6aa411ec51310680ebcb887d7bcf12e86de4764042330b38d5faa3"
     },
     "2-24": {
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "accompagnement_pedagogique": "3872a50e913a0b4ea076ee572ef35f56675edec4ea3458a668cae518f29a0e91",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "f8eaba648754d85b98a46c5348c6187b4169b147d509f869545daad202a4b25d",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
@@ -1599,8 +1775,10 @@
       "titre": "2a5b2441778f9241f8b977f8e021c0f1a46de3ba17c43d699ca705acd0dfcc84"
     },
     "2-25": {
+      "accompagnement_pedagogique": "bc2109dd287658ed21a6a0f1bf85486411d31917f040e058e41f49f42a812ff2",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "f0aa7ec116e32c9d25360fd91e5ac97a26955e8f8140c13c851072dd0c66df07",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "1a0668cef0cc5beea166da72840b584f3be2faf7cbd99121428d8198b3ed7b66",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
@@ -1617,8 +1795,10 @@
       "titre": "b94ee32230f0276ae3623daf46ba673fa5963ef5094f8308a8c0186f48d829b3"
     },
     "2-26": {
+      "accompagnement_pedagogique": "1019d58e8668d4560f56cc8a0a7f6bd33be2b568982b37b368c0b6abb6be11a9",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "d2e19598918357829fb953722de0af1662f2eabc90485ed652e5b1c25cee7c29",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "fff561082706ac9a98b946d2d2d0ed5aa444cbeedcf723be5c0f4ffb13977fe3",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
@@ -1635,8 +1815,10 @@
       "titre": "dda741d929ebb7eaa44d0d3f050d43c5f7d55140abb5d605d06389d391d3d8ed"
     },
     "2-27": {
+      "accompagnement_pedagogique": "5066498f996fadb9719df8a63479a5c6e02424c2cbacc104d2f86c652361aea0",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "10fe152a9a5212ff31f90e7c8ad4382d46e3e6bbe586633dbd2c4b6a11246902",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "fd30ba3ba19b22508bb150a9bac275e6fcc06c24d5791eb59236625e1d1a4b43",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1653,8 +1835,10 @@
       "titre": "9a582a29b65d867ebe867510d7df92731f66fc032ba3d975c48930d1a9eb42b3"
     },
     "2-28": {
+      "accompagnement_pedagogique": "7d804b98b7033e4853f63127e2e148e80ccf7a017cee948bd39a367a681c905e",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "cecec0c08933d1fc423e49875d91d42309799f521b9c836ad0933055e767b341",
-      "conseils_animation": "e6a4cf8cc031ca6cc12f4085e34a4a776b9cf01bc171ae22555a9c7f5f7c6992",
+      "conseils_animation": "7863869b5650060be6a8067be2d60ab21e9a1c93e83a070a56fb31614421e829",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1671,8 +1855,10 @@
       "titre": "d517dfbe1e4bdac9c54968aab6425f3477b037a9e159010ea1bf03915316593e"
     },
     "2-29": {
+      "accompagnement_pedagogique": "adb26abbf61ba643a4cda4cfe31112f395047b8fb3b6b2d3a6234ad73e9ab542",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "6d479b8ad91fa476df27c5dd9da399b28e4841c3cf1844e34d49481b6a9778aa",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "fd1cc7b72c27da50f0be535f2b61b20f8ecffbf0f676305222e6bad783dd65d4",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1689,8 +1875,10 @@
       "titre": "2e058303aaee8c327e3c4abe8d9b1b47b32def587c04784036983a758d36a471"
     },
     "2-30": {
+      "accompagnement_pedagogique": "75a422cec14cf8e9b8d8a20e7415b3c5781060f92ebeb13cd56505c5816cb048",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "081fd9c0bac79f9034300180e49e92175c3723de5b08d368495d136425d7592a",
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "conseils_animation": "61d2301ed737d704838f777293ff4cee77dcbf2676645fa91f2500670be1d31c",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1707,8 +1895,10 @@
       "titre": "608087e85e504346006b35c279f8b180c9454eca94a895dd875821c0d462cae2"
     },
     "2-31": {
+      "accompagnement_pedagogique": "ff05cba5228f8f933accf35126a1a3499c44669d834af0a3f364c8cbb205e01d",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "1983582cb222f8e3e3831be91fcbc27995ee0f74b916cc37f2685e8b48d6896f",
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "conseils_animation": "0182fa6ed2296e851d0ac36354f2c4e0b980691f3b24de8dca957a60ab68f5f6",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1725,8 +1915,10 @@
       "titre": "7e83065e2118ff84482ac4a71e4689ad2f9aba870a72dd1a55b9da9463d6639c"
     },
     "2-32": {
+      "accompagnement_pedagogique": "4335b490da0c7657e2f103d58c2dc2fe3833fa438e7a7ba4b87786b592cee3f3",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "5835b24e5f0358da739667967ddc068ab3e365fc80e663e8c1eb2021c441be5e",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "3a591451da9170d696a8d32852aec369e8d2e476b11006c0a8b19bac04eb2598",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1743,8 +1935,10 @@
       "titre": "304c3bd4006e2c4e2c75bea48c643f9b815e8dc3d83faf2966a5519440efb46b"
     },
     "2-33": {
+      "accompagnement_pedagogique": "c467a25f0318edb7c13ab02af546cc7e5efb8635bd3f18ce5cede2c36e10415f",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "b1914a7adda2624d8ea6db8d555382f6a45ad20a03a7f35ac8fb6174ec672426",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "ef628842ed8dfb852708fb52b24807ef7c8454ed6e9f3e10df3e8921b57f9bdc",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1762,8 +1956,10 @@
       "validation_coach": "4e085db0a73f557abe157d5152daf7ebc1048c58f5f2f35c1f611ce681eb07cc"
     },
     "2-34": {
+      "accompagnement_pedagogique": "4788bd3c319f7af988e1a16d57aa88b7c6f0fbce19508aa1e84eb33304757242",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "9032f98fe3b7ba80c43a50bc58d8f2a7645e7984ae615662d9c4d4adb7a4388c",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "63ebd2df5c40d9e993179e63e2d934982c8e89faf895d1af6777765ab74fdf70",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1781,8 +1977,10 @@
       "validation_coach": "87430d1efdf4adb19d0fff4fb5c0d0796a0451c2d2a3ab002f9ae4bf1759f44c"
     },
     "2-35": {
+      "accompagnement_pedagogique": "51d9f44f323df23458570b83878352598b4015d88d8ab542bf602dfd2c8268af",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "5835b24e5f0358da739667967ddc068ab3e365fc80e663e8c1eb2021c441be5e",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "ada14338ba8f7b7a17adb103de30e9d3539806bda510e753189740c9bd70930c",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1800,8 +1998,10 @@
       "validation_coach": "428ad8e9ab60672f65e3cace0d717472df1e5f478d196d76c497e1ef4f04ce7d"
     },
     "2-36": {
+      "accompagnement_pedagogique": "69dac4e81eb86555535ea761a7b7fc35071c5b23b02bf1472a12cba29b4b3b7c",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "651d9e8870a02dab6de0a424d8376ba8ba4d5f42992bdb1f32d8fd2c489728c4",
-      "conseils_animation": "390bc1e9ff2bdce67722cac1941611fbd7045fc25e36c01a1da8d87e0b479b10",
+      "conseils_animation": "e8e501c57c1f6a0da24108ed98da989496423957a79a71024b5421ea8c7643b2",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1820,8 +2020,10 @@
       "validation_coach": "c23c2712b67dc7a2d81f5fe15c341f7f38c35110e4f70631035224319f57d71c"
     },
     "3-1": {
+      "accompagnement_pedagogique": "37e54afa09b726a519614cdd5ad9401a652d2f81a685e2de3a2cd31b228e9c3c",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "d1bf33aca5ac4caad5b964e2092220dbc2ac8d753a2161272b81207382b95974",
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "conseils_animation": "4f72be044cf4152a2bc2c1c4074c9cddb53a231384768e78871f3ff8fe5b38db",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1839,7 +2041,9 @@
       "validation_coach": "fd669eb993b17ed0578b3f4980525baddee39a30b731ad7c051baab9c03b09ac"
     },
     "3-2": {
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "accompagnement_pedagogique": "2d5e2d5a145dfe1274efb984fee986007f6985cbd290a8df40d22ea40da37239",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "422161c2ce77f03f332585069b84e1f9f592b818ce37472d357f5cbbe42b889a",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa",
@@ -1856,8 +2060,10 @@
       "titre": "3fd083bfa3e576b06a0e1c819a332a65d67c84a11a89637a76b10712fa65b9b7"
     },
     "3-3": {
+      "accompagnement_pedagogique": "b49ba90f75fb2d57b879ae2747ff5d6e7a66a96d90aec3fbc5d0afd021460c82",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "07e07b6317b3ce386b71a8d1f96835a292520f285ef50a2665710216fb1bfdc0",
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "conseils_animation": "4beb8f9507d35ba58f9593a20b56cba12c24af1333158b05ac1d414d4955aed4",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1872,11 +2078,13 @@
       "statut": "247f86420c2bffefbb302453e3005a4b5fc39b0177b4e51335cdcae56c3ed6d8",
       "texte_original": "339edbc2c9f9ab2a1665538baefac714d6f77d05380c685c6c10d75cc0e5ff7f",
       "titre": "abf6052ab17b4c1d2198eeee03328b785e6889162638d8fa4e4319dd90ae4e25",
-      "validation_coach": "ad1352f711a61271c566d2d861222c2f96853c3fb21b7c6bfcaf3d421e8890e9"
+      "validation_coach": "574415219d70cbe9640c0b522ccbdd96a1856d98a71b513748be2b17c1e8f780"
     },
     "3-4": {
+      "accompagnement_pedagogique": "b221c02b89524e2f2038e06912da5e0afadda58308bb46ae5df10d825f000a09",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "1bae70890f7eb5b55c54df76df5fc0299ca9a77203896b8f43c971c3de6b1980",
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "conseils_animation": "f9e22577307003f971e94afb1d029f518b2dc4215ebd13a3a192aa55e6d948c6",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1891,11 +2099,13 @@
       "statut": "247f86420c2bffefbb302453e3005a4b5fc39b0177b4e51335cdcae56c3ed6d8",
       "texte_original": "87c904d9be099bdd53dd18d491b88e449c11b39134052e3d3e7120be625cb678",
       "titre": "cf4139ecbb4aaebdc933a3eb1042ae72287b1dccd23ea8daf050157a0e6486e8",
-      "validation_coach": "a8a70e53ec8f83390052292b70ef35d222d7da402c65049a308856ae663a2bde"
+      "validation_coach": "d9345b74b5c4c412918fd0f67070c4c09652427c2bd3a21c00b8fef26a18a09f"
     },
     "3-5": {
+      "accompagnement_pedagogique": "9468ec4603a64754997a9d94715304546abdd3ba6a2de51038eb0b8f57872571",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "01bd81e1789a5dc0b7cba4800c673f1731ac6072f49c8f51463ce63f2e1be8f4",
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "conseils_animation": "2ab78a765a07d2bf1ee2c12e8fc42c77f7acbe1ab475873f7c52a71ff52898bc",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "ceb45bfdace3db0210272c47b185eecd63047f621454ec561e34a0f104435b54",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1913,7 +2123,9 @@
       "validation_coach": "352839da6283d0e2a552156a9fd6e3bddd8873002d1cee2e07c2dfb866ac6c6d"
     },
     "WEB-001": {
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "accompagnement_pedagogique": "951d8b102c3743b2b83fbd4c1dba05c500763bb0e7d91fb2b0cd6e1b21c64389",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "1128c30b3e8e5959b802f5d3f363d0334f3557aa3658e5784a69e8af284a7889",
       "duree_minutes": "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918",
       "effectif_conseille": "44b064fe7558212030b4dae67a58b63220f06445e860208428a5e97160536480",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1932,7 +2144,9 @@
       "variante_college": "444383e348d39d771ab0d28c5ca7545512b8bc3d39469cc7ce5c3047dcca8167"
     },
     "WEB-002": {
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "accompagnement_pedagogique": "d8d5d99fe16491f4671334310d3c56659955409065d3d43d6bd43cef41f5fb78",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "3f9af207c75acaddddb5e7d70142308caa8e5848341afb9fb5c670dc3e8f6511",
       "duree_minutes": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
       "effectif_conseille": "44b064fe7558212030b4dae67a58b63220f06445e860208428a5e97160536480",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1951,7 +2165,9 @@
       "variante_college": "9e2c74b2675c79d6835717fd45a2d1ca8c05139831c9ced23419dc6a828e35f0"
     },
     "WEB-003": {
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "accompagnement_pedagogique": "acc19e943fc0925ffaa0b6365f8538d029e73bf35d7d6c75372bcbe708f8b6bb",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "f28753fc6352c08b1f7d7dcfafbabf45ab671b5bfc97fb9e47591d18481da3b5",
       "duree_minutes": "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918",
       "effectif_conseille": "44b064fe7558212030b4dae67a58b63220f06445e860208428a5e97160536480",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1970,7 +2186,9 @@
       "variante_college": "f8853bc959e24c332e6714e24175ae90ef199032c71dbbc24a0e0fb516024bb7"
     },
     "WEB-004": {
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "accompagnement_pedagogique": "9194f8cfc68d0cdddd0b4932a07ecce69c4a75d0427b618d6e33ecbd4fe30818",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "fbe7d00b24c49a1e859a583c77c8543a25915a5d00137d260349e57fd774305d",
       "duree_minutes": "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918",
       "effectif_conseille": "44b064fe7558212030b4dae67a58b63220f06445e860208428a5e97160536480",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -1989,7 +2207,9 @@
       "variante_college": "469848644754e933ad23a9f20b0a359b42e25196360675b01570e246276c7e16"
     },
     "WEB-005": {
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "accompagnement_pedagogique": "689709185aaa2fd22aa9af614c38ce5ff40636c1759228b16413ae3f0fec8177",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "f93cfcb20f3a65bc10c6cf8604ef6d74936403f1469b61cb66587009294272fc",
       "duree_minutes": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
       "effectif_conseille": "44b064fe7558212030b4dae67a58b63220f06445e860208428a5e97160536480",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -2008,7 +2228,9 @@
       "variante_college": "ac0b9b16449d752fc7ccdf40b2b775ee888ef355bef97a75ea997e52acb11559"
     },
     "WEB-006": {
-      "conseils_animation": "e6a4cf8cc031ca6cc12f4085e34a4a776b9cf01bc171ae22555a9c7f5f7c6992",
+      "accompagnement_pedagogique": "c197f905248859ab6b66954ee67ced8a591003878621fd848f609346ab3223e2",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "59c8da199a95dada6ce9d36c6c22344d38bbcf32420f675f0f6301e165ef8526",
       "duree_minutes": "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918",
       "effectif_conseille": "44b064fe7558212030b4dae67a58b63220f06445e860208428a5e97160536480",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -2027,7 +2249,9 @@
       "variante_college": "c1dc3e9819403346aef3b27a0e875e6854e39e4403c89979f0a237b813dfb6e7"
     },
     "WEB-007": {
-      "conseils_animation": "e6a4cf8cc031ca6cc12f4085e34a4a776b9cf01bc171ae22555a9c7f5f7c6992",
+      "accompagnement_pedagogique": "c327e0df33844c13a0c0c968aa87574fd76f61f36a306150daa9bdad47cd5a2b",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "2e61477082b8728b153190579b108a891cae43c1817361920b0486703230a0bb",
       "duree_minutes": "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918",
       "effectif_conseille": "44b064fe7558212030b4dae67a58b63220f06445e860208428a5e97160536480",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -2046,7 +2270,9 @@
       "variante_college": "a73264da2fb5081f47e0716820594aa7558c0039f9423b43ccfd4d0436d759b5"
     },
     "WEB-008": {
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "accompagnement_pedagogique": "d082b9e7c27d6b6693528c92913625bbfadacad46fb72b18c64d9fcd58973bcb",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "bec2a9cac939c69e2d76aa9f1c6dc27be2f8f36d55aea528640dae5cd03d8478",
       "duree_minutes": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
       "effectif_conseille": "44b064fe7558212030b4dae67a58b63220f06445e860208428a5e97160536480",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -2065,7 +2291,9 @@
       "variante_college": "f01e8272eeae61acdf73543df46ce95264d7f48db3d7ddf13cb8a11f413e49c8"
     },
     "EXT-001": {
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "accompagnement_pedagogique": "0ff76534e56f380d40a490ab2b916fca16b5b1592f4010f3ef0ff3bb21502a2a",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "9554779ff3ec99d777624668def40076f6b68670204fddd8b79b8f8762c5ee34",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "e8a9f7d21a698539ba87c8cc4ca0c3ea33938a0d67e3b89ab350d3c8f48a0cf6",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -2085,7 +2313,9 @@
       "variante_college": "8c54666c2f2470686e5eded362307ececc484c8565bd95171f528c390ec714d5"
     },
     "EXT-002": {
-      "conseils_animation": "30fda4b24b4e07baf50a02fc9698354567a1e06aaad9ab88cf28059cb5810791",
+      "accompagnement_pedagogique": "e3aa9b80c8bacf823265a3801e42986feb87297bf2bd968cf845044239206ee9",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "f93c38926f28f9eeb42a697af865f0674889c92a4418ba5a087b54b503d9296d",
       "duree_minutes": "7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451",
       "effectif_conseille": "e8a9f7d21a698539ba87c8cc4ca0c3ea33938a0d67e3b89ab350d3c8f48a0cf6",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -2105,7 +2335,9 @@
       "variante_college": "8c54666c2f2470686e5eded362307ececc484c8565bd95171f528c390ec714d5"
     },
     "EXT-003": {
-      "conseils_animation": "e6a4cf8cc031ca6cc12f4085e34a4a776b9cf01bc171ae22555a9c7f5f7c6992",
+      "accompagnement_pedagogique": "f2efb088223af5c610deba2920debc9d7df40807ef4a329f8f79fa1cbb21c299",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "c33fa1f7e28b6580558564366e673b44de6fe52b843738c9e1f98c38a1ac635e",
       "duree_minutes": "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918",
       "effectif_conseille": "e8a9f7d21a698539ba87c8cc4ca0c3ea33938a0d67e3b89ab350d3c8f48a0cf6",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -2125,7 +2357,9 @@
       "variante_college": "8c54666c2f2470686e5eded362307ececc484c8565bd95171f528c390ec714d5"
     },
     "EXT-004": {
-      "conseils_animation": "cac7f8efa33325cb9c47fdd0557e767897d6bf61485da76ea488b29d31ef197e",
+      "accompagnement_pedagogique": "9f85f96f9ddf6a607c7fa922d429c684d0f63104b90f92f96090bad9f5a4881f",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "cba403b63413cde32bc8340d8f8aceb379ca4654e9b4394c31365337161099ab",
       "duree_minutes": "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918",
       "effectif_conseille": "e8a9f7d21a698539ba87c8cc4ca0c3ea33938a0d67e3b89ab350d3c8f48a0cf6",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -2145,7 +2379,9 @@
       "variante_college": "8c54666c2f2470686e5eded362307ececc484c8565bd95171f528c390ec714d5"
     },
     "EXT-005": {
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "accompagnement_pedagogique": "8b401dc37019fb2f8e73c9b1e31b519655113374e82ec6f1d9aac5292a563ff9",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "dc11d6325cf7542d0a5a489f4544fece9c902249b6f93cd6f6f372016429f5c8",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "e8a9f7d21a698539ba87c8cc4ca0c3ea33938a0d67e3b89ab350d3c8f48a0cf6",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -2165,7 +2401,9 @@
       "variante_college": "8c54666c2f2470686e5eded362307ececc484c8565bd95171f528c390ec714d5"
     },
     "EXT-006": {
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "accompagnement_pedagogique": "213d2ceaf3c769fc9ea75a4cb17f5e0c15cff1a15f0d6a125f0aa1cd2ffc33a1",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "1de73405432cd8bac66a2aff076192953bb7f8d099b511aecf5777abd70579a4",
       "duree_minutes": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
       "effectif_conseille": "e8a9f7d21a698539ba87c8cc4ca0c3ea33938a0d67e3b89ab350d3c8f48a0cf6",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -2185,7 +2423,9 @@
       "variante_college": "8c54666c2f2470686e5eded362307ececc484c8565bd95171f528c390ec714d5"
     },
     "EXT-007": {
-      "conseils_animation": "0d5a89bf6a120c832ce0079a3d06fb4d04fcd9c71440317f43745eed369ecabf",
+      "accompagnement_pedagogique": "8ae01d8dad118e5a78d3b96d18f689bcee9584735c204a7493ccb70b9d7a3b84",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "e3e57d90f826e73b45365fb0ad1dbb0a330b65d5610b00f36a818449510e5114",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "e8a9f7d21a698539ba87c8cc4ca0c3ea33938a0d67e3b89ab350d3c8f48a0cf6",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -2205,7 +2445,9 @@
       "variante_college": "8c54666c2f2470686e5eded362307ececc484c8565bd95171f528c390ec714d5"
     },
     "EXT-008": {
-      "conseils_animation": "d876d1eab2c1395f516a68ef8321c2ab8ec28b7abfd2cc979f9b4b345a51dc45",
+      "accompagnement_pedagogique": "a2174a632a78d4a0f86e1c157541dba0cdefcb223ae991ea8300dd879331f50b",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "1bbbf4923f0018109bf0c143c74ab03c7c03ce38c49a41df33d04213e9a23284",
       "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
       "effectif_conseille": "e8a9f7d21a698539ba87c8cc4ca0c3ea33938a0d67e3b89ab350d3c8f48a0cf6",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
@@ -2225,7 +2467,9 @@
       "variante_college": "8c54666c2f2470686e5eded362307ececc484c8565bd95171f528c390ec714d5"
     },
     "EXT-009": {
-      "conseils_animation": "e6a4cf8cc031ca6cc12f4085e34a4a776b9cf01bc171ae22555a9c7f5f7c6992",
+      "accompagnement_pedagogique": "0897ea534a767d522d779f6a34103f2b53c65c772353f2190cb870742b5a1370",
+      "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
+      "conseils_animation": "4892381d6eff53947a4264d91b247a94bd1ca36ab407d5f83ab11143ab7ef41a",
       "duree_minutes": "4a44dc15364204a80fe80e9039455cc1608281820fe2b24f1e5233ade6af1dd5",
       "effectif_conseille": "e8a9f7d21a698539ba87c8cc4ca0c3ea33938a0d67e3b89ab350d3c8f48a0cf6",
       "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
