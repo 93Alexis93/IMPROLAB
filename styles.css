@@ -267,3 +267,33 @@ section { scroll-margin-top: 82px; }
   .card, .advice-panel, .advice-card { color: #111 !important; background: #fff !important; border: 1px solid #bbb !important; box-shadow: none !important; break-inside: avoid; }
   section[hidden] { display: none !important; }
 }
+
+
+/* IMPRO LAB — accueil éditorial et navigation principale */
+body>header{background:var(--paper,#f7f1e7);color:var(--ink,#25231f);border-bottom:1px solid #d8cfc1}
+body>header h1{font-family:Georgia,"Times New Roman",serif;letter-spacing:-.04em}
+body>header .home-motto,body>header .impro-quote-deck{display:none}
+nav[aria-label="Navigation principale"]{display:flex;flex-wrap:wrap;align-items:center;gap:.45rem;position:sticky;top:0;z-index:30;background:var(--paper,#f7f1e7);padding:.7rem;border-bottom:1px solid #d8cfc1}
+nav[aria-label="Navigation principale"]>button{min-height:44px;border:1px solid #d2c7b8;background:transparent;color:var(--ink,#25231f);border-radius:4px;box-shadow:none}
+nav[aria-label="Navigation principale"]>button[aria-current="page"]{background:var(--curtain,#9b303b);color:white;border-color:var(--curtain,#9b303b)}
+.more-navigation{position:relative;margin-left:auto}
+.more-navigation>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;padding:0 .85rem;border:1px solid #d2c7b8;border-radius:4px}
+.more-navigation-menu{position:absolute;right:0;top:calc(100% + .35rem);z-index:50;min-width:210px;padding:.4rem;background:var(--paper,#f7f1e7);border:1px solid #d2c7b8;box-shadow:0 8px 24px #25231f20;display:grid;gap:.25rem}
+.more-navigation-menu button{min-height:44px;text-align:left;background:transparent;color:var(--ink,#25231f);border:0;box-shadow:none}
+#home{max-width:1080px;margin:0 auto;padding:clamp(1rem,4vw,3rem) clamp(.8rem,2vw,1.5rem)}
+.home-intro{max-width:760px;padding:0 0 1.6rem;border-bottom:1px solid #d8cfc1}
+.home-intro .eyebrow,.home-step{font-size:.76rem;letter-spacing:.12em;font-weight:800;color:var(--curtain,#9b303b)}
+.home-intro h2{font:700 clamp(2rem,5vw,3.7rem)/1.06 Georgia,"Times New Roman",serif;letter-spacing:-.035em;max-width:720px;margin:.55rem 0 1rem}
+.home-intro p:last-child{font-size:1.08rem;max-width:600px;line-height:1.6}
+.home-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1rem,3vw,2.2rem);padding-top:1.5rem}
+.home-action{padding:1.3rem 0;border-bottom:2px solid var(--curtain,#9b303b)}
+.home-action h3,.home-resume h3{font:700 clamp(1.45rem,3vw,2rem)/1.15 Georgia,"Times New Roman",serif;margin:.7rem 0}
+.home-action p{line-height:1.55;max-width:34rem}
+.home-action>button,.home-resume button,.home-result-actions button{min-height:48px;padding:.7rem 1rem;border-radius:4px;background:var(--curtain,#9b303b);color:white;border:1px solid var(--curtain,#9b303b);box-shadow:none}
+#homeQuickResult{margin-top:1rem;padding-top:.6rem;border-top:1px solid #d8cfc1}
+#homeQuickResult h4{font:700 1.45rem Georgia,"Times New Roman",serif;margin:.4rem 0}
+.home-result-category{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--curtain,#9b303b)}
+.home-result-actions{display:flex;flex-wrap:wrap;gap:.5rem}
+.home-result-actions button+button{background:transparent;color:var(--ink,#25231f)}
+.home-resume{margin-top:2rem;padding:1rem 0;border-top:1px solid #d8cfc1}
+@media(max-width:600px){nav[aria-label="Navigation principale"]{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.35rem}nav[aria-label="Navigation principale"]>button{width:100%;padding:.55rem .35rem}.more-navigation{grid-column:1/-1;margin:0}.more-navigation>summary{justify-content:center}.more-navigation-menu{left:0;right:0}.home-actions{grid-template-columns:1fr;gap:.6rem}.home-action{padding:1rem 0}}
