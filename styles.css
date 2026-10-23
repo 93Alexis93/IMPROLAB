@@ -323,3 +323,6 @@ nav[aria-label="Navigation principale"]>button[aria-current="page"]{background:v
 .exercise-schema figcaption span{display:block;font-size:.8rem;opacity:.78;margin-top:.3rem}
 @media(max-width:420px){.exercise-schema{grid-template-columns:105px minmax(0,1fr);gap:.7rem}.exercise-schema figcaption{font-size:.82rem}}
 @media print{.exercise-schema{break-inside:avoid;border-color:#777}.exercise-schema svg{max-width:140px;color:#222}.exercise-schema figcaption span{opacity:1}}
+
+/* Les règles globales des labels ne doivent jamais annuler l’attribut hidden. */
+label[hidden], .guided-prep [hidden]{display:none!important}
