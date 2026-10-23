@@ -132,13 +132,14 @@ test('tirage rapide depuis l’accueil : exercice validé et accès à sa fiche'
   await expect(result.locator('h4')).toBeVisible();
   await expect(result.locator('p').first()).toBeVisible();
   const title=await result.locator('h4').innerText();
-  const eligible=await page.evaluate(name=>{
-    const game=data.find(g=>g[0]===name);
-    return !!game&&isEligibleGame(game,{includeExternal:false,includeIncomplete:false});
+  const rawTitle=await page.evaluate(name=>{
+    const game=data.find(g=>displayTitle(g[0])===name);
+    if(!game||!isEligibleGame(game,{includeExternal:false,includeIncomplete:false}))return null;
+    return game[0];
   },title);
-  expect(eligible).toBe(true);
+  expect(rawTitle).not.toBeNull();
   await result.getByRole('button',{name:'Voir la fiche'}).click();
   await expect(page.locator('#jeux')).toBeVisible();
-  await expect(page.locator('#search')).toHaveValue(title);
+  await expect(page.locator('#search')).toHaveValue(rawTitle);
   await expect(page.locator('#games')).toContainText(title);
 });
