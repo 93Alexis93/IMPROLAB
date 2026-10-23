@@ -57,3 +57,96 @@ test('principes et conseils accessibles en deux entrées',async({page})=>{
   await expect(page.locator('#adviceBeginnerContent .advice-card-content details')).toHaveCount(20);
 });
 test('principes classés par niveau avec principe et exemple repliables',async({page})=>{await page.evaluate(()=>{tab('principes');openPrincipesView('principesContent')});const root=page.locator('#principesContent');await expect(root.locator('.principle-level')).toHaveCount(4);await expect(root.locator('.principle-level:not(.principle-extra) .principle-item')).toHaveCount(17);await expect(root.locator('.principle-example')).toHaveCount(17);await expect(root.locator('.principle-example').first()).not.toHaveAttribute('open','');await root.locator('.principle-level').first().locator(':scope > summary').click();await expect(root.locator('.principle-level').first()).toHaveAttribute('open','');await root.locator('.principle-item').first().locator('> summary').click();await expect(root.locator('.principle-item').first()).toHaveAttribute('open','');await root.locator('.principle-example').first().locator('> summary').click();await expect(root.locator('.principle-example').first()).toHaveAttribute('open','');await expect(root).toContainText('Depuis trente ans qu’on se connaît, j’ai toujours eu du mal avec ton prénom !');await expect(root).toContainText('Montre, ne raconte pas');await expect(root).toContainText('Respecte la logique de ton univers');await expect(root).toContainText('Laisse les conséquences transformer le monde');const colors=await root.locator('.principle-item > summary b').evaluateAll(nodes=>[...new Set(nodes.map(n=>getComputedStyle(n).color))]);expect(colors).toHaveLength(3)});
+
+test('ambiances guidées : application cohérente et réinitialisation',async({page})=>{
+  await page.locator('[data-ambiance="stage"]').check();
+  await page.locator('[data-ambiance="listen"]').check();
+  await page.getByRole('button',{name:'Appliquer les ambiances'}).click();
+  const values=await page.evaluate(()=>Object.fromEntries(IMPRO_CATEGORIES.map((c,i)=>[c,Number(document.getElementById('dynamic'+i).value)])));
+  expect(values['Scène']).toBe(80);
+  expect(values['Écoute']).toBe(80);
+  expect(values['Cohésion']).toBe(80);
+  expect(values['Énergie']).toBe(20);
+  expect(values['Corps']).toBe(20);
+  expect(await page.locator('#randomDynamic0').inputValue()).toBe(await page.locator('#dynamic0').inputValue());
+  await page.locator('[data-ambiance="stage"]').uncheck();
+  await page.locator('[data-ambiance="listen"]').uncheck();
+  await page.getByRole('button',{name:'Appliquer les ambiances'}).click();
+  const restored=await page.evaluate(()=>Object.fromEntries(IMPRO_CATEGORIES.map((c,i)=>[c,Number(document.getElementById('dynamic'+i).value)])));
+  expect(restored).toEqual(Object.fromEntries(IMPRO_CATEGORIES.map(c=>[c,DEFAULT_DYNAMICS[c]*20])));
+  await page.evaluate(()=>tab('random'));
+  await page.locator('#random').getByRole('button',{name:/Réinitialiser/}).click();
+  await expect(page.locator('[data-ambiance="stage"]')).not.toBeChecked();
+  await expect(page.locator('[data-ambiance="listen"]')).not.toBeChecked();
+  await expect(page.locator('#ambianceStatus')).toContainText('restaurées');
+});
+
+test('schémas indicatifs accessibles dans la bibliothèque',async({page})=>{
+  await page.evaluate(()=>tab('jeux'));
+  await expect.poll(()=>page.locator('#jeux .exercise-schema svg').count()).toBeGreaterThan(0);
+  const schema=page.locator('#jeux .exercise-schema svg').first();
+  await expect(schema).toHaveAttribute('role','img');
+  await expect(schema).toHaveAttribute('aria-label',/^Schéma :/);
+  await expect(page.locator('#jeux .exercise-schema figcaption').first()).toContainText('Schéma indicatif');
+});
+
+test('mise en page responsive : 360, 390, 768 et 1280 px',async({page})=>{
+  for(const width of [360,390,768,1280]){
+    await page.setViewportSize({width,height:900});
+    await reloadApp(page);
+    const metrics=await page.evaluate(()=>({
+      viewport:innerWidth,
+      document:document.documentElement.scrollWidth,
+      body:document.body.scrollWidth
+    }));
+    expect(metrics.document, `Débordement horizontal à ${width}px`).toBeLessThanOrEqual(width+3);
+    expect(metrics.body, `Débordement du body à ${width}px`).toBeLessThanOrEqual(width+3);
+  }
+});
+
+test('impression A4 : séance et schéma restent visibles',async({page})=>{
+  await page.evaluate(()=>{tab('seance');generate()});
+  await page.emulateMedia({media:'print'});
+  await expect(page.locator('#seance')).toBeVisible();
+  await expect(page.locator('#plan .card').first()).toBeVisible();
+  const printStyles=await page.locator('#plan .card').first().evaluate(el=>({
+    pageRule:[...document.styleSheets].some(sheet=>{try{return [...sheet.cssRules].some(rule=>rule.type===CSSRule.PAGE_RULE&&/A4/.test(rule.cssText))}catch{return false}}),
+    display:getComputedStyle(el).display,
+    color:getComputedStyle(el).color
+  }));
+  expect(printStyles.pageRule).toBe(true);
+  expect(printStyles.display).not.toBe('none');
+  await page.evaluate(()=>tab('jeux'));
+  await expect.poll(()=>page.locator('#jeux .exercise-schema svg').count()).toBeGreaterThan(0);
+  await expect(page.locator('#jeux .exercise-schema').first()).toBeVisible();
+});
+test('navigation principale : aucune erreur JavaScript de page',async({page})=>{
+  const pageErrors=[];
+  page.on('pageerror',error=>pageErrors.push(error.message));
+  for(const section of ['home','seance','jeux','live','random','groupes','cahier','principes','historique']){
+    await page.evaluate(id=>tab(id),section);
+    await expect(page.locator('#'+section)).toBeVisible();
+  }
+  expect(pageErrors).toEqual([]);
+});
+
+test('tirage rapide depuis l’accueil : exercice validé et accès à sa fiche',async({page})=>{
+  await page.evaluate(()=>tab('home'));
+  await page.getByRole('button',{name:/Tirer un exercice/}).last().click();
+  const result=page.locator('#homeQuickResult');
+  await expect(result.locator('h4')).toBeVisible();
+  await expect(result.locator('p').first()).toBeVisible();
+  const title=await result.locator('h4').innerText();
+  const rawTitle=await page.evaluate(name=>{
+    const game=data.find(g=>displayTitle(g[0])===name);
+    if(!game||!isEligibleGame(game,{includeExternal:false,includeIncomplete:false}))return null;
+    return game[0];
+  },title);
+  expect(rawTitle).not.toBeNull();
+  await result.getByRole('button',{name:'Voir la fiche'}).click();
+  await expect(page.locator('#jeux')).toBeVisible();
+  await expect(page.locator('#search')).toHaveValue(rawTitle);
+  await expect(page.locator('#games')).toContainText(title);
+});
+
+test('séance : ouverture énergisante et dernière fiche de catégorie principale Scène',async({page})=>{await page.evaluate(()=>generate());const result=await page.evaluate(()=>{const cards=[...document.querySelectorAll('#plan>.card[data-stage-index]')];const title=card=>card.querySelector('h3')?.textContent;const first=data.find(g=>displayTitle(g[0])===title(cards[0]));const last=data.find(g=>displayTitle(g[0])===title(cards.at(-1)));return {count:cards.length,first:first&&{primary:first[1],secondary:first[11]||[]},last:last&&{primary:last[1],secondary:last[11]||[]}}});expect(result.count).toBe(5);expect(['Énergie','Lâcher-prise','Amusement'].some(c=>result.first?.primary===c||result.first?.secondary.includes(c))).toBe(true);expect(result.last?.primary).toBe('Scène')});
