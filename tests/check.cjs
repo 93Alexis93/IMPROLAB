@@ -42,6 +42,17 @@ assert.equal(durationOptions.at(-1), 120, 'La durée maximale doit être de 120 
 assert.ok(durationOptions.every((duration, index) => index === 0 || duration - durationOptions[index - 1] === 5), 'Les durées doivent progresser par pas de 5 minutes');
 assert.match(durationMarkup, /value="55" selected/, 'La durée par défaut doit être de 55 minutes');
 assert.ok(script.includes('function buildTimelineMinutes(duration)'), 'Répartition dynamique des durées absente');
+const timelineSource = script.match(/function buildTimelineMinutes\\(duration\\)\\{[\\s\\S]*?\\n\\}/);
+assert.ok(timelineSource, 'La fonction de répartition des durées doit pouvoir être isolée pour les tests');
+const buildTimelineMinutes = new Function(timelineSource[0] + '; return buildTimelineMinutes;')();
+for (let duration = 35; duration <= 120; duration += 5) {
+  const parts = buildTimelineMinutes(duration);
+  assert.equal(parts.length, 5, `Séance de ${duration} min : cinq étapes attendues`);
+  assert.ok(parts.every(minutes => Number.isInteger(minutes) && minutes >= 5 && minutes % 5 === 0), `Séance de ${duration} min : chaque étape doit être un multiple de 5 positif`);
+  assert.equal(parts.reduce((sum, minutes) => sum + minutes, 0), duration, `Séance de ${duration} min : le total doit rester exact`);
+  assert.ok(parts[4] >= 15, `Séance de ${duration} min : la scène finale doit durer au moins 15 minutes`);
+}
+
 assert.ok(/function buildPrincipalObjective\(games(?:,parts=\[\])?\)/.test(script), 'Objectif pédagogique principal absent');
 assert.ok(script.includes('function coachDetailsHtml(') && script.includes('class="coach-quick"') && script.includes('🎓 Consigne') && script.includes('📖 Explication complète du jeu'),'Fiche d’accompagnement pédagogique absente des exercices de séance');
 assert.ok(/buildPrincipalObjective\(selectedGames(?:,parts)?\)/.test(script), 'Objectif calculé à partir des exercices sélectionnés absent');
