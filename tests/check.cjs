@@ -58,6 +58,7 @@ for (const [id, schema] of Object.entries(schemaData.fiches)) {
 }
 assert.ok(fs.readFileSync('sw.js','utf8').includes('schemas.json'), 'Service worker : schémas absents du cache');
 assert.ok(html.includes('id="guidedDuration"') && html.includes('data-ambiance="energy"'), 'Préparation guidée absente');
+assert.ok(fs.readFileSync('styles.css','utf8').includes('label[hidden]'), 'Les labels masqués doivent rester masqués malgré les styles globaux');
 assert.ok(script.includes('function applyAmbiances()'), 'Application des ambiances absente');
 assert.ok(script.includes('data.filter(g=>isEligibleGame(g,{includeExternal:false,includeIncomplete:false}))'), 'Le tirage rapide doit réutiliser les règles canoniques d’éligibilité');
 
