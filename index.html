@@ -180,17 +180,17 @@ function buildPrincipalObjective(games,parts=[]){
   :'Le jeu retenu sert de point de départ : ajoute d’autres exercices pour construire une progression jusqu’à une scène finale.';
  return '<div class="card session-objective"><strong>Fil conducteur : '+escapeText(category)+'</strong><p>Aujourd’hui, l’objectif est de '+escapeText(goals[category]||goals['Scène'])+'.</p><p>'+progression+'</p><p>'+finale+'</p></div>';
 }
-function isEligibleGame(g,{includeExternal=true}={}){return !!(g&&g[6]&&g[5]&&g[2]&&g[2].trim().length>20&&!['notes originales','proposition à valider','à confirmer'].includes((g[12]||'').toLowerCase())&&(includeExternal||g[8]==='notes_personnelles'))}
+function isEligibleGame(g,{includeExternal=true,includeIncomplete=false}={}){return !!(g&&g[6]&&g[5]&&g[2]&&g[2].trim().length>20&&!['notes originales','proposition à valider','à confirmer'].includes((g[12]||'').toLowerCase())&&(includeIncomplete||g[9]!=='incomplète')&&(includeExternal||g[8]==='notes_personnelles'))}
 function generate(){
  const duration=+document.getElementById('duration').value;
  const adult=document.getElementById('public').selectedIndex===1;
  const dynamics=getDynamics();
  const mins=buildTimelineMinutes(duration);
  const parts=SOFT_TIMELINE.map((stage,i)=>[timelineCategory(stage,dynamics),mins[i],stage]);
- const allowed=data.filter(g=>isEligibleGame(g,{includeExternal:true}));
+ const allowed=data.filter(g=>isEligibleGame(g,{includeExternal:true,includeIncomplete:true}));
  if(allowed.length<5){alert('Pas assez d’exercices disponibles. Vérifie le statut de la bibliothèque dans l’onglet Jeux.');return}
  const includeExternal=document.getElementById('includeExternal').checked;
- const candidates=allowed.filter(g=>isEligibleGame(g,{includeExternal}));
+ const candidates=allowed.filter(g=>isEligibleGame(g,{includeExternal,includeIncomplete:true}));
  if(candidates.length<5){alert('Pas assez de jeux disponibles pour créer une séance.');return}
  let history=[];try{history=JSON.parse(localStorage.getItem('impro-recent-games')||'[]');if(!Array.isArray(history))history=[]}catch{}
  let counts={};try{counts=JSON.parse(localStorage.getItem('impro-game-usage-v1')||'{}')||{}}catch{}
@@ -204,11 +204,11 @@ function generate(){
  let html='';
  for(let i=0;i<parts.length;i++){
   const [category,minutes,stage]=parts[i];
-  let unused=candidates.filter(g=>!selected.includes(g[0])&&g[9]!=='incomplète'&&!protectedIds.includes(g[0])&&!history.slice(0,25).includes(g[0]));
+  let unused=candidates.filter(g=>isEligibleGame(g,{includeExternal,includeIncomplete:false})&&!selected.includes(g[0])&&!protectedIds.includes(g[0])&&!history.slice(0,25).includes(g[0]));
   // Si les règles anti-répétition épuisent les possibilités, on relâche d'abord l'historique long,
   // puis les trois dernières séances, sans jamais autoriser un doublon dans la séance actuelle.
-  if(!unused.length)unused=candidates.filter(g=>!selected.includes(g[0])&&g[9]!=='incomplète'&&!protectedIds.includes(g[0]));
-  if(!unused.length)unused=candidates.filter(g=>!selected.includes(g[0])&&g[9]!=='incomplète');
+  if(!unused.length)unused=candidates.filter(g=>isEligibleGame(g,{includeExternal,includeIncomplete:false})&&!selected.includes(g[0])&&!protectedIds.includes(g[0]));
+  if(!unused.length)unused=candidates.filter(g=>isEligibleGame(g,{includeExternal,includeIncomplete:false})&&!selected.includes(g[0]));
   if(!unused.length)break;
   const g=chooseTimelineGame(unused,stage,dynamics,counts,history.concat(protectedIds),sameRun);
   selected.push(g[0]);
