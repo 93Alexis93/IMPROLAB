@@ -65,8 +65,11 @@ const schemaData = JSON.parse(fs.readFileSync('schemas.json', 'utf8'));
 assert.equal(Object.keys(schemaData.fiches || {}).length, 13, 'Le premier lot doit contenir 13 schémas');
 for (const [id, schema] of Object.entries(schemaData.fiches)) {
   assert.ok(lib.exercices.some(exercice => exercice.id === id), `Schéma sans fiche correspondante : ${id}`);
-  assert.ok(schema && typeof schema.type === 'string' && typeof schema.caption === 'string', `Schéma mal formé : ${id}`);
+  assert.ok(schema && typeof schema.type === 'string' && typeof schema.caption === 'string' && schema.caption.trim().length > 0, `Schéma mal formé : ${id}`);
 }
+assert.ok(schemaData.fiches['1-12'].caption.includes('quatre') && schemaData.fiches['1-12'].caption.includes('huit'), 'Le schéma 1-12 doit rappeler le doublement des frappes');
+assert.ok(schemaData.fiches['1-42'].caption.includes('libéré'), 'Le schéma 1-42 doit rappeler la délivrance');
+assert.ok(schemaData.fiches['1-49'].caption.includes('pile') && schemaData.fiches['1-49'].caption.includes('avance'), 'Le schéma 1-49 doit rappeler le signal et l’avancée de l’équipe');
 assert.ok(fs.readFileSync('sw.js','utf8').includes('schemas.json'), 'Service worker : schémas absents du cache');
 assert.ok(html.includes('id="guidedDuration"') && html.includes('data-ambiance="energy"'), 'Préparation guidée absente');
 assert.ok(fs.readFileSync('styles.css','utf8').includes('label[hidden]'), 'Les labels masqués doivent rester masqués malgré les styles globaux');
@@ -140,6 +143,7 @@ assert.ok(html.includes('Object.prototype.hasOwnProperty.call(DRAW_DEFAULTS,cate
 
 const sw = fs.readFileSync(path.join(__dirname, '..', 'sw.js'), 'utf8');
 assert.match(sw, /const CACHE='impro-lab-offline-v36-refonte-ux-ui'/, 'Version du cache hors ligne inattendue');
+assert.ok(html.includes("serviceWorker.register('./sw.js?v=20261024-v36-refonte-ux-ui'"), 'L’URL du service worker doit être versionnée avec la refonte');
 for (const asset of ['./index.html','./styles.css','./schemas.json','./library.json']) {
   assert.ok(sw.includes("'"+asset+"'"), 'Ressource essentielle absente du cache hors ligne : '+asset);
 }
