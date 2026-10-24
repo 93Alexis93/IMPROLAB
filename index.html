@@ -61,7 +61,7 @@ async function renderPrinciples(){const root=document.getElementById('principesC
 const IMPRO_CATEGORIES=["Énergie","Écoute","Corps","Construction","Scène","Émotions","Amusement","Lâcher-prise","Cohésion","Imaginaire"];
 const DEFAULT_DYNAMICS={"Énergie":3,"Écoute":3,"Corps":3,"Construction":3,"Scène":4,"Émotions":2,"Amusement":4,"Lâcher-prise":3,"Cohésion":4,"Imaginaire":3};
 function getDynamics(){const values={};for(let i=0;i<IMPRO_CATEGORIES.length;i++)values[IMPRO_CATEGORIES[i]]=Number(document.getElementById('dynamic'+i).value);return values}
-function gameAffinity(g,category){return g[1]===category?3:(g[11]||[]).includes(category)?1.5:0}
+function gameAffinity(g,category){return g[1]===category?3:(g[11]||[]).includes(category)?1:0}
 function chooseDynamicGame(pool,slot,weights,counts,history){const recent=history.slice(0,15);const scored=pool.map(g=>{let score=0;for(const c of IMPRO_CATEGORIES)score+=weights[c]*gameAffinity(g,c);score+=gameAffinity(g,slot)*8;score-=(counts[g[0]]||0)*3;if(recent.includes(g[0]))score-=12;return {g,score}});const top=Math.max(...scored.map(x=>x.score));const shortlist=scored.filter(x=>x.score>=top-2);return shortlist[Math.floor(Math.random()*shortlist.length)].g}
 function chooseTimelineGame(pool,stage,weights,counts,history){
  const recent=history.slice(0,15);
@@ -145,7 +145,9 @@ function generate(){
  let html='';
  for(let i=0;i<parts.length;i++){
   const [category,minutes,stage]=parts[i];
-  const unused=candidates.filter(g=>!selected.includes(g[0])&&g[9]!=='incomplète');
+  // Le premier exercice doit avoir une catégorie principale adaptée à la mise en route.
+  const stageEligible=g=>i!==0||['Énergie','Lâcher-prise','Amusement'].includes(g[1]);
+  const unused=candidates.filter(g=>stageEligible(g)&&!selected.includes(g[0])&&g[9]!=='incomplète');
   if(!unused.length)break;
   // Préférence souple : les priorités personnelles dominent, l'étape favorise les jeux adaptés.
   const g=chooseTimelineGame(unused,stage,dynamics,counts,history);
