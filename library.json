@@ -3483,6 +3483,64 @@
         "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
         "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
       }
+    },
+    {
+      "id": "3-6",
+      "titre": "Le silence complice",
+      "section": "Saison 3",
+      "numero_source": null,
+      "texte_original": "",
+      "regle_clarifiee": "Deux joueurs entrent dans un lieu imaginaire et construisent une relation sans parler pendant les 30 premières secondes. Ils utilisent uniquement les regards, les gestes, les déplacements et les actions. Ensuite, ils peuvent parler, mais leurs répliques doivent s’appuyer sur ce qui a déjà été établi par le jeu non verbal.",
+      "statut": "création originale IMPRO LAB — à tester",
+      "eligible_generateur": true,
+      "duree_minutes": 8,
+      "origine": "creation_improlab",
+      "objectif_pedagogique": "Corps",
+      "niveau": "intermédiaire",
+      "effectif_conseille": "2 joueurs",
+      "qualite_fiche": "création originale structurée au format IMPRO LAB",
+      "conseils_animation": {
+        "consigne_courte": "À deux, entrez dans un lieu imaginaire. Pendant 30 secondes, ne parlez pas : faites comprendre le lieu et votre relation par les regards, les gestes et les actions. Ensuite, vous pouvez parler en vous appuyant sur ce qui a déjà été joué.",
+        "variante_facile": "Commencez par 15 secondes sans parole. Choisissez une action simple dans un lieu familier et veillez à ce que chaque joueur réagisse aux gestes de l’autre.",
+        "variante_difficile": "Une découverte bouleverse la relation. Faites-la comprendre d’abord par le jeu non verbal, sans nommer directement ce qui vient de changer.",
+        "points_vigilance": "Ne pas chercher à remplir chaque silence. Veiller à la lisibilité des actions et au respect de l’espace de chacun.",
+        "statut": "Création originale IMPRO LAB ; fiche à tester en atelier.",
+        "auteur_variantes": "IMPRO LAB"
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Construction",
+        "Scène"
+      ]
+    },
+    {
+      "id": "3-7",
+      "titre": "Le banc des solutions",
+      "section": "Saison 3",
+      "numero_source": null,
+      "texte_original": "",
+      "regle_clarifiee": "Deux joueurs commencent une improvisation pendant que les autres observent. À tour de rôle, un observateur peut entrer dans la scène pour apporter un personnage secondaire, un objet imaginaire ou une conséquence logique qui aide l’histoire à avancer. Chaque intervention doit soutenir la scène déjà en cours, sans effacer les propositions installées ni prendre inutilement la direction de l’histoire.",
+      "statut": "création originale IMPRO LAB — à tester",
+      "eligible_generateur": true,
+      "duree_minutes": 12,
+      "origine": "creation_improlab",
+      "objectif_pedagogique": "Cohésion",
+      "niveau": "intermédiaire",
+      "effectif_conseille": "4–8 joueurs",
+      "qualite_fiche": "création originale structurée au format IMPRO LAB",
+      "conseils_animation": {
+        "consigne_courte": "Deux joueurs improvisent. Les autres observent puis peuvent entrer à tour de rôle pour apporter un personnage, un objet ou une conséquence qui aide la scène à avancer. Soutenez l’histoire déjà commencée au lieu de la remplacer.",
+        "variante_facile": "Autorisez une seule entrée par observateur. Avant d’entrer, chacun identifie un élément déjà présent dans la scène et s’appuie dessus.",
+        "variante_difficile": "Chaque intervention doit à la fois renforcer un élément existant et ouvrir une nouvelle possibilité de jeu, sans détourner l’attention de l’enjeu principal.",
+        "points_vigilance": "Éviter les entrées qui annulent ce qui a été établi, les interventions trop longues et la volonté de prendre le contrôle de la scène.",
+        "statut": "Création originale IMPRO LAB ; fiche à tester en atelier.",
+        "auteur_variantes": "IMPRO LAB"
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Construction",
+        "Scène"
+      ]
     }
   ],
   "sources_externes": [
