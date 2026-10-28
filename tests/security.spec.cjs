@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const fs = require('node:fs');
-const { openApp, openCachedApp, reloadApp, waitForReady, library } = require('./helpers.cjs');
+const { openApp, openCachedApp, reloadApp, waitForReady, library ,openSeance}=require('./helpers.cjs');
 
 const validPayload = html => ({ format: 'impro-lab-session', version: 1, exportedAt: '2026-10-21T00:00:00.000Z', html });
 const oneCard = '<div class="card"><small>5 min · Corps</small><h3>Exercice de test</h3><p>Une règle de test.</p></div>';
@@ -44,7 +44,7 @@ test('import refuse plus de 30 cartes', async ({ page }) => {
 });
 test('export puis import : les cartes exportées sont identiques', async ({ page }) => {
   await openApp(page);
-  await page.getByRole('button', { name: 'Générer ma séance' }).click();
+  await openSeance(page);await page.getByRole('button', { name: 'Générer ma séance' }).click();
   const before = await page.locator('#plan>.card').evaluateAll(cards => cards.map(card => ({ small: card.querySelector('small')?.textContent || '', title: card.querySelector('h3')?.textContent || '', rule: card.querySelector('p')?.textContent || '' })));
   const downloadPromise = page.waitForEvent('download');
   await page.getByRole('button', { name: /Exporter la séance/ }).click();
@@ -60,16 +60,17 @@ test('export puis import : les cartes exportées sont identiques', async ({ page
 });
 test('aucune fiche non éligible ne figure dans une séance générée', async ({ page }) => {
   await openApp(page);
-  await page.getByRole('button', { name: 'Générer ma séance' }).click();
+  await openSeance(page);await page.getByRole('button', { name: 'Générer ma séance' }).click();
   const titles = await page.locator('#plan>.card h3').allTextContents();
   expect(titles).toHaveLength(5);
   const selected = await page.evaluate(names => names.map(name => {
-    const item = data.find(entry => entry[0] === name);
-    return { title: name, found: Boolean(item), eligible: Boolean(item && item[6] === true) };
+    // Les titres sont affichés avec leur article (displayTitle) depuis le 23/10.
+    const item = data.find(entry => entry[0] === name || displayTitle(entry[0]) === name);
+    return { title: name, raw: item ? item[0] : null, found: Boolean(item), eligible: Boolean(item && item[6] === true) };
   }), titles);
   expect(selected.every(item => item.found && item.eligible), JSON.stringify(selected)).toBe(true);
-  for (const title of titles) {
-    const fiche = library.exercices.find(item => item.titre === title);
+  for (const { raw } of selected) {
+    const fiche = library.exercices.find(item => item.titre === raw);
     if (fiche) expect(fiche.eligible_generateur, `Fiche ${fiche.id}`).toBe(true);
   }
 });
@@ -128,6 +129,6 @@ test('mode hors ligne : la bibliothèque reste accessible via le cache du servic
     await reloadApp(page);
   }
   await expect(page.locator('#libraryStatus')).toContainText(`${library.exercices.length} exercices`);
-  await page.getByRole('button', { name: 'Jeux' }).click();
+  await page.getByRole('button', { name: '📚 Bibliothèque d’exercices' }).click();
   expect(await page.locator('#games .card').count()).toBeGreaterThan(0);
 });

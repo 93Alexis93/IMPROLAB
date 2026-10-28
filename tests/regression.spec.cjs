@@ -1,41 +1,40 @@
 const {test,expect}=require('@playwright/test');
-const {openApp,reloadApp,libraryCount,originCount,library}=require('./helpers.cjs');
+const {openApp,reloadApp,libraryCount,originCount,library,openSeance}=require('./helpers.cjs');
 for(const duration of ['45','55','60','90']){
  test('durée exacte '+duration+' min',async({page})=>{
   await openApp(page);
   
-  await page.locator('#duration').selectOption(duration);
+  await openSeance(page);await page.locator('#duration').selectOption(duration);
   await page.getByRole('button',{name:'Générer ma séance'}).click();
   await expect(page.locator('#planSummary')).toContainText(duration+' minutes');
-  await expect(page.locator('#plan>.card')).toHaveCount(5);
+  await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(5);
   const names=await page.locator('#plan>.card h3').allTextContents();
   expect(new Set(names).size).toBe(5);
  });
 }
 test('mode Coach accessible dans chaque exercice de la séance',async({page})=>{
  await openApp(page);
- await page.getByRole('button',{name:'Générer ma séance'}).click();
+ await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
  const cards=page.locator('#plan>.card:not(.session-objective)');
  await expect(cards).toHaveCount(5);
  for(let i=0;i<5;i++){
   const card=cards.nth(i);
-  const coach=card.locator('details.session-coach');
-  await expect(coach).toHaveCount(1);
-  await coach.locator('summary').click();
-  await expect(coach).toContainText('Consigne de la fiche');
-  await expect(coach).toContainText('Pour relancer');
-  await expect(coach).toContainText('À surveiller');
-  await expect(coach).toContainText('pistes génériques');
+  // Depuis le 22/10 (259c718), le mode Coach est affiché en volets repliables.
+  for(const label of ['🎓 Consigne','🔀 Variante','🎯 Objectif du prof','🌱 Objectif des élèves','📖 Explication complète du jeu'])await expect(card.locator('details.coach-quick > summary',{hasText:label})).toHaveCount(1);
+  const consigne=card.locator('details.coach-quick',{has:page.locator('summary',{hasText:'🎓 Consigne'})});
+  await consigne.locator('summary').click();
+  await expect(consigne).toHaveAttribute('open','');
  }
 });
 test('édition, suppression, rechargement, groupe et export',async({page})=>{
  await openApp(page);
  
- await page.getByRole('button',{name:'Générer ma séance'}).click();
- await page.locator('#plan>.card').last().getByRole('button',{name:'✕'}).click();
- await expect(page.locator('#plan>.card')).toHaveCount(4);
+ await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
+ await page.locator('#plan>.card:not(.session-objective)').last().getByRole('button',{name:'✕'}).click();
+ await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(4);
  await reloadApp(page);
- await expect(page.locator('#plan>.card')).toHaveCount(4);
+ await openSeance(page);
+ await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(4);
  const downloadPromise=page.waitForEvent('download');
  await page.getByRole('button',{name:/Exporter la séance/}).click();
  const download=await downloadPromise;
@@ -51,25 +50,25 @@ test('édition, suppression, rechargement, groupe et export',async({page})=>{
 });
 test('effacement en un clic de toute la séance sans supprimer l’historique',async({page})=>{
  await openApp(page);
- await page.getByRole('button',{name:'Générer ma séance'}).click();
- await expect(page.locator('#plan>.card')).toHaveCount(5);
+ await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
+ await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(5);
  page.once('dialog',dialog=>dialog.accept());
  await page.getByRole('button',{name:'Enregistrer',exact:true}).click();
  page.once('dialog',dialog=>dialog.accept());
  await page.getByRole('button',{name:/Effacer toute la séance/}).click();
- await expect(page.locator('#plan>.card')).toHaveCount(0);
+ await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(0);
  await expect(page.locator('#planSummary')).toContainText('Aucun exercice');
  await page.getByRole('button',{name:'Historique'}).click();
  await expect(page.getByRole('button',{name:'Réutiliser'})).toBeVisible();
  await reloadApp(page);
- await expect(page.locator('#plan>.card')).toHaveCount(0);
+ await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(0);
  await expect(page.locator('#planSummary')).toContainText('Aucun exercice');
 });
 
 test('navigation clavier du mode animateur',async({page})=>{
  await openApp(page);
  
- await page.getByRole('button',{name:'Générer ma séance'}).click();
+ await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
  await page.getByRole('button',{name:/Régie d’impro|Animateur/}).click();
  await page.locator('body').click({position:{x:5,y:5}});
  await page.keyboard.press('ArrowRight');
@@ -78,47 +77,48 @@ test('navigation clavier du mode animateur',async({page})=>{
  await expect(page.locator('#liveProgress')).toContainText('Exercice 1 / 5');
 });
 
-test('filtres bibliothèque par origine et objectif',async({page})=>{
+// Le filtre par origine a été retiré de la bibliothèque le 22/10 (bb3f5b1) ; le filtre par catégorie reste.
+test('filtres bibliothèque par objectif',async({page})=>{
  await openApp(page);
  
- await page.getByRole('button',{name:'Jeux'}).click();
- await page.locator('#sourceFilter').selectOption('recherche_web');
- await expect(page.locator('#games .card')).toHaveCount(originCount('recherche_web'));
- await page.locator('#sourceFilter').selectOption('notes_personnelles');
- await expect(page.locator('#games .card')).toHaveCount(originCount('notes_personnelles'));
+ await page.getByRole('button',{name:'📚 Bibliothèque d’exercices'}).click();
+ await expect(page.locator('#sourceFilter')).toHaveCount(0);
+ await expect(page.locator('#games .card')).toHaveCount(libraryCount);
  await page.locator('#categoryFilter').selectOption('Écoute');
  await expect(page.locator('#games .card').first()).toBeVisible();
- const n=await page.locator('#games .card').count();expect(n).toBeGreaterThan(0);expect(n).toBeLessThan(originCount('notes_personnelles'));
+ const n=await page.locator('#games .card').count();expect(n).toBeGreaterThan(0);expect(n).toBeLessThan(libraryCount);
 });
 test('générateur respecte les cinq étapes de la timeline',async({page})=>{
  await openApp(page);
  
- await page.getByRole('button',{name:'Générer ma séance'}).click();
+ await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
  const labels=await page.locator('#plan>.card small').allTextContents();
  expect(labels).toHaveLength(5);
- expect(labels.map(x=>x.split('·')[1].trim())).toEqual(['Mise en énergie','Connexion collective','Exploration','Improvisation','Final collectif']);
+ expect(labels.map(x=>x.split('·')[1].trim())).toEqual(['Mise en énergie','Connexion collective','Exploration','Improvisation','Scène finale']);
 });
 
 test('générateur privilégie les notes personnelles et respecte les étapes',async({page})=>{
  await openApp(page);
  
  await expect(page.locator('#includeExternal')).not.toBeChecked();
- await page.getByRole('button',{name:'Générer ma séance'}).click();
+ await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
  const labels=await page.locator('#plan>.card small').allTextContents();
  expect(labels).toHaveLength(5);
- expect(labels.every(x=>x.includes('Mes notes'))).toBe(true);
+ // Les étiquettes n'affichent plus l'origine : on la vérifie dans la bibliothèque (uniquement « Mes notes »).
+ const origins=await page.evaluate(names=>names.map(name=>{const g=data.find(x=>displayTitle(x[0])===name||x[0]===name);return g?g[0]:null}),await page.locator('#plan>.card h3').allTextContents());
+ for(const raw of origins){const fiche=library.exercices.find(f=>f.titre===raw);expect(fiche,String(raw)).toBeTruthy();expect(fiche.origine).toBe('notes_personnelles')}
  expect(['Mise en énergie','Connexion collective']).toContain(labels[0].split('·')[1].trim());
- expect(labels.at(-1).split('·')[1].trim()).toBe('Final collectif');
+ expect(labels.at(-1).split('·')[1].trim()).toBe('Scène finale');
  await page.locator('#includeExternal').check();
- await page.getByRole('button',{name:'Générer ma séance'}).click();
- await expect(page.locator('#plan>.card')).toHaveCount(5);
+ await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
+ await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(5);
 });
 test('rotation équitable entre séances consécutives',async({page})=>{
  await openApp(page);
  
- await page.getByRole('button',{name:'Générer ma séance'}).click();
+ await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
  const first=await page.locator('#plan>.card h3').allTextContents();
- await page.getByRole('button',{name:'Générer ma séance'}).click();
+ await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
  const second=await page.locator('#plan>.card h3').allTextContents();
  expect(second.filter(x=>first.includes(x))).toHaveLength(0);
  const counts=await page.evaluate(()=>JSON.parse(localStorage.getItem('impro-game-usage-v1')));
@@ -128,11 +128,11 @@ test('rotation équitable entre séances consécutives',async({page})=>{
 test('les neuf catégories et les catégories secondaires sont filtrables',async({page})=>{
  await openApp(page);
  
- await page.getByRole('button',{name:'Jeux'}).click();
+ await page.getByRole('button',{name:'📚 Bibliothèque d’exercices'}).click();
  const filter=page.locator('#categoryFilter');
  await expect(filter.locator('option')).toHaveCount(library.categories_pedagogiques.length+1);
  await filter.selectOption('Amusement');
- await expect(page.locator('#games')).toContainText('Ceci est un');
+ await expect(page.locator('#games')).toContainText('ceci est un');
  await filter.selectOption('Lâcher-prise');
  await expect(page.locator('#games')).toContainText('zombie');
  await filter.selectOption('Cohésion');
@@ -145,12 +145,12 @@ test('dix curseurs compacts 0-100, persistance et timeline souple',async({page})
  const sliders=page.locator('#seance .dynamic-grid input[type=range]');
  await expect(sliders).toHaveCount(10);
  for(const slider of await sliders.all()){await expect(slider).toHaveAttribute('max','100');await expect(slider).toHaveAttribute('step','1')}
- await page.locator('#dynamic9').fill('87');
+ await openSeance(page);await page.locator('#dynamic9').fill('87');
  await expect(page.locator('#dynamicValue9')).toHaveText('87 %');
  await reloadApp(page);
  await expect(page.locator('#dynamic9')).toHaveValue('87');
- await page.getByRole('button',{name:'Générer ma séance'}).click();
- await expect(page.locator('#plan>.card')).toHaveCount(5);
+ await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
+ await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(5);
  await expect(page.locator('#planSummary')).toContainText('55 minutes');
  await page.getByRole('button',{name:/Réinitialiser/}).click();
  await expect(page.locator('#dynamic9')).toHaveValue('60');
@@ -159,11 +159,11 @@ test('dix curseurs compacts 0-100, persistance et timeline souple',async({page})
 test('timeline souple : cinq étapes et priorité Imaginaire',async({page})=>{
  await openApp(page);
  
- await page.locator('#dynamic9').fill('100');
+ await openSeance(page);await page.locator('#dynamic9').fill('100');
  await page.getByRole('button',{name:'Générer ma séance'}).click();
- await expect(page.locator('#plan>.card')).toHaveCount(5);
- for(const label of ['Mise en énergie','Connexion collective','Exploration','Improvisation','Final collectif'])await expect(page.locator('#plan>.card small').filter({hasText:label})).toHaveCount(1);
- await page.getByRole('button',{name:'Jeux'}).click();
+ await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(5);
+ for(const label of ['Mise en énergie','Connexion collective','Exploration','Improvisation','Scène finale'])await expect(page.locator('#plan>.card small').filter({hasText:label})).toHaveCount(1);
+ await page.getByRole('button',{name:'📚 Bibliothèque d’exercices'}).click();
  await page.locator('#categoryFilter').selectOption('Imaginaire');
  await expect(page.locator('#categoryFilter')).toHaveValue('Imaginaire');
 });
@@ -171,7 +171,7 @@ test('timeline souple : cinq étapes et priorité Imaginaire',async({page})=>{
 
 test('déplacement et remplacement d’un exercice conservent une séance cohérente',async({page})=>{
  await openApp(page);
- await page.getByRole('button',{name:'Générer ma séance'}).click();
+ await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
  const cards=page.locator('#plan>.card:not(.session-objective)');
  await expect(cards).toHaveCount(5);
  const initial=await cards.locator('h3').allTextContents();
@@ -202,7 +202,7 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
  await openApp(page);
  await page.locator('#includeExternal').uncheck();
  for(let i=0;i<10;i++)await page.locator('#dynamic'+i).evaluate((el,value)=>{el.value=value;el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}));},i===0?'100':'0');
- await page.getByRole('button',{name:'Générer ma séance'}).click();
+ await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
  const cards=page.locator('#plan>.card:not(.session-objective)');
  await expect(cards).toHaveCount(5);
  for(let cardIndex=0;cardIndex<5;cardIndex++){
@@ -244,6 +244,7 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
  await manualCard.getByRole('button',{name:'🔄 Remplacer'}).click();
  expect((await manualCard.locator('h3').textContent()).trim()).not.toBe(manualTitle.trim());
  await reloadApp(page);
+ await openSeance(page);
  await page.locator('#plan>.card:not(.session-objective)').first().getByRole('button',{name:'🔄 Remplacer'}).click();
  page.once('dialog',dialog=>dialog.accept());
  await page.getByRole('button',{name:'Enregistrer',exact:true}).click();
@@ -255,10 +256,10 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
  const legacyPayload=JSON.stringify({format:'impro-lab-session',version:1,html:legacyHtml});
  await page.locator('#importSession').setInputFiles({name:'legacy.json',mimeType:'application/json',buffer:Buffer.from(legacyPayload)});
  await expect(page.locator('#plan>.card h3')).toHaveText('Exercice ancien');
- await page.locator('#plan>.card').first().getByRole('button',{name:'🔄 Remplacer'}).click();
+ await page.locator('#plan>.card:not(.session-objective)').first().getByRole('button',{name:'🔄 Remplacer'}).click();
  await expect(page.locator('#plan>.card h3').first()).not.toHaveText('Exercice ancien');
  await page.evaluate(()=>{for(const g of data)g[6]=false});
- await page.locator('#plan>.card').first().getByRole('button',{name:'🔄 Remplacer'}).click();
+ await page.locator('#plan>.card:not(.session-objective)').first().getByRole('button',{name:'🔄 Remplacer'}).click();
  await expect(page.locator('#planSummary')).toContainText('Aucun autre jeu admissible disponible');
  expect(runtimeErrors,'aucune erreur console ni exception JavaScript pendant les remplacements, imports et historique').toEqual([]);
 });

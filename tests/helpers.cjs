@@ -33,9 +33,16 @@ async function openApp(page, options = {}) {
   await waitForReady(page, options);
 }
 
+// Depuis l'accueil refait, l'appli s'ouvre sur « Exercice aléatoire » :
+// le générateur de séance (durée, curseurs, bouton) est dans l'onglet Séance.
+async function openSeance(page) {
+  await page.getByRole('button', { name: '🗓 Séance' }).click();
+  await expect(page.locator('#seance')).toBeVisible();
+}
+
 async function reloadApp(page, options = {}) {
   await page.reload();
   await waitForReady(page, options);
 }
 
-module.exports = { openApp, reloadApp, libraryCount, originCount, library, waitForReady };
+module.exports = { openSeance, openApp, reloadApp, libraryCount, originCount, library, waitForReady };
