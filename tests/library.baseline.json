@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "nombre_fiches": 122,
-  "ordre_ids": "985c2353dce58f29ae9daab5ebb212833bbe261b4d9dcd363e82fcb60472f5a2",
+  "nombre_fiches": 124,
+  "ordre_ids": "5fcd75e93303a93b2cff6335f0aa98bd8680bc815fd5f16ac10b7f2143bb919a",
   "fiches": {
     "1-1": {
       "accompagnement_pedagogique": "9634129986be5f64ed80cd909dc020155509f14712903a09733dec966c1b2d34",
@@ -854,7 +854,7 @@
       "objectif_pedagogique": "79faeb955b843d54c7132679d7c09f9908d7caaf94fd37b0a95a75891d5029f7",
       "origine": "47d90db6e52c08a34169d5ef35f260056711c2b73027e38106841920ec5c8643",
       "qualite_fiche": "8fe74df060f9dfb1e9a168d74d415c88db404317244402e70f7971adac271018",
-      "regle_clarifiee": "e40c9fa926012af9e1e6c979fc8bb34950301dbe1e7a565a94be3454f6fa8dfb",
+      "regle_clarifiee": "803c1a274646e9b236633342c8d253acaf59a3fd0ce4fab69a87207add0326ed",
       "section": "75f335b8489f98256ec3b7252dfaa016fd95d68ae8221b10810b58870968461c",
       "statut": "247f86420c2bffefbb302453e3005a4b5fc39b0177b4e51335cdcae56c3ed6d8",
       "texte_original": "b24855c4f322308a94eb44e702bb8bba9f8b42d686f0c5e68095bec075fc2a7d",
@@ -2487,6 +2487,46 @@
       "texte_original": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
       "titre": "d829828552466f80d5239c0444032651ab9a2dadec3f3a4304d46c2034e600a8",
       "variante_college": "8c54666c2f2470686e5eded362307ececc484c8565bd95171f528c390ec714d5"
+    },
+    "3-6": {
+      "accompagnement_pedagogique": "5a9bb6d604fda9b6bb1142f7cd39c69135183c48dc9edf841a366f09d05da8db",
+      "auteur_consigne_courte": "84cb6c988b873ae9b0de9cf30431bf1fc1cfcdce282a235c3028b85a6d918f17",
+      "categories_secondaires": "8c095cfc6338e15eb13e7147fb139c7193443f8e7f8f829f375225593537f612",
+      "conseils_animation": "1e92bbbd91174a10355ef9c8f476dc89acbb5377d4a5e886b64d66b3c034af21",
+      "duree_minutes": "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef06fdefb64a3",
+      "effectif_conseille": "51deb732c7dd975cd0e749dee147f1205d646c10ac06823f3372a8d9316fde1b",
+      "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "id": "115d716243cfb202f3939cbb0860498963327c76787ce6f92f6215e063413965",
+      "niveau": "9adb56f0f48038bf604192381a81c295c1deed33f5de2d41688649ae37f68554",
+      "numero_source": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "objectif_pedagogique": "f36c1f1cbb34b972677565f346ebc511f63da2907280d6a73e6b3ed257233ae7",
+      "origine": "703c72389d68581630ec3f9a673ea602a564a0dda5933e38d3665864ef63c824",
+      "qualite_fiche": "838de4fd0fc5b8b30c09e72f5d6ec69aa4f36b631790eb1db652d3048c164d4e",
+      "regle_clarifiee": "a8ce6c49aee8958edb23ac623c3c125f5989d78aaf9cfefc0801ec36d076667d",
+      "section": "f0769c5a9bb365fc0b26b9986daa3755c6f8622bb8a10b6b07c5aa5b6479777d",
+      "statut": "e5988c5649dbe2a753c5975b5648bf85a1680e0e85d3392f87f994580b9243d9",
+      "texte_original": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+      "titre": "d37c70ea4eaf6164aeb5622b0cf016d4747ebc33fae996ef6e7cfe6c558a0ce0"
+    },
+    "3-7": {
+      "accompagnement_pedagogique": "613665665f873173f674a126ccd360d3f1cbdbac0a5336141d708e9c2a5d2feb",
+      "auteur_consigne_courte": "84cb6c988b873ae9b0de9cf30431bf1fc1cfcdce282a235c3028b85a6d918f17",
+      "categories_secondaires": "8c095cfc6338e15eb13e7147fb139c7193443f8e7f8f829f375225593537f612",
+      "conseils_animation": "5f18656496001b7fb5e110a5c6d438f2d36541ebc86336f13175a16bbb6de466",
+      "duree_minutes": "6b51d431df5d7f141cbececcf79edf3dd861c3b4069f0b11661a3eefacbba918",
+      "effectif_conseille": "182a67c325c20898cebf345d746b132904a25203e6435fae2d4a3043bce17e3d",
+      "eligible_generateur": "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b",
+      "id": "263dcf04916ddb0332f266f0b1e09e12c7fb2abac51711e36d51bb26f502dbac",
+      "niveau": "9adb56f0f48038bf604192381a81c295c1deed33f5de2d41688649ae37f68554",
+      "numero_source": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "objectif_pedagogique": "e2f1df8cfc88e2494d060e2cdc3ce1e09f641838c0cabc32ecfc36d5e7faa8d9",
+      "origine": "703c72389d68581630ec3f9a673ea602a564a0dda5933e38d3665864ef63c824",
+      "qualite_fiche": "838de4fd0fc5b8b30c09e72f5d6ec69aa4f36b631790eb1db652d3048c164d4e",
+      "regle_clarifiee": "0648fc1ebaea81e1c6e223578b64e55fbdc7a8ed5577f7778132627921df06be",
+      "section": "f0769c5a9bb365fc0b26b9986daa3755c6f8622bb8a10b6b07c5aa5b6479777d",
+      "statut": "e5988c5649dbe2a753c5975b5648bf85a1680e0e85d3392f87f994580b9243d9",
+      "texte_original": "12ae32cb1ec02d01eda3581b127c1fee3b0dc53572ed6baf239721a03d82e126",
+      "titre": "a4ec3c7acb25e9bb9ae9414e98bf2ef166d641decdf7f1fb13ee782bf85888a1"
     }
   },
   "sections_hors_fiches": {
@@ -2501,6 +2541,7 @@
     "sources_externes": "102fe0f687fd3ed69d98172d41038adf63223174b80f91f3f8e1d1f09cf34706"
   },
   "comptages_origine": {
+    "creation_improlab": 2,
     "notes_personnelles": 105,
     "recherche_web": 17
   }

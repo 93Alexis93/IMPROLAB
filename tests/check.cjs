@@ -2,6 +2,7 @@
 
 const fs = require('node:fs');
 const assert = require('node:assert/strict');
+const path = require('node:path');
 
 const html = fs.readFileSync('index.html', 'utf8');
 const lib = JSON.parse(fs.readFileSync('library.json', 'utf8'));
@@ -135,7 +136,7 @@ for (let i=0;i<10;i++) assert.ok(html.includes('id="dynamic'+i+'"'),'Curseur dyn
 assert.ok(script.includes('buildTimelineMinutes(duration)') && /buildPrincipalObjective\(selectedGames(?:,parts)?\)/.test(script), 'Générateur adaptatif et objectif pédagogique absents');
 
 assert.ok(script.includes('impro-session-dynamics-v1') && script.includes('impro-random-dynamics-v1') && script.includes('chooseDynamicGame'),'Curseurs indépendants absents');
-assert.ok(html.includes('Trois repères pour commencer') && html.includes('welcome-tutorial'),'Tutoriel d’accueil absent');
+assert.ok(html.includes('welcome-tutorial') && ['Tire un exercice','Prépare ta séance','Anime avec la régie'].every(step => html.includes(step)),'Tutoriel d’accueil absent');
 assert.equal(lib.ressource_cahier_coach.listes.Mot.length,20,'Liste de mots du cahier de coach : longueur inattendue');
 for (const word of ['Transmission','Crépitement','Mirage']) assert.ok(lib.ressource_cahier_coach.listes.Mot.includes(word),'Mot du cahier de coach manquant : '+word);
 assert.ok(html.includes('id="randomExerciseCategories"') && html.includes('function pickRandomExercise(') && html.includes('function useRandomExercise('),'Générateur d’exercice aléatoire absent');
@@ -145,8 +146,11 @@ assert.ok(html.includes('Object.prototype.hasOwnProperty.call(DRAW_DEFAULTS,cate
 
 
 const sw = fs.readFileSync(path.join(__dirname, '..', 'sw.js'), 'utf8');
-assert.match(sw, /const CACHE='impro-lab-offline-v36-refonte-ux-ui'/, 'Version du cache hors ligne inattendue');
-assert.ok(html.includes("serviceWorker.register('./sw.js?v=20261024-v36-refonte-ux-ui'"), 'L’URL du service worker doit être versionnée avec la refonte');
+// La version du cache change à chaque livraison : on vérifie qu'elle existe
+// et que l'URL d'enregistrement porte la même version (sinon iPhone garde l'ancien cache).
+const cacheVersion = (sw.match(/const CACHE='impro-lab-offline-(v\d+[\w-]*)'/) || [])[1];
+assert.ok(cacheVersion, 'Version du cache hors ligne introuvable');
+assert.ok(new RegExp("serviceWorker\\.register\\('\\./sw\\.js\\?v=\\d{8}-" + cacheVersion + "'").test(html), 'L’URL du service worker doit porter la version du cache ('+cacheVersion+')');
 for (const asset of ['./index.html','./styles.css','./schemas.json','./library.json']) {
   assert.ok(sw.includes("'"+asset+"'"), 'Ressource essentielle absente du cache hors ligne : '+asset);
 }

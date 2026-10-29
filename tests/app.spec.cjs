@@ -1,8 +1,8 @@
 const {test,expect}=require('@playwright/test');
-const {openApp,reloadApp,libraryCount}=require('./helpers.cjs');
+const {openTab, setDuration, openFineSettings, openApp,reloadApp,libraryCount,openSeance}=require('./helpers.cjs');
 test.beforeEach(async({page},testInfo)=>{await openApp(page,{dismissWelcome:!testInfo.title.includes('tutoriel d’accueil')})});
-test('bibliothèque et générateur',async({page})=>{await expect(page.locator('#manualGame option')).toHaveCount(libraryCount);await page.evaluate(()=>generate());await expect(page.locator('#plan .card')).toHaveCount(6);await expect(page.locator('#plan .session-objective')).toBeVisible();await expect(page.locator('#plan .session-objective')).toContainText('Objectif principal de la séance')});
-test('durées libres : répartition exacte et scène finale de 15 minutes minimum',async({page})=>{const result=await page.evaluate(()=>{const values=[...document.querySelectorAll('#duration option')].map(o=>Number(o.value));return {values,allocations:values.map(duration=>({duration,parts:buildTimelineMinutes(duration)}))}});expect(result.values).toHaveLength(18);expect(result.values[0]).toBe(35);expect(result.values.at(-1)).toBe(120);for(const item of result.allocations){expect(item.parts.reduce((sum,n)=>sum+n,0)).toBe(item.duration);expect(item.parts.at(-1)).toBeGreaterThanOrEqual(15)}await page.locator('#duration').selectOption('75');await page.evaluate(()=>generate());await expect(page.locator('#plan .session-objective')).toBeVisible();await expect(page.locator('#duration')).toHaveValue('75')});
+test('bibliothèque et générateur',async({page})=>{await expect(page.locator('#manualGame option')).toHaveCount(libraryCount);await openSeance(page);await page.evaluate(()=>generate());await expect(page.locator('#plan .card')).toHaveCount(6);await expect(page.locator('#plan .session-objective')).toBeVisible();await expect(page.locator('#plan .session-objective')).toContainText('Fil conducteur')});
+test('durées libres : répartition exacte et scène finale de 15 minutes minimum',async({page})=>{const result=await page.evaluate(()=>{const values=[...document.querySelectorAll('#duration option')].map(o=>Number(o.value));return {values,allocations:values.map(duration=>({duration,parts:buildTimelineMinutes(duration)}))}});expect(result.values).toHaveLength(18);expect(result.values[0]).toBe(35);expect(result.values.at(-1)).toBe(120);for(const item of result.allocations){expect(item.parts.reduce((sum,n)=>sum+n,0)).toBe(item.duration);expect(item.parts.at(-1)).toBeGreaterThanOrEqual(15)}await openSeance(page);await setDuration(page,'75');await page.evaluate(()=>generate());await expect(page.locator('#plan .session-objective')).toBeVisible();await expect(page.locator('#duration')).toHaveValue('75')});
 test('huit catégories et 400 mots sans doublons',async({page})=>{const result=await page.evaluate(()=>({keys:Object.keys(DRAW_DEFAULTS),words:DRAW_DEFAULTS.Mot}));expect(result.keys).toHaveLength(8);expect(result.keys).not.toContain('Genre');expect(result.words).toHaveLength(400);expect(new Set(result.words.map(x=>x.toLowerCase())).size).toBe(400);await page.evaluate(()=>drawAll());await expect(page.locator('#drawResults .draw-result')).toHaveCount(8)});
 test('restauration de la liste par défaut reste sauvegardée',async({page})=>{await page.evaluate(()=>{document.getElementById('drawEditCategory').value='6';drawShowEditor();document.getElementById('drawEditor').value='Unique';drawSaveEditor();drawResetEditor()});await reloadApp(page);await expect(page.locator('#libraryStatus')).toContainText(`${libraryCount} exercices`);const words=await page.evaluate(()=>drawLists.Mot.length);expect(words).toBe(400)});
 test('répartition de cinq joueurs en trios',async({page})=>{const groups=await page.evaluate(()=>{rosterState.college=['A','B','C','D','E'].map(name=>({name,present:true}));document.getElementById('rosterType').value='college';document.getElementById('rosterFormat').value='3';rosterDraw();return [...document.querySelectorAll('#groupsResult .card p')].map(p=>p.textContent.split(' · ').length)});expect(groups.sort()).toEqual([2,3])});
@@ -14,7 +14,8 @@ test('régie V3 : présence et groupes synchronisés',async({page})=>{await page
 
 test('régie compacte : panneaux repliables et bouton Plan supprimé',async({page})=>{await page.evaluate(()=>tab('live'));expect(await page.locator('#live button').allTextContents()).not.toContain('📋 Plan');await expect(page.locator('#live .regie-fold')).toHaveCount(4);await expect(page.locator('#live .regie-fold.regie-draw')).not.toHaveAttribute('open');await page.locator('#live .regie-fold.regie-draw > summary').click();await expect(page.locator('#live .regie-fold.regie-draw')).toHaveAttribute('open','');await expect(page.locator('#live #liveStart')).toBeVisible()});
 
-test('tutoriel d’accueil et curseurs indépendants',async({page})=>{await expect(page.locator('#welcomeScreen')).toBeVisible();await expect(page.locator('#welcomeScreen .welcome-tutorial')).toContainText('les curseurs du générateur et ceux de la séance sont indépendants');await page.locator('#welcomeScreen .welcome-enter').click();await expect(page.locator('#welcomeScreen')).toHaveCount(0);await page.evaluate(()=>{document.getElementById('dynamic1').value=22;updateDynamic(1);document.getElementById('randomDynamic1').value=88;updateRandomDynamic(1)});expect(await page.locator('#dynamic1').inputValue()).toBe('22');expect(await page.locator('#randomDynamic1').inputValue()).toBe('88');await reloadApp(page);await expect(page.locator('#dynamic1')).toHaveValue('22');await expect(page.locator('#randomDynamic1')).toHaveValue('88')});
+// Depuis 52bda99, les curseurs Séance et Exercice aléatoire sont volontairement synchronisés.
+test('tutoriel d’accueil et curseurs synchronisés',async({page})=>{await expect(page.locator('#welcomeScreen')).toBeVisible();await expect(page.locator('#welcomeScreen .welcome-tutorial')).toContainText('Tire un exercice');await page.locator('#welcomeScreen .welcome-enter').click();await expect(page.locator('#welcomeScreen')).toHaveCount(0);await page.evaluate(()=>{document.getElementById('dynamic1').value=22;updateDynamic(1);document.getElementById('randomDynamic1').value=88;updateRandomDynamic(1)});expect(await page.locator('#dynamic1').inputValue()).toBe('88');expect(await page.locator('#randomDynamic1').inputValue()).toBe('88');await reloadApp(page);await expect(page.locator('#dynamic1')).toHaveValue('88');await expect(page.locator('#randomDynamic1')).toHaveValue('88')});
 test('tirage aléatoire filtré : validation ajoute à la séance et à la régie',async({page})=>{await page.evaluate(()=>tab('random'));await page.evaluate(()=>{for(let i=0;i<10;i++)document.getElementById('randomDynamic'+i).value=0;document.getElementById('randomDynamic1').value=100;updateRandomDynamic(1)});await page.evaluate(()=>pickRandomExercise());await expect(page.locator('#randomExerciseResult')).not.toContainText('Aucun exercice validé');await expect(page.locator('#randomExerciseUse')).toBeVisible();const before=await page.locator('#plan .card').count();await page.evaluate(()=>useRandomExercise());await expect(page.locator('#plan .card')).toHaveCount(before+1);await expect(page.locator('#liveMode')).toHaveValue('session');await expect(page.locator('#liveTitle')).not.toHaveText('Prêt à jouer !');await expect(page.locator('#liveInfo')).not.toBeEmpty()});
 test('boutons sous le chrono restent sur une seule ligne sans plein écran',async({page})=>{await page.setViewportSize({width:390,height:844});await page.evaluate(()=>tab('live'));await expect(page.locator('#liveFullButton')).toHaveCount(0);const result=await page.evaluate(()=>{const b=[...document.querySelectorAll('#liveActions button')].map(x=>x.getBoundingClientRect());return {count:b.length,top:new Set(b.map(x=>Math.round(x.top))).size,scroll:document.documentElement.scrollWidth,width:innerWidth}});expect(result.top).toBe(1);expect(result.scroll).toBeLessThanOrEqual(result.width+3)});
 
@@ -22,10 +23,10 @@ test('boutons sous le chrono restent sur une seule ligne sans plein écran',asyn
 test('titres des fiches : article affiché et couleur de catégorie principale',async({page})=>{const result=await page.evaluate(()=>{const titles=data.map(g=>displayTitle(g[0]));const missing=titles.filter(t=>! /^(?:Le |La |Les |Un\b|Une\b|Des |L['’])/i.test(t));const cardHtml=card(data.find(g=>g[0]==='Duel au cercle'));return {count:titles.length,missing,display:displayTitle('Abécédaire'),hasColor:cardHtml.includes('color:'+categoryColor('Énergie'))};});expect(result.count).toBeGreaterThanOrEqual(122);expect(result.missing).toEqual([]);expect(result.display).toBe('L’Abécédaire');expect(result.hasColor).toBe(true)});
 
 test('accueil ouvre le premier bouton et recherche principes/conseils',async({page})=>{
-  await expect(page.locator('#random')).toBeVisible();
+  await expect(page.locator('#home')).toBeVisible();
   await expect(page.locator('#seance')).toBeHidden();
   await expect(page.locator('nav button').first()).toHaveAttribute('aria-current','page');
-  await page.getByRole('button',{name:'🧭 Principes et conseils'}).click();
+  await openTab(page,'Principes et conseils');
   await page.locator('#principesSearch').fill('dragon');
   await expect(page.locator('#principesSearchResults')).toBeVisible();
   await expect(page.locator('#principesSearchResults')).toContainText('Le « oui, et… »');
@@ -39,8 +40,8 @@ test('accueil ouvre le premier bouton et recherche principes/conseils',async({pa
   await expect(page.locator('#principesHome')).toBeVisible();
 });
 test('principes et conseils accessibles en deux entrées',async({page})=>{
-  await expect(page.locator('header .home-motto')).toHaveText('L’impro c’est l’art de rater !');
-  await page.getByRole('button',{name:'🧭 Principes et conseils'}).click();
+  await expect(page.locator('header .home-motto')).toHaveText('L’impro, c’est l’école de la vie : on apprend à écouter, oser et construire ensemble.');
+  await openTab(page,'Principes et conseils');
   await expect(page.locator('#principes')).toBeVisible();
   await expect(page.locator('#principesHome .principes-entry')).toHaveCount(2);
   await expect(page.locator('#principesView')).toBeHidden();
@@ -56,9 +57,12 @@ test('principes et conseils accessibles en deux entrées',async({page})=>{
   await expect(page.locator('#adviceMediumContent')).toContainText('Engage-toi dans tes choix');
   await expect(page.locator('#adviceBeginnerContent .advice-card-content details')).toHaveCount(20);
 });
-test('principes classés par niveau avec principe et exemple repliables',async({page})=>{await page.evaluate(()=>{tab('principes');openPrincipesView('principesContent')});const root=page.locator('#principesContent');await expect(root.locator('.principle-level')).toHaveCount(4);await expect(root.locator('.principle-level:not(.principle-extra) .principle-item')).toHaveCount(17);await expect(root.locator('.principle-example')).toHaveCount(17);await expect(root.locator('.principle-example').first()).not.toHaveAttribute('open','');await root.locator('.principle-level').first().locator(':scope > summary').click();await expect(root.locator('.principle-level').first()).toHaveAttribute('open','');await root.locator('.principle-item').first().locator('> summary').click();await expect(root.locator('.principle-item').first()).toHaveAttribute('open','');await root.locator('.principle-example').first().locator('> summary').click();await expect(root.locator('.principle-example').first()).toHaveAttribute('open','');await expect(root).toContainText('Depuis trente ans qu’on se connaît, j’ai toujours eu du mal avec ton prénom !');await expect(root).toContainText('Montre, ne raconte pas');await expect(root).toContainText('Respecte la logique de ton univers');await expect(root).toContainText('Laisse les conséquences transformer le monde');const colors=await root.locator('.principle-item > summary b').evaluateAll(nodes=>[...new Set(nodes.map(n=>getComputedStyle(n).color))]);expect(colors).toHaveLength(3)});
+// Page refaite le 22/10 (commit 1987273) : sept fiches issues de principes-impro.json,
+// chacune avec un niveau, un exemple et des conseils repliables par niveau.
+test('principes classés par niveau avec principe et exemple repliables',async({page})=>{await page.evaluate(()=>{tab('principes');openPrincipesView('principesContent')});const root=page.locator('#principesContent');await expect(root.locator('.principle-card')).toHaveCount(7);await expect(root.locator('.principle-example')).toHaveCount(7);const levels=await root.locator('.principle-level').allTextContents();expect(levels).toHaveLength(7);expect([...new Set(levels)].sort()).toEqual(['Débutant','Moyen','Pro']);await expect(root.locator('.principle-advice')).toHaveCount(21);await expect(root.locator('.principle-advice[open]')).toHaveCount(0);const advice=root.locator('.principle-advice').first();await advice.locator(':scope > summary').click();await expect(advice).toHaveAttribute('open','');await expect(root).toContainText('Depuis trente ans qu’on se connaît, j’ai toujours eu du mal avec ton prénom !');await expect(root).toContainText('Montre, ne raconte pas');await expect(root).toContainText('L’art de rater')});
 
 test('ambiances guidées : application cohérente et réinitialisation',async({page})=>{
+  await openSeance(page);
   await page.locator('[data-ambiance="stage"]').check();
   await page.locator('[data-ambiance="listen"]').check();
   await page.getByRole('button',{name:'Appliquer les ambiances'}).click();
@@ -73,7 +77,8 @@ test('ambiances guidées : application cohérente et réinitialisation',async({p
   await page.locator('[data-ambiance="listen"]').uncheck();
   await page.getByRole('button',{name:'Appliquer les ambiances'}).click();
   const restored=await page.evaluate(()=>Object.fromEntries(IMPRO_CATEGORIES.map((c,i)=>[c,Number(document.getElementById('dynamic'+i).value)])));
-  expect(restored).toEqual(Object.fromEntries(IMPRO_CATEGORIES.map(c=>[c,DEFAULT_DYNAMICS[c]*20])));
+  const defaults=await page.evaluate(()=>Object.fromEntries(IMPRO_CATEGORIES.map(c=>[c,DEFAULT_DYNAMICS[c]*20])));
+  expect(restored).toEqual(defaults);
   await page.evaluate(()=>tab('random'));
   await page.locator('#random').getByRole('button',{name:/Réinitialiser/}).click();
   await expect(page.locator('[data-ambiance="stage"]')).not.toBeChecked();
@@ -110,7 +115,7 @@ test('impression A4 : séance et schéma restent visibles',async({page})=>{
   await expect(page.locator('#seance')).toBeVisible();
   await expect(page.locator('#plan .card').first()).toBeVisible();
   const printStyles=await page.locator('#plan .card').first().evaluate(el=>({
-    pageRule:[...document.styleSheets].some(sheet=>{try{return [...sheet.cssRules].some(rule=>rule.type===CSSRule.PAGE_RULE&&/A4/.test(rule.cssText))}catch{return false}}),
+    pageRule:[...document.styleSheets].some(sheet=>{try{return [...sheet.cssRules].some(rule=>rule.type===CSSRule.PAGE_RULE&&/A4/i.test(rule.cssText))}catch{return false}}),
     display:getComputedStyle(el).display,
     color:getComputedStyle(el).color
   }));
