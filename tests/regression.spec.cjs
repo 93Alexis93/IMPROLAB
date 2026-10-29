@@ -263,3 +263,13 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
  await expect(page.locator('#planSummary')).toContainText('Aucun autre jeu admissible disponible');
  expect(runtimeErrors,'aucune erreur console ni exception JavaScript pendant les remplacements, imports et historique').toEqual([]);
 });
+
+test('régie : la ligne d’infos ne reprend ni le schéma ni les boutons de la carte',async({page})=>{
+ await openApp(page);
+ await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
+ await openTab(page,'Régie');
+ const info=page.locator('#liveInfo');
+ await expect(info).toHaveText(/^\d+ min · /);
+ const text=await info.textContent();
+ for(const leak of ['Schéma','Remplacer','Consigne','+ 1 min','Créateur du jeu'])expect(text,'Texte parasite : '+leak).not.toContain(leak);
+});
