@@ -360,3 +360,35 @@ label[hidden], .guided-prep [hidden]{display:none!important}
   #liveTitle,#liveRule,#liveCoachPanel{color:#171717!important}
   .guided-note{display:none!important}
 }
+
+/* Navigation : le menu « Plus » ne doit jamais être rogné, et tous les onglets restent visibles sur téléphone. */
+nav[aria-label="Navigation principale"]{overflow:visible!important;flex-wrap:wrap!important}
+@media(max-width:600px){
+  nav[aria-label="Navigation principale"]{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px!important;padding:6px!important}
+  nav[aria-label="Navigation principale"]>button{width:100%;min-width:0!important;white-space:normal!important;min-height:40px!important;padding:6px 8px!important}
+  .more-navigation{grid-column:1/-1;margin:0}
+  .more-navigation>summary{justify-content:center;min-height:40px}
+  .more-navigation-menu{position:static;grid-template-columns:repeat(2,minmax(0,1fr));box-shadow:none;margin-top:4px;min-width:0}
+  .more-navigation-menu button{white-space:normal!important;min-width:0!important}
+}
+
+/* Exercice aléatoire : réglages et exercice tiré repliables. */
+#random .random-fold{margin:6px 0}
+#random .random-fold>summary{cursor:pointer;display:flex;align-items:center;gap:.5rem;min-height:44px;list-style:none}
+#random .random-fold>summary::-webkit-details-marker{display:none}
+#random .random-fold>summary::before{content:"▸";font-size:.9em;transition:transform .15s ease}
+#random .random-fold[open]>summary::before{transform:rotate(90deg)}
+#random .random-fold>summary h3{margin:0;display:inline}
+#random #randomResultFold{border-top:1px solid var(--line,#d8cfc1);padding-top:6px}
+
+/* Cahier de coach : présentation plus compacte. */
+#cahier{font-size:14px}
+#cahier h2{font-size:clamp(1.3rem,2.6vw,1.75rem)}
+#cahier .coach-intro{padding:12px;margin:8px 0 12px}
+#cahier .coach-objective{font-size:15px;line-height:1.4;margin:6px 0}
+#cahier .coach-list-grid{gap:8px}
+#cahier .coach-list-card{padding:10px}
+#cahier .coach-list-heading{padding-bottom:6px;margin-bottom:8px}
+#cahier .coach-list-heading h3{font-size:15px}
+#cahier .coach-chips{gap:5px}
+#cahier .coach-chip{padding:5px 7px;font-size:12.5px}
