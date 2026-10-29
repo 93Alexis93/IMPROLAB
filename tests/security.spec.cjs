@@ -96,6 +96,27 @@ for (const key of STORAGE_KEYS) {
     await expect(page.locator('#libraryStatus')).toContainText(`${library.exercices.length} exercices`);
   });
 }
+test('historique corrompu : l’onglet Historique s’affiche et Enregistrer fonctionne', async ({ page }) => {
+  const errors = [];
+  page.on('pageerror', error => errors.push(error.message));
+  page.on('dialog', dialog => dialog.accept());
+  await page.addInitScript(() => {
+    if (sessionStorage.getItem('__improlab_test_storage_initialized') === '1') return;
+    localStorage.clear();
+    sessionStorage.setItem('__improlab_test_storage_initialized', '1');
+    localStorage.setItem('impro-history', '{ JSON volontairement invalide');
+  });
+  await page.goto('/');
+  await waitForReady(page);
+  await openTab(page, 'Historique');
+  await expect(page.locator('#historyResult')).toContainText('Aucune séance enregistrée');
+  await openSeance(page);
+  await page.getByRole('button', { name: 'Générer ma séance' }).click();
+  await page.locator('#seance').getByRole('button', { name: 'Enregistrer', exact: true }).click();
+  await openTab(page, 'Historique');
+  await expect(page.locator('#historyResult').getByRole('button', { name: 'Réutiliser' })).toHaveCount(1);
+  expect(errors).toEqual([]);
+});
 test('mode hors ligne : la bibliothèque reste accessible via le cache du service worker', async ({ page, context }, testInfo) => {
   await openApp(page);
   const swReady = await page.evaluate(async () => {
