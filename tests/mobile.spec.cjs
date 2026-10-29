@@ -1,12 +1,12 @@
 const { test, expect } = require('@playwright/test');
-const {openApp,reloadApp,libraryCount,openSeance}=require('./helpers.cjs');
+const {openTab, setDuration, openFineSettings, openApp,reloadApp,libraryCount,openSeance}=require('./helpers.cjs');
 test.beforeEach(async ({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await openApp(page);
  page.__errors=errors;
 });
 test('bibliothèque, favoris, recherche et échappement',async ({page})=>{
- await page.getByRole('button',{name:'📚 Bibliothèque d’exercices'}).click();
+ await openTab(page,'Bibliothèque');
  await expect(page.locator('#games .card')).toHaveCount(libraryCount);
  await page.locator('#search').fill('Objets en dix secondes');
  await expect(page.locator('#games .card').first()).toContainText('Objets en dix secondes');
@@ -18,7 +18,7 @@ test('bibliothèque, favoris, recherche et échappement',async ({page})=>{
  expect(page.__errors).toEqual([]);
 });
 test('générateur, édition, historique et mode animateur',async ({page})=>{
- await openSeance(page);await page.locator('#duration').selectOption('55');
+ await openSeance(page);await setDuration(page,'55');
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(5);
  await expect(page.locator('#planSummary')).toContainText('55 minutes');
@@ -36,10 +36,10 @@ test('générateur, édition, historique et mode animateur',async ({page})=>{
  const afterReplace=await page.locator('#plan>.card h3').nth(0).textContent();
  expect(afterReplace).not.toBe(beforeReplace);
  await page.getByRole('button',{name:'Enregistrer'}).click();
- await page.getByRole('button',{name:'Historique'}).click();
+ await openTab(page,'Historique');
  await expect(page.locator('#historyResult .card')).toHaveCount(1);
  await page.getByRole('button',{name:'Réutiliser'}).click();
- await page.getByRole('button',{name:/Régie d’impro|Animateur/}).click();
+ await openTab(page,'Régie');
  await expect(page.locator('#liveProgress')).toContainText('Exercice 1 / 5');
  const first=await page.locator('#liveTitle').textContent();
  await page.getByRole('button',{name:/Suite/}).click();
@@ -59,7 +59,7 @@ test('générateur, édition, historique et mode animateur',async ({page})=>{
 });
 test('glissement tactile et absence de débordement',async ({page})=>{
  await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
- await page.getByRole('button',{name:/Régie d’impro|Animateur/}).click();
+ await openTab(page,'Régie');
  const area=page.locator('#liveClock');const box=await area.boundingBox();
  await page.touchscreen.tap(box.x+box.width/2,box.y+box.height/2);
  await page.evaluate(()=>{const e=document.querySelector('#liveClock'),r=e.getBoundingClientRect();const point=x=>({clientX:x,clientY:r.top+20});const fire=(type,properties)=>{const event=new Event(type,{bubbles:true});for(const [key,value] of Object.entries(properties))Object.defineProperty(event,key,{value});e.dispatchEvent(event)};fire('touchstart',{touches:[point(r.right-10)]});fire('touchend',{changedTouches:[point(r.left+10)]});});

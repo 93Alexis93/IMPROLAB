@@ -1,10 +1,10 @@
 const {test,expect}=require('@playwright/test');
-const {openApp,reloadApp,libraryCount,originCount,library,openSeance}=require('./helpers.cjs');
+const {openTab, setDuration, openFineSettings, openApp,reloadApp,libraryCount,originCount,library,openSeance}=require('./helpers.cjs');
 for(const duration of ['45','55','60','90']){
  test('durée exacte '+duration+' min',async({page})=>{
   await openApp(page);
   
-  await openSeance(page);await page.locator('#duration').selectOption(duration);
+  await openSeance(page);await setDuration(page,duration);
   await page.getByRole('button',{name:'Générer ma séance'}).click();
   await expect(page.locator('#planSummary')).toContainText(duration+' minutes');
   await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(5);
@@ -39,7 +39,7 @@ test('édition, suppression, rechargement, groupe et export',async({page})=>{
  await page.getByRole('button',{name:/Exporter la séance/}).click();
  const download=await downloadPromise;
  expect(download.suggestedFilename()).toBe('impro-lab-seance.json');
- await page.getByRole('button',{name:'Groupes'}).click();
+ await openTab(page,'Groupes');
  await page.locator('#rosterInput').fill(Array.from({length:13},(_,i)=>'Élève '+(i+1)).join('\n'));
  await page.getByRole('button',{name:/Ajouter/}).click();
  await page.locator('#rosterFormat').selectOption('3');
@@ -58,7 +58,7 @@ test('effacement en un clic de toute la séance sans supprimer l’historique',a
  await page.getByRole('button',{name:/Effacer toute la séance/}).click();
  await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(0);
  await expect(page.locator('#planSummary')).toContainText('Aucun exercice');
- await page.getByRole('button',{name:'Historique'}).click();
+ await openTab(page,'Historique');
  await expect(page.getByRole('button',{name:'Réutiliser'})).toBeVisible();
  await reloadApp(page);
  await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(0);
@@ -69,7 +69,7 @@ test('navigation clavier du mode animateur',async({page})=>{
  await openApp(page);
  
  await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
- await page.getByRole('button',{name:/Régie d’impro|Animateur/}).click();
+ await openTab(page,'Régie');
  await page.locator('body').click({position:{x:5,y:5}});
  await page.keyboard.press('ArrowRight');
  await expect(page.locator('#liveProgress')).toContainText('Exercice 2 / 5');
@@ -81,7 +81,7 @@ test('navigation clavier du mode animateur',async({page})=>{
 test('filtres bibliothèque par objectif',async({page})=>{
  await openApp(page);
  
- await page.getByRole('button',{name:'📚 Bibliothèque d’exercices'}).click();
+ await openTab(page,'Bibliothèque');
  await expect(page.locator('#sourceFilter')).toHaveCount(0);
  await expect(page.locator('#games .card')).toHaveCount(libraryCount);
  await page.locator('#categoryFilter').selectOption('Écoute');
@@ -128,7 +128,7 @@ test('rotation équitable entre séances consécutives',async({page})=>{
 test('les neuf catégories et les catégories secondaires sont filtrables',async({page})=>{
  await openApp(page);
  
- await page.getByRole('button',{name:'📚 Bibliothèque d’exercices'}).click();
+ await openTab(page,'Bibliothèque');
  const filter=page.locator('#categoryFilter');
  await expect(filter.locator('option')).toHaveCount(library.categories_pedagogiques.length+1);
  await filter.selectOption('Amusement');
@@ -145,25 +145,25 @@ test('dix curseurs compacts 0-100, persistance et timeline souple',async({page})
  const sliders=page.locator('#seance .dynamic-grid input[type=range]');
  await expect(sliders).toHaveCount(10);
  for(const slider of await sliders.all()){await expect(slider).toHaveAttribute('max','100');await expect(slider).toHaveAttribute('step','1')}
- await openSeance(page);await page.locator('#dynamic9').fill('87');
+ await openSeance(page);await openFineSettings(page);await page.locator('#dynamic9').fill('87');
  await expect(page.locator('#dynamicValue9')).toHaveText('87 %');
  await reloadApp(page);
  await expect(page.locator('#dynamic9')).toHaveValue('87');
  await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
  await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(5);
  await expect(page.locator('#planSummary')).toContainText('55 minutes');
- await page.getByRole('button',{name:/Réinitialiser/}).click();
+ await openFineSettings(page);await page.locator('#seance').getByRole('button',{name:/Réinitialiser/}).click();
  await expect(page.locator('#dynamic9')).toHaveValue('60');
 });
 
 test('timeline souple : cinq étapes et priorité Imaginaire',async({page})=>{
  await openApp(page);
  
- await openSeance(page);await page.locator('#dynamic9').fill('100');
+ await openSeance(page);await openFineSettings(page);await page.locator('#dynamic9').fill('100');
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(5);
  for(const label of ['Mise en énergie','Connexion collective','Exploration','Improvisation','Scène finale'])await expect(page.locator('#plan>.card small').filter({hasText:label})).toHaveCount(1);
- await page.getByRole('button',{name:'📚 Bibliothèque d’exercices'}).click();
+ await openTab(page,'Bibliothèque');
  await page.locator('#categoryFilter').selectOption('Imaginaire');
  await expect(page.locator('#categoryFilter')).toHaveValue('Imaginaire');
 });
@@ -248,7 +248,7 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
  await page.locator('#plan>.card:not(.session-objective)').first().getByRole('button',{name:'🔄 Remplacer'}).click();
  page.once('dialog',dialog=>dialog.accept());
  await page.getByRole('button',{name:'Enregistrer',exact:true}).click();
- await page.getByRole('button',{name:'Historique'}).click();
+ await openTab(page,'Historique');
  await page.getByRole('button',{name:'Réutiliser'}).click();
  await page.locator('#plan>.card:not(.session-objective)').first().getByRole('button',{name:'🔄 Remplacer'}).click();
  await expect(page.locator('#plan>.card h3').first()).toBeVisible();

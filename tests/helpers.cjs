@@ -33,11 +33,40 @@ async function openApp(page, options = {}) {
   await waitForReady(page, options);
 }
 
-// Depuis l'accueil refait, l'appli s'ouvre sur « Exercice aléatoire » :
-// le générateur de séance (durée, curseurs, bouton) est dans l'onglet Séance.
+// Ouvre un onglet par son libellé : Accueil, Préparer, Exercice aléatoire et
+// Régie sont visibles ; les autres sont rangés dans le menu « Plus ».
+async function openTab(page, name) {
+  const nav = page.getByRole('navigation', { name: 'Navigation principale' });
+  const button = nav.getByRole('button', { name, exact: true });
+  if (!(await button.isVisible())) await nav.locator('.more-navigation > summary').click();
+  await button.click();
+}
+
+// Le générateur de séance (durée, curseurs, bouton) est dans l'onglet Préparer.
 async function openSeance(page) {
-  await page.getByRole('button', { name: '🗓 Séance' }).click();
+  await openTab(page, 'Préparer');
   await expect(page.locator('#seance')).toBeVisible();
+}
+
+// La préparation guidée propose quelques durées ; les autres passent par
+// « Autre durée (réglage fin) », qui affiche la liste complète #duration.
+async function setDuration(page, minutes) {
+  const value = String(minutes);
+  const guided = page.locator('#guidedDuration');
+  const offered = await guided.locator('option').evaluateAll(options => options.map(o => o.value));
+  if (offered.includes(value)) {
+    await guided.selectOption(value);
+  } else {
+    await guided.selectOption('custom');
+    await page.locator('#duration').selectOption(value);
+  }
+  await expect(page.locator('#duration')).toHaveValue(value);
+}
+
+// Les dix curseurs de catégories sont repliés dans « Réglages fins ».
+async function openFineSettings(page) {
+  const details = page.locator('#seance details.advanced-dynamics');
+  if (!(await details.evaluate(el => el.open))) await details.locator(':scope > summary').click();
 }
 
 async function reloadApp(page, options = {}) {
@@ -45,4 +74,4 @@ async function reloadApp(page, options = {}) {
   await waitForReady(page, options);
 }
 
-module.exports = { openSeance, openApp, reloadApp, libraryCount, originCount, library, waitForReady };
+module.exports = { openTab, openSeance, setDuration, openFineSettings, openApp, reloadApp, libraryCount, originCount, library, waitForReady };

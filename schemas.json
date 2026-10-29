@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "description": "Schémas d’aide à la lecture, fondés sur les règles clarifiées des fiches. Ils illustrent une disposition ou une circulation et ne remplacent jamais la règle.",
+  "fiches": {
+    "1-1": {
+      "type": "circle-transmission",
+      "caption": "Un joueur envoie « Sa » ; le joueur visé répond « Mu », puis ses deux voisins font le mouvement de sabre « Raï »."
+    },
+    "1-8": {
+      "type": "circle-duel",
+      "caption": "La personne appelée se baisse ; ses deux voisins se font face."
+    },
+    "1-11": {
+      "type": "diamond-leader",
+      "caption": "Un joueur d’un sommet danse puis passe le relais à gauche ou à droite selon son pas, pour orienter progressivement le groupe dans la même direction."
+    },
+    "1-12": {
+      "type": "circle-direction",
+      "caption": "Une frappe continue dans le même sens ; deux frappes avec retournement inversent le sens. Les manches suivantes doublent les frappes : quatre, puis huit."
+    },
+    "1-29": {
+      "type": "four-zones",
+      "caption": "Quatre zones de jeu, chacune associée à une émotion."
+    },
+    "1-30": {
+      "type": "square-pairs",
+      "caption": "Quatre joueurs aux sommets ; les binômes voisins alternent au quart de tour."
+    },
+    "1-42": {
+      "type": "circle-transmission",
+      "caption": "Le clap passe avec le regard ; un joueur bloqué doit être libéré par un échange de regards et de places."
+    },
+    "1-48": {
+      "type": "circle-transmission",
+      "caption": "Cycle « A », « SO », « CA » transmis dans le cercle."
+    },
+    "1-49": {
+      "type": "two-lines",
+      "caption": "Deux files face à face : sur « pile », une pression de main rejoint le dernier, qui lève le bras ; l’équipe gagnante avance."
+    },
+    "1-52": {
+      "type": "stage-entries",
+      "caption": "Deux joueurs en scène et deux en attente ; les entrées et sorties maintiennent deux personnages."
+    },
+    "1-57": {
+      "type": "line-center-pair",
+      "caption": "Tous en ligne ; les deux joueurs du milieu avancent dos à dos."
+    },
+    "1-62": {
+      "type": "circle-transmission",
+      "caption": "Cycle « I », « A », « O » transmis dans le cercle."
+    },
+    "2-9": {
+      "type": "circle-direction",
+      "caption": "Une énergie circule dans le cercle avec plusieurs règles de transmission."
+    }
+  }
+}
