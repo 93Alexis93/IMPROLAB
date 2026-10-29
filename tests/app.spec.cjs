@@ -155,3 +155,15 @@ test('tirage rapide depuis l’accueil : exercice validé et accès à sa fiche'
 });
 
 test('séance : ouverture énergisante et dernière fiche de catégorie principale Scène',async({page})=>{await page.evaluate(()=>generate());const result=await page.evaluate(()=>{const cards=[...document.querySelectorAll('#plan>.card[data-stage-index]')];const title=card=>card.querySelector('h3')?.textContent;const first=data.find(g=>displayTitle(g[0])===title(cards[0]));const last=data.find(g=>displayTitle(g[0])===title(cards.at(-1)));return {count:cards.length,first:first&&{primary:first[1],secondary:first[11]||[]},last:last&&{primary:last[1],secondary:last[11]||[]}}});expect(result.count).toBe(5);expect(['Énergie','Lâcher-prise','Amusement'].some(c=>result.first?.primary===c||result.first?.secondary.includes(c))).toBe(true);expect(result.last?.primary).toBe('Scène')});
+
+test('écran d’entrée : les trois repères ouvrent leur onglet',async({page})=>{
+  for(const [label,section] of [['Tire un exercice','#random'],['Prépare ta séance','#seance'],['Anime avec la régie','#live']]){
+    await page.evaluate(()=>sessionStorage.removeItem('improlab-welcome-seen'));await reloadApp(page,{dismissWelcome:false});
+    await page.locator('#welcomeScreen').getByRole('button',{name:label}).click();
+    await expect(page.locator('#welcomeScreen')).toHaveCount(0);
+    await expect(page.locator(section)).toBeVisible();
+  }
+  await page.evaluate(()=>sessionStorage.removeItem('improlab-welcome-seen'));await reloadApp(page,{dismissWelcome:false});
+  await page.locator('#welcomeScreen').getByRole('button',{name:'Prépare ta séance'}).press('Enter');
+  await expect(page.locator('#seance')).toBeVisible();
+});

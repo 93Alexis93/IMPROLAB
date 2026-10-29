@@ -454,3 +454,30 @@ nav[aria-label="Navigation principale"]{margin-bottom:10px!important}
 
 /* Accueil : un seul bloc d’action */
 #home .home-actions{grid-template-columns:1fr}
+
+/* Écran d’entrée : les trois repères sont des raccourcis vers leur onglet */
+#welcomeScreen .welcome-shortcut{cursor:pointer;-webkit-tap-highlight-color:transparent;transition:border-color .15s,transform .1s}
+#welcomeScreen .welcome-shortcut::after{content:"›";float:right;color:var(--curtain);font-weight:700}
+#welcomeScreen .welcome-shortcut:hover{border-color:var(--curtain)!important}
+#welcomeScreen .welcome-shortcut:active{transform:scale(.98)}
+#welcomeScreen .welcome-shortcut:focus-visible{outline:3px solid var(--focus-ring);outline-offset:2px}
+
+/* Boutons : une seule palette « carnet de coach ».
+   Action principale = rideau bordeaux plein ; outils = contour sobre. */
+main button{background:var(--paper-raised);color:var(--curtain-dark);border:1px solid var(--line);border-radius:4px;box-shadow:none}
+main button:hover{border-color:var(--curtain)}
+main button:focus-visible{outline:3px solid var(--focus-ring);outline-offset:2px}
+main button.btn-primary{background:var(--curtain);color:#fff;border-color:var(--curtain)}
+main button.btn-primary:hover{background:var(--curtain-dark);border-color:var(--curtain-dark)}
+#plan .card:focus-within{border-color:var(--curtain)}
+
+/* Préparer plus compact sur téléphone */
+@media(max-width:600px){
+  .ambiance-picker{grid-template-columns:repeat(2,minmax(0,1fr));gap:.3rem .8rem}
+  .ambiance-picker label{margin:0}
+}
+.coach-attribution{margin:6px 0;font-size:.82em;color:var(--ink-soft)}
+.coach-attribution>summary{cursor:pointer;color:var(--ink-soft);padding:4px 0}
+.coach-attribution>p{margin:4px 0 0}
+.manual-mins{display:inline-flex;align-items:center;gap:6px}
+#live #liveStart.btn-primary{background:var(--curtain);color:#fff;border-color:var(--curtain)}
