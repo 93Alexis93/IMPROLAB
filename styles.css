@@ -442,3 +442,15 @@ nav[aria-label="Navigation principale"]{margin-bottom:10px!important}
 #home .home-actions{padding-top:0}
 #home .home-action{padding-top:.4rem}
 #home .home-action h3{margin:.35rem 0}
+
+/* Écran d’entrée en plein écran */
+#welcomeScreen{padding:0!important;background:var(--paper-raised)!important}
+#welcomeScreen:after,#welcomeScreen .welcome-orbit{display:none!important}
+#welcomeScreen .welcome-content{width:100%!important;max-width:none!important;height:100%;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:max(20px,env(safe-area-inset-top)) 20px max(20px,env(safe-area-inset-bottom))!important;border:0!important;border-top:6px solid var(--curtain)!important;border-radius:0!important;box-shadow:none!important;overflow:auto}
+#welcomeScreen .welcome-content>*{max-width:460px;width:100%}
+#welcomeScreen .welcome-mark{width:auto}
+#welcomeScreen .welcome-logo{width:clamp(130px,34vw,190px)!important}
+
+/* Accueil : un seul bloc d’action */
+#home .home-actions{grid-template-columns:1fr}
