@@ -392,3 +392,38 @@ nav[aria-label="Navigation principale"]{overflow:visible!important;flex-wrap:wra
 #cahier .coach-list-heading h3{font-size:15px}
 #cahier .coach-chips{gap:5px}
 #cahier .coach-chip{padding:5px 7px;font-size:12.5px}
+
+/* Accueil : slogan en tête de page */
+body>header .header-slogan{margin:.45rem 0 0;font:700 clamp(1.15rem,3.6vw,1.6rem)/1.2 Georgia,"Times New Roman",serif;letter-spacing:-.02em;color:var(--curtain,#9b303b)}
+.home-intro p:only-child{font-size:1.12rem;margin:0}
+
+/* Équipes enregistrées */
+.roster-save-bar{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin:.6rem 0}
+.roster-save-bar button{background:var(--curtain)!important;color:#fff!important;border-color:var(--curtain)!important}
+.roster-saved-item{display:flex;align-items:center;gap:.5rem;padding:.55rem .6rem;margin:.35rem 0;background:var(--paper);border:1px solid var(--line);border-radius:4px}
+.roster-saved-item>span{flex:1;min-width:0}
+.roster-saved-item b{display:block;overflow-wrap:anywhere}
+.roster-saved-item small{display:block;color:var(--ink-soft)!important}
+.roster-saved-item button{min-height:38px!important;padding:6px 10px!important}
+#live .regie-saved{margin-top:8px}
+#live .regie-saved>summary{cursor:pointer;font-weight:750;padding:5px 2px}
+
+/* Lisibilité : les anciennes surfaces sombres passent au papier, les anciens textes clairs à l’encre. */
+#live .regie-fold,.regie-players details,#live .draw-categories label,#live .draw-result,#groupes .roster-person,.regie-player-list label,
+#cahier .coach-intro,#cahier .coach-list-card,#cahier .coach-chip,#cahier .coach-count,.pill,
+.advice-panel,.advice-card,#principesContent .principle-level,#principesContent .principle-item,#principesContent .principle-example,
+#principes .search-match,.principes-entry,#principesView .advice-level-group,#principesView .advice-card,.coach-quick,#liveGroupsResult .card,#groupsResult .card{
+  background:var(--paper)!important;color:var(--ink)!important;border-color:var(--line)!important}
+#cahier .coach-intro{background:var(--paper-raised)!important;border-left:4px solid var(--curtain)!important}
+#cahier .coach-intro *,#cahier .coach-list-heading h3,#cahier .coach-chip,#cahier .coach-count{color:var(--ink)!important}
+#cahier .coach-kicker,#cahier .coach-list-number{color:var(--curtain)!important}
+.muted,small,.library-meta,#liveSwipeHint,.regie-footnote,#principes .principes-search-label,.principes-entry small,.coach-attribution,
+#principesView .advice-level-group>summary span,.advice-level{color:var(--ink-soft)!important}
+summary,.coach-quick>summary,.coach-tips summary,#live .regie-options summary,.advice-panel>summary,#principesView .advice-level-group>summary,
+#principesView .advice-card-content summary,#principes .search-match-content summary,#principes .search-match-kind,.principes-entry b,.principes-entry .entry-arrow,
+.plan-summary,.plan-warning,#liveProgress,#liveOvertime,#principes .principes-search-results h3,.advice-card h3{color:var(--curtain-dark,#74232d)!important}
+.card a,a{color:var(--curtain-dark,#74232d)}
+.dynamic-head output{color:color-mix(in srgb,var(--slider-color) 45%,#25231f)!important}
+#live>h2{color:#f7f1e7!important}
+#live .card,#live #liveClock,#live #liveTitle,#live #liveInfo,#live label,#live .regie-player-list label{color:var(--ink)!important}
+#principesView .principes-back{background:var(--paper)!important;color:var(--ink)!important;border:1px solid var(--line)!important}
