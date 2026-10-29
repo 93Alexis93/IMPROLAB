@@ -454,3 +454,10 @@ nav[aria-label="Navigation principale"]{margin-bottom:10px!important}
 
 /* Accueil : un seul bloc d’action */
 #home .home-actions{grid-template-columns:1fr}
+
+/* Écran d’entrée : les trois repères sont des raccourcis vers leur onglet */
+#welcomeScreen .welcome-shortcut{cursor:pointer;-webkit-tap-highlight-color:transparent;transition:border-color .15s,transform .1s}
+#welcomeScreen .welcome-shortcut::after{content:"›";float:right;color:var(--curtain);font-weight:700}
+#welcomeScreen .welcome-shortcut:hover{border-color:var(--curtain)!important}
+#welcomeScreen .welcome-shortcut:active{transform:scale(.98)}
+#welcomeScreen .welcome-shortcut:focus-visible{outline:3px solid var(--focus-ring);outline-offset:2px}
