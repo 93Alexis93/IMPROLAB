@@ -43,4 +43,4 @@ Où ils apparaissent dans l'appli : filet sous l'en-tête, filet en haut de l'é
 - Fiche d'exercice A4, une page (exemple : fiche 3-7 « Le banc des solutions ») : https://canva.link/iqsweng8ev54upc (export : `design/canva/fiche-exercice-3-7-le-banc-des-solutions.pdf`)
 - Affiche : https://canva.link/jhlc421bxhniea0 (export : `design/canva/affiche.jpg`).
 
-Les exports de la planche, des maquettes et de la fiche sont dans `design/canva/` une fois téléchargés depuis Canva.
+Exports dans `design/canva/` : `planche-logo.jpg`, `planche-palette.jpg`, `planche-typographies.jpg`, `maquette-ecran-entree.jpg`, `maquette-accueil.jpg`, `maquette-exercice-aleatoire.jpg`, `maquette-cahier-de-coach.jpg`, `affiche.jpg` et la fiche A4 en PDF.
