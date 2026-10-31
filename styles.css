@@ -481,3 +481,26 @@ main button.btn-primary:hover{background:var(--curtain-dark);border-color:var(--
 .coach-attribution>p{margin:4px 0 0}
 .manual-mins{display:inline-flex;align-items:center;gap:6px}
 #live #liveStart.btn-primary{background:var(--curtain);color:#fff;border-color:var(--curtain)}
+
+
+/* IMPRO LAB — identité visuelle : accents arc-en-ciel sur le carnet clair (couche ajoutée, rien n'est supprimé plus haut) */
+:root{
+  --il-jaune:#ffd21f;--il-corail:#ff526e;--il-violet:#d52cff;--il-bleu:#138bff;--il-menthe:#39f5c8;
+  --il-nuit:#080a17;
+  --il-arc-en-ciel:linear-gradient(90deg,var(--il-jaune),var(--il-corail) 26%,var(--il-violet) 52%,var(--il-bleu) 76%,var(--il-menthe));
+}
+/* En-tête : logo officiel et filet arc-en-ciel */
+.header-logo{width:40px;height:40px;border-radius:10px;vertical-align:middle;margin-right:.55rem;box-shadow:0 2px 8px rgba(37,35,31,.22)}
+body>header::before{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--il-arc-en-ciel)}
+/* Écran d'entrée : filet arc-en-ciel en haut */
+#welcomeScreen::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:var(--il-arc-en-ciel);z-index:3;pointer-events:none}
+/* Accueil : soulignement arc-en-ciel des actions */
+.home-action{border-bottom:3px solid transparent;border-image:var(--il-arc-en-ciel) 1}
+/* Cahier de coach : une couleur d'accent par liste */
+#cahier .coach-list-card{border-top:4px solid var(--il-accent,var(--curtain,#9b303b))}
+#cahier .coach-list-card:nth-child(5n+1){--il-accent:var(--il-jaune)}
+#cahier .coach-list-card:nth-child(5n+2){--il-accent:var(--il-corail)}
+#cahier .coach-list-card:nth-child(5n+3){--il-accent:var(--il-violet)}
+#cahier .coach-list-card:nth-child(5n+4){--il-accent:var(--il-bleu)}
+#cahier .coach-list-card:nth-child(5n+5){--il-accent:var(--il-menthe)}
+@media print{body>header::before,#welcomeScreen::before{display:none!important}}
