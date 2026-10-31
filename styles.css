@@ -528,3 +528,30 @@ nav[aria-label="Navigation principale"]{background:rgba(255,253,248,.80)!importa
 #welcomeScreen .welcome-shortcut{background:rgba(255,253,248,.88)!important}
 @media print{html{background:#fff}body::before{display:none!important}nav[aria-label="Navigation principale"]{background:transparent!important}}
 #welcomeScreen .welcome-hint{color:#4a443c!important;opacity:1!important}
+
+/* IMPRO LAB — le dégradé de l'en-tête devient la surface des cartes et des panneaux (remplace le beige/gris clair) */
+:root{
+  --ink-soft:#4f483f;
+  --il-surface:linear-gradient(135deg,#fdeeb0 0%,#f9dbe3 50%,#eed6f6 100%);
+  --il-surface-bord:rgba(255,255,255,.75);
+}
+div.card,details.card,details.regie-fold,details.regie-saved,details#livePlayersPanel,article.coach-list-card,button.principes-entry,div.coach-intro,label.dynamic-row,span.pill{
+  background:var(--il-surface)!important;border-color:var(--il-surface-bord)!important}
+nav[aria-label="Navigation principale"]{background:var(--il-surface)!important;border-bottom-color:var(--il-surface-bord)!important}
+body::before{background:
+    radial-gradient(ellipse 75% 52% at 0% 0%,rgba(255,210,31,.50),transparent 74%),
+    radial-gradient(ellipse 66% 50% at 100% 6%,rgba(213,44,255,.28),transparent 74%),
+    radial-gradient(ellipse 68% 54% at 100% 100%,rgba(19,139,255,.30),transparent 74%),
+    radial-gradient(ellipse 68% 52% at 0% 100%,rgba(57,245,200,.36),transparent 74%),
+    radial-gradient(ellipse 54% 40% at 50% 52%,rgba(255,82,110,.14),transparent 76%)!important}
+
+/* Dégradé continu sur toute la hauteur (plus de zone crème) + cartes internes de la Régie et des listes */
+body::before{background:
+    radial-gradient(ellipse 80% 40% at 0% 0%,rgba(255,210,31,.35),transparent 70%),
+    radial-gradient(ellipse 80% 40% at 100% 100%,rgba(57,245,200,.35),transparent 70%),
+    linear-gradient(180deg,#fde8a4 0%,#f9d7df 24%,#ecd3f7 48%,#cfdff8 74%,#c6f0e0 100%)!important}
+#live .regie-fold,#live details.regie-fold,.regie-players details,#live .regie-draw,#live details,#live .draw-result,#live .draw-categories label,#groupes .roster-person,.regie-player-list label,#principesContent .principle-level,#principesContent .principle-item,#principes .search-match,#principesView .advice-level-group,#principesView .advice-card,.advice-panel,.advice-card,.coach-chip,.coach-quick{
+  background:var(--il-surface)!important;border-color:var(--il-surface-bord)!important;color:var(--ink,#25231f)!important}
+body #cahier .coach-intro,body #cahier .coach-list-card,body #principes .principes-entry,body #principesContent .principle-level,body #principesContent .principle-item,body #groupes .roster-person{
+  background:var(--il-surface)!important;border-color:var(--il-surface-bord)!important}
+body .more-navigation-menu{background:var(--il-surface)!important;border-color:var(--il-surface-bord)!important}
