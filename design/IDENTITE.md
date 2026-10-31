@@ -20,7 +20,7 @@ Direction : « carnet de coach » — papier crème, texte encre, accents bordea
 
 `--il-jaune` `#ffd21f` · `--il-corail` `#ff526e` · `--il-violet` `#d52cff` · `--il-bleu` `#138bff` · `--il-menthe` `#39f5c8` · `--il-nuit` `#080a17` (tuile du logo) · `--il-arc-en-ciel` (dégradé des cinq couleurs).
 
-Où ils apparaissent dans l'appli : filet sous l'en-tête, filet en haut de l'écran d'entrée, soulignement des actions de l'accueil, barre colorée en haut de chaque liste du Cahier de coach, logo à côté du titre. Aucun n'est affiché à l'impression.
+Où ils apparaissent dans l'appli : filet sous l'en-tête, filet en haut de l'écran d'entrée, soulignement des actions de l'accueil, barre colorée en haut de chaque liste du Cahier de coach, logo à côté du titre. Fond de toutes les pages : dégradé doux jaune, violet, bleu, menthe sur le papier crème (les cartes restent claires pour la lisibilité). Rien de tout cela n'est affiché à l'impression.
 
 ## Typographies
 
@@ -40,7 +40,7 @@ Où ils apparaissent dans l'appli : filet sous l'en-tête, filet en haut de l'é
 
 - Planche d'identité (logo, palette, typographies) : https://canva.link/lrnwa59y30m1s0m
 - Maquettes d'écrans (direction visuelle : entrée, accueil, exercice aléatoire, cahier de coach) : https://canva.link/svy9hk84xctlc1e
-- Fiche d'exercice A4, une page (exemple : fiche 3-7 « Le banc des solutions ») : https://canva.link/iqsweng8ev54upc
+- Fiche d'exercice A4, une page (exemple : fiche 3-7 « Le banc des solutions ») : https://canva.link/iqsweng8ev54upc (export : `design/canva/fiche-exercice-3-7-le-banc-des-solutions.pdf`)
 - Affiche : https://canva.link/jhlc421bxhniea0 (export : `design/canva/affiche.jpg`).
 
 Les exports de la planche, des maquettes et de la fiche sont dans `design/canva/` une fois téléchargés depuis Canva.

@@ -504,3 +504,27 @@ body>header::before{content:"";position:absolute;left:0;right:0;bottom:0;height:
 #cahier .coach-list-card:nth-child(5n+4){--il-accent:var(--il-bleu)}
 #cahier .coach-list-card:nth-child(5n+5){--il-accent:var(--il-menthe)}
 @media print{body>header::before,#welcomeScreen::before{display:none!important}}
+
+/* IMPRO LAB — fond dégradé coloré sur toutes les pages (ajout ; les cartes restent claires pour la lisibilité) */
+html{background:var(--paper,#f7f1e7)}
+html body{background:transparent!important;min-height:100vh}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(ellipse 70% 48% at 0% 0%,rgba(255,210,31,.30),transparent 72%),
+    radial-gradient(ellipse 62% 46% at 100% 6%,rgba(213,44,255,.18),transparent 72%),
+    radial-gradient(ellipse 64% 50% at 100% 100%,rgba(19,139,255,.20),transparent 72%),
+    radial-gradient(ellipse 64% 48% at 0% 100%,rgba(57,245,200,.24),transparent 72%),
+    radial-gradient(ellipse 50% 36% at 50% 52%,rgba(255,82,110,.10),transparent 74%)}
+body>header{background:transparent!important}
+nav[aria-label="Navigation principale"]{background:rgba(255,253,248,.80)!important;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.more-navigation-menu{background:var(--paper-raised,#fffdf8)!important}
+#welcomeScreen{background:
+    radial-gradient(ellipse 80% 50% at 0% 0%,rgba(255,210,31,.40),transparent 70%),
+    radial-gradient(ellipse 70% 50% at 100% 8%,rgba(213,44,255,.26),transparent 70%),
+    radial-gradient(ellipse 75% 55% at 100% 100%,rgba(19,139,255,.28),transparent 70%),
+    radial-gradient(ellipse 75% 52% at 0% 100%,rgba(57,245,200,.32),transparent 70%),
+    var(--paper,#f7f1e7)!important}
+#welcomeScreen .welcome-content{background:transparent!important}
+#welcomeScreen .welcome-shortcut{background:rgba(255,253,248,.88)!important}
+@media print{html{background:#fff}body::before{display:none!important}nav[aria-label="Navigation principale"]{background:transparent!important}}
+#welcomeScreen .welcome-hint{color:#4a443c!important;opacity:1!important}
