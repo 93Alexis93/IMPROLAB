@@ -555,3 +555,4 @@ body::before{background:
 body #cahier .coach-intro,body #cahier .coach-list-card,body #principes .principes-entry,body #principesContent .principle-level,body #principesContent .principle-item,body #groupes .roster-person{
   background:var(--il-surface)!important;border-color:var(--il-surface-bord)!important}
 body .more-navigation-menu{background:var(--il-surface)!important;border-color:var(--il-surface-bord)!important}
+.dynamic-sub{display:block;font-size:11px;line-height:1.2;margin:-1px 0 2px;color:var(--ink-soft,#4f483f)}
