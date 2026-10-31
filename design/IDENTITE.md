@@ -42,3 +42,12 @@ Créés dans Canva le 31/10/2026, éditables depuis ces liens :
 - Fiche d'exercice imprimable (A4, exemple : fiche 3-7 « Le banc des solutions ») : https://canva.link/3fvp30hgwmk05dc
 
 Les maquettes sont une direction visuelle, pas une source de vérité : le code du dépôt fait foi.
+
+## Exports (dossier `design/canva/`)
+
+- `planche-identite-1.jpg` à `-3.jpg` : planche d'identité (logo, palette, typographies).
+- `maquettes-ecrans-1.jpg` à `-4.jpg` : maquettes d'écrans.
+- `affiche.jpg` : affiche.
+- `fiche-exercice-3-7-le-banc-des-solutions.pdf` : fiche imprimable A4 (2 pages).
+
+Défauts connus dans ces exports, à corriger dans Canva puis ré-exporter : une faute dans la planche (page 3, « I lisibilité » au lieu de « Une lisibilité ») et la fiche A4 qui déborde sur une 2e page (le titre « Objectif pour les élèves » se retrouve seul en haut de page 2).
