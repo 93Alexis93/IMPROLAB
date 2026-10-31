@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="t d">
+<title id="t">IMPRO LAB</title><desc id="d">Logo IMPRO LAB sur fond papier carnet</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffd21f"/><stop offset=".24" stop-color="#ff526e"/><stop offset=".5" stop-color="#d52cff"/><stop offset=".72" stop-color="#138bff"/><stop offset="1" stop-color="#39f5c8"/></linearGradient></defs>
+<rect width="1200" height="420" rx="48" fill="#fff8e7"/>
+<g transform="translate(40 0)"><path d="M470 118 492 70 530 108 560 52 590 108 630 70 652 118" fill="none" stroke="#e0a800" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M478 136 Q560 156 644 136" fill="none" stroke="#e0a800" stroke-width="9" stroke-linecap="round"/></g>
+<text x="600" y="258" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-size="118" font-weight="900" font-style="italic" letter-spacing="-3" fill="url(#g)">IMPRO LAB</text>
+<path d="M300 306 Q600 352 900 306" fill="none" stroke="url(#g)" stroke-width="11" stroke-linecap="round"/>
+<path transform="translate(120 -40)" d="m930 205 10 24 25 2-19 16 6 25-22-14-21 14 6-25-19-16 25-2z" fill="#e0a800"/>
+</svg>
