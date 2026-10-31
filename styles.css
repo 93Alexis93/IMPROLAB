@@ -481,3 +481,78 @@ main button.btn-primary:hover{background:var(--curtain-dark);border-color:var(--
 .coach-attribution>p{margin:4px 0 0}
 .manual-mins{display:inline-flex;align-items:center;gap:6px}
 #live #liveStart.btn-primary{background:var(--curtain);color:#fff;border-color:var(--curtain)}
+
+
+/* IMPRO LAB — identité visuelle : accents arc-en-ciel sur le carnet clair (couche ajoutée, rien n'est supprimé plus haut) */
+:root{
+  --il-jaune:#ffd21f;--il-corail:#ff526e;--il-violet:#d52cff;--il-bleu:#138bff;--il-menthe:#39f5c8;
+  --il-nuit:#080a17;
+  --il-arc-en-ciel:linear-gradient(90deg,var(--il-jaune),var(--il-corail) 26%,var(--il-violet) 52%,var(--il-bleu) 76%,var(--il-menthe));
+}
+/* En-tête : logo officiel et filet arc-en-ciel */
+.header-logo{width:40px;height:40px;border-radius:10px;vertical-align:middle;margin-right:.55rem;box-shadow:0 2px 8px rgba(37,35,31,.22)}
+body>header::before{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--il-arc-en-ciel)}
+/* Écran d'entrée : filet arc-en-ciel en haut */
+#welcomeScreen::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:var(--il-arc-en-ciel);z-index:3;pointer-events:none}
+/* Accueil : soulignement arc-en-ciel des actions */
+.home-action{border-bottom:3px solid transparent;border-image:var(--il-arc-en-ciel) 1}
+/* Cahier de coach : une couleur d'accent par liste */
+#cahier .coach-list-card{border-top:4px solid var(--il-accent,var(--curtain,#9b303b))}
+#cahier .coach-list-card:nth-child(5n+1){--il-accent:var(--il-jaune)}
+#cahier .coach-list-card:nth-child(5n+2){--il-accent:var(--il-corail)}
+#cahier .coach-list-card:nth-child(5n+3){--il-accent:var(--il-violet)}
+#cahier .coach-list-card:nth-child(5n+4){--il-accent:var(--il-bleu)}
+#cahier .coach-list-card:nth-child(5n+5){--il-accent:var(--il-menthe)}
+@media print{body>header::before,#welcomeScreen::before{display:none!important}}
+
+/* IMPRO LAB — fond dégradé coloré sur toutes les pages (ajout ; les cartes restent claires pour la lisibilité) */
+html{background:var(--paper,#f7f1e7)}
+html body{background:transparent!important;min-height:100vh}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(ellipse 70% 48% at 0% 0%,rgba(255,210,31,.30),transparent 72%),
+    radial-gradient(ellipse 62% 46% at 100% 6%,rgba(213,44,255,.18),transparent 72%),
+    radial-gradient(ellipse 64% 50% at 100% 100%,rgba(19,139,255,.20),transparent 72%),
+    radial-gradient(ellipse 64% 48% at 0% 100%,rgba(57,245,200,.24),transparent 72%),
+    radial-gradient(ellipse 50% 36% at 50% 52%,rgba(255,82,110,.10),transparent 74%)}
+body>header{background:transparent!important}
+nav[aria-label="Navigation principale"]{background:rgba(255,253,248,.80)!important;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.more-navigation-menu{background:var(--paper-raised,#fffdf8)!important}
+#welcomeScreen{background:
+    radial-gradient(ellipse 80% 50% at 0% 0%,rgba(255,210,31,.40),transparent 70%),
+    radial-gradient(ellipse 70% 50% at 100% 8%,rgba(213,44,255,.26),transparent 70%),
+    radial-gradient(ellipse 75% 55% at 100% 100%,rgba(19,139,255,.28),transparent 70%),
+    radial-gradient(ellipse 75% 52% at 0% 100%,rgba(57,245,200,.32),transparent 70%),
+    var(--paper,#f7f1e7)!important}
+#welcomeScreen .welcome-content{background:transparent!important}
+#welcomeScreen .welcome-shortcut{background:rgba(255,253,248,.88)!important}
+@media print{html{background:#fff}body::before{display:none!important}nav[aria-label="Navigation principale"]{background:transparent!important}}
+#welcomeScreen .welcome-hint{color:#4a443c!important;opacity:1!important}
+
+/* IMPRO LAB — le dégradé de l'en-tête devient la surface des cartes et des panneaux (remplace le beige/gris clair) */
+:root{
+  --ink-soft:#4f483f;
+  --il-surface:linear-gradient(135deg,#fdeeb0 0%,#f9dbe3 50%,#eed6f6 100%);
+  --il-surface-bord:rgba(255,255,255,.75);
+}
+div.card,details.card,details.regie-fold,details.regie-saved,details#livePlayersPanel,article.coach-list-card,button.principes-entry,div.coach-intro,label.dynamic-row,span.pill{
+  background:var(--il-surface)!important;border-color:var(--il-surface-bord)!important}
+nav[aria-label="Navigation principale"]{background:var(--il-surface)!important;border-bottom-color:var(--il-surface-bord)!important}
+body::before{background:
+    radial-gradient(ellipse 75% 52% at 0% 0%,rgba(255,210,31,.50),transparent 74%),
+    radial-gradient(ellipse 66% 50% at 100% 6%,rgba(213,44,255,.28),transparent 74%),
+    radial-gradient(ellipse 68% 54% at 100% 100%,rgba(19,139,255,.30),transparent 74%),
+    radial-gradient(ellipse 68% 52% at 0% 100%,rgba(57,245,200,.36),transparent 74%),
+    radial-gradient(ellipse 54% 40% at 50% 52%,rgba(255,82,110,.14),transparent 76%)!important}
+
+/* Dégradé continu sur toute la hauteur (plus de zone crème) + cartes internes de la Régie et des listes */
+body::before{background:
+    radial-gradient(ellipse 80% 40% at 0% 0%,rgba(255,210,31,.35),transparent 70%),
+    radial-gradient(ellipse 80% 40% at 100% 100%,rgba(57,245,200,.35),transparent 70%),
+    linear-gradient(180deg,#fde8a4 0%,#f9d7df 24%,#ecd3f7 48%,#cfdff8 74%,#c6f0e0 100%)!important}
+#live .regie-fold,#live details.regie-fold,.regie-players details,#live .regie-draw,#live details,#live .draw-result,#live .draw-categories label,#groupes .roster-person,.regie-player-list label,#principesContent .principle-level,#principesContent .principle-item,#principes .search-match,#principesView .advice-level-group,#principesView .advice-card,.advice-panel,.advice-card,.coach-chip,.coach-quick{
+  background:var(--il-surface)!important;border-color:var(--il-surface-bord)!important;color:var(--ink,#25231f)!important}
+body #cahier .coach-intro,body #cahier .coach-list-card,body #principes .principes-entry,body #principesContent .principle-level,body #principesContent .principle-item,body #groupes .roster-person{
+  background:var(--il-surface)!important;border-color:var(--il-surface-bord)!important}
+body .more-navigation-menu{background:var(--il-surface)!important;border-color:var(--il-surface-bord)!important}
+.dynamic-sub{display:block;font-size:11px;line-height:1.2;margin:-1px 0 2px;color:var(--ink-soft,#4f483f)}

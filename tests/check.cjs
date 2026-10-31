@@ -74,17 +74,18 @@ assert.ok(schemaData.fiches['1-12'].caption.includes('quatre') && schemaData.fic
 assert.ok(schemaData.fiches['1-42'].caption.includes('libéré'), 'Le schéma 1-42 doit rappeler la délivrance');
 assert.ok(schemaData.fiches['1-49'].caption.includes('pile') && schemaData.fiches['1-49'].caption.includes('avance'), 'Le schéma 1-49 doit rappeler le signal et l’avancée de l’équipe');
 assert.ok(fs.readFileSync('sw.js','utf8').includes('schemas.json'), 'Service worker : schémas absents du cache');
-assert.ok(html.includes('id="guidedDuration"') && html.includes('data-ambiance="energy"'), 'Préparation guidée absente');
+assert.ok(html.includes('id="guidedDuration"') && !html.includes('data-ambiance') && !script.includes('applyAmbiances'), 'Préparation guidée absente ou bloc ambiances encore présent');
 assert.ok(fs.readFileSync('styles.css','utf8').includes('label[hidden]'), 'Les labels masqués doivent rester masqués malgré les styles globaux');
 const stylesheet = fs.readFileSync('styles.css','utf8');
 assert.ok(stylesheet.includes('@page{size:A4'), 'Mise en page A4 à l’impression absente');
 assert.ok(stylesheet.includes('@media print{') && stylesheet.includes('#plan>.card'), 'Styles d’impression des séances absents');
 assert.ok(stylesheet.includes('.exercise-schema svg{max-width:32mm'), 'Les schémas doivent être adaptés à l’impression');
-assert.ok(script.includes('function applyAmbiances()'), 'Application des ambiances absente');
-assert.ok(script.includes('if(!checked.length){for(let i=0;i<IMPRO_CATEGORIES.length;i++){const c=IMPRO_CATEGORIES[i],main=document.getElementById(\'dynamic\'+i);if(main){main.value=DEFAULT_DYNAMICS[c]*20;updateDynamic(i)}}status.textContent=\'Aucune ambiance sélectionnée : priorités habituelles restaurées.\';return}'), 'Sans ambiance sélectionnée, les curseurs doivent retrouver les priorités habituelles');
-assert.ok(script.includes("function resetDynamics(){") && script.includes("document.querySelectorAll('[data-ambiance]').forEach(el=>el.checked=false)"), 'La réinitialisation doit effacer les ambiances sélectionnées');
-assert.ok(script.includes("const AMBIANCE_CATEGORIES="), 'Correspondance entre ambiances et catégories absente');
-for (const key of ['energy','listen','release','story','stage','emotion']) assert.ok(html.includes('data-ambiance="'+key+'"'), 'Ambiance guidée absente : '+key);
+assert.ok(script.includes('const SLIDER_GROUPS='), 'Regroupement des six curseurs absent');
+{ const groups=[...script.match(/const SLIDER_GROUPS=(\[[^;]*\]);/)[1].matchAll(/cats:\[([^\]]*)\]/g)].map(m=>m[1].split(',').map(x=>x.trim().replace(/['"]/g,'')));
+  const cats=script.match(/const IMPRO_CATEGORIES=(\[[^\]]*\])/)[1].split(',').map(x=>x.trim().replace(/[\[\]"']/g,''));
+  assert.strictEqual(groups.length,6,'Il doit y avoir six curseurs');
+  assert.deepStrictEqual(groups.flat().sort(),[...cats].sort(),'Chaque catégorie doit appartenir à un et un seul curseur'); }
+assert.ok(script.includes("function resetDynamics(){") && !script.includes('data-ambiance'), 'La réinitialisation des curseurs est absente');
 assert.ok(script.includes("localStorage.setItem('impro-session-dynamics-v1'") && script.includes("localStorage.setItem('impro-random-dynamics-v1'"), 'Persistance partagée des curseurs absente');
 assert.ok(script.includes("other.value=n") && script.includes("document.getElementById('dynamic'+i)"), 'Synchronisation des curseurs entre les deux générateurs absente');
 assert.ok(html.includes('min-height:44px') || fs.readFileSync('styles.css','utf8').includes('min-height:44px'), 'Cibles tactiles de 44 px absentes');
@@ -132,7 +133,8 @@ for (const e of lib.exercices) {
 assert.ok(script.includes('(x.g[11]||[]).includes(cat)'),'Filtre secondaire absent');
 assert.ok(script.includes('function gameAffinity(g,category)'),'Prise en compte des catégories secondaires absente');
 assert.ok(script.includes('SOFT_TIMELINE') && script.includes('chooseTimelineGame'),'Timeline souple manquante');
-for (let i=0;i<10;i++) assert.ok(html.includes('id="dynamic'+i+'"'),'Curseur dynamique absent : '+i);
+for (let i=0;i<6;i++) assert.ok(html.includes('id="dynamic'+i+'"'),'Curseur dynamique absent : '+i);
+assert.ok(!html.includes('id="dynamic6"') && !html.includes('id="randomDynamic6"'),'Il ne doit plus y avoir que six curseurs');
 assert.ok(script.includes('buildTimelineMinutes(duration)') && /buildPrincipalObjective\(selectedGames(?:,parts)?\)/.test(script), 'Générateur adaptatif et objectif pédagogique absents');
 
 assert.ok(script.includes('impro-session-dynamics-v1') && script.includes('impro-random-dynamics-v1') && script.includes('chooseDynamicGame'),'Curseurs indépendants absents');
@@ -140,7 +142,7 @@ assert.ok(html.includes('welcome-tutorial') && ['Tire un exercice','Prépare ta 
 assert.equal(lib.ressource_cahier_coach.listes.Mot.length,20,'Liste de mots du cahier de coach : longueur inattendue');
 for (const word of ['Transmission','Crépitement','Mirage']) assert.ok(lib.ressource_cahier_coach.listes.Mot.includes(word),'Mot du cahier de coach manquant : '+word);
 assert.ok(html.includes('id="randomExerciseCategories"') && html.includes('function pickRandomExercise(') && html.includes('function useRandomExercise('),'Générateur d’exercice aléatoire absent');
-for (let i=0;i<10;i++) assert.ok(html.includes('id="randomDynamic'+i+'"'),'Curseur du générateur absent : '+i);
+for (let i=0;i<6;i++) assert.ok(html.includes('id="randomDynamic'+i+'"'),'Curseur du générateur absent : '+i);
 assert.ok(script.includes('function getRandomDynamics()') && script.includes('function updateRandomDynamic(i)'),'Priorités du générateur absentes');
 assert.ok(html.includes('Object.prototype.hasOwnProperty.call(DRAW_DEFAULTS,category)'),'Les listes du cahier ne doivent pas créer de catégories de tirage inconnues');
 
@@ -158,4 +160,4 @@ assert.ok(sw.includes("caches.match(e.request,{ignoreSearch:true})"), 'Le cache 
 assert.ok(sw.includes("caches.delete(k)"), 'Le service worker doit supprimer les anciens caches');
 
 console.log('IMPRO LAB : contrôles statiques et cohérence des données OK');
-console.log('Timeline souple et dix curseurs OK');
+console.log('Timeline souple et six curseurs OK');

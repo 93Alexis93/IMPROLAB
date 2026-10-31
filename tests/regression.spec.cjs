@@ -139,27 +139,27 @@ test('les neuf catégories et les catégories secondaires sont filtrables',async
  await expect(page.locator('#games')).toContainText('voyant');
 });
 
-test('dix curseurs compacts 0-100, persistance et timeline souple',async({page})=>{
+test('six curseurs compacts 0-100, persistance et timeline souple',async({page})=>{
  await openApp(page);
  
  const sliders=page.locator('#seance .dynamic-grid input[type=range]');
- await expect(sliders).toHaveCount(10);
+ await expect(sliders).toHaveCount(6);
  for(const slider of await sliders.all()){await expect(slider).toHaveAttribute('max','100');await expect(slider).toHaveAttribute('step','1')}
- await openSeance(page);await openFineSettings(page);await page.locator('#dynamic9').fill('87');
- await expect(page.locator('#dynamicValue9')).toHaveText('87 %');
+ await openSeance(page);await openFineSettings(page);await page.locator('#dynamic4').fill('87');
+ await expect(page.locator('#dynamicValue4')).toHaveText('87 %');
  await reloadApp(page);
- await expect(page.locator('#dynamic9')).toHaveValue('87');
+ await expect(page.locator('#dynamic4')).toHaveValue('87');
  await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
  await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(5);
  await expect(page.locator('#planSummary')).toContainText('55 minutes');
  await openFineSettings(page);await page.locator('#seance').getByRole('button',{name:/Réinitialiser/}).click();
- await expect(page.locator('#dynamic9')).toHaveValue('60');
+ await expect(page.locator('#dynamic4')).toHaveValue('60');
 });
 
 test('timeline souple : cinq étapes et priorité Imaginaire',async({page})=>{
  await openApp(page);
  
- await openSeance(page);await openFineSettings(page);await page.locator('#dynamic9').fill('100');
+ await openSeance(page);await openFineSettings(page);await page.locator('#dynamic4').fill('100');
  await page.getByRole('button',{name:'Générer ma séance'}).click();
  await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(5);
  for(const label of ['Mise en énergie','Connexion collective','Exploration','Improvisation','Scène finale'])await expect(page.locator('#plan>.card small').filter({hasText:label})).toHaveCount(1);
@@ -201,7 +201,7 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
  const runtimeErrors=[];page.on('pageerror',error=>runtimeErrors.push(error.message));page.on('console',message=>{if(message.type()==='error')runtimeErrors.push(message.text())});
  await openApp(page);
  await page.locator('#includeExternal').uncheck();
- for(let i=0;i<10;i++)await page.locator('#dynamic'+i).evaluate((el,value)=>{el.value=value;el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}));},i===0?'100':'0');
+ for(let i=0;i<6;i++)await page.locator('#dynamic'+i).evaluate((el,value)=>{el.value=value;el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}));},i===0?'100':'0');
  await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
  const cards=page.locator('#plan>.card:not(.session-objective)');
  await expect(cards).toHaveCount(5);
