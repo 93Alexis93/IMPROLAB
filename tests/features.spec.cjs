@@ -124,6 +124,46 @@ test('navigation compacte sur iPhone : une ligne de cinq cibles de 44 px, menu P
   await expect(page.locator('#historique')).toBeVisible();
 });
 
+test('match d’impro : score, tirage catégorie et thème de l’asso, lancement du chrono, conservé au rechargement', async ({ page }) => {
+  await openApp(page);
+  await openTab(page, 'Régie');
+  await page.locator('#matchPanel > summary').click();
+  await page.getByLabel('Nom de l’équipe 1').fill('Les Bleus');
+  await page.getByLabel('Nom de l’équipe 2').fill('Les Rouges <s>');
+  await page.locator('#matchPanel .regie-options > summary').click();
+  await page.locator('#matchCategories').fill('Chantée');
+  await page.locator('#matchCategories').dispatchEvent('change');
+  await page.locator('#matchThemes').fill('Le dernier métro');
+  await page.locator('#matchThemes').dispatchEvent('change');
+  await page.locator('#matchMinutes').fill('2');
+  await page.locator('#matchMinutes').dispatchEvent('change');
+
+  const blue = page.locator('.match-score > div').first();
+  await blue.getByRole('button', { name: '＋ Point' }).click();
+  await blue.getByRole('button', { name: '＋ Point' }).click();
+  await page.locator('.match-score > div').nth(1).getByRole('button', { name: '＋ Point' }).click();
+  await blue.getByRole('button', { name: 'Retirer un point à l’équipe 1' }).click();
+  await expect(page.locator('#matchScoreA')).toHaveText('1');
+  await expect(page.locator('#matchScoreB')).toHaveText('1');
+  await expect(page.locator('#matchNameB')).toHaveText('Les Rouges <s>');
+
+  await page.getByRole('button', { name: 'Tirer catégorie et thème' }).click();
+  await expect(page.locator('#matchCurrent')).toHaveText('Catégorie : Chantée · Thème : Le dernier métro · 2 min');
+  await page.getByRole('button', { name: 'Lancer l’impro au chrono' }).click();
+  await expect(page.locator('#liveMode')).toHaveValue('free');
+  await expect(page.locator('#liveTitle')).toHaveText('Chantée');
+  await expect(page.locator('#liveInfo')).toHaveText('Thème : Le dernier métro');
+  await expect(page.locator('#liveClock')).toHaveText('02:00');
+
+  await reloadApp(page);
+  await openTab(page, 'Régie');
+  await page.locator('#matchPanel > summary').click();
+  await expect(page.locator('#matchScoreA')).toHaveText('1');
+  await expect(page.locator('#matchNameA')).toHaveText('Les Bleus');
+  await page.getByRole('button', { name: 'Score à zéro' }).click();
+  await expect(page.locator('#matchScoreA')).toHaveText('0');
+});
+
 test('partager une séance sans feuille de partage : le fichier est téléchargé', async ({ page }) => {
   await page.addInitScript(() => { try { delete Navigator.prototype.share; delete Navigator.prototype.canShare; } catch {} navigator.share = undefined; });
   await openApp(page);

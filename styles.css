@@ -580,6 +580,18 @@ body #plan .edit-actions button{min-width:44px!important}
 .badge-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 body .badge-row .badge-chip{min-height:44px;padding:6px 10px;border-radius:22px;font-size:14px;background:var(--paper-raised,#fffaf0);color:var(--ink,#25231f);border:1px solid var(--line,#d2c7b8)}
 body .badge-row .badge-chip[aria-pressed="true"]{background:#1f5e3a!important;color:#fff!important;border-color:#1f5e3a!important}
+/* Match d'impro (Régie) */
+#live .regie-match{margin:9px 0;border:1px solid var(--il-surface-bord,#626c90);border-radius:12px;padding:9px;background:var(--il-surface,#202745)}
+#live .regie-match>summary{cursor:pointer;font-weight:750;min-height:44px;display:flex;align-items:center;padding:0 2px}
+.match-teams{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.match-teams input{width:100%;box-sizing:border-box;min-height:44px}
+.match-score{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0;text-align:center}
+.match-score>div{border:1px solid var(--line,#d2c7b8);border-radius:12px;padding:8px}
+.match-score b{display:block;overflow-wrap:anywhere}
+.match-score output{display:block;font-size:44px;font-weight:900;font-variant-numeric:tabular-nums;line-height:1.1}
+.match-score button{min-height:44px;min-width:44px;margin:2px}
+.match-current{font-size:18px;font-weight:700}
+.regie-match textarea{width:100%;box-sizing:border-box}
 /* Bilan de séance dans l'Historique */
 .history-review{margin-top:10px}
 .history-review>summary{min-height:44px;box-sizing:border-box;padding-block:10px;cursor:pointer;font-weight:700}
