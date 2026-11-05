@@ -290,6 +290,123 @@ test('élève animateur : consigne courte en grand, pas de navigation, sortie co
   expect(dialogs).toEqual(['Reprendre la main sur la Régie ?', 'Reprendre la main sur la Régie ?']);
 });
 
+test('favoris par groupe : un favori du Club n’apparaît pas chez les Copains, et revient avec le Club', async ({ page }) => {
+  await openApp(page);
+  await openTab(page, 'Bibliothèque');
+  await expect(page.locator('#favoritesGroup')).toHaveText('(groupe Club collège)');
+  const first = page.locator('#games .card').first();
+  const title = (await first.locator('h3').first().textContent()).trim();
+  await first.getByRole('button', { name: /Ajouter aux favoris/ }).click();
+  await page.locator('#favoritesOnly').check();
+  await expect(page.locator('#games .card')).toHaveCount(1);
+
+  await openSeance(page);
+  await page.locator('#groupProfile').selectOption('copains');
+  await openTab(page, 'Bibliothèque');
+  await expect(page.locator('#favoritesGroup')).toHaveText('(groupe Copains)');
+  await expect(page.locator('#games .card')).toHaveCount(0);
+
+  await openSeance(page);
+  await page.locator('#groupProfile').selectOption('college');
+  await openTab(page, 'Bibliothèque');
+  await expect(page.locator('#games .card')).toHaveCount(1);
+  await expect(page.locator('#games .card h3').first()).toHaveText(title);
+});
+
+test('contraintes de main en main : tirages cochés en plein écran, « Suivant » relance', async ({ page }) => {
+  await openApp(page);
+  await openTab(page, 'Régie');
+  await page.locator('#live .regie-draw > summary').click();
+  await page.getByRole('button', { name: /de main en main/ }).click();
+  const view = page.locator('#passView');
+  await expect(view).toBeVisible();
+  const enabled = await page.evaluate(() => Object.keys(DRAW_DEFAULTS).filter(k => drawEnabled[k] !== false).length);
+  await expect(page.locator('#passList .pass-item')).toHaveCount(enabled);
+  const before = await page.locator('#passList .pass-val').allTextContents();
+  let changed = false;
+  for (let i = 0; i < 5 && !changed; i++) {
+    await view.getByRole('button', { name: /Suivant/ }).click();
+    changed = (await page.locator('#passList .pass-val').allTextContents()).some((v, j) => v !== before[j]);
+  }
+  expect(changed).toBe(true);
+  const nextBox = await view.getByRole('button', { name: /Suivant/ }).boundingBox();
+  expect(nextBox.height).toBeGreaterThanOrEqual(64);
+  await view.getByRole('button', { name: '✕ Quitter' }).click();
+  await expect(view).toBeHidden();
+});
+
+test('fil rouge : la séance suivante suit les priorités du trimestre et varie d’après la dernière séance', async ({ page }) => {
+  page.on('dialog', d => d.accept());
+  await openApp(page);
+  await openSeance(page);
+  await page.locator('#filRouge > summary').click();
+  await page.locator('#filTrimester').selectOption('0');
+  await expect(page.locator('#filFocus')).toHaveText('1er trimestre : Écoute, Énergie');
+  await page.getByRole('button', { name: /Proposer la séance suivante/ }).click();
+  await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(5);
+  const values = await page.evaluate(() => SLIDER_GROUPS.map((g, i) => [g.name, Number(document.getElementById('dynamic' + i).value)]));
+  for (const [name, v] of values) expect(v).toBe(['Écoute', 'Énergie'].includes(name) ? (v === 70 ? 70 : 90) : 30);
+  await expect(page.locator('#filStatus')).toContainText('séance n° 1 pour Club collège');
+
+  await page.getByRole('button', { name: 'Enregistrer la séance', exact: true }).click();
+  await page.getByRole('button', { name: /Proposer la séance suivante/ }).click();
+  await expect(page.locator('#filStatus')).toContainText('séance n° 2');
+
+  await page.locator('#filRouge .fil-edit > summary').click();
+  await page.locator('#filEditor fieldset').nth(1).getByLabel('Imaginaire').check();
+  await page.locator('#filTrimester').selectOption('1');
+  await expect(page.locator('#filFocus')).toHaveText('2e trimestre : Construction, Scène, Imaginaire');
+  await page.locator('#groupProfile').selectOption('copains');
+  await page.locator('#filTrimester').selectOption('1');
+  await expect(page.locator('#filFocus')).toHaveText('2e trimestre : Scène, Construction');
+});
+
+test('spectacle : numéros ordonnés, distribution des joueurs et feuille de régie imprimable', async ({ page }) => {
+  page.on('dialog', d => d.accept());
+  await openApp(page);
+  await page.evaluate(() => { rosterState.troupe = ['Lina', 'Sam', 'Max'].map(name => ({ name, present: true })); rosterSave(); });
+  await openSeance(page);
+  await page.locator('#groupProfile').selectOption('asso');
+  await openTab(page, 'Spectacle');
+  await expect(page.locator('#showRoster')).toHaveValue('troupe');
+  await page.getByLabel('Titre du spectacle').fill('Soirée <b>impro</b>');
+  await page.getByRole('button', { name: /Ajouter un numéro/ }).click();
+  await page.getByLabel('Format du numéro 1').fill('Chantée');
+  await page.getByLabel('Format du numéro 1').dispatchEvent('change');
+  await page.getByRole('group', { name: 'Joueurs du numéro 1' }).getByRole('button', { name: 'Lina' }).click();
+  await page.getByRole('group', { name: 'Joueurs du numéro 1' }).getByRole('button', { name: 'Sam' }).click();
+  await page.getByRole('button', { name: /Ajouter un numéro/ }).click();
+  await page.getByLabel('Format du numéro 2').fill('Comparée');
+  await page.getByLabel('Format du numéro 2').dispatchEvent('change');
+  await page.getByLabel('Durée du numéro 2 (min)').fill('8');
+  await page.getByLabel('Durée du numéro 2 (min)').dispatchEvent('change');
+  await page.getByRole('group', { name: 'Joueurs du numéro 2' }).getByRole('button', { name: 'Lina' }).click();
+  await expect(page.locator('#showSummary')).toContainText('2 numéros · 13 min au total');
+  await expect(page.locator('#showSummary')).toContainText('Lina 2');
+  await expect(page.locator('#showSummary')).toContainText('Sans passage : Max');
+
+  await page.getByRole('button', { name: 'Monter le numéro 2' }).click();
+  await expect(page.getByLabel('Format du numéro 1')).toHaveValue('Comparée');
+
+  await reloadApp(page);
+  await openTab(page, 'Spectacle');
+  await expect(page.getByLabel('Titre du spectacle')).toHaveValue('Soirée <b>impro</b>');
+  await expect(page.getByLabel('Format du numéro 2')).toHaveValue('Chantée');
+
+  await page.evaluate(() => { window.print = () => { window.__printed = true; }; });
+  await page.getByRole('button', { name: /Imprimer la feuille de régie/ }).click();
+  expect(await page.evaluate(() => window.__printed)).toBe(true);
+  await page.emulateMedia({ media: 'print' });
+  await expect(page.locator('#showSheet')).toBeVisible();
+  await expect(page.locator('#showItems')).toBeHidden();
+  await expect(page.locator('#showSheet tbody tr')).toHaveCount(2);
+  await expect(page.locator('#showSheet tbody tr').first()).toContainText('Comparée');
+  await expect(page.locator('#showSheet tbody tr').nth(1)).toContainText('Lina, Sam');
+  await expect(page.locator('#showSheet h2')).toHaveText('Soirée <b>impro</b>');
+  await expect(page.locator('#showSheet')).toContainText('Durée totale : 13 min');
+  await page.emulateMedia({ media: 'screen' });
+});
+
 test('partager une séance sans feuille de partage : le fichier est téléchargé', async ({ page }) => {
   await page.addInitScript(() => { try { delete Navigator.prototype.share; delete Navigator.prototype.canShare; } catch {} navigator.share = undefined; });
   await openApp(page);
