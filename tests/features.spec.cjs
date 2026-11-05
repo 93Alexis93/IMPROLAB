@@ -13,7 +13,7 @@ test('carnet de bord : ce qui a marché, qui a brillé et phrase pour les parent
   await openApp(page);
   await openSeance(page);
   await page.getByRole('button', { name: 'Générer ma séance' }).click();
-  await page.getByRole('button', { name: 'Enregistrer', exact: true }).click();
+  await page.getByRole('button', { name: 'Enregistrer la séance', exact: true }).click();
   await openTab(page, 'Historique');
   const card = page.locator('#historyResult .card').first();
   await card.locator('.history-review > summary').click();
@@ -162,6 +162,25 @@ test('match d’impro : score, tirage catégorie et thème de l’asso, lancemen
   await expect(page.locator('#matchNameA')).toHaveText('Les Bleus');
   await page.getByRole('button', { name: 'Score à zéro' }).click();
   await expect(page.locator('#matchScoreA')).toHaveText('0');
+});
+
+test('enregistrer la séance : bouton unique et visible juste sous la séance, la séance arrive dans l’Historique', async ({ page }) => {
+  const dialogs = [];
+  page.on('dialog', dialog => { dialogs.push(dialog.message()); dialog.accept(); });
+  await openApp(page);
+  await openSeance(page);
+  await page.getByRole('button', { name: 'Générer ma séance' }).click();
+  const save = page.getByRole('button', { name: 'Enregistrer la séance', exact: true });
+  await expect(save).toHaveCount(1);
+  await expect(save).toBeVisible();
+  const actions = page.locator('#plan + .edit-actions');
+  await expect(actions.getByRole('button').first()).toHaveText(/Enregistrer la séance/);
+  const box = await save.boundingBox();
+  expect(box.height).toBeGreaterThanOrEqual(44);
+  await save.click();
+  expect(dialogs.at(-1)).toContain('Historique');
+  await openTab(page, 'Historique');
+  await expect(page.locator('#historyResult .card')).toHaveCount(1);
 });
 
 test('partager une séance sans feuille de partage : le fichier est téléchargé', async ({ page }) => {

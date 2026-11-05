@@ -52,5 +52,10 @@ Non fait, et pourquoi :
 - **Effectif propre à chaque groupe** : l’application n’a que deux effectifs (Collège, Troupe adulte), et leur format est figé à plusieurs endroits (chargement, import). À traiter dans une tâche à part.
 - **Favoris par groupe** : les favoris servent à parcourir la bibliothèque. « Écarter » couvre le besoin principal ; les favoris restent communs.
 
+### D9. Bouton « 💾 Enregistrer la séance » bien visible
+- Demande d’Alexis : le bouton « Enregistrer » se trouvait dans le bloc « Ajouter un exercice », en bas de page, et passait inaperçu.
+- Il est déplacé (pas dupliqué) : bouton principal en tête des actions, juste sous la séance, avant « Partager la séance ». L’émoji est masqué aux lecteurs d’écran, le nom accessible est « Enregistrer la séance ». Le message de confirmation indique où retrouver la séance : Plus → Historique.
+- Les tests qui cherchaient le nom exact « Enregistrer » cherchent désormais « Enregistrer la séance ». Un test vérifie que le bouton est unique, visible, d’au moins 44 px et placé juste sous la séance.
+
 ### Hors périmètre, signalé
 - La barre de navigation fixe (Accueil, Préparer, Exercice aléatoire, Régie, Plus) occupe environ un quart de la hauteur d’un iPhone 13 sur l’écran Préparer. Non modifiée (navigation globale) ; à décider séparément.

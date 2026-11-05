@@ -113,7 +113,7 @@ test('historique corrompu : l’onglet Historique s’affiche et Enregistrer fon
   await expect(page.locator('#historyResult')).toContainText('Aucune séance enregistrée');
   await openSeance(page);
   await page.getByRole('button', { name: 'Générer ma séance' }).click();
-  await page.locator('#seance').getByRole('button', { name: 'Enregistrer', exact: true }).click();
+  await page.locator('#seance').getByRole('button', { name: 'Enregistrer la séance', exact: true }).click();
   await openTab(page, 'Historique');
   await expect(page.locator('#historyResult').getByRole('button', { name: 'Réutiliser' })).toHaveCount(1);
   expect(errors).toEqual([]);
