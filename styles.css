@@ -562,6 +562,12 @@ body #plan .coach-quick>summary{margin:-10px -12px!important;padding:11px 12px!i
 body #plan .coach-quick[open]>summary{margin-bottom:0!important}
 body #plan .coach-attribution>summary{box-sizing:border-box;min-height:44px!important;padding-block:8px!important}
 body #plan .edit-actions button{min-width:44px!important}
+/* Mêmes cibles de 44 px dans la Régie (panneaux, rubriques de l'exercice en cours) et dans Groupes */
+body #live details>summary,body #groupes details>summary{box-sizing:border-box;min-height:44px!important;padding-block:10px!important}
+body #live .coach-quick>summary{margin:-10px -12px!important;padding:11px 12px!important}
+body #live .coach-quick[open]>summary{margin-bottom:0!important}
+body #groupes button{min-height:44px!important}
+body #groupes .roster-person button{min-width:44px!important}
 /* Navigation compacte sur téléphone : une seule ligne de cinq cibles de 44 px au lieu de trois lignes.
    « Plus » ouvert passe sur sa propre ligne pour que son menu reste en flux (jamais rogné). */
 @media(max-width:600px){

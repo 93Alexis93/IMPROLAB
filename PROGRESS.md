@@ -10,6 +10,15 @@ Lot du 2026-11-05 : préparation des séances (six curseurs), branche `ameliorat
 | D | Contraste ≥ 4,5 | mesuré : aucun écart détecté |
 | E | Profils de groupe (Club collège, Copains, Association) | fait, voir journal |
 | F | Compte rendu | fait |
+| G | Carnet de bord, jeux écartés par groupe, partage de séance | fait (`354b5c9`) |
+| H | Navigation compacte et badges de compétences | fait (`661eccd`) |
+| I | Match d’impro et banque de thèmes de l’asso | fait (`e8fd307`) |
+| J | Cibles tactiles restantes en Régie et Groupes | fait |
+
+### Lot autonome (G à J) — vérifications
+- Suite complète finale : `check.cjs` OK, `integrity.cjs` OK (124 fiches), Playwright **77/77 en iPhone-Chromium et 77/77 en iPhone-WebKit**, `library.json` inchangé (SHA-256 du fichier extrait identique à `main`, `git diff` vide).
+- Audit iPhone 13 et iPhone SE (WebKit et Chromium) sur Préparer, séance générée, Régie avec match, Groupes avec badges, Historique avec carnet, Exercice aléatoire : 0 cible < 44 px, pas de débordement horizontal, 0 erreur JavaScript.
+- Contraste : 0 écart sur tous les écrans sauf la Régie, où l’outil signale des faux positifs. Le texte foncé y est posé sur un dégradé clair que l’outil ne sait pas lire (vérifié sur capture). À confirmer à l’œil sur iPhone.
 
 ## Référence avant modification (`main`)
 - `node tests/check.cjs` : OK. `node tests/integrity.cjs` : OK (124 fiches, 9 sections).
