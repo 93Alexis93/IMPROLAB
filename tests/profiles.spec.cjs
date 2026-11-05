@@ -83,6 +83,70 @@ test('profils de groupe : une séance enregistrée indique son groupe dans l’h
   await expect(page.locator('#historyResult .card h3').first()).toContainText('Association');
 });
 
+test('effectifs : un effectif par groupe, suivi par Groupes et la Régie, conservé au rechargement', async ({ page }) => {
+  await openApp(page);
+  await openTab(page, 'Groupes');
+  await expect(page.locator('#rosterType option')).toHaveText(['Club collège', 'Copains', 'Association (troupe adulte)']);
+  await expect(page.locator('#rosterType')).toHaveValue('college');
+  await page.locator('#rosterInput').fill('Lina\nSam');
+  await page.locator('#groupes button[onclick="rosterAdd()"]').click();
+
+  await openSeance(page);
+  await chooseGroup(page, 'copains');
+  await openTab(page, 'Groupes');
+  await expect(page.locator('#rosterType')).toHaveValue('copains');
+  await expect(page.locator('#rosterList .roster-person')).toHaveCount(0);
+  await page.locator('#rosterInput').fill('Max\nJo\nAli');
+  await page.locator('#groupes button[onclick="rosterAdd()"]').click();
+  await expect(page.locator('#rosterList .roster-person')).toHaveCount(3);
+  await expect(page.locator('#liveRosterType')).toHaveValue('copains');
+
+  await openSeance(page);
+  await chooseGroup(page, 'asso');
+  await openTab(page, 'Groupes');
+  await expect(page.locator('#rosterType')).toHaveValue('troupe');
+  await expect(page.locator('#rosterList .roster-person')).toHaveCount(0);
+
+  await reloadApp(page);
+  await openSeance(page);
+  await chooseGroup(page, 'college');
+  await openTab(page, 'Groupes');
+  await expect(page.locator('#rosterList')).toContainText('Lina');
+  await expect(page.locator('#rosterList .roster-person')).toHaveCount(2);
+  await openSeance(page);
+  await chooseGroup(page, 'copains');
+  await openTab(page, 'Groupes');
+  await expect(page.locator('#rosterList .roster-person')).toHaveCount(3);
+});
+
+test('effectifs : les anciennes données (Collège, Troupe adulte) sont conservées, la troupe devient l’Association', async ({ page }) => {
+  page.on('dialog', dialog => dialog.accept());
+  await page.addInitScript(() => {
+    if (sessionStorage.getItem('__improlab_test_storage_initialized') === '1') return;
+    localStorage.clear();
+    sessionStorage.clear();
+    sessionStorage.setItem('__improlab_test_storage_initialized', '1');
+    localStorage.setItem('impro-rosters-v1', JSON.stringify({ college: [{ name: 'Élève 1', present: true }], troupe: [{ name: 'Adulte 1', present: false }], history: { college: [], troupe: [] }, saved: { college: [], troupe: [{ name: 'Équipes du 01/10', date: '2026-10-01', fmt: 'teams', groups: [['Adulte 1']] }] } }));
+  });
+  await page.goto('/');
+  await waitForReady(page);
+  await openSeance(page);
+  await chooseGroup(page, 'asso');
+  await openTab(page, 'Groupes');
+  await expect(page.locator('#rosterList')).toContainText('Adulte 1');
+  await expect(page.locator('#rosterSaved')).toContainText('Équipes du 01/10');
+  await openSeance(page);
+  await chooseGroup(page, 'copains');
+  await openTab(page, 'Groupes');
+  await expect(page.locator('#rosterList .roster-person')).toHaveCount(0);
+
+  await page.locator('#rosterImport').setInputFiles({ name: 'ancien.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify({ version: 1, college: [{ name: 'Importé collège' }], troupe: [{ name: 'Importé asso' }] })) });
+  await openSeance(page);
+  await chooseGroup(page, 'asso');
+  await openTab(page, 'Groupes');
+  await expect(page.locator('#rosterList')).toContainText('Importé asso');
+});
+
 test('profils de groupe : une mémoire de profils corrompue ne bloque pas l’application', async ({ page }) => {
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));

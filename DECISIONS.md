@@ -57,5 +57,12 @@ Non fait, et pourquoi :
 - Il est déplacé (pas dupliqué) : bouton principal en tête des actions, juste sous la séance, avant « Partager la séance ». L’émoji est masqué aux lecteurs d’écran, le nom accessible est « Enregistrer la séance ». Le message de confirmation indique où retrouver la séance : Plus → Historique.
 - Les tests qui cherchaient le nom exact « Enregistrer » cherchent désormais « Enregistrer la séance ». Un test vérifie que le bouton est unique, visible, d’au moins 44 px et placé juste sous la séance.
 
+### D10. Un effectif par groupe
+- Trois effectifs au lieu de deux : Club collège (`college`), **Copains (`copains`, nouveau)** et Association (`troupe`). La clé `troupe` est conservée : l’ancienne « Troupe adulte » devient l’effectif de l’Association, joueurs, historique des associations et équipes enregistrées compris. Rien n’est perdu ni renommé dans la mémoire.
+- Choisir un groupe dans Préparer sélectionne son effectif dans Groupes et dans la Régie. On peut toujours changer d’effectif à la main dans ces deux écrans.
+- Chargement, import et équipes enregistrées acceptent les trois effectifs. Un ancien fichier d’export (Collège et Troupe seulement) s’importe toujours ; l’effectif Copains reste alors vide.
+- Les badges de compétences suivent l’effectif, puisqu’ils sont rangés par effectif.
+- Tests : `tests/profiles.spec.cjs`, « effectifs » (deux tests : trois effectifs suivis par Groupes et la Régie avec rechargement ; reprise des anciennes données et import d’un ancien fichier).
+
 ### Hors périmètre, signalé
 - La barre de navigation fixe (Accueil, Préparer, Exercice aléatoire, Régie, Plus) occupe environ un quart de la hauteur d’un iPhone 13 sur l’écran Préparer. Non modifiée (navigation globale) ; à décider séparément.
