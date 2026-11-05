@@ -1,0 +1,57 @@
+IMPRO LAB — Licence et droits
+Copyright © 2026 Alexis (compte GitHub 93Alexis93). Tous droits réservés, sauf mention contraire ci-dessous.
+
+Ce dépôt est public pour que l'application puisse être consultée et utilisée en ligne.
+Le fait qu'il soit public ne donne aucun droit de réutilisation au-delà de ce qui est indiqué ici.
+
+1. Code de l'application — tous droits réservés
+
+   Sont concernés : index.html, styles.css, sw.js, manifest.webmanifest, les fichiers
+   du dossier tests/, la configuration (.github/, playwright.config.cjs) et tout autre
+   code du dépôt.
+
+   Toute reproduction, modification, redistribution, publication ou utilisation dans un
+   autre projet, commercial ou non, est interdite sans autorisation écrite préalable de
+   l'auteur. Seuls sont permis la consultation du dépôt sur GitHub et l'utilisation
+   personnelle de l'application en ligne publiée par l'auteur.
+
+2. Contenu pédagogique original — Creative Commons BY-NC-ND 4.0
+
+   Sont concernées les fiches de library.json dont le champ « origine » vaut
+   « notes_personnelles » ou « creation_improlab », avec leurs règles, consignes,
+   variantes et conseils d'animation.
+
+   Ce contenu est mis à disposition selon les termes de la licence Creative Commons
+   Attribution – Pas d'utilisation commerciale – Pas de modification 4.0 International
+   (CC BY-NC-ND 4.0) : https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr
+
+   En résumé : vous pouvez partager ces fiches telles quelles, en citant
+   « IMPRO LAB — Alexis (93Alexis93) » et en indiquant la licence, sans usage commercial
+   et sans les modifier. Le texte officiel de la licence fait foi.
+
+   La licence porte sur la rédaction des fiches. Les jeux d'improvisation eux-mêmes,
+   souvent traditionnels, n'appartiennent à personne.
+
+3. Contenus de tiers — exclus de cette licence
+
+   - Les fiches de library.json dont l'origine est « recherche_web » sont des
+     reformulations attribuées à leurs sources (champs « source_nom » et « source_url »).
+     Les droits sur ces sources restent à leurs auteurs.
+   - principes-impro.json et la ressource « cahier de coach » de library.json indiquent
+     leur propre source. Ils ne sont pas couverts par la licence Creative Commons
+     ci-dessus et restent soumis aux droits de cette source.
+   - Les éléments graphiques créés avec Canva (dossier design/) restent soumis aux
+     conditions d'utilisation de Canva.
+
+4. Identité visuelle — tous droits réservés
+
+   Le nom « IMPRO LAB », les logos (icon.svg, impro-welcome.svg, dossier design/) et
+   l'identité visuelle ne peuvent pas être réutilisés sans autorisation écrite.
+
+5. Contact
+
+   Pour toute demande d'autorisation, contacter l'auteur par le compte GitHub
+   93Alexis93.
+
+Ce texte ne constitue pas un avis juridique. En cas de doute, le texte officiel des
+licences citées et le droit d'auteur applicable font foi.

@@ -2,6 +2,17 @@
 
 Application locale de préparation et d’animation d’exercices d’improvisation. Le fichier `library.json` contient les fiches et leurs données pédagogiques ; `index.html` fournit l’interface ; `sw.js` gère le mode hors ligne.
 
+## Licence et droits
+
+© 2026 Alexis (93Alexis93). Ce dépôt est public pour que l’application soit utilisable en ligne, mais **il n’est pas libre de droits**. Le texte complet se trouve dans [`LICENSE`](LICENSE).
+
+| Élément | Droits |
+|---|---|
+| Code de l’application (HTML, CSS, JavaScript, tests, configuration) | Tous droits réservés : aucune réutilisation sans autorisation écrite |
+| Fiches originales (`notes_personnelles` et `creation_improlab` dans `library.json`) | [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr) : partage en citant l’auteur, sans usage commercial ni modification |
+| Fiches adaptées de sources web (`recherche_web`), principes et cahier de coach | Exclus de la licence : droits de leurs sources respectives |
+| Nom « IMPRO LAB », logos et identité visuelle | Tous droits réservés |
+
 ## Contrôles automatisés
 
 La CI utilise Node.js 22 et Playwright `@playwright/test@1.56.1`. Le workflow `.github/workflows/ci.yml` lance les contrôles statiques et le contrôle d’intégrité, puis les tests navigateur sur Chromium et WebKit. Un test qui ne passe qu’après une relance est signalé comme instable et fait échouer le job. En cas d’échec, les traces, captures et rapports sont conservés dans les artefacts GitHub Actions.
