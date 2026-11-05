@@ -17,6 +17,7 @@ Lot du 2026-11-05 : préparation des séances (six curseurs), branche `ameliorat
 | K | Bouton « 💾 Enregistrer la séance » visible (D9) | fait (`f3ad148`) |
 | L | Un effectif par groupe (D10) | fait : Playwright 80/80 (Chromium et WebKit), audit iPhone 13 et SE propre |
 | M | Mode soirée (D11) | fait : Playwright 81/81 (Chromium et WebKit), audit Régie iPhone 13 et SE propre |
+| N | Soirée sans exclusion par nombre de joueurs, créations IMPRO LAB incluses (D11 corrigé) ; plein écran de séance et élève animateur (D12) | fait : Playwright 83/83 (Chromium et WebKit), audit iPhone 13 et SE propre, scène comprise |
 
 ### Lot autonome (G à J) — vérifications
 - Suite complète finale : `check.cjs` OK, `integrity.cjs` OK (124 fiches), Playwright **77/77 en iPhone-Chromium et 77/77 en iPhone-WebKit**, `library.json` inchangé (SHA-256 du fichier extrait identique à `main`, `git diff` vide).

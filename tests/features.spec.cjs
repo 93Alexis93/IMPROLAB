@@ -183,7 +183,7 @@ test('enregistrer la séance : bouton unique et visible juste sous la séance, l
   await expect(page.locator('#historyResult .card')).toHaveCount(1);
 });
 
-test('mode soirée : jeux validés au hasard, sans répétition, adaptés au nombre de joueurs, envoyés dans la Régie', async ({ page }) => {
+test('mode soirée : jeux validés au hasard, sans répétition, aucun jeu écarté selon le nombre de joueurs, envoyés dans la Régie', async ({ page }) => {
   const { library } = require('./helpers.cjs');
   await openApp(page);
   await openSeance(page);
@@ -200,7 +200,9 @@ test('mode soirée : jeux validés au hasard, sans répétition, adaptés au nom
   await expect(page.locator('#soireeStatus')).toContainText(first);
   expect((await page.locator('#liveInfo').textContent()).trim().length).toBeGreaterThan(10);
 
-  const eligibleTitles = await page.evaluate(() => data.filter(g => isEligibleGame(g, { includeExternal: false, includeIncomplete: false })).map(g => displayTitle(g[0])));
+  const eligibleTitles = await page.evaluate(() => data.filter(g => soireeEligible(g)).map(g => displayTitle(g[0])));
+  expect(await page.evaluate(() => data.filter(g => soireeEligible(g)).some(g => g[8] === 'creation_improlab'))).toBe(true);
+  expect(await page.evaluate(() => data.filter(g => soireeEligible(g)).every(g => ['notes_personnelles', 'creation_improlab'].includes(g[8])))).toBe(true);
   const titles = [first];
   for (let i = 0; i < 9; i++) {
     await page.getByRole('button', { name: 'Jeu suivant' }).click();
@@ -216,9 +218,76 @@ test('mode soirée : jeux validés au hasard, sans répétition, adaptés au nom
   await page.getByRole('button', { name: 'Nouvelle soirée' }).click();
   await expect(page.locator('#soireeStatus')).toContainText('aucun jeu tiré');
   await page.locator('#soireePlayers').fill('2');
-  const drawn = await page.evaluate(() => { const out = []; for (let i = 0; i < 80; i++) { soireeNext(); out.push(document.getElementById('liveTitle').textContent.trim()); } return out; });
-  const forbidden = await page.evaluate(names => names.filter(Boolean).map(n => displayTitle(n)), [tooBig?.titre, excluded.titre]);
-  for (const f of forbidden) expect(drawn).not.toContain(f);
+  const drawn = await page.evaluate(() => { const out = []; for (let i = 0; i < 130; i++) { soireeNext(); out.push(document.getElementById('liveTitle').textContent.trim()); } return out; });
+  const [excludedTitle, tooBigTitle] = await page.evaluate(names => names.map(n => n ? displayTitle(n) : null), [excluded.titre, tooBig?.titre]);
+  expect(drawn).not.toContain(excludedTitle);
+  // Décision d'Alexis : le nombre de joueurs n'écarte aucun jeu. Le jeu « 4–8 joueurs » reste tirable à deux.
+  if (tooBigTitle) expect(drawn).toContain(tooBigTitle);
+});
+
+async function consigneCourte(page) {
+  return page.evaluate(() => { const t = document.getElementById('liveTitle').textContent.trim(); const g = data.find(x => displayTitle(x[0]) === t); return (g[10] && g[10].consigne_courte) || g[2]; });
+}
+
+test('plein écran de séance : consigne en grand, chrono synchronisé, navigation, paysage', async ({ page }) => {
+  await openApp(page);
+  await openSeance(page);
+  await page.getByRole('button', { name: 'Générer ma séance' }).click();
+  await openTab(page, 'Régie');
+  await page.getByRole('button', { name: 'Plein écran' }).click();
+  const stage = page.locator('#stageView');
+  await expect(stage).toBeVisible();
+  const vp = page.viewportSize();
+  const box = await stage.boundingBox();
+  expect(Math.round(box.width)).toBe(vp.width);
+  expect(Math.round(box.height)).toBe(vp.height);
+  await expect(page.locator('#stageTitle')).toHaveText((await page.locator('#liveTitle').textContent()).trim());
+  await expect(page.locator('#stageConsigne')).toHaveText(await consigneCourte(page));
+  await expect(page.locator('#stageProgress')).toHaveText('Exercice 1 / 5');
+  await expect(page.locator('#stageRole')).toBeHidden();
+  for (const b of await stage.getByRole('button').all()) expect((await b.boundingBox()).height).toBeGreaterThanOrEqual(44);
+
+  await stage.getByRole('button', { name: /Démarrer/ }).click();
+  await expect(page.locator('#stageStart')).not.toHaveText(/Démarrer/);
+  await expect(page.locator('#stageClock')).not.toHaveText('05:00', { timeout: 4000 });
+  await expect(page.locator('#stageClock')).toHaveText(await page.locator('#liveClock').textContent());
+
+  await stage.getByRole('button', { name: 'Exercice suivant' }).click();
+  await expect(page.locator('#stageProgress')).toHaveText('Exercice 2 / 5');
+  await expect(page.locator('#stageTitle')).toHaveText((await page.locator('#liveTitle').textContent()).trim());
+
+  await page.setViewportSize({ width: 844, height: 390 });
+  await expect.poll(() => page.locator('.stage-body').evaluate(el => getComputedStyle(el).flexDirection)).toBe('row');
+  expect(await stage.evaluate(el => el.scrollWidth <= innerWidth + 1)).toBe(true);
+  await page.setViewportSize(vp);
+
+  await stage.getByRole('button', { name: '✕ Quitter' }).click();
+  await expect(stage).toBeHidden();
+  await expect(page.locator('#live')).toBeVisible();
+});
+
+test('élève animateur : consigne courte en grand, pas de navigation, sortie confirmée', async ({ page }) => {
+  const dialogs = [];
+  await openApp(page);
+  await openSeance(page);
+  await page.getByRole('button', { name: 'Générer ma séance' }).click();
+  await openTab(page, 'Régie');
+  await page.getByRole('button', { name: 'Élève animateur' }).click();
+  const stage = page.locator('#stageView');
+  await expect(stage).toBeVisible();
+  await expect(page.locator('#stageRole')).toHaveText('À toi de mener l’échauffement !');
+  await expect(page.locator('#stageConsigne')).toHaveText(await consigneCourte(page));
+  await expect(page.locator('#stagePrev')).toBeHidden();
+  await expect(page.locator('#stageNext')).toBeHidden();
+  await expect(stage.getByRole('button', { name: /Démarrer/ })).toBeVisible();
+
+  page.once('dialog', d => { dialogs.push(d.message()); d.dismiss(); });
+  await stage.getByRole('button', { name: '✕ Quitter' }).click();
+  await expect(stage).toBeVisible();
+  page.once('dialog', d => { dialogs.push(d.message()); d.accept(); });
+  await stage.getByRole('button', { name: '✕ Quitter' }).click();
+  await expect(stage).toBeHidden();
+  expect(dialogs).toEqual(['Reprendre la main sur la Régie ?', 'Reprendre la main sur la Régie ?']);
 });
 
 test('partager une séance sans feuille de partage : le fichier est téléchargé', async ({ page }) => {

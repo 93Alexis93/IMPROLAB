@@ -67,10 +67,18 @@ Non fait, et pourquoi :
 ### D11. Mode soirée (Copains)
 - Régie → « 🎉 Mode soirée · jeux au hasard » : on saisit le nombre de joueurs présents, puis chaque « 🎲 Jeu suivant » tire un jeu et l’envoie dans la Régie, en mode impro libre, avec sa durée de fiche, son titre et sa consigne courte. « Nouvelle soirée » remet le compteur à zéro.
 - Nombre de joueurs : pré-rempli avec les présents de l’effectif du groupe actif (6 par défaut s’il y en a moins de 2).
-- Choix des jeux : mêmes règles que le tirage rapide (fiches validées, notes personnelles), jeux écartés pour le groupe exclus, aucune répétition dans la soirée, rotation du groupe respectée (les 25 derniers jeux sont évités tant que possible). L’ambiance vient des curseurs de « Exercice aléatoire », synchronisés avec ceux de la séance.
-- **Limite connue** : seuls 19 jeux éligibles sur 110 ont un effectif conseillé renseigné, les autres sont « à évaluer ». Le nombre de joueurs écarte donc uniquement les jeux clairement incompatibles (minimum supérieur au nombre de joueurs, sans mention de sous-groupes ou de binômes). L’application l’indique sous chaque jeu tiré. Compléter `effectif_conseille` dans `library.json` améliorerait le tri, mais demande une validation éditoriale.
+- **Correction demandée par Alexis** : le nombre de joueurs n’écarte **aucun** jeu. Un jeu « en binômes » se joue à n’importe quel effectif, en formant des binômes en même temps. La première version écartait un seul jeu, 3-7 « Le banc des solutions » (4–8 joueurs), sous 4 joueurs ; ce filtre est supprimé. L’effectif conseillé reste affiché pour information quand il est renseigné.
+- Jeux proposés : notes personnelles **et créations IMPRO LAB** (dont 3-6 et 3-7, validés par Alexis), hors adaptations externes (WEB, EXT). Le tirage rapide de l’Accueil et le générateur de séance gardent leurs règles d’origine, non modifiées. Jeux écartés pour le groupe exclus, aucune répétition dans la soirée, rotation du groupe respectée (les 25 derniers jeux sont évités tant que possible). L’ambiance vient des curseurs de « Exercice aléatoire », synchronisés avec ceux de la séance.
 - Mémoire : `impro-soiree-v1` (jeux joués le jour même).
 - Constat, non modifié : dans « Exercice en cours », la consigne défile dans une zone de 92 px (réglage existant de la Régie). Le plein écran de l’étape 3 la rendra lisible en entier.
+
+### D12. Plein écran de séance et mode élève animateur
+- Régie → « 📺 Plein écran » et « 🧑‍🎓 Élève animateur » ouvrent une **vue scène** qui couvre tout l’écran : titre, consigne en très gros caractères (la consigne courte de la fiche, sinon la règle), chrono géant, gros boutons. La vue recopie la Régie en direct (chrono, Démarrer/Pause, exercice en cours), donc séance préparée, mode soirée et match fonctionnent dedans.
+- Paysage : consigne à gauche, chrono et boutons à droite ; la consigne défile dans sa colonne si elle est trop longue.
+- Pourquoi une vue en surimpression plutôt que le plein écran du navigateur : Safari sur iPhone ne permet pas le plein écran d’une page web (seulement des vidéos). Le plein écran du navigateur est tout de même demandé là où il existe (iPad, ordinateur), et l’écran est maintenu allumé (Wake Lock) quand l’appareil le permet. Installée sur l’écran d’accueil, l’application n’a de toute façon pas de barre de navigateur.
+- **Élève animateur** : « À toi de mener l’échauffement ! », consigne courte seulement (contenu existant de la bibliothèque, rien de créé), boutons Démarrer et ↺ uniquement : pas de passage à l’exercice suivant ou précédent, glissement désactivé. Quitter demande « Reprendre la main sur la Régie ? ».
+- L’ancienne fonction `liveFull`, sans bouton depuis la refonte, n’est pas modifiée.
+- Tests : plein écran (synchronisation du chrono, navigation, paysage) et élève animateur (pas de navigation, sortie confirmée).
 
 ### Hors périmètre, signalé
 - La barre de navigation fixe (Accueil, Préparer, Exercice aléatoire, Régie, Plus) occupe environ un quart de la hauteur d’un iPhone 13 sur l’écran Préparer. Non modifiée (navigation globale) ; à décider séparément.
