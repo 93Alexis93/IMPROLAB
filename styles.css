@@ -588,7 +588,7 @@ body .badge-row .badge-chip{min-height:44px;padding:6px 10px;border-radius:22px;
 body .badge-row .badge-chip[aria-pressed="true"]{background:#1f5e3a!important;color:#fff!important;border-color:#1f5e3a!important}
 /* Match d'impro (Régie) */
 #live .regie-match{margin:9px 0;border:1px solid var(--il-surface-bord,#626c90);border-radius:12px;padding:9px;background:var(--il-surface,#202745)}
-#live .regie-match>summary{cursor:pointer;font-weight:750;min-height:44px;display:flex;align-items:center;padding:0 2px}
+#live .regie-match>summary{cursor:pointer;font-weight:750;min-height:44px}
 .match-teams{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .match-teams input{width:100%;box-sizing:border-box;min-height:44px}
 .match-score{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0;text-align:center}

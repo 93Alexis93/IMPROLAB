@@ -183,6 +183,44 @@ test('enregistrer la séance : bouton unique et visible juste sous la séance, l
   await expect(page.locator('#historyResult .card')).toHaveCount(1);
 });
 
+test('mode soirée : jeux validés au hasard, sans répétition, adaptés au nombre de joueurs, envoyés dans la Régie', async ({ page }) => {
+  const { library } = require('./helpers.cjs');
+  await openApp(page);
+  await openSeance(page);
+  await page.locator('#groupProfile').selectOption('copains');
+  await page.evaluate(() => { rosterState.copains = ['Max', 'Jo', 'Ali'].map(name => ({ name, present: true })); rosterRender(); });
+  await openTab(page, 'Régie');
+  await page.locator('#soireePanel > summary').click();
+  await expect(page.locator('#soireePlayers')).toHaveValue('3');
+
+  await page.getByRole('button', { name: 'Jeu suivant' }).click();
+  await expect(page.locator('#liveMode')).toHaveValue('free');
+  await expect(page.locator('#soireeStatus')).toContainText('Jeu n° 1 ce soir');
+  const first = (await page.locator('#liveTitle').textContent()).trim();
+  await expect(page.locator('#soireeStatus')).toContainText(first);
+  expect((await page.locator('#liveInfo').textContent()).trim().length).toBeGreaterThan(10);
+
+  const eligibleTitles = await page.evaluate(() => data.filter(g => isEligibleGame(g, { includeExternal: false, includeIncomplete: false })).map(g => displayTitle(g[0])));
+  const titles = [first];
+  for (let i = 0; i < 9; i++) {
+    await page.getByRole('button', { name: 'Jeu suivant' }).click();
+    titles.push((await page.locator('#liveTitle').textContent()).trim());
+  }
+  expect(new Set(titles).size).toBe(10);
+  for (const t of titles) expect(eligibleTitles).toContain(t);
+  await expect(page.locator('#soireeStatus')).toContainText('Jeu n° 10 ce soir');
+
+  const tooBig = library.exercices.find(e => e.eligible_generateur && e.effectif_conseille === '4–8 joueurs');
+  const excluded = library.exercices.find(e => e.eligible_generateur && e.origine === 'notes_personnelles' && e.id !== tooBig?.id);
+  await page.evaluate(name => writeExcluded([name]), excluded.titre);
+  await page.getByRole('button', { name: 'Nouvelle soirée' }).click();
+  await expect(page.locator('#soireeStatus')).toContainText('aucun jeu tiré');
+  await page.locator('#soireePlayers').fill('2');
+  const drawn = await page.evaluate(() => { const out = []; for (let i = 0; i < 80; i++) { soireeNext(); out.push(document.getElementById('liveTitle').textContent.trim()); } return out; });
+  const forbidden = await page.evaluate(names => names.filter(Boolean).map(n => displayTitle(n)), [tooBig?.titre, excluded.titre]);
+  for (const f of forbidden) expect(drawn).not.toContain(f);
+});
+
 test('partager une séance sans feuille de partage : le fichier est téléchargé', async ({ page }) => {
   await page.addInitScript(() => { try { delete Navigator.prototype.share; delete Navigator.prototype.canShare; } catch {} navigator.share = undefined; });
   await openApp(page);

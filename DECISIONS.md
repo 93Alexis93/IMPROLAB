@@ -64,5 +64,13 @@ Non fait, et pourquoi :
 - Les badges de compétences suivent l’effectif, puisqu’ils sont rangés par effectif.
 - Tests : `tests/profiles.spec.cjs`, « effectifs » (deux tests : trois effectifs suivis par Groupes et la Régie avec rechargement ; reprise des anciennes données et import d’un ancien fichier).
 
+### D11. Mode soirée (Copains)
+- Régie → « 🎉 Mode soirée · jeux au hasard » : on saisit le nombre de joueurs présents, puis chaque « 🎲 Jeu suivant » tire un jeu et l’envoie dans la Régie, en mode impro libre, avec sa durée de fiche, son titre et sa consigne courte. « Nouvelle soirée » remet le compteur à zéro.
+- Nombre de joueurs : pré-rempli avec les présents de l’effectif du groupe actif (6 par défaut s’il y en a moins de 2).
+- Choix des jeux : mêmes règles que le tirage rapide (fiches validées, notes personnelles), jeux écartés pour le groupe exclus, aucune répétition dans la soirée, rotation du groupe respectée (les 25 derniers jeux sont évités tant que possible). L’ambiance vient des curseurs de « Exercice aléatoire », synchronisés avec ceux de la séance.
+- **Limite connue** : seuls 19 jeux éligibles sur 110 ont un effectif conseillé renseigné, les autres sont « à évaluer ». Le nombre de joueurs écarte donc uniquement les jeux clairement incompatibles (minimum supérieur au nombre de joueurs, sans mention de sous-groupes ou de binômes). L’application l’indique sous chaque jeu tiré. Compléter `effectif_conseille` dans `library.json` améliorerait le tri, mais demande une validation éditoriale.
+- Mémoire : `impro-soiree-v1` (jeux joués le jour même).
+- Constat, non modifié : dans « Exercice en cours », la consigne défile dans une zone de 92 px (réglage existant de la Régie). Le plein écran de l’étape 3 la rendra lisible en entier.
+
 ### Hors périmètre, signalé
 - La barre de navigation fixe (Accueil, Préparer, Exercice aléatoire, Régie, Plus) occupe environ un quart de la hauteur d’un iPhone 13 sur l’écran Préparer. Non modifiée (navigation globale) ; à décider séparément.
