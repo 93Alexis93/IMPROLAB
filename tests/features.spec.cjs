@@ -89,6 +89,41 @@ test('partager une séance : résumé lisible et fichier importable via la feuil
   expect(shared[0].files).toEqual([{ name: 'impro-lab-seance.json', type: 'application/json' }]);
 });
 
+test('badges de compétences : par joueur, conservés au rechargement, sans note', async ({ page }) => {
+  await openApp(page);
+  await openTab(page, 'Groupes');
+  await page.locator('#rosterInput').fill('Lina\nSam <i>');
+  await page.locator('#groupes button[onclick="rosterAdd()"]').click();
+  await page.locator('#badgesPanel > summary').click();
+  const lina = page.getByRole('group', { name: 'Compétences de Lina' });
+  await lina.getByRole('button', { name: /Écoute/ }).click();
+  await lina.getByRole('button', { name: /Oser/ }).click();
+  await expect(lina.getByRole('button', { name: /Écoute/ })).toHaveAttribute('aria-pressed', 'true');
+  await expect(lina.getByRole('button', { name: /Accepter/ })).toHaveAttribute('aria-pressed', 'false');
+  await expect(page.locator('#badgesList .badge-player').first()).toContainText('2/4');
+  await lina.getByRole('button', { name: /Oser/ }).click();
+  await expect(page.locator('#badgesList .badge-player').first()).toContainText('1/4');
+  await expect(page.locator('#badgesList i')).toHaveCount(0);
+
+  await reloadApp(page);
+  await openTab(page, 'Groupes');
+  await page.locator('#badgesPanel > summary').click();
+  await expect(page.getByRole('group', { name: 'Compétences de Lina' }).getByRole('button', { name: /Écoute/ })).toHaveAttribute('aria-pressed', 'true');
+});
+
+test('navigation compacte sur iPhone : une ligne de cinq cibles de 44 px, menu Plus utilisable', async ({ page }) => {
+  await openApp(page);
+  const nav = page.locator('nav[aria-label="Navigation principale"]');
+  const box = await nav.boundingBox();
+  expect(box.height).toBeLessThanOrEqual(64);
+  for (const item of await nav.locator(':scope > button, :scope > details > summary').all()) {
+    const b = await item.boundingBox();
+    expect(b.height).toBeGreaterThanOrEqual(44);
+  }
+  await openTab(page, 'Historique');
+  await expect(page.locator('#historique')).toBeVisible();
+});
+
 test('partager une séance sans feuille de partage : le fichier est téléchargé', async ({ page }) => {
   await page.addInitScript(() => { try { delete Navigator.prototype.share; delete Navigator.prototype.canShare; } catch {} navigator.share = undefined; });
   await openApp(page);
