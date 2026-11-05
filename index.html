@@ -270,7 +270,7 @@ function refreshEditor(){
   let small=c.querySelector('small'),minutes=+(small?.textContent.match(/\d+/)?.[0]||5);sum+=minutes;
   let actions=c.querySelector('.edit-actions');
   if(!actions){actions=document.createElement('div');actions.className='edit-actions';c.append(actions)}
-  actions.innerHTML='<button aria-label="Monter exercice '+(i+1)+'" onclick="moveExercise('+i+',-1)" '+(i===0?'disabled':'')+'>↑</button><button aria-label="Descendre exercice '+(i+1)+'" onclick="moveExercise('+i+',1)" '+(i===cards.length-1?'disabled':'')+'>↓</button><button onclick="changeMinutes('+i+',-1)">− 1 min</button><span>'+minutes+' min</span><button onclick="changeMinutes('+i+',1)">+ 1 min</button><button onclick="replaceExercise('+i+')">🔄 Remplacer</button><button onclick="removeExercise('+i+')">✕</button>';
+  actions.innerHTML='<button aria-label="Monter exercice '+(i+1)+'" onclick="moveExercise('+i+',-1)" '+(i===0?'disabled':'')+'>↑</button><button aria-label="Descendre exercice '+(i+1)+'" onclick="moveExercise('+i+',1)" '+(i===cards.length-1?'disabled':'')+'>↓</button><button onclick="changeMinutes('+i+',-1)">− 1 min</button><span>'+minutes+' min</span><button onclick="changeMinutes('+i+',1)">+ 1 min</button><button onclick="replaceExercise('+i+')">🔄 Remplacer</button><button aria-label="Retirer exercice '+(i+1)+'" onclick="removeExercise('+i+')">✕</button>';
  });
  const target=+document.getElementById('duration').value;const diff=sum-target;document.getElementById('planSummary').textContent=cards.length?cards.length+' exercices · '+sum+' minutes / objectif '+target+' minutes'+(diff?' ('+(diff>0?'+':'')+diff+' min)':' ✓'):'Aucun exercice dans la séance';document.getElementById('planSummary').classList.toggle('plan-warning',!!diff);
 }

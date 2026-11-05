@@ -30,7 +30,7 @@ test('édition, suppression, rechargement, groupe et export',async({page})=>{
  await openApp(page);
  
  await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
- await page.locator('#plan>.card:not(.session-objective)').last().getByRole('button',{name:'✕'}).click();
+ await page.locator('#plan>.card:not(.session-objective)').last().getByRole('button',{name:/^Retirer exercice \d+$/}).click();
  await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(4);
  await reloadApp(page);
  await openSeance(page);

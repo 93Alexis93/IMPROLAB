@@ -556,3 +556,9 @@ body #cahier .coach-intro,body #cahier .coach-list-card,body #principes .princip
   background:var(--il-surface)!important;border-color:var(--il-surface-bord)!important}
 body .more-navigation-menu{background:var(--il-surface)!important;border-color:var(--il-surface-bord)!important}
 .dynamic-sub{display:block;font-size:11px;line-height:1.2;margin:-1px 0 2px;color:var(--ink-soft,#4f483f)}
+/* Cibles tactiles ≥ 44 px (iPhone) : curseurs des priorités, rubriques et boutons des exercices de la séance */
+body .dynamic-row input[type=range]{height:44px!important;min-height:44px!important}
+body #plan .coach-quick>summary{margin:-10px -12px!important;padding:11px 12px!important}
+body #plan .coach-quick[open]>summary{margin-bottom:0!important}
+body #plan .coach-attribution>summary{box-sizing:border-box;min-height:44px!important;padding-block:8px!important}
+body #plan .edit-actions button{min-width:44px!important}
