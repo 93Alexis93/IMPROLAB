@@ -8,7 +8,8 @@ Lot du 2026-11-05 : préparation des séances (six curseurs), branche `ameliorat
 | B | État des lieux des six curseurs sur `main` | fait |
 | C | Cibles tactiles ≥ 44 px et nom accessible du bouton ✕ (écran Préparer) | fait, tests verts |
 | D | Contraste ≥ 4,5 | mesuré : aucun écart détecté |
-| E | Compte rendu | à faire |
+| E | Profils de groupe (Club collège, Copains, Association) | fait, voir journal |
+| F | Compte rendu | fait |
 
 ## Référence avant modification (`main`)
 - `node tests/check.cjs` : OK. `node tests/integrity.cjs` : OK (124 fiches, 9 sections).
@@ -24,4 +25,13 @@ Lot du 2026-11-05 : préparation des séances (six curseurs), branche `ameliorat
 ### C — cibles tactiles
 - Audit après correction (iPhone 13, WebKit et Chromium ; écrans Préparer, Préparer avec séance générée, Exercice aléatoire) : 0 cible < 44 px, 0 contraste < 4,5, pas de débordement horizontal, 0 erreur JavaScript.
 - Vérifié au toucher : « Consigne » et « Crédits » s’ouvrent.
+- Commit local `add1c95`.
+
+### E — profils de groupe
+- `index.html` : sélecteur « 1. Groupe », fonctions `switchProfile`, `snapshotGroupProfile`, `initGroupProfile` ; nom du groupe dans l’Historique. Voir DECISIONS D7.
+- Tests ajoutés : `tests/profiles.spec.cjs` (4 tests : réglages et durée par groupe avec rechargement, rotation séparée, historique étiqueté, mémoire corrompue) et `impro-group-profiles-v1` dans la liste « stockage corrompu » de `security.spec.cjs`.
+- Audit iPhone 13 et iPhone SE, WebKit et Chromium : 0 cible < 44 px, 0 contraste < 4,5, pas de débordement, 0 erreur JavaScript.
+- Suite complète : `check.cjs` OK, `integrity.cjs` OK (124 fiches), Playwright 70/70 en iPhone-Chromium et 70/70 en iPhone-WebKit (65 existants + 5 nouveaux), `library.json` inchangé.
+
+### Rappel C
 - Après correction : `check.cjs` OK, `integrity.cjs` OK (124 fiches), Playwright 65/65 en iPhone-Chromium et 65/65 en iPhone-WebKit, `library.json` inchangé (`git diff` vide).

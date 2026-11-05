@@ -78,7 +78,8 @@ test('aucune fiche non éligible ne figure dans une séance générée', async (
 const STORAGE_KEYS = [
   'impro-session-dynamics-v1', 'impro-recent-games', 'impro-game-usage-v1',
   'impro-last-plan', 'impro-favorites', 'impro-history', 'impro-random-dynamics-v1',
-  'impro-draw-lists-v4', 'impro-draw-lists-v3', 'impro-draw-lists-v2', 'impro-draw-enabled-v2'
+  'impro-draw-lists-v4', 'impro-draw-lists-v3', 'impro-draw-lists-v2', 'impro-draw-enabled-v2',
+  'impro-group-profiles-v1'
 ];
 for (const key of STORAGE_KEYS) {
   test(`stockage corrompu : ${key} ne provoque pas de pageerror`, async ({ page }) => {
