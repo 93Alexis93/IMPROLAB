@@ -78,7 +78,8 @@ test('aucune fiche non éligible ne figure dans une séance générée', async (
 const STORAGE_KEYS = [
   'impro-session-dynamics-v1', 'impro-recent-games', 'impro-game-usage-v1',
   'impro-last-plan', 'impro-favorites', 'impro-history', 'impro-random-dynamics-v1',
-  'impro-draw-lists-v4', 'impro-draw-lists-v3', 'impro-draw-lists-v2', 'impro-draw-enabled-v2'
+  'impro-draw-lists-v4', 'impro-draw-lists-v3', 'impro-draw-lists-v2', 'impro-draw-enabled-v2',
+  'impro-group-profiles-v1'
 ];
 for (const key of STORAGE_KEYS) {
   test(`stockage corrompu : ${key} ne provoque pas de pageerror`, async ({ page }) => {
@@ -112,7 +113,7 @@ test('historique corrompu : l’onglet Historique s’affiche et Enregistrer fon
   await expect(page.locator('#historyResult')).toContainText('Aucune séance enregistrée');
   await openSeance(page);
   await page.getByRole('button', { name: 'Générer ma séance' }).click();
-  await page.locator('#seance').getByRole('button', { name: 'Enregistrer', exact: true }).click();
+  await page.locator('#seance').getByRole('button', { name: 'Enregistrer la séance', exact: true }).click();
   await openTab(page, 'Historique');
   await expect(page.locator('#historyResult').getByRole('button', { name: 'Réutiliser' })).toHaveCount(1);
   expect(errors).toEqual([]);

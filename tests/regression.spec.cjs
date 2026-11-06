@@ -30,7 +30,7 @@ test('édition, suppression, rechargement, groupe et export',async({page})=>{
  await openApp(page);
  
  await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
- await page.locator('#plan>.card:not(.session-objective)').last().getByRole('button',{name:'✕'}).click();
+ await page.locator('#plan>.card:not(.session-objective)').last().getByRole('button',{name:/^Retirer exercice \d+$/}).click();
  await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(4);
  await reloadApp(page);
  await openSeance(page);
@@ -53,7 +53,7 @@ test('effacement en un clic de toute la séance sans supprimer l’historique',a
  await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
  await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(5);
  page.once('dialog',dialog=>dialog.accept());
- await page.getByRole('button',{name:'Enregistrer',exact:true}).click();
+ await page.getByRole('button',{name:'Enregistrer la séance',exact:true}).click();
  page.once('dialog',dialog=>dialog.accept());
  await page.getByRole('button',{name:/Effacer toute la séance/}).click();
  await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(0);
@@ -247,7 +247,7 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
  await openSeance(page);
  await page.locator('#plan>.card:not(.session-objective)').first().getByRole('button',{name:'🔄 Remplacer'}).click();
  page.once('dialog',dialog=>dialog.accept());
- await page.getByRole('button',{name:'Enregistrer',exact:true}).click();
+ await page.getByRole('button',{name:'Enregistrer la séance',exact:true}).click();
  await openTab(page,'Historique');
  await page.getByRole('button',{name:'Réutiliser'}).click();
  await page.locator('#plan>.card:not(.session-objective)').first().getByRole('button',{name:'🔄 Remplacer'}).click();

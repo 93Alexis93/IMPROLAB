@@ -556,3 +556,108 @@ body #cahier .coach-intro,body #cahier .coach-list-card,body #principes .princip
   background:var(--il-surface)!important;border-color:var(--il-surface-bord)!important}
 body .more-navigation-menu{background:var(--il-surface)!important;border-color:var(--il-surface-bord)!important}
 .dynamic-sub{display:block;font-size:11px;line-height:1.2;margin:-1px 0 2px;color:var(--ink-soft,#4f483f)}
+/* Cibles tactiles ≥ 44 px (iPhone) : curseurs des priorités, rubriques et boutons des exercices de la séance */
+body .dynamic-row input[type=range]{height:44px!important;min-height:44px!important}
+body #plan .coach-quick>summary{margin:-10px -12px!important;padding:11px 12px!important}
+body #plan .coach-quick[open]>summary{margin-bottom:0!important}
+body #plan .coach-attribution>summary{box-sizing:border-box;min-height:44px!important;padding-block:8px!important}
+body #plan .edit-actions button{min-width:44px!important}
+/* Mêmes cibles de 44 px dans la Régie (panneaux, rubriques de l'exercice en cours) et dans Groupes */
+body #live details>summary,body #groupes details>summary{box-sizing:border-box;min-height:44px!important;padding-block:10px!important}
+body #live .coach-quick>summary{margin:-10px -12px!important;padding:11px 12px!important}
+body #live .coach-quick[open]>summary{margin-bottom:0!important}
+body #groupes button{min-height:44px!important}
+body #groupes .roster-person button{min-width:44px!important}
+/* Navigation compacte sur téléphone : une seule ligne de cinq cibles de 44 px au lieu de trois lignes.
+   « Plus » ouvert passe sur sa propre ligne pour que son menu reste en flux (jamais rogné). */
+@media(max-width:600px){
+  nav[aria-label="Navigation principale"]{grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:3px!important;padding:4px!important}
+  nav[aria-label="Navigation principale"]>button{min-height:44px!important;padding:4px 2px!important;font-size:12.5px!important;line-height:1.15!important}
+  nav[aria-label="Navigation principale"] .more-navigation{grid-column:auto!important;margin:0!important}
+  nav[aria-label="Navigation principale"] .more-navigation>summary{min-height:44px!important;padding:0 2px!important;font-size:12.5px!important;justify-content:center}
+  nav[aria-label="Navigation principale"] .more-navigation[open]{grid-column:1/-1!important}
+}
+@media(max-width:380px){
+  nav[aria-label="Navigation principale"]>button,nav[aria-label="Navigation principale"] .more-navigation>summary{font-size:11px!important;letter-spacing:-.1px}
+}
+/* Badges de compétences (Groupes) */
+#badgesPanel>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:700}
+.badge-player{padding:8px 0;border-top:1px solid var(--line,#d2c7b8)}
+.badge-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+body .badge-row .badge-chip{min-height:44px;padding:6px 10px;border-radius:22px;font-size:14px;background:var(--paper-raised,#fffaf0);color:var(--ink,#25231f);border:1px solid var(--line,#d2c7b8)}
+body .badge-row .badge-chip[aria-pressed="true"]{background:#1f5e3a!important;color:#fff!important;border-color:#1f5e3a!important}
+/* Vue « scène » plein écran (prof et élève animateur) */
+.stage-view[hidden]{display:none!important}
+body .stage-view:not([hidden]){position:fixed;inset:0;z-index:2000;display:flex;flex-direction:column;gap:10px;box-sizing:border-box;overflow:auto;background:#111528!important;color:#fff!important;padding:max(12px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
+body.stage-open{overflow:hidden}
+.stage-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+body .stage-top span{font-size:17px;color:#c9cfe8!important}
+body #live .stage-view .stage-actions button{min-height:56px!important;min-width:56px!important;border-radius:14px;font-size:22px!important}
+body .stage-top button{min-height:44px;font-size:17px}
+.stage-body{flex:1;display:flex;flex-direction:column;justify-content:center;gap:16px;min-height:0}
+.stage-text{overflow:auto}
+body .stage-view .stage-role{margin:0 0 6px;font-size:20px;font-weight:800;color:#39f5c8!important}
+body .stage-view .stage-title{margin:0 0 10px;font:800 clamp(26px,7vw,56px)/1.1 Georgia,"Times New Roman",serif;color:#ffd16d!important}
+body .stage-view #stageConsigne{margin:0;font-size:clamp(22px,5.8vw,46px);line-height:1.3;color:#fff!important;white-space:pre-wrap}
+body .stage-view.stage-eleve #stageConsigne{font-size:clamp(26px,7vw,56px)}
+body .stage-view #stageClock{font-size:clamp(68px,24vw,170px);font-weight:900;font-variant-numeric:tabular-nums;text-align:center;line-height:1;color:#fff!important}
+body .stage-view #stageClock.over{color:#ff9a9a!important}
+body .stage-view #stageOver{margin:4px 0;text-align:center;font-size:20px;color:#ffd16d!important;min-height:1em}
+.stage-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+body #live .stage-view #stageStart{min-width:180px!important;min-height:72px!important;font-size:26px!important}
+.stage-actions button[hidden]{display:none!important}
+@media (orientation:landscape){
+  body .stage-view:not([hidden]){overflow:hidden}
+  .stage-body{flex-direction:row;align-items:stretch;gap:24px;overflow:hidden}
+  .stage-text{flex:1.5;max-height:100%;overflow:auto;align-self:center}
+  .stage-side{flex:1;display:flex;flex-direction:column;justify-content:center}
+  body .stage-view .stage-title{font-size:clamp(22px,4vw,44px);margin-bottom:6px}
+  body .stage-view #stageConsigne{font-size:clamp(17px,2.7vw,36px)}
+  body .stage-view.stage-eleve #stageConsigne{font-size:clamp(19px,3.1vw,42px)}
+  body .stage-view #stageClock{font-size:clamp(56px,13vw,150px)}
+}
+/* Contraintes de main en main */
+.pass-list{flex:1;display:flex;flex-direction:column;justify-content:center;gap:14px;overflow:auto;min-height:0}
+.pass-item{display:flex;flex-direction:column;gap:2px}
+body .pass-view .pass-cat{font-size:clamp(15px,3.6vw,22px);text-transform:uppercase;letter-spacing:.08em;color:#9fe9d6!important}
+body .pass-view .pass-val{font:800 clamp(26px,8vw,60px)/1.12 Georgia,"Times New Roman",serif;color:#fff!important}
+body .pass-view .pass-empty{font-size:22px;color:#fff!important}
+body #live .pass-view .pass-next{min-height:84px!important;width:100%;font-size:30px!important;border-radius:20px}
+@media (orientation:landscape){.pass-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-content:center}body .pass-view .pass-val{font-size:clamp(22px,4vw,48px)}body #live .pass-view .pass-next{min-height:64px!important}}
+/* Préparation de spectacle */
+.show-sheet{display:none}
+.show-head{display:flex;justify-content:space-between;align-items:center;gap:8px}
+body #spectacle .show-head button{min-width:44px;min-height:44px;margin-left:4px}
+body #spectacle button{min-height:44px}
+#spectacle label{display:block;margin:8px 0}
+#spectacle input,#spectacle textarea,#spectacle select{display:block;width:100%;box-sizing:border-box;min-height:44px;margin-top:4px;font:inherit}
+@media print{
+  #spectacle .no-print{display:none!important}
+  #spectacle .show-sheet{display:block!important}
+  .show-sheet table{width:100%;border-collapse:collapse;font-size:10.5pt}
+  .show-sheet th,.show-sheet td{border:1px solid #777;padding:4pt 5pt;text-align:left;vertical-align:top}
+  .show-sheet th{background:#eee!important}
+  .show-sheet tr{break-inside:avoid}
+}
+/* Fil rouge */
+#filRouge>summary,.fil-edit>summary{min-height:44px;box-sizing:border-box;padding-block:10px;cursor:pointer;font-weight:700}
+.fil-trimester{border:1px solid var(--line,#d2c7b8);border-radius:10px;margin:8px 0;padding:6px 10px}
+.fil-trimester label{display:inline-flex;align-items:center;gap:6px;min-height:44px;margin-right:12px}
+.fil-focus{font-weight:700}
+/* Match d'impro (Régie) */
+#live .regie-match{margin:9px 0;border:1px solid var(--il-surface-bord,#626c90);border-radius:12px;padding:9px;background:var(--il-surface,#202745)}
+#live .regie-match>summary{cursor:pointer;font-weight:750;min-height:44px}
+.match-teams{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.match-teams input{width:100%;box-sizing:border-box;min-height:44px}
+.match-score{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0;text-align:center}
+.match-score>div{border:1px solid var(--line,#d2c7b8);border-radius:12px;padding:8px}
+.match-score b{display:block;overflow-wrap:anywhere}
+.match-score output{display:block;font-size:44px;font-weight:900;font-variant-numeric:tabular-nums;line-height:1.1}
+.match-score button{min-height:44px;min-width:44px;margin:2px}
+.match-current{font-size:18px;font-weight:700}
+.regie-match textarea{width:100%;box-sizing:border-box}
+/* Bilan de séance dans l'Historique */
+.history-review{margin-top:10px}
+.history-review>summary{min-height:44px;box-sizing:border-box;padding-block:10px;cursor:pointer;font-weight:700}
+.history-review label{display:block;margin:8px 0}
+.history-review textarea{display:block;width:100%;box-sizing:border-box;min-height:64px;margin-top:4px;font:inherit}
