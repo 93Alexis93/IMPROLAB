@@ -90,3 +90,9 @@ Non fait, et pourquoi :
 
 ### Hors périmètre, signalé
 - La barre de navigation fixe (Accueil, Préparer, Exercice aléatoire, Régie, Plus) occupe environ un quart de la hauteur d’un iPhone 13 sur l’écran Préparer. Non modifiée (navigation globale) ; à décider séparément.
+
+### D14. Articles des titres : seulement quand ils conviennent
+- Demande d'Alexis : « Le » ou « La » ne doit pas apparaître tout le temps, seulement quand il faut, et le reste du titre ne change pas.
+- La table `TITLE_ARTICLES` (dans `index.html`, pas dans `library.json`) passe de 62 à 21 entrées. L'article est gardé devant les titres qui sont des noms (« Le Duel au cercle », « L'Abécédaire », « La Patate chaude : … », « Les Voleurs de répliques », « L'Impro libre »…). Il est retiré devant les phrases, questions, exclamations, verbes et énumérations (« C'est quoi, ce poindon ? », « Tape, tape… choisis ton cap ! », « Tu sais pas quoi », « Applaudir à trois », « À l'aide ! », « Maison – créature – inondations »…).
+- Le texte des titres n'est jamais modifié : seul l'article ajouté automatiquement disparaît.
+- Test mis à jour (`app.spec.cjs`) : il exigeait un article devant tous les titres. Il vérifie désormais la nouvelle règle dans les deux sens, et que le titre d'origine reste intact.
