@@ -162,3 +162,9 @@ Non fait, et pourquoi :
 
 ### D21. Texte du principe « Take et give le focus »
 - Texte d'Alexis (7 novembre 2026), placé tel quel dans `detail` (seuls changements : guillemets et apostrophes typographiques). Seule la section `principes_improvisation` change ; référence d'intégrité régénérée.
+
+### D22. Licence et README alignés sur la bibliothèque sans fiches web
+- Demande d'Alexis (7 novembre 2026) : « modifie aussi license et readme pour que ça colle ».
+- `LICENSE`, section 2 : la licence CC BY-NC-ND 4.0 couvre toutes les fiches d'exercices (il n'en reste que d'origine `notes_personnelles` ou `creation_improlab`). Section 3 : la mention des fiches `recherche_web` est remplacée par la section `regles_pedagogiques`, seul contenu de `library.json` qui renvoie encore à une source extérieure (theatrefolk.com).
+- `README.md` : tableau des droits aligné sur ces deux points.
+- Inchangé : périmètre des droits (code, identité visuelle, principes-impro.json, cahier de coach, Canva). Les principes de `principes_improvisation` (notes d'Alexis) restent sous « tous droits réservés » faute de mention ; les passer en CC BY-NC-ND est une décision à prendre par Alexis.

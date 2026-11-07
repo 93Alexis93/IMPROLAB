@@ -9,8 +9,8 @@ Application locale de préparation et d’animation d’exercices d’improvisat
 | Élément | Droits |
 |---|---|
 | Code de l’application (HTML, CSS, JavaScript, tests, configuration) | Tous droits réservés : aucune réutilisation sans autorisation écrite |
-| Fiches originales (`notes_personnelles` et `creation_improlab` dans `library.json`) | [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr) : partage en citant l’auteur, sans usage commercial ni modification |
-| Fiches adaptées de sources web (`recherche_web`), principes et cahier de coach | Exclus de la licence : droits de leurs sources respectives |
+| Toutes les fiches d’exercices de `library.json` (`notes_personnelles` et `creation_improlab`) | [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fr) : partage en citant l’auteur, sans usage commercial ni modification |
+| Règles pédagogiques (`regles_pedagogiques`, source theatrefolk.com), `principes-impro.json` et cahier de coach | Exclus de la licence : droits de leurs sources respectives |
 | Nom « IMPRO LAB », logos et identité visuelle | Tous droits réservés |
 
 ## Contrôles automatisés
