@@ -49,3 +49,15 @@ Lot du 2026-11-05 : préparation des séances (six curseurs), branche `ameliorat
 
 ### Rappel C
 - Après correction : `check.cjs` OK, `integrity.cjs` OK (124 fiches), Playwright 65/65 en iPhone-Chromium et 65/65 en iPhone-WebKit, `library.json` inchangé (`git diff` vide).
+
+## Lot du 2026-11-07 : bibliothèque après la revue des fiches (D15)
+Branche `bibliotheque/retrait-externes-3-2-2-20` depuis `origin/main` (c7f8b49).
+
+| Lot | Objet | État |
+|---|---|---|
+| 1 | 17 fiches WEB/EXT, `sources_externes` et case « recherches externes » retirées ; créations IMPRO LAB incluses | fait |
+| 2 | Fiche 3-2 « Impro libre » supprimée | fait |
+| 3 | 2-20 « Take et give le focus » devenue principe (texte à rédiger par Alexis) | fait |
+| 4 | Niveau en étoiles sur les 105 fiches (2-24 ramenée à ★★★) ; seuil de chargement 122 → 100 | fait |
+
+- `check.cjs` OK, `integrity.cjs` OK (105 fiches, 8 sections), Playwright 87/87 en iPhone-Chromium et 87/87 en iPhone-WebKit.
