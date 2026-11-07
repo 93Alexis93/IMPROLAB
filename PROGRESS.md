@@ -61,3 +61,14 @@ Branche `bibliotheque/retrait-externes-3-2-2-20` depuis `origin/main` (c7f8b49).
 | 4 | Niveau en étoiles sur les 105 fiches (2-24 ramenée à ★★★) ; seuil de chargement 122 → 100 | fait |
 
 - `check.cjs` OK, `integrity.cjs` OK (105 fiches, 8 sections), Playwright 87/87 en iPhone-Chromium et 87/87 en iPhone-WebKit.
+
+## Lot du 2026-11-07 (suite) : niveaux en étoiles dans l’appli (D16)
+Branche `fonctions/niveaux-etoiles`, partie de `bibliotheque/retrait-externes-3-2-2-20` (PR 22).
+
+| Tâche | Objet | État |
+|---|---|---|
+| 1 | Étoiles affichées et filtre par niveau | fait |
+| 2 | Difficulté progressive par étape (générateur, remplacement) | fait |
+| 3 | Plafond par groupe (collège, copains ★★ ; asso ★★★) | fait |
+| 4 | Signal en mode élève animateur | fait : Playwright 90/90 (Chromium et WebKit) |
+| 5 | Étiquettes d’usage tirées des commentaires | proposées, en attente de validation d’Alexis |

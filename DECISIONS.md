@@ -108,3 +108,12 @@ Non fait, et pourquoi :
 - Cache : `library.json?v=20261107-revue-fiches`, service worker `v46-revue-fiches`, pour que l'iPhone recharge la bibliothèque.
 - Tests mis à jour : `app.spec.cjs` (titres : WEB, EXT et 3-2 retirés des exemples, seuil 105), `regression.spec.cjs` (plus de case externe ; le générateur accepte notes et créations), `check.cjs` (2-20, 3-2, recherches externes et `sources_externes` doivent être absents, le principe doit exister).
 - Non modifié, signalé : le texte de `conservation` en tête de `library.json` parle encore d'« exercices externes » ; les `regles_pedagogiques` citent toujours theatrefolk.com dans `source_url` ; la mention « Adaptation pédagogique issue d'une source externe » reste dans le code sans plus servir.
+
+### D16. Utiliser les niveaux en étoiles dans l'appli
+- Demande d'Alexis (7 novembre 2026), après la revue : afficher les niveaux, rendre la séance progressive, plafonner par groupe, ménager l'élève animateur. Aucune donnée de `library.json` n'est modifiée par cette étape.
+- **Affichage** : pastille ★ / ★★ / ★★★ sur chaque fiche de la bibliothèque, étoiles dans l'étiquette des cartes de séance et dans la liste « ajouter un exercice ». Nouveau filtre « Niveau » à côté de « Objectif » dans la bibliothèque.
+- **Difficulté progressive** (générateur et remplacement) : préférence par étape, jamais bloquante : mise en énergie et connexion en ★ ou ★★, exploration en ★★, improvisation et scène finale en ★★ ou ★★★. Si aucun jeu ne convient à l'étape, la règle est relâchée.
+- **Plafond par groupe** : Club collège et Copains jusqu'à ★★, Association jusqu'à ★★★. Il s'applique au générateur, au remplacement, au tirage rapide de l'Accueil, à « Exercice aléatoire » et au mode soirée. Le plafond est relâché seulement si moins de 5 jeux restent pour une séance (ou aucun pour un tirage). Le plafond s'affiche sous le choix du groupe (« Jeux jusqu’à ★★ »).
+- **Élève animateur** : si le jeu en cours dépasse ★, la vue scène l'indique (« Jeu ★★ : plus délicat à mener. Pour un élève animateur, privilégie les jeux ★. »). Le jeu n'est pas remplacé automatiquement.
+- Mode soirée : les créations IMPRO LAB restent proposées (D11) dans la limite du niveau du groupe. 3-6 et 3-7 étant ★★★, elles sortent du tirage pour les Copains et le Club collège, et restent pour l’Association. Le test du mode soirée vérifie maintenant cette règle.
+- Tests : trois nouveaux tests dans `tests/features.spec.cjs` (étoiles et filtre ; plafond Club collège et Association ; signal en élève animateur).

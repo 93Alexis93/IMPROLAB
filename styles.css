@@ -661,3 +661,7 @@ body #spectacle button{min-height:44px}
 .history-review>summary{min-height:44px;box-sizing:border-box;padding-block:10px;cursor:pointer;font-weight:700}
 .history-review label{display:block;margin:8px 0}
 .history-review textarea{display:block;width:100%;box-sizing:border-box;min-height:64px;margin-top:4px;font:inherit}
+
+/* Niveaux en étoiles */
+span.pill.level-pill{color:#ffd16d;font-weight:800;letter-spacing:.06em}
+.stage-level-note{margin:0 0 8px;font-size:18px;font-weight:750;color:#ffd16d!important}
