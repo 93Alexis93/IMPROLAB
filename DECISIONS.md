@@ -139,3 +139,12 @@ Non fait, et pourquoi :
 - `library.json`, section `conservation` : « Les 105 notes originales sont préservées ; les exercices externes sont des reformulations attribuées et séparées. » devient « Les notes originales sont préservées dans chaque fiche (champ texte_original). ». Seule cette section change ; référence d'intégrité régénérée.
 - Non modifié, signalé : `LICENSE` et le tableau des droits du `README.md` citent encore les fiches `recherche_web` (texte juridique, à revoir par Alexis) ; `regles_pedagogiques` garde ses liens vers theatrefolk.com.
 - Cache : `library.json?v=20261107-sans-web`, service worker `v48-sans-web`.
+
+### D19. Lot 5 : les commentaires de revue entrent dans les règles, doublons jamais dans la même séance
+- Demande d'Alexis (7 novembre 2026) : reprendre ses commentaires de revue tels quels ; doublons « on garde les deux mais ils ne peuvent pas tomber en même temps dans une séance » ; 2-32 « le second est le second partenaire du binôme ».
+- Phrases ajoutées en fin de règle (mots d'Alexis, seules corrections : orthographe et apostrophes) : 1-30, 2-1, 2-9, 2-22.
+- Remplacements : 2-24 (variante du 4ème comédien), 2-28 (variante des trois tours de « tous les jours »), 2-33 (définition de « colorer » une relation, aussi dans la consigne courte), 2-30 (« Pour aller plus loin, » devant la suite).
+- 2-32 : la règle passe de « deux binômes » à un binôme dont les deux partenaires alternent ; consignes et variantes de l'assistant alignées. La note originale ne change pas.
+- Nouveau champ `jamais_avec` (identifiants, réciproque) : 2-25 / 1-14, 2-17 / 1-58, 2-14 / 1-56. Le générateur, le remplacement d'un exercice et le mode soirée n'associent jamais deux jumeaux. L'ajout manuel reste libre (choix délibéré du coach).
+- Non modifiés : 1-61 et 2-31 (gardés tels quels), 1-59, les fiches validées 3-6, 3-7, 1-43. Le texte du principe « Take et give le focus » attend toujours Alexis.
+- Cache : `library.json?v=20261107-regles-commentaires`, service worker `v49-regles-commentaires`. Référence d'intégrité régénérée après vérification des 19 écarts attendus.

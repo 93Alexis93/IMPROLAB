@@ -73,3 +73,11 @@ Branche `fonctions/niveaux-etoiles`, partie de `bibliotheque/retrait-externes-3-
 | 4 | Signal en mode élève animateur | fait : Playwright 90/90 (Chromium et WebKit) |
 | 5 | Étiquettes d’usage tirées des commentaires (D17) | fait : Playwright 91/91 (Chromium et WebKit), audit iPhone 13 (bibliothèque, Préparer, Spectacle) sans cible < 44 px ni débordement |
 | 6 | Plus aucune mention des adaptations web (D18) | fait : Playwright 91/91 (Chromium et WebKit) |
+
+## Lot du 2026-11-07 (suite) : tes règles avec tes mots (D19)
+Branche `bibliotheque/regles-commentaires`, partie de `fonctions/usages-revue` (PR 24).
+
+| Tâche | Objet | État |
+|---|---|---|
+| 1 | Commentaires de revue intégrés aux règles (9 fiches dont 2-32) | fait |
+| 2 | Doublons jamais dans la même séance (`jamais_avec`) | fait |

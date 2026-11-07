@@ -170,3 +170,14 @@ for (const e of lib.exercices) if ('usages' in e) {
   for (const u of e.usages) assert.ok(typeof u === 'string' && u.trim() === u && u.length > 0, `Fiche ${e.id}, champ « usages » : libellé invalide`);
 }
 assert.ok(lib.exercices.filter(e => (e.usages || []).includes('spectacle')).length >= 4, 'Usages : jeux de spectacle attendus');
+const idsSet = new Set(lib.exercices.map(e => e.id));
+for (const e of lib.exercices) if ('jamais_avec' in e) {
+  assert.ok(Array.isArray(e.jamais_avec) && e.jamais_avec.length > 0, `Fiche ${e.id}, champ « jamais_avec » : tableau non vide attendu`);
+  for (const other of e.jamais_avec) {
+    assert.ok(idsSet.has(other) && other !== e.id, `Fiche ${e.id}, « jamais_avec » : identifiant inconnu ${other}`);
+    const back = lib.exercices.find(x => x.id === other);
+    assert.ok((back.jamais_avec || []).includes(e.id), `Fiches ${e.id} et ${other} : lien « jamais_avec » à rendre réciproque`);
+  }
+}
+for (const [a, b] of [['2-25', '1-14'], ['2-17', '1-58'], ['2-14', '1-56']]) assert.ok((lib.exercices.find(e => e.id === a).jamais_avec || []).includes(b), `Doublon ${a} / ${b} : ne doivent pas tomber dans la même séance`);
+for (const id of ['2-24', '2-28', '2-32', '2-33']) assert.ok(!/reste à (préciser|confirmer)|mentionnée dans la note originale/.test(lib.exercices.find(e => e.id === id).regle_clarifiee), `Fiche ${id} : la règle doit intégrer le commentaire de revue`);

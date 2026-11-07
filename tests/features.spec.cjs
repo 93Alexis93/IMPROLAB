@@ -502,3 +502,25 @@ test('usages : affichés sur la fiche, filtre « Usage » et jeux repérés pour
   await expect(page.locator('#showItems .show-item')).toHaveCount(1);
   expect(await page.locator('#showItems input[list]').first().inputValue()).toBe(title);
 });
+
+test('doublons : deux jeux jumeaux ne tombent jamais dans la même séance', async ({ page }) => {
+  await openApp(page);
+  await openSeance(page);
+  const result = await page.evaluate(() => {
+    const byId = Object.fromEntries(libraryPayload.exercices.map(e => [e.id, e.titre]));
+    const pairs = [['2-25', '1-14'], ['2-17', '1-58'], ['2-14', '1-56']].map(([a, b]) => [byId[a], byId[b]]);
+    const linked = pairs.every(([a, b]) => clashesWith(data.find(g => g[0] === a), [b]) && clashesWith(data.find(g => g[0] === b), [a]));
+    const clashes = [];
+    for (let round = 0; round < 40; round++) {
+      localStorage.removeItem('impro-recent-games');
+      localStorage.removeItem('impro-session-rounds-v1');
+      generate();
+      const titles = Array.from(document.querySelectorAll('#plan>.card h3')).map(h => h.textContent);
+      const has = t => titles.includes(t) || titles.includes(displayTitle(t));
+      for (const [a, b] of pairs) if (has(a) && has(b)) clashes.push(a + ' + ' + b);
+    }
+    return { linked, clashes };
+  });
+  expect(result.linked, 'chaque jeu connaît son jumeau').toBe(true);
+  expect(result.clashes).toEqual([]);
+});
