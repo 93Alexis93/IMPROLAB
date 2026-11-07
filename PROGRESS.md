@@ -81,3 +81,24 @@ Branche `bibliotheque/regles-commentaires`, partie de `fonctions/usages-revue` (
 |---|---|---|
 | 1 | Commentaires de revue intégrés aux règles (9 fiches dont 2-32) | fait |
 | 2 | Doublons jamais dans la même séance (`jamais_avec`) | fait |
+
+## Lot du 2026-11-07 (soir) : lots 1, 2 et 3 en autonomie (D23 à D27)
+Branche `amelioration/lots-1-2-3` depuis `origin/main` (dd0a951). Demande d’Alexis : « fais les lots 1, 2 et 3 en autonomie ».
+
+| Lot | Tâche | État |
+|---|---|---|
+| 1 | Rappel de sauvegarde sur l’Accueil, date de la dernière sauvegarde, stockage persistant demandé | fait |
+| 1 | README à jour (2-20 devenue principe, tutoriel, sauvegarde) | fait |
+| 1 | Tutoriel d’accueil : seulement à la première ouverture (proposition `proposal/tutorial-persistence` reprise avec son test) | fait |
+| 1 | Barre de navigation : mesurée à 56 px (8 % d’un iPhone 13), non modifiée | vérifié, sans changement |
+| 2 | Première séance d’un groupe : jeu de prénoms au début ; jeux « chauffe » et « début de séance » admis en ouverture | fait |
+| 2 | Équipes à partir des présents | déjà présent (Groupes et Régie, en évitant les mêmes paires) : rien à faire |
+| 2 | 👍 / 👎 et note rapide dans la Régie et le plein écran, versés dans le carnet de bord | fait |
+| 2 | Signal de fin : trois bips plus forts, bip 1 min avant, chrono qui pulse, écran maintenu allumé, vibration si possible | fait, à tester sur iPhone |
+| 3 | Trame du fil rouge | laissée telle quelle : elle attend la validation d’Alexis (D13) |
+| 3 | Séance en cours propre à chaque groupe | fait |
+| 3 | Bilan du trimestre par groupe (Historique), prêt à copier | fait |
+| 3 | Noms de groupes modifiables ; choix du groupe dans Exercice aléatoire | fait |
+
+- Tests ajoutés : `tests/lots-1-2-3.spec.cjs` (8 tests) et `tests/tutorial-persistence.spec.cjs` (repris de la proposition).
+- Google Sheet de revue des catégories et des filtres : voir D27.
