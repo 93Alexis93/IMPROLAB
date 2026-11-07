@@ -148,3 +148,6 @@ Non fait, et pourquoi :
 - Nouveau champ `jamais_avec` (identifiants, réciproque) : 2-25 / 1-14, 2-17 / 1-58, 2-14 / 1-56. Le générateur, le remplacement d'un exercice et le mode soirée n'associent jamais deux jumeaux. L'ajout manuel reste libre (choix délibéré du coach).
 - Non modifiés : 1-61 et 2-31 (gardés tels quels), 1-59, les fiches validées 3-6, 3-7, 1-43. Le texte du principe « Take et give le focus » attend toujours Alexis.
 - Cache : `library.json?v=20261107-regles-commentaires`, service worker `v49-regles-commentaires`. Référence d'intégrité régénérée après vérification des 19 écarts attendus.
+
+### D20. Texte du principe « Take et give le focus »
+- Texte d'Alexis (7 novembre 2026), placé tel quel dans `detail` (seuls changements : guillemets et apostrophes typographiques). Seule la section `principes_improvisation` change ; référence d'intégrité régénérée.

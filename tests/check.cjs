@@ -116,9 +116,9 @@ assert.equal(firstNameGame.statut,'validée par le coach','Fiche 2-36, champ « 
 assert.equal(firstNameGame.eligible_generateur,true,'Fiche 2-36, champ « eligible_generateur » inattendu');
 assert.equal(firstNameGame.objectif_pedagogique,'Écoute','Fiche 2-36, champ « objectif_pedagogique » inattendu');
 assert.deepEqual(firstNameGame.categories_secondaires,['Cohésion','Énergie'],'Fiche 2-36, champ « categories_secondaires » inattendu');
-// 2-20 « Take et give le focus » est devenue un principe (texte du principe à rédiger plus tard par Alexis).
+// 2-20 « Take et give le focus » est devenue un principe, avec le texte d’Alexis.
 assert.ok(!lib.exercices.some(e => e.id === '2-20'), 'Fiche 2-20 : doit être retirée des exercices');
-assert.ok(lib.principes_improvisation.some(p => p.titre === 'Take et give le focus' && p.texte_original === 'Take et give le focus'), 'Principe « Take et give le focus » absent');
+assert.ok(lib.principes_improvisation.some(p => p.titre === 'Take et give le focus' && p.texte_original === 'Take et give le focus' && p.detail.includes('s’effacer en regardant son partenaire')), 'Principe « Take et give le focus » absent');
 assert.ok(!lib.exercices.some(e => e.id === '3-2'), 'Fiche 3-2 « Impro libre » : doit être retirée');
 assert.ok(!lib.exercices.some(e => e.origine === 'recherche_web'), 'Les exercices issus de recherches externes doivent être retirés');
 assert.ok(!('sources_externes' in lib), 'La section sources_externes doit être retirée');
