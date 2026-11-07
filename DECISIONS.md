@@ -131,3 +131,11 @@ Non fait, et pourquoi :
 - Appli : « Usages : … » sur la fiche, filtre « Usage » dans la bibliothèque, et dans Spectacle un encadré « Jeux repérés pour le spectacle » (étiquettes spectacle et avant un spectacle) avec un bouton « ＋ Numéro » qui ajoute le jeu à l'ordre de passage, avec la durée de sa fiche.
 - Non fait, à décider : se servir de « chauffe » ou « apprentissage des prénoms » dans le générateur (par exemple pour la première séance d'un groupe).
 - Cache : `library.json?v=20261107-usages`, service worker `v47-usages`.
+
+### D18. Plus aucune mention des adaptations web dans l'appli
+- Demande d'Alexis (7 novembre 2026) : « enlève les adaptations web ».
+- Bibliothèque : la phrase « Les notes personnelles restent distinctes des adaptations issues du web. » est retirée ; « Une règle incomplète n’est pas une règle validée. » reste.
+- Fiche : la mention « Adaptation pédagogique issue d’une source externe » est retirée du code (plus aucune fiche ne l'utilisait).
+- `library.json`, section `conservation` : « Les 105 notes originales sont préservées ; les exercices externes sont des reformulations attribuées et séparées. » devient « Les notes originales sont préservées dans chaque fiche (champ texte_original). ». Seule cette section change ; référence d'intégrité régénérée.
+- Non modifié, signalé : `LICENSE` et le tableau des droits du `README.md` citent encore les fiches `recherche_web` (texte juridique, à revoir par Alexis) ; `regles_pedagogiques` garde ses liens vers theatrefolk.com.
+- Cache : `library.json?v=20261107-sans-web`, service worker `v48-sans-web`.

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.2",
   "source": "Notes personnelles de théâtre d’improvisation",
-  "conservation": "Les 105 notes originales sont préservées ; les exercices externes sont des reformulations attribuées et séparées.",
+  "conservation": "Les notes originales sont préservées dans chaque fiche (champ texte_original).",
   "exercices": [
     {
       "id": "1-1",
