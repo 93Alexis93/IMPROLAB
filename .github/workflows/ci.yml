@@ -41,8 +41,17 @@ jobs:
           node-version: '22'
       - name: Installer Playwright épinglé
         run: npm install --no-save @playwright/test@1.56.1
+      # Seul le navigateur du job est installé. Chaque tentative est limitée à 5 minutes et relancée
+      # jusqu'à 3 fois : l'installation restait parfois bloquée jusqu'à l'annulation du job (25 min).
       - name: Installer les navigateurs
-        run: npx playwright install --with-deps chromium webkit
+        timeout-minutes: 16
+        run: |
+          BROWSER=${{ matrix.project == 'iPhone-WebKit' && 'webkit' || 'chromium' }}
+          for attempt in 1 2 3; do
+            timeout 300 npx playwright install --with-deps "$BROWSER" && exit 0
+            echo "Installation de $BROWSER interrompue (tentative $attempt), nouvel essai…"
+          done
+          exit 1
       - name: Tests navigateur et détection des tests instables
         run: npx playwright test --project="${{ matrix.project }}" --fail-on-flaky-tests
       - name: Conserver les preuves en cas d’échec
