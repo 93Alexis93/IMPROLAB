@@ -50,7 +50,7 @@ Lot du 2026-11-05 : préparation des séances (six curseurs), branche `ameliorat
 ### Rappel C
 - Après correction : `check.cjs` OK, `integrity.cjs` OK (124 fiches), Playwright 65/65 en iPhone-Chromium et 65/65 en iPhone-WebKit, `library.json` inchangé (`git diff` vide).
 
-## Lot du 2026-11-07 : bibliothèque après la revue des fiches (D15)
+## Lot du 2026-11-07 : bibliothèque après la revue des fiches (D16)
 Branche `bibliotheque/retrait-externes-3-2-2-20` depuis `origin/main` (c7f8b49).
 
 | Lot | Objet | État |
@@ -62,7 +62,7 @@ Branche `bibliotheque/retrait-externes-3-2-2-20` depuis `origin/main` (c7f8b49).
 
 - `check.cjs` OK, `integrity.cjs` OK (105 fiches, 8 sections), Playwright 87/87 en iPhone-Chromium et 87/87 en iPhone-WebKit.
 
-## Lot du 2026-11-07 (suite) : niveaux en étoiles dans l’appli (D16)
+## Lot du 2026-11-07 (suite) : niveaux en étoiles dans l’appli (D17)
 Branche `fonctions/niveaux-etoiles`, partie de `bibliotheque/retrait-externes-3-2-2-20` (PR 22).
 
 | Tâche | Objet | État |
@@ -71,10 +71,10 @@ Branche `fonctions/niveaux-etoiles`, partie de `bibliotheque/retrait-externes-3-
 | 2 | Difficulté progressive par étape (générateur, remplacement) | fait |
 | 3 | Plafond par groupe (collège, copains ★★ ; asso ★★★) | fait |
 | 4 | Signal en mode élève animateur | fait : Playwright 90/90 (Chromium et WebKit) |
-| 5 | Étiquettes d’usage tirées des commentaires (D17) | fait : Playwright 91/91 (Chromium et WebKit), audit iPhone 13 (bibliothèque, Préparer, Spectacle) sans cible < 44 px ni débordement |
-| 6 | Plus aucune mention des adaptations web (D18) | fait : Playwright 91/91 (Chromium et WebKit) |
+| 5 | Étiquettes d’usage tirées des commentaires (D18) | fait : Playwright 91/91 (Chromium et WebKit), audit iPhone 13 (bibliothèque, Préparer, Spectacle) sans cible < 44 px ni débordement |
+| 6 | Plus aucune mention des adaptations web (D19) | fait : Playwright 91/91 (Chromium et WebKit) |
 
-## Lot du 2026-11-07 (suite) : tes règles avec tes mots (D19)
+## Lot du 2026-11-07 (suite) : tes règles avec tes mots (D20)
 Branche `bibliotheque/regles-commentaires`, partie de `fonctions/usages-revue` (PR 24).
 
 | Tâche | Objet | État |

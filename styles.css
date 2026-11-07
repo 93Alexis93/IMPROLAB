@@ -662,6 +662,31 @@ body #spectacle button{min-height:44px}
 .history-review label{display:block;margin:8px 0}
 .history-review textarea{display:block;width:100%;box-sizing:border-box;min-height:64px;margin-top:4px;font:inherit}
 
+/* Sauvegarde (Accueil), avis par exercice, présences, caucus, fiches élèves */
+.home-backup{margin-top:14px}
+.review-votes{margin:10px 0;padding-top:6px;border-top:1px solid var(--line,#d2c7b8)}
+.review-votes-title{font-weight:700;margin:4px 0}
+.review-vote{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:4px 0}
+.review-vote>span:first-child{flex:1;min-width:0;overflow-wrap:anywhere}
+.review-vote-buttons{display:flex;gap:6px}
+body .review-vote-buttons .badge-chip{min-width:52px;min-height:44px;font-size:20px;padding:4px 8px;border-radius:22px;background:var(--paper-raised,#fffaf0);color:var(--ink,#25231f);border:1px solid var(--line,#d2c7b8)}
+body .review-vote-buttons .badge-chip[aria-pressed="true"]{background:#1f5e3a!important;border-color:#1f5e3a!important}
+#attendancePanel>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:700}
+.attendance-list{columns:2;column-gap:18px;padding-left:18px}
+.match-caucus{font-size:24px;font-weight:800;text-align:center;margin:6px 0}
+.student-sheets{display:none}
+@media print{
+  body.print-students #seance>*:not(#studentSheets){display:none!important}
+  body.print-students #studentSheets{display:block!important}
+  .student-sheet{page-break-after:always;break-after:page;padding-top:20mm}
+  .student-sheet:last-child{page-break-after:auto;break-after:auto}
+  .student-sheet h2{font:700 30pt/1.15 Georgia,"Times New Roman",serif;margin:0 0 14mm;color:#111!important}
+  .student-sheet p{font-size:22pt;line-height:1.4;color:#111!important}
+}
+/* Boutons du match : retour à la ligne sur petit écran (iPhone SE) */
+#matchPanel .draw-actions{display:flex!important;flex-wrap:wrap;gap:6px}
+#matchPanel .draw-actions button{flex:1 1 auto;min-width:0;white-space:normal}
+
 /* Niveaux en étoiles */
 span.pill.level-pill{color:#ffd16d;font-weight:800;letter-spacing:.06em}
 .stage-level-note{margin:0 0 8px;font-size:18px;font-weight:750;color:#ffd16d!important}
