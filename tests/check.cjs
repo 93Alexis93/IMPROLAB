@@ -116,10 +116,12 @@ assert.equal(firstNameGame.statut,'validée par le coach','Fiche 2-36, champ « 
 assert.equal(firstNameGame.eligible_generateur,true,'Fiche 2-36, champ « eligible_generateur » inattendu');
 assert.equal(firstNameGame.objectif_pedagogique,'Écoute','Fiche 2-36, champ « objectif_pedagogique » inattendu');
 assert.deepEqual(firstNameGame.categories_secondaires,['Cohésion','Énergie'],'Fiche 2-36, champ « categories_secondaires » inattendu');
-const pendingGame = lib.exercices.find(e => e.id === '2-20');
-assert.ok(pendingGame, 'Fiche 2-20 absente');
-assert.equal(pendingGame.statut,'à confirmer','Fiche 2-20, champ « statut » : doit rester en attente');
-assert.equal(pendingGame.eligible_generateur,false,'Fiche 2-20, champ « eligible_generateur » : doit rester non éligible');
+// 2-20 « Take et give le focus » est devenue un principe, avec le texte d’Alexis.
+assert.ok(!lib.exercices.some(e => e.id === '2-20'), 'Fiche 2-20 : doit être retirée des exercices');
+assert.ok(lib.principes_improvisation.some(p => p.titre === 'Take et give le focus' && p.texte_original === 'Take et give le focus' && p.detail.includes('s’effacer en regardant son partenaire')), 'Principe « Take et give le focus » absent');
+assert.ok(!lib.exercices.some(e => e.id === '3-2'), 'Fiche 3-2 « Impro libre » : doit être retirée');
+assert.ok(!lib.exercices.some(e => e.origine === 'recherche_web'), 'Les exercices issus de recherches externes doivent être retirés');
+assert.ok(!('sources_externes' in lib), 'La section sources_externes doit être retirée');
 
 for (const e of lib.exercices) {
   if (e.categories_secondaires) {
@@ -161,3 +163,21 @@ assert.ok(sw.includes("caches.delete(k)"), 'Le service worker doit supprimer les
 
 console.log('IMPRO LAB : contrôles statiques et cohérence des données OK');
 console.log('Timeline souple et six curseurs OK');
+
+// Usages tirés des commentaires de revue d'Alexis (D17) : tableaux de libellés non vides.
+for (const e of lib.exercices) if ('usages' in e) {
+  assert.ok(Array.isArray(e.usages) && e.usages.length > 0, `Fiche ${e.id}, champ « usages » : tableau non vide attendu`);
+  for (const u of e.usages) assert.ok(typeof u === 'string' && u.trim() === u && u.length > 0, `Fiche ${e.id}, champ « usages » : libellé invalide`);
+}
+assert.ok(lib.exercices.filter(e => (e.usages || []).includes('spectacle')).length >= 4, 'Usages : jeux de spectacle attendus');
+const idsSet = new Set(lib.exercices.map(e => e.id));
+for (const e of lib.exercices) if ('jamais_avec' in e) {
+  assert.ok(Array.isArray(e.jamais_avec) && e.jamais_avec.length > 0, `Fiche ${e.id}, champ « jamais_avec » : tableau non vide attendu`);
+  for (const other of e.jamais_avec) {
+    assert.ok(idsSet.has(other) && other !== e.id, `Fiche ${e.id}, « jamais_avec » : identifiant inconnu ${other}`);
+    const back = lib.exercices.find(x => x.id === other);
+    assert.ok((back.jamais_avec || []).includes(e.id), `Fiches ${e.id} et ${other} : lien « jamais_avec » à rendre réciproque`);
+  }
+}
+for (const [a, b] of [['2-25', '1-14'], ['2-17', '1-58'], ['2-14', '1-56']]) assert.ok((lib.exercices.find(e => e.id === a).jamais_avec || []).includes(b), `Doublon ${a} / ${b} : ne doivent pas tomber dans la même séance`);
+for (const id of ['2-24', '2-28', '2-32', '2-33']) assert.ok(!/reste à (préciser|confirmer)|mentionnée dans la note originale/.test(lib.exercices.find(e => e.id === id).regle_clarifiee), `Fiche ${id} : la règle doit intégrer le commentaire de revue`);

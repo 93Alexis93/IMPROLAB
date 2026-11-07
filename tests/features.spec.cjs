@@ -201,7 +201,8 @@ test('mode soirée : jeux validés au hasard, sans répétition, aucun jeu écar
   expect((await page.locator('#liveInfo').textContent()).trim().length).toBeGreaterThan(10);
 
   const eligibleTitles = await page.evaluate(() => data.filter(g => soireeEligible(g)).map(g => displayTitle(g[0])));
-  expect(await page.evaluate(() => data.filter(g => soireeEligible(g)).some(g => g[8] === 'creation_improlab'))).toBe(true);
+  // Créations IMPRO LAB incluses (D11), dans la limite du niveau du groupe (D16).
+  expect(await page.evaluate(() => data.filter(g => soireeEligible(g)).some(g => g[8] === 'creation_improlab'))).toBe(await page.evaluate(() => data.some(g => g[8] === 'creation_improlab' && withinGroupLevel(g))));
   expect(await page.evaluate(() => data.filter(g => soireeEligible(g)).every(g => ['notes_personnelles', 'creation_improlab'].includes(g[8])))).toBe(true);
   const titles = [first];
   for (let i = 0; i < 9; i++) {
@@ -222,7 +223,10 @@ test('mode soirée : jeux validés au hasard, sans répétition, aucun jeu écar
   const [excludedTitle, tooBigTitle] = await page.evaluate(names => names.map(n => n ? displayTitle(n) : null), [excluded.titre, tooBig?.titre]);
   expect(drawn).not.toContain(excludedTitle);
   // Décision d'Alexis : le nombre de joueurs n'écarte aucun jeu. Le jeu « 4–8 joueurs » reste tirable à deux.
-  if (tooBigTitle) expect(drawn).toContain(tooBigTitle);
+  // Le niveau du groupe (D16) peut l'écarter : on ne vérifie la règle du nombre de joueurs que si son niveau est admis.
+  const tooBigAllowed = tooBig ? await page.evaluate(n => withinGroupLevel(data.find(g => g[0] === n)), tooBig.titre) : false;
+  if (tooBigTitle && tooBigAllowed) expect(drawn).toContain(tooBigTitle);
+  if (tooBigTitle && !tooBigAllowed) expect(drawn).not.toContain(tooBigTitle);
 });
 
 async function consigneCourte(page) {
@@ -416,4 +420,107 @@ test('partager une séance sans feuille de partage : le fichier est télécharg�
   await page.getByRole('button', { name: 'Partager la séance' }).click();
   expect((await download).suggestedFilename()).toBe('impro-lab-seance.json');
   await expect(page.locator('#planSummary')).toContainText('téléchargé');
+});
+
+// Niveaux en étoiles (revue d'Alexis du 7 novembre 2026).
+async function planLevels(page) {
+  return page.evaluate(() => Array.from(document.querySelectorAll('#plan>.card h3')).map(h => {
+    const t = h.textContent.trim(); const g = data.find(x => displayTitle(x[0]) === t || x[0] === t); return g ? g[13] : null;
+  }));
+}
+
+test('niveaux : étoiles sur les fiches et filtre par niveau dans la bibliothèque', async ({ page }) => {
+  await openApp(page);
+  await openTab(page, 'Bibliothèque');
+  const expected = await page.evaluate(() => libraryPayload.exercices.filter(e => e.niveau === '★★★').length);
+  expect(expected).toBeGreaterThan(0);
+  await expect(page.locator('#games .card .level-pill').first()).toHaveText(/^★{1,3}$/);
+  await page.locator('#levelFilter').selectOption('3');
+  await expect(page.locator('#games .card')).toHaveCount(expected);
+  for (const text of await page.locator('#games .card .level-pill').allTextContents()) expect(text).toBe('★★★');
+  await page.locator('#levelFilter').selectOption('');
+  await expect(page.locator('#games .card')).toHaveCount(await page.evaluate(() => libraryPayload.exercices.length));
+  expect(await page.locator('#manualGame option').first().textContent()).toMatch(/★$/);
+});
+
+test('niveaux : le Club collège ne reçoit pas de jeu ★★★, l’Association si', async ({ page }) => {
+  await openApp(page);
+  await openSeance(page);
+  await expect(page.locator('#groupLevelInfo')).toHaveText('Jeux jusqu’à ★★');
+  for (let round = 0; round < 3; round++) {
+    await page.getByRole('button', { name: 'Générer ma séance' }).click();
+    const levels = await planLevels(page);
+    expect(levels).toHaveLength(5);
+    for (const level of levels) expect(level).toBeLessThanOrEqual(2);
+    await expect(page.locator('#plan>.card:not(.session-objective) small').first()).toContainText('★');
+  }
+  await chooseGroup(page, 'asso');
+  await expect(page.locator('#groupLevelInfo')).toHaveText('Jeux jusqu’à ★★★');
+  const seen = new Set();
+  for (let round = 0; round < 4; round++) {
+    await page.getByRole('button', { name: 'Générer ma séance' }).click();
+    const levels = await planLevels(page);
+    expect([1, 2].includes(levels[0]), 'mise en énergie en ★ ou ★★').toBe(true);
+    levels.forEach(l => seen.add(l));
+  }
+  expect(await page.evaluate(() => data.filter(g => g[13] === 3).every(withinGroupLevel)), 'les jeux ★★★ restent admissibles pour l’Association').toBe(true);
+  await chooseGroup(page, 'college');
+  expect(await page.evaluate(() => data.filter(g => g[13] === 3).some(withinGroupLevel))).toBe(false);
+});
+
+test('niveaux : en mode élève animateur, un jeu au-delà de ★ est signalé', async ({ page }) => {
+  page.on('dialog', d => d.accept());
+  await openApp(page);
+  await openSeance(page);
+  await page.getByRole('button', { name: 'Générer ma séance' }).click();
+  await openTab(page, 'Régie');
+  await page.getByRole('button', { name: 'Élève animateur' }).click();
+  const level = await page.evaluate(() => stageGame()?.[13] || 0);
+  const note = page.locator('#stageLevelNote');
+  if (level > 1) await expect(note).toHaveText('Jeu ' + '★'.repeat(level) + ' : plus délicat à mener. Pour un élève animateur, privilégie les jeux ★.');
+  else await expect(note).toBeHidden();
+  await page.locator('#stageClose').click();
+  await page.getByRole('button', { name: '📺 Plein écran' }).click();
+  await expect(note).toBeHidden();
+});
+
+test('usages : affichés sur la fiche, filtre « Usage » et jeux repérés pour le spectacle', async ({ page }) => {
+  await openApp(page);
+  await openTab(page, 'Bibliothèque');
+  const expected = await page.evaluate(() => libraryPayload.exercices.filter(e => (e.usages || []).includes('spectacle')).length);
+  expect(expected).toBeGreaterThanOrEqual(4);
+  await page.locator('#usageFilter').selectOption('spectacle');
+  await expect(page.locator('#games .card')).toHaveCount(expected);
+  await expect(page.locator('#games .card .exercise-usages').first()).toContainText('spectacle');
+  await page.locator('#usageFilter').selectOption('');
+  await openTab(page, 'Spectacle');
+  const ideas = page.locator('#showIdeas .show-idea');
+  const withShow = await page.evaluate(() => libraryPayload.exercices.filter(e => (e.usages || []).some(u => u.includes('spectacle'))).length);
+  await expect(ideas).toHaveCount(withShow);
+  const title = await page.evaluate(() => document.querySelector('#showIdeas .show-idea span').firstChild.textContent.trim());
+  await ideas.first().getByRole('button', { name: /comme numéro/ }).click();
+  await expect(page.locator('#showItems .show-item')).toHaveCount(1);
+  expect(await page.locator('#showItems input[list]').first().inputValue()).toBe(title);
+});
+
+test('doublons : deux jeux jumeaux ne tombent jamais dans la même séance', async ({ page }) => {
+  await openApp(page);
+  await openSeance(page);
+  const result = await page.evaluate(() => {
+    const byId = Object.fromEntries(libraryPayload.exercices.map(e => [e.id, e.titre]));
+    const pairs = [['2-25', '1-14'], ['2-17', '1-58'], ['2-14', '1-56']].map(([a, b]) => [byId[a], byId[b]]);
+    const linked = pairs.every(([a, b]) => clashesWith(data.find(g => g[0] === a), [b]) && clashesWith(data.find(g => g[0] === b), [a]));
+    const clashes = [];
+    for (let round = 0; round < 40; round++) {
+      localStorage.removeItem('impro-recent-games');
+      localStorage.removeItem('impro-session-rounds-v1');
+      generate();
+      const titles = Array.from(document.querySelectorAll('#plan>.card h3')).map(h => h.textContent);
+      const has = t => titles.includes(t) || titles.includes(displayTitle(t));
+      for (const [a, b] of pairs) if (has(a) && has(b)) clashes.push(a + ' + ' + b);
+    }
+    return { linked, clashes };
+  });
+  expect(result.linked, 'chaque jeu connaît son jumeau').toBe(true);
+  expect(result.clashes).toEqual([]);
 });

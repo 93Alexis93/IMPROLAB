@@ -686,3 +686,11 @@ body .review-vote-buttons .badge-chip[aria-pressed="true"]{background:#1f5e3a!im
 /* Boutons du match : retour à la ligne sur petit écran (iPhone SE) */
 #matchPanel .draw-actions{display:flex!important;flex-wrap:wrap;gap:6px}
 #matchPanel .draw-actions button{flex:1 1 auto;min-width:0;white-space:normal}
+
+/* Niveaux en étoiles */
+span.pill.level-pill{color:#ffd16d;font-weight:800;letter-spacing:.06em}
+.stage-level-note{margin:0 0 8px;font-size:18px;font-weight:750;color:#ffd16d!important}
+
+/* Usages : jeux repérés pour le spectacle */
+.show-idea{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:6px 0}
+.show-idea button{min-height:44px;white-space:nowrap}

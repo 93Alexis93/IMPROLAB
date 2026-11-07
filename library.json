@@ -1,7 +1,7 @@
 {
   "schema_version": "1.2",
   "source": "Notes personnelles de théâtre d’improvisation",
-  "conservation": "Les 105 notes originales sont préservées ; les exercices externes sont des reformulations attribuées et séparées.",
+  "conservation": "Les notes originales sont préservées dans chaque fiche (champ texte_original).",
   "exercices": [
     {
       "id": "1-1",
@@ -15,7 +15,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -49,7 +49,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée",
       "conseils_animation": {
@@ -83,7 +83,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Amusement",
-      "niveau": "à évaluer",
+      "niveau": "★★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -123,7 +123,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -163,7 +163,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -203,7 +203,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -241,7 +241,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée",
       "conseils_animation": {
@@ -278,7 +278,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -303,7 +303,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "apprentissage des prénoms"
+      ]
     },
     {
       "id": "1-9",
@@ -317,7 +320,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Cohésion",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -356,7 +359,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -395,7 +398,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -435,7 +438,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -474,7 +477,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -514,7 +517,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -541,7 +544,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "jamais_avec": [
+        "2-25"
+      ]
     },
     {
       "id": "1-15",
@@ -555,7 +561,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -594,7 +600,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -633,7 +639,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -673,7 +679,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Cohésion",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -713,7 +719,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Imaginaire",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -753,7 +759,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -793,7 +799,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -833,7 +839,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -871,7 +877,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -911,7 +917,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Cohésion",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -950,7 +956,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -976,7 +982,11 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "cohésion",
+        "avant un spectacle"
+      ]
     },
     {
       "id": "1-26",
@@ -990,7 +1000,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1030,7 +1040,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1070,7 +1080,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1104,7 +1114,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Émotions",
-      "niveau": "à évaluer",
+      "niveau": "★★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1138,13 +1148,13 @@
       "section": "Saison 1",
       "numero_source": 30,
       "texte_original": "Carré hollandais : 4 personnes se mettent en carré et chacun va jouer avec ses deux voisins. L’histoire se déroule avec le binôme de devant, quand le mc tire le carré, les personnages font un cycle et l’histoire suivante continue. Chacun a un personnage et un lieu défini au début",
-      "regle_clarifiee": "Quatre comédiens se placent aux quatre sommets d’un carré. Chaque joueur joue dans deux histoires différentes, une avec chacun de ses voisins. Au départ, chaque binôme définit ses personnages et son lieu. Le binôme situé face au public commence sa scène. Au signal du maître de cérémonie, les quatre joueurs tournent ensemble d’un quart de tour : le nouveau binôme de devant reprend sa propre histoire. Les scènes alternent au fil des rotations.",
+      "regle_clarifiee": "Quatre comédiens se placent aux quatre sommets d’un carré. Chaque joueur joue dans deux histoires différentes, une avec chacun de ses voisins. Au départ, chaque binôme définit ses personnages et son lieu. Le binôme situé face au public commence sa scène. Au signal du maître de cérémonie, les quatre joueurs tournent ensemble d’un quart de tour : le nouveau binôme de devant reprend sa propre histoire. Les scènes alternent au fil des rotations. Les improvisateurs peuvent rebondir sur les propositions précédentes.",
       "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
-      "niveau": "à évaluer",
+      "niveau": "★★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1184,7 +1194,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Imaginaire",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1210,7 +1220,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "spectacle"
+      ]
     },
     {
       "id": "1-32",
@@ -1224,7 +1237,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1250,7 +1263,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "spectacle"
+      ]
     },
     {
       "id": "1-33",
@@ -1264,7 +1280,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Émotions",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1303,7 +1319,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
-      "niveau": "à évaluer",
+      "niveau": "★★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1341,7 +1357,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1381,7 +1397,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Imaginaire",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1409,7 +1425,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "spectacle"
+      ]
     },
     {
       "id": "1-37",
@@ -1423,7 +1442,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1448,7 +1467,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "avant un spectacle"
+      ]
     },
     {
       "id": "1-38",
@@ -1462,7 +1484,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Lâcher-prise",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1501,7 +1523,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1539,7 +1561,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1580,7 +1602,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1620,7 +1642,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1659,7 +1681,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Émotions",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1700,7 +1722,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Émotions",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1727,7 +1749,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "spectacle"
+      ]
     },
     {
       "id": "1-45",
@@ -1741,7 +1766,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Émotions",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1781,7 +1806,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1820,7 +1845,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1859,7 +1884,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1885,7 +1910,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "chauffe"
+      ]
     },
     {
       "id": "1-49",
@@ -1899,7 +1927,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Cohésion",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1924,7 +1952,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "cohésion"
+      ]
     },
     {
       "id": "1-50",
@@ -1938,7 +1969,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -1977,7 +2008,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Cohésion",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2016,7 +2047,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2042,7 +2073,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "entrée en scène"
+      ]
     },
     {
       "id": "1-53",
@@ -2056,7 +2090,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2082,7 +2116,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "entrée en scène"
+      ]
     },
     {
       "id": "1-54",
@@ -2096,7 +2133,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2135,7 +2172,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2160,7 +2197,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "lâcher-prise"
+      ]
     },
     {
       "id": "1-56",
@@ -2174,7 +2214,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2198,7 +2238,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "jamais_avec": [
+        "2-14"
+      ]
     },
     {
       "id": "1-57",
@@ -2212,7 +2255,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2239,7 +2282,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "tout le monde joue"
+      ]
     },
     {
       "id": "1-58",
@@ -2253,7 +2299,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2279,7 +2325,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "jamais_avec": [
+        "2-17"
+      ]
     },
     {
       "id": "1-59",
@@ -2293,7 +2342,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2332,7 +2381,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2357,7 +2406,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "tout le monde joue"
+      ]
     },
     {
       "id": "1-61",
@@ -2371,7 +2423,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2410,7 +2462,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2449,7 +2501,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2475,7 +2527,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "beaucoup de comédiens"
+      ]
     },
     {
       "id": "1-64",
@@ -2489,7 +2544,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2523,13 +2578,13 @@
       "section": "Saison 2",
       "numero_source": 1,
       "texte_original": "Tape tape : les joueurs disent un deux trois et tape dans les mains puis avec leur deux mains ils choisissent une direction (haut bas droite gauche) puis recommencent mais s’ils ont choisi la même direction ils recommencent et après avoir tape dans leurs mains il se tapent dans les mains, retapent dans leur main et continuent",
-      "regle_clarifiee": "Deux joueurs se font face. Ensemble, ils disent « Un, deux, trois ! », frappent dans leurs mains, puis orientent simultanément leurs deux mains vers le haut, le bas, la droite ou la gauche. Si leurs directions diffèrent, ils recommencent le cycle. Si elles sont identiques, ils ajoutent une séquence : frapper dans leurs propres mains, taper dans les mains du partenaire, puis frapper à nouveau dans leurs propres mains, avant de continuer. Le rythme doit rester fluide.",
+      "regle_clarifiee": "Deux joueurs se font face. Ensemble, ils disent « Un, deux, trois ! », frappent dans leurs mains, puis orientent simultanément leurs deux mains vers le haut, le bas, la droite ou la gauche. Si leurs directions diffèrent, ils recommencent le cycle. Si elles sont identiques, ils ajoutent une séquence : frapper dans leurs propres mains, taper dans les mains du partenaire, puis frapper à nouveau dans leurs propres mains, avant de continuer. Le rythme doit rester fluide. On peut accélérer au fur et à mesure.",
       "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2568,7 +2623,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2592,7 +2647,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "beaucoup de comédiens"
+      ]
     },
     {
       "id": "2-3",
@@ -2606,7 +2664,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2631,7 +2689,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "en binômes"
+      ]
     },
     {
       "id": "2-4",
@@ -2645,7 +2706,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2670,7 +2731,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "spontanéité"
+      ]
     },
     {
       "id": "2-5",
@@ -2684,7 +2748,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2724,7 +2788,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2764,7 +2828,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2803,7 +2867,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2838,13 +2902,13 @@
       "section": "Saison 2",
       "numero_source": 9,
       "texte_original": "Iya : jeu où on fait passer l’énergie : ô envoie l’énergie d’un côté avec iya, puis on continue à la faire passer du même côté avec iya, en suite pour changer de sens on dit je bloque (position défensive). Ensuite on rajoute le ayi qui fait sauter un joueur, puis on rajoute le je laisse ou on laisse l’énergie au centre et qui veut dit je prends (si plusieurs personnes le disent plusieurs énergies circulent). On peut ajouter de la complexité avec qqun qui dit 1er étage et ça fera un tour où chacun dit un mot pour former une phrase-histoire, si qqun dit 2eme étage alors on fait un tour où chacun dit une phrase pour faire une histoire.",
-      "regle_clarifiee": "Le groupe se place en cercle. Un joueur envoie l’énergie dans une direction en disant « Iya » et la transmet au joueur suivant, qui poursuit dans le même sens. Pour changer de sens, un joueur adopte une position défensive et dit « Je bloque ». « Ayi » permet de faire sauter un joueur. Avec « Je laisse », l’énergie est laissée au centre. Un joueur qui veut la récupérer annonce « Je prends ». Plusieurs joueurs peuvent la prendre, ce qui crée plusieurs circulations d’énergie. En niveau avancé, « Premier étage » déclenche un tour où chacun ajoute un mot pour construire une phrase-histoire ; « Deuxième étage » déclenche un tour où chacun ajoute une phrase à l’histoire.",
+      "regle_clarifiee": "Le groupe se place en cercle. Un joueur envoie l’énergie dans une direction en disant « Iya » et la transmet au joueur suivant, qui poursuit dans le même sens. Pour changer de sens, un joueur adopte une position défensive et dit « Je bloque ». « Ayi » permet de faire sauter un joueur. Avec « Je laisse », l’énergie est laissée au centre. Un joueur qui veut la récupérer annonce « Je prends ». Plusieurs joueurs peuvent la prendre, ce qui crée plusieurs circulations d’énergie. En niveau avancé, « Premier étage » déclenche un tour où chacun ajoute un mot pour construire une phrase-histoire ; « Deuxième étage » déclenche un tour où chacun ajoute une phrase à l’histoire. Ceci se passe en même temps que la circulation d’énergie.",
       "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2884,7 +2948,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2910,7 +2974,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "beaucoup de comédiens"
+      ]
     },
     {
       "id": "2-11",
@@ -2924,7 +2991,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2951,7 +3018,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "beaucoup de comédiens"
+      ]
     },
     {
       "id": "2-12",
@@ -2965,7 +3035,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Imaginaire",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -2991,7 +3061,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "beaucoup de comédiens"
+      ]
     },
     {
       "id": "2-13",
@@ -3005,7 +3078,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3031,7 +3104,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "début de séance"
+      ]
     },
     {
       "id": "2-14",
@@ -3045,7 +3121,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3070,7 +3146,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "jamais_avec": [
+        "1-56"
+      ]
     },
     {
       "id": "2-15",
@@ -3084,7 +3163,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Imaginaire",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3124,7 +3203,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3163,7 +3242,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3187,7 +3266,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "jamais_avec": [
+        "1-58"
+      ]
     },
     {
       "id": "2-18",
@@ -3201,7 +3283,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3226,7 +3308,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "chauffe"
+      ]
     },
     {
       "id": "2-19",
@@ -3240,7 +3325,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3268,38 +3353,6 @@
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
     {
-      "id": "2-20",
-      "titre": "Take et give le focus",
-      "section": "Saison 2",
-      "numero_source": 20,
-      "texte_original": "Take et give le focus",
-      "regle_clarifiee": null,
-      "statut": "à confirmer",
-      "eligible_generateur": false,
-      "duree_minutes": 8,
-      "origine": "notes_personnelles",
-      "objectif_pedagogique": "Énergie",
-      "niveau": "à évaluer",
-      "effectif_conseille": "à évaluer",
-      "qualite_fiche": "incomplète",
-      "conseils_animation": {
-        "consigne_courte": "Règle à compléter : la note source ne contient que le titre de l’exercice.",
-        "variante_facile": "À définir après clarification de la règle.",
-        "variante_difficile": "À définir après clarification de la règle.",
-        "points_vigilance": "Ne pas utiliser avant d’avoir retrouvé ou validé la règle : la note source ne contient que le titre.",
-        "statut": "proposition générique de l'assistant à adapter ; ne remplace pas la règle source"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "Règle à compléter : la note source ne contient que le titre de l’exercice.",
-        "variante": "Faites une première manche guidée, puis rejouez en changeant un seul paramètre pour approfondir sans alourdir la règle.",
-        "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
-        "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées."
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
       "id": "2-21",
       "titre": "Un son, un geste, en rythme",
       "section": "Saison 2",
@@ -3311,7 +3364,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3345,13 +3398,13 @@
       "section": "Saison 2",
       "numero_source": 22,
       "texte_original": "Tu peux me passer le/la, en binôme la structure se répète puis on intervertit les rôles. On fait tous un mime, (repeindre salon, tailler haie) et l’un des deux va dire tu peux me passer le/la et l’autre va répondre quelque chose, lui passer et ce sera exactement ce que l’autre voulait, il va alors devoir justifier pourquoi il en avait besoin. On répète cela puis on change les rôles.",
-      "regle_clarifiee": "Les joueurs se mettent par deux et improvisent une situation mimée, par exemple repeindre un salon ou tailler une haie. À un moment, l’un demande à son partenaire : « Tu peux me passer le/la… ? » L’autre annonce verbalement le nom de l’objet, puis le lui passe sous forme mimée. Le premier doit alors justifier pourquoi il en avait besoin, en restant dans la situation. Le binôme répète la séquence, puis les joueurs inversent les rôles.",
+      "regle_clarifiee": "Les joueurs se mettent par deux et improvisent une situation mimée, par exemple repeindre un salon ou tailler une haie. À un moment, l’un demande à son partenaire : « Tu peux me passer le/la… ? » L’autre annonce verbalement le nom de l’objet, puis le lui passe sous forme mimée. Le premier doit alors justifier pourquoi il en avait besoin, en restant dans la situation. Le binôme répète la séquence, puis les joueurs inversent les rôles. S’amuser à donner des objets sans rapport avec le mime.",
       "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Imaginaire",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3391,7 +3444,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
-      "niveau": "à évaluer",
+      "niveau": "★★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3425,13 +3478,13 @@
       "section": "Saison 2",
       "numero_source": 24,
       "texte_original": "Un personnage à deux comédiens: la parole et les mains, ou l’un double la voix de l’autre ou alors l’un reproduit les actions de l’autre",
-      "regle_clarifiee": "Trois comédiens incarnent ensemble un seul personnage : le premier joue le personnage et réalise ses actions ; le deuxième double sa voix en se tenant légèrement en retrait de la scène ; le troisième joue les mains du personnage. Les trois comédiens doivent se coordonner pour donner l’impression d’un personnage unique. Autre possibilité mentionnée dans la note originale : un comédien reproduit les actions d’un autre.",
+      "regle_clarifiee": "Trois comédiens incarnent ensemble un seul personnage : le premier joue le personnage et réalise ses actions ; le deuxième double sa voix en se tenant légèrement en retrait de la scène ; le troisième joue les mains du personnage. Les trois comédiens doivent se coordonner pour donner l’impression d’un personnage unique. Autre possibilité : le 4ème comédien fait des actions que le premier personnage doit reproduire.",
       "statut": "validée par le coach",
       "eligible_generateur": false,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3465,7 +3518,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
-      "niveau": "à évaluer",
+      "niveau": "★★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée",
       "conseils_animation": {
@@ -3488,7 +3541,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "jamais_avec": [
+        "1-14"
+      ]
     },
     {
       "id": "2-26",
@@ -3502,7 +3558,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3528,7 +3584,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "chauffe"
+      ]
     },
     {
       "id": "2-27",
@@ -3542,7 +3601,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Imaginaire",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3575,13 +3634,13 @@
       "section": "Saison 2",
       "numero_source": 28,
       "texte_original": "Histoire en cercle il était une fois tous les jours mais un jour à cause de ça grâce à ça depuis cercle jour, après on crante avec 3 tous les jours",
-      "regle_clarifiee": "Les joueurs sont en cercle et construisent une histoire collective en s’appuyant sur des amorces : « Il était une fois… », « Tous les jours… », « Mais un jour… », « À cause de ça… », « Grâce à ça… ». Ils poursuivent le récit à tour de rôle et peuvent terminer par une morale. La note originale mentionne aussi « depuis » et une variante autour de « tous les jours » par groupes de trois, dont le fonctionnement reste à préciser.",
+      "regle_clarifiee": "Les joueurs sont en cercle et construisent une histoire collective en s’appuyant sur des amorces : « Il était une fois… », « Tous les jours… », « Mais un jour… », « À cause de ça… », « Grâce à ça… ». Ils poursuivent le récit à tour de rôle et peuvent terminer par une morale. La note originale mentionne aussi « depuis ». Variante : on fait trois tours de « tous les jours » avec un et pour le second et le 3ème.",
       "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3620,7 +3679,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3653,13 +3712,13 @@
       "section": "Saison 2",
       "numero_source": 30,
       "texte_original": "Poser une plate-forme : Qui qui ou quand quoi quoi ou en binôme le premier À dit qui il est, le deuxième B qui il est pour l’autre, À dit où ils sont, B dit quand (heure journée, événement), A dit ce qu’il fait et B dit ce qu’il fait (ensuite on peut lancer une IMPRo sur l’action de départ et les deux acteurs doivent redire tout ça dans la scène ou alors faire une coupe du monde de la plateforme",
-      "regle_clarifiee": "En binôme, les joueurs construisent une plate-forme en définissant successivement les éléments de la situation : A dit qui il est ; B dit qui il est pour A ; A précise où ils sont ; B précise quand (heure, moment de la journée ou événement) ; puis A et B indiquent chacun ce qu’ils font. Ils peuvent ensuite improviser à partir de l’action de départ et réintégrer ces éléments dans la scène. Variante « Coupe du monde de la plate-forme » : chaque binôme essaie de créer le plus de plates-formes possible le plus rapidement possible ; chaque personnage peut donner autant d’éléments qu’il veut.",
+      "regle_clarifiee": "En binôme, les joueurs construisent une plate-forme en définissant successivement les éléments de la situation : A dit qui il est ; B dit qui il est pour A ; A précise où ils sont ; B précise quand (heure, moment de la journée ou événement) ; puis A et B indiquent chacun ce qu’ils font. Pour aller plus loin, ils peuvent ensuite improviser à partir de l’action de départ et réintégrer ces éléments dans la scène. Variante « Coupe du monde de la plate-forme » : chaque binôme essaie de créer le plus de plates-formes possible le plus rapidement possible ; chaque personnage peut donner autant d’éléments qu’il veut.",
       "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3698,7 +3757,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3731,19 +3790,19 @@
       "section": "Saison 2",
       "numero_source": 32,
       "texte_original": "Cube : un binôme décrit les 6 faces d’un lieu (6 faces de cube), le second reprend la face dite par le premier et décrit une seconde faces d’un et ainsi de suite jusqu’au 6 faces",
-      "regle_clarifiee": "Deux binômes construisent ensemble un lieu imaginaire en décrivant les six faces d’un cube. Le premier binôme décrit une première face. Le second reprend la face décrite, puis ajoute une deuxième face. Les binômes alternent ainsi, en reprenant les éléments déjà proposés et en ajoutant une nouvelle face, jusqu’à ce que les six faces du cube soient décrites. L’interprétation de « le second » comme un deuxième binôme reste à confirmer.",
+      "regle_clarifiee": "En binôme, les deux partenaires construisent ensemble un lieu imaginaire en décrivant les six faces d’un cube. Le premier partenaire décrit une première face. Le second partenaire reprend la face décrite, puis ajoute une deuxième face. Les deux partenaires alternent ainsi, en reprenant les éléments déjà proposés et en ajoutant une nouvelle face, jusqu’à ce que les six faces du cube soient décrites.",
       "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux binômes construisent ensemble un lieu imaginaire comme un cube à six faces. Le premier décrit une face ; le second reprend ce qui a été dit et ajoute une nouvelle face. Alternez en conservant les détails précédents jusqu’à décrire les six faces. La répartition exacte des rôles reste à confirmer.",
-        "variante_facile": "Commencez par une face à la fois : le premier binôme décrit un côté du lieu, le second reprend un détail et ajoute la face suivante. Convenez clairement de qui parle à chaque tour.",
-        "variante_difficile": "Pour chacune des six faces, ajoutez un détail sensoriel ou une fonction précise, tout en respectant les éléments posés par le binôme précédent.",
+        "consigne_courte": "En binôme, construisez ensemble un lieu imaginaire comme un cube à six faces. Le premier partenaire décrit une face ; le second reprend ce qui a été dit et ajoute une nouvelle face. Alternez en conservant les détails précédents jusqu’à décrire les six faces.",
+        "variante_facile": "Commencez par une face à la fois : le premier partenaire décrit un côté du lieu, le second reprend un détail et ajoute la face suivante. Convenez clairement de qui parle à chaque tour.",
+        "variante_difficile": "Pour chacune des six faces, ajoutez un détail sensoriel ou une fonction précise, tout en respectant les éléments posés par le partenaire.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
         "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
         "auteur_variantes": "Assistant d’Alexis"
@@ -3754,8 +3813,8 @@
         "Cohésion"
       ],
       "accompagnement_pedagogique": {
-        "consigne": "Deux binômes construisent ensemble un lieu imaginaire comme un cube à six faces. Le premier décrit une face ; le second reprend ce qui a été dit et ajoute une nouvelle face. Alternez en conservant les détails précédents jusqu’à décrire les six faces. La répartition exacte des rôles reste à confirmer.",
-        "variante": "Une fois les six faces décrites, faites visiter le lieu par les mots : chaque binôme présente trois faces et doit reprendre fidèlement les détails de l’autre.",
+        "consigne": "En binôme, construisez ensemble un lieu imaginaire comme un cube à six faces. Le premier partenaire décrit une face ; le second reprend ce qui a été dit et ajoute une nouvelle face. Alternez en conservant les détails précédents jusqu’à décrire les six faces.",
+        "variante": "Une fois les six faces décrites, faites visiter le lieu par les mots : chaque partenaire présente trois faces et doit reprendre fidèlement les détails de l’autre.",
         "objectif_prof": "Stimuler l’imaginaire partagé et la cohérence des propositions collectives.",
         "objectif_eleves": "J’apprends à inventer des détails et à les relier aux idées des autres.",
         "auteur": "assistant",
@@ -3770,17 +3829,17 @@
       "section": "Saison 2",
       "numero_source": 33,
       "texte_original": "Binôme A et B, À donne une Relation , B va la colorer, A va donner une routine, et B donner un souvenir",
-      "regle_clarifiee": "Deux comédiens improvisent en binôme. A propose une relation entre les personnages, que B vient colorer. A propose ensuite une routine, puis B apporte un souvenir. Le sens précis de « colorer » une relation reste à préciser.",
+      "regle_clarifiee": "Deux comédiens improvisent en binôme. A propose une relation entre les personnages, que B vient colorer. A propose ensuite une routine, puis B apporte un souvenir. Colorer une relation signifie lui donner une texture, une histoire et une dynamique émotionnelle.",
       "statut": "validée par le coach",
       "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
-      "niveau": "à évaluer",
+      "niveau": "★★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
-        "consigne_courte": "Deux comédiens improvisent en binôme. A propose une relation entre les personnages, que B vient colorer. A propose ensuite une routine, puis B apporte un souvenir. Le sens précis de « colorer » une relation reste à préciser.",
+        "consigne_courte": "Deux comédiens improvisent en binôme. A propose une relation entre les personnages, que B vient colorer. A propose ensuite une routine, puis B apporte un souvenir. Colorer une relation signifie lui donner une texture, une histoire et une dynamique émotionnelle.",
         "variante_facile": "Choisissez une relation simple (amis, collègues, voisins). A l’annonce de la relation, B ajoute une couleur concrète en précisant un trait, une émotion ou une habitude ; puis A propose une routine et B un souvenir.",
         "variante_difficile": "Faites en sorte que la routine révèle la relation et que le souvenir ait un lien avec elle ; les joueurs doivent accueillir les propositions sans les effacer.",
         "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
@@ -3804,8 +3863,8 @@
         "remarques": null
       },
       "accompagnement_pedagogique": {
-        "consigne": "Deux comédiens improvisent en binôme. A propose une relation entre les personnages, que B vient colorer. A propose ensuite une routine, puis B apporte un souvenir. Le sens précis de « colorer » une relation reste à préciser.",
-        "variante": "Rejouez avec une relation différente mais gardez la même routine et le même souvenir, puis observez comment leur sens change. Clarifiez ensemble ce que signifie « colorer » si besoin.",
+        "consigne": "Deux comédiens improvisent en binôme. A propose une relation entre les personnages, que B vient colorer. A propose ensuite une routine, puis B apporte un souvenir. Colorer une relation signifie lui donner une texture, une histoire et une dynamique émotionnelle.",
+        "variante": "Rejouez avec une relation différente mais gardez la même routine et le même souvenir, puis observez comment leur sens change.",
         "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
         "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
         "auteur": "assistant",
@@ -3826,7 +3885,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3877,7 +3936,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
-      "niveau": "à évaluer",
+      "niveau": "★★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3927,7 +3986,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
-      "niveau": "à évaluer",
+      "niveau": "★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
@@ -3963,7 +4022,10 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "apprentissage des prénoms"
+      ]
     },
     {
       "id": "3-1",
@@ -3977,7 +4039,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée et validée par le coach",
       "conseils_animation": {
@@ -4016,40 +4078,6 @@
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
     {
-      "id": "3-2",
-      "titre": "Impro libre",
-      "section": "Saison 3",
-      "numero_source": 2,
-      "texte_original": "Impro",
-      "regle_clarifiee": "Improvisation sans contrainte particulière.",
-      "statut": "clarifié",
-      "eligible_generateur": false,
-      "duree_minutes": 8,
-      "origine": "notes_personnelles",
-      "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
-      "effectif_conseille": "à évaluer",
-      "qualite_fiche": "clarifiée",
-      "conseils_animation": {
-        "consigne_courte": "Improvisation libre, sans contrainte particulière.",
-        "variante_facile": "Pour lancer une impro libre, donnez seulement un lieu de départ ou une relation, puis laissez les joueurs choisir eux-mêmes le reste.",
-        "variante_difficile": "Sans ajouter de thème imposé, demandez aux joueurs de faire évoluer la situation par des actions concrètes et de tenir compte de chaque nouvelle proposition.",
-        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
-        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
-        "auteur_variantes": "Assistant d’Alexis"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "Improvisation libre, sans contrainte particulière.",
-        "variante": "Rejouez la même scène en changeant les interprètes, sans autre contrainte, pour voir comment une même situation peut prendre une direction différente.",
-        "objectif_prof": "Développer l’adaptation immédiate à une contrainte tout en gardant une scène lisible.",
-        "objectif_eleves": "J’apprends à m’adapter à une consigne nouvelle sans bloquer la scène.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
-        "auteur_variante": "Assistant d’Alexis"
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
       "id": "3-3",
       "titre": "Impro clap : changement de scène",
       "section": "Saison 3",
@@ -4061,7 +4089,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée et validée par le coach",
       "conseils_animation": {
@@ -4099,7 +4127,11 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "beaucoup de comédiens",
+        "jump and justify"
+      ]
     },
     {
       "id": "3-4",
@@ -4113,7 +4145,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
-      "niveau": "à évaluer",
+      "niveau": "★★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée et validée par le coach",
       "conseils_animation": {
@@ -4151,7 +4183,11 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "tout le monde joue",
+        "jump and justify"
+      ]
     },
     {
       "id": "3-5",
@@ -4165,7 +4201,7 @@
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
-      "niveau": "à évaluer",
+      "niveau": "★★★",
       "effectif_conseille": "à évaluer",
       "qualite_fiche": "clarifiée et validée par le coach",
       "conseils_animation": {
@@ -4204,627 +4240,6 @@
       "auteur_consigne_courte": "Assistant d’Alexis"
     },
     {
-      "id": "WEB-001",
-      "titre": "Objets en dix secondes",
-      "section": "Ressources externes vérifiées",
-      "numero_source": null,
-      "texte_original": "",
-      "regle_clarifiee": "En équipes de quatre à six, le meneur annonce un objet. Chaque équipe dispose de dix secondes pour composer collectivement sa silhouette avec les corps. Observer les créations et recommencer avec un nouvel objet.",
-      "statut": "adaptation pédagogique reformulée",
-      "eligible_generateur": true,
-      "duree_minutes": 12,
-      "origine": "recherche_web",
-      "objectif_pedagogique": "Corps",
-      "niveau": "débutant",
-      "effectif_conseille": "10–15 (sous-groupes si besoin)",
-      "variante_college": "Former trois équipes de quatre ou cinq ; privilégier des objets familiers et éviter les portés.",
-      "source_url": "https://dramaresource.com/ten-second-objects/",
-      "qualite_fiche": "source vérifiée et reformulée",
-      "conseils_animation": {
-        "consigne_courte": "En équipes de 4 à 6, le meneur annonce un objet. En 10 secondes, composez collectivement sa silhouette avec vos corps. Observez les créations, puis recommencez avec un nouvel objet.",
-        "variante_facile": "Formez des équipes de quatre à six et annoncez un objet facile à reconnaître. Laissez dix secondes, puis demandez à chaque équipe de tenir sa silhouette immobile.",
-        "variante_difficile": "Choisissez des objets plus complexes ou moins symétriques et demandez que chaque participant contribue clairement à la silhouette collective.",
-        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
-        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
-        "auteur_variantes": "Assistant d’Alexis"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "En équipes de 4 à 6, le meneur annonce un objet. En 10 secondes, composez collectivement sa silhouette avec vos corps. Observez les créations, puis recommencez avec un nouvel objet.",
-        "variante": "Après chaque objet, faites observer les silhouettes sans les juger ; rejouez le même objet en cherchant une solution corporelle totalement différente.",
-        "objectif_prof": "Stimuler l’imaginaire partagé et la cohérence des propositions collectives.",
-        "objectif_eleves": "J’apprends à inventer des détails et à les relier aux idées des autres.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
-        "auteur_variante": "Assistant d’Alexis"
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
-      "id": "WEB-002",
-      "titre": "Les trois changements",
-      "section": "Ressources externes vérifiées",
-      "numero_source": null,
-      "texte_original": "",
-      "regle_clarifiee": "Par deux, observer son partenaire, se placer dos à dos puis modifier trois détails visibles de sa tenue ou de sa posture. Se retourner et tenter de repérer les changements.",
-      "statut": "adaptation pédagogique reformulée",
-      "eligible_generateur": true,
-      "duree_minutes": 10,
-      "origine": "recherche_web",
-      "objectif_pedagogique": "Écoute",
-      "niveau": "débutant",
-      "effectif_conseille": "10–15 (sous-groupes si besoin)",
-      "variante_college": "Autoriser un ou deux changements au premier tour ; ne pas toucher aux affaires d'autrui.",
-      "source_url": "https://dramaresource.com/three-changes/",
-      "qualite_fiche": "source vérifiée et reformulée",
-      "conseils_animation": {
-        "consigne_courte": "À deux, placez-vous dos à dos et changez trois détails visibles de votre tenue ou posture. Retournez-vous et repérez les changements de votre partenaire.",
-        "variante_facile": "Commencez par deux changements au lieu de trois, en choisissant des détails faciles à voir comme la position des mains ou le pli d’une manche.",
-        "variante_difficile": "Conservez trois changements mais incluez des détails plus discrets de posture ou de tenue ; donnez un temps d’observation identique à chaque joueur.",
-        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
-        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
-        "auteur_variantes": "Assistant d’Alexis"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "À deux, placez-vous dos à dos et changez trois détails visibles de votre tenue ou posture. Retournez-vous et repérez les changements de votre partenaire.",
-        "variante": "Après avoir trouvé les changements, inversez les rôles et rejouez en limitant le temps d’observation.",
-        "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
-        "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
-        "auteur_variante": "Assistant d’Alexis"
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
-      "id": "WEB-003",
-      "titre": "Paysage sonore collectif",
-      "section": "Ressources externes vérifiées",
-      "numero_source": null,
-      "texte_original": "",
-      "regle_clarifiee": "Le groupe choisit un lieu. Chaque joueur produit avec sa voix ou son corps un son appartenant à ce lieu. Le meneur dirige les volumes et les silences pour construire un paysage sonore commun.",
-      "statut": "adaptation pédagogique reformulée",
-      "eligible_generateur": true,
-      "duree_minutes": 12,
-      "origine": "recherche_web",
-      "objectif_pedagogique": "Corps",
-      "niveau": "débutant",
-      "effectif_conseille": "10–15 (sous-groupes si besoin)",
-      "variante_college": "Commencer par une forêt ou une gare ; interdire les cris près des oreilles.",
-      "source_url": "https://dramaresource.com/soundscapes/",
-      "qualite_fiche": "source vérifiée et reformulée",
-      "conseils_animation": {
-        "consigne_courte": "Choisissez un lieu. Chacun crée avec sa voix ou son corps un son de ce lieu ; le meneur module volumes et silences pour composer un paysage sonore collectif.",
-        "variante_facile": "Choisissez un lieu familier, comme une forêt ou une gare. Chacun propose un son simple et le meneur les fait entrer un par un.",
-        "variante_difficile": "Le meneur fait varier les volumes, crée des silences et fait réapparaître certains sons pour donner une évolution au paysage sonore.",
-        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
-        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
-        "auteur_variantes": "Assistant d’Alexis"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "Choisissez un lieu. Chacun crée avec sa voix ou son corps un son de ce lieu ; le meneur module volumes et silences pour composer un paysage sonore collectif.",
-        "variante": "Construisez un début, un événement et une fin uniquement avec les sons ; terminez par un silence commun donné par le meneur.",
-        "objectif_prof": "Stimuler l’imaginaire partagé et la cohérence des propositions collectives.",
-        "objectif_eleves": "J’apprends à inventer des détails et à les relier aux idées des autres.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
-        "auteur_variante": "Assistant d’Alexis"
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
-      "id": "WEB-004",
-      "titre": "Images de statut",
-      "section": "Ressources externes vérifiées",
-      "numero_source": null,
-      "texte_original": "",
-      "regle_clarifiee": "En binôme, inventer une image fixe montrant une relation de statut entre deux personnages. Les observateurs proposent des interprétations. Rejouer en inversant les positions.",
-      "statut": "adaptation pédagogique reformulée",
-      "eligible_generateur": true,
-      "duree_minutes": 12,
-      "origine": "recherche_web",
-      "objectif_pedagogique": "Scène",
-      "niveau": "débutant",
-      "effectif_conseille": "10–15 (sous-groupes si besoin)",
-      "variante_college": "Expliquer qu'il s'agit de statuts fictifs, jamais de juger la valeur des élèves.",
-      "source_url": "https://dramaresource.com/status-pictures/",
-      "qualite_fiche": "source vérifiée et reformulée",
-      "conseils_animation": {
-        "consigne_courte": "À deux, créez une image fixe montrant une relation de statut. Les observateurs proposent des interprétations, puis rejouez en inversant les positions.",
-        "variante_facile": "Demandez à chaque binôme de créer une image fixe très lisible : une personne en position haute, l’autre basse, ou l’une qui semble demander quelque chose.",
-        "variante_difficile": "Ajoutez des détails de regard, de distance et d’orientation du corps pour rendre la relation de statut plus nuancée, sans bouger pendant l’image.",
-        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
-        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
-        "auteur_variantes": "Assistant d’Alexis"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "À deux, créez une image fixe montrant une relation de statut. Les observateurs proposent des interprétations, puis rejouez en inversant les positions.",
-        "variante": "Après les interprétations du public, inversez les positions et demandez aux observateurs ce qui a changé dans leur lecture de la relation.",
-        "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
-        "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
-        "auteur_variante": "Assistant d’Alexis"
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
-      "id": "WEB-005",
-      "titre": "Que fais-tu ?",
-      "section": "Ressources externes vérifiées",
-      "numero_source": null,
-      "texte_original": "",
-      "regle_clarifiee": "En cercle, un joueur mime une action. Le suivant lui demande ce qu'il fait. Sans arrêter son mime, le premier annonce une action différente ; le suivant mime alors cette nouvelle action, et ainsi de suite.",
-      "statut": "adaptation pédagogique reformulée",
-      "eligible_generateur": true,
-      "duree_minutes": 10,
-      "origine": "recherche_web",
-      "objectif_pedagogique": "Énergie",
-      "niveau": "débutant",
-      "effectif_conseille": "10–15 (sous-groupes si besoin)",
-      "variante_college": "Commencer lentement et autoriser un temps de réflexion ; aucun joueur éliminé.",
-      "source_url": "https://dramaresource.com/what-are-you-doing/",
-      "qualite_fiche": "source vérifiée et reformulée",
-      "conseils_animation": {
-        "consigne_courte": "En cercle, mimez une action. Le joueur suivant demande « Que fais-tu ? » ; sans arrêter votre mime, répondez par une autre action. Le suivant mime cette nouvelle action et le jeu continue.",
-        "variante_facile": "Commencez avec des actions quotidiennes faciles à mimer. Le joueur qui demande « Que fais-tu ? » attend une réponse claire avant de commencer la nouvelle action.",
-        "variante_difficile": "Gardez le mime en cours pendant que le joueur annonce une autre action ; le joueur suivant doit mimer cette nouvelle action sans reproduire celle qu’il voit.",
-        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
-        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
-        "auteur_variantes": "Assistant d’Alexis"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "En cercle, mimez une action. Le joueur suivant demande « Que fais-tu ? » ; sans arrêter votre mime, répondez par une autre action. Le suivant mime cette nouvelle action et le jeu continue.",
-        "variante": "Accélérez progressivement en conservant des gestes lisibles. Si la chaîne se bloque, ralentissez plutôt que d’éliminer un joueur.",
-        "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
-        "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
-        "auteur_variante": "Assistant d’Alexis"
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
-      "id": "WEB-006",
-      "titre": "Le décor commun",
-      "section": "Ressources externes vérifiées",
-      "numero_source": null,
-      "texte_original": "",
-      "regle_clarifiee": "Un premier joueur entre dans un espace imaginaire et définit une porte. Les suivants ajoutent chacun un objet mimé en respectant les portes et objets déjà installés. À la fin, rejouer une scène dans ce décor partagé.",
-      "statut": "adaptation pédagogique reformulée",
-      "eligible_generateur": true,
-      "duree_minutes": 12,
-      "origine": "recherche_web",
-      "objectif_pedagogique": "Construction",
-      "niveau": "débutant",
-      "effectif_conseille": "10–15 (sous-groupes si besoin)",
-      "variante_college": "Limiter à six participants par espace, puis faire découvrir les deux décors créés.",
-      "source_url": "https://improvencyclopedia.org/games/Group_Environment.html",
-      "qualite_fiche": "source vérifiée et reformulée",
-      "conseils_animation": {
-        "consigne_courte": "Le premier joueur entre dans l’espace imaginaire et définit une porte. Chacun ajoute ensuite un objet mimé en respectant ceux déjà placés. À la fin, jouez une scène dans ce décor commun.",
-        "variante_facile": "Le premier joueur mime clairement une porte et la place dans l’espace. Chacun ajoute ensuite un objet imaginaire en montrant où il se trouve.",
-        "variante_difficile": "Ajoutez des objets qui entretiennent une relation spatiale précise avec ceux déjà installés ; personne ne déplace un élément sans le montrer clairement.",
-        "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
-        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
-        "auteur_variantes": "Assistant d’Alexis"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "Le premier joueur entre dans l’espace imaginaire et définit une porte. Chacun ajoute ensuite un objet mimé en respectant ceux déjà placés. À la fin, jouez une scène dans ce décor commun.",
-        "variante": "Quand le décor est complet, jouez une courte scène en utilisant les objets et les portes déjà définis, sans en ajouter de nouveaux.",
-        "objectif_prof": "Stimuler l’imaginaire partagé et la cohérence des propositions collectives.",
-        "objectif_eleves": "J’apprends à inventer des détails et à les relier aux idées des autres.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
-        "auteur_variante": "Assistant d’Alexis"
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
-      "id": "WEB-007",
-      "titre": "Oui et… / Non mais…",
-      "section": "Ressources externes vérifiées",
-      "numero_source": null,
-      "texte_original": "",
-      "regle_clarifiee": "Par deux, improviser une scène en acceptant et enrichissant les propositions. Au signal, l'un des partenaires propose une réorientation de la scène avec un refus constructif, sans casser l'histoire.",
-      "statut": "adaptation pédagogique reformulée",
-      "eligible_generateur": true,
-      "duree_minutes": 12,
-      "origine": "recherche_web",
-      "objectif_pedagogique": "Construction",
-      "niveau": "débutant",
-      "effectif_conseille": "10–15 (sous-groupes si besoin)",
-      "variante_college": "Rappeler que chacun peut poser une limite personnelle ; choisir des situations neutres et non intimes.",
-      "source_url": "https://www.theatrefolk.com/blog/improv-game-yes-and-and-no-but",
-      "qualite_fiche": "source vérifiée et reformulée",
-      "conseils_animation": {
-        "consigne_courte": "À deux, improvisez en acceptant et enrichissant les propositions. Au signal, l’un réoriente la scène par un refus constructif, sans la bloquer.",
-        "variante_facile": "En binôme, commencez par accepter chaque proposition en ajoutant un détail. Au signal, remplacez le refus direct par « Non, mais… » suivi d’une nouvelle possibilité jouable.",
-        "variante_difficile": "Le refus constructif doit réorienter la scène tout en gardant un élément de ce qui vient d’être proposé ; évitez de simplement annuler l’idée du partenaire.",
-        "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
-        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
-        "auteur_variantes": "Assistant d’Alexis"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "À deux, improvisez en acceptant et enrichissant les propositions. Au signal, l’un réoriente la scène par un refus constructif, sans la bloquer.",
-        "variante": "Faites alterner les moments « Oui, et… » et « Non, mais… » au signal, puis demandez aux joueurs de repérer ce qui a aidé la scène à continuer.",
-        "objectif_prof": "Construire une proposition commune en respectant les apports précédents et la contrainte du jeu.",
-        "objectif_eleves": "J’apprends à écouter ce qui vient d’être dit et à ajouter une idée qui fait avancer le jeu.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
-        "auteur_variante": "Assistant d’Alexis"
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
-      "id": "WEB-008",
-      "titre": "Portraits de famille imaginaires",
-      "section": "Ressources externes vérifiées",
-      "numero_source": null,
-      "texte_original": "",
-      "regle_clarifiee": "Par petits groupes, créer rapidement une photographie de famille fictive en prenant des poses qui suggèrent des personnages et des relations. Le public devine l'histoire de cette famille.",
-      "statut": "adaptation pédagogique reformulée",
-      "eligible_generateur": true,
-      "duree_minutes": 10,
-      "origine": "recherche_web",
-      "objectif_pedagogique": "Corps",
-      "niveau": "débutant",
-      "effectif_conseille": "10–15 (sous-groupes si besoin)",
-      "variante_college": "Former des groupes de trois à cinq et privilégier les personnages imaginaires plutôt que les familles réelles.",
-      "source_url": "https://dramaresource.com/family-portraits/",
-      "qualite_fiche": "source vérifiée et reformulée",
-      "conseils_animation": {
-        "consigne_courte": "En petits groupes, créez une photo de famille fictive avec des poses qui suggèrent personnages et relations. Le public devine l’histoire de cette famille.",
-        "variante_facile": "En petits groupes, créez une photo de famille avec trois ou quatre personnages. Donnez à chacun une pose qui suggère un lien avec au moins un autre personnage.",
-        "variante_difficile": "Ajoutez un événement commun suggéré par les postures, puis veillez à ce que chaque pose apporte un indice différent sur les relations familiales.",
-        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
-        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
-        "auteur_variantes": "Assistant d’Alexis"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "En petits groupes, créez une photo de famille fictive avec des poses qui suggèrent personnages et relations. Le public devine l’histoire de cette famille.",
-        "variante": "Après les hypothèses du public, rejouez la photo en changeant un seul lien entre deux personnages et voyez comment cela transforme l’histoire imaginée.",
-        "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
-        "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
-        "auteur_variante": "Assistant d’Alexis"
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
-      "id": "EXT-001",
-      "titre": "Association en duo",
-      "section": "Sources web complémentaires",
-      "numero_source": null,
-      "texte_original": "",
-      "regle_clarifiee": "Deux élèves au centre du cercle annoncent simultanément un mot après un décompte. Le groupe recherche ensuite un mot qui relie leurs deux propositions. Recommencer en changeant de duo.",
-      "statut": "adaptation pédagogique reformulée",
-      "eligible_generateur": true,
-      "duree_minutes": 8,
-      "origine": "recherche_web",
-      "objectif_pedagogique": "Écoute",
-      "niveau": "débutant",
-      "effectif_conseille": "10–15 (en binômes ou sous-groupes si nécessaire)",
-      "variante_college": "Sans élimination ; possibilité de passer son tour ; consignes courtes et démonstration préalable.",
-      "source_url": "https://improwiki.com/fr/exercices",
-      "source_nom": "Improwiki",
-      "qualite_fiche": "adaptation sourcée à tester en atelier",
-      "conseils_animation": {
-        "consigne_courte": "Deux joueurs au centre disent simultanément un mot après un décompte. Le groupe cherche un mot reliant les deux propositions ; recommencez avec un autre duo.",
-        "variante_facile": "Choisissez deux mots concrets et faites-les annoncer simultanément après un décompte clair. Le groupe dispose d’un court temps pour proposer un mot qui relie les deux.",
-        "variante_difficile": "Demandez au groupe de justifier le lien en une phrase, puis recommencez immédiatement avec un nouveau duo et deux nouveaux mots.",
-        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
-        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
-        "auteur_variantes": "Assistant d’Alexis"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "Deux joueurs au centre disent simultanément un mot après un décompte. Le groupe cherche un mot reliant les deux propositions ; recommencez avec un autre duo.",
-        "variante": "Faites plusieurs manches en variant le type de lien recherché : lieu commun, fonction, expression ou association imagée.",
-        "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
-        "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
-        "auteur_variante": "Assistant d’Alexis"
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
-      "id": "EXT-002",
-      "titre": "Applaudir à trois",
-      "section": "Sources web complémentaires",
-      "numero_source": null,
-      "texte_original": "",
-      "regle_clarifiee": "Trois joueurs forment un triangle. L'un adresse un applaudissement à un autre ; le troisième prend ensuite l'initiative de transmettre un nouvel applaudissement. Accélérer progressivement tout en restant attentif.",
-      "statut": "adaptation pédagogique reformulée",
-      "eligible_generateur": true,
-      "duree_minutes": 7,
-      "origine": "recherche_web",
-      "objectif_pedagogique": "Écoute",
-      "niveau": "débutant",
-      "effectif_conseille": "10–15 (en binômes ou sous-groupes si nécessaire)",
-      "variante_college": "Sans élimination ; possibilité de passer son tour ; consignes courtes et démonstration préalable.",
-      "source_url": "https://improwiki.com/fr/exercices",
-      "source_nom": "Improwiki",
-      "qualite_fiche": "adaptation sourcée à tester en atelier",
-      "conseils_animation": {
-        "consigne_courte": "Trois joueurs forment un triangle. L’un envoie un applaudissement à un autre ; le troisième prend l’initiative d’en envoyer un nouveau. Accélérez progressivement en restant attentifs.",
-        "variante_facile": "Formez un triangle et faites passer l’applaudissement lentement d’un joueur à l’autre, en indiquant clairement le destinataire du regard.",
-        "variante_difficile": "Accélérez progressivement tout en veillant à ce que chaque applaudissement soit bien reçu avant que le suivant parte.",
-        "points_vigilance": "Ne pas transformer une erreur d'attention en élimination.",
-        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
-        "auteur_variantes": "Assistant d’Alexis"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "Trois joueurs forment un triangle. L’un envoie un applaudissement à un autre ; le troisième prend l’initiative d’en envoyer un nouveau. Accélérez progressivement en restant attentifs.",
-        "variante": "Après un tour fluide, changez le sens de circulation et observez si le groupe reste attentif aux regards et aux départs.",
-        "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
-        "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
-        "auteur_variante": "Assistant d’Alexis"
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
-      "id": "EXT-003",
-      "titre": "AED : action, émotion, détail",
-      "section": "Sources web complémentaires",
-      "numero_source": null,
-      "texte_original": "",
-      "regle_clarifiee": "Un joueur raconte une histoire. Trois partenaires peuvent demander respectivement davantage d'action, d'émotion ou de détails. Le narrateur adapte immédiatement son récit à la demande.",
-      "statut": "adaptation pédagogique reformulée",
-      "eligible_generateur": true,
-      "duree_minutes": 12,
-      "origine": "recherche_web",
-      "objectif_pedagogique": "Construction",
-      "niveau": "débutant",
-      "effectif_conseille": "10–15 (en binômes ou sous-groupes si nécessaire)",
-      "variante_college": "Sans élimination ; possibilité de passer son tour ; consignes courtes et démonstration préalable.",
-      "source_url": "https://improwiki.com/fr/exercices",
-      "source_nom": "Improwiki",
-      "qualite_fiche": "adaptation sourcée à tester en atelier",
-      "conseils_animation": {
-        "consigne_courte": "Un joueur raconte une histoire ; trois partenaires demandent chacun plus d’action, d’émotion ou de détails. Le narrateur adapte immédiatement son récit à chaque demande.",
-        "variante_facile": "Le narrateur raconte une histoire simple. Les trois partenaires interviennent l’un après l’autre : plus d’action, plus d’émotion, puis plus de détails.",
-        "variante_difficile": "Faites intervenir les demandes au milieu du récit ; le narrateur adapte immédiatement la même histoire au lieu de recommencer depuis le début.",
-        "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
-        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
-        "auteur_variantes": "Assistant d’Alexis"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "Un joueur raconte une histoire ; trois partenaires demandent chacun plus d’action, d’émotion ou de détails. Le narrateur adapte immédiatement son récit à chaque demande.",
-        "variante": "Rejouez l’histoire en inversant les rôles des trois demandeurs, puis observez comment l’ordre des demandes transforme le récit.",
-        "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
-        "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
-        "auteur_variante": "Assistant d’Alexis"
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
-      "id": "EXT-004",
-      "titre": "À l'aide !",
-      "section": "Sources web complémentaires",
-      "numero_source": null,
-      "texte_original": "",
-      "regle_clarifiee": "Deux à quatre joueurs improvisent. Quand un joueur ne sait plus comment poursuivre, il appelle à l'aide et un partenaire entre pour relancer la scène par une proposition concrète.",
-      "statut": "adaptation pédagogique reformulée",
-      "eligible_generateur": true,
-      "duree_minutes": 12,
-      "origine": "recherche_web",
-      "objectif_pedagogique": "Scène",
-      "niveau": "débutant",
-      "effectif_conseille": "10–15 (en binômes ou sous-groupes si nécessaire)",
-      "variante_college": "Sans élimination ; possibilité de passer son tour ; consignes courtes et démonstration préalable.",
-      "source_url": "https://improwiki.com/fr/exercices",
-      "source_nom": "Improwiki",
-      "qualite_fiche": "adaptation sourcée à tester en atelier",
-      "conseils_animation": {
-        "consigne_courte": "Deux à quatre joueurs improvisent. Dès qu’un joueur ne sait plus comment poursuivre, il appelle « À l’aide ! » ; un partenaire entre et relance la scène par une proposition concrète.",
-        "variante_facile": "Commencez avec deux joueurs et une scène simple. Un partenaire qui bloque dit « À l’aide ! » ; un troisième entre avec une proposition concrète liée à ce qui se passe.",
-        "variante_difficile": "Le joueur qui arrive doit apporter une action, un objet imaginaire ou une information utile, plutôt qu’une idée abstraite ou un commentaire extérieur.",
-        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
-        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
-        "auteur_variantes": "Assistant d’Alexis"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "Deux à quatre joueurs improvisent. Dès qu’un joueur ne sait plus comment poursuivre, il appelle « À l’aide ! » ; un partenaire entre et relance la scène par une proposition concrète.",
-        "variante": "Faites tourner les rôles pour que chacun puisse appeler à l’aide et venir relancer une scène, sans imposer un nombre fixe d’interventions.",
-        "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
-        "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
-        "auteur_variante": "Assistant d’Alexis"
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
-      "id": "EXT-005",
-      "titre": "Association nom-adjectif",
-      "section": "Sources web complémentaires",
-      "numero_source": null,
-      "texte_original": "",
-      "regle_clarifiee": "Former deux files face à face. Le premier joueur propose un nom ; le joueur en face lui associe spontanément un adjectif. Chacun rejoint ensuite l'arrière de l'autre file. Chercher le rythme plutôt que la performance.",
-      "statut": "adaptation pédagogique reformulée",
-      "eligible_generateur": true,
-      "duree_minutes": 8,
-      "origine": "recherche_web",
-      "objectif_pedagogique": "Énergie",
-      "niveau": "débutant",
-      "effectif_conseille": "10–15 (en binômes ou sous-groupes si nécessaire)",
-      "variante_college": "Sans élimination ; possibilité de passer son tour ; consignes courtes et démonstration préalable.",
-      "source_url": "https://improwiki.com/fr/exercices",
-      "source_nom": "Improwiki",
-      "qualite_fiche": "adaptation sourcée à tester en atelier",
-      "conseils_animation": {
-        "consigne_courte": "Formez deux files face à face. Le premier dit un nom, son vis-à-vis associe spontanément un adjectif. Puis chacun rejoint l’arrière de l’autre file. Cherchez le rythme, pas la performance.",
-        "variante_facile": "Choisissez des noms concrets et des adjectifs connus. Une personne dit le nom, son vis-à-vis répond spontanément, puis chacun rejoint l’arrière de l’autre file.",
-        "variante_difficile": "Maintenez un rythme régulier et demandez une association immédiate, même si elle paraît surprenante ; privilégiez la spontanéité plutôt que la recherche du mot parfait.",
-        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
-        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
-        "auteur_variantes": "Assistant d’Alexis"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "Formez deux files face à face. Le premier dit un nom, son vis-à-vis associe spontanément un adjectif. Puis chacun rejoint l’arrière de l’autre file. Cherchez le rythme, pas la performance.",
-        "variante": "Après un tour, inversez la consigne : un adjectif est donné et le partenaire répond par un nom qui lui correspond.",
-        "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
-        "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
-        "auteur_variante": "Assistant d’Alexis"
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
-      "id": "EXT-006",
-      "titre": "Le miroir",
-      "section": "Sources web complémentaires",
-      "numero_source": null,
-      "texte_original": "",
-      "regle_clarifiee": "Par deux et face à face, un joueur réalise des gestes lents que l'autre reproduit comme son reflet. Après un moment, les partenaires tentent de bouger ensemble sans meneur clairement identifié.",
-      "statut": "adaptation pédagogique reformulée",
-      "eligible_generateur": true,
-      "duree_minutes": 10,
-      "origine": "recherche_web",
-      "objectif_pedagogique": "Corps",
-      "niveau": "débutant",
-      "effectif_conseille": "10–15 (en binômes ou sous-groupes si nécessaire)",
-      "variante_college": "Sans élimination ; possibilité de passer son tour ; consignes courtes et démonstration préalable.",
-      "source_url": "https://soulintoart.com/blog/acting/exercices-improvisation-theatrale/",
-      "source_nom": "Soul Into Art",
-      "qualite_fiche": "adaptation sourcée à tester en atelier",
-      "conseils_animation": {
-        "consigne_courte": "À deux, face à face, l’un réalise des gestes lents et l’autre les reproduit comme un miroir. Ensuite, essayez de bouger ensemble sans meneur désigné.",
-        "variante_facile": "Un partenaire mène avec des gestes lents et amples ; l’autre les reproduit en miroir, en gardant une distance confortable et sans se toucher.",
-        "variante_difficile": "Réduisez progressivement les gestes et cherchez des transitions fluides, puis tentez de bouger ensemble sans désigner de meneur.",
-        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
-        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
-        "auteur_variantes": "Assistant d’Alexis"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "À deux, face à face, l’un réalise des gestes lents et l’autre les reproduit comme un miroir. Ensuite, essayez de bouger ensemble sans meneur désigné.",
-        "variante": "Faites une manche avec un meneur, une manche sans meneur et échangez les partenaires ; comparez la qualité d’écoute corporelle.",
-        "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
-        "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
-        "auteur_variante": "Assistant d’Alexis"
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
-      "id": "EXT-007",
-      "titre": "Zip Zap Zop",
-      "section": "Sources web complémentaires",
-      "numero_source": null,
-      "texte_original": "",
-      "regle_clarifiee": "En cercle, transmettre une impulsion par le regard et un geste vers un autre joueur, en alternant les mots Zip, Zap et Zop. Privilégier la fluidité et l'attention collective plutôt que l'élimination.",
-      "statut": "adaptation pédagogique reformulée",
-      "eligible_generateur": true,
-      "duree_minutes": 8,
-      "origine": "recherche_web",
-      "objectif_pedagogique": "Énergie",
-      "niveau": "débutant",
-      "effectif_conseille": "10–15 (en binômes ou sous-groupes si nécessaire)",
-      "variante_college": "Sans élimination ; possibilité de passer son tour ; consignes courtes et démonstration préalable.",
-      "source_url": "https://soulintoart.com/blog/acting/exercices-improvisation-theatrale/",
-      "source_nom": "Soul Into Art",
-      "qualite_fiche": "adaptation sourcée à tester en atelier",
-      "conseils_animation": {
-        "consigne_courte": "En cercle, transmettez une impulsion par le regard et un geste vers un autre joueur, en alternant « Zip », « Zap » et « Zop ». Cherchez la fluidité et l’attention collective, sans élimination.",
-        "variante_facile": "Faites circuler « Zip », « Zap », « Zop » dans cet ordre, avec un regard et un geste clairement adressés à une personne. Commencez lentement et sans élimination.",
-        "variante_difficile": "Accélérez en conservant l’ordre des mots et la précision du destinataire ; si le groupe se trompe, reprenez calmement au dernier signal compris.",
-        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
-        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
-        "auteur_variantes": "Assistant d’Alexis"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "En cercle, transmettez une impulsion par le regard et un geste vers un autre joueur, en alternant « Zip », « Zap » et « Zop ». Cherchez la fluidité et l’attention collective, sans élimination.",
-        "variante": "Une fois la séquence maîtrisée, essayez une manche plus rapide puis revenez à une vitesse lente pour renforcer la précision collective.",
-        "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
-        "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
-        "auteur_variante": "Assistant d’Alexis"
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
-      "id": "EXT-008",
-      "titre": "Marches à rythmes variables",
-      "section": "Sources web complémentaires",
-      "numero_source": null,
-      "texte_original": "",
-      "regle_clarifiee": "Tous les joueurs marchent dans l'espace en évitant les collisions. Le meneur annonce différents rythmes, arrêts et changements de direction. Observer les espaces libres et les autres joueurs.",
-      "statut": "adaptation pédagogique reformulée",
-      "eligible_generateur": true,
-      "duree_minutes": 8,
-      "origine": "recherche_web",
-      "objectif_pedagogique": "Corps",
-      "niveau": "débutant",
-      "effectif_conseille": "10–15 (en binômes ou sous-groupes si nécessaire)",
-      "variante_college": "Sans élimination ; possibilité de passer son tour ; consignes courtes et démonstration préalable.",
-      "source_url": "https://soulintoart.com/blog/acting/exercices-improvisation-theatrale/",
-      "source_nom": "Soul Into Art",
-      "qualite_fiche": "adaptation sourcée à tester en atelier",
-      "conseils_animation": {
-        "consigne_courte": "Marchez dans l’espace sans vous heurter. Le meneur annonce des rythmes, des arrêts et des changements de direction ; restez attentifs aux espaces libres et aux autres.",
-        "variante_facile": "Tout le monde marche à allure confortable en regardant l’espace libre. Le meneur annonce un rythme à la fois et montre les arrêts avant d’accélérer.",
-        "variante_difficile": "Enchaînez changements de rythme, arrêts et changements de direction, mais gardez la marche sans course et une attention constante aux autres.",
-        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
-        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
-        "auteur_variantes": "Assistant d’Alexis"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "Marchez dans l’espace sans vous heurter. Le meneur annonce des rythmes, des arrêts et des changements de direction ; restez attentifs aux espaces libres et aux autres.",
-        "variante": "Ajoutez une qualité de marche (lourd, léger, ralenti) tout en conservant les signaux du meneur comme priorité.",
-        "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
-        "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
-        "auteur_variante": "Assistant d’Alexis"
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
-      "id": "EXT-009",
-      "titre": "Oui, et… en binôme",
-      "section": "Sources web complémentaires",
-      "numero_source": null,
-      "texte_original": "",
-      "regle_clarifiee": "Deux joueurs construisent une scène simple. Chaque nouvelle réplique accepte un élément de la proposition précédente et y ajoute une information jouable. Recommencer avec un lieu ou un objectif différent.",
-      "statut": "adaptation pédagogique reformulée",
-      "eligible_generateur": true,
-      "duree_minutes": 10,
-      "origine": "recherche_web",
-      "objectif_pedagogique": "Construction",
-      "niveau": "débutant",
-      "effectif_conseille": "10–15 (en binômes ou sous-groupes si nécessaire)",
-      "variante_college": "Sans élimination ; possibilité de passer son tour ; consignes courtes et démonstration préalable.",
-      "source_url": "https://soulintoart.com/blog/acting/exercices-improvisation-theatrale/",
-      "source_nom": "Soul Into Art",
-      "qualite_fiche": "adaptation sourcée à tester en atelier",
-      "conseils_animation": {
-        "consigne_courte": "À deux, construisez une scène simple : chaque réplique accepte un élément précédent et ajoute une information jouable. Recommencez avec un autre lieu ou objectif.",
-        "variante_facile": "En binôme, choisissez un lieu et une action simple. À chaque réplique, le joueur accepte un élément de ce qui vient d’être dit et ajoute une information concrète.",
-        "variante_difficile": "Faites évoluer la scène en donnant à chaque ajout une conséquence jouable, plutôt que d’empiler des détails sans effet sur l’action.",
-        "points_vigilance": "Éviter les refus systématiques et la multiplication de nouvelles idées.",
-        "statut": "Variantes pédagogiques rédigées par Assistant d’Alexis à partir de la règle complète ; à adapter au groupe.",
-        "auteur_variantes": "Assistant d’Alexis"
-      },
-      "accompagnement_pedagogique": {
-        "consigne": "À deux, construisez une scène simple : chaque réplique accepte un élément précédent et ajoute une information jouable. Recommencez avec un autre lieu ou objectif.",
-        "variante": "Rejouez avec un autre lieu ou objectif et repérez comment l’écoute et les ajouts concrets font avancer la scène.",
-        "objectif_prof": "Stimuler l’imaginaire partagé et la cohérence des propositions collectives.",
-        "objectif_eleves": "J’apprends à inventer des détails et à les relier aux idées des autres.",
-        "auteur": "assistant",
-        "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
-        "auteur_variante": "Assistant d’Alexis"
-      },
-      "auteur_consigne_courte": "Assistant d’Alexis"
-    },
-    {
       "id": "3-6",
       "titre": "Le silence complice",
       "section": "Saison 3",
@@ -4836,7 +4251,7 @@
       "duree_minutes": 8,
       "origine": "creation_improlab",
       "objectif_pedagogique": "Corps",
-      "niveau": "intermédiaire",
+      "niveau": "★★★",
       "effectif_conseille": "2 joueurs",
       "qualite_fiche": "création originale structurée au format IMPRO LAB",
       "conseils_animation": {
@@ -4875,7 +4290,7 @@
       "duree_minutes": 12,
       "origine": "creation_improlab",
       "objectif_pedagogique": "Cohésion",
-      "niveau": "intermédiaire",
+      "niveau": "★★★",
       "effectif_conseille": "4–8 joueurs",
       "qualite_fiche": "création originale structurée au format IMPRO LAB",
       "conseils_animation": {
@@ -4900,13 +4315,11 @@
         "statut": "Création originale IMPRO LAB ; à tester et ajuster en atelier.",
         "auteur_variante": "IMPRO LAB"
       },
-      "auteur_consigne_courte": "IMPRO LAB"
+      "auteur_consigne_courte": "IMPRO LAB",
+      "usages": [
+        "entrée en scène"
+      ]
     }
-  ],
-  "sources_externes": [
-    "https://dramaresource.com/drama-games/",
-    "https://improvencyclopedia.org/games/",
-    "https://www.theatrefolk.com/dta_units/improvisation"
   ],
   "regles_pedagogiques": [
     {
@@ -5030,6 +4443,13 @@
         "Corps",
         "Écoute"
       ]
+    },
+    {
+      "titre": "Take et give le focus",
+      "texte_original": "Take et give le focus",
+      "detail": "« Take » consiste à prendre la lumière par la parole ou un mouvement fort pour faire avancer l’histoire, tandis que « Give » consiste à s’effacer en regardant son partenaire pour le mettre en valeur. Maîtriser cette alternance crée une scène fluide et harmonieuse, évitant que les comédiens ne se marchent dessus.",
+      "nature": "principe général",
+      "origine": "notes_personnelles"
     },
     {
       "titre": "Le cahier de coach",

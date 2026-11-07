@@ -107,3 +107,58 @@ Non fait, et pourquoi :
 - **CI** : la vérification iPhone-Chromium restait parfois bloquée à l'installation des navigateurs, jusqu'à l'annulation au bout de 25 minutes (3 lancements sur 12). Chaque vérification n'installe plus que son navigateur, avec 5 minutes au plus par tentative et jusqu'à 3 essais.
 - Petit correctif : les boutons du match passent à la ligne sur iPhone SE (le bouton Caucus dépassait de 13 px).
 - Tests : `tests/data-tools.spec.cjs` (6 tests).
+
+### D16. Bibliothèque après la revue des fiches (lots 1 à 4)
+- Revue éditoriale d'Alexis du 7 novembre 2026 (Google Sheet « IMPRO LAB — Revue des fiches ») et décisions explicites du même jour. Modification de `library.json` validée par Alexis, référence d'intégrité régénérée (`tests/integrity.cjs --update`), diff vérifié.
+- **Lot 1 — recherches externes retirées** : les 17 fiches `recherche_web` (WEB-001 à 008, EXT-001 à 009) et la section `sources_externes` (3 sites) sont supprimées. La case « Inclure aussi les exercices issus de recherches externes » est retirée de Préparer. Les créations IMPRO LAB (3-6, 3-7) entrent désormais dans le tirage rapide, le générateur de séance et l'ajout manuel, comme les notes personnelles.
+- **Lot 2 — 3-2 « Impro libre » supprimée** (« ce n'est pas un jeu »). Le mode chrono « Impro libre » de la Régie est indépendant de la fiche et reste.
+- **Lot 3 — 2-20 « Take et give le focus » devient un principe** : retirée des exercices, ajoutée à `principes_improvisation` (titre et note originale d'Alexis). Le texte du principe (`detail`) est vide : Alexis le rédigera plus tard.
+- **Lot 4 — niveau en étoiles** : le champ `niveau` de chaque fiche reçoit la note d'Alexis, écrite en étoiles (« ★ », « ★★ », « ★★★ »). 2-24, notée ★★★★ dans la revue, passe à ★★★ (décision d'Alexis). Accord explicite d'Alexis pour les fiches validées 1-43 (★), 3-6 et 3-7 (★★★) : seul leur champ `niveau` change. Répartition : 23 ★, 66 ★★, 16 ★★★. L'intégrité a listé exactement 105 écarts « champ niveau : MODIFIÉ » avant régénération.
+- Chargement : l'appli refusait une bibliothèque de moins de 122 fiches (« Bibliothèque incomplète »). Seuil abaissé à 100 pour accepter les 105 fiches tout en détectant un fichier tronqué.
+- Résultat : 105 fiches (103 notes personnelles, 2 créations IMPRO LAB), 14 principes. Aucune autre fiche n'est modifiée : 1-43, 3-6 et 3-7 sont intactes.
+- Cache : `library.json?v=20261107-revue-fiches`, service worker `v46-revue-fiches`, pour que l'iPhone recharge la bibliothèque.
+- Tests mis à jour : `app.spec.cjs` (titres : WEB, EXT et 3-2 retirés des exemples, seuil 105), `regression.spec.cjs` (plus de case externe ; le générateur accepte notes et créations), `check.cjs` (2-20, 3-2, recherches externes et `sources_externes` doivent être absents, le principe doit exister).
+- Non modifié, signalé : le texte de `conservation` en tête de `library.json` parle encore d'« exercices externes » ; les `regles_pedagogiques` citent toujours theatrefolk.com dans `source_url` ; la mention « Adaptation pédagogique issue d'une source externe » reste dans le code sans plus servir.
+
+### D17. Utiliser les niveaux en étoiles dans l'appli
+- Demande d'Alexis (7 novembre 2026), après la revue : afficher les niveaux, rendre la séance progressive, plafonner par groupe, ménager l'élève animateur. Aucune donnée de `library.json` n'est modifiée par cette étape.
+- **Affichage** : pastille ★ / ★★ / ★★★ sur chaque fiche de la bibliothèque, étoiles dans l'étiquette des cartes de séance et dans la liste « ajouter un exercice ». Nouveau filtre « Niveau » à côté de « Objectif » dans la bibliothèque.
+- **Difficulté progressive** (générateur et remplacement) : préférence par étape, jamais bloquante : mise en énergie et connexion en ★ ou ★★, exploration en ★★, improvisation et scène finale en ★★ ou ★★★. Si aucun jeu ne convient à l'étape, la règle est relâchée.
+- **Plafond par groupe** : Club collège et Copains jusqu'à ★★, Association jusqu'à ★★★. Il s'applique au générateur, au remplacement, au tirage rapide de l'Accueil, à « Exercice aléatoire » et au mode soirée. Le plafond est relâché seulement si moins de 5 jeux restent pour une séance (ou aucun pour un tirage). Le plafond s'affiche sous le choix du groupe (« Jeux jusqu’à ★★ »).
+- **Élève animateur** : si le jeu en cours dépasse ★, la vue scène l'indique (« Jeu ★★ : plus délicat à mener. Pour un élève animateur, privilégie les jeux ★. »). Le jeu n'est pas remplacé automatiquement.
+- Mode soirée : les créations IMPRO LAB restent proposées (D11) dans la limite du niveau du groupe. 3-6 et 3-7 étant ★★★, elles sortent du tirage pour les Copains et le Club collège, et restent pour l’Association. Le test du mode soirée vérifie maintenant cette règle.
+- Tests : trois nouveaux tests dans `tests/features.spec.cjs` (étoiles et filtre ; plafond Club collège et Association ; signal en élève animateur).
+
+### D18. Étiquettes d'usage tirées des commentaires de revue
+- Demande d'Alexis (7 novembre 2026, « fait tout sans me poser de questions ») : transformer ses commentaires de revue en étiquettes utiles à l'appli. Les libellés reprennent ses propres mots ; aucune règle n'est reformulée.
+- `library.json` : nouveau champ `usages` (tableau) sur 28 fiches. Seul ce champ est ajouté ; l'intégrité a listé exactement 28 écarts « champ usages : AJOUTÉ » avant régénération.
+  - spectacle : 1-31, 1-32, 1-36, 1-44 · avant un spectacle : 1-25, 1-37
+  - chauffe : 1-48, 2-18, 2-26 · début de séance : 2-13
+  - cohésion : 1-25, 1-49 · apprentissage des prénoms : 1-8, 2-36
+  - beaucoup de comédiens : 1-63, 2-2, 2-10, 2-11, 2-12, 3-3 · tout le monde joue : 1-57, 1-60, 3-4
+  - entrée en scène : 1-52, 1-53, 3-7 (fiche validée : seul `usages` est ajouté) · jump and justify : 3-3, 3-4
+  - lâcher-prise : 1-55 · spontanéité : 2-4 · en binômes : 2-3
+- Commentaires non transformés en étiquettes (ce sont des remarques sur la règle, à traiter avec le lot 5) : 1-30, 1-59, 1-61, 2-1, 2-9, 2-14, 2-17, 2-22, 2-24, 2-25, 2-28, 2-30, 2-31, 2-33.
+- Appli : « Usages : … » sur la fiche, filtre « Usage » dans la bibliothèque, et dans Spectacle un encadré « Jeux repérés pour le spectacle » (étiquettes spectacle et avant un spectacle) avec un bouton « ＋ Numéro » qui ajoute le jeu à l'ordre de passage, avec la durée de sa fiche.
+- Non fait, à décider : se servir de « chauffe » ou « apprentissage des prénoms » dans le générateur (par exemple pour la première séance d'un groupe).
+- Cache : `library.json?v=20261107-usages`, service worker `v47-usages`.
+
+### D19. Plus aucune mention des adaptations web dans l'appli
+- Demande d'Alexis (7 novembre 2026) : « enlève les adaptations web ».
+- Bibliothèque : la phrase « Les notes personnelles restent distinctes des adaptations issues du web. » est retirée ; « Une règle incomplète n’est pas une règle validée. » reste.
+- Fiche : la mention « Adaptation pédagogique issue d’une source externe » est retirée du code (plus aucune fiche ne l'utilisait).
+- `library.json`, section `conservation` : « Les 105 notes originales sont préservées ; les exercices externes sont des reformulations attribuées et séparées. » devient « Les notes originales sont préservées dans chaque fiche (champ texte_original). ». Seule cette section change ; référence d'intégrité régénérée.
+- Non modifié, signalé : `LICENSE` et le tableau des droits du `README.md` citent encore les fiches `recherche_web` (texte juridique, à revoir par Alexis) ; `regles_pedagogiques` garde ses liens vers theatrefolk.com.
+- Cache : `library.json?v=20261107-sans-web`, service worker `v48-sans-web`.
+
+### D20. Lot 5 : les commentaires de revue entrent dans les règles, doublons jamais dans la même séance
+- Demande d'Alexis (7 novembre 2026) : reprendre ses commentaires de revue tels quels ; doublons « on garde les deux mais ils ne peuvent pas tomber en même temps dans une séance » ; 2-32 « le second est le second partenaire du binôme ».
+- Phrases ajoutées en fin de règle (mots d'Alexis, seules corrections : orthographe et apostrophes) : 1-30, 2-1, 2-9, 2-22.
+- Remplacements : 2-24 (variante du 4ème comédien), 2-28 (variante des trois tours de « tous les jours »), 2-33 (définition de « colorer » une relation, aussi dans la consigne courte), 2-30 (« Pour aller plus loin, » devant la suite).
+- 2-32 : la règle passe de « deux binômes » à un binôme dont les deux partenaires alternent ; consignes et variantes de l'assistant alignées. La note originale ne change pas.
+- Nouveau champ `jamais_avec` (identifiants, réciproque) : 2-25 / 1-14, 2-17 / 1-58, 2-14 / 1-56. Le générateur, le remplacement d'un exercice et le mode soirée n'associent jamais deux jumeaux. L'ajout manuel reste libre (choix délibéré du coach).
+- Non modifiés : 1-61 et 2-31 (gardés tels quels), 1-59, les fiches validées 3-6, 3-7, 1-43. Le texte du principe « Take et give le focus » attend toujours Alexis.
+- Cache : `library.json?v=20261107-regles-commentaires`, service worker `v49-regles-commentaires`. Référence d'intégrité régénérée après vérification des 19 écarts attendus.
+
+### D21. Texte du principe « Take et give le focus »
+- Texte d'Alexis (7 novembre 2026), placé tel quel dans `detail` (seuls changements : guillemets et apostrophes typographiques). Seule la section `principes_improvisation` change ; référence d'intégrité régénérée.

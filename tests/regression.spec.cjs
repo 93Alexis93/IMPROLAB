@@ -97,21 +97,17 @@ test('générateur respecte les cinq étapes de la timeline',async({page})=>{
  expect(labels.map(x=>x.split('·')[1].trim())).toEqual(['Mise en énergie','Connexion collective','Exploration','Improvisation','Scène finale']);
 });
 
-test('générateur privilégie les notes personnelles et respecte les étapes',async({page})=>{
+test('générateur : mes notes et créations IMPRO LAB, étapes respectées',async({page})=>{
  await openApp(page);
  
- await expect(page.locator('#includeExternal')).not.toBeChecked();
  await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
  const labels=await page.locator('#plan>.card small').allTextContents();
  expect(labels).toHaveLength(5);
- // Les étiquettes n'affichent plus l'origine : on la vérifie dans la bibliothèque (uniquement « Mes notes »).
+ // Les étiquettes n'affichent plus l'origine : on la vérifie dans la bibliothèque (mes notes ou créations IMPRO LAB).
  const origins=await page.evaluate(names=>names.map(name=>{const g=data.find(x=>displayTitle(x[0])===name||x[0]===name);return g?g[0]:null}),await page.locator('#plan>.card h3').allTextContents());
- for(const raw of origins){const fiche=library.exercices.find(f=>f.titre===raw);expect(fiche,String(raw)).toBeTruthy();expect(fiche.origine).toBe('notes_personnelles')}
+ for(const raw of origins){const fiche=library.exercices.find(f=>f.titre===raw);expect(fiche,String(raw)).toBeTruthy();expect(['notes_personnelles','creation_improlab']).toContain(fiche.origine)}
  expect(['Mise en énergie','Connexion collective']).toContain(labels[0].split('·')[1].trim());
  expect(labels.at(-1).split('·')[1].trim()).toBe('Scène finale');
- await page.locator('#includeExternal').check();
- await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
- await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(5);
 });
 test('rotation équitable entre séances consécutives',async({page})=>{
  await openApp(page);
@@ -200,7 +196,6 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
  test.setTimeout(120000);
  const runtimeErrors=[];page.on('pageerror',error=>runtimeErrors.push(error.message));page.on('console',message=>{if(message.type()==='error')runtimeErrors.push(message.text())});
  await openApp(page);
- await page.locator('#includeExternal').uncheck();
  for(let i=0;i<6;i++)await page.locator('#dynamic'+i).evaluate((el,value)=>{el.value=value;el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}));},i===0?'100':'0');
  await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
  const cards=page.locator('#plan>.card:not(.session-objective)');
@@ -219,7 +214,7 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
    expect(await card.getAttribute('data-category')).toBe(category);
    const state=await page.evaluate(({title,category,before})=>{
     const item=data.find(g=>displayTitle(g[0])===title||g[0]===title);
-    const eligible=g=>!!(g&&g[6]&&g[5]&&g[2]&&g[2].trim().length>20&&!['notes originales','proposition à valider','à confirmer'].includes((g[12]||'').toLowerCase())&&g[9]!=='incomplète'&&g[8]==='notes_personnelles');
+    const eligible=g=>!!(g&&g[6]&&g[5]&&g[2]&&g[2].trim().length>20&&!['notes originales','proposition à valider','à confirmer'].includes((g[12]||'').toLowerCase())&&g[9]!=='incomplète'&&['notes_personnelles','creation_improlab'].includes(g[8]));
     const peers=Array.from(document.querySelectorAll('#plan>.card h3')).map(n=>n.textContent.trim());
     const primary=data.filter(g=>eligible(g)&&g[1]===category&&displayTitle(g[0])!==before&&g[0]!==before&&!peers.filter(x=>x!==title).includes(displayTitle(g[0]))&&!peers.filter(x=>x!==title).includes(g[0]));
     const secondary=data.filter(g=>eligible(g)&&(g[11]||[]).includes(category)&&displayTitle(g[0])!==before&&g[0]!==before&&!peers.filter(x=>x!==title).includes(displayTitle(g[0]))&&!peers.filter(x=>x!==title).includes(g[0]));
