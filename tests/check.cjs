@@ -163,3 +163,10 @@ assert.ok(sw.includes("caches.delete(k)"), 'Le service worker doit supprimer les
 
 console.log('IMPRO LAB : contrôles statiques et cohérence des données OK');
 console.log('Timeline souple et six curseurs OK');
+
+// Usages tirés des commentaires de revue d'Alexis (D17) : tableaux de libellés non vides.
+for (const e of lib.exercices) if ('usages' in e) {
+  assert.ok(Array.isArray(e.usages) && e.usages.length > 0, `Fiche ${e.id}, champ « usages » : tableau non vide attendu`);
+  for (const u of e.usages) assert.ok(typeof u === 'string' && u.trim() === u && u.length > 0, `Fiche ${e.id}, champ « usages » : libellé invalide`);
+}
+assert.ok(lib.exercices.filter(e => (e.usages || []).includes('spectacle')).length >= 4, 'Usages : jeux de spectacle attendus');

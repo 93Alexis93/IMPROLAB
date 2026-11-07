@@ -117,3 +117,17 @@ Non fait, et pourquoi :
 - **Élève animateur** : si le jeu en cours dépasse ★, la vue scène l'indique (« Jeu ★★ : plus délicat à mener. Pour un élève animateur, privilégie les jeux ★. »). Le jeu n'est pas remplacé automatiquement.
 - Mode soirée : les créations IMPRO LAB restent proposées (D11) dans la limite du niveau du groupe. 3-6 et 3-7 étant ★★★, elles sortent du tirage pour les Copains et le Club collège, et restent pour l’Association. Le test du mode soirée vérifie maintenant cette règle.
 - Tests : trois nouveaux tests dans `tests/features.spec.cjs` (étoiles et filtre ; plafond Club collège et Association ; signal en élève animateur).
+
+### D17. Étiquettes d'usage tirées des commentaires de revue
+- Demande d'Alexis (7 novembre 2026, « fait tout sans me poser de questions ») : transformer ses commentaires de revue en étiquettes utiles à l'appli. Les libellés reprennent ses propres mots ; aucune règle n'est reformulée.
+- `library.json` : nouveau champ `usages` (tableau) sur 28 fiches. Seul ce champ est ajouté ; l'intégrité a listé exactement 28 écarts « champ usages : AJOUTÉ » avant régénération.
+  - spectacle : 1-31, 1-32, 1-36, 1-44 · avant un spectacle : 1-25, 1-37
+  - chauffe : 1-48, 2-18, 2-26 · début de séance : 2-13
+  - cohésion : 1-25, 1-49 · apprentissage des prénoms : 1-8, 2-36
+  - beaucoup de comédiens : 1-63, 2-2, 2-10, 2-11, 2-12, 3-3 · tout le monde joue : 1-57, 1-60, 3-4
+  - entrée en scène : 1-52, 1-53, 3-7 (fiche validée : seul `usages` est ajouté) · jump and justify : 3-3, 3-4
+  - lâcher-prise : 1-55 · spontanéité : 2-4 · en binômes : 2-3
+- Commentaires non transformés en étiquettes (ce sont des remarques sur la règle, à traiter avec le lot 5) : 1-30, 1-59, 1-61, 2-1, 2-9, 2-14, 2-17, 2-22, 2-24, 2-25, 2-28, 2-30, 2-31, 2-33.
+- Appli : « Usages : … » sur la fiche, filtre « Usage » dans la bibliothèque, et dans Spectacle un encadré « Jeux repérés pour le spectacle » (étiquettes spectacle et avant un spectacle) avec un bouton « ＋ Numéro » qui ajoute le jeu à l'ordre de passage, avec la durée de sa fiche.
+- Non fait, à décider : se servir de « chauffe » ou « apprentissage des prénoms » dans le générateur (par exemple pour la première séance d'un groupe).
+- Cache : `library.json?v=20261107-usages`, service worker `v47-usages`.

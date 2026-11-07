@@ -483,3 +483,22 @@ test('niveaux : en mode élève animateur, un jeu au-delà de ★ est signalé',
   await page.getByRole('button', { name: '📺 Plein écran' }).click();
   await expect(note).toBeHidden();
 });
+
+test('usages : affichés sur la fiche, filtre « Usage » et jeux repérés pour le spectacle', async ({ page }) => {
+  await openApp(page);
+  await openTab(page, 'Bibliothèque');
+  const expected = await page.evaluate(() => libraryPayload.exercices.filter(e => (e.usages || []).includes('spectacle')).length);
+  expect(expected).toBeGreaterThanOrEqual(4);
+  await page.locator('#usageFilter').selectOption('spectacle');
+  await expect(page.locator('#games .card')).toHaveCount(expected);
+  await expect(page.locator('#games .card .exercise-usages').first()).toContainText('spectacle');
+  await page.locator('#usageFilter').selectOption('');
+  await openTab(page, 'Spectacle');
+  const ideas = page.locator('#showIdeas .show-idea');
+  const withShow = await page.evaluate(() => libraryPayload.exercices.filter(e => (e.usages || []).some(u => u.includes('spectacle'))).length);
+  await expect(ideas).toHaveCount(withShow);
+  const title = await page.evaluate(() => document.querySelector('#showIdeas .show-idea span').firstChild.textContent.trim());
+  await ideas.first().getByRole('button', { name: /comme numéro/ }).click();
+  await expect(page.locator('#showItems .show-item')).toHaveCount(1);
+  expect(await page.locator('#showItems input[list]').first().inputValue()).toBe(title);
+});

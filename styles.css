@@ -665,3 +665,7 @@ body #spectacle button{min-height:44px}
 /* Niveaux en étoiles */
 span.pill.level-pill{color:#ffd16d;font-weight:800;letter-spacing:.06em}
 .stage-level-note{margin:0 0 8px;font-size:18px;font-weight:750;color:#ffd16d!important}
+
+/* Usages : jeux repérés pour le spectacle */
+.show-idea{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:6px 0}
+.show-idea button{min-height:44px;white-space:nowrap}

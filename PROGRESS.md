@@ -71,4 +71,4 @@ Branche `fonctions/niveaux-etoiles`, partie de `bibliotheque/retrait-externes-3-
 | 2 | Difficulté progressive par étape (générateur, remplacement) | fait |
 | 3 | Plafond par groupe (collège, copains ★★ ; asso ★★★) | fait |
 | 4 | Signal en mode élève animateur | fait : Playwright 90/90 (Chromium et WebKit) |
-| 5 | Étiquettes d’usage tirées des commentaires | proposées, en attente de validation d’Alexis |
+| 5 | Étiquettes d’usage tirées des commentaires (D17) | fait : Playwright 91/91 (Chromium et WebKit), audit iPhone 13 (bibliothèque, Préparer, Spectacle) sans cible < 44 px ni débordement |
