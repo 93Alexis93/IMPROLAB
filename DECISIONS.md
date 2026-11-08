@@ -168,3 +168,36 @@ Non fait, et pourquoi :
 - `LICENSE`, section 2 : la licence CC BY-NC-ND 4.0 couvre toutes les fiches d'exercices (il n'en reste que d'origine `notes_personnelles` ou `creation_improlab`). Section 3 : la mention des fiches `recherche_web` est remplacée par la section `regles_pedagogiques`, seul contenu de `library.json` qui renvoie encore à une source extérieure (theatrefolk.com).
 - `README.md` : tableau des droits aligné sur ces deux points.
 - Inchangé : périmètre des droits (code, identité visuelle, principes-impro.json, cahier de coach, Canva). Les principes de `principes_improvisation` (notes d'Alexis) restent sous « tous droits réservés » faute de mention ; les passer en CC BY-NC-ND est une décision à prendre par Alexis.
+
+## 2026-11-07 (soir) — Lots 1, 2 et 3 en autonomie
+
+### D23. Lot 1 : sauvegarde, tutoriel, README, barre de navigation
+- **Rappel de sauvegarde** : bandeau en tête de l’Accueil quand il y a des données à protéger (historique, effectifs, présences, spectacle, match, fil rouge, badges, jeux écartés) et aucune sauvegarde depuis 7 jours. Bouton « Sauvegarder maintenant ». La carte Sauvegarde affiche la date de la dernière sauvegarde.
+- La date est rangée dans `improlab-backup-last`, hors des clés `impro-` : elle ne fait pas partie de la sauvegarde. Une restauration reprend la date de la sauvegarde restaurée.
+- `navigator.storage.persist()` est demandé au démarrage, sans message. Installée sur l’écran d’accueil, l’appli échappe déjà à l’effacement des 7 jours de Safari ; ouverte dans Safari, non. Le rappel couvre les deux cas.
+- **Tutoriel d’accueil** : la proposition `proposal/tutorial-persistence` est reprise (mémoire `improlab-welcome-seen` aussi dans `localStorage`). Raison : sur iPhone, chaque lancement de l’appli installée rouvrait l’écran d’accueil, soit un toucher de plus à chaque séance. L’Accueil garde les mêmes raccourcis. Les tests qui rouvrent le tutoriel effacent les deux mémoires.
+- **Barre de navigation** : mesurée à 56 px de haut sur iPhone 13 (664 px utiles), en ligne unique et collante. Le constat de D13 (« un quart de l’écran ») datait d’avant la navigation compacte. Pas de masquage au défilement : le gain serait faible et la navigation deviendrait moins prévisible en séance.
+
+### D24. Lot 2 : en séance
+- **Prénoms et chauffe dans le générateur** : pour la première séance d’un groupe (aucune séance enregistrée pour lui), un jeu étiqueté « apprentissage des prénoms » est placé à l’étape 1 (1-8) ou 2 (2-36), sauf s’il vient d’être proposé : la rotation reste prioritaire (le test « rotation équitable » l’exige). Les jeux étiquetés « chauffe » ou « début de séance » peuvent ouvrir la séance même hors Énergie, Lâcher-prise ou Amusement (2-18, catégorie Corps). Le test d’ouverture accepte désormais ces étiquettes.
+- **Équipes à partir des présents** : déjà en place (Groupes et Régie, en évitant de reformer les mêmes paires). Rien ajouté ; la proposition était redondante.
+- **Avis pris en Régie** : 👍 / 👎 et « Note rapide » dans « Exercice en cours », 👍 / 👎 dans le plein écran (pas en mode élève animateur). Mémoire `impro-live-notes-v1`. À l’enregistrement de la séance, les avis vont dans le carnet de bord (même effet sur le générateur que les boutons de l’Historique) et les notes dans un nouveau champ « Notes prises pendant la séance ». La mémoire est vidée après l’enregistrement et à chaque nouvelle génération.
+- **Signal de fin** : trois bips plus forts à l’échéance (au lieu d’un bip court et faible), bip d’avertissement 1 minute avant pour les durées de 3 minutes et plus (case à décocher), contour du chrono qui pulse (fixe si l’utilisateur refuse les animations), écran maintenu allumé pendant que le chrono tourne, vibration là où le navigateur la permet (pas sur iPhone). Limite connue : iPhone verrouillé, aucun son n’est garanti ; la mention existante reste.
+
+### D25. Lot 3 : suivi des groupes
+- **Trame du fil rouge** : non modifiée. Elle attend toujours la validation d’Alexis (D13).
+- **Séance en cours par groupe** : `impro-last-plan` et `impro-live-notes-v1` rejoignent les clés rangées au changement de groupe. Changer de groupe ne remplace plus la séance préparée d’un autre. La séance existante reste au groupe actif au moment de la mise à jour.
+- **Noms de groupes** : bouton « ✏️ Renommer ce groupe » dans Préparer. Noms dans `impro-group-names-v1` ; les identifiants (`college`, `copains`, `asso`) ne changent pas. Les séances enregistrées portent aussi `groupeId` ; les anciennes sont retrouvées par leur nom d’origine ou le nom personnalisé. Fil rouge, avis et jeux écartés passent par l’identifiant. Un nom déjà pris par un autre groupe est refusé ; un nom vide rend le nom d’origine.
+- **Exercice aléatoire** : sélecteur de groupe en tête, synchronisé avec Préparer. Correctif au passage : le tirage ignorait les jeux écartés pour le groupe ; il les exclut maintenant, comme le générateur.
+- **Bilan du trimestre** (Historique → « 📊 Bilan du trimestre ») : par groupe et par trimestre de l’année scolaire en cours (septembre à août) : séances, priorités travaillées, jeux les plus joués, 👍 / 👎 avec jeux préférés et à revoir, présences par joueur, badges, trois points « à retravailler ». Bouton « Copier le bilan ».
+
+### D26. Cache
+- `styles.css?v=7`, service worker `v50-lots-1-2-3`. `library.json` inchangé.
+
+### D27. Google Sheet « IMPRO LAB — Revue des catégories et des filtres »
+- Même présentation que la revue des fiches : une ligne par fiche, colonnes de contexte en gris, listes déroulantes, cases modifiées en vert (comparaison avec l’onglet « Valeurs d’origine »).
+- Champs existants à corriger si besoin : catégorie principale, catégories secondaires, usages.
+- Filtres demandés : contact physique, élimination, jeu engagé, plus compétition. Contact, élimination et compétition sont pré-remplis d’après le texte des règles ; les 14 cases les moins sûres sont en jaune. Jeu engagé est vide, avec une définition à corriger.
+- Colonnes proposées : format de jeu, moment de la séance, espace, volume sonore, matériel, élève animateur possible, durée réelle, effectif min et max. Constat : 104 fiches sur 105 ont une durée de 8 min et 103 un effectif « à évaluer » : ce sont des valeurs par défaut.
+- Onglet « Catégories » : nombre de fiches par catégorie (formules) et remarques. Désaccord principal : Amusement (1 fiche principale, 55 en secondaire) et Lâcher-prise (1 fiche principale) ne fonctionnent pas comme des catégories ; proposition de les fusionner ou de les garder en secondaire seulement. Émotions n’apparaît en secondaire sur aucune fiche.
+- Rien n’est reporté dans `library.json` avant le retour d’Alexis sur la feuille.

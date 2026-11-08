@@ -694,3 +694,33 @@ span.pill.level-pill{color:#ffd16d;font-weight:800;letter-spacing:.06em}
 /* Usages : jeux repérés pour le spectacle */
 .show-idea{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:6px 0}
 .show-idea button{min-height:44px;white-space:nowrap}
+
+/* Rappel de sauvegarde (Accueil) */
+.home-backup-reminder{border-left:6px solid #ffd16d!important}
+.home-backup-reminder p{margin:0 0 10px}
+.home-backup-reminder button{min-height:44px}
+
+/* Régie : avis et note rapide pendant le jeu */
+.live-feedback[hidden],.stage-feedback[hidden]{display:none!important}
+.live-feedback{margin-top:10px;padding-top:8px;border-top:1px solid var(--line,#d2c7b8)}
+.live-feedback-title{margin:0 0 6px;font-weight:700}
+.live-feedback label{display:block;margin:10px 0 4px}
+.live-note-row{display:flex;gap:6px}
+.live-note-row input{flex:1;min-width:0;min-height:44px;box-sizing:border-box}
+.live-note-row button{min-height:44px;white-space:nowrap}
+body #live .stage-view .stage-feedback{margin-top:10px}
+/* Fin du chrono : contour qui pulse (pas d'animation si l'utilisateur la refuse) */
+@keyframes il-clock-pulse{0%,100%{box-shadow:0 0 0 0 #ff7777}50%{box-shadow:0 0 0 10px #ff777755}}
+#liveClock.clock-over,#stageClock.clock-over{border-radius:18px;animation:il-clock-pulse 1s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){#liveClock.clock-over,#stageClock.clock-over{animation:none;box-shadow:0 0 0 6px #ff7777}}
+/* Préparer : renommer le groupe ; Exercice aléatoire : choix du groupe */
+.group-rename{display:block;margin-top:6px;min-height:44px}
+.random-group{display:block;margin:0 0 10px}
+.random-group select{min-height:44px;margin-left:6px}
+/* Historique : bilan du trimestre */
+#termReport>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:700}
+.term-controls{display:flex;flex-wrap:wrap;gap:10px}
+.term-controls select{min-height:44px;margin-left:6px}
+.term-lines{padding-left:18px}
+.term-lines li{margin:4px 0;overflow-wrap:anywhere}
+#termReport button{min-height:44px}
