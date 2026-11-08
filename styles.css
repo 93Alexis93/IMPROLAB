@@ -292,6 +292,11 @@ nav[aria-label="Navigation principale"]>button[aria-current="page"]{background:v
 .home-action>button,.home-resume button,.home-result-actions button{min-height:48px;padding:.7rem 1rem;border-radius:4px;background:var(--curtain,#9b303b);color:white;border:1px solid var(--curtain,#9b303b);box-shadow:none}
 #homeQuickResult{margin-top:1rem;padding-top:.6rem;border-top:1px solid #d8cfc1}
 #homeQuickResult h4{font:700 1.45rem Georgia,"Times New Roman",serif;margin:.4rem 0}
+.home-result-fold>summary{display:flex;align-items:center;gap:.5rem;min-height:44px;cursor:pointer;list-style:none}
+.home-result-fold>summary::-webkit-details-marker{display:none}
+.home-result-fold>summary::after{content:"▾ Replier";margin-left:auto;flex:none;font-size:.85rem;font-weight:700;color:var(--curtain,#9b303b)}
+.home-result-fold:not([open])>summary::after{content:"▸ Déplier"}
+.home-result-fold>summary h4{flex:1}
 .home-result-category{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--curtain,#9b303b)}
 .home-result-actions{display:flex;flex-wrap:wrap;gap:.5rem}
 .home-result-actions button+button{background:transparent;color:var(--ink,#25231f)}
@@ -676,12 +681,25 @@ body .review-vote-buttons .badge-chip[aria-pressed="true"]{background:#1f5e3a!im
 .match-caucus{font-size:24px;font-weight:800;text-align:center;margin:6px 0}
 .student-sheets{display:none}
 @media print{
+  @page{size:A4 portrait;margin:10mm}
+  #jeux[hidden],#seance[hidden]{display:none!important}
+  body.print-students main>*:not(#seance),body.print-students>*:not(main){display:none!important}
   body.print-students #seance>*:not(#studentSheets){display:none!important}
   body.print-students #studentSheets{display:block!important}
-  .student-sheet{page-break-after:always;break-after:page;padding-top:20mm}
-  .student-sheet:last-child{page-break-after:auto;break-after:auto}
-  .student-sheet h2{font:700 30pt/1.15 Georgia,"Times New Roman",serif;margin:0 0 14mm;color:#111!important}
-  .student-sheet p{font-size:22pt;line-height:1.4;color:#111!important}
+  .student-page{color:#111!important;font-family:system-ui,Arial,sans-serif}
+  .student-head{border:2px solid #111;border-radius:6px;padding:3mm 4mm;margin:0 0 4mm}
+  .student-head h1{font:700 16pt/1.2 Georgia,"Times New Roman",serif;margin:0 0 2mm;color:#111!important}
+  .student-head p{margin:1mm 0;font-size:11pt;line-height:1.35;color:#111!important}
+  .student-grid{display:grid;grid-template-columns:1fr 1fr;gap:3mm;counter-reset:ex}
+  .student-sheet{border:1.5px solid #333;border-radius:5px;padding:3mm;break-inside:avoid;page-break-inside:avoid;counter-increment:ex}
+  .student-sheet h2{font:700 12.5pt/1.2 Georgia,"Times New Roman",serif;margin:0 0 1.5mm;color:#111!important}
+  .student-sheet h2::before{content:counter(ex) ". "}
+  .student-sheet p{margin:0;font-size:11pt;line-height:1.35;color:#111!important}
+  .student-page.size-l .student-sheet h2{font-size:15pt}.student-page.size-l .student-sheet p{font-size:13pt}
+  .student-page.size-s .student-sheet h2{font-size:11pt}.student-page.size-s .student-sheet p{font-size:9.5pt}
+  .student-page.size-xs .student-sheet h2{font-size:10pt}.student-page.size-xs .student-sheet p{font-size:8.5pt;line-height:1.25}.student-page.size-xs .student-sheet{padding:2mm}
+  .student-page .student-sheet,.student-page .student-head{margin-top:0!important;margin-bottom:0!important}.student-page .student-head{margin-bottom:4mm!important}
+  .student-page.size-xxs .student-head{padding:2mm 3mm}.student-page.size-xxs .student-head h1{font-size:13pt}.student-page.size-xxs .student-head p{font-size:9pt}.student-page.size-xxs .student-grid{gap:2mm}.student-page.size-xxs .student-sheet{padding:1.6mm 2mm}.student-page.size-xxs .student-sheet h2{font-size:9pt;margin-bottom:1mm}.student-page.size-xxs .student-sheet p{font-size:7.6pt;line-height:1.22}
 }
 /* Boutons du match : retour à la ligne sur petit écran (iPhone SE) */
 #matchPanel .draw-actions{display:flex!important;flex-wrap:wrap;gap:6px}
@@ -724,3 +742,14 @@ body #live .stage-view .stage-feedback{margin-top:10px}
 .term-lines{padding-left:18px}
 .term-lines li{margin:4px 0;overflow-wrap:anywhere}
 #termReport button{min-height:44px}
+
+/* Jeu joué seul en Régie : titre, consigne et explication sous le chrono */
+#liveUnderClock{margin:6px 0 10px;padding:10px 12px;border:1px solid #626c90;border-radius:12px;background:#202745}
+#liveUnderClock .under-clock-title{margin:0 0 4px;font-size:20px;font-weight:800;color:#f7f1e7}
+#liveUnderClock .under-clock-consigne{margin:0 0 8px;font-size:17px;line-height:1.45;color:#f7f1e7}
+#liveUnderClock details>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:750;color:#ffd16d}
+#liveUnderClock details p{margin:6px 0;line-height:1.45;color:#f7f1e7}
+#liveUnderClock button{margin-top:6px}
+/* Mes notes : note d'origine et notes perso par fiche */
+.coach-notes textarea{display:block;width:100%;box-sizing:border-box;min-height:88px;margin-top:6px;padding:10px;font:16px/1.4 system-ui;border:1px solid var(--line,#d2c7b8);border-radius:6px;background:var(--paper-raised,#fffdf8);color:var(--ink,#25231f)}
+.coach-notes .my-note-label{display:block;font-weight:700;margin-top:8px}

@@ -102,3 +102,17 @@ Branche `amelioration/lots-1-2-3` depuis `origin/main` (dd0a951). Demande d’Al
 
 - Tests ajoutés : `tests/lots-1-2-3.spec.cjs` (8 tests) et `tests/tutorial-persistence.spec.cjs` (repris de la proposition).
 - Google Sheet de revue des catégories et des filtres : voir D27.
+
+## Lot du 2026-11-08 : phase autonome (D28 et suivantes)
+Branche `amelioration/phase-autonome-nov` depuis `amelioration/lots-1-2-3` (844dbd6). Demande d’Alexis, absent : « fais-en un max », réponses données avant le départ.
+
+| Étape | Objet | État |
+|---|---|---|
+| 1 | Tirage de l’Accueil repliable | fait |
+| 2 | Échauffement : ↺ garde le jeu, 🔄 tire un autre jeu (fin du retour sur « Impro libre ») | fait |
+| 3 | Exercice aléatoire joué seul en Régie, séance intacte | fait |
+| 4 | Fiche élève sur une page A4, deux encadrés par ligne, objectif et fil conducteur | fait, vérifié en PDF (1 page de 3 à 16 exercices) |
+| 5 | « 📝 Mes notes » sur chaque exercice | fait |
+| 6 | Mode soirée : titre, consigne et explication complète sous le chrono | fait |
+
+- Étapes 1 à 6 : `check.cjs` OK, `integrity.cjs` OK (105 fiches), Playwright 113/113 en iPhone-Chromium et 113/113 en iPhone-WebKit (226 au total).
