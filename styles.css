@@ -753,3 +753,5 @@ body #live .stage-view .stage-feedback{margin-top:10px}
 /* Mes notes : note d'origine et notes perso par fiche */
 .coach-notes textarea{display:block;width:100%;box-sizing:border-box;min-height:88px;margin-top:6px;padding:10px;font:16px/1.4 system-ui;border:1px solid var(--line,#d2c7b8);border-radius:6px;background:var(--paper-raised,#fffdf8);color:var(--ink,#25231f)}
 .coach-notes .my-note-label{display:block;font-weight:700;margin-top:8px}
+/* Contact physique (revue des catégories) */
+span.pill.contact-pill{font-weight:700}

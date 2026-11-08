@@ -130,3 +130,16 @@ test('titres renommés : les données gardées sur l’appareil suivent le nouve
   const titles = await page.evaluate(() => ['1-5', '1-38', '2-29'].map(id => libraryPayload.exercices.find(e => e.id === id).titre));
   expect(titles).toEqual(['Le zombie', 'Le jeu des listes', 'Le super mime']);
 });
+
+test('contact physique : filtre de la bibliothèque et tous les jeux dans le générateur', async ({ page }) => {
+  await openApp(page);
+  const stats = await page.evaluate(() => ({ off: libraryPayload.exercices.filter(e => !e.eligible_generateur).length, light: data.filter(g => g[16] === 'léger').length }));
+  expect(stats.off).toBe(0);
+  expect(stats.light).toBe(6);
+  await page.evaluate(() => tab('jeux'));
+  await page.selectOption('#contactFilter', 'léger');
+  await expect(page.locator('#games .card')).toHaveCount(6);
+  await expect(page.locator('#games .card').first()).toContainText('Contact léger');
+  await page.selectOption('#contactFilter', 'aucun');
+  await expect(page.locator('#games .card')).toHaveCount(99);
+});

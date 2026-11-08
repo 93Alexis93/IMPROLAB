@@ -17,6 +17,7 @@
       "objectif_pedagogique": "Corps",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, envoie « Sa » en levant les bras vers quelqu’un. Il lève les bras et répond « Mu » ; ses voisins miment un coup de sabre en disant « Raï ». Celui qui a dit « Mu », bras toujours en l’air, relance « Sa ».",
@@ -51,6 +52,7 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée",
       "conseils_animation": {
         "consigne_courte": "En binôme, dites « un, deux, trois » à tour de rôle en vous regardant et en accélérant. Remplacez progressivement « un » par un claquement de mains ou de doigts, puis « trois » par une montée de talon.",
@@ -85,6 +87,7 @@
       "objectif_pedagogique": "Amusement",
       "niveau": "★★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Choisissez un mot qui n’existe pas (ici « poindon »). En cercle, passez l’objet imaginaire en répétant « Tiens, ceci est un poindon ». Le receveur demande « Un quoi ? » ; la question remonte de joueur en joueur jusqu’au lanceur, qui répond « Un poindon ! ». La réponse redescend jusqu’au receveur, qui conclut « Ah d’accord ! » puis transmet l’objet. Gardez l’ordre des répliques et le rythme.",
@@ -119,12 +122,13 @@
       "texte_original": "Un mot chacun avec rythme pour une impro sur un thème",
       "regle_clarifiee": "L’animateur propose un thème. Les joueurs construisent ensemble une improvisation verbale en prononçant chacun un seul mot à leur tour. Ils doivent respecter un rythme régulier tout en donnant du sens à la phrase ou à l’histoire collective.",
       "statut": "validée par le coach",
-      "eligible_generateur": false,
+      "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "À partir d’un thème, construisez une histoire collective en disant chacun un seul mot à votre tour, avec un rythme régulier et du sens.",
@@ -165,6 +169,7 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "léger",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Le zombie avance lentement vers une cible. Pour se délivrer, celle-ci cherche un regard ; le joueur regardé nomme une nouvelle cible. Le zombie change de direction ; la personne touchée devient zombie.",
@@ -205,6 +210,7 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Comptez ensemble à partir de 1, sans ordre de parole fixé. Si deux joueurs annoncent un nombre en même temps, recommencez à 1. Essayez d’aller jusqu’à 20.",
@@ -237,12 +243,13 @@
       "texte_original": "Se donner des balles de couleur",
       "regle_clarifiee": "L’animateur introduit une balle imaginaire de couleur. En se déplaçant, les joueurs la passent en disant « Je te donne la balle [couleur] ». On s’arrête pour retrouver le détenteur, puis on recommence avec plusieurs balles et on vérifie qu’aucune n’a disparu au moment voulu.",
       "statut": "clarifié",
-      "eligible_generateur": false,
+      "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Écoute",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée",
       "conseils_animation": {
         "consigne_courte": "En vous déplaçant, faites circuler une balle imaginaire colorée en disant « Je te donne la balle [couleur] ». Arrêtez-vous pour retrouver son détenteur, puis ajoutez plusieurs balles et vérifiez au signal qu’aucune n’a disparu.",
@@ -280,6 +287,7 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, l’animateur appelle un prénom : la personne se baisse, ses voisins miment un duel « Pan ! ». Éliminez si elle ne se baisse pas ou si un voisin oublie de tirer.",
@@ -322,6 +330,7 @@
       "objectif_pedagogique": "Cohésion",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Le voyant annonce une caractéristique. Les concernés avancent, les autres s’arrêtent. Continuez jusqu’à une seule personne en mouvement ; si tous s’arrêtent, le voyant perd.",
@@ -361,6 +370,7 @@
       "objectif_pedagogique": "Corps",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Dansez ensemble : chacun peut proposer un mouvement que tout le groupe reprend, jusqu’à ce qu’un autre geste le remplace.",
@@ -400,6 +410,7 @@
       "objectif_pedagogique": "Corps",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Quatre joueurs forment un losange et suivent le meneur devant. Quand un déplacement change qui est à l’avant, ce joueur mène. Les danseurs au centre suivent sans mener.",
@@ -440,6 +451,7 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, une frappe vers le voisin fait circuler l’énergie dans le même sens ; deux frappes et un retournement inversent le sens. Accélérez, puis doublez les frappes à chaque manche : quatre, huit… jusqu’à 32 !",
@@ -473,12 +485,13 @@
       "texte_original": "Jeu du SAV avec une personne qui ne sait pas quel objet elle ramène.",
       "regle_clarifiee": "Une scène se déroule au service après-vente. Le client vient rapporter un objet dont il ignore l’identité ; l’employé et le public savent de quel objet il s’agit. Le client improvise une réclamation, écoute les réponses de l’employé et tente de comprendre ce qu’il est censé rapporter, sans sortir de la situation. Le client sort de la salle au début pour que le public puisse décider de l’objet.",
       "statut": "validée par le coach",
-      "eligible_generateur": false,
+      "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Le client sort pendant que le public choisit l’objet. Au SAV, il ignore donc ce qu’il rapporte, contrairement à l’employé et au public. Il réclame et tente de le deviner grâce aux réponses, sans sortir de la situation.",
@@ -519,6 +532,7 @@
       "objectif_pedagogique": "Scène",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Le public choisit des mots secrets. Pendant un débat ou un entretien, deux équipes les miment, une pour chaque comédien ; chacun devine ses mots et les place dans ses répliques. Le public applaudit chaque mot intégré.",
@@ -563,6 +577,7 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "léger",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, comptez de 1 à 7 en transmettant l’énergie par une tape sur l’épaule correspondante, en disant le nombre. À 7, désignez un joueur qui reprend à 1. Ajoutez ensuite les contraintes : remplacer 3 par un jour, dire « trois » à la place de 5 tout en gardant le 3 initial, puis remplacer 1 par un geste du pied.",
@@ -602,6 +617,7 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "À deux, montrez une partie du corps en en nommant une autre. Le partenaire montre la partie nommée et annonce à son tour un autre nom, sans hésiter.",
@@ -641,6 +657,7 @@
       "objectif_pedagogique": "Construction",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "A annonce un événement ; B répond « Ah, c’est cool ! ». A ajoute une mauvaise nouvelle, B dit « Ah, c’est pas cool ! ». Continuez en alternant les nouvelles.",
@@ -681,6 +698,7 @@
       "objectif_pedagogique": "Cohésion",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Dansez librement. À chaque nombre annoncé, organisez-vous sans parler pour que ce nombre exact continue à danser ; les autres s’immobilisent.",
@@ -721,6 +739,7 @@
       "objectif_pedagogique": "Imaginaire",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Chacun imagine secrètement un problème et choisit un objet. Révélez-les, puis résolvez le problème de l’autre avec votre objet, même si l’association est absurde.",
@@ -761,6 +780,7 @@
       "objectif_pedagogique": "Scène",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "À deux, improvisez sur un thème : l’un parle librement, l’autre n’utilise que « Oui », « d’accord », « on », « y », « va ». Le partenaire rebondit sur ses réactions.",
@@ -801,6 +821,7 @@
       "objectif_pedagogique": "Construction",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En demi-cercle, inventez une histoire collective : les répliques commencent successivement par A, B, C, etc. Le public peut choisir la lettre de départ ; l’animateur peut interdire certains types de mots.",
@@ -841,6 +862,7 @@
       "objectif_pedagogique": "Scène",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Deux binômes jouent en alternance. Quand l’un reprend la dernière réplique de l’autre, celui-ci se fige jusqu’à pouvoir voler à son tour une réplique. Intégrez-la naturellement.",
@@ -879,6 +901,7 @@
       "objectif_pedagogique": "Scène",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "À deux, jouez une scène : un comédien ouvre un livre à une page au hasard et choisit les phrases à lire ; l’autre les intègre. Gardez un dialogue fluide, sans longues recherches.",
@@ -919,6 +942,7 @@
       "objectif_pedagogique": "Cohésion",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Rangez-vous par ordre alphabétique selon la caractéristique annoncée (prénom, métier…). Les réponses peuvent être inventées ; ajustez-vous jusqu’à obtenir un ordre alphabétique cohérent.",
@@ -958,6 +982,7 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Avec tout le groupe : deux joueurs lèvent la main et, après un compte à trois, disent un mot ensemble. Deux autres lèvent la main et proposent un mot lié aux deux précédents ; continuez jusqu’au même mot, puis criez « convergence ! »",
@@ -1002,6 +1027,7 @@
       "objectif_pedagogique": "Construction",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "À deux, inventez une anecdote. Le premier raconte puis questionne ; le second invente une réponse, que le premier accepte et intègre avant de relancer avec une autre question.",
@@ -1042,6 +1068,7 @@
       "objectif_pedagogique": "Scène",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Deux binômes jouent : dans chacun, un comédien mime sans parler et son doubleur improvise ses paroles. Les deux personnages interagissent dans la même scène.",
@@ -1076,12 +1103,13 @@
       "texte_original": "Traducteur interviewé journaliste : l’interviewé parle en langue imaginaire le traducteur traduit au journaliste, le journaliste pose une question au traducteur qui traduit etc… (astuce possibilité pour le traducteur de dire le contraire)",
       "regle_clarifiee": "Trois rôles sont répartis entre les participants : l’interviewé, le traducteur et le journaliste. L’interviewé commence par se présenter dans une langue imaginaire. Le traducteur traduit ses propos au journaliste. Le journaliste pose ensuite une question au traducteur, qui la transmet à l’interviewé. Celui-ci répond dans sa langue imaginaire et le traducteur rend sa réponse compréhensible au journaliste. On commence par l’interviewé qui se présente dans sa langue. Variante : le traducteur peut volontairement dire le contraire de ce que l’interviewé a exprimé.",
       "statut": "validée par le coach",
-      "eligible_generateur": false,
+      "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "À trois : l’interviewé commence par se présenter dans une langue imaginaire ; le traducteur transmet ses propos et les questions du journaliste, puis traduit les réponses. Variante : le traducteur peut volontairement dire le contraire.",
@@ -1116,6 +1144,7 @@
       "objectif_pedagogique": "Émotions",
       "niveau": "★★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Divisez l’espace en quatre zones, chacune liée à une émotion. Pendant la scène, adoptez l’émotion de chaque zone dès que vous y entrez, sans interrompre l’histoire.",
@@ -1156,6 +1185,7 @@
       "objectif_pedagogique": "Construction",
       "niveau": "★★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Quatre joueurs forment un carré dans un même lieu (village, club sportif…) et jouent deux histoires, une avec chaque voisin ; le public choisit les rôles. Le binôme de devant joue ; au signal du MC, tous tournent d’un quart et l’autre histoire reprend.",
@@ -1196,6 +1226,7 @@
       "objectif_pedagogique": "Imaginaire",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "L’animateur présente une personne fictive avec 2–3 infos. Chacun laisse un message sur son répondeur, révélant une relation, un événement ou un aspect de sa vie.",
@@ -1239,6 +1270,7 @@
       "objectif_pedagogique": "Scène",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Un joueur incarne un personnage défini par 2–3 traits. Les autres viennent à tour de rôle pour un entretien très court, amoureux ou professionnel, avec des personnages différents ; il dit « Next ! » pour passer au suivant.",
@@ -1282,6 +1314,7 @@
       "objectif_pedagogique": "Émotions",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, transmettez le Saint Graal avec une émotion à 10 %. Le receveur et les voisins amplifient l’émotion ; le détenteur transmet ensuite le Graal à quelqu’un d’autre.",
@@ -1321,6 +1354,7 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "★★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, chacun incarne une carte dans une hiérarchie. Gardez le rythme : deux frappes sur les cuisses, puis deux dans les mains. Annoncez votre carte sur les cuisses, puis appelez celle d’un autre dans les mains ; l’appelé enchaîne. En cas d’erreur, le joueur descend au dernier rang et la hiérarchie est réajustée.",
@@ -1359,6 +1393,7 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Quatre comédiens jouent deux personnages en binômes : dans l’un, ils disent un mot chacun à tour de rôle ; dans l’autre, ils prononcent exactement les mêmes mots ensemble.",
@@ -1399,6 +1434,7 @@
       "objectif_pedagogique": "Imaginaire",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Le public choisit un produit. Quatre publicitaires assis inventent sa publicité à tour de rôle : chacun ajoute une idée en commençant par « Ah ouais, et ensuite… ». À chaque proposition, l’enthousiasme du groupe augmente pendant cinq ou six ajouts, jusqu’à l’explosion de joie finale. Poussez alors les chaises et jouez immédiatement la publicité créée.",
@@ -1444,6 +1480,7 @@
       "objectif_pedagogique": "Corps",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Répétez distinctement les phrases difficiles proposées par l’animateur, puis essayez de les accélérer sans perdre l’articulation.",
@@ -1486,6 +1523,7 @@
       "objectif_pedagogique": "Lâcher-prise",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Lance « Donne-moi une liste de cinq… » avec un thème. La personne donne cinq réponses, pendant que le groupe compte de 1 à 5 entre elles. Scandez « Et ça fait cinq ! », puis elle lance une nouvelle liste.",
@@ -1525,6 +1563,7 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Comptez ensemble de 1 à 20 sans ordre de parole fixé. Chaque nombre ne doit être dit qu’une fois ; si deux joueurs parlent en même temps, recommencez à 1.",
@@ -1563,6 +1602,7 @@
       "objectif_pedagogique": "Corps",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Un joueur entre et répète un mouvement avec un son. Les autres rejoignent la machine humaine un par un, chacun ajoutant un mouvement et un bruit qui complètent l’ensemble.",
@@ -1604,6 +1644,7 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Chacun propose un mot lié uniquement au précédent. À la fin, remontez la chaîne et expliquez chaque lien (« J’ai dit ceci parce que tu as dit cela ») jusqu’au mot de départ.",
@@ -1644,6 +1685,7 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, deux voisins se regardent et frappent ensemble dans leurs mains ; le second se retourne et transmet au suivant. Un joueur bloqué ne peut applaudir : libérez-le par un échange de regards et de places. Si le clap l’atteint avant, le groupe perd.",
@@ -1683,6 +1725,7 @@
       "objectif_pedagogique": "Émotions",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Quatre joueurs : trois partagent le même type de personnage ; le premier demande au quatrième « Qu’est-ce qui se passe ? » et reçoit une information banale. L’émotion passe de 30 % à 60 %, puis à 100 % à l’arrivée des suivants.",
@@ -1724,6 +1767,7 @@
       "objectif_pedagogique": "Émotions",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Quatre chaises forment un taxi. Le chauffeur choisit une émotion et commence à jouer au volant ; les passagers montent un à un, chacun avec sa propre émotion et une justification. À chaque arrivée, tous adoptent l’émotion du nouvel arrivant. Une fois le taxi plein, les passagers descendent dans l’ordre inverse ; les joueurs restants reprennent l’émotion du dernier passager jusqu’au chauffeur seul.",
@@ -1768,6 +1812,7 @@
       "objectif_pedagogique": "Émotions",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En deux colonnes, A annonce une action, B nomme une émotion, A en donne la raison et B l’accepte puis la développe. Changez ensuite de partenaire.",
@@ -1808,6 +1853,7 @@
       "objectif_pedagogique": "Construction",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "À deux, définissez vite qui vous êtes, ce que vous faites et où vous êtes. Chaque réplique apporte ces infos ; posez la base en deux échanges si possible.",
@@ -1847,6 +1893,7 @@
       "objectif_pedagogique": "Corps",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "À deux, trois ou quatre, mimez une action physique commune tout en discutant d’un sujet sans rapport. L’action doit rester visible et crédible pendant que la conversation avance.",
@@ -1886,6 +1933,7 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, « A » (une main sur la tête, l’autre indique une direction) désigne le suivant ; « SO » (main sur le torse) indique la direction suivante ; « CA » lance le signal vers un joueur choisi, qui reprend à « A ».",
@@ -1929,6 +1977,7 @@
       "objectif_pedagogique": "Cohésion",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "léger",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Formez deux files face à face, les joueurs de chaque équipe se tenant la main. Seuls les premiers gardent les yeux ouverts. L’animateur lance une pièce : sur « face », restez immobiles ; sur « pile », transmettez une pression de main jusqu’au dernier, qui lève le bras. L’équipe la plus rapide avance d’une place, une équipe fautive recule ; continuez jusqu’au retour du dernier à la première place.",
@@ -1971,6 +2020,7 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Trois comédiens jouent : l’un regarde le fond, l’autre le public, le troisième le comédien qui regarde le public. Si un regard change, les autres s’ajustent sans changer de rôle.",
@@ -2010,6 +2060,7 @@
       "objectif_pedagogique": "Cohésion",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Au « Stop ! », prenez une position : assis, debout ou penché. Sans parler, répartissez-vous le plus également possible ; si l’équilibre est atteint, vous gagnez.",
@@ -2049,6 +2100,7 @@
       "objectif_pedagogique": "Scène",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Deux jouent, deux attendent : gardez deux joueurs en scène. Une entrée remplace un comédien ; une sortie fait entrer un joueur en attente. Si deux entrent, les deux sortent.",
@@ -2092,6 +2144,7 @@
       "objectif_pedagogique": "Scène",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Deux comédiens jouent dans un lieu de passage. Les autres entrent brièvement pour apporter une information ou rebondir, puis ressortent ; les deux personnages poursuivent la scène.",
@@ -2135,6 +2188,7 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, tous lèvent un bras. Un joueur en pointe un autre ; celui-ci désigne quelqu’un qui a encore le bras levé, puis baisse le sien, jusqu’à ce que tous soient dans la chaîne. Chacun regarde ensuite uniquement la personne qu’il a désignée et reproduit exactement ses mouvements : d’abord en essayant de ne pas bouger, puis en amplifiant au second tour.",
@@ -2174,6 +2228,7 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Regardez collectivement une personne pendant dix secondes. Elle en choisit une autre par le regard ; tout le groupe déplace son attention, et la nouvelle personne regarde uniquement celle qui l’a choisie. Continuez de personne en personne.",
@@ -2216,6 +2271,7 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "★★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Marchez puis arrêtez-vous au signal. Sur un thème (ville, émotions…), un joueur adresse un mot à un autre, qui en transmet un à son tour, jusqu’à former une chaîne. Répétez-la ; quand elle fonctionne, ajoutez une seconde chaîne.",
@@ -2257,6 +2313,7 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En ligne, les deux joueurs du milieu avancent dos à dos. Au mot annoncé, ils se retournent et improvisent une dizaine de secondes, jusqu’à l’arrêt du MC ; puis ils rejoignent les extrémités et les suivants jouent sur un nouveau mot.",
@@ -2295,12 +2352,13 @@
       "texte_original": "Les chaînes de télé",
       "regle_clarifiee": "Plusieurs binômes représentent chacun une chaîne de télévision. L’animateur joue le rôle de la télécommande et passe d’une chaîne à l’autre. Seul le binôme de la chaîne sélectionnée joue. Lorsqu’on revient sur une chaîne, celle-ci peut reprendre son émission précédente ou en proposer une nouvelle. Le public choisit le thème des chaînes (sportif, culinaire, info…).",
       "statut": "validée par le coach",
-      "eligible_generateur": false,
+      "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Chaque binôme joue une chaîne TV dont le public choisit le thème. L’animateur change de chaîne : seul le binôme sélectionné joue ; au retour, il reprend ou renouvelle son émission.",
@@ -2344,6 +2402,7 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En binôme, comptez jusqu’à trois puis faites simultanément un geste en disant sa réplique : « Je mange » (se désigner), « Tu manges » (pointer l’autre), « Caca » (losange avec les mains) ou « Homard » (pinces en l’air). Certaines combinaisons s’annulent, d’autres fonctionnent (« Tu manges du caca ») ; recommencez.",
@@ -2383,6 +2442,7 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Le MC annonce une catégorie et pointe les joueurs, qui répondent vite sans répéter une réponse. Une longue hésitation ou un doublon élimine ; continuez jusqu’au dernier joueur.",
@@ -2425,6 +2485,7 @@
       "objectif_pedagogique": "Corps",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Un joueur propose un mouvement. Reproduisez-le en avançant puis en reculant et déformez-le progressivement, jusqu’à faire émerger un mot, un verbe ou une phrase.",
@@ -2464,6 +2525,7 @@
       "objectif_pedagogique": "Corps",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, un joueur lève les bras en disant « I » ; ses voisins miment un découpage vers lui en disant « A ». Le joueur central baisse les bras, désigne quelqu’un et dit « O » ; la personne appelée relance avec « I ». Une fois le rythme maîtrisé, les erreurs éliminent ; les joueurs éliminés croisent les bras et les voisins actifs changent.",
@@ -2503,6 +2565,7 @@
       "objectif_pedagogique": "Construction",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Trois comédiens composent des images figées. Un ou deux présentateurs les racontent devant le public et improvisent une histoire cohérente à partir des poses.",
@@ -2546,6 +2609,7 @@
       "objectif_pedagogique": "Construction",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En ligne ou assis dans un ordre, créez une histoire en ajoutant environ trois mots chacun. Le MC donne le thème et peut éliminer ceux qui tardent ou ne font pas avancer le récit.",
@@ -2586,6 +2650,7 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "À deux, face à face et les yeux dans les yeux, dites « Un, deux, trois », frappez dans vos mains et montrez une direction. Si elles diffèrent, recommencez ; si elles concordent, tapez dans vos mains, dans celles du partenaire, puis reprenez le motif.",
@@ -2625,6 +2690,7 @@
       "objectif_pedagogique": "Scène",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Formez des groupes de 1 à 4, chacun dans un appartement. Jouez chez vous, dans la cage d’escalier ou en visitant et contactant les autres appartements ; croisez les histoires.",
@@ -2666,6 +2732,7 @@
       "objectif_pedagogique": "Construction",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Un joueur prend une pose. Un autre enrichit son personnage : nom, métier, sentiments, famille, habitudes, vêtements, démarche et voix ; le joueur chargé écoute et réagit éventuellement en mime. L’animateur peut proposer des amorces (« Tu t’appelles… », « Tu travailles comme… ») pour aider, sans imposer de répliques.",
@@ -2708,6 +2775,7 @@
       "objectif_pedagogique": "Construction",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "À deux, racontez une histoire. À chaque hésitation, l’autre dit « Tout à fait, Jean-Pierre ! », reprend la fin de la phrase et continue ; les rôles peuvent s’inverser.",
@@ -2744,12 +2812,13 @@
       "texte_original": "Technique pour faire une transition de scène sans roulettes : arriver sur un espace scénique différent (horizontal ou vertical) et commence une scène en ignorant totalement les autres personnages qui doivent comprendre la transition et quitter la scène. Astuce pour rendre la transition sûre, arriver en parlant avec un perso qui n’est pas encore la (un comédien devra alors venir avec le premier)",
       "regle_clarifiee": "Entraînement technique à la transition de scène sans roulettes, plutôt qu'un exercice autonome. Pendant qu'une scène se joue, un nouveau comédien entre dans un espace scénique différent, horizontalement ou verticalement, et commence une nouvelle scène en ignorant totalement les personnages présents. Ceux-ci comprennent le changement et quittent la scène. Pour sécuriser la transition, le nouvel arrivant peut s'adresser à un personnage encore absent : un autre comédien entre alors pour jouer ce personnage.",
       "statut": "validée par le coach",
-      "eligible_generateur": false,
+      "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
       "niveau": "★★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Pendant une scène, un comédien entre dans un autre espace et commence une nouvelle scène sans tenir compte des personnages présents. Ceux-ci comprennent le changement et sortent. Si le nouvel arrivant s’adresse à un personnage absent, un autre comédien entre pour l’incarner.",
@@ -2790,6 +2859,7 @@
       "objectif_pedagogique": "Corps",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Un joueur mime une action. Un autre le rejoint et demande « Tu fais quoi ? » ; le premier répond par une action totalement à côté, que le nouveau se met à mimer. Un troisième arrive, pose la question, et la chaîne continue.",
@@ -2830,6 +2900,7 @@
       "objectif_pedagogique": "Scène",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "À deux, improvisez deux minutes à partir des phrases proposées. Elles sont facultatives et peuvent être utilisées dans n’importe quel ordre si elles font avancer la scène.",
@@ -2869,6 +2940,7 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En marchant naturellement, pointez un élément de la salle et nommez-le. Au deuxième tour, pointez un élément mais nommez celui qui avait été montré juste avant.",
@@ -2910,6 +2982,7 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, transmettez l’énergie d’un beau geste avec « Iya », dans le même sens. « Je bloque » (bras en croix) inverse le sens ; « Ayi » fait sauter un joueur ; « Je laisse » dépose l’énergie au centre et « Je prends » la récupère, éventuellement à plusieurs. En avancé, « Premier étage » fait ajouter un mot chacun ; « Deuxième étage », une phrase chacun.",
@@ -2950,6 +3023,7 @@
       "objectif_pedagogique": "Corps",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Quatre personnes sortent. L’animateur donne un thème au groupe restant. Chaque personne appelée observe un mime silencieux de 30 secondes lié au thème, puis le reproduit au participant suivant, jusqu’au quatrième. Le dernier explique son mime en le faisant ; enfin, le premier mimeur revient et explique le mime initial en le refaisant.",
@@ -2993,6 +3067,7 @@
       "objectif_pedagogique": "Construction",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "léger",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Deux joueurs improvisent sur un thème ; deux ou trois « machines à mots » se placent aux extrémités de la scène. En touchant l’épaule de l’une d’elles, un comédien reçoit un mot qu’il doit intégrer naturellement à sa réplique. Il peut ajouter un déterminant ou un adverbe, mais le mot imposé doit rester identifiable. Continuez sans casser le rythme.",
@@ -3037,6 +3112,7 @@
       "objectif_pedagogique": "Imaginaire",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "À deux, A offre un cadeau imaginaire ; B le nomme et remercie, puis inversez. Ajoutez ensuite un détail physique au cadeau et expliquez pourquoi il convient au personnage.",
@@ -3074,12 +3150,13 @@
       "texte_original": "Mime par équipe pour commencer : des expressions ou autre",
       "regle_clarifiee": "Les joueurs sont répartis en équipes. À tour de rôle, un joueur pioche un papier préparé par l’animateur, sur lequel figure une chose à faire deviner (par exemple un film très connu, une expression française ou une action), puis la mime pour que sa propre équipe trouve la réponse.",
       "statut": "validée par le coach",
-      "eligible_generateur": false,
+      "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "À tour de rôle, piochez un papier (film, expression, action…) et mimez-le pour que votre équipe devine.",
@@ -3123,6 +3200,7 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Créez une chaîne de pointage et de mots liés, puis rejouez-la avec le regard seul. Créez une deuxième chaîne et suivez les deux ensemble ; ajoutez-en une troisième si possible.",
@@ -3165,6 +3243,7 @@
       "objectif_pedagogique": "Imaginaire",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Trois joueurs regardent un album de cinq photos cohérentes et déroulent leur impro en les décrivant : ils inventent prénoms, habitudes, relations et détails, puis relient les photos en une histoire commune.",
@@ -3199,12 +3278,13 @@
       "texte_original": "Exercice lettre a écrire à deux",
       "regle_clarifiee": "Deux joueurs improvisent une correspondance écrite. A écrit une lettre à B, qui la lit en silence pendant qu’il la reçoit. Puis B écrit sa réponse pendant que A la lit. Les deux joueurs poursuivent ainsi leur échange et font évoluer leur histoire uniquement par leurs lettres.",
       "statut": "validée par le coach",
-      "eligible_generateur": false,
+      "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Construction",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "À deux, échangez uniquement par lettres écrites : A écrit à B, B lit en silence puis répond pendant qu’A lit. Faites évoluer l’histoire au fil de la correspondance.",
@@ -3238,12 +3318,13 @@
       "texte_original": "Exercice radio ou chaîne YouTube",
       "regle_clarifiee": "Plusieurs binômes représentent chacun une émission de radio ou une chaîne YouTube. L’animateur joue le rôle de la télécommande et passe d’une émission à l’autre. Seul le binôme sélectionné joue. Lorsqu’il revient sur une émission, le binôme peut reprendre son émission précédente ou en proposer une nouvelle.",
       "statut": "validée par le coach",
-      "eligible_generateur": false,
+      "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Chaque binôme joue une émission radio ou YouTube. L’animateur change d’émission : seul le binôme choisi joue, et peut reprendre ou renouveler son contenu au retour.",
@@ -3285,6 +3366,7 @@
       "objectif_pedagogique": "Corps",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Tout le monde marche. À l’annonce d’un nombre, faites arrêter exactement ce nombre de joueurs ; puis inversez : tout le monde s’arrête et le nombre annoncé marche.",
@@ -3327,6 +3409,7 @@
       "objectif_pedagogique": "Construction",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Un joueur raconte une histoire ; trois autres l’écoutent derrière lui. À la moindre hésitation, l’un d’eux prend immédiatement le relais et poursuit le récit.",
@@ -3366,6 +3449,7 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, un premier binôme se regarde et fait en même temps un geste avec un son inventé. L’un des deux se retourne et fait de même avec son voisin ; continuez jusqu’au tour complet. Au deuxième tour, répétez deux fois, puis accélérez.",
@@ -3406,6 +3490,7 @@
       "objectif_pedagogique": "Imaginaire",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "À deux, mimez une activité. Demandez « Tu peux me passer le, leeeee… ? » ; l’autre nomme puis mime un objet, même sans rapport. Expliquez pourquoi vous en avez besoin, puis inversez les rôles.",
@@ -3446,6 +3531,7 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "★★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Un joueur sort ; le groupe choisit une action à deviner (par exemple se mettre debout à un endroit précis en levant les mains). À son retour, il essaie différentes actions ; le public applaudit plus fort à mesure qu’il approche de la bonne réponse.",
@@ -3480,12 +3566,13 @@
       "texte_original": "Un personnage à deux comédiens: la parole et les mains, ou l’un double la voix de l’autre ou alors l’un reproduit les actions de l’autre",
       "regle_clarifiee": "À « deux » personnages. Trois comédiens incarnent ensemble un seul personnage : le premier joue le personnage et réalise ses actions ; le deuxième double sa voix en se tenant légèrement en retrait de la scène ; le troisième joue les mains du personnage. Les trois comédiens doivent se coordonner pour donner l’impression d’un personnage unique. Le quatrième joue le second personnage, qui est libre pour l’impro. Autre possibilité : le quatrième comédien fait des actions que le premier personnage doit reproduire.",
       "statut": "validée par le coach",
-      "eligible_generateur": false,
+      "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Scène",
       "niveau": "★★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Deux personnages, quatre comédiens. Trois jouent ensemble le premier : l’un agit, l’autre lui prête sa voix et le troisième joue ses mains. Le quatrième joue librement le second personnage. Coordonnez-vous pour que le premier paraisse unique.",
@@ -3514,12 +3601,13 @@
       "texte_original": "Débat mimé",
       "regle_clarifiee": "Deux joueurs débattent d’un sujet absurde. Sur les côtés, deux équipes de deux mimeurs miment des mots choisis par le public. Les débatteurs doivent placer trois de ces mots ; le public applaudit lorsqu’ils y parviennent.",
       "statut": "clarifié",
-      "eligible_generateur": false,
+      "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Corps",
       "niveau": "★★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée",
       "conseils_animation": {
         "consigne_courte": "Deux joueurs débattent d’un sujet absurde tandis que deux équipes miment des mots du public. Les débatteurs doivent en placer trois ; le public applaudit quand ils y arrivent.",
@@ -3554,12 +3642,13 @@
       "texte_original": "Maison créature inondations",
       "regle_clarifiee": "Jeu à jouer à un nombre de joueurs qui n’est pas un multiple de 3. Les joueurs forment des groupes : deux personnes constituent une maison et se tiennent face à face, bras tendus, en joignant les paumes ; la créature se place sous leurs bras. À « Maison », les maisons changent de place. À « Créature », toutes les créatures changent de maison. À « Inondations », les maisons se défont et les joueurs reforment des groupes. Les joueurs libres profitent d’un changement pour entrer simplement dans un groupe.",
       "statut": "validée par le coach",
-      "eligible_generateur": false,
+      "eligible_generateur": true,
       "duree_minutes": 8,
       "origine": "notes_personnelles",
       "objectif_pedagogique": "Énergie",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "léger",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Jouez à un nombre non multiple de 3. Deux joueurs font la maison, paumes jointes ; une créature se place dessous. « Maison » : maisons changent ; « Créature » : créatures changent de maison ; « Inondations » : reformez les groupes.",
@@ -3603,6 +3692,7 @@
       "objectif_pedagogique": "Imaginaire",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En ligne, jusqu’à six joueurs reçoivent chacun un mot inconnu différent et en improvisent la définition, comme des experts du dictionnaire.",
@@ -3642,6 +3732,7 @@
       "objectif_pedagogique": "Construction",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, créez une histoire avec les amorces « Il était une fois », « Tous les jours », « Mais un jour », « À cause de ça », « Grâce à ça », puis « Depuis ce jour ». Vous pouvez finir par une morale.",
@@ -3681,6 +3772,7 @@
       "objectif_pedagogique": "Corps",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "À deux, l’un mime une action, l’autre annonce ce qu’il croit voir (« Ah, c’est cool, tu… »). Le mimeur valide et développe ; son partenaire poursuit jusqu’au signal d’arrêt.",
@@ -3720,6 +3812,7 @@
       "objectif_pedagogique": "Scène",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En binôme, construisez la situation dans cet ordre : A dit qui il est ; B précise qui il est pour A ; A indique où ils sont ; B indique quand ; chacun dit ensuite ce qu’il fait. Improvisez à partir de ces éléments et réintégrez-les dans la scène. Variante : créez le plus de plates-formes possible en un temps limité.",
@@ -3759,6 +3852,7 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "léger",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Faites circuler l’énergie en comptant de 1 à 7, puis de 7 à 1, par une tape sur l’épaule gauche ou droite. Au 2, regardez-vous ; au 4, utilisez les pieds ; au 7, mettez-vous bras dessus bras dessous : la personne dont le bras est au-dessus choisit la direction. Les gestes des autres nombres restent à préciser dans la fiche.",
@@ -3798,6 +3892,7 @@
       "objectif_pedagogique": "Construction",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En binôme, construisez ensemble un lieu imaginaire comme un cube à six faces. Le premier partenaire décrit une face ; le second reprend ce qui a été dit et ajoute une nouvelle face. Alternez en conservant les détails précédents jusqu’à décrire les six faces.",
@@ -3837,6 +3932,7 @@
       "objectif_pedagogique": "Construction",
       "niveau": "★★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Deux comédiens improvisent en binôme. A propose une relation entre les personnages, que B vient colorer. A propose ensuite une routine, puis B apporte un souvenir. Colorer une relation signifie lui donner une texture, une histoire et une dynamique émotionnelle.",
@@ -3887,6 +3983,7 @@
       "objectif_pedagogique": "Scène",
       "niveau": "★★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Le MC choisit le domaine avec l’aide du public. Jouez un expert qui le présente : tout ce que vous dites est vrai. Le MC vous impose des contraintes ou des imprévus à intégrer à votre présentation.",
@@ -3938,6 +4035,7 @@
       "objectif_pedagogique": "Construction",
       "niveau": "★★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, construisez ensemble la description d’un lieu imaginaire, un mot à la fois. Chaque proposition enrichit un élément déjà cité ou en ajoute un nouveau.",
@@ -3988,6 +4086,7 @@
       "objectif_pedagogique": "Écoute",
       "niveau": "★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée avec le coach",
       "conseils_animation": {
         "consigne_courte": "Faites un tour de prénoms, puis un tour où chacun dit le prénom de son voisin de droite. Ensuite, annonce le prénom d’un joueur et prends sa place ; le joueur appelé poursuit le jeu.",
@@ -4041,6 +4140,7 @@
       "objectif_pedagogique": "Corps",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée et validée par le coach",
       "conseils_animation": {
         "consigne_courte": "En cercle, chacun fait un mouvement du bras et claque des doigts en disant un mot lié au précédent seulement. Si un joueur bloque, son tour est sauté et le jeu continue.",
@@ -4091,6 +4191,7 @@
       "objectif_pedagogique": "Scène",
       "niveau": "★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée et validée par le coach",
       "conseils_animation": {
         "consigne_courte": "Deux joueurs improvisent. Au clap, ils figent leur posture ; le MC fait entrer un joueur qui remplace l’un d’eux en reprenant exactement sa position, puis ils lancent une nouvelle improvisation. Variante : conserver la même scène et le même personnage. Des postures marquées facilitent les remplacements.",
@@ -4147,6 +4248,7 @@
       "objectif_pedagogique": "Scène",
       "niveau": "★★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée et validée par le coach",
       "conseils_animation": {
         "consigne_courte": "Deux joueurs improvisent. Au clap, ils figent ; un entrant remplace l’un d’eux en reprenant sa position et reçoit une contrainte : répéter la dernière phrase, parler avec un seul mot, jouer en silence, rimer ou s’accroupir en le justifiant. L’animateur peut la retirer, en ajouter une deuxième ou en inventer (questions seulement, mot interdit ou imposé, émotion changeante). Faites passer tous les joueurs.",
@@ -4203,6 +4305,7 @@
       "objectif_pedagogique": "Énergie",
       "niveau": "★★★",
       "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
       "qualite_fiche": "clarifiée et validée par le coach",
       "conseils_animation": {
         "consigne_courte": "Un comédien parle sans s’arrêter pendant une durée fixée (30 secondes par exemple), sur un thème que le MC peut choisir ; chaque « euh » est répété par le public.",
@@ -4253,6 +4356,7 @@
       "objectif_pedagogique": "Corps",
       "niveau": "★★★",
       "effectif_conseille": "2 joueurs",
+      "contact_physique": "aucun",
       "qualite_fiche": "création originale structurée au format IMPRO LAB",
       "conseils_animation": {
         "consigne_courte": "À deux, entrez dans un lieu imaginaire. Pendant 30 secondes, ne parlez pas : faites comprendre le lieu et votre relation par les regards, les gestes et les actions. Ensuite, vous pouvez parler en vous appuyant sur ce qui a déjà été joué.",
@@ -4292,6 +4396,7 @@
       "objectif_pedagogique": "Cohésion",
       "niveau": "★★★",
       "effectif_conseille": "4–8 joueurs",
+      "contact_physique": "aucun",
       "qualite_fiche": "création originale structurée au format IMPRO LAB",
       "conseils_animation": {
         "consigne_courte": "Deux joueurs improvisent. Les autres observent puis peuvent entrer à tour de rôle pour apporter un personnage, un objet ou une conséquence qui aide la scène à avancer. Soutenez l’histoire déjà commencée au lieu de la remplacer.",
