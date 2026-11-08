@@ -102,3 +102,20 @@ Branche `amelioration/lots-1-2-3` depuis `origin/main` (dd0a951). Demande d’Al
 
 - Tests ajoutés : `tests/lots-1-2-3.spec.cjs` (8 tests) et `tests/tutorial-persistence.spec.cjs` (repris de la proposition).
 - Google Sheet de revue des catégories et des filtres : voir D27.
+
+## Lot du 2026-11-08 : phase autonome (D28 et suivantes)
+Branche `amelioration/phase-autonome-nov` depuis `amelioration/lots-1-2-3` (844dbd6). Demande d’Alexis, absent : « fais-en un max », réponses données avant le départ.
+
+| Étape | Objet | État |
+|---|---|---|
+| 1 | Tirage de l’Accueil repliable | fait |
+| 2 | Échauffement : ↺ garde le jeu, 🔄 tire un autre jeu (fin du retour sur « Impro libre ») | fait |
+| 3 | Exercice aléatoire joué seul en Régie, séance intacte | fait |
+| 4 | Fiche élève sur une page A4, deux encadrés par ligne, objectif et fil conducteur | fait, vérifié en PDF (1 page de 3 à 16 exercices) |
+| 5 | « 📝 Mes notes » sur chaque exercice | fait |
+| 6 | Mode soirée : titre, consigne et explication complète sous le chrono | fait |
+
+- Étapes 1 à 6 : `check.cjs` OK, `integrity.cjs` OK (105 fiches), Playwright 113/113 en iPhone-Chromium et 113/113 en iPhone-WebKit (226 au total).
+| 7 | Fiches animateur refaites d’après la revue des fiches (53 fiches, 3 titres renommés), D29 | fait : `check.cjs` OK, intégrité régénérée (160 écarts attendus), Playwright 114/114 Chromium et 114/114 WebKit |
+| 8 | Revue des catégories : tous les jeux dans le générateur, contact physique et son filtre (D30) | fait : Playwright 115/115 Chromium et 115/115 WebKit |
+| 9 | Finitions : audit iPhone SE et 13, cible « Mes notes » 44 px, bandeau sous le chrono au thème clair (D31) | fait : `check.cjs` OK, `integrity.cjs` OK, Playwright 115/115 Chromium et 115/115 WebKit (230) |
