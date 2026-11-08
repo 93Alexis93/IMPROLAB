@@ -118,3 +118,4 @@ Branche `amelioration/phase-autonome-nov` depuis `amelioration/lots-1-2-3` (844d
 - Étapes 1 à 6 : `check.cjs` OK, `integrity.cjs` OK (105 fiches), Playwright 113/113 en iPhone-Chromium et 113/113 en iPhone-WebKit (226 au total).
 | 7 | Fiches animateur refaites d’après la revue des fiches (53 fiches, 3 titres renommés), D29 | fait : `check.cjs` OK, intégrité régénérée (160 écarts attendus), Playwright 114/114 Chromium et 114/114 WebKit |
 | 8 | Revue des catégories : tous les jeux dans le générateur, contact physique et son filtre (D30) | fait : Playwright 115/115 Chromium et 115/115 WebKit |
+| 9 | Finitions : audit iPhone SE et 13, cible « Mes notes » 44 px, bandeau sous le chrono au thème clair (D31) | fait : `check.cjs` OK, `integrity.cjs` OK, Playwright 115/115 Chromium et 115/115 WebKit (230) |

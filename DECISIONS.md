@@ -232,3 +232,8 @@ Demande d’Alexis (8 novembre 2026, réponses aux questions préalables) ; bran
 - **Contact physique** : nouveau champ `contact_physique` (« aucun » ou « léger » ; aucun « fort »), placé après `effectif_conseille`. Contact léger : 1-5, 1-15, 1-49, 2-11, 2-26, 2-31. Bibliothèque : filtre « Contact » (Tous, Sans contact, Contact léger) et pastille « 🤝 Contact léger » sur la fiche. Le générateur ne filtre pas encore sur ce champ (pas de décision d’Alexis).
 - **Non reporté, en attente d’Alexis** : catégories principales et secondaires et usages (aucune case changée par rapport aux valeurs d’origine) ; onglet Catégories (colonnes Décision, Nouveau nom, Commentaire vides : rien n’est fusionné ni renommé) ; colonnes proposées (format de jeu, moment de la séance, élève animateur possible, durée réelle, effectif min) restées vides. Les filtres élimination, jeu engagé et compétition annoncés en D27 ne figurent pas dans cette version de la feuille.
 - Intégrité : 117 écarts (12 `eligible_generateur`, 105 ajouts `contact_physique`), référence régénérée. Cache : `library.json?v=20261108-categories-contact`, service worker `v53-categories-contact`. Scripts de report conservés dans `tools/`.
+
+### D31. Finitions après audit iPhone SE et iPhone 13 (WebKit)
+- Audit des écrans touchés (tirage de l’Accueil, Régie en mode soirée, échauffement en plein écran, bibliothèque avec « Mes notes » ouvert) : aucun débordement horizontal, aucune erreur JavaScript.
+- Corrigé : l’en-tête « 📝 Mes notes » de la bibliothèque mesurait 22 px de haut → 44 px.
+- Corrigé : le bandeau sous le chrono était sombre alors que la Régie est en thème clair ; il reprend les couleurs des autres panneaux (fond papier, texte encre, titre en Georgia). `styles.css?v=9`.

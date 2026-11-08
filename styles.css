@@ -744,14 +744,15 @@ body #live .stage-view .stage-feedback{margin-top:10px}
 #termReport button{min-height:44px}
 
 /* Jeu joué seul en Régie : titre, consigne et explication sous le chrono */
-#liveUnderClock{margin:6px 0 10px;padding:10px 12px;border:1px solid #626c90;border-radius:12px;background:#202745}
-#liveUnderClock .under-clock-title{margin:0 0 4px;font-size:20px;font-weight:800;color:#f7f1e7}
-#liveUnderClock .under-clock-consigne{margin:0 0 8px;font-size:17px;line-height:1.45;color:#f7f1e7}
-#liveUnderClock details>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:750;color:#ffd16d}
-#liveUnderClock details p{margin:6px 0;line-height:1.45;color:#f7f1e7}
+#liveUnderClock{margin:6px 0 10px;padding:10px 12px;border:1px solid var(--line,#d2c7b8);border-radius:12px;background:var(--paper-raised,#fffdf8)!important;color:var(--ink,#25231f)!important}
+#liveUnderClock .under-clock-title{margin:0 0 4px;font:700 22px/1.2 Georgia,"Times New Roman",serif;color:var(--ink,#25231f)!important}
+#liveUnderClock .under-clock-consigne{margin:0 0 8px;font-size:17px;line-height:1.45;color:var(--ink,#25231f)!important}
+#liveUnderClock details>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:750;color:var(--curtain,#9b303b)!important}
+#liveUnderClock details p{margin:6px 0;line-height:1.45;color:var(--ink,#25231f)!important}
 #liveUnderClock button{margin-top:6px}
 /* Mes notes : note d'origine et notes perso par fiche */
 .coach-notes textarea{display:block;width:100%;box-sizing:border-box;min-height:88px;margin-top:6px;padding:10px;font:16px/1.4 system-ui;border:1px solid var(--line,#d2c7b8);border-radius:6px;background:var(--paper-raised,#fffdf8);color:var(--ink,#25231f)}
 .coach-notes .my-note-label{display:block;font-weight:700;margin-top:8px}
 /* Contact physique (revue des catégories) */
 span.pill.contact-pill{font-weight:700}
+.coach-notes>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:700}
