@@ -1,7 +1,7 @@
 'use strict';
 
 const { test, expect } = require('@playwright/test');
-const { openApp, openSeance } = require('./helpers.cjs');
+const { openApp, openSeance, reloadApp } = require('./helpers.cjs');
 
 // Phase autonome de novembre : tirage repliable, échauffement, jeu seul en Régie, soirée, mes notes, fiche élève.
 
@@ -119,4 +119,14 @@ test('fiche élève : une seule page, objectif et fil conducteur, deux encadrés
   expect(xs.size).toBe(2);
   if (boxes.length > 1) expect(boxes[1].y).toBe(boxes[0].y);
   await page.emulateMedia({ media: 'screen' });
+});
+
+test('titres renommés : les données gardées sur l’appareil suivent le nouveau titre', async ({ page }) => {
+  await openApp(page);
+  await page.evaluate(() => localStorage.setItem('impro-test-renames', JSON.stringify(['Le zombie a dit ton nom !', 'Ah, c’est super !', 'Cinq idées, zéro seconde pour réfléchir'])));
+  await reloadApp(page);
+  const v = await page.evaluate(() => JSON.parse(localStorage.getItem('impro-test-renames') || '[]'));
+  expect(v).toEqual(['Le zombie', 'Le super mime', 'Le jeu des listes']);
+  const titles = await page.evaluate(() => ['1-5', '1-38', '2-29'].map(id => libraryPayload.exercices.find(e => e.id === id).titre));
+  expect(titles).toEqual(['Le zombie', 'Le jeu des listes', 'Le super mime']);
 });

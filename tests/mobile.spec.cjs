@@ -8,8 +8,8 @@ test.beforeEach(async ({page})=>{
 test('bibliothèque, favoris, recherche et échappement',async ({page})=>{
  await openTab(page,'Bibliothèque');
  await expect(page.locator('#games .card')).toHaveCount(libraryCount);
- await page.locator('#search').fill('Le zombie a dit ton nom');
- await expect(page.locator('#games .card').first()).toContainText('Le zombie a dit ton nom');
+ await page.locator('#search').fill('Le zombie');
+ await expect(page.locator('#games .card').first()).toContainText('Le zombie');
  await page.locator('#games .favorite').first().click();
  await page.locator('#search').fill('');
  await page.locator('#favoritesOnly').check();
