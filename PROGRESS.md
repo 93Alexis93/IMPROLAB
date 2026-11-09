@@ -119,3 +119,19 @@ Branche `amelioration/phase-autonome-nov` depuis `amelioration/lots-1-2-3` (844d
 | 7 | Fiches animateur refaites d’après la revue des fiches (53 fiches, 3 titres renommés), D29 | fait : `check.cjs` OK, intégrité régénérée (160 écarts attendus), Playwright 114/114 Chromium et 114/114 WebKit |
 | 8 | Revue des catégories : tous les jeux dans le générateur, contact physique et son filtre (D30) | fait : Playwright 115/115 Chromium et 115/115 WebKit |
 | 9 | Finitions : audit iPhone SE et 13, cible « Mes notes » 44 px, bandeau sous le chrono au thème clair (D31) | fait : `check.cjs` OK, `integrity.cjs` OK, Playwright 115/115 Chromium et 115/115 WebKit (230) |
+
+## Lot du 2026-11-09 : pistes improwiki (D32)
+Branche `amelioration/pistes-improwiki` depuis `main` (23a5a65). Accord d’Alexis pour les lots A à F.
+
+| Lot | Objet | État |
+|---|---|---|
+| A | Bouton « Suggestion du public » dans la Régie | fait |
+| B | Champ « Aussi appelé » sur 29 fiches, recherche par l’autre nom | fait ; 22 noms à vérifier par Alexis |
+| C | Listes Métier et Activité, compléments Lieu et Émotion | fait |
+| D | Tirage « Genre » avec trois repères pour 32 genres | fait |
+| E | Cinq trames de spectacle qui remplissent l’ordre de passage | fait ; découpages à ajuster |
+| F | Six principes avec lien « Pour aller plus loin » | fait ; textes à relire |
+
+- Tests ajoutés : `tests/pistes-improwiki.spec.cjs` (7 tests) ; `tests/app.spec.cjs` passe de 7 à 13 principes.
+- Résultats : `check.cjs` OK, `integrity.cjs` OK (105 fiches), Playwright 122/122 en iPhone-Chromium et 122/122 en iPhone-WebKit (244 au total) ; rendu vérifié sur capture iPhone 13 WebKit (Régie et Spectacle), sans débordement horizontal.
+- À tester sur iPhone : la lisibilité de la suggestion du public à bout de bras, et l’ouverture des liens improwiki depuis l’appli installée sur l’écran d’accueil.

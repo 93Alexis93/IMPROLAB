@@ -756,3 +756,16 @@ body #live .stage-view .stage-feedback{margin-top:10px}
 /* Contact physique (revue des catégories) */
 span.pill.contact-pill{font-weight:700}
 .coach-notes>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:700}
+
+/* Pistes improwiki (nov. 2026) : suggestion du public, repères de genre, trames, « Aussi appelé ». */
+.audience-box{margin:8px 0 12px}
+.audience-btn{width:100%;min-height:48px;font-size:15px;font-weight:700}
+.audience-result{margin-top:8px;padding:12px;border-radius:12px;background:#303a60;color:#fff;text-align:center}
+.audience-q{display:block;font-size:13px;color:#d6dcf2}
+.audience-a{display:block;font-size:26px;line-height:1.2;margin-top:4px;overflow-wrap:anywhere}
+.genre-reperes{margin:4px 0 6px;padding:8px 10px 8px 26px;border-radius:9px;background:#252d4d;color:#eef1fb;font-size:13.5px;line-height:1.4;text-align:left}
+.genre-reperes li{margin:2px 0}
+.more-link{display:inline-flex;align-items:center;min-height:44px;font-size:14px}
+.show-template-info{font-size:14px;line-height:1.45;margin:8px 0 0}
+.exercise-aliases{margin:4px 0 0;color:var(--muted,#777);font-size:.9em}
+.principle-draft{font-style:italic}

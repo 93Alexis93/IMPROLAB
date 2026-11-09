@@ -6,6 +6,9 @@
     {
       "id": "1-1",
       "titre": "Sa, Mu, Raï !",
+      "aussi_appele": [
+        "Samouraï"
+      ],
       "section": "Saison 1",
       "numero_source": 1,
       "texte_original": "Chawafu/Samurai lever les bras envoyer le Sa à quelqu’un, il lève les bras pour recevoir le sa et dit Mu, à ce moment ses deux voisins font un mouvement de sabre vers lui en disant Raï",
@@ -41,6 +44,9 @@
     {
       "id": "1-2",
       "titre": "Un, deux, trois… en mouvement",
+      "aussi_appele": [
+        "1, 2, 3 de Bradford"
+      ],
       "section": "Saison 1",
       "numero_source": 2,
       "texte_original": "1 - 2 - 3 tape dans les mains petit saut",
@@ -117,6 +123,10 @@
     {
       "id": "1-4",
       "titre": "Un mot à la fois, une histoire à la fois",
+      "aussi_appele": [
+        "Histoire mot à mot",
+        "Un mot chacun"
+      ],
       "section": "Saison 1",
       "numero_source": 4,
       "texte_original": "Un mot chacun avec rythme pour une impro sur un thème",
@@ -199,6 +209,9 @@
     {
       "id": "1-6",
       "titre": "Le compte à plusieurs",
+      "aussi_appele": [
+        "Compter jusqu’à 20"
+      ],
       "section": "Saison 1",
       "numero_source": 6,
       "texte_original": "Compter collectivement chacun si deux personnes comptent en même temps on recommence à 1",
@@ -276,6 +289,10 @@
     {
       "id": "1-8",
       "titre": "Duel au cercle",
+      "aussi_appele": [
+        "Bang !",
+        "Splat"
+      ],
       "section": "Saison 1",
       "numero_source": 8,
       "texte_original": "Cowboy dit nom on doit tirer si on est un des voisins de la personne appelé qui elle se baisse",
@@ -646,6 +663,9 @@
     {
       "id": "1-17",
       "titre": "Bonne nouvelle, mauvaise nouvelle",
+      "aussi_appele": [
+        "Heureusement, malheureusement"
+      ],
       "section": "Saison 1",
       "numero_source": 17,
       "texte_original": "Situation : on part d’une situation, lautre dit ah c’est cool on le contredit puis il dit ah c’est pas cool on le contredit encore et ainsi de suite",
@@ -810,6 +830,10 @@
     {
       "id": "1-21",
       "titre": "Abécédaire ",
+      "aussi_appele": [
+        "Scène alphabet",
+        "ABC"
+      ],
       "section": "Saison 1",
       "numero_source": 21,
       "texte_original": "Abécédaire : un participant commence par une phrase en A et chacun des participants commencent sa phrase par la lettre suivante",
@@ -971,6 +995,10 @@
     {
       "id": "1-25",
       "titre": "Convergence ",
+      "aussi_appele": [
+        "Fusion mentale",
+        "Mind Meld"
+      ],
       "section": "Saison 1",
       "numero_source": 25,
       "texte_original": "Convergence : deux personnes disent en premier j’ai , et compte ensemble un deux trois puis disent un mot simultanément. Ensuite deux autres personnes vont dire j’ai, et en se servant des deux mots précédents vont essayer de trouver le même mot. Elles comptent un deux trois puis disent le mot ensemble et ainsi de suite jusqu’à atteindre la convergence (le même mot)",
@@ -1057,6 +1085,9 @@
     {
       "id": "1-27",
       "titre": "Doublage ",
+      "aussi_appele": [
+        "Dubbing"
+      ],
       "section": "Saison 1",
       "numero_source": 27,
       "texte_original": "Doublage : deux binômes, un acteur double un autre qui ne doit donc pas parler mais ouvrir et fermer la bouche au bon moment.",
@@ -1098,6 +1129,11 @@
     {
       "id": "1-28",
       "titre": "Le traducteur incontrôlable",
+      "aussi_appele": [
+        "L’interprète",
+        "Charabia",
+        "Gromelot"
+      ],
       "section": "Saison 1",
       "numero_source": 28,
       "texte_original": "Traducteur interviewé journaliste : l’interviewé parle en langue imaginaire le traducteur traduit au journaliste, le journaliste pose une question au traducteur qui traduit etc… (astuce possibilité pour le traducteur de dire le contraire)",
@@ -1133,6 +1169,9 @@
     {
       "id": "1-29",
       "titre": "Le carré des émotions",
+      "aussi_appele": [
+        "Zones émotionnelles"
+      ],
       "section": "Saison 1",
       "numero_source": 29,
       "texte_original": "Carré d’émotions : 4 émotions sont présentes  et matérialisée par 4 zone chaque joueur doit jouer l’histoire avec l’émotion correspondant à sa zone géographique",
@@ -1174,6 +1213,9 @@
     {
       "id": "1-30",
       "titre": "Carré hollandais ",
+      "aussi_appele": [
+        "Four Square"
+      ],
       "section": "Saison 1",
       "numero_source": 30,
       "texte_original": "Carré hollandais : 4 personnes se mettent en carré et chacun va jouer avec ses deux voisins. L’histoire se déroule avec le binôme de devant, quand le mc tire le carré, les personnages font un cycle et l’histoire suivante continue. Chacun a un personnage et un lieu défini au début",
@@ -1303,6 +1345,9 @@
     {
       "id": "1-33",
       "titre": "Le Saint Graaaaal",
+      "aussi_appele": [
+        "Le Saint Graal"
+      ],
       "section": "Saison 1",
       "numero_source": 33,
       "texte_original": "Saint graal : amplification d’émotion. Les joueurs se placent en cercle, un premier joueur va vers un autre et lui dis je te donne le saint graal, avec une émotion (à 10% de l’émotion) puis la personne le prend en disant j’ai le saint graal (on augmente un peu l’émotion), les deux voisins disent alors en augmentant l’émotion : il/elle a le saint graal. Ensuite en amplifiant au max l’émotion les deux voisins des voisins disent : n’est ce pas génial d’avoir le saint graal.",
@@ -1512,6 +1557,10 @@
     {
       "id": "1-38",
       "titre": "Le jeu des listes",
+      "aussi_appele": [
+        "Cinq choses",
+        "Five Things"
+      ],
       "section": "Saison 1",
       "numero_source": 38,
       "texte_original": "Jeu des listes : une première personne dit donne moi une liste de 5 … (proverbe par exemple) la personne fait les 5 un par un et à chaque fois les autres joueurs compte jusqu’à 5 et disent et ça fait 5 choses, puis celui qui vient de lister donne une liste à qqun d’autre etc…",
@@ -1552,6 +1601,9 @@
     {
       "id": "1-39",
       "titre": "Comptage collectif",
+      "aussi_appele": [
+        "Compter jusqu’à 20"
+      ],
       "section": "Saison 1",
       "numero_source": 39,
       "texte_original": "Comptage collectif : ensemble on doit compter jusqu’à 20, chacun dit un nombre quand il veut, si deux personnes disent un nombre en même temps c’est perdu.",
@@ -1591,6 +1643,9 @@
     {
       "id": "1-40",
       "titre": "La machine humaine",
+      "aussi_appele": [
+        "La machine"
+      ],
       "section": "Saison 1",
       "numero_source": 40,
       "texte_original": "La machine humaine  : une personne arrive et fait un mouvement répétitif avec un bruit, une seconde vient compléter la machine avec un mouvement répétitif et un son et ainsi de suite jusqu’à ce que la machine soit finie",
@@ -1756,6 +1811,9 @@
     {
       "id": "1-44",
       "titre": "Le taxi des émotions",
+      "aussi_appele": [
+        "Le taxi émotionnel"
+      ],
       "section": "Saison 1",
       "numero_source": 44,
       "texte_original": "Exo d’improvisation : 4 chaises, un fait taxi les autres rentre un par un avec une émotion qu’ils vont expliquer. Au début on commence avec de la musique puis le taxi man prend une émotion, qqun rentre fait son émotion et tout le monde prend la même. Le deuxième rentre pareil, le troisième aussi. Ensuite les personnes ressortent dans l’autre sens et on garde les émotions du dernier qui reste.",
@@ -1922,6 +1980,9 @@
     {
       "id": "1-48",
       "titre": "A-SO-CA : le cercle va craquer !",
+      "aussi_appele": [
+        "Ah So Ko"
+      ],
       "section": "Saison 1",
       "numero_source": 48,
       "texte_original": "Asoca : on se met en rond, le premier dit A avec sa main sur la tête pointant vers la gauche ou la droite pour envoyer au suivant qui dit SO avec sa main sur le torse pointant vers droite ou la gauche pour envoyer la suite, puis le dernier dit CA en faisant un lancer en direction de la personne qui prendra la suite. Une fois que les participant.es maîtrisent on joue avec élimination et les élimines font le tour du rond en disant ASOCA pour déstabiliser les joueurs",
@@ -2347,6 +2408,10 @@
     {
       "id": "1-58",
       "titre": "Zappe-moi si tu peux !",
+      "aussi_appele": [
+        "Zapping",
+        "Télécommande"
+      ],
       "section": "Saison 1",
       "numero_source": 58,
       "texte_original": "Les chaînes de télé",
@@ -2554,6 +2619,9 @@
     {
       "id": "1-63",
       "titre": "Les diapositives",
+      "aussi_appele": [
+        "Le diaporama"
+      ],
       "section": "Saison 1",
       "numero_source": 63,
       "texte_original": "Diapositive : 3 comédiens qui vont jouer les diapositives (images figées) que un ou deux autres comédiens vont devoir raconter : exemple les diapositives de notre voyage à Rome, de la fete de fin d’année du club de Tennis.",
@@ -2848,6 +2916,10 @@
     {
       "id": "2-6",
       "titre": "Tu fais quoi ? Surtout pas ça !",
+      "aussi_appele": [
+        "Qu’est-ce que tu fais ?",
+        "What are you doing?"
+      ],
       "section": "Saison 2",
       "numero_source": 6,
       "texte_original": "Jeu du mime, un premier joueur mime au milieu du cercle une action (pêcher un brochet) un autre rentre au milieu se met dans l’action et lui demande tu fais quoi ? L’autre répond complètement autre chose (je suis en train de marier ma fille) et celui qui est venu se met à faire cette action et ainsi de suite",
@@ -3012,6 +3084,10 @@
     {
       "id": "2-10",
       "titre": "Le téléphone arabe en version mime",
+      "aussi_appele": [
+        "Téléphone mimé",
+        "Mime en chaîne"
+      ],
       "section": "Saison 2",
       "numero_source": 10,
       "texte_original": "Téléphone arabe : 4 personnes sortent de la salle, pour les personnes restées à l’intérieur on donne un thème (bicyclette par exemple ou théâtre d’ombre). Une des 4 sorties rentre et une des personnes restées dans la salle va mimer une scène de 30 secondes sur ce thème en silence. La personne qui est rentrée va ensuite devoir la refaire au suivant qui va rentrer et ainsi de suite jusqu’au 4eme qui devra expliquer ce qu’il mime en le faisant. Après le premier joueur revient faire son mime en l’expliquant.",
@@ -3101,6 +3177,10 @@
     {
       "id": "2-12",
       "titre": "Le cadeau inattendu",
+      "aussi_appele": [
+        "Le cadeau",
+        "Les cadeaux"
+      ],
       "section": "Saison 2",
       "numero_source": 12,
       "texte_original": "Cadeau qu’on offre A et B : A offre un cadeau à B, B dit merci et dit ce que c’est, puis on inverse. Deuxième niveau : pareil mais A rajoutera ensuite un détail (physique) au cadeau. 3eme niveau : B ajoutera pourquoi ça va bien avec son personnage",
@@ -3313,6 +3393,10 @@
     {
       "id": "2-17",
       "titre": "Les chaînes de télé",
+      "aussi_appele": [
+        "Zapping",
+        "Télécommande"
+      ],
       "section": "Saison 2",
       "numero_source": 17,
       "texte_original": "Exercice radio ou chaîne YouTube",
@@ -3637,6 +3721,9 @@
     {
       "id": "2-26",
       "titre": "Maison – créature – inondations",
+      "aussi_appele": [
+        "Maison, locataire, tremblement de terre"
+      ],
       "section": "Saison 2",
       "numero_source": 26,
       "texte_original": "Maison créature inondations",
@@ -3721,6 +3808,10 @@
     {
       "id": "2-28",
       "titre": "Il était une fois… mais un jour",
+      "aussi_appele": [
+        "Colonne vertébrale de l’histoire",
+        "Story Spine"
+      ],
       "section": "Saison 2",
       "numero_source": 28,
       "texte_original": "Histoire en cercle il était une fois tous les jours mais un jour à cause de ça grâce à ça depuis cercle jour, après on crante avec 3 tous les jours",
@@ -4129,6 +4220,9 @@
     {
       "id": "3-1",
       "titre": "Le mot qui claque",
+      "aussi_appele": [
+        "Association de mots"
+      ],
       "section": "Saison 3",
       "numero_source": 1,
       "texte_original": "Le mot qui claque : on fait un mouvement du bras de haut en bas, on claque des doigts quand on arrive en bas. On doit dire un mot au moment où on claque, et le suivant doit le dire au prochain clap en gardant un lien avec uniquement le mot d’avant. Si on trouve pas un mot le tour est sauté.",
@@ -4180,6 +4274,10 @@
     {
       "id": "3-3",
       "titre": "Impro clap : changement de scène",
+      "aussi_appele": [
+        "Freeze Tag",
+        "Freeze"
+      ],
       "section": "Saison 3",
       "numero_source": 1,
       "texte_original": "Impro clap : on lance une première impro entre deux personnes, et quand quelqu’un clap, il vient prendre la place de quelqu’un et changer d’improvisation tout en gardant la position exacte du comédien remplacé (tips : marquer différentes postures) Remarque, on peut varier en gardant la même impro et donc le même personnage (tips faire des personnages marqués)",
@@ -4237,6 +4335,10 @@
     {
       "id": "3-4",
       "titre": "Impro clap : les bâtons dans les roues",
+      "aussi_appele": [
+        "Freeze Tag",
+        "Freeze"
+      ],
       "section": "Saison 3",
       "numero_source": 2,
       "texte_original": "Impro clap Les bâtons dans les roues : pareil que l’improvisation clap mais c’est le prof qui clap et qui envoie les comédiens en leur donnant des contraintes quand il passe (ne plus pouvoir répéter que la dernière phrase dite, plus qu’un seul mot, pas de mots du tout, rimé, s’accroupir en devant le justifier et ensuite le prof peut enlever la contrainte pour la suite). Avantage tout le monde passe",
