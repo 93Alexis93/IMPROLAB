@@ -135,3 +135,8 @@ Branche `amelioration/pistes-improwiki` depuis `main` (23a5a65). Accord d’Alex
 - Tests ajoutés : `tests/pistes-improwiki.spec.cjs` (7 tests) ; `tests/app.spec.cjs` passe de 7 à 13 principes.
 - Résultats : `check.cjs` OK, `integrity.cjs` OK (105 fiches), Playwright 122/122 en iPhone-Chromium et 122/122 en iPhone-WebKit (244 au total) ; rendu vérifié sur capture iPhone 13 WebKit (Régie et Spectacle), sans débordement horizontal.
 - À tester sur iPhone : la lisibilité de la suggestion du public à bout de bras, et l’ouverture des liens improwiki depuis l’appli installée sur l’écran d’accueil.
+
+### Retouche du 2026-11-12 (même branche, PR 29)
+- Suggestion du public refaite : question à poser, champ pour ce que la salle a dit, affichage sous le chrono et en plein écran, note dans le carnet de bord, tirage de secours.
+- « Aussi appelé » affiché aux tirages (Accueil, Exercice aléatoire) et en Régie (sous le titre, plein écran).
+- Tests : 246/246 (iPhone-Chromium et iPhone-WebKit), check.cjs et integrity.cjs OK ; le test de la suggestion est réécrit, un test « Aussi appelé » ajouté (8 tests dans `tests/pistes-improwiki.spec.cjs`). Cache `v55-public-aussi-appele`, `styles.css?v=11`.

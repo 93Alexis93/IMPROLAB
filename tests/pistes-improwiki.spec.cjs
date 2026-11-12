@@ -12,22 +12,74 @@ async function openDraw(page) {
   await page.locator('#live .regie-draw > summary').click();
 }
 
-test('régie : « Suggestion du public » affiche une question et une réponse, sans répéter la catégorie', async ({ page }) => {
+test('régie : la suggestion du public se tape, s’affiche sous le chrono et va dans le carnet', async ({ page }) => {
   await openDraw(page);
-  const button = page.getByRole('button', { name: /Suggestion du public/ });
+  const question = page.locator('#audienceQuestion');
+  const swap = page.getByRole('button', { name: 'Autre question à poser au public' });
   const result = page.locator('#audienceResult');
+  const underClock = page.locator('#liveAudience');
   await expect(result).toBeHidden();
-  expect((await button.boundingBox()).height).toBeGreaterThanOrEqual(44);
-  let previous = '';
-  for (let i = 0; i < 8; i++) {
-    await button.click();
-    await expect(result).toBeVisible();
-    const question = (await result.locator('.audience-q').textContent()).trim();
-    expect(question).toMatch(/\?$/);
-    expect(question).not.toBe(previous);
-    expect((await result.locator('.audience-a').textContent()).trim().length).toBeGreaterThan(1);
-    previous = question;
+  await expect(underClock).toBeHidden();
+  expect((await swap.boundingBox()).height).toBeGreaterThanOrEqual(44);
+  // La question à poser change à chaque 🔄, sans répéter la même.
+  let previous = (await question.textContent()).trim();
+  for (let i = 0; i < 6; i++) {
+    await swap.click();
+    const q = (await question.textContent()).trim();
+    expect(q).toMatch(/\?$/);
+    expect(q).not.toBe(previous);
+    previous = q;
   }
+  // Ce que la salle a dit s'affiche sous le chrono, et sur l'écran de la Régie.
+  const input = page.getByLabel('Ce que le public a dit');
+  expect((await input.boundingBox()).height).toBeGreaterThanOrEqual(44);
+  await input.fill('Une boulangerie sur la Lune');
+  await input.press('Enter');
+  await expect(underClock).toBeVisible();
+  await expect(underClock).toContainText('Une boulangerie sur la Lune');
+  await expect(result.locator('.audience-a')).toHaveText('Une boulangerie sur la Lune');
+  await expect(result.locator('.audience-q')).toHaveText(previous);
+  await expect(input).toHaveValue('');
+  const notes = await page.evaluate(() => liveNotesRead().notes.map(n => n.text));
+  expect(notes).toContain('Suggestion du public : ' + previous + ' → Une boulangerie sur la Lune');
+  // Effacer retire l'affichage.
+  await page.getByRole('button', { name: 'Effacer', exact: true }).first().click();
+  await expect(underClock).toBeHidden();
+  // Quand la salle ne répond pas, l'appli tire à sa place.
+  await page.getByRole('button', { name: /Tirer à la place du public/ }).click();
+  await expect(underClock).toBeVisible();
+  await expect(result.locator('.audience-q')).toContainText('tiré par l’appli');
+  expect((await result.locator('.audience-a').textContent()).trim().length).toBeGreaterThan(1);
+});
+
+test('« Aussi appelé » apparaît au tirage et en Régie', async ({ page }) => {
+  await openApp(page);
+  const game = await page.evaluate(() => data.find(g => g[17].includes('Heureusement, malheureusement'))[0]);
+  // Exercice aléatoire : chaque jeu tiré qui a d'autres noms les montre.
+  let shown = 0;
+  for (let i = 0; i < 40; i++) {
+    const state = await page.evaluate(() => { pickRandomExercise(); return { n: gameAliases(randomExerciseCurrent[0]).length, html: document.getElementById('randomExerciseResult').innerHTML }; });
+    expect(state.html.includes('Aussi appelé')).toBe(state.n > 0);
+    if (state.n) shown++;
+  }
+  expect(shown).toBeGreaterThan(0);
+  // Envoyé en Régie : la ligne s'affiche sous le titre.
+  await page.evaluate(t => { randomExerciseCurrent = data.find(g => g[0] === t); useRandomExercise(); }, game);
+  await expect(page.locator('#liveAka')).toBeVisible();
+  await expect(page.locator('#liveAka')).toHaveText('Aussi appelé : Heureusement, malheureusement');
+  // Un jeu sans autre nom n'affiche rien.
+  await page.evaluate(() => { randomExerciseCurrent = data.find(g => !g[17].length && g[2] && g[2].length > 20); useRandomExercise(); });
+  await expect(page.locator('#liveAka')).toBeHidden();
+  // Tirage de l'Accueil : tant qu'un jeu avec autre nom sort, la ligne est là.
+  let seen = false;
+  for (let i = 0; i < 40 && !seen; i++) {
+    await page.evaluate(() => quickDraw());
+    const title = (await page.locator('#homeQuickResult h4').textContent()).trim();
+    const has = await page.evaluate(t => gameAliases(t).length > 0, title);
+    await expect(page.locator('#homeQuickResult .exercise-aliases')).toHaveCount(has ? 1 : 0);
+    seen = has;
+  }
+  expect(seen).toBe(true);
 });
 
 test('régie : onze catégories de tirage, les trois nouvelles décochées au départ', async ({ page }) => {
