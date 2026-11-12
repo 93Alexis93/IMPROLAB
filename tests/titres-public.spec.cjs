@@ -24,31 +24,34 @@ async function sayWord2(page, word) {
   await page.getByRole('button', { name: /Mélanger/ }).click();
 }
 
-test('questions : Lieu, Relation et Mot cochés au départ, le choix reste après rechargement', async ({ page }) => {
+test('question : on coche Lieu, Relation ou Mot, les autres sont repliées, le choix reste', async ({ page }) => {
   await openAudience(page);
-  await page.locator('.audience-cats > summary').click();
-  const boxes = page.locator('#audienceCatsList input');
-  await expect(boxes).toHaveCount(11);
-  const checked = await page.locator('#audienceCatsList label').evaluateAll(ls => ls.filter(l => l.querySelector('input').checked).map(l => l.textContent.trim()));
-  expect(checked).toEqual(['Lieu', 'Relation', 'Mot']);
-  await expect(page.locator('#audienceCatsCount')).toHaveText('3 cochées');
-  expect((await page.locator('#audienceCatsList label').first().boundingBox()).height).toBeGreaterThanOrEqual(44);
-  // 🔄 ne propose que les questions cochées.
-  const allowed = ['Un lieu ?', 'Un lien entre deux personnes ?', 'Un mot, n’importe lequel ?'];
-  for (let i = 0; i < 8; i++) {
-    await page.getByRole('button', { name: 'Autre question à poser au public' }).click();
-    expect(allowed).toContain((await page.locator('#audienceQuestion').textContent()).trim());
-  }
-  // Ne garder que « Titre de film » : la question change et le choix est mémorisé.
-  await page.locator('#audienceCatsList label', { hasText: 'Titre de film' }).locator('input').check();
-  for (const k of ['Lieu', 'Relation', 'Mot']) await page.locator('#audienceCatsList label', { hasText: new RegExp('^\\s*' + k + '\\s*$') }).locator('input').uncheck();
+  // Plus de bouton 🔄 : la question se coche.
+  await expect(page.getByRole('button', { name: 'Autre question à poser au public' })).toHaveCount(0);
+  const main = page.locator('#audienceChoices input[type=radio]');
+  await expect(main).toHaveCount(3);
+  const names = await page.locator('#audienceChoices label').allTextContents();
+  expect(names.map(n => n.trim())).toEqual(['Lieu', 'Relation', 'Mot']);
+  await expect(page.getByRole('radio', { name: 'Lieu' })).toBeChecked();
+  await expect(page.locator('#audienceQuestion')).toHaveText('Un lieu ?');
+  expect((await page.locator('#audienceChoices label').first().boundingBox()).height).toBeGreaterThanOrEqual(44);
+  await page.getByRole('radio', { name: 'Mot' }).check();
+  await expect(page.locator('#audienceQuestion')).toHaveText('Un mot, n’importe lequel ?');
+  // Les huit autres questions sont repliées au départ.
+  const more = page.locator('#audienceMore');
+  await expect(more).not.toHaveAttribute('open', '');
+  await expect(page.locator('#audienceChoicesMore input[type=radio]')).toHaveCount(8);
+  await page.locator('#audienceMore > summary').click();
+  await page.getByRole('radio', { name: 'Titre de film' }).check();
   await expect(page.locator('#audienceQuestion')).toHaveText('Un titre de film ?');
-  // La dernière case ne peut pas être décochée.
-  await page.locator('#audienceCatsList label', { hasText: 'Titre de film' }).locator('input').click();
-  await expect(page.locator('#audienceCatsList label', { hasText: 'Titre de film' }).locator('input')).toBeChecked();
-  await expect(page.locator('#audienceCatsStatus')).toContainText('au moins une');
+  // Une seule question cochée à la fois.
+  await expect(page.locator('.audience-box input[type=radio]:checked')).toHaveCount(1);
   await reloadApp(page);
-  expect(await page.evaluate(() => audienceEnabled())).toEqual(['Titre de film']);
+  await openTab(page, 'Régie');
+  await page.locator('#live .regie-draw > summary').click();
+  // Une question rangée dans « Autres questions » rouvre ce repli.
+  await expect(page.locator('#audienceMore')).toHaveAttribute('open', '');
+  await expect(page.getByRole('radio', { name: 'Titre de film' })).toBeChecked();
   // Le tirage de secours puise dans la liste de la question cochée.
   await page.evaluate(() => { tab('live'); audienceSuggest(); });
   const drawn = await page.evaluate(() => audienceWord.a);
@@ -120,7 +123,7 @@ test('grammaire des titres : le, la, l’, pluriel et h aspiré devinés sans ai
 
 test('deux films ou deux chansons : titres mélangés et « à la manière de »', async ({ page }) => {
   await openAudience(page);
-  await page.evaluate(() => { localStorage.setItem('impro-audience-cats-v1', JSON.stringify(['Titre de film', 'Titre de chanson'])); audienceCat = 'Titre de film'; audienceRender(); });
+  await page.evaluate(() => audienceChoose('Titre de film'));
   await sayWord(page, 'Titanic');
   await sayWord2(page, 'Les Bronzés');
   const all = await page.evaluate(() => audienceWord.titles);
@@ -159,7 +162,7 @@ test('Mes titres : ☆ garde un titre, il reste après rechargement et se tire p
   // Mes titres et les questions cochées partent dans la sauvegarde complète.
   const keys = await page.evaluate(() => BACKUP_DATA_KEYS);
   expect(keys).toContain('impro-my-titles-v1');
-  expect(keys).toContain('impro-audience-cats-v1');
+  expect(keys).toContain('impro-audience-q-v1');
 });
 
 test('match : le titre du public devient le thème de l’impro', async ({ page }) => {
@@ -176,7 +179,7 @@ test('match : le titre du public devient le thème de l’impro', async ({ page 
 test('spectacle : le numéro « Accueil et suggestion du public » ouvre l’outil dans la Régie', async ({ page }) => {
   await openApp(page);
   await openTab(page, 'Spectacle');
-  await page.locator('#showTemplate').selectOption({ label: 'La Ronde' });
+  await page.evaluate(() => { document.getElementById('showTemplatesFold').open = true; }); await page.locator('#showTemplate').selectOption({ label: 'La Ronde' });
   await page.getByRole('button', { name: /Remplir l’ordre de passage/ }).click();
   const open = page.getByRole('button', { name: /Ouvrir la suggestion du public/ });
   await expect(open).toHaveCount(1);

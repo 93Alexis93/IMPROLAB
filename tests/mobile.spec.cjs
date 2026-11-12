@@ -12,7 +12,7 @@ test('bibliothèque, favoris, recherche et échappement',async ({page})=>{
  await expect(page.locator('#games .card').first()).toContainText('Le zombie');
  await page.locator('#games .favorite').first().click();
  await page.locator('#search').fill('');
- await page.locator('#favoritesOnly').check();
+ await page.evaluate(() => { const d = document.querySelector('#filterFold'); if (d) d.open = true; }); await page.locator('#favoritesOnly').check();
  await expect(page.locator('#games .card')).toHaveCount(1);
  await expect(page.locator('#games .card')).toContainText(['★ Retirer des favoris']);
  expect(page.__errors).toEqual([]);

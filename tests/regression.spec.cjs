@@ -84,7 +84,7 @@ test('filtres bibliothèque par objectif',async({page})=>{
  await openTab(page,'Bibliothèque');
  await expect(page.locator('#sourceFilter')).toHaveCount(0);
  await expect(page.locator('#games .card')).toHaveCount(libraryCount);
- await page.locator('#categoryFilter').selectOption('Écoute');
+ await page.evaluate(() => { const d = document.querySelector('#filterFold'); if (d) d.open = true; }); await page.locator('#categoryFilter').selectOption('Écoute');
  await expect(page.locator('#games .card').first()).toBeVisible();
  const n=await page.locator('#games .card').count();expect(n).toBeGreaterThan(0);expect(n).toBeLessThan(libraryCount);
 });
@@ -125,7 +125,7 @@ test('les neuf catégories et les catégories secondaires sont filtrables',async
  await openApp(page);
  
  await openTab(page,'Bibliothèque');
- const filter=page.locator('#categoryFilter');
+ await page.evaluate(() => { const d = document.querySelector('#filterFold'); if (d) d.open = true; }); const filter=page.locator('#categoryFilter');
  await expect(filter.locator('option')).toHaveCount(library.categories_pedagogiques.length+1);
  await filter.selectOption('Amusement');
  await expect(page.locator('#games')).toContainText('ceci est un');
@@ -160,7 +160,7 @@ test('timeline souple : cinq étapes et priorité Imaginaire',async({page})=>{
  await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(5);
  for(const label of ['Mise en énergie','Connexion collective','Exploration','Improvisation','Scène finale'])await expect(page.locator('#plan>.card small').filter({hasText:label})).toHaveCount(1);
  await openTab(page,'Bibliothèque');
- await page.locator('#categoryFilter').selectOption('Imaginaire');
+ await page.evaluate(() => { const d = document.querySelector('#filterFold'); if (d) d.open = true; }); await page.locator('#categoryFilter').selectOption('Imaginaire');
  await expect(page.locator('#categoryFilter')).toHaveValue('Imaginaire');
 });
 
@@ -232,7 +232,7 @@ test('remplacement : admissibilité, catégorie, étape et anti-doublon',async({
   return data.findIndex(g=>g[6]&&g[5]&&g[2]&&g[2].trim().length>20&&!['notes originales','proposition à valider','à confirmer'].includes((g[12]||'').toLowerCase())&&g[9]!=='incomplète'&&g[8]==='notes_personnelles'&&!used.includes(g[0])&&!used.includes(displayTitle(g[0])));
  });
  expect(manualIndex).toBeGreaterThanOrEqual(0);
- await page.locator('#manualGame').selectOption(String(manualIndex));
+ await page.evaluate(() => { const d = document.querySelector('.add-exercise'); if (d) d.open = true; }); await page.locator('#manualGame').selectOption(String(manualIndex));
  await page.getByRole('button',{name:/Ajouter/}).click();
  const manualCard=page.locator('#plan>.card:not(.session-objective)').last();
  const manualTitle=await manualCard.locator('h3').textContent();

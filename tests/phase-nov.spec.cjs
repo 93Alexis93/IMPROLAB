@@ -137,9 +137,9 @@ test('contact physique : filtre de la bibliothèque et tous les jeux dans le gé
   expect(stats.off).toBe(0);
   expect(stats.light).toBe(6);
   await page.evaluate(() => tab('jeux'));
-  await page.selectOption('#contactFilter', 'léger');
+  await page.evaluate(() => { const d = document.querySelector('#filterFold'); if (d) d.open = true; }); await page.selectOption('#contactFilter', 'léger');
   await expect(page.locator('#games .card')).toHaveCount(6);
   await expect(page.locator('#games .card').first()).toContainText('Contact léger');
-  await page.selectOption('#contactFilter', 'aucun');
+  await page.evaluate(() => { const d = document.querySelector('#filterFold'); if (d) d.open = true; }); await page.selectOption('#contactFilter', 'aucun');
   await expect(page.locator('#games .card')).toHaveCount(99);
 });

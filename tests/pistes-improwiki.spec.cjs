@@ -15,21 +15,15 @@ async function openDraw(page) {
 test('régie : la suggestion du public se tape, s’affiche sous le chrono et va dans le carnet', async ({ page }) => {
   await openDraw(page);
   const question = page.locator('#audienceQuestion');
-  const swap = page.getByRole('button', { name: 'Autre question à poser au public' });
   const result = page.locator('#audienceResult');
   const underClock = page.locator('#liveAudience');
   await expect(result).toBeHidden();
   await expect(underClock).toBeHidden();
-  expect((await swap.boundingBox()).height).toBeGreaterThanOrEqual(44);
-  // La question à poser change à chaque 🔄, sans répéter la même.
-  let previous = (await question.textContent()).trim();
-  for (let i = 0; i < 6; i++) {
-    await swap.click();
-    const q = (await question.textContent()).trim();
-    expect(q).toMatch(/\?$/);
-    expect(q).not.toBe(previous);
-    previous = q;
-  }
+  // La question se coche (plus de bouton 🔄).
+  await expect(page.getByRole('button', { name: 'Autre question à poser au public' })).toHaveCount(0);
+  await page.getByRole('radio', { name: 'Relation' }).check();
+  const previous = (await question.textContent()).trim();
+  expect(previous).toBe('Un lien entre deux personnes ?');
   // Ce que la salle a dit s'affiche sous le chrono, et sur l'écran de la Régie.
   const input = page.getByLabel('Ce que le public a dit');
   expect((await input.boundingBox()).height).toBeGreaterThanOrEqual(44);
@@ -103,7 +97,7 @@ test('régie : onze catégories de tirage, les trois nouvelles décochées au d�
 
 test('régie : un genre tiré affiche trois repères pour le jouer', async ({ page }) => {
   await openDraw(page);
-  await page.locator('#drawCategories label', { hasText: 'Genre' }).locator('input').check();
+  await page.evaluate(() => { const d = document.querySelector('.draw-cats-fold'); if (d) d.open = true; }); await page.locator('#drawCategories label', { hasText: 'Genre' }).locator('input').check();
   await page.getByRole('button', { name: /Tout tirer/ }).click();
   await expect(page.locator('#drawResults .draw-result')).toHaveCount(9);
   await expect(page.locator('#drawResults .genre-reperes li')).toHaveCount(3);
@@ -158,7 +152,7 @@ test('bibliothèque : la recherche trouve un jeu par son autre nom', async ({ pa
 test('spectacle : une trame remplit l’ordre de passage et s’ajoute à la suite', async ({ page }) => {
   await openApp(page);
   await openTab(page, 'Spectacle');
-  const box = page.locator('#showTemplates');
+  await page.evaluate(() => { const d = document.querySelector('#showTemplatesFold'); if (d) d.open = true; }); const box = page.locator('#showTemplates');
   await expect(box.locator('h3')).toHaveText('Trames toutes prêtes');
   await expect(page.locator('#showTemplate option')).toHaveCount(5);
   const link = box.locator('a.more-link');

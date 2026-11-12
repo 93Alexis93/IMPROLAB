@@ -15,7 +15,7 @@ test('sauvegarde complète : un fichier avec toutes les données, puis restaurat
   await openTab(page, 'Accueil');
   await page.evaluate(() => { navigator.share = undefined; });
   const download = page.waitForEvent('download');
-  await page.getByRole('button', { name: /Tout sauvegarder/ }).click();
+  await page.evaluate(() => { const d = document.querySelector('.home-backup'); if (d) d.open = true; }); await page.getByRole('button', { name: /Tout sauvegarder/ }).click();
   const file = await download;
   expect(file.suggestedFilename()).toMatch(/^impro-lab-sauvegarde-\d{4}-\d{2}-\d{2}\.json$/);
   const path = await file.path();

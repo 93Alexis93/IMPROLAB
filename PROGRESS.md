@@ -151,3 +151,8 @@ Branche `amelioration/pistes-improwiki` depuis `main` (23a5a65). Accord d’Alex
 
 - Tests ajoutés : `tests/titres-public.spec.cjs` (7 tests) ; campagne complète 260/260 (iPhone-Chromium et iPhone-WebKit), check.cjs et integrity.cjs OK. Cache `v56-titres-du-public`, `styles.css?v=12`.
 - Rendu vérifié sur iPhone SE et iPhone 13 (WebKit) : pas de débordement, cibles tactiles ≥ 44 px dans la boîte de suggestion, aucune erreur JavaScript.
+
+### Retouche du 2026-11-12 : question cochée et replis (D34), PR 29
+- La question à poser se coche (Lieu, Relation, Mot ; les autres repliées), plus de 🔄.
+- Replis ajoutés : Régie (suggestion, catégories de tirage, noms et réglages du match, remarque du chrono), Accueil (sauvegarde), Préparer (ajout manuel), Bibliothèque (filtres), Spectacle (jeux repérés, trames), Groupes (équipes enregistrées fermées).
+- Tests adaptés : ouverture des replis avant usage (features, mobile, phase-nov, regression, data-tools, pistes-improwiki, titres-public). Cache `v57-replis`, `styles.css?v=13`. Campagne complète 260/260 (iPhone-Chromium et iPhone-WebKit), check.cjs et integrity.cjs OK.
