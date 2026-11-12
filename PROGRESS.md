@@ -140,3 +140,14 @@ Branche `amelioration/pistes-improwiki` depuis `main` (23a5a65). Accord d’Alex
 - Suggestion du public refaite : question à poser, champ pour ce que la salle a dit, affichage sous le chrono et en plein écran, note dans le carnet de bord, tirage de secours.
 - « Aussi appelé » affiché aux tirages (Accueil, Exercice aléatoire) et en Régie (sous le titre, plein écran).
 - Tests : 246/246 (iPhone-Chromium et iPhone-WebKit), check.cjs et integrity.cjs OK ; le test de la suggestion est réécrit, un test « Aussi appelé » ajouté (8 tests dans `tests/pistes-improwiki.spec.cjs`). Cache `v55-public-aussi-appele`, `styles.css?v=11`.
+
+### Lot du 2026-11-12 : titres du public (D33), même branche, PR 29
+| Lot | Objet | État |
+|---|---|---|
+| 1 | Questions cochées (Lieu, Relation, Mot au départ), listes Objet, Époque, films, chansons | fait ; listes à relire |
+| 2 | Deux mots du public mélangés en titres, choix, ✏️, carnet de bord | fait |
+| 3 | Deux films ou deux chansons, « à la manière de » | fait |
+| 4 | Thème du match, lien depuis le Spectacle, Mes titres | fait |
+
+- Tests ajoutés : `tests/titres-public.spec.cjs` (7 tests) ; campagne complète 260/260 (iPhone-Chromium et iPhone-WebKit), check.cjs et integrity.cjs OK. Cache `v56-titres-du-public`, `styles.css?v=12`.
+- Rendu vérifié sur iPhone SE et iPhone 13 (WebKit) : pas de débordement, cibles tactiles ≥ 44 px dans la boîte de suggestion, aucune erreur JavaScript.
