@@ -4,8 +4,11 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { expect } = require('@playwright/test');
 const library = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'library.json'), 'utf8'));
-const libraryCount = library.exercices.length;
-const originCount = origin => library.exercices.filter(item => item.origine === origin).length;
+// 1-61 et 2-31 sont mises de côté dans l’appli (D35) ; elles restent dans library.json.
+const APP_HIDDEN_IDS = ['1-61', '2-31'];
+const appExercices = library.exercices.filter(item => !APP_HIDDEN_IDS.includes(item.id));
+const libraryCount = appExercices.length;
+const originCount = origin => appExercices.filter(item => item.origine === origin).length;
 
 async function waitForReady(page, { dismissWelcome = true } = {}) {
   await expect(page.locator('#libraryStatus')).toContainText(`${libraryCount} exercices`, { timeout: 15000 });

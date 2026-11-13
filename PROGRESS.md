@@ -156,3 +156,7 @@ Branche `amelioration/pistes-improwiki` depuis `main` (23a5a65). Accord d’Alex
 - La question à poser se coche (Lieu, Relation, Mot ; les autres repliées), plus de 🔄.
 - Replis ajoutés : Régie (suggestion, catégories de tirage, noms et réglages du match, remarque du chrono), Accueil (sauvegarde), Préparer (ajout manuel), Bibliothèque (filtres), Spectacle (jeux repérés, trames), Groupes (équipes enregistrées fermées).
 - Tests adaptés : ouverture des replis avant usage (features, mobile, phase-nov, regression, data-tools, pistes-improwiki, titres-public). Cache `v57-replis`, `styles.css?v=13`. Campagne complète 260/260 (iPhone-Chromium et iPhone-WebKit), check.cjs et integrity.cjs OK.
+
+### 2026-11-13 : décisions D35 et fusion de la PR 29
+- 1-61 et 2-31 retirées de l’appli (103 exercices affichés, library.json inchangé) ; tirages d’impro sans case cochée au départ.
+- Tests adaptés (compte de 103 fiches dans helpers.cjs, tirages, contact léger 5, niveaux) ; 2 nouveaux tests. Campagne complète au vert (iPhone-Chromium et iPhone-WebKit), check.cjs et integrity.cjs OK. Cache `v58-tirages-vides`.

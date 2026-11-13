@@ -135,11 +135,12 @@ test('contact physique : filtre de la bibliothèque et tous les jeux dans le gé
   await openApp(page);
   const stats = await page.evaluate(() => ({ off: libraryPayload.exercices.filter(e => !e.eligible_generateur).length, light: data.filter(g => g[16] === 'léger').length }));
   expect(stats.off).toBe(0);
-  expect(stats.light).toBe(6);
+  // 6 fiches en contact léger dans library.json, dont une mise de côté dans l’appli (D35).
+  expect(stats.light).toBe(5);
   await page.evaluate(() => tab('jeux'));
   await page.evaluate(() => { const d = document.querySelector('#filterFold'); if (d) d.open = true; }); await page.selectOption('#contactFilter', 'léger');
-  await expect(page.locator('#games .card')).toHaveCount(6);
+  await expect(page.locator('#games .card')).toHaveCount(5);
   await expect(page.locator('#games .card').first()).toContainText('Contact léger');
   await page.evaluate(() => { const d = document.querySelector('#filterFold'); if (d) d.open = true; }); await page.selectOption('#contactFilter', 'aucun');
-  await expect(page.locator('#games .card')).toHaveCount(99);
+  await expect(page.locator('#games .card')).toHaveCount(98);
 });

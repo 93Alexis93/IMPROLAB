@@ -267,3 +267,11 @@ Demande d’Alexis (8 novembre 2026, réponses aux questions préalables) ; bran
 - **Régie** : « Suggestion du public » devient un repli (ouvert au départ) ; les 11 catégories de « Tirages d’impro » passent dans « Catégories à tirer · N cochées » (fermé) ; dans le Match, les noms des équipes et la durée rejoignent des replis (« ✏️ Noms des équipes », « ✏️ Durée, catégories et thèmes de l’asso ») — le score et les boutons restent visibles ; la remarque sur le signal sonore passe dans « Réglages du chrono ».
 - **Ailleurs** : Accueil, « Sauvegarde de tes données » repliée (le rappel de sauvegarde reste affiché quand il le faut) ; Préparer, « Ajouter un exercice à la main » replié ; Bibliothèque, « Filtres · N actifs » replié (la recherche reste visible) ; Spectacle, « Jeux repérés » et « Trames toutes prêtes » repliés ; Groupes, « Équipes enregistrées » fermé au départ.
 - Les nouveaux replis ont la même flèche ▶ / ▼ et une hauteur de 44 px.
+
+### D35. Décisions d’Alexis du 13 novembre 2026, puis fusion de la PR 29
+- **Catégories** : ne pas fusionner Amusement et Lâcher-prise (réponse à D29-D31).
+- **Générateur de séance** : n’y rien changer ; le filtre « contact physique » reste limité à la bibliothèque.
+- **1-61 « Le mouvement se transforme » et 2-31 « Le compte qui change de direction »** : règles toujours à retrouver ; « pour l’instant », sorties de l’appli (bibliothèque, tirages, générateur, ajout manuel) par la liste `APP_HIDDEN_IDS` dans `index.html`. Elles restent intactes dans `library.json` (la référence d’intégrité ne change pas). L’appli affiche donc 103 exercices.
+- **Genre, Métier, Activité** : restent décochés au départ.
+- **Tirages d’impro** : rien n’est coché au départ. Le réglage déjà enregistré sur un appareil est remis une seule fois à « rien de coché » (`impro-draw-none-v1`), ensuite les choix sont gardés. « Tout tirer » sans case cochée ouvre « Catégories à tirer » et le dit.
+- **Fusion** : Alexis demande « fais tout et fusionne » : PR 29 fusionnée dans main après la CI.

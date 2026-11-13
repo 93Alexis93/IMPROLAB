@@ -84,22 +84,54 @@ test('régie : onze catégories de tirage, les trois nouvelles décochées au d�
     sizes: Object.fromEntries(['Genre', 'Métier', 'Activité', 'Lieu', 'Émotion'].map(k => [k, drawLists[k].length]))
   }));
   expect(state.cats).toHaveLength(11);
-  expect(state.off.sort()).toEqual(['Activité', 'Genre', 'Métier']);
+  // Rien n'est coché au départ (D35).
+  expect(state.off.sort()).toEqual([...state.cats].sort());
   expect(state.sizes['Métier']).toBe(40);
   expect(state.sizes['Activité']).toBe(40);
   expect(state.sizes['Genre']).toBeGreaterThanOrEqual(32);
   expect(state.sizes['Lieu']).toBeGreaterThanOrEqual(50);
   expect(state.sizes['Émotion']).toBeGreaterThanOrEqual(50);
   await expect(page.locator('#live .regie-draw > summary')).toContainText('11 catégories');
+  await expect(page.locator('#drawCatsCount')).toHaveText('0 cochée');
+  // Sans case cochée, « Tout tirer » ouvre les catégories et le dit.
   await page.getByRole('button', { name: /Tout tirer/ }).click();
-  await expect(page.locator('#drawResults .draw-result')).toHaveCount(8);
+  await expect(page.locator('#drawResults .draw-result')).toHaveCount(0);
+  await expect(page.locator('#drawResults .draw-empty')).toContainText('Coche d’abord');
+  await expect(page.locator('.draw-cats-fold')).toHaveAttribute('open', '');
+  for (const k of ['Lieu', 'Émotion']) await page.locator('#drawCategories label', { hasText: k }).locator('input').check();
+  await page.getByRole('button', { name: /Tout tirer/ }).click();
+  await expect(page.locator('#drawResults .draw-result')).toHaveCount(2);
+  await expect(page.locator('#drawCatsCount')).toHaveText('2 cochées');
+});
+
+test('tirages : un réglage déjà enregistré est remis à « rien de coché » une seule fois', async ({ page }) => {
+  await openApp(page);
+  await page.evaluate(() => { localStorage.removeItem('impro-draw-none-v1'); localStorage.setItem('impro-draw-enabled-v2', JSON.stringify({ Lieu: true })); });
+  await reloadApp(page);
+  expect(await page.evaluate(() => Object.keys(DRAW_DEFAULTS).filter(k => drawEnabled[k] !== false))).toEqual([]);
+  // Ensuite, les choix de l'utilisateur sont gardés.
+  await page.evaluate(() => drawToggle(Object.keys(DRAW_DEFAULTS).indexOf('Mot'), true));
+  await reloadApp(page);
+  expect(await page.evaluate(() => Object.keys(DRAW_DEFAULTS).filter(k => drawEnabled[k] !== false))).toEqual(['Mot']);
+});
+
+test('fiches 1-61 et 2-31 : mises de côté dans l’appli, conservées dans library.json', async ({ page }) => {
+  await openApp(page);
+  const state = await page.evaluate(() => ({
+    inData: data.filter(g => ['Le mouvement se transforme', 'Le compte qui change de direction'].includes(g[0])).length,
+    inLibrary: libraryPayload.exercices.filter(e => ['1-61', '2-31'].includes(e.id)).length
+  }));
+  expect(state).toEqual({ inData: 0, inLibrary: 2 });
+  await openTab(page, 'Bibliothèque');
+  await page.locator('#search').fill('compte qui change');
+  await expect(page.locator('#games .card')).toHaveCount(0);
 });
 
 test('régie : un genre tiré affiche trois repères pour le jouer', async ({ page }) => {
   await openDraw(page);
   await page.evaluate(() => { const d = document.querySelector('.draw-cats-fold'); if (d) d.open = true; }); await page.locator('#drawCategories label', { hasText: 'Genre' }).locator('input').check();
   await page.getByRole('button', { name: /Tout tirer/ }).click();
-  await expect(page.locator('#drawResults .draw-result')).toHaveCount(9);
+  await expect(page.locator('#drawResults .draw-result')).toHaveCount(1);
   await expect(page.locator('#drawResults .genre-reperes li')).toHaveCount(3);
   // Chaque genre de la liste par défaut possède ses trois repères.
   const missing = await page.evaluate(() => DRAW_DEFAULTS['Genre'].filter(g => !Array.isArray(GENRE_REPERES[g]) || GENRE_REPERES[g].length !== 3));

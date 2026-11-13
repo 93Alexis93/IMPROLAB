@@ -321,6 +321,8 @@ test('contraintes de main en main : tirages cochés en plein écran, « Suivant 
   await openApp(page);
   await openTab(page, 'Régie');
   await page.locator('#live .regie-draw > summary').click();
+  // Rien n'est coché au départ (D35) : on coche trois catégories.
+  await page.evaluate(() => { for (const k of ['Lieu', 'Émotion', 'Mot']) drawToggle(Object.keys(DRAW_DEFAULTS).indexOf(k), true); });
   await page.getByRole('button', { name: /de main en main/ }).click();
   const view = page.locator('#passView');
   await expect(view).toBeVisible();
@@ -432,14 +434,14 @@ async function planLevels(page) {
 test('niveaux : étoiles sur les fiches et filtre par niveau dans la bibliothèque', async ({ page }) => {
   await openApp(page);
   await openTab(page, 'Bibliothèque');
-  const expected = await page.evaluate(() => libraryPayload.exercices.filter(e => e.niveau === '★★★').length);
+  const expected = await page.evaluate(() => data.filter(g => g[13] === 3).length);
   expect(expected).toBeGreaterThan(0);
   await expect(page.locator('#games .card .level-pill').first()).toHaveText(/^★{1,3}$/);
   await page.evaluate(() => { document.getElementById('filterFold').open = true; }); await page.locator('#levelFilter').selectOption('3');
   await expect(page.locator('#games .card')).toHaveCount(expected);
   for (const text of await page.locator('#games .card .level-pill').allTextContents()) expect(text).toBe('★★★');
   await page.locator('#levelFilter').selectOption('');
-  await expect(page.locator('#games .card')).toHaveCount(await page.evaluate(() => libraryPayload.exercices.length));
+  await expect(page.locator('#games .card')).toHaveCount(await page.evaluate(() => data.length));
   expect(await page.locator('#manualGame option').first().textContent()).toMatch(/★$/);
 });
 
