@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "source": "Cahier de coach – Improvisation, rubrique « Bonus : Rappels essentiels pour coacher »",
-  "note": "Les formulations originales sont conservées à l’identique. Les titres, développements et exemples sont des versions éditoriales validées par Alexis.",
+  "note": "Les formulations originales sont conservées à l’identique. Les titres, développements et exemples sont des versions éditoriales validées par Alexis. Les principes 8 à 13 (statut, blocage, routines, arc narratif, tension, présence) ont été rédigés par l’assistant en novembre 2026, sans reprise de texte, et restent à relire par Alexis ; leur lien renvoie vers la page improwiki du même thème.",
   "principes": [
     {
       "id": 1,
@@ -85,6 +85,64 @@
         "moyen": "Écoute aussi le rythme, le regard et la posture : ils peuvent compter autant que les mots.",
         "pro": "Laisse une information inattendue transformer ton intention, ton statut ou ta relation, au lieu de revenir à ton idée initiale."
       }
+    },
+    {
+      "id": 9,
+      "titre": "Le blocage",
+      "principe": "Bloquer, c’est refuser, ignorer ou rabaisser ce que ton partenaire vient de proposer. La scène s’arrête, et lui n’ose plus rien offrir. Le blocage vient presque toujours de la peur : on veut garder son idée ou éviter l’inconnu. Apprends à le repérer chez toi, puis choisis d’accepter.",
+      "exemple": "« Docteur, j’ai mal au bras. — Je ne suis pas docteur. » La scène tombe. À la place : « Encore ce bras ! Je vous avais dit d’arrêter le lancer de frigo. »",
+      "statut": "proposé par l’assistant, à relire",
+      "niveau_difficulte": "Débutant",
+      "couleur": "#2E9D62",
+      "categories_titre": [
+        {
+          "nom": "Écoute",
+          "couleur": "#62c7ff"
+        },
+        {
+          "nom": "Lâcher-prise",
+          "couleur": "#8ce0ce"
+        },
+        {
+          "nom": "Construction",
+          "couleur": "#b59aff"
+        }
+      ],
+      "conseils": {
+        "amateur": "Avant de répondre, redis en une phrase ce que ton partenaire vient d’apporter : tu ne peux plus l’ignorer.",
+        "moyen": "Méfie-toi des blocages discrets : poser une question au lieu de proposer, faire une blague qui casse la situation, changer de sujet.",
+        "pro": "Ton personnage peut dire non tant que toi, tu dis oui : refuse dans l’histoire en ajoutant une information qui fait avancer la scène."
+      },
+      "lien": "https://improwiki.com/fr/wiki/blocage"
+    },
+    {
+      "id": 10,
+      "titre": "Les routines",
+      "principe": "Commence la scène par une activité simple du quotidien : cuisiner, ranger, réparer. Elle montre le lieu, occupe ton corps et t’évite de chercher une idée. L’histoire démarre quand quelque chose vient casser cette routine.",
+      "exemple": "Deux joueurs plient des draps en silence. L’un trouve une lettre dans une taie d’oreiller : la scène commence.",
+      "statut": "proposé par l’assistant, à relire",
+      "niveau_difficulte": "Débutant",
+      "couleur": "#2E9D62",
+      "categories_titre": [
+        {
+          "nom": "Corps",
+          "couleur": "#70dfae"
+        },
+        {
+          "nom": "Scène",
+          "couleur": "#ff7caa"
+        },
+        {
+          "nom": "Construction",
+          "couleur": "#b59aff"
+        }
+      ],
+      "conseils": {
+        "amateur": "Entre en scène en faisant déjà quelque chose de précis avec tes mains, et continue en parlant.",
+        "moyen": "Parle d’autre chose que de ton activité : la routine montre le lieu, le dialogue montre la relation.",
+        "pro": "Choisis le moment où la routine se casse, puis laisse cette rupture changer vraiment les personnages."
+      },
+      "lien": "https://improwiki.com/fr/wiki/routines"
     },
     {
       "id": 4,
@@ -174,6 +232,64 @@
       }
     },
     {
+      "id": 8,
+      "titre": "Le statut",
+      "principe": "Dans chaque scène, un personnage prend plus de place que l’autre : c’est le statut. Il ne dépend pas du métier mais de la manière d’être. Le haut statut prend son temps, occupe l’espace et tient le regard ; le bas statut s’excuse, se fait petit et parle vite. Choisis ton statut, puis fais-le bouger : c’est ce qui rend la relation vivante.",
+      "exemple": "Un roi tremble devant son cuisinier : le cuisinier goûte la soupe lentement, sans un mot, pendant que le roi demande trois fois si elle est assez salée.",
+      "statut": "proposé par l’assistant, à relire",
+      "niveau_difficulte": "Moyen",
+      "couleur": "#D99A18",
+      "categories_titre": [
+        {
+          "nom": "Scène",
+          "couleur": "#ff7caa"
+        },
+        {
+          "nom": "Corps",
+          "couleur": "#70dfae"
+        },
+        {
+          "nom": "Émotions",
+          "couleur": "#ee94e4"
+        }
+      ],
+      "conseils": {
+        "amateur": "Joue un seul signe à la fois : tête immobile et gestes lents pour le haut statut, petits gestes rapides et regard fuyant pour le bas.",
+        "moyen": "Choisis ton statut par rapport à ton partenaire dès la première réplique : juste au-dessus ou juste en dessous de lui.",
+        "pro": "Fais basculer les statuts en cours de scène : le moment où le dominé prend le dessus est souvent le cœur de l’histoire."
+      },
+      "lien": "https://improwiki.com/fr/wiki/statut"
+    },
+    {
+      "id": 12,
+      "titre": "La tension",
+      "principe": "La tension, c’est l’attente du public : il sent que quelque chose va arriver et veut savoir quoi. Elle naît d’un enjeu clair et d’un obstacle. Ne la résous pas trop vite : laisse-la monter avant de lâcher.",
+      "exemple": "Un personnage cache un vase cassé derrière son dos pendant que sa grand-mère fait le tour du salon en cherchant ses lunettes.",
+      "statut": "proposé par l’assistant, à relire",
+      "niveau_difficulte": "Moyen",
+      "couleur": "#D99A18",
+      "categories_titre": [
+        {
+          "nom": "Scène",
+          "couleur": "#ff7caa"
+        },
+        {
+          "nom": "Émotions",
+          "couleur": "#ee94e4"
+        },
+        {
+          "nom": "Construction",
+          "couleur": "#b59aff"
+        }
+      ],
+      "conseils": {
+        "amateur": "Quand un problème apparaît, ne le règle pas à la réplique suivante : fais-le d’abord empirer.",
+        "moyen": "Donne au public une information qu’un des personnages n’a pas : il attendra le moment où elle éclate.",
+        "pro": "Joue avec le rythme : ralentis et laisse des silences juste avant le moment que tout le monde attend."
+      },
+      "lien": "https://improwiki.com/fr/wiki/tension"
+    },
+    {
       "id": 7,
       "titre": "Montre, ne raconte pas",
       "formulation_originale": "Montre plutôt que raconter : l’action d’abord.",
@@ -201,6 +317,64 @@
         "moyen": "Fais passer l’information par une action concrète et laisse ton partenaire y réagir.",
         "pro": "Combine corps, voix, rythme et espace pour révéler l’état du personnage sans surligner le message."
       }
+    },
+    {
+      "id": 11,
+      "titre": "L’arc narratif",
+      "principe": "Une histoire tient par son fil : une situation de départ, un événement qui la bouscule, des conséquences qui grandissent, puis une fin où quelque chose a changé. Garde en tête ce qui a été posé au début : la fin s’y trouve déjà.",
+      "exemple": "Au début, Léa n’ose pas parler à son patron. À la fin, c’est elle qui dirige la réunion : le public a vu le chemin parcouru.",
+      "statut": "proposé par l’assistant, à relire",
+      "niveau_difficulte": "Pro",
+      "couleur": "#805AD5",
+      "categories_titre": [
+        {
+          "nom": "Construction",
+          "couleur": "#b59aff"
+        },
+        {
+          "nom": "Scène",
+          "couleur": "#ff7caa"
+        },
+        {
+          "nom": "Imaginaire",
+          "couleur": "#f6a7ff"
+        }
+      ],
+      "conseils": {
+        "amateur": "En fin de scène, demande-toi ce qui a changé depuis le début. Si rien n’a changé, la scène n’est pas finie.",
+        "moyen": "Réutilise un détail du début (un objet, une phrase, une promesse) pour conclure.",
+        "pro": "Dans une forme longue, pense ton personnage sur toute la soirée : ce qu’il veut, ce qui l’en empêche, ce qu’il devient."
+      },
+      "lien": "https://improwiki.com/fr/wiki/arc-narratif"
+    },
+    {
+      "id": 13,
+      "titre": "La présence",
+      "principe": "Être présent, c’est être entièrement là : avec ton partenaire, dans ton corps, dans l’instant. Le public regarde celui qui écoute vraiment, pas celui qui prépare sa prochaine réplique. La présence se travaille : respiration, regard, appuis au sol.",
+      "exemple": "Un joueur entre, s’arrête, regarde la salle puis son partenaire, respire. Il n’a encore rien dit et tout le monde l’écoute.",
+      "statut": "proposé par l’assistant, à relire",
+      "niveau_difficulte": "Pro",
+      "couleur": "#805AD5",
+      "categories_titre": [
+        {
+          "nom": "Corps",
+          "couleur": "#70dfae"
+        },
+        {
+          "nom": "Écoute",
+          "couleur": "#62c7ff"
+        },
+        {
+          "nom": "Lâcher-prise",
+          "couleur": "#8ce0ce"
+        }
+      ],
+      "conseils": {
+        "amateur": "Avant d’entrer, pose tes deux pieds au sol et respire une fois. Regarde ton partenaire avant de parler.",
+        "moyen": "Quand tu ne parles pas, reste dans la scène : écoute et réagis avec ton corps, sans tirer le regard à toi.",
+        "pro": "Ose ne rien faire : un silence habité et un regard tenu portent plus loin qu’une réplique de trop."
+      },
+      "lien": "https://improwiki.com/fr/wiki/presence"
     }
   ]
 }

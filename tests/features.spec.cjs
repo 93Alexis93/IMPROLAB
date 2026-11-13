@@ -128,14 +128,14 @@ test('match d’impro : score, tirage catégorie et thème de l’asso, lancemen
   await openApp(page);
   await openTab(page, 'Régie');
   await page.locator('#matchPanel > summary').click();
-  await page.getByLabel('Nom de l’équipe 1').fill('Les Bleus');
+  await page.locator('#matchPanel .match-names > summary').click(); await page.getByLabel('Nom de l’équipe 1').fill('Les Bleus');
   await page.getByLabel('Nom de l’équipe 2').fill('Les Rouges <s>');
-  await page.locator('#matchPanel .regie-options > summary').click();
+  await page.locator('#matchPanel .regie-options:not(.match-names) > summary').click();
   await page.locator('#matchCategories').fill('Chantée');
   await page.locator('#matchCategories').dispatchEvent('change');
   await page.locator('#matchThemes').fill('Le dernier métro');
   await page.locator('#matchThemes').dispatchEvent('change');
-  await page.locator('#matchMinutes').fill('2');
+  await page.evaluate(() => { document.getElementById('matchMinutes').closest('details').open = true; }); await page.locator('#matchMinutes').fill('2');
   await page.locator('#matchMinutes').dispatchEvent('change');
 
   const blue = page.locator('.match-score > div').first();
@@ -301,7 +301,7 @@ test('favoris par groupe : un favori du Club n’apparaît pas chez les Copains,
   const first = page.locator('#games .card').first();
   const title = (await first.locator('h3').first().textContent()).trim();
   await first.getByRole('button', { name: /Ajouter aux favoris/ }).click();
-  await page.locator('#favoritesOnly').check();
+  await page.evaluate(() => { const d = document.querySelector('#filterFold'); if (d) d.open = true; }); await page.locator('#favoritesOnly').check();
   await expect(page.locator('#games .card')).toHaveCount(1);
 
   await openSeance(page);
@@ -321,6 +321,8 @@ test('contraintes de main en main : tirages cochés en plein écran, « Suivant 
   await openApp(page);
   await openTab(page, 'Régie');
   await page.locator('#live .regie-draw > summary').click();
+  // Rien n'est coché au départ (D35) : on coche trois catégories.
+  await page.evaluate(() => { for (const k of ['Lieu', 'Émotion', 'Mot']) drawToggle(Object.keys(DRAW_DEFAULTS).indexOf(k), true); });
   await page.getByRole('button', { name: /de main en main/ }).click();
   const view = page.locator('#passView');
   await expect(view).toBeVisible();
@@ -432,14 +434,14 @@ async function planLevels(page) {
 test('niveaux : étoiles sur les fiches et filtre par niveau dans la bibliothèque', async ({ page }) => {
   await openApp(page);
   await openTab(page, 'Bibliothèque');
-  const expected = await page.evaluate(() => libraryPayload.exercices.filter(e => e.niveau === '★★★').length);
+  const expected = await page.evaluate(() => data.filter(g => g[13] === 3).length);
   expect(expected).toBeGreaterThan(0);
   await expect(page.locator('#games .card .level-pill').first()).toHaveText(/^★{1,3}$/);
-  await page.locator('#levelFilter').selectOption('3');
+  await page.evaluate(() => { document.getElementById('filterFold').open = true; }); await page.locator('#levelFilter').selectOption('3');
   await expect(page.locator('#games .card')).toHaveCount(expected);
   for (const text of await page.locator('#games .card .level-pill').allTextContents()) expect(text).toBe('★★★');
   await page.locator('#levelFilter').selectOption('');
-  await expect(page.locator('#games .card')).toHaveCount(await page.evaluate(() => libraryPayload.exercices.length));
+  await expect(page.locator('#games .card')).toHaveCount(await page.evaluate(() => data.length));
   expect(await page.locator('#manualGame option').first().textContent()).toMatch(/★$/);
 });
 
@@ -489,12 +491,12 @@ test('usages : affichés sur la fiche, filtre « Usage » et jeux repérés pour
   await openTab(page, 'Bibliothèque');
   const expected = await page.evaluate(() => libraryPayload.exercices.filter(e => (e.usages || []).includes('spectacle')).length);
   expect(expected).toBeGreaterThanOrEqual(4);
-  await page.locator('#usageFilter').selectOption('spectacle');
+  await page.evaluate(() => { const d = document.querySelector('#filterFold'); if (d) d.open = true; }); await page.locator('#usageFilter').selectOption('spectacle');
   await expect(page.locator('#games .card')).toHaveCount(expected);
   await expect(page.locator('#games .card .exercise-usages').first()).toContainText('spectacle');
-  await page.locator('#usageFilter').selectOption('');
+  await page.evaluate(() => { const d = document.querySelector('#filterFold'); if (d) d.open = true; }); await page.locator('#usageFilter').selectOption('');
   await openTab(page, 'Spectacle');
-  const ideas = page.locator('#showIdeas .show-idea');
+  await page.evaluate(() => { const d = document.querySelector('#showIdeasFold'); if (d) d.open = true; }); const ideas = page.locator('#showIdeas .show-idea');
   const withShow = await page.evaluate(() => libraryPayload.exercices.filter(e => (e.usages || []).some(u => u.includes('spectacle'))).length);
   await expect(ideas).toHaveCount(withShow);
   const title = await page.evaluate(() => document.querySelector('#showIdeas .show-idea span').firstChild.textContent.trim());

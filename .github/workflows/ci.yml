@@ -12,7 +12,7 @@ permissions:
 jobs:
   static:
     name: Contrôles statiques et intégrité
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # Playwright 1.56 ne gère pas Ubuntu 26.04 (13 nov. 2026)
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -28,7 +28,7 @@ jobs:
         run: node tests/integrity.cjs
   browser:
     name: Tests navigateur — ${{ matrix.project }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # Playwright 1.56 ne gère pas Ubuntu 26.04 (13 nov. 2026)
     timeout-minutes: 25
     strategy:
       fail-fast: false

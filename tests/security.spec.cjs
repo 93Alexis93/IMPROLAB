@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 const fs = require('node:fs');
-const { openTab, setDuration, openFineSettings, openApp, openCachedApp, reloadApp, waitForReady, library ,openSeance}=require('./helpers.cjs');
+const { openTab, setDuration, openFineSettings, openApp, openCachedApp, reloadApp, waitForReady, library, libraryCount ,openSeance}=require('./helpers.cjs');
 
 const validPayload = html => ({ format: 'impro-lab-session', version: 1, exportedAt: '2026-10-21T00:00:00.000Z', html });
 const oneCard = '<div class="card"><small>5 min · Corps</small><h3>Exercice de test</h3><p>Une règle de test.</p></div>';
@@ -94,7 +94,7 @@ for (const key of STORAGE_KEYS) {
     await page.goto('/');
     await waitForReady(page);
     expect(errors, `pageerror avec ${key}`).toEqual([]);
-    await expect(page.locator('#libraryStatus')).toContainText(`${library.exercices.length} exercices`);
+    await expect(page.locator('#libraryStatus')).toContainText(`${libraryCount} exercices`);
   });
 }
 test('historique corrompu : l’onglet Historique s’affiche et Enregistrer fonctionne', async ({ page }) => {
@@ -150,7 +150,7 @@ test('mode hors ligne : la bibliothèque reste accessible via le cache du servic
     // Chromium vérifie le scénario complet de rechargement hors ligne.
     await reloadApp(page);
   }
-  await expect(page.locator('#libraryStatus')).toContainText(`${library.exercices.length} exercices`);
+  await expect(page.locator('#libraryStatus')).toContainText(`${libraryCount} exercices`);
   await openTab(page, 'Bibliothèque');
   expect(await page.locator('#games .card').count()).toBeGreaterThan(0);
 });

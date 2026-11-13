@@ -756,3 +756,84 @@ body #live .stage-view .stage-feedback{margin-top:10px}
 /* Contact physique (revue des catégories) */
 span.pill.contact-pill{font-weight:700}
 .coach-notes>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:700}
+
+/* Pistes improwiki (nov. 2026) : suggestion du public, repères de genre, trames, « Aussi appelé ». */
+.audience-box{margin:8px 0 12px}
+.audience-btn{width:100%;min-height:48px;font-size:15px;font-weight:700}
+.audience-result{margin-top:8px;padding:12px;border-radius:12px;background:#303a60;color:#fff;text-align:center}
+.audience-q{display:block;font-size:13px;color:#d6dcf2}
+.audience-a{display:block;font-size:26px;line-height:1.2;margin-top:4px;overflow-wrap:anywhere}
+.genre-reperes{margin:4px 0 6px;padding:8px 10px 8px 26px;border-radius:9px;background:#252d4d;color:#eef1fb;font-size:13.5px;line-height:1.4;text-align:left}
+.genre-reperes li{margin:2px 0}
+.more-link{display:inline-flex;align-items:center;min-height:44px;font-size:14px}
+.show-template-info{font-size:14px;line-height:1.45;margin:8px 0 0}
+.exercise-aliases{margin:4px 0 0;color:var(--muted,#777);font-size:.9em}
+.principle-draft{font-style:italic}
+
+/* Suggestion du public refaite (12 nov. 2026) : question à poser, réponse tapée, affichage sous le chrono. */
+.audience-title{margin:0 0 6px;font-weight:800;font-size:16px}
+.audience-ask{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0 0 8px}
+.audience-ask-label{font-size:14px}
+.audience-question{font-size:18px}
+.audience-swap{min-width:44px;min-height:44px;padding:0 10px}
+.audience-input-label{display:block;font-weight:700;font-size:14px;margin:0 0 4px}
+.audience-row{display:flex;gap:8px}
+.audience-row input{flex:1;min-width:0;min-height:44px;font-size:16px}
+.audience-row button{min-height:44px;flex:none}
+.audience-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.audience-actions button{min-height:44px}
+.live-audience{margin:6px auto 10px;max-width:640px;padding:10px 14px;border-radius:12px;background:#303a60;color:#fff!important;text-align:center}
+.live-audience .audience-live-label{display:block;font-size:13px;color:#d6dcf2!important}
+.live-audience strong{display:block;font-size:clamp(22px,6vw,34px);line-height:1.2;overflow-wrap:anywhere;color:#fff!important}
+.live-aka{color:inherit!important;font-style:italic;font-size:15px;margin:2px 0 6px}
+body .stage-view .stage-aka{margin:-4px 0 10px;font-size:clamp(15px,3.5vw,24px);font-style:italic;color:#d6dcf2!important}
+body .stage-view .stage-audience{display:inline-block;margin:0 0 12px;padding:6px 14px;border-radius:10px;background:#303a60;font-size:clamp(20px,5vw,36px);font-weight:800;color:#fff!important}
+body .stage-view .stage-audience[hidden],body .stage-view .stage-aka[hidden]{display:none}
+
+/* Titres du public (12 nov. 2026) : questions cochées, deux mots mélangés, Mes titres, lien depuis le Spectacle. */
+.audience-cats{margin:0 0 10px}
+.audience-cats>summary,.my-titles>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:700;font-size:14px}
+.audience-cats-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px}
+.audience-cat{display:flex;align-items:center;gap:8px;min-height:44px;font-size:15px}
+.audience-cat input{width:22px;height:22px;flex:none}
+.audience-mix{margin-top:12px;text-align:left}
+.audience-mix label{display:block;font-weight:700;font-size:14px;margin:0 0 4px;color:#fff!important}
+.audience-result .audience-row input{background:#fff;color:#1d2340}
+.audience-pick-label{margin:12px 0 6px;font-size:14px;color:#d6dcf2!important;text-align:left}
+.audience-picks{display:grid;gap:8px}
+.audience-pick{min-height:48px;text-align:left;font-size:16px;font-weight:700;line-height:1.25;white-space:normal}
+.audience-pick[aria-pressed="true"]{outline:3px solid #ffd16d;outline-offset:1px}
+.audience-result .audience-actions{justify-content:center}
+.audience-edit{margin-top:8px}
+.audience-chosen{margin:12px 0 4px;font:700 clamp(20px,5.5vw,28px)/1.25 Georgia,"Times New Roman",serif;color:#ffd16d!important;overflow-wrap:anywhere}
+.my-titles{margin-top:8px}
+.my-title{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:4px 0;border-bottom:1px solid rgba(0,0,0,.08)}
+.my-title span{overflow-wrap:anywhere}
+.my-title button{min-width:44px;min-height:44px;flex:none}
+#myTitlesDraw{min-height:44px;margin-top:8px}
+.show-audience-btn{min-height:44px;margin:6px 0}
+
+/* Replis du 12 nov. 2026 : question cochée, catégories de tirage, filtres, sauvegarde, spectacle, ajout manuel. */
+.audience-box{display:block}
+.audience-box>summary.audience-title,.audience-more>summary,.draw-cats-fold>summary,.filter-fold>summary,.home-backup>summary,.add-exercise>summary,.show-fold>summary,.match-names>summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:700}
+.audience-box>summary.audience-title{font-size:16px;font-weight:800;margin:0 0 4px}
+.audience-choose-label{margin:2px 0 4px;font-size:14px;font-weight:700}
+.audience-choices{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:4px 10px}
+.audience-cat input[type=radio]{width:22px;height:22px;flex:none}
+.audience-more{margin:0 0 6px}
+.audience-more>summary{font-size:14px}
+.draw-cats-fold{margin:8px 0}
+.filter-fold{margin:8px 0}
+.filter-fold[open]>summary{margin-bottom:6px}
+.home-backup>summary,.add-exercise>summary,.show-fold>summary{font-size:18px}
+.show-fold:has(> #showIdeas[hidden]){display:none}
+.show-fold>div>h3:first-child{display:none}
+.show-fold>div{padding:0;margin:0;border:0;box-shadow:none;background:none}
+/* Choix de la question serrés sur une ligne, flèches ▶ ▼ sur les nouveaux replis. */
+.audience-choices{display:flex;flex-wrap:wrap;gap:0 22px}
+#live .audience-choices label.audience-cat,.audience-choices label.audience-cat{margin:0;padding:0;display:flex;align-items:center;gap:8px;min-height:44px;font-size:16px}
+.audience-box>summary.audience-title,.audience-more>summary,.draw-cats-fold>summary,.filter-fold>summary,.home-backup>summary,.add-exercise>summary,.show-fold>summary,.match-names>summary{list-style:none;gap:.4em}
+.audience-box>summary.audience-title::-webkit-details-marker,.audience-more>summary::-webkit-details-marker,.draw-cats-fold>summary::-webkit-details-marker,.filter-fold>summary::-webkit-details-marker,.home-backup>summary::-webkit-details-marker,.add-exercise>summary::-webkit-details-marker,.show-fold>summary::-webkit-details-marker,.match-names>summary::-webkit-details-marker{display:none}
+.audience-box>summary.audience-title::before,.audience-more>summary::before,.draw-cats-fold>summary::before,.filter-fold>summary::before,.home-backup>summary::before,.add-exercise>summary::before,.show-fold>summary::before,.match-names>summary::before{content:"▶";font-size:.75em;flex:none}
+.audience-box[open]>summary.audience-title::before,.audience-more[open]>summary::before,.draw-cats-fold[open]>summary::before,.filter-fold[open]>summary::before,.home-backup[open]>summary::before,.add-exercise[open]>summary::before,.show-fold[open]>summary::before,.match-names[open]>summary::before{content:"▼"}
+.my-titles>summary{list-style:none;gap:.4em}.my-titles>summary::-webkit-details-marker{display:none}.my-titles>summary::before{content:"▶";font-size:.75em;flex:none}.my-titles[open]>summary::before{content:"▼"}

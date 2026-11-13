@@ -119,3 +119,44 @@ Branche `amelioration/phase-autonome-nov` depuis `amelioration/lots-1-2-3` (844d
 | 7 | Fiches animateur refaites d’après la revue des fiches (53 fiches, 3 titres renommés), D29 | fait : `check.cjs` OK, intégrité régénérée (160 écarts attendus), Playwright 114/114 Chromium et 114/114 WebKit |
 | 8 | Revue des catégories : tous les jeux dans le générateur, contact physique et son filtre (D30) | fait : Playwright 115/115 Chromium et 115/115 WebKit |
 | 9 | Finitions : audit iPhone SE et 13, cible « Mes notes » 44 px, bandeau sous le chrono au thème clair (D31) | fait : `check.cjs` OK, `integrity.cjs` OK, Playwright 115/115 Chromium et 115/115 WebKit (230) |
+
+## Lot du 2026-11-09 : pistes improwiki (D32)
+Branche `amelioration/pistes-improwiki` depuis `main` (23a5a65). Accord d’Alexis pour les lots A à F.
+
+| Lot | Objet | État |
+|---|---|---|
+| A | Bouton « Suggestion du public » dans la Régie | fait |
+| B | Champ « Aussi appelé » sur 29 fiches, recherche par l’autre nom | fait ; 22 noms à vérifier par Alexis |
+| C | Listes Métier et Activité, compléments Lieu et Émotion | fait |
+| D | Tirage « Genre » avec trois repères pour 32 genres | fait |
+| E | Cinq trames de spectacle qui remplissent l’ordre de passage | fait ; découpages à ajuster |
+| F | Six principes avec lien « Pour aller plus loin » | fait ; textes à relire |
+
+- Tests ajoutés : `tests/pistes-improwiki.spec.cjs` (7 tests) ; `tests/app.spec.cjs` passe de 7 à 13 principes.
+- Résultats : `check.cjs` OK, `integrity.cjs` OK (105 fiches), Playwright 122/122 en iPhone-Chromium et 122/122 en iPhone-WebKit (244 au total) ; rendu vérifié sur capture iPhone 13 WebKit (Régie et Spectacle), sans débordement horizontal.
+- À tester sur iPhone : la lisibilité de la suggestion du public à bout de bras, et l’ouverture des liens improwiki depuis l’appli installée sur l’écran d’accueil.
+
+### Retouche du 2026-11-12 (même branche, PR 29)
+- Suggestion du public refaite : question à poser, champ pour ce que la salle a dit, affichage sous le chrono et en plein écran, note dans le carnet de bord, tirage de secours.
+- « Aussi appelé » affiché aux tirages (Accueil, Exercice aléatoire) et en Régie (sous le titre, plein écran).
+- Tests : 246/246 (iPhone-Chromium et iPhone-WebKit), check.cjs et integrity.cjs OK ; le test de la suggestion est réécrit, un test « Aussi appelé » ajouté (8 tests dans `tests/pistes-improwiki.spec.cjs`). Cache `v55-public-aussi-appele`, `styles.css?v=11`.
+
+### Lot du 2026-11-12 : titres du public (D33), même branche, PR 29
+| Lot | Objet | État |
+|---|---|---|
+| 1 | Questions cochées (Lieu, Relation, Mot au départ), listes Objet, Époque, films, chansons | fait ; listes à relire |
+| 2 | Deux mots du public mélangés en titres, choix, ✏️, carnet de bord | fait |
+| 3 | Deux films ou deux chansons, « à la manière de » | fait |
+| 4 | Thème du match, lien depuis le Spectacle, Mes titres | fait |
+
+- Tests ajoutés : `tests/titres-public.spec.cjs` (7 tests) ; campagne complète 260/260 (iPhone-Chromium et iPhone-WebKit), check.cjs et integrity.cjs OK. Cache `v56-titres-du-public`, `styles.css?v=12`.
+- Rendu vérifié sur iPhone SE et iPhone 13 (WebKit) : pas de débordement, cibles tactiles ≥ 44 px dans la boîte de suggestion, aucune erreur JavaScript.
+
+### Retouche du 2026-11-12 : question cochée et replis (D34), PR 29
+- La question à poser se coche (Lieu, Relation, Mot ; les autres repliées), plus de 🔄.
+- Replis ajoutés : Régie (suggestion, catégories de tirage, noms et réglages du match, remarque du chrono), Accueil (sauvegarde), Préparer (ajout manuel), Bibliothèque (filtres), Spectacle (jeux repérés, trames), Groupes (équipes enregistrées fermées).
+- Tests adaptés : ouverture des replis avant usage (features, mobile, phase-nov, regression, data-tools, pistes-improwiki, titres-public). Cache `v57-replis`, `styles.css?v=13`. Campagne complète 260/260 (iPhone-Chromium et iPhone-WebKit), check.cjs et integrity.cjs OK.
+
+### 2026-11-13 : décisions D35 et fusion de la PR 29
+- 1-61 et 2-31 retirées de l’appli (103 exercices affichés, library.json inchangé) ; tirages d’impro sans case cochée au départ.
+- Tests adaptés (compte de 103 fiches dans helpers.cjs, tirages, contact léger 5, niveaux) ; 2 nouveaux tests. Campagne complète au vert (iPhone-Chromium et iPhone-WebKit), check.cjs et integrity.cjs OK. Cache `v58-tirages-vides`.
