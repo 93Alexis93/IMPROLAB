@@ -275,3 +275,15 @@ Demande d’Alexis (8 novembre 2026, réponses aux questions préalables) ; bran
 - **Genre, Métier, Activité** : restent décochés au départ.
 - **Tirages d’impro** : rien n’est coché au départ. Le réglage déjà enregistré sur un appareil est remis une seule fois à « rien de coché » (`impro-draw-none-v1`), ensuite les choix sont gardés. « Tout tirer » sans case cochée ouvre « Catégories à tirer » et le dit.
 - **Fusion** : Alexis demande « fais tout et fusionne » : PR 29 fusionnée dans main après la CI.
+
+### D36. Refonte « écrans légers » après audit (13 novembre 2026)
+Demande d’Alexis : audit complet puis refonte, avec pour but des écrans moins chargés (étendre les replis) et un peu de fantaisie dans la présentation. Rapport dans `AUDIT.md`.
+
+- **Deux nouveaux fichiers**, `refonte.css` et `refonte.js`, chargés après `styles.css` et après le script principal. Ils ne touchent ni à `library.json`, ni au générateur de séance, ni aux données enregistrées. Pour revenir en arrière : retirer leurs deux lignes dans `index.html` et dans `sw.js`. C’est un écart au « fichier unique » : `refonte.js` est écrit en clair et commenté. À confirmer ou refuser par Alexis.
+- **En-tête** : complet sur l’Accueil, réduit à une ligne ailleurs. Un bouton « Tout replier » y apparaît dès qu’un repli est ouvert sur la page.
+- **Navigation** : barre fixe en bas de l’écran, avec un pictogramme par onglet. Mêmes cinq entrées, mêmes libellés ; « Plus » s’ouvre vers le haut. Masquée en plein écran de Régie et de séance.
+- **Bibliothèque** : une ligne par jeu (titre, catégorie, niveau, « Aussi appelé »). Toucher le titre déplie la fiche. Trois résultats ou moins : fiches ouvertes d’office. Bouton « Tout déplier ». À l’impression, tout est déplié.
+- **Cahier de coach** : chaque liste est repliée, on la déplie au toucher.
+- **Préparer** : Enregistrer, Partager, Fiches élèves, Exporter et Effacer sont masqués tant que la séance est vide (Importer reste). Les deux textes d’aide passent derrière un bouton « ? ».
+- **Fantaisie** : un masque de théâtre arrive et éclate en deux secondes à l’ouverture (sans bloquer les touchers) ; confettis quand le chrono de la Régie arrive à zéro en décompte ; « Défi du jour » sur l’Accueil, tiré des listes Lieu, Personnage, Émotion et Contrainte d’Alexis, identique toute la journée ; le logo touché cinq fois fait pleuvoir des masques et affiche une des citations de l’en-tête ; petit rebond sur le résultat d’un tirage ; les pages glissent en entrant. Tout est coupé quand l’iPhone est réglé sur « Réduire les animations ».
+- **Non retenu** : la mémoire des replis d’un lancement à l’autre (elle rechargerait les écrans, contraire au but) ; le thème sombre (demande d’abord de nettoyer `styles.css`, voir option B de l’audit).

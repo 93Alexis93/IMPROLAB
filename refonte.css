@@ -1,0 +1,123 @@
+/* IMPRO LAB : refonte « écrans légers » (D36, 13 novembre 2026).
+   Tout ce qui suit s'ajoute par-dessus styles.css. Pour revenir en arrière,
+   il suffit de retirer refonte.css et refonte.js de index.html. */
+
+:root{--rf-masque:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -6 108 122'%3E%3Cpath d='M8 14Q50-4 92 14Q96 62 78 90Q64 110 50 110Q36 110 22 90Q4 62 8 14Z' fill='%238f2433' stroke='%23ffd16d' stroke-width='4' stroke-linejoin='round'/%3E%3Cpath d='M22 43Q33 30 44 43Q33 49 22 43ZM56 43Q67 30 78 43Q67 49 56 43Z' fill='%23fff8ee'/%3E%3Cpath d='M24 66Q50 79 76 66Q70 97 50 97Q30 97 24 66Z' fill='%23fff8ee'/%3E%3Cpath d='M19 30Q31 19 45 27M55 27Q69 19 81 30' fill='none' stroke='%23ffd16d' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E");--rf-bordeaux:#8f2433;--rf-or:#ffd16d;--rf-encre:#25231f;--rf-barre:74px}
+
+/* ---------- 1. En-tête compact hors de l'Accueil ---------- */
+body[data-tab]:not([data-tab="home"])>header{padding:6px 12px!important}
+body[data-tab]:not([data-tab="home"])>header>:not(h1):not(.rf-fold-all){display:none!important}
+body[data-tab]:not([data-tab="home"])>header h1{font-size:19px;margin:0;display:flex;align-items:center}
+body[data-tab]:not([data-tab="home"])>header .header-logo{width:30px;height:30px;border-radius:8px}
+body[data-tab]:not([data-tab="home"])>header::after{display:none}
+.header-logo{cursor:pointer;-webkit-tap-highlight-color:transparent}
+.rf-fold-all{display:none}
+body[data-tab]:not([data-tab="home"])>header .rf-fold-all{display:inline-flex;align-items:center;justify-content:center;position:absolute;right:8px;top:50%;transform:translateY(-50%);min-height:44px;min-width:44px;padding:0 10px;font-size:13px;font-weight:700;background:transparent;color:var(--rf-bordeaux);border:1px solid rgba(143,36,51,.35);border-radius:10px;box-shadow:none}
+.rf-fold-all[hidden]{display:none!important}
+
+/* ---------- 2. Navigation en bas, sous le pouce ---------- */
+@media screen{
+  body{padding-bottom:calc(var(--rf-barre) + env(safe-area-inset-bottom,0px))}
+  nav[aria-label="Navigation principale"]{position:fixed!important;left:0;right:0;bottom:0;top:auto!important;z-index:60;margin:0!important;padding:4px 4px calc(4px + env(safe-area-inset-bottom,0px))!important;background:#fff8ee!important;border-top:1px solid rgba(143,36,51,.22);border-bottom:0!important;box-shadow:0 -6px 20px rgba(37,35,31,.12);border-radius:0!important}
+  nav[aria-label="Navigation principale"]>button,nav[aria-label="Navigation principale"] .more-navigation>summary{display:flex!important;flex-direction:column;align-items:center;justify-content:center;gap:1px;box-sizing:border-box;min-height:50px!important;padding:3px 2px!important;font-size:10px!important;line-height:1.05!important;border:0!important;border-radius:12px!important;box-shadow:none!important;white-space:normal;text-align:center;list-style:none}
+  nav[aria-label="Navigation principale"] .more-navigation>summary::-webkit-details-marker{display:none}
+  nav[aria-label="Navigation principale"]>button::before,nav[aria-label="Navigation principale"] .more-navigation>summary::before{content:"";display:block;flex:none;width:21px;height:21px;background:currentColor;-webkit-mask:var(--rf-ico) center/contain no-repeat;mask:var(--rf-ico) center/contain no-repeat;transition:transform .25s cubic-bezier(.3,1.6,.5,1)}
+  nav[aria-label="Navigation principale"]>button[aria-current="page"]::before{transform:translateY(-2px) scale(1.18)}
+  nav[aria-label="Navigation principale"]>button[onclick="tab('home')"]{--rf-ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z'/%3E%3C/svg%3E")}
+  nav[aria-label="Navigation principale"]>button[onclick="tab('seance')"]{--rf-ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='5' y='4' width='14' height='17' rx='2'/%3E%3Cpath d='M9 4V2.5h6V4M9 10h6M9 14h6M9 18h3'/%3E%3C/svg%3E")}
+  nav[aria-label="Navigation principale"]>button[onclick="tab('random')"]{--rf-ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3.5' y='3.5' width='17' height='17' rx='3.5'/%3E%3Ccircle cx='8.5' cy='8.5' r='1.1' fill='%23000'/%3E%3Ccircle cx='15.5' cy='15.5' r='1.1' fill='%23000'/%3E%3Ccircle cx='12' cy='12' r='1.1' fill='%23000'/%3E%3Ccircle cx='15.5' cy='8.5' r='1.1' fill='%23000'/%3E%3Ccircle cx='8.5' cy='15.5' r='1.1' fill='%23000'/%3E%3C/svg%3E")}
+  nav[aria-label="Navigation principale"]>button[onclick="tab('live')"]{--rf-ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='13.5' r='7.5'/%3E%3Cpath d='M12 13.5V9.5M9.5 2.5h5M12 2.5V6M18.5 6.5l1.5-1.5'/%3E%3C/svg%3E")}
+  nav[aria-label="Navigation principale"] .more-navigation>summary{--rf-ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23000'%3E%3Ccircle cx='5' cy='12' r='2'/%3E%3Ccircle cx='12' cy='12' r='2'/%3E%3Ccircle cx='19' cy='12' r='2'/%3E%3C/svg%3E")}
+  /* Le menu « Plus » s'ouvre vers le haut, au-dessus de la barre. */
+  nav[aria-label="Navigation principale"] .more-navigation{position:static!important;grid-column:auto!important}
+  nav[aria-label="Navigation principale"] .more-navigation[open]{grid-column:auto!important}
+  nav[aria-label="Navigation principale"] .more-navigation-menu{position:absolute!important;left:6px!important;right:6px!important;top:auto!important;bottom:calc(100% + 6px);grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:6px;padding:8px!important;border-radius:16px;background:#fff8ee!important;border:1px solid rgba(143,36,51,.22)!important;box-shadow:0 -10px 30px rgba(37,35,31,.22)!important;animation:rfMonte .18s ease-out}
+  nav[aria-label="Navigation principale"] .more-navigation-menu button{min-height:48px;border:1px solid rgba(143,36,51,.16)!important;border-radius:12px;text-align:center}
+  body.regie-full nav[aria-label="Navigation principale"],body.stage-open nav[aria-label="Navigation principale"]{display:none!important}
+  body.regie-full,body.stage-open{padding-bottom:0}
+}
+@keyframes rfMonte{from{opacity:0;transform:translateY(10px)}}
+
+/* ---------- 3. Bibliothèque : une ligne par jeu, on déplie au toucher ---------- */
+#games .card{position:relative}
+#games .card>.exercise-title{cursor:pointer;margin:0 0 6px;padding:10px 40px 4px 0;min-height:44px;display:flex;align-items:center;-webkit-tap-highlight-color:transparent}
+#games .card>.exercise-title::after{content:"";position:absolute;right:16px;top:22px;width:10px;height:10px;border-right:2.5px solid var(--rf-bordeaux);border-bottom:2.5px solid var(--rf-bordeaux);transform:rotate(45deg);transition:transform .2s}
+#games .card.rf-open>.exercise-title::after{transform:rotate(-135deg);top:27px}
+@media screen{#games .card:not(.rf-open){padding-top:6px!important;padding-bottom:10px!important;margin-bottom:8px!important}}
+@media screen{#games .card:not(.rf-open)>:not(.exercise-title):not(.pill):not(.exercise-aliases){display:none!important}}
+@media screen{#games .card:not(.rf-open)>.exercise-aliases{display:inline;margin:0 0 0 6px;font-size:12px}}
+@media screen{#games .card:not(.rf-open)>.pill{font-size:12.5px;padding:2px 9px}}
+#games .card.rf-open>:not(.exercise-title):not(.pill){animation:rfDeplie .22s ease-out}
+.rf-library-tools{display:flex;gap:8px;margin:6px 0 10px}
+.rf-library-tools button{min-height:44px;flex:1;font-size:13.5px}
+@keyframes rfDeplie{from{opacity:0;transform:translateY(-6px)}}
+
+/* ---------- 4. Cahier de coach : listes repliées ---------- */
+#cahier .coach-list-card{position:relative}
+#cahier .coach-list-card>.coach-list-heading{cursor:pointer;min-height:44px;padding-right:30px;-webkit-tap-highlight-color:transparent}
+#cahier .coach-list-card>.coach-list-heading::after{content:"";position:absolute;right:16px;top:24px;width:9px;height:9px;border-right:2.5px solid var(--rf-bordeaux);border-bottom:2.5px solid var(--rf-bordeaux);transform:rotate(45deg);transition:transform .2s}
+#cahier .coach-list-card.rf-open>.coach-list-heading::after{transform:rotate(-135deg)}
+@media screen{#cahier .coach-list-card:not(.rf-open)>:not(.coach-list-heading){display:none!important}}
+@media screen{#cahier .coach-list-card:not(.rf-open){padding-bottom:6px}}
+
+/* ---------- 5. Préparer : rien d'inutile tant que la séance est vide ---------- */
+body.rf-plan-vide #seance button[onclick="saveSession()"],
+body.rf-plan-vide #seance button[onclick="shareSession()"],
+body.rf-plan-vide #seance button[onclick="printStudentSheets()"],
+body.rf-plan-vide #seance button[onclick="exportSession()"],
+body.rf-plan-vide #seance button[onclick="clearSession()"]{display:none!important}
+#seance .rf-aide{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;margin-left:6px;padding:0;border-radius:50%;background:transparent;color:var(--rf-bordeaux);border:1px solid rgba(143,36,51,.35);box-shadow:none;font:700 17px Georgia,serif;vertical-align:middle}
+#seance:not(.rf-aide-ouverte)>p.muted:first-of-type,#seance:not(.rf-aide-ouverte) .guided-heading>p{display:none}
+#seance>h2{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px}
+
+/* ---------- 6. Accueil : défi du jour ---------- */
+.rf-defi{margin:14px 0 4px;padding:0;border-radius:14px;background:#fffaf0;border:1px dashed rgba(143,36,51,.45)}
+.rf-defi>summary{cursor:pointer;min-height:48px;display:flex;align-items:center;gap:8px;padding:6px 14px;font-weight:800;color:var(--rf-bordeaux);list-style:none}
+.rf-defi>summary::-webkit-details-marker{display:none}
+.rf-defi>summary::after{content:"Retourner la carte";margin-left:auto;font-size:11.5px;font-weight:600;opacity:.75}
+.rf-defi[open]>summary::after{content:"Cacher"}
+.rf-defi-carte{padding:4px 14px 14px;transform-origin:top center;animation:rfCarte .5s cubic-bezier(.2,1.3,.4,1)}
+.rf-defi-carte p{margin:0 0 6px;font:600 17px/1.4 Georgia,"Times New Roman",serif;color:var(--rf-encre)}
+.rf-defi-carte small{display:block;color:#5c5448;font-size:12.5px;line-height:1.4}
+.rf-defi-carte button{margin-top:10px;min-height:44px}
+@keyframes rfCarte{from{opacity:0;transform:perspective(600px) rotateX(-80deg)}}
+
+/* ---------- 7. Un peu de vie ---------- */
+/* a. Le masque qui éclate à l'ouverture. Il ne bloque aucun toucher. */
+.rf-scene{position:fixed;inset:0;z-index:9999;pointer-events:none;overflow:hidden;display:grid;place-items:center}
+.rf-masque{position:relative;width:min(46vw,190px);aspect-ratio:1/1.12;animation:rfEntre .75s cubic-bezier(.2,1.5,.4,1) both,rfTremble .5s .8s ease-in-out both}
+.rf-masque>div{position:absolute;inset:0;background:var(--rf-masque) center/100% 100% no-repeat;filter:drop-shadow(0 12px 22px rgba(37,35,31,.35))}
+.rf-masque>.rf-gauche{clip-path:polygon(0 0,52% 0,44% 22%,56% 45%,43% 68%,52% 100%,0 100%);animation:rfGauche .7s 1.3s cubic-bezier(.3,0,.8,.4) both}
+.rf-masque>.rf-droite{clip-path:polygon(52% 0,100% 0,100% 100%,52% 100%,43% 68%,56% 45%,44% 22%);animation:rfDroite .7s 1.3s cubic-bezier(.3,0,.8,.4) both}
+.rf-eclat{position:absolute;left:50%;top:50%;width:var(--t,10px);height:calc(var(--t,10px)*.55);margin:-4px 0 0 -5px;border-radius:2px;background:var(--c,#ffd21f);opacity:0;animation:rfEclat var(--d,.8s) var(--r,1.3s) cubic-bezier(.1,.7,.3,1) both}
+.rf-eclat.rf-rond{border-radius:50%;height:var(--t,10px)}
+@keyframes rfEntre{from{opacity:0;transform:scale(.2) rotate(-25deg)}}
+@keyframes rfTremble{20%{transform:rotate(-7deg) scale(1.04)}40%{transform:rotate(6deg) scale(1.07)}60%{transform:rotate(-5deg) scale(1.1)}80%{transform:rotate(4deg) scale(1.13)}100%{transform:scale(1.16)}}
+@keyframes rfGauche{to{opacity:0;transform:translate(-75vw,22vh) rotate(-70deg) scale(.7)}}
+@keyframes rfDroite{to{opacity:0;transform:translate(75vw,-12vh) rotate(80deg) scale(.7)}}
+@keyframes rfEclat{0%{opacity:1;transform:translate(0,0) rotate(0) scale(.4)}70%{opacity:1}100%{opacity:0;transform:translate(var(--x),var(--y)) rotate(var(--a)) scale(1)}}
+/* b. Pluie de masques (logo touché cinq fois). */
+.rf-pluie{position:absolute;top:-60px;left:var(--l);width:var(--t,34px);aspect-ratio:1/1.12;background:var(--rf-masque) center/100% 100% no-repeat;animation:rfTombe var(--d,2.4s) var(--r,0s) ease-in both}
+@keyframes rfTombe{to{transform:translateY(115vh) rotate(var(--a,200deg))}}
+/* c. Petit mot en bas d'écran. */
+.rf-mot{position:fixed;left:12px;right:12px;bottom:calc(var(--rf-barre) + 14px + env(safe-area-inset-bottom,0px));z-index:9998;pointer-events:none;padding:12px 16px;border-radius:14px;background:#25231f;color:#fff8ee;font:italic 600 15px/1.4 Georgia,"Times New Roman",serif;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.3);animation:rfMot 3.6s ease both}
+@keyframes rfMot{0%{opacity:0;transform:translateY(16px)}8%,88%{opacity:1;transform:none}100%{opacity:0}}
+/* d. Le résultat d'un tirage arrive avec un petit rebond. */
+#homeQuickResult>h4,#randomExerciseResult h3,#randomExerciseResult h4,#expressResult>h4{animation:rfRebond .45s cubic-bezier(.2,1.6,.4,1) both}
+@keyframes rfRebond{from{opacity:0;transform:scale(.7) rotate(-3deg)}}
+/* e. Les pages glissent en entrant. */
+section.rf-arrive{animation:rfPage .2s ease-out}
+@keyframes rfPage{from{opacity:.2;transform:translateY(8px)}}
+/* f. Le chrono à zéro bat comme un cœur. */
+#liveClock.rf-zero{animation:rfCoeur .5s ease-in-out 4}
+@keyframes rfCoeur{50%{transform:scale(1.12)}}
+
+@media (prefers-reduced-motion:reduce){
+  .rf-scene,.rf-mot{display:none!important}
+  section.rf-arrive,#homeQuickResult>h4,#randomExerciseResult h3,#randomExerciseResult h4,#expressResult>h4,#liveClock.rf-zero,.rf-defi-carte,#games .card.rf-open>*,nav[aria-label="Navigation principale"] .more-navigation-menu{animation:none!important}
+}
+@media print{.rf-scene,.rf-mot,.rf-fold-all,.rf-defi,.rf-library-tools,.rf-aide{display:none!important}}
+
+/* Retouches après captures */
+.rf-defi-carte p small{font:700 11px/1.6 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--rf-bordeaux)}
+@media screen{nav[aria-label="Navigation principale"] .more-navigation:has(button[aria-current="page"])>summary{background:var(--rf-bordeaux)!important;color:#fff!important}}
