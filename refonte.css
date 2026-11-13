@@ -66,9 +66,9 @@ body.rf-plan-vide #seance button[onclick="shareSession()"],
 body.rf-plan-vide #seance button[onclick="printStudentSheets()"],
 body.rf-plan-vide #seance button[onclick="exportSession()"],
 body.rf-plan-vide #seance button[onclick="clearSession()"]{display:none!important}
-#seance .rf-aide{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;margin-left:6px;padding:0;border-radius:50%;background:transparent;color:var(--rf-bordeaux);border:1px solid rgba(143,36,51,.35);box-shadow:none;font:700 17px Georgia,serif;vertical-align:middle}
-#seance:not(.rf-aide-ouverte)>p.muted:first-of-type,#seance:not(.rf-aide-ouverte) .guided-heading>p{display:none}
-#seance>h2{display:flex;align-items:center;justify-content:space-between;margin-bottom:4px}
+section>h2>.rf-aide{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;margin-left:6px;padding:0;border-radius:50%;background:transparent;color:var(--rf-bordeaux);border:1px solid rgba(143,36,51,.35);box-shadow:none;font:700 17px Georgia,serif;vertical-align:middle}
+@media screen{section:not(.rf-aide-ouverte)>h2+p.muted,#seance:not(.rf-aide-ouverte) .guided-heading>p,#cahier:not(.rf-aide-ouverte) .coach-intro{display:none}}
+section>h2:has(.rf-aide){display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px}
 
 /* ---------- 6. Accueil : défi du jour ---------- */
 .rf-defi{margin:14px 0 4px;padding:0;border-radius:14px;background:#fffaf0;border:1px dashed rgba(143,36,51,.45)}
@@ -103,7 +103,7 @@ body.rf-plan-vide #seance button[onclick="clearSession()"]{display:none!importan
 .rf-mot{position:fixed;left:12px;right:12px;bottom:calc(var(--rf-barre) + 14px + env(safe-area-inset-bottom,0px));z-index:9998;pointer-events:none;padding:12px 16px;border-radius:14px;background:#25231f;color:#fff8ee;font:italic 600 15px/1.4 Georgia,"Times New Roman",serif;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.3);animation:rfMot 3.6s ease both}
 @keyframes rfMot{0%{opacity:0;transform:translateY(16px)}8%,88%{opacity:1;transform:none}100%{opacity:0}}
 /* d. Le résultat d'un tirage arrive avec un petit rebond. */
-#homeQuickResult>h4,#randomExerciseResult h3,#randomExerciseResult h4,#expressResult>h4{animation:rfRebond .45s cubic-bezier(.2,1.6,.4,1) both}
+#homeQuickResult h4,#randomExerciseResult h3,#randomExerciseResult h4,#expressResult>h4{animation:rfRebond .45s cubic-bezier(.2,1.6,.4,1) both}
 @keyframes rfRebond{from{opacity:0;transform:scale(.7) rotate(-3deg)}}
 /* e. Les pages glissent en entrant. */
 section.rf-arrive{animation:rfPage .2s ease-out}
@@ -114,10 +114,28 @@ section.rf-arrive{animation:rfPage .2s ease-out}
 
 @media (prefers-reduced-motion:reduce){
   .rf-scene,.rf-mot{display:none!important}
-  section.rf-arrive,#homeQuickResult>h4,#randomExerciseResult h3,#randomExerciseResult h4,#expressResult>h4,#liveClock.rf-zero,.rf-defi-carte,#games .card.rf-open>*,nav[aria-label="Navigation principale"] .more-navigation-menu{animation:none!important}
+  section.rf-arrive,#homeQuickResult h4,#randomExerciseResult h3,#randomExerciseResult h4,#expressResult>h4,#liveClock.rf-zero,.rf-defi-carte,#games .card.rf-open>*,nav[aria-label="Navigation principale"] .more-navigation-menu{animation:none!important}
 }
 @media print{.rf-scene,.rf-mot,.rf-fold-all,.rf-defi,.rf-library-tools,.rf-aide{display:none!important}}
 
 /* Retouches après captures */
 .rf-defi-carte p small{font:700 11px/1.6 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--rf-bordeaux)}
 @media screen{nav[aria-label="Navigation principale"] .more-navigation:has(button[aria-current="page"])>summary{background:var(--rf-bordeaux)!important;color:#fff!important}}
+
+/* ---------- 8. Deuxième passe (13 novembre) : Groupes, Exercice aléatoire, trois effets de plus ---------- */
+.rf-ajout-joueurs{margin:10px 0;border:1px solid rgba(143,36,51,.25);border-radius:12px;padding:4px 10px;background:rgba(255,255,255,.45)}
+.rf-ajout-joueurs>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-weight:700;color:var(--rf-bordeaux)}
+/* g. Le rideau s'ouvre quand on passe en plein écran. */
+.rf-rideau{position:absolute;top:0;bottom:0;width:51%;background:repeating-linear-gradient(90deg,#7a1c2a 0 14px,#9c2b3b 14px 30px,#641522 30px 40px);box-shadow:inset 0 -14px 0 var(--rf-or),0 0 30px rgba(0,0,0,.5)}
+.rf-rideau.rf-g{left:0;animation:rfRideauG .85s .12s cubic-bezier(.6,0,.3,1) both}
+.rf-rideau.rf-d{right:0;animation:rfRideauD .85s .12s cubic-bezier(.6,0,.3,1) both}
+@keyframes rfRideauG{to{transform:translateX(-104%) skewX(4deg)}}
+@keyframes rfRideauD{to{transform:translateX(104%) skewX(-4deg)}}
+/* h. Le tirage de l'Accueil défile avant de s'arrêter. */
+#homeQuickResult h4.rf-roule{position:relative;color:transparent!important;animation:none}
+.rf-rouleau{position:absolute;inset:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:var(--rf-bordeaux);filter:blur(.6px);animation:rfDefile .09s linear infinite}
+@keyframes rfDefile{from{transform:translateY(-35%);opacity:.5}to{transform:translateY(35%);opacity:1}}
+/* i. Le tampon « Séance enregistrée ». */
+.rf-tampon{padding:10px 22px;border:4px double var(--rf-bordeaux);border-radius:10px;color:var(--rf-bordeaux);background:rgba(255,248,238,.92);font:800 22px/1.15 Georgia,"Times New Roman",serif;letter-spacing:.06em;text-transform:uppercase;text-align:center;animation:rfTampon 1.5s cubic-bezier(.2,1.4,.4,1) both}
+@keyframes rfTampon{0%{opacity:0;transform:scale(2.6) rotate(-22deg)}22%{opacity:1;transform:scale(1) rotate(-9deg)}80%{opacity:1;transform:scale(1) rotate(-9deg)}100%{opacity:0;transform:scale(1.05) rotate(-9deg)}}
+@media print{.rf-ajout-joueurs>summary{display:none}}

@@ -13,7 +13,7 @@
 
   /* ---------- Onglet courant : sert à l'en-tête compact et à l'entrée des pages ---------- */
   var tabOrigine = window.tab;
-  function ongletVisible() { var s = $$('body > section').filter(function (x) { return !x.hidden; })[0]; return s ? s.id : 'home'; }
+  function ongletVisible() { var s = $$('main > section, body > section').filter(function (x) { return !x.hidden; })[0]; return s ? s.id : 'home'; }
   if (typeof tabOrigine === 'function') {
     window.tab = function (id) {
       var avant = body.dataset.tab;
@@ -24,6 +24,7 @@
         if (s && !calme) { s.classList.remove('rf-arrive'); void s.offsetWidth; s.classList.add('rf-arrive'); }
         window.scrollTo(0, 0);
       }
+      if (id === 'groupes' && avant !== id) sur(function () { majAjoutJoueurs(); });
       majToutReplier();
       return r;
     };
@@ -116,13 +117,35 @@
     body.classList.toggle('rf-plan-vide', n === 0);
   }
   if (plan) { new MutationObserver(majPlan).observe(plan, { childList: true }); majPlan(); }
-  sur(function () {
-    var seance = doc.getElementById('seance'), h2 = $('#seance > h2'); if (!seance || !h2) return;
-    var aide = el('button', 'rf-aide', '?'); aide.type = 'button';
-    aide.setAttribute('aria-label', 'Afficher ou cacher l’aide de cette page'); aide.setAttribute('aria-expanded', 'false');
-    aide.addEventListener('click', function () { aide.setAttribute('aria-expanded', String(seance.classList.toggle('rf-aide-ouverte'))); });
-    h2.appendChild(aide);
+  // Le texte d'introduction de chaque page passe derrière un bouton « ? ».
+  $$('body > section, main > section').forEach(function (page) {
+    sur(function () {
+      var h2 = $(':scope > h2', page); if (!h2) return;
+      var suivant = h2.nextElementSibling;
+      if (page.id !== 'seance' && !(suivant && suivant.matches('p.muted'))) return;
+      var aide = el('button', 'rf-aide', '?'); aide.type = 'button';
+      aide.setAttribute('aria-label', 'Afficher ou cacher l’aide de cette page'); aide.setAttribute('aria-expanded', 'false');
+      aide.addEventListener('click', function () { aide.setAttribute('aria-expanded', String(page.classList.toggle('rf-aide-ouverte'))); });
+      h2.appendChild(aide);
+    });
   });
+
+  /* ---------- Exercice aléatoire : les six curseurs repliés, le bouton de tirage remonte ---------- */
+  sur(function () { var mood = doc.getElementById('randomSettingsFold'); if (mood) mood.open = false; });
+
+  /* ---------- Groupes : l'ajout de joueurs se replie dès que l'effectif existe ---------- */
+  var ajoutJoueurs;
+  sur(function () {
+    var carte = $('#groupes > .card'), liste = doc.getElementById('rosterList'); if (!carte || !liste) return;
+    var champ = $$(':scope > label', carte).filter(function (l) { return $('textarea', l); })[0]; if (!champ) return;
+    var bouton = champ.nextElementSibling; if (!bouton || bouton.tagName !== 'BUTTON') return;
+    ajoutJoueurs = el('details', 'rf-ajout-joueurs'); ajoutJoueurs.appendChild(el('summary', '', '＋ Ajouter des joueurs'));
+    carte.insertBefore(ajoutJoueurs, champ); ajoutJoueurs.appendChild(champ); ajoutJoueurs.appendChild(bouton);
+    ajoutJoueurs.open = true;
+  });
+  function majAjoutJoueurs() { // à l'arrivée sur l'onglet : ouvert si l'effectif est vide, replié sinon
+    var liste = doc.getElementById('rosterList'); if (ajoutJoueurs && liste) ajoutJoueurs.open = liste.children.length === 0;
+  }
 
   /* ---------- Accueil : le défi du jour, tiré de tes propres listes ---------- */
   function hasard(graine) { // petit générateur reproductible : même défi toute la journée
@@ -233,6 +256,45 @@
       if (citations.length) petitMot('« ' + citations[Math.floor(Math.random() * citations.length)].replace(/^«\s*|\s*»$/g, '') + ' »');
     });
   });
+
+  // Le rideau s'ouvre à l'entrée en plein écran (séance ou Régie).
+  sur(function () {
+    var etait = false;
+    new MutationObserver(function () {
+      var plein = body.classList.contains('stage-open') || body.classList.contains('regie-full');
+      if (plein && !etait && !calme) { var s = scene(1100); s.appendChild(el('div', 'rf-rideau rf-g')); s.appendChild(el('div', 'rf-rideau rf-d')); }
+      etait = plein;
+    }).observe(body, { attributes: true, attributeFilter: ['class'] });
+  });
+
+  // Tirage de l'Accueil : les titres défilent une demi-seconde avant de s'arrêter sur le bon.
+  // Le vrai titre est déjà en place dessous ; seul l'habillage défile.
+  var tirageOrigine = window.quickDraw;
+  if (typeof tirageOrigine === 'function') {
+    window.quickDraw = function () {
+      var r = tirageOrigine.apply(this, arguments);
+      sur(function () {
+        var h4 = $('#homeQuickResult h4'); if (!h4 || calme) return;
+        var titres = sur(function () { return data.map(function (g) { return displayTitle(g[0]); }); }) || []; if (titres.length < 5) return;
+        var rouleau = el('span', 'rf-rouleau'); rouleau.setAttribute('aria-hidden', 'true');
+        h4.classList.add('rf-roule'); h4.appendChild(rouleau);
+        var tic = setInterval(function () { rouleau.textContent = titres[Math.floor(Math.random() * titres.length)]; }, 70);
+        setTimeout(function () { clearInterval(tic); rouleau.remove(); h4.classList.remove('rf-roule'); h4.style.animation = 'none'; void h4.offsetWidth; h4.style.animation = ''; }, 560);
+      });
+      return r;
+    };
+  }
+
+  // Séance enregistrée : un coup de tampon.
+  var enregistrerOrigine = window.saveSession;
+  if (typeof enregistrerOrigine === 'function') {
+    window.saveSession = function () {
+      var n = sur(function () { return planCards().length; }) || 0;
+      var r = enregistrerOrigine.apply(this, arguments);
+      if (n > 0 && !calme) scene(1500).appendChild(el('div', 'rf-tampon', 'Séance enregistrée'));
+      return r;
+    };
+  }
 
   window.improLabRefonte = { masque: masqueQuiEclate, confettis: confettis, pluie: pluieDeMasques };
 })();

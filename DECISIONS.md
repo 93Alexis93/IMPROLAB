@@ -292,3 +292,10 @@ Demande d’Alexis : audit complet puis refonte, avec pour but des écrans moins
 - Remettre `refonte.css` et `refonte.js` dans le fichier unique : possible plus tard, pas maintenant. À reproposer.
 - Tri des effets de fantaisie (ce qui reste, ce qui part) : plus tard, après ses essais sur iPhone.
 - Pas de réécriture complète de l’appli (option C de `AUDIT.md` écartée).
+
+**Deuxième passe du 13 novembre 2026 (réponses d’Alexis : « alléger encore » et « encore quelques idées ») :**
+- Le texte d’introduction de chaque page (Préparer, Bibliothèque, Groupes, Spectacle, Principes, Cahier de coach) passe derrière un bouton « ? ». Rien n’est supprimé.
+- Exercice aléatoire : les six curseurs sont repliés au départ, le bouton « Tirer un exercice » remonte sous le choix du groupe.
+- Groupes : « Ajouter des joueurs » devient un repli, ouvert tant que l’effectif est vide, refermé quand on revient sur l’onglet avec un effectif déjà saisi.
+- Trois effets de plus, à trier avec les autres : un rideau qui s’ouvre à l’entrée en plein écran (séance et Régie), les titres qui défilent une demi-seconde au tirage de l’Accueil (le vrai titre est déjà en place dessous), un tampon « Séance enregistrée ».
+- Spectacle et Régie : pas touchés dans cette passe. Le Spectacle demanderait de replier les champs titre, date et effectif ; à voir avec Alexis.
