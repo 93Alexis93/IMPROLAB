@@ -132,8 +132,8 @@ section.rf-arrive{animation:rfPage .2s ease-out}
 @keyframes rfRideauG{to{transform:translateX(-104%) skewX(4deg)}}
 @keyframes rfRideauD{to{transform:translateX(104%) skewX(-4deg)}}
 /* h. Le tirage de l'Accueil défile avant de s'arrêter. */
-#homeQuickResult h4.rf-roule{position:relative;color:transparent!important;animation:none}
-.rf-rouleau{position:absolute;inset:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:var(--rf-bordeaux);filter:blur(.6px);animation:rfDefile .09s linear infinite}
+#homeQuickResult h4.rf-roule{color:transparent!important;animation:none}
+.rf-rouleau{position:absolute;pointer-events:none;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:var(--rf-bordeaux);filter:blur(.6px);animation:rfDefile .09s linear infinite}
 @keyframes rfDefile{from{transform:translateY(-35%);opacity:.5}to{transform:translateY(35%);opacity:1}}
 /* i. Le tampon « Séance enregistrée ». */
 .rf-tampon{padding:10px 22px;border:4px double var(--rf-bordeaux);border-radius:10px;color:var(--rf-bordeaux);background:rgba(255,248,238,.92);font:800 22px/1.15 Georgia,"Times New Roman",serif;letter-spacing:.06em;text-transform:uppercase;text-align:center;animation:rfTampon 1.5s cubic-bezier(.2,1.4,.4,1) both}

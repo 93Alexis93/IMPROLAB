@@ -147,7 +147,9 @@ test('tirage de l’Accueil : le titre défile puis s’arrête, le vrai titre n
   await page.getByRole('button', { name: 'Tirer un exercice ↗' }).click();
   const h4 = page.locator('#homeQuickResult h4');
   await expect(h4).toBeVisible();
-  const titre = await h4.evaluate(el => el.firstChild.textContent);
+  // Pendant le défilement, le texte du titre est déjà le bon (le rouleau est à côté, pas dedans).
+  const titre = await h4.innerText();
+  expect(await page.evaluate(t => data.some(g => displayTitle(g[0]) === t), titre)).toBe(true);
   await expect(page.locator('#homeQuickResult .rf-rouleau')).toHaveCount(0, { timeout: 3000 });
   await expect(h4).toHaveText(titre);
   await expect(h4).not.toHaveClass(/rf-roule/);

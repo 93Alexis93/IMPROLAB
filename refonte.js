@@ -277,7 +277,10 @@
         var h4 = $('#homeQuickResult h4'); if (!h4 || calme) return;
         var titres = sur(function () { return data.map(function (g) { return displayTitle(g[0]); }); }) || []; if (titres.length < 5) return;
         var rouleau = el('span', 'rf-rouleau'); rouleau.setAttribute('aria-hidden', 'true');
-        h4.classList.add('rf-roule'); h4.appendChild(rouleau);
+        // Le rouleau est posé à côté du titre, jamais dedans : le texte du titre reste exact à tout instant.
+        var parent = h4.parentNode; if (getComputedStyle(parent).position === 'static') parent.style.position = 'relative';
+        rouleau.style.cssText = 'left:' + h4.offsetLeft + 'px;top:' + h4.offsetTop + 'px;width:' + h4.offsetWidth + 'px;height:' + h4.offsetHeight + 'px;font:' + getComputedStyle(h4).font;
+        h4.classList.add('rf-roule'); parent.appendChild(rouleau);
         var tic = setInterval(function () { rouleau.textContent = titres[Math.floor(Math.random() * titres.length)]; }, 70);
         setTimeout(function () { clearInterval(tic); rouleau.remove(); h4.classList.remove('rf-roule'); h4.style.animation = 'none'; void h4.offsetWidth; h4.style.animation = ''; }, 560);
       });
