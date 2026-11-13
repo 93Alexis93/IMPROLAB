@@ -160,3 +160,31 @@ Branche `amelioration/pistes-improwiki` depuis `main` (23a5a65). Accord d’Alex
 ### 2026-11-13 : décisions D35 et fusion de la PR 29
 - 1-61 et 2-31 retirées de l’appli (103 exercices affichés, library.json inchangé) ; tirages d’impro sans case cochée au départ.
 - Tests adaptés (compte de 103 fiches dans helpers.cjs, tirages, contact léger 5, niveaux) ; 2 nouveaux tests. Campagne complète au vert (iPhone-Chromium et iPhone-WebKit), check.cjs et integrity.cjs OK. Cache `v58-tirages-vides`.
+
+## Lot du 2026-11-13 : audit et refonte « écrans légers » (D36)
+Branche `claude/improlab-audit-refonte-xe6xbx` depuis `main` (1a2cc6b, PR 29 fusionnée).
+
+| Écran (iPhone SE) | Avant | Après |
+|---|---|---|
+| Bibliothèque | 131,9 écrans | 20,5 écrans |
+| Cahier de coach | 3,1 | 1,4 |
+| Préparer (séance vide) | 2,3 | 1,7 |
+| Régie | 2,1 | 1,8 |
+
+- Fichiers : `refonte.css`, `refonte.js`, `AUDIT.md`, `tests/refonte.spec.cjs` (8 tests) ; `index.html` (deux lignes de chargement), `sw.js` (cache `v59-refonte-ecrans-legers`, deux fichiers en plus dans le cache), `tests/features.spec.cjs` (le test des favoris déplie la fiche avant d’ajouter le favori).
+- Tests locaux : `check.cjs` OK, `integrity.cjs` OK (105 fiches), Playwright iPhone-Chromium 139 réussis sur 140. L’échec (« plein écran de séance… paysage ») existait avant la refonte et vient du Playwright 1.63 de l’environnement de travail.
+- WebKit : non lancé en local, à lire dans la CI de la PR.
+- À tester sur iPhone : la barre du bas (zone du geste d’accueil, appli installée sur l’écran d’accueil), le masque d’ouverture, la Bibliothèque repliée, le clavier ouvert au-dessus de la barre.
+
+### Deuxième passe du 2026-11-13 (même branche, PR 30)
+| Écran (iPhone SE) | Après la première passe | Après la deuxième |
+|---|---|---|
+| Exercice aléatoire | 1,6 écran | 1,1 |
+| Cahier de coach | 1,4 | 1,1 |
+| Spectacle | 1,5 | 1,4 |
+| Groupes (effectif vide) | 2,1 | 2,1 : l’ajout de joueurs reste ouvert tant que l’effectif est vide |
+
+Aucune cible sous 44 px, aucun débordement, aucune erreur JavaScript sur les dix onglets (iPhone SE et iPhone 13, Chromium).
+
+- Fichiers : `refonte.css`, `refonte.js` (`?v=2`), `sw.js` (cache `v60-refonte-passe-2`), `tests/refonte.spec.cjs` (11 tests), `tests/app.spec.cjs` (le test des six curseurs ouvre le repli avant « Réinitialiser »).
+- Tests locaux : `check.cjs` OK, `integrity.cjs` OK, Playwright iPhone-Chromium 142 réussis sur 143, même échec d’environnement qu’avant. WebKit : dans la CI.

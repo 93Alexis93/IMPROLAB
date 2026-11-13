@@ -76,6 +76,7 @@ test('six curseurs regroupés : valeurs par catégorie, synchronisation et réin
   expect(await page.locator('#randomDynamic3').inputValue()).toBe('85');
   await page.evaluate(()=>tab('random'));
   expect(await page.evaluate(()=>getRandomDynamics()['Émotions'])).toBe(85);
+  await page.evaluate(()=>{document.getElementById('randomSettingsFold').open=true}); // refonte D36 : curseurs repliés au départ
   await page.locator('#random').getByRole('button',{name:/Réinitialiser/}).click();
   const restored=await page.evaluate(()=>SLIDER_GROUPS.map((g,i)=>Number(document.getElementById('dynamic'+i).value)));
   const defaults=await page.evaluate(()=>SLIDER_GROUPS.map((g,i)=>groupDefault(i)));
