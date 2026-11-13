@@ -287,3 +287,8 @@ Demande d’Alexis : audit complet puis refonte, avec pour but des écrans moins
 - **Préparer** : Enregistrer, Partager, Fiches élèves, Exporter et Effacer sont masqués tant que la séance est vide (Importer reste). Les deux textes d’aide passent derrière un bouton « ? ».
 - **Fantaisie** : un masque de théâtre arrive et éclate en deux secondes à l’ouverture (sans bloquer les touchers) ; confettis quand le chrono de la Régie arrive à zéro en décompte ; « Défi du jour » sur l’Accueil, tiré des listes Lieu, Personnage, Émotion et Contrainte d’Alexis, identique toute la journée ; le logo touché cinq fois fait pleuvoir des masques et affiche une des citations de l’en-tête ; petit rebond sur le résultat d’un tirage ; les pages glissent en entrant. Tout est coupé quand l’iPhone est réglé sur « Réduire les animations ».
 - **Non retenu** : la mémoire des replis d’un lancement à l’autre (elle rechargerait les écrans, contraire au but) ; le thème sombre (demande d’abord de nettoyer `styles.css`, voir option B de l’audit).
+
+**Réponses d’Alexis du 13 novembre 2026 sur D36 :**
+- Remettre `refonte.css` et `refonte.js` dans le fichier unique : possible plus tard, pas maintenant. À reproposer.
+- Tri des effets de fantaisie (ce qui reste, ce qui part) : plus tard, après ses essais sur iPhone.
+- Pas de réécriture complète de l’appli (option C de `AUDIT.md` écartée).
