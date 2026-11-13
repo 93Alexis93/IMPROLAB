@@ -179,8 +179,12 @@ Branche `claude/improlab-audit-refonte-xe6xbx` depuis `main` (1a2cc6b, PR 29 fus
 ### Deuxième passe du 2026-11-13 (même branche, PR 30)
 | Écran (iPhone SE) | Après la première passe | Après la deuxième |
 |---|---|---|
-| Exercice aléatoire | 1,6 écran | voir la CI et les essais iPhone : curseurs repliés |
-| Groupes | 2,1 | introduction et ajout de joueurs repliés |
+| Exercice aléatoire | 1,6 écran | 1,1 |
+| Cahier de coach | 1,4 | 1,1 |
+| Spectacle | 1,5 | 1,4 |
+| Groupes (effectif vide) | 2,1 | 2,1 : l’ajout de joueurs reste ouvert tant que l’effectif est vide |
+
+Aucune cible sous 44 px, aucun débordement, aucune erreur JavaScript sur les dix onglets (iPhone SE et iPhone 13, Chromium).
 
 - Fichiers : `refonte.css`, `refonte.js` (`?v=2`), `sw.js` (cache `v60-refonte-passe-2`), `tests/refonte.spec.cjs` (11 tests), `tests/app.spec.cjs` (le test des six curseurs ouvre le repli avant « Réinitialiser »).
 - Tests locaux : `check.cjs` OK, `integrity.cjs` OK, Playwright iPhone-Chromium 142 réussis sur 143, même échec d’environnement qu’avant. WebKit : dans la CI.
