@@ -50,7 +50,7 @@ body[data-tab]:not([data-tab="home"])>header .rf-fold-all{display:inline-flex;al
 #games .card.rf-open>:not(.exercise-title):not(.pill){animation:rfDeplie .22s ease-out}
 .rf-library-tools{display:flex;gap:8px;margin:6px 0 10px}
 .rf-library-tools button{min-height:44px;flex:1;font-size:13.5px}
-@keyframes rfDeplie{from{opacity:0;transform:translateY(-6px)}}
+@keyframes rfDeplie{from{opacity:0}}
 
 /* ---------- 4. Cahier de coach : listes repliées ---------- */
 #cahier .coach-list-card{position:relative}
@@ -105,9 +105,9 @@ section>h2:has(.rf-aide){display:flex;align-items:center;justify-content:space-b
 /* d. Le résultat d'un tirage arrive avec un petit rebond. */
 #homeQuickResult h4,#randomExerciseResult h3,#randomExerciseResult h4,#expressResult>h4{animation:rfRebond .45s cubic-bezier(.2,1.6,.4,1) both}
 @keyframes rfRebond{from{opacity:0;transform:scale(.7) rotate(-3deg)}}
-/* e. Les pages glissent en entrant. */
+/* e. Les pages apparaissent en fondu (sans déplacement : un glissement fausse les mesures de hauteur au pixel près). */
 section.rf-arrive{animation:rfPage .2s ease-out}
-@keyframes rfPage{from{opacity:.2;transform:translateY(8px)}}
+@keyframes rfPage{from{opacity:.2}}
 /* f. Le chrono à zéro bat comme un cœur. */
 #liveClock.rf-zero{animation:rfCoeur .5s ease-in-out 4}
 @keyframes rfCoeur{50%{transform:scale(1.12)}}
