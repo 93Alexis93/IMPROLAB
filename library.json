@@ -4526,6 +4526,292 @@
       "usages": [
         "entrée en scène"
       ]
+    },
+    {
+      "id": "3-8",
+      "titre": "Cercle des fous",
+      "section": "Saison 3",
+      "numero_source": null,
+      "texte_original": "Cercle des fous : en cercle chacun regarde son voisin de droite et mime exactement tout ce qu’il fait, dit tout ce qu’il dit : on commence neutre les bras le long du corps",
+      "regle_clarifiee": "En cercle, chacun regarde son voisin de droite et mime exactement tout ce qu’il fait et dit tout ce qu’il dit. On commence en position neutre, les bras le long du corps.",
+      "statut": "clarifié",
+      "eligible_generateur": true,
+      "duree_minutes": 5,
+      "origine": "notes_personnelles",
+      "objectif_pedagogique": "Écoute",
+      "niveau": "★",
+      "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "En cercle, chacun regarde son voisin de droite et mime exactement tout ce qu’il fait et dit tout ce qu’il dit. On commence en position neutre, les bras le long du corps.",
+        "variante_facile": "Commencez lentement, avec des gestes simples et peu de paroles.",
+        "variante_difficile": "Laissez les gestes et les paroles s’enchaîner plus vite, sans perdre la précision de l’imitation.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "Proposition générique de l’assistant, à valider par Alexis : Alexis n’a pas encore rempli ces champs ; règle et notes originales conservées.",
+        "auteur_variantes": "Assistant d’Alexis"
+      },
+      "categories_secondaires": [
+        "Corps",
+        "Cohésion"
+      ],
+      "accompagnement_pedagogique": {
+        "consigne": "En cercle, chacun regarde son voisin de droite et mime exactement tout ce qu’il fait et dit tout ce qu’il dit. On commence en position neutre, les bras le long du corps.",
+        "variante": "Laissez les gestes et les paroles s’enchaîner plus vite, sans perdre la précision de l’imitation.",
+        "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
+        "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
+        "auteur": "assistant",
+        "statut": "Proposition générique de l’assistant, à valider par Alexis ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
+      },
+      "auteur_consigne_courte": "Assistant d’Alexis"
+    },
+    {
+      "id": "3-9",
+      "titre": "Action puis réplique",
+      "section": "Saison 3",
+      "numero_source": null,
+      "texte_original": "Jouer une impro avec pour contrainte décomposer action et réplique. On commence dans une position (géographique+debout accroupi aussi + orienté vers un point cardinal). Ensuite chaque comédien va faire d’abord une action et quand il l’a terminé va donner sa réplique",
+      "regle_clarifiee": "On joue une impro avec une contrainte : décomposer l’action et la réplique. On commence dans une position définie : un endroit de l’espace, debout ou accroupi, orienté vers un point cardinal. Ensuite, chaque comédien fait d’abord une action et, quand elle est terminée, dit sa réplique.",
+      "statut": "clarifié",
+      "eligible_generateur": true,
+      "duree_minutes": 10,
+      "origine": "notes_personnelles",
+      "objectif_pedagogique": "Scène",
+      "niveau": "★★",
+      "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "On joue une impro avec une contrainte : décomposer l’action et la réplique. On commence dans une position définie : un endroit de l’espace, debout ou accroupi, orienté vers un point cardinal. Ensuite, chaque comédien fait d’abord une action et, quand elle est terminée, dit sa réplique.",
+        "variante_facile": "Commencez par des actions courtes et simples, une réplique à la fois.",
+        "variante_difficile": "Gardez la séparation entre l’action et la réplique sur une scène plus longue, sans revenir à des répliques pendant l’action.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "Proposition générique de l’assistant, à valider par Alexis : Alexis n’a pas encore rempli ces champs ; règle et notes originales conservées.",
+        "auteur_variantes": "Assistant d’Alexis"
+      },
+      "categories_secondaires": [
+        "Construction",
+        "Corps"
+      ],
+      "accompagnement_pedagogique": {
+        "consigne": "On joue une impro avec une contrainte : décomposer l’action et la réplique. On commence dans une position définie : un endroit de l’espace, debout ou accroupi, orienté vers un point cardinal. Ensuite, chaque comédien fait d’abord une action et, quand elle est terminée, dit sa réplique.",
+        "variante": "Gardez la séparation entre l’action et la réplique sur une scène plus longue, sans revenir à des répliques pendant l’action.",
+        "objectif_prof": "Développer l’adaptation immédiate à une contrainte tout en gardant une scène lisible.",
+        "objectif_eleves": "J’apprends à m’adapter à une consigne nouvelle sans bloquer la scène.",
+        "auteur": "assistant",
+        "statut": "Proposition générique de l’assistant, à valider par Alexis ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
+      },
+      "auteur_consigne_courte": "Assistant d’Alexis"
+    },
+    {
+      "id": "3-10",
+      "titre": "Les cadeaux",
+      "section": "Saison 3",
+      "numero_source": null,
+      "texte_original": "Les cadeaux : en binôme A va offrir un cadeau qu’il trouve génial en disant ce que c’est et B va le recevoir en disant que c’est nul et en trouvant pourquoi. Ensuite pareil mais avec un cadeau nul et B va dire que c’est génial.",
+      "regle_clarifiee": "En binôme, A offre un cadeau qu’il trouve génial en disant ce que c’est. B le reçoit en disant que c’est nul et en trouvant pourquoi. Ensuite, même jeu avec un cadeau nul : B dit que c’est génial.",
+      "statut": "clarifié",
+      "eligible_generateur": true,
+      "duree_minutes": 8,
+      "origine": "notes_personnelles",
+      "objectif_pedagogique": "Émotions",
+      "niveau": "★★",
+      "effectif_conseille": "2 joueurs",
+      "contact_physique": "aucun",
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "En binôme, A offre un cadeau qu’il trouve génial en disant ce que c’est. B le reçoit en disant que c’est nul et en trouvant pourquoi. Ensuite, même jeu avec un cadeau nul : B dit que c’est génial.",
+        "variante_facile": "Jouez seulement la première partie : A offre un cadeau génial, B trouve pourquoi c’est nul.",
+        "variante_difficile": "Enchaînez les deux parties et inversez les rôles de A et B.",
+        "points_vigilance": "Éviter les personnages caricaturaux blessants et les scènes trop longues.",
+        "statut": "Proposition générique de l’assistant, à valider par Alexis : Alexis n’a pas encore rempli ces champs ; règle et notes originales conservées.",
+        "auteur_variantes": "Assistant d’Alexis"
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Amusement"
+      ],
+      "accompagnement_pedagogique": {
+        "consigne": "En binôme, A offre un cadeau qu’il trouve génial en disant ce que c’est. B le reçoit en disant que c’est nul et en trouvant pourquoi. Ensuite, même jeu avec un cadeau nul : B dit que c’est génial.",
+        "variante": "Enchaînez les deux parties et inversez les rôles de A et B.",
+        "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
+        "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
+        "auteur": "assistant",
+        "statut": "Proposition générique de l’assistant, à valider par Alexis ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
+      },
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "en binômes"
+      ]
+    },
+    {
+      "id": "3-11",
+      "titre": "Description factuelle",
+      "section": "Saison 3",
+      "numero_source": null,
+      "texte_original": "À et B se mette face à face sur une chaise et tour à tour ils vont décrire factuellement l’autre (tu croises les bras, tu hausses les sourcils etc…)",
+      "regle_clarifiee": "A et B se placent face à face, sur une chaise. Tour à tour, ils décrivent factuellement l’autre (tu croises les bras, tu hausses les sourcils, etc.).",
+      "statut": "clarifié",
+      "eligible_generateur": true,
+      "duree_minutes": 8,
+      "origine": "notes_personnelles",
+      "objectif_pedagogique": "Écoute",
+      "niveau": "★",
+      "effectif_conseille": "2 joueurs",
+      "contact_physique": "aucun",
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "A et B se placent face à face, sur une chaise. Tour à tour, ils décrivent factuellement l’autre (tu croises les bras, tu hausses les sourcils, etc.).",
+        "variante_facile": "Faites une démonstration devant le groupe avant de lancer les binômes.",
+        "variante_difficile": "Allongez le temps de description en restant uniquement sur ce que l’on voit.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "Proposition générique de l’assistant, à valider par Alexis : Alexis n’a pas encore rempli ces champs ; règle et notes originales conservées.",
+        "auteur_variantes": "Assistant d’Alexis"
+      },
+      "categories_secondaires": [
+        "Corps",
+        "Cohésion"
+      ],
+      "accompagnement_pedagogique": {
+        "consigne": "A et B se placent face à face, sur une chaise. Tour à tour, ils décrivent factuellement l’autre (tu croises les bras, tu hausses les sourcils, etc.).",
+        "variante": "Allongez le temps de description en restant uniquement sur ce que l’on voit.",
+        "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
+        "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
+        "auteur": "assistant",
+        "statut": "Proposition générique de l’assistant, à valider par Alexis ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
+      },
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "en binômes"
+      ]
+    },
+    {
+      "id": "3-12",
+      "titre": "Le triangle des Persrudes",
+      "section": "Saison 3",
+      "numero_source": null,
+      "texte_original": "Le triangle des persrudes je vois que je ressens que j’en conclus que. Le joueur A va faire une émotion sans parler, B va alors dire je vois que tu bla-bla-bla [te gratte avec vigueur] je ressens que bla-bla-bla [tu es stressé], j’en conclus que bla-bla-bla [ta voiture n’est pas encore réparée, mais tu sais que moi je peux te covoiturer tout les matins]",
+      "regle_clarifiee": "Le joueur A exprime une émotion sans parler. B dit alors : « Je vois que tu… » (ce qu’il observe, par exemple : tu te grattes avec vigueur), « je ressens que… » (par exemple : tu es stressé), « j’en conclus que… » (par exemple : ta voiture n’est pas encore réparée, mais tu sais que moi je peux te covoiturer tous les matins).",
+      "statut": "clarifié",
+      "eligible_generateur": true,
+      "duree_minutes": 8,
+      "origine": "notes_personnelles",
+      "objectif_pedagogique": "Émotions",
+      "niveau": "★★★",
+      "effectif_conseille": "2 joueurs",
+      "contact_physique": "aucun",
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "Le joueur A exprime une émotion sans parler. B dit alors : « Je vois que tu… » (ce qu’il observe, par exemple : tu te grattes avec vigueur), « je ressens que… » (par exemple : tu es stressé), « j’en conclus que… » (par exemple : ta voiture n’est pas encore réparée, mais tu sais que moi je peux te covoiturer tous les matins).",
+        "variante_facile": "Commencez par « je vois que » seulement, puis ajoutez les autres étapes.",
+        "variante_difficile": "Enchaînez les trois étapes sans pause, puis inversez les rôles de A et B.",
+        "points_vigilance": "Ne pas demander de raconter des expériences personnelles intimes.",
+        "statut": "Proposition générique de l’assistant, à valider par Alexis : Alexis n’a pas encore rempli ces champs ; règle et notes originales conservées.",
+        "auteur_variantes": "Assistant d’Alexis"
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Construction"
+      ],
+      "accompagnement_pedagogique": {
+        "consigne": "Le joueur A exprime une émotion sans parler. B dit alors : « Je vois que tu… » (ce qu’il observe, par exemple : tu te grattes avec vigueur), « je ressens que… » (par exemple : tu es stressé), « j’en conclus que… » (par exemple : ta voiture n’est pas encore réparée, mais tu sais que moi je peux te covoiturer tous les matins).",
+        "variante": "Enchaînez les trois étapes sans pause, puis inversez les rôles de A et B.",
+        "objectif_prof": "Faire émerger des personnages lisibles et explorer l’effet des émotions ou des relations sur la scène.",
+        "objectif_eleves": "J’apprends à préciser mon personnage et à jouer les relations avec mon partenaire.",
+        "auteur": "assistant",
+        "statut": "Proposition générique de l’assistant, à valider par Alexis ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
+      },
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "en binômes"
+      ]
+    },
+    {
+      "id": "3-13",
+      "titre": "Scène sans P",
+      "section": "Saison 3",
+      "numero_source": null,
+      "texte_original": "Scène sans P : 4 joueurs minimum en 2 files : Un binôme va s’avancer et jouer avec un thème et une relation, la contrainte est l’interdiction de prononcer le son P. A chaque fois qu’un comédien prononce le son P, le public dit MEURS et il est remplacé par le suivant de la file",
+      "regle_clarifiee": "4 joueurs minimum, en 2 files. Un binôme s’avance et joue une scène avec un thème et une relation. Contrainte : interdiction de prononcer le son P. Chaque fois qu’un comédien prononce le son P, le public dit « MEURS » et il est remplacé par le suivant de la file.",
+      "statut": "clarifié",
+      "eligible_generateur": true,
+      "duree_minutes": 8,
+      "origine": "notes_personnelles",
+      "objectif_pedagogique": "Scène",
+      "niveau": "★★",
+      "effectif_conseille": "4 joueurs minimum",
+      "contact_physique": "aucun",
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "4 joueurs minimum, en 2 files. Un binôme s’avance et joue une scène avec un thème et une relation. Contrainte : interdiction de prononcer le son P. Chaque fois qu’un comédien prononce le son P, le public dit « MEURS » et il est remplacé par le suivant de la file.",
+        "variante_facile": "Commencez par des scènes courtes, sur un thème simple.",
+        "variante_difficile": "Allongez les scènes et choisissez un thème ou une relation où le son P vient facilement.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "Proposition générique de l’assistant, à valider par Alexis : Alexis n’a pas encore rempli ces champs ; règle et notes originales conservées.",
+        "auteur_variantes": "Assistant d’Alexis"
+      },
+      "categories_secondaires": [
+        "Amusement",
+        "Lâcher-prise",
+        "Écoute"
+      ],
+      "accompagnement_pedagogique": {
+        "consigne": "4 joueurs minimum, en 2 files. Un binôme s’avance et joue une scène avec un thème et une relation. Contrainte : interdiction de prononcer le son P. Chaque fois qu’un comédien prononce le son P, le public dit « MEURS » et il est remplacé par le suivant de la file.",
+        "variante": "Allongez les scènes et choisissez un thème ou une relation où le son P vient facilement.",
+        "objectif_prof": "Développer l’adaptation immédiate à une contrainte tout en gardant une scène lisible.",
+        "objectif_eleves": "J’apprends à m’adapter à une consigne nouvelle sans bloquer la scène.",
+        "auteur": "assistant",
+        "statut": "Proposition générique de l’assistant, à valider par Alexis ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
+      },
+      "auteur_consigne_courte": "Assistant d’Alexis"
+    },
+    {
+      "id": "3-14",
+      "titre": "La piscine du kiff",
+      "section": "Saison 3",
+      "numero_source": null,
+      "texte_original": "La piscine du kiff : à la fin de la séance on se met en cercle autour de la piscine, et on lui jette quelque chose avec laquelle on reparaît après la séance. Quand le cercle est fini on saute dans la piscine (vers le ventre). C’est un cercle de clôture",
+      "regle_clarifiee": "À la fin de la séance, on se met en cercle autour de la piscine et on lui jette quelque chose avec laquelle on reparaîtra après la séance. Quand le cercle est fini, on saute dans la piscine (vers le ventre). C’est un cercle de clôture.",
+      "statut": "clarifié",
+      "eligible_generateur": true,
+      "duree_minutes": 8,
+      "origine": "notes_personnelles",
+      "objectif_pedagogique": "Cohésion",
+      "niveau": "★",
+      "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "À la fin de la séance, on se met en cercle autour de la piscine et on lui jette quelque chose avec laquelle on reparaîtra après la séance. Quand le cercle est fini, on saute dans la piscine (vers le ventre). C’est un cercle de clôture.",
+        "variante_facile": "Chacun jette un seul mot dans la piscine.",
+        "variante_difficile": "Chacun jette une phrase courte sur ce qu’il emporte de la séance.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "Proposition générique de l’assistant, à valider par Alexis : Alexis n’a pas encore rempli ces champs ; règle et notes originales conservées.",
+        "auteur_variantes": "Assistant d’Alexis"
+      },
+      "categories_secondaires": [
+        "Lâcher-prise",
+        "Amusement"
+      ],
+      "accompagnement_pedagogique": {
+        "consigne": "À la fin de la séance, on se met en cercle autour de la piscine et on lui jette quelque chose avec laquelle on reparaîtra après la séance. Quand le cercle est fini, on saute dans la piscine (vers le ventre). C’est un cercle de clôture.",
+        "variante": "Chacun jette une phrase courte sur ce qu’il emporte de la séance.",
+        "objectif_prof": "Développer l’écoute active, la disponibilité aux propositions et la coopération dans le groupe.",
+        "objectif_eleves": "J’apprends à écouter les autres, à rebondir sur leurs idées et à faire ma place dans le jeu.",
+        "auteur": "assistant",
+        "statut": "Proposition générique de l’assistant, à valider par Alexis ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
+      },
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "usages": [
+        "cercle de clôture"
+      ]
     }
   ],
   "regles_pedagogiques": [
@@ -4671,6 +4957,66 @@
       "detail": "Préparer des listes de ressources pour aider les improvisateurs à démarrer et construire leurs scènes : lieux, émotions, personnages, genres cinématographiques, littéraires et musicaux. Ces listes peuvent alimenter les tirages de l’application et être enrichies au fil du projet.",
       "nature": "outil de préparation",
       "origine": "notes_personnelles"
+    },
+    {
+      "titre": "Tout vous touche en bien comme en mal",
+      "texte_original": "Tout vous touche en bien comme en mal",
+      "detail": "Tout vous touche en bien comme en mal",
+      "nature": "principe général",
+      "origine": "notes_personnelles",
+      "objectif_pedagogique": "Émotions",
+      "categories_secondaires": [
+        "Écoute",
+        "Scène"
+      ]
+    },
+    {
+      "titre": "Votre meilleur jeu est dans l’autre",
+      "texte_original": "Votre meilleur jeu est dans l’autre",
+      "detail": "Votre meilleur jeu est dans l’autre",
+      "nature": "principe général",
+      "origine": "notes_personnelles",
+      "objectif_pedagogique": "Écoute",
+      "categories_secondaires": [
+        "Cohésion",
+        "Scène"
+      ]
+    },
+    {
+      "titre": "La plus grande des actions peut arriver si elle ne touche pas le personnage",
+      "texte_original": "La plus grande des actions peut arriver si elle ne touche pas le personnage, elle n’intéresse pas le public (ex : oui j’ai perdu mon bras dans l’accident de bus mais bon j’en ai deux), et la plus petite si elle vous touche intéresse le public (non mais non j’ai oublié d’acheter le dentifrice, maman avait pourtant insisté, c’est pas possible qu’est ce que j’ai fait)",
+      "detail": "La plus grande des actions peut arriver si elle ne touche pas le personnage, elle n’intéresse pas le public, et la plus petite si elle vous touche intéresse le public.",
+      "nature": "principe général",
+      "origine": "notes_personnelles",
+      "objectif_pedagogique": "Émotions",
+      "categories_secondaires": [
+        "Scène",
+        "Construction"
+      ]
+    },
+    {
+      "titre": "Jouer l’immaturité",
+      "texte_original": "Jouer l’immaturité",
+      "detail": "Jouer l’immaturité",
+      "nature": "principe général",
+      "origine": "notes_personnelles",
+      "objectif_pedagogique": "Lâcher-prise",
+      "categories_secondaires": [
+        "Amusement",
+        "Imaginaire"
+      ]
+    },
+    {
+      "titre": "Le triangle des Persrudes",
+      "texte_original": "Le triangle des persrudes je vois que je ressens que j’en conclus que.",
+      "detail": "Je vois, je ressens, je déduis, je conclus. Principe pour bien s’écouter, à pratiquer aussi en exercice.",
+      "nature": "principe général",
+      "origine": "notes_personnelles",
+      "objectif_pedagogique": "Écoute",
+      "categories_secondaires": [
+        "Émotions",
+        "Construction"
+      ]
     }
   ],
   "ressource_cahier_coach": {

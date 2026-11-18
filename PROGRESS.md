@@ -223,3 +223,9 @@ Branche `refonte/navigation-sombre` depuis `refonte/seance-dabord`.
 
 ### 2026-11-18 : tri des effets de la PR 30 (D41)
 - Effets et replis gardés, sauf le bouton « ? » d’aide, retiré ; introductions de page de nouveau visibles.
+
+### 2026-11-18 : saison 3, sept exercices et cinq principes (D42)
+- Dans `main` directement, à la demande d’Alexis. Fiches 3-8 à 3-14, cinq principes dans les notes personnelles ; aucune fiche existante modifiée.
+- Tests locaux : `check.cjs` OK, `integrity.cjs` OK (112 fiches), Playwright iPhone-Chromium et iPhone-WebKit 316/316 après mise à jour du compte « sans contact » (98 → 105).
+- À valider par Alexis : variantes génériques des sept fiches, 3-5 (texte long des notes), 1-40 (variante ?), étapes du triangle des Persrudes.
+- À tester sur iPhone : les nouvelles fiches dans la Bibliothèque, le filtre « cercle de clôture », les principes dans « Autres notes personnelles ».

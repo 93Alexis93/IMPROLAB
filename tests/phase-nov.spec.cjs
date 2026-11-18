@@ -127,5 +127,6 @@ test('contact physique : filtre de la bibliothèque et tous les jeux dans le gé
   await expect(page.locator('#games .card')).toHaveCount(5);
   await expect(page.locator('#games .card').first()).toContainText('Contact léger');
   await page.evaluate(() => { const d = document.querySelector('#filterFold'); if (d) d.open = true; }); await page.selectOption('#contactFilter', 'aucun');
-  await expect(page.locator('#games .card')).toHaveCount(98);
+  // 98 avant la saison 3, plus les 7 fiches sans contact ajoutées le 18 novembre 2026 (3-8 à 3-14).
+  await expect(page.locator('#games .card')).toHaveCount(105);
 });
