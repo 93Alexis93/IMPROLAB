@@ -175,3 +175,14 @@ Branche `refonte/seance-dabord` depuis `main` (1a2cc6b). Référence sur `main` 
 
 - Audit après chantier (WebKit) : 0 cible < 44 px, aucun débordement, aucune erreur JavaScript. Hauteur en écrans, SE / 13 : Préparer après génération 5 / 3,9 (avant 8,6 / 6,8) ; Bibliothèque 8,8 / 7 (avant 126 / 98) ; Régie 2,2 / 1,7, chrono visible dès l’ouverture.
 - À tester sur iPhone : chrono collé en haut pendant le défilement, animation du tirage, ouverture rapide de l’appli installée avec un réseau faible, restauration annulable.
+
+## Lot du 2026-11-18 : chantier 2 « Navigation et thème sombre » (D37)
+Branche `refonte/navigation-sombre` depuis `refonte/seance-dabord`.
+
+| Tâche | Objet | État |
+|---|---|---|
+| 1 | Barre d’onglets en bas, menu « Plus » vers le haut | fait |
+| 2 | Thème sombre automatique | fait |
+| 3 | Audit contraste clair et sombre, iPhone SE et 13 | fait |
+
+- À tester sur iPhone : barre au-dessus de la barre d’accueil (appli installée et Safari), thème sombre en passant l’iPhone en mode sombre, Régie dans une salle sombre.

@@ -890,3 +890,55 @@ details.fiche-more>.fiche-more-body>.exercise-schema{margin-top:0}
 #backupUndo .draw-actions{display:flex;flex-wrap:wrap;gap:8px}
 #backupUndo button{min-height:44px}
 .storage-warn[hidden]{display:none}
+/* D37 — Barre d'onglets en bas, comme une appli iPhone ; « Plus » s'ouvre vers le haut */
+body{padding-bottom:calc(72px + env(safe-area-inset-bottom))!important}
+body nav[aria-label="Navigation principale"]{position:fixed!important;top:auto!important;left:0!important;right:0!important;bottom:0!important;z-index:900!important;display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:2px!important;margin:0!important;padding:3px max(4px,env(safe-area-inset-right)) calc(3px + env(safe-area-inset-bottom)) max(4px,env(safe-area-inset-left))!important;background:var(--paper-raised,#fffdf8)!important;border:0!important;border-top:1px solid var(--line,#d9cdbd)!important;border-radius:0!important;box-shadow:0 -6px 18px rgba(37,35,31,.12)!important;backdrop-filter:none!important}
+body nav[aria-label="Navigation principale"]>button,body nav[aria-label="Navigation principale"] .more-navigation>summary{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:1px;width:100%!important;min-width:0!important;min-height:52px!important;margin:0!important;padding:2px 1px!important;border:0!important;border-radius:10px!important;background:transparent!important;color:var(--ink-soft,#4f483f)!important;font-size:11px!important;font-weight:700!important;line-height:1.1!important;text-align:center!important;white-space:normal!important;box-shadow:none!important;list-style:none}
+body nav[aria-label="Navigation principale"] .more-navigation>summary::-webkit-details-marker{display:none}
+body nav[aria-label="Navigation principale"] .nav-ico{display:block;font-size:19px;line-height:1.1}
+body nav[aria-label="Navigation principale"]>button[aria-current="page"],body nav[aria-label="Navigation principale"] .more-navigation:has(button[aria-current="page"])>summary,body nav[aria-label="Navigation principale"] .more-navigation[open]>summary{background:var(--curtain,#9b303b)!important;color:#fff!important}
+body nav[aria-label="Navigation principale"] .more-navigation,body nav[aria-label="Navigation principale"] .more-navigation[open]{grid-column:auto!important;position:static!important;margin:0!important;min-width:0}
+body nav[aria-label="Navigation principale"] .more-navigation-menu{position:fixed!important;left:max(8px,env(safe-area-inset-left))!important;right:max(8px,env(safe-area-inset-right))!important;top:auto!important;bottom:calc(var(--nav-bottom,66px) + 8px)!important;z-index:901!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:6px!important;min-width:0!important;margin:0!important;padding:8px!important;border:1px solid var(--line,#d9cdbd)!important;border-radius:14px!important;background:var(--paper-raised,#fffdf8)!important;box-shadow:0 -10px 30px rgba(37,35,31,.25)!important}
+body nav[aria-label="Navigation principale"] .more-navigation-menu button{display:flex!important;align-items:center;gap:8px;min-height:48px!important;width:100%;padding:6px 10px!important;border:1px solid var(--line,#d9cdbd)!important;border-radius:10px!important;background:var(--paper,#f7f1e7)!important;color:var(--ink,#25231f)!important;font-size:14px!important;font-weight:700;text-align:left!important;white-space:normal!important}
+body nav[aria-label="Navigation principale"] .more-navigation-menu button .nav-ico{font-size:18px}
+body nav[aria-label="Navigation principale"] .more-navigation-menu button[aria-current="page"]{background:var(--curtain,#9b303b)!important;color:#fff!important;border-color:var(--curtain,#9b303b)!important}
+.storage-warn{bottom:calc(var(--nav-bottom,0px) + 10px)}
+body>header{padding-top:max(6px,env(safe-area-inset-top))!important}
+@media print{body nav[aria-label="Navigation principale"]{display:none!important}body{padding-bottom:0!important}}
+#randomExerciseResult>div>b:first-child{display:block;font-size:20px;line-height:1.25}
+/* D37 — Thème sombre automatique : suit le réglage clair / sombre de l'iPhone.
+   Les couleurs passent par les variables ; les couleurs écrites en dur sont reprises ici. */
+@media (prefers-color-scheme: dark){
+:root{color-scheme:dark;--paper:#161925;--paper-raised:#222639;--ink:#f1ece2;--ink-soft:#cbc3b6;--line:#41465e;--curtain:#a8343f;--curtain-dark:#ffb4bc;--accent-text:#ffb4bc;--focus-ring:#7cc8e8;--stage:#0f1118;--il-surface:linear-gradient(135deg,#2a2540 0%,#2e2434 50%,#232840 100%);--il-surface-bord:rgba(255,255,255,.12)}
+html{background:var(--paper)}
+body{color:var(--ink)}
+body>header{background:var(--paper)!important;color:var(--ink)!important;border-bottom-color:var(--line)!important}
+body>header h1,body>header div{color:var(--ink)!important}
+h2,h3,h4{color:var(--ink)}
+.muted,small,.dynamic-sub,.exercise-aliases,.exercise-categories,.exercise-usages,.reel-label{color:var(--ink-soft)!important}
+.home-step,.home-intro .eyebrow,.home-result-category,body>header .header-slogan,#cahier .coach-kicker,#cahier .coach-list-number,details.fiche-more>summary,.session-objective details.objective-fold>summary,.reel-item.reel-stop,#liveUnderClock details>summary,.plan-summary,.plan-warning,#liveProgress,#liveOvertime,.card a,a,main button,h3.exercise-title{color:var(--accent-text)!important}
+main button.btn-primary,#live #liveStart.btn-primary,.home-action>button,.home-next .btn-primary{background:var(--curtain)!important;color:#fff!important;border-color:var(--curtain)!important}
+main button{background:var(--paper-raised)!important;border-color:var(--line)!important}
+main button:disabled{opacity:.55}
+input,select,textarea,#drawEditor,#principesSearch,#search{background:var(--paper-raised)!important;color:var(--ink)!important;border-color:var(--line)!important}
+input::placeholder,textarea::placeholder{color:#9d968b}
+.card,details.card,.coach-quick,.regie-fold,.coach-attribution,.dynamic-row,.home-principle,.reel-window,.live-deck,details.fiche-more{border-color:var(--il-surface-bord)}
+.reel-window,#live .live-deck,details.fiche-more,.home-principle,body nav[aria-label="Navigation principale"],body nav[aria-label="Navigation principale"] .more-navigation-menu{background:var(--paper-raised)!important}
+.reel-item{color:var(--ink)}
+.pill,.coach-chip,.coach-count{background:#2d3248!important;color:var(--ink)!important}
+button.favorite,#games .card>.favorite{background:#ffd16d!important;color:#25231f!important}
+.dynamic-row output{color:color-mix(in srgb,var(--slider-color,#ccc) 65%,#fff)!important}
+#live>h2{color:var(--ink)!important}
+#live .card,#live #liveClock,#live #liveTitle,#live #liveInfo,#live label,#live .regie-player-list label{color:var(--ink)!important}
+body nav[aria-label="Navigation principale"]>button,body nav[aria-label="Navigation principale"] .more-navigation>summary{color:var(--ink-soft)!important}
+body nav[aria-label="Navigation principale"]>button[aria-current="page"],body nav[aria-label="Navigation principale"] .more-navigation:has(button[aria-current="page"])>summary,body nav[aria-label="Navigation principale"] .more-navigation[open]>summary,body nav[aria-label="Navigation principale"] .more-navigation-menu button[aria-current="page"]{background:var(--curtain)!important;color:#fff!important}
+body nav[aria-label="Navigation principale"] .more-navigation-menu button{background:var(--paper)!important;color:var(--ink)!important}
+}
+@media (prefers-color-scheme: dark){
+body::before{background:radial-gradient(ellipse 80% 40% at 0% 0%,rgba(255,210,31,.08),transparent 70%),radial-gradient(ellipse 80% 40% at 100% 100%,rgba(57,245,200,.08),transparent 70%),linear-gradient(180deg,#1c1c2b 0%,#211a2b 30%,#1b1f31 65%,#152220 100%)!important}
+#randomExerciseResult b{color:var(--ink)!important}
+}
+@media (prefers-color-scheme: dark){
+.exercise-schema svg{color:var(--ink)!important}
+.exercise-schema svg circle{fill:var(--paper-raised)}
+}

@@ -116,6 +116,8 @@ test('navigation compacte sur iPhone : une ligne de cinq cibles de 44 px, menu P
   const nav = page.locator('nav[aria-label="Navigation principale"]');
   const box = await nav.boundingBox();
   expect(box.height).toBeLessThanOrEqual(64);
+  // Depuis D37, la barre est en bas de l'écran.
+  expect(Math.round(box.y + box.height)).toBe(page.viewportSize().height);
   for (const item of await nav.locator(':scope > button, :scope > details > summary').all()) {
     const b = await item.boundingBox();
     expect(b.height).toBeGreaterThanOrEqual(44);
