@@ -300,6 +300,7 @@ test('favoris par groupe : un favori du Club n’apparaît pas chez les Copains,
   await expect(page.locator('#favoritesGroup')).toHaveText('(groupe Club collège)');
   const first = page.locator('#games .card').first();
   const title = (await first.locator('h3').first().textContent()).trim();
+  await first.locator('h3').first().click(); // refonte D36 : la fiche se déplie au toucher du titre
   await first.getByRole('button', { name: /Ajouter aux favoris/ }).click();
   await page.evaluate(() => { const d = document.querySelector('#filterFold'); if (d) d.open = true; }); await page.locator('#favoritesOnly').check();
   await expect(page.locator('#games .card')).toHaveCount(1);
