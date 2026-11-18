@@ -340,3 +340,10 @@ Deux refontes se recoupaient : la PR 30 « écrans légers » (D36, déjà dans 
 - **Ajustements** : `refonte.css` reprend les couleurs du thème sombre (`--rf-bordeaux`, `--rf-encre`, ajout de joueurs, « ? », titres du cahier) ; le petit mot du logo se place au-dessus de la barre de 63 px ; la barre du bas est cachée dans les plein écran (Régie, séance). `refonte.css` et `refonte.js` entrent dans le cache hors ligne (déjà fait par la PR 30, repris dans `sw.js`).
 - **Index** : `index.html` garde ma version avec les trois ajouts de la PR 30 (`refonte.css?v=5`, `refonte.js?v=4`, enregistrement du service worker). Cache : `v63-fusion-refonte`, `styles.css?v=17` (le `v62` de la PR 30 est dépassé).
 - Les effets de fantaisie restent à trier par Alexis après ses essais sur iPhone.
+
+### D41. Tri des effets et des replis de la PR 30 (18 novembre 2026)
+Alexis a trié, un par un, ce qui restait de la PR 30 après la fusion de D40.
+- **Gardés tels quels** : masque d’ouverture (à chaque ouverture), confettis et battement du chrono à 00:00, rideau au plein écran, tampon « Séance enregistrée », pluie de masques (logo touché cinq fois), fondu entre pages avec retour en haut de page.
+- **Replis gardés** : Cahier de coach en listes repliées, curseurs d’Exercice aléatoire repliés, ajout de joueurs replié quand l’effectif existe, boutons Enregistrer / Partager / Fiches élèves / Exporter / Effacer cachés tant que la séance est vide.
+- **Retiré** : le bouton « ? » qui cachait le texte d’introduction de chaque page. Les introductions (Préparer, Bibliothèque, Groupes, Spectacle, Principes, Cahier de coach) sont de nouveau affichées. Rien n’était supprimé : le texte était seulement caché.
+- Tests : `refonte.spec.cjs` vérifie que le bouton n’existe plus et que les introductions sont visibles. Cache : service worker `v64-tri-effets`, `refonte.css?v=6`, `refonte.js?v=5`.
