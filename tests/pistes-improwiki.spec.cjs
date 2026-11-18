@@ -47,6 +47,8 @@ test('régie : la suggestion du public se tape, s’affiche sous le chrono et va
 });
 
 test('« Aussi appelé » apparaît au tirage et en Régie', async ({ page }) => {
+  // Sans l'animation du tirage (D36), pour lire le résultat tout de suite.
+  await page.emulateMedia({ reducedMotion: 'reduce' });
   await openApp(page);
   const game = await page.evaluate(() => data.find(g => g[17].includes('Heureusement, malheureusement'))[0]);
   // Exercice aléatoire : chaque jeu tiré qui a d'autres noms les montre.
@@ -64,16 +66,7 @@ test('« Aussi appelé » apparaît au tirage et en Régie', async ({ page }) =>
   // Un jeu sans autre nom n'affiche rien.
   await page.evaluate(() => { randomExerciseCurrent = data.find(g => !g[17].length && g[2] && g[2].length > 20); useRandomExercise(); });
   await expect(page.locator('#liveAka')).toBeHidden();
-  // Tirage de l'Accueil : tant qu'un jeu avec autre nom sort, la ligne est là.
-  let seen = false;
-  for (let i = 0; i < 40 && !seen; i++) {
-    await page.evaluate(() => quickDraw());
-    const title = (await page.locator('#homeQuickResult h4').textContent()).trim();
-    const has = await page.evaluate(t => gameAliases(t).length > 0, title);
-    await expect(page.locator('#homeQuickResult .exercise-aliases')).toHaveCount(has ? 1 : 0);
-    seen = has;
-  }
-  expect(seen).toBe(true);
+  // Depuis D36, l'Accueil n'a plus de tirage (doublon avec Exercice aléatoire).
 });
 
 test('régie : onze catégories de tirage, les trois nouvelles décochées au départ', async ({ page }) => {

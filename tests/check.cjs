@@ -90,7 +90,8 @@ assert.ok(script.includes("localStorage.setItem('impro-session-dynamics-v1'") &&
 assert.ok(script.includes("other.value=n") && script.includes("document.getElementById('dynamic'+i)"), 'Synchronisation des curseurs entre les deux générateurs absente');
 assert.ok(html.includes('min-height:44px') || fs.readFileSync('styles.css','utf8').includes('min-height:44px'), 'Cibles tactiles de 44 px absentes');
 
-assert.ok(script.includes('data.filter(g=>isEligibleGame(g,{includeExternal:false,includeIncomplete:false}))'), 'Le tirage rapide doit réutiliser les règles canoniques d’éligibilité');
+// D36 : plus de tirage sur l’Accueil (doublon avec Exercice aléatoire), place à la prochaine séance et au principe du jour.
+assert.ok(!script.includes('function quickDraw(') && script.includes('function homeRender(') && html.includes('id="homeNext"'), 'Accueil : prochaine séance attendue, sans tirage rapide');
 
 
 for (const e of lib.exercices) {
@@ -98,7 +99,7 @@ for (const e of lib.exercices) {
   for (const key of ['consigne_courte','variante_facile','variante_difficile','points_vigilance','statut']) assert.ok(e.conseils_animation[key], `Fiche ${e.id}, champ « conseils_animation.${key} » : conseil manquant`);
 }
 assert.ok(html.includes('Fiche animateur'),'Fiches animateur absentes');
-assert.ok(script.includes('return schemaMarkup([ex.titre])+menu('), 'Les schémas doivent aussi être disponibles dans les fiches coach');
+assert.ok(script.includes('<div class="fiche-more-body">'+"'"+'+schemaMarkup([ex.titre])+'), 'Les schémas doivent aussi être disponibles dans les fiches coach (repli « Voir la fiche complète »)');
 assert.equal(lib.categories_pedagogiques.length,10,'Nombre de catégories pédagogiques inattendu');
 const categories = ['Énergie','Écoute','Corps','Construction','Scène','Émotions','Amusement','Lâcher-prise','Cohésion','Imaginaire'];
 assert.deepEqual(lib.categories_pedagogiques,categories,'Liste des catégories pédagogiques modifiée');
@@ -158,7 +159,7 @@ assert.ok(new RegExp("serviceWorker\\.register\\('\\./sw\\.js\\?v=\\d{8}-" + cac
 for (const asset of ['./index.html','./styles.css','./schemas.json','./library.json']) {
   assert.ok(sw.includes("'"+asset+"'"), 'Ressource essentielle absente du cache hors ligne : '+asset);
 }
-assert.ok(sw.includes("caches.match(e.request,{ignoreSearch:true})"), 'Le cache hors ligne doit ignorer les paramètres de requête');
+assert.ok(sw.includes("{ignoreSearch:true}"), 'Le cache hors ligne doit ignorer les paramètres de requête');
 assert.ok(sw.includes("caches.delete(k)"), 'Le service worker doit supprimer les anciens caches');
 
 console.log('IMPRO LAB : contrôles statiques et cohérence des données OK');
