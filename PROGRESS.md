@@ -234,3 +234,9 @@ Branche `refonte/navigation-sombre` depuis `refonte/seance-dabord`.
 - Dans `main` directement, à la demande d'Alexis. Fiches 3-15 à 3-18 (mots d'Alexis), liste de tirage « Routine » (18 entrées), phrase ajoutée au principe « Le oui, et… », `docs/PISTES-A-TESTER.md` (6 jeux à tester).
 - À valider par Alexis : origine `interview_alexis`, propositions marquées « à relire » sur les 4 fiches, 15 routines proposées, « Cercle des prénoms » dans `aussi_appele` de 2-36.
 - À tester sur iPhone : les 4 fiches dans la Bibliothèque (recherche par nom improwiki), la case « Routine » dans les tirages de la Régie, la phrase dans « Le oui, et… ».
+
+### 2026-11-18 : « Accueil plus » (D44)
+- Dans `main` directement, à la demande d'Alexis. Défi du jour modifiable (autre défi, relevé, série, familles, mes défis, partage), mot d'accueil, visite guidée, recherche globale, écrans vides, pastille de sauvegarde, retouches de style.
+- Tests locaux : `check.cjs` OK, `integrity.cjs` OK (116 fiches), Playwright iPhone-Chromium 169/169 et iPhone-WebKit 169/169.
+- À valider par Alexis : le classement des 60 défis en cinq familles.
+- À tester sur iPhone : la visite au premier lancement (effacer `improlab-visite-vue` ou passer par « Plus »), la loupe sous l'encoche, le retournement de la carte du défi, le partage du défi vers WhatsApp, le thème sombre.
