@@ -205,7 +205,7 @@ test('mode soirée : jeux validés au hasard, sans répétition, aucun jeu écar
   const eligibleTitles = await page.evaluate(() => data.filter(g => soireeEligible(g)).map(g => displayTitle(g[0])));
   // Créations IMPRO LAB incluses (D11), dans la limite du niveau du groupe (D16).
   expect(await page.evaluate(() => data.filter(g => soireeEligible(g)).some(g => g[8] === 'creation_improlab'))).toBe(await page.evaluate(() => data.some(g => g[8] === 'creation_improlab' && withinGroupLevel(g))));
-  expect(await page.evaluate(() => data.filter(g => soireeEligible(g)).every(g => ['notes_personnelles', 'creation_improlab'].includes(g[8])))).toBe(true);
+  expect(await page.evaluate(() => data.filter(g => soireeEligible(g)).every(g => ['notes_personnelles', 'creation_improlab', 'interview_alexis'].includes(g[8])))).toBe(true);
   const titles = [first];
   for (let i = 0; i < 9; i++) {
     await page.getByRole('button', { name: 'Jeu suivant' }).click();

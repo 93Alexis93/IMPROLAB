@@ -229,3 +229,8 @@ Branche `refonte/navigation-sombre` depuis `refonte/seance-dabord`.
 - Tests locaux : `check.cjs` OK, `integrity.cjs` OK (112 fiches), Playwright iPhone-Chromium et iPhone-WebKit 316/316 après mise à jour du compte « sans contact » (98 → 105).
 - À valider par Alexis : variantes génériques des sept fiches, 3-5 (texte long des notes), 1-40 (variante ?), étapes du triangle des Persrudes.
 - À tester sur iPhone : les nouvelles fiches dans la Bibliothèque, le filtre « cercle de clôture », les principes dans « Autres notes personnelles ».
+
+### 2026-11-18 : pistes improwiki, interview d'Alexis (D43)
+- Dans `main` directement, à la demande d'Alexis. Fiches 3-15 à 3-18 (mots d'Alexis), liste de tirage « Routine » (18 entrées), phrase ajoutée au principe « Le oui, et… », `docs/PISTES-A-TESTER.md` (6 jeux à tester).
+- À valider par Alexis : origine `interview_alexis`, propositions marquées « à relire » sur les 4 fiches, 15 routines proposées, « Cercle des prénoms » dans `aussi_appele` de 2-36.
+- À tester sur iPhone : les 4 fiches dans la Bibliothèque (recherche par nom improwiki), la case « Routine » dans les tirages de la Régie, la phrase dans « Le oui, et… ».

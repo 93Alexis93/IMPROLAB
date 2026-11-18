@@ -69,14 +69,14 @@ test('« Aussi appelé » apparaît au tirage et en Régie', async ({ page }) =>
   // Depuis D36, l'Accueil n'a plus de tirage (doublon avec Exercice aléatoire).
 });
 
-test('régie : onze catégories de tirage, les trois nouvelles décochées au départ', async ({ page }) => {
+test('régie : douze catégories de tirage, les nouvelles décochées au départ', async ({ page }) => {
   await openDraw(page);
   const state = await page.evaluate(() => ({
     cats: Object.keys(DRAW_DEFAULTS),
     off: Object.keys(DRAW_DEFAULTS).filter(k => drawEnabled[k] === false),
     sizes: Object.fromEntries(['Genre', 'Métier', 'Activité', 'Lieu', 'Émotion'].map(k => [k, drawLists[k].length]))
   }));
-  expect(state.cats).toHaveLength(11);
+  expect(state.cats).toHaveLength(12);
   // Rien n'est coché au départ (D35).
   expect(state.off.sort()).toEqual([...state.cats].sort());
   expect(state.sizes['Métier']).toBe(40);
@@ -84,7 +84,7 @@ test('régie : onze catégories de tirage, les trois nouvelles décochées au d�
   expect(state.sizes['Genre']).toBeGreaterThanOrEqual(32);
   expect(state.sizes['Lieu']).toBeGreaterThanOrEqual(50);
   expect(state.sizes['Émotion']).toBeGreaterThanOrEqual(50);
-  await expect(page.locator('#live .regie-draw > summary')).toContainText('11 catégories');
+  await expect(page.locator('#live .regie-draw > summary')).toContainText('12 catégories');
   await expect(page.locator('#drawCatsCount')).toHaveText('0 cochée');
   // Sans case cochée, « Tout tirer » ouvre les catégories et le dit.
   await page.getByRole('button', { name: /Tout tirer/ }).click();
@@ -171,7 +171,7 @@ test('bibliothèque : la recherche trouve un jeu par son autre nom', async ({ pa
   await search.fill('');
   // Les fiches sans autre nom n'affichent pas la ligne.
   const withAlias = await page.locator('#games .card .exercise-aliases').count();
-  expect(withAlias).toBe(29);
+  expect(withAlias).toBe(33);
 });
 
 test('spectacle : une trame remplit l’ordre de passage et s’ajoute à la suite', async ({ page }) => {
