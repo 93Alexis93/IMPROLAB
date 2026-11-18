@@ -138,25 +138,45 @@ test('exercice aléatoire : sans animation si l’iPhone réduit les animations'
   await expect(page.locator('#randomExerciseUse')).toBeVisible();
 });
 
-test('accueil : plus de tirage, prochaine séance, échauffement et principe du jour', async ({ page }) => {
+test('accueil : plus de tirage ni de séance ; échauffement express, principe du jour, défi du jour', async ({ page }) => {
   await openApp(page);
   await expect(page.locator('#home').getByRole('button', { name: /Tirer un exercice/ })).toHaveCount(0);
+  await expect(page.locator('#homeNext')).toHaveCount(0);
+  await expect(page.locator('#home')).not.toContainText('Ta prochaine séance');
   await expect(page.locator('#home').getByRole('button', { name: /J’ai 5 minutes/ })).toBeVisible();
-  await expect(page.locator('#homeNext')).toContainText('Ta prochaine séance');
   await expect(page.locator('#homePrinciple')).toBeVisible();
   const principle = (await page.locator('#homePrinciple h3').textContent()).trim();
   const validated = await page.evaluate(async () => (await (await fetch('principes-impro.json')).json()).principes.filter(p => p.statut === 'validé').map(p => p.titre));
   expect(validated).toContain(principle);
-  await page.locator('#homeNext').getByRole('button', { name: /Préparer la séance/ }).click();
-  await expect(page.locator('#seance')).toBeVisible();
-  await page.getByRole('button', { name: 'Générer ma séance' }).click();
-  await openTab(page, 'Accueil');
-  await expect(page.locator('#homeNext')).toContainText('5 exercices');
-  // Même si la Régie était en impro libre, « Lancer en Régie » ouvre la séance.
-  await page.evaluate(() => { const m = document.getElementById('liveMode'); m.value = 'free'; m.dispatchEvent(new Event('change')); tab('home'); });
-  await page.locator('#homeNext').getByRole('button', { name: /Lancer en Régie/ }).click();
-  await expect(page.locator('#live')).toBeVisible();
-  await expect(page.locator('#liveProgress')).toHaveText('Exercice 1 / 5');
+  await expect(page.locator('#homeChallenge')).toBeVisible();
+  await expect(page.locator('#homeChallenge')).toContainText('DÉFI DU JOUR');
+  expect((await page.locator('#homeChallenge h3').textContent()).trim().length).toBeGreaterThan(2);
+  expect((await page.locator('#homeChallenge p').textContent()).trim().length).toBeGreaterThan(20);
+  // Les trois blocs se suivent : échauffement, principe, défi.
+  const order = await page.evaluate(() => ['.home-actions', '#homePrinciple', '#homeChallenge'].map(q => document.querySelector(q).getBoundingClientRect().top));
+  expect(order[0]).toBeLessThan(order[1]);
+  expect(order[1]).toBeLessThan(order[2]);
+});
+
+test('défi du jour : 60 défis différents, un par jour, le même toute la journée', async ({ page }) => {
+  await openApp(page);
+  const info = await page.evaluate(() => ({
+    n: HOME_CHALLENGES.length,
+    titles: new Set(HOME_CHALLENGES.map(c => c[0])).size,
+    texts: new Set(HOME_CHALLENGES.map(c => c[1])).size,
+    empty: HOME_CHALLENGES.filter(c => !c[0].trim() || c[1].trim().length < 20).length,
+    d0: challengeOfDay(100)[0], d1: challengeOfDay(101)[0], back: challengeOfDay(100 + HOME_CHALLENGES.length)[0], neg: challengeOfDay(-1)[0]
+  }));
+  expect(info.n).toBeGreaterThanOrEqual(50);
+  expect(info.titles).toBe(info.n);
+  expect(info.texts).toBe(info.n);
+  expect(info.empty).toBe(0);
+  expect(info.d0).not.toBe(info.d1);
+  expect(info.back).toBe(info.d0);
+  expect(typeof info.neg).toBe('string');
+  const first = (await page.locator('#homeChallenge h3').textContent()).trim();
+  await page.evaluate(() => { tab('seance'); tab('home'); });
+  expect((await page.locator('#homeChallenge h3').textContent()).trim()).toBe(first);
 });
 
 test('enregistrement refusé par l’appareil : un message le dit', async ({ page }) => {

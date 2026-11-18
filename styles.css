@@ -942,3 +942,5 @@ body::before{background:radial-gradient(ellipse 80% 40% at 0% 0%,rgba(255,210,31
 .exercise-schema svg{color:var(--ink)!important}
 .exercise-schema svg circle{fill:var(--paper-raised)}
 }
+/* D38 — Défi du jour */
+.home-challenge{border-left-color:var(--curtain,#9b303b)}

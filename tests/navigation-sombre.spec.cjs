@@ -48,7 +48,7 @@ test('menu « Plus » : s’ouvre au-dessus de la barre, se ferme d’un toucher
   const menuBox = await menu.boundingBox();
   expect(menuBox.y + menuBox.height).toBeLessThanOrEqual(navBox.y);
   for (const b of await menu.locator('button').all()) expect((await b.boundingBox()).height).toBeGreaterThanOrEqual(44);
-  await page.locator('#homeNext h3').click();
+  await page.locator('#homePrinciple h3').click();
   await expect(more).not.toHaveAttribute('open', '');
   await openTab(page, 'Bibliothèque');
   await expect(page.locator('#jeux')).toBeVisible();
@@ -83,7 +83,7 @@ test('thème sombre : suit le réglage de l’iPhone, textes lisibles', async ({
     return {
       html: s(document.documentElement).backgroundColor,
       body: s(document.body).color,
-      h3: s(document.querySelector('#homeNext h3')).color,
+      h3: s(document.querySelector('#homePrinciple h3')).color,
       nav: s(document.querySelector('nav[aria-label="Navigation principale"]')).backgroundColor,
       navText: s(document.querySelector('nav[aria-label="Navigation principale"] > button:not([aria-current])')).color,
       scheme: s(document.documentElement).colorScheme

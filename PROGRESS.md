@@ -186,3 +186,7 @@ Branche `refonte/navigation-sombre` depuis `refonte/seance-dabord`.
 | 3 | Audit contraste clair et sombre, iPhone SE et 13 | fait |
 
 - À tester sur iPhone : barre au-dessus de la barre d’accueil (appli installée et Safari), thème sombre en passant l’iPhone en mode sombre, Régie dans une salle sombre.
+
+### 2026-11-18 : Accueil sans la séance, défi du jour (D38) et fusion
+- Accueil : échauffement express, principe du jour, défi du jour (60 défis à relire par Alexis).
+- Demande d’Alexis : « fusionne tout » : PR 31 puis PR 32 dans `main`.

@@ -301,3 +301,10 @@ Choix d’Alexis à l’audit : barre en bas avec 4 onglets et « Plus », thèm
 - **Mesures** (WebKit, SE et 13, tous replis ouverts) : contraste ≥ 4,5 partout en clair et en sombre, sauf les titres des principes, écrits en texte dégradé, que l’outil ne sait pas mesurer (vérifiés sur capture : lisibles). 0 cible < 44 px, aucun débordement, aucune erreur JavaScript.
 - **Tests** : nouveau `tests/navigation-sombre.spec.cjs` (6 tests) ; `features.spec.cjs` vérifie aussi que la barre touche le bas de l’écran.
 - Cache : service worker `v60-navigation-sombre`, `styles.css?v=15`. `library.json` et générateur de séance inchangés.
+
+### D38. Accueil : sans la séance, avec un défi du jour (18 novembre 2026)
+Demande d’Alexis : retirer « Ta prochaine séance » de l’Accueil, garder l’Échauffement express et le Principe du jour, ajouter un Défi du jour créé par l’assistant, puis tout fusionner.
+- L’Accueil montre, dans l’ordre : Échauffement express (« 01 / VITE »), Principe du jour, Défi du jour, puis la carte Sauvegarde et le rappel quand il le faut. Le bloc « Ta prochaine séance » et ses boutons (« Lancer en Régie », « Revoir la séance ») disparaissent ; la séance se retrouve dans Préparer et la Régie.
+- **Défi du jour** : 60 défis courts (un titre et une consigne d’une ou deux phrases) écrits par l’assistant, **à relire par Alexis**. Ils sont dans `index.html` (`HOME_CHALLENGES`), pas dans `library.json`. Un défi par jour, le même toute la journée, qui change à minuit (`challengeOfDay(jour de l’année + 3)`, en boucle), indépendant du principe du jour (autre liste). Aucune donnée enregistrée sur l’appareil. Une moitié concerne le jeu (écoute, corps, scène), l’autre l’animation (cadre, bilan, rythme de séance).
+- Tests : `seance-dabord.spec.cjs` (accueil sans séance, ordre des trois blocs ; défi du jour : 60 défis uniques, un par jour, stable) ; `navigation-sombre.spec.cjs` et `check.cjs` suivent le Principe du jour.
+- Cache : service worker `v61-defi-du-jour`, `styles.css?v=16`.
