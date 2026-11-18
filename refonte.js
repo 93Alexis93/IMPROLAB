@@ -64,19 +64,6 @@
     body.classList.toggle('rf-plan-vide', n === 0);
   }
   if (plan) { new MutationObserver(majPlan).observe(plan, { childList: true }); majPlan(); }
-  // Le texte d'introduction de chaque page passe derrière un bouton « ? ».
-  $$('body > section, main > section').forEach(function (page) {
-    sur(function () {
-      var h2 = $(':scope > h2', page); if (!h2) return;
-      var suivant = h2.nextElementSibling;
-      if (page.id !== 'seance' && !(suivant && suivant.matches('p.muted'))) return;
-      var aide = el('button', 'rf-aide', '?'); aide.type = 'button';
-      aide.setAttribute('aria-label', 'Afficher ou cacher l’aide de cette page'); aide.setAttribute('aria-expanded', 'false');
-      aide.addEventListener('click', function () { aide.setAttribute('aria-expanded', String(page.classList.toggle('rf-aide-ouverte'))); });
-      h2.appendChild(aide);
-    });
-  });
-
   /* ---------- Exercice aléatoire : les six curseurs repliés, le bouton de tirage remonte ---------- */
   sur(function () { var mood = doc.getElementById('randomSettingsFold'); if (mood) mood.open = false; });
 

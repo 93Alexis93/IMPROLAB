@@ -14,15 +14,15 @@ test('cahier de coach : listes repliées, dépliées au toucher', async ({ page 
   await expect(card.locator('.coach-chip').first()).toBeVisible();
 });
 
-test('préparer : actions de séance masquées tant que la séance est vide, aide sur demande', async ({ page }) => {
+test('préparer : actions de séance masquées tant que la séance est vide, introduction visible', async ({ page }) => {
   await openApp(page);
   await openTab(page, 'Préparer');
   const exporter = page.locator('#seance button[onclick="exportSession()"]');
   await expect(exporter).toBeHidden();
   await expect(page.locator('#seance button[onclick="saveSession()"]')).toBeHidden();
-  await expect(page.locator('#seance .guided-heading > p')).toBeHidden();
-  await page.getByRole('button', { name: 'Afficher ou cacher l’aide de cette page' }).click();
+  // D41 : plus de bouton « ? », le texte d'introduction reste affiché.
   await expect(page.locator('#seance .guided-heading > p')).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Afficher ou cacher l’aide de cette page' })).toHaveCount(0);
   await page.evaluate(() => generate());
   await expect(exporter).toBeVisible();
   await expect(page.locator('#seance button[onclick="saveSession()"]')).toBeVisible();
@@ -47,15 +47,12 @@ test('masque d’ouverture coupé quand l’appareil demande moins d’animation
   await expect(page.locator('.rf-scene')).toHaveCount(0);
 });
 
-test('aide de page derrière « ? » sur Groupes, curseurs du tirage repliés, ajout de joueurs replié quand l’effectif existe', async ({ page }) => {
+test('groupes : introduction visible, curseurs du tirage repliés, ajout de joueurs replié quand l’effectif existe', async ({ page }) => {
   await openApp(page);
   await openTab(page, 'Groupes');
   const intro = page.locator('#groupes > h2 + p.muted');
-  await expect(intro).toBeHidden();
-  const aide = page.locator('#groupes > h2 .rf-aide');
-  expect((await aide.boundingBox()).height).toBeGreaterThanOrEqual(44);
-  await aide.click();
   await expect(intro).toBeVisible();
+  await expect(page.locator('#groupes .rf-aide')).toHaveCount(0);
   // Effectif vide : l'ajout est ouvert. Après un ajout et un retour sur l'onglet : replié.
   const ajout = page.locator('#groupes details.rf-ajout-joueurs');
   await expect(ajout).toHaveAttribute('open', '');

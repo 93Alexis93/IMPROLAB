@@ -220,3 +220,6 @@ Branche `refonte/navigation-sombre` depuis `refonte/seance-dabord`.
 
 ### 2026-11-18 : fusion avec la PR 30 (D40)
 - `main` (PR 30, « écrans légers ») intégré dans `refonte/navigation-sombre` ; mes versions gardées pour la barre du bas, l’en-tête, les fiches courtes et le défi du jour ; les effets de la PR 30 qui ne font pas doublon sont conservés (liste dans D40).
+
+### 2026-11-18 : tri des effets de la PR 30 (D41)
+- Effets et replis gardés, sauf le bouton « ? » d’aide, retiré ; introductions de page de nouveau visibles.

@@ -21,9 +21,6 @@ body.rf-plan-vide #seance button[onclick="shareSession()"],
 body.rf-plan-vide #seance button[onclick="printStudentSheets()"],
 body.rf-plan-vide #seance button[onclick="exportSession()"],
 body.rf-plan-vide #seance button[onclick="clearSession()"]{display:none!important}
-section>h2>.rf-aide{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;margin-left:6px;padding:0;border-radius:50%;background:transparent;color:var(--rf-bordeaux);border:1px solid rgba(143,36,51,.35);box-shadow:none;font:700 17px Georgia,serif;vertical-align:middle}
-@media screen{section:not(.rf-aide-ouverte)>h2+p.muted,#seance:not(.rf-aide-ouverte) .guided-heading>p,#cahier:not(.rf-aide-ouverte) .coach-intro{display:none}}
-section>h2:has(.rf-aide){display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px}
 
 /* ---------- 7. Un peu de vie ---------- */
 /* a. Le masque qui éclate à l'ouverture. Il ne bloque aucun toucher. */
@@ -59,7 +56,7 @@ section.rf-arrive{animation:rfPage .2s ease-out}
   .rf-scene,.rf-mot{display:none!important}
   section.rf-arrive,#randomExerciseResult h3,#randomExerciseResult h4,#expressResult>h4,#liveClock.rf-zero,nav[aria-label="Navigation principale"] .more-navigation-menu{animation:none!important}
 }
-@media print{.rf-scene,.rf-mot,.rf-aide{display:none!important}}
+@media print{.rf-scene,.rf-mot{display:none!important}}
 
 /* Retouches après captures */
 
@@ -82,6 +79,5 @@ section.rf-arrive{animation:rfPage .2s ease-out}
 @media (prefers-color-scheme:dark){
   :root{--rf-bordeaux:#ffb4bc;--rf-encre:#f1ece2}
   .rf-ajout-joueurs{background:rgba(255,255,255,.06);border-color:rgba(255,180,188,.35)}
-  section>h2>.rf-aide{background:transparent;color:#ffb4bc;border-color:rgba(255,180,188,.45)}
   #cahier .coach-list-card>.coach-list-heading{color:var(--ink,#f1ece2)}
 }
