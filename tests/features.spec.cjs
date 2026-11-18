@@ -116,6 +116,8 @@ test('navigation compacte sur iPhone : une ligne de cinq cibles de 44 px, menu P
   const nav = page.locator('nav[aria-label="Navigation principale"]');
   const box = await nav.boundingBox();
   expect(box.height).toBeLessThanOrEqual(64);
+  // Depuis D38, la barre est en bas de l'écran.
+  expect(Math.round(box.y + box.height)).toBe(page.viewportSize().height);
   for (const item of await nav.locator(':scope > button, :scope > details > summary').all()) {
     const b = await item.boundingBox();
     expect(b.height).toBeGreaterThanOrEqual(44);
@@ -300,7 +302,6 @@ test('favoris par groupe : un favori du Club n’apparaît pas chez les Copains,
   await expect(page.locator('#favoritesGroup')).toHaveText('(groupe Club collège)');
   const first = page.locator('#games .card').first();
   const title = (await first.locator('h3').first().textContent()).trim();
-  await first.locator('h3').first().click(); // refonte D36 : la fiche se déplie au toucher du titre
   await first.getByRole('button', { name: /Ajouter aux favoris/ }).click();
   await page.evaluate(() => { const d = document.querySelector('#filterFold'); if (d) d.open = true; }); await page.locator('#favoritesOnly').check();
   await expect(page.locator('#games .card')).toHaveCount(1);

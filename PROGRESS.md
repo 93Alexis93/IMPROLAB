@@ -188,3 +188,35 @@ Aucune cible sous 44 px, aucun débordement, aucune erreur JavaScript sur les di
 
 - Fichiers : `refonte.css`, `refonte.js` (`?v=2`), `sw.js` (cache `v60-refonte-passe-2`), `tests/refonte.spec.cjs` (11 tests), `tests/app.spec.cjs` (le test des six curseurs ouvre le repli avant « Réinitialiser »).
 - Tests locaux : `check.cjs` OK, `integrity.cjs` OK, Playwright iPhone-Chromium 142 réussis sur 143, même échec d’environnement qu’avant. WebKit : dans la CI.
+## Lot du 2026-11-18 : audit et chantier 1 « La séance d’abord » (D37)
+Branche `refonte/seance-dabord` depuis `main` (1a2cc6b). Référence sur `main` : 264/264.
+
+| Tâche | Objet | État |
+|---|---|---|
+| 1 | Régie : chrono et boutons en haut, collés au défilement ; en-tête réduit hors Accueil | fait |
+| 2 | Fiche courte partout (séance, Régie, bibliothèque, tirage), bibliothèque par 20, tout se referme | fait |
+| 3 | Exercice aléatoire : titres qui défilent puis s’arrêtent | fait |
+| 4 | Accueil : sans tirage ; prochaine séance ; principe du jour | fait |
+| 5 | Fiabilité : copie d’abord hors ligne, bandeau « Pas enregistré », restauration annulable | fait |
+| 6 | Audit iPhone SE et 13, tests | fait |
+
+- Audit après chantier (WebKit) : 0 cible < 44 px, aucun débordement, aucune erreur JavaScript. Hauteur en écrans, SE / 13 : Préparer après génération 5 / 3,9 (avant 8,6 / 6,8) ; Bibliothèque 8,8 / 7 (avant 126 / 98) ; Régie 2,2 / 1,7, chrono visible dès l’ouverture.
+- À tester sur iPhone : chrono collé en haut pendant le défilement, animation du tirage, ouverture rapide de l’appli installée avec un réseau faible, restauration annulable.
+
+## Lot du 2026-11-18 : chantier 2 « Navigation et thème sombre » (D38)
+Branche `refonte/navigation-sombre` depuis `refonte/seance-dabord`.
+
+| Tâche | Objet | État |
+|---|---|---|
+| 1 | Barre d’onglets en bas, menu « Plus » vers le haut | fait |
+| 2 | Thème sombre automatique | fait |
+| 3 | Audit contraste clair et sombre, iPhone SE et 13 | fait |
+
+- À tester sur iPhone : barre au-dessus de la barre d’accueil (appli installée et Safari), thème sombre en passant l’iPhone en mode sombre, Régie dans une salle sombre.
+
+### 2026-11-18 : Accueil sans la séance, défi du jour (D39) et fusion
+- Accueil : échauffement express, principe du jour, défi du jour (60 défis à relire par Alexis).
+- Demande d’Alexis : « fusionne tout » : PR 31 puis PR 32 dans `main`.
+
+### 2026-11-18 : fusion avec la PR 30 (D40)
+- `main` (PR 30, « écrans légers ») intégré dans `refonte/navigation-sombre` ; mes versions gardées pour la barre du bas, l’en-tête, les fiches courtes et le défi du jour ; les effets de la PR 30 qui ne font pas doublon sont conservés (liste dans D40).

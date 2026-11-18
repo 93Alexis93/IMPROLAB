@@ -21,6 +21,8 @@ test('mode Coach accessible dans chaque exercice de la séance',async({page})=>{
   const card=cards.nth(i);
   // Depuis le 22/10 (259c718), le mode Coach est affiché en volets repliables.
   for(const label of ['🎓 Consigne','🔀 Variante','🎯 Objectif du prof','🌱 Objectif des élèves','📖 Explication complète du jeu'])await expect(card.locator('details.coach-quick > summary',{hasText:label})).toHaveCount(1);
+  // Depuis D36, tout le détail est dans le repli « Voir la fiche complète ».
+  await card.locator('details.fiche-more>summary').click();
   const consigne=card.locator('details.coach-quick',{has:page.locator('summary',{hasText:'🎓 Consigne'})});
   await consigne.locator('summary').click();
   await expect(consigne).toHaveAttribute('open','');
@@ -92,7 +94,7 @@ test('générateur respecte les cinq étapes de la timeline',async({page})=>{
  await openApp(page);
  
  await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
- const labels=await page.locator('#plan>.card small').allTextContents();
+ const labels=await page.locator('#plan>.card>small').allTextContents();
  expect(labels).toHaveLength(5);
  expect(labels.map(x=>x.split('·')[1].trim())).toEqual(['Mise en énergie','Connexion collective','Exploration','Improvisation','Scène finale']);
 });
@@ -101,7 +103,7 @@ test('générateur : mes notes et créations IMPRO LAB, étapes respectées',asy
  await openApp(page);
  
  await openSeance(page);await page.getByRole('button',{name:'Générer ma séance'}).click();
- const labels=await page.locator('#plan>.card small').allTextContents();
+ const labels=await page.locator('#plan>.card>small').allTextContents();
  expect(labels).toHaveLength(5);
  // Les étiquettes n'affichent plus l'origine : on la vérifie dans la bibliothèque (mes notes ou créations IMPRO LAB).
  const origins=await page.evaluate(names=>names.map(name=>{const g=data.find(x=>displayTitle(x[0])===name||x[0]===name);return g?g[0]:null}),await page.locator('#plan>.card h3').allTextContents());

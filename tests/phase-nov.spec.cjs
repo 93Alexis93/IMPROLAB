@@ -5,21 +5,6 @@ const { openApp, openSeance, reloadApp } = require('./helpers.cjs');
 
 // Phase autonome de novembre : tirage repliable, échauffement, jeu seul en Régie, soirée, mes notes, fiche élève.
 
-test('accueil : le tirage s’affiche déplié et se replie d’un toucher', async ({ page }) => {
-  await openApp(page);
-  await page.getByRole('button', { name: /Tirer un exercice ↗/ }).click();
-  const fold = page.locator('#homeQuickResult details.home-result-fold');
-  await expect(fold).toHaveAttribute('open', '');
-  await expect(page.locator('#homeQuickResult .home-result-actions')).toBeVisible();
-  await fold.locator('summary').click();
-  await expect(fold).not.toHaveAttribute('open', '');
-  await expect(page.locator('#homeQuickResult .home-result-actions')).toBeHidden();
-  const box = await fold.locator('summary').boundingBox();
-  expect(box.height).toBeGreaterThanOrEqual(44);
-  await page.getByRole('button', { name: /Tirer un exercice ↗/ }).click();
-  await expect(page.locator('#homeQuickResult details.home-result-fold')).toHaveAttribute('open', '');
-});
-
 test('échauffement : ↺ garde le jeu, 🔄 en tire un autre, jamais « Impro libre »', async ({ page }) => {
   await openApp(page);
   await page.getByRole('button', { name: /J’ai 5 minutes/ }).click();
@@ -56,9 +41,8 @@ test('mode soirée : titre, consigne et explication complète sous le chrono', a
   const more = under.locator('details.under-clock-more');
   await more.locator('summary').click();
   await expect(more).toContainText('Règle complète');
-  const clock = await page.locator('#liveClock').boundingBox();
-  const box = await under.boundingBox();
-  expect(box.y).toBeGreaterThan(clock.y);
+  // Depuis D36, le chrono reste collé en haut : on vérifie l'ordre dans la page, pas la position à l'écran.
+  expect(await page.evaluate(() => Boolean(document.getElementById('liveClock').compareDocumentPosition(document.getElementById('liveUnderClock')) & Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
   await page.evaluate(() => liveReset());
   await expect(page.locator('#liveTitle')).toHaveText(title);
   await expect(under.locator('.under-clock-title')).toHaveText(title);
@@ -87,6 +71,7 @@ test('mes notes : note d’origine et note perso gardée après rechargement', a
   await openApp(page);
   await openSeance(page);
   await page.getByRole('button', { name: 'Générer ma séance' }).click();
+  await page.locator('#plan details.fiche-more').first().locator('summary').first().click();
   const notes = page.locator('#plan details.coach-notes').first();
   await notes.locator('summary').click();
   await expect(notes).toContainText('Ma note d’origine');

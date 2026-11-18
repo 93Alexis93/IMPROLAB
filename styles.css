@@ -837,3 +837,113 @@ body .stage-view .stage-audience[hidden],body .stage-view .stage-aka[hidden]{dis
 .audience-box>summary.audience-title::before,.audience-more>summary::before,.draw-cats-fold>summary::before,.filter-fold>summary::before,.home-backup>summary::before,.add-exercise>summary::before,.show-fold>summary::before,.match-names>summary::before{content:"▶";font-size:.75em;flex:none}
 .audience-box[open]>summary.audience-title::before,.audience-more[open]>summary::before,.draw-cats-fold[open]>summary::before,.filter-fold[open]>summary::before,.home-backup[open]>summary::before,.add-exercise[open]>summary::before,.show-fold[open]>summary::before,.match-names[open]>summary::before{content:"▼"}
 .my-titles>summary{list-style:none;gap:.4em}.my-titles>summary::-webkit-details-marker{display:none}.my-titles>summary::before{content:"▶";font-size:.75em;flex:none}.my-titles[open]>summary::before{content:"▼"}
+/* D37 — Régie : chrono et boutons en haut, toujours visibles ; en-tête réduit hors Accueil */
+#live .live-deck{position:sticky;top:var(--nav-h,0px);z-index:25;background:var(--paper-raised,#fffdf8);margin:0 0 10px;padding:4px 6px 8px;border:1px solid var(--line,#d9cdbd);border-radius:12px;box-shadow:0 6px 14px rgba(37,35,31,.12)}
+#live .live-deck #liveClock{font-size:clamp(62px,18vw,112px)!important;line-height:1.05}
+#live .live-deck #liveOvertime{margin:0 0 4px}
+#live .live-deck #liveOvertime:empty{display:none}
+#live .live-deck #liveActions button{min-height:48px;font-size:14px}
+body.regie-full #live .live-deck{position:static;box-shadow:none}
+body[data-tab]:not([data-tab="home"])>header{padding:6px 16px!important}
+body[data-tab]:not([data-tab="home"])>header>div,body[data-tab]:not([data-tab="home"])>header .header-slogan,body[data-tab]:not([data-tab="home"])>header:after{display:none}
+body[data-tab]:not([data-tab="home"])>header h1{font-size:1.25rem}
+body[data-tab]:not([data-tab="home"])>header .header-logo{width:28px;height:28px}
+#live .live-deck #liveActions #liveStart{flex-grow:1.6}
+#live .live-deck #liveActions button{padding:6px 4px;font-size:13px}
+/* D37 — Fiche courte : nom, aussi appelé, durée, caractéristiques et étoiles ; le reste dans « Voir la fiche complète » */
+details.fiche-more{margin:10px 0 4px;border:1px solid var(--line,#d9cdbd);border-radius:10px;background:var(--paper-raised,#fffdf8)}
+details.fiche-more>summary{display:flex;align-items:center;min-height:44px;padding:0 12px;cursor:pointer;font-weight:750;color:var(--curtain,#9b303b);list-style:none}
+details.fiche-more>summary::-webkit-details-marker{display:none}
+details.fiche-more>summary::before{content:"▶";font-size:.75em;margin-right:8px}
+details.fiche-more[open]>summary::before{content:"▼"}
+details.fiche-more>.fiche-more-body{padding:0 10px 10px}
+details.fiche-more>.fiche-more-body>.exercise-schema{margin-top:0}
+.fiche-consigne{font-size:17px;line-height:1.45;margin:8px 0}
+.pill.duration-pill{white-space:nowrap}
+#games .card>.favorite{display:inline-flex;align-items:center;width:auto;margin:6px 0 0;min-height:44px;padding:6px 12px;font-size:14px}
+.library-more{display:block;width:100%;min-height:48px;margin:12px 0}
+.session-objective details.objective-fold>summary{display:flex;align-items:center;min-height:44px;cursor:pointer;font-weight:750;color:var(--curtain,#9b303b)}
+#plan>.card>.edit-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin-top:8px}
+#plan>.card>.edit-actions>span{display:flex;align-items:center;justify-content:center;font-weight:700}
+#plan>.card>.edit-actions>button{min-height:44px;padding:6px 4px;font-size:13px}
+#plan>.card>.edit-actions>:nth-child(3){order:1}#plan>.card>.edit-actions>:nth-child(4){order:2}#plan>.card>.edit-actions>:nth-child(5){order:3}#plan>.card>.edit-actions>:nth-child(6){order:4}#plan>.card>.edit-actions>:nth-child(1){order:5}#plan>.card>.edit-actions>:nth-child(2){order:6}#plan>.card>.edit-actions>:nth-child(7){order:7}#plan>.card>.edit-actions>:nth-child(8){order:8}
+/* D37 — Tirage animé (machine à sous) */
+.reel{display:grid;gap:6px;text-align:center}
+.reel-window{position:relative;overflow:hidden;height:76px;display:flex;align-items:center;justify-content:center;border:2px solid var(--curtain,#9b303b);border-radius:14px;background:var(--paper-raised,#fffdf8);box-shadow:inset 0 10px 12px -10px rgba(37,35,31,.35),inset 0 -10px 12px -10px rgba(37,35,31,.35)}
+.reel-item{display:block;padding:0 12px;font:800 clamp(19px,5.6vw,26px)/1.15 Georgia,"Times New Roman",serif;color:var(--ink,#25231f);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.reel-item.reel-roll{animation:reelRoll .09s linear}
+.reel-item.reel-stop{color:var(--curtain,#9b303b);animation:reelStop .32s cubic-bezier(.2,1.6,.4,1)}
+.reel-label{margin:0;font-size:14px;color:var(--ink-soft,#4f483f)}
+@keyframes reelRoll{from{transform:translateY(-70%);opacity:.3}to{transform:translateY(0);opacity:1}}
+@keyframes reelStop{0%{transform:scale(.85)}100%{transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){.reel-item.reel-roll,.reel-item.reel-stop{animation:none}}
+/* D37 — Accueil : prochaine séance, principe du jour */
+.home-next .draw-actions,.home-principle .draw-actions{display:flex;flex-wrap:wrap;gap:8px}
+.home-next .draw-actions button,.home-principle button{min-height:44px}
+.home-principle{border-left:4px solid var(--il-jaune,#ffd21f)}
+.home-principle h3{margin:6px 0 4px;font-family:Georgia,"Times New Roman",serif}
+.home-principle p{line-height:1.5}
+/* D37 — Enregistrement refusé par l'appareil */
+.storage-warn{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:2000;display:flex;gap:10px;align-items:center;padding:10px 12px;border-radius:12px;background:#5c1620;color:#fff;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.storage-warn p{margin:0;flex:1;line-height:1.35}
+.storage-warn button{min-height:44px;min-width:56px;background:#fff;color:#5c1620}
+#backupUndo .draw-actions{display:flex;flex-wrap:wrap;gap:8px}
+#backupUndo button{min-height:44px}
+.storage-warn[hidden]{display:none}
+/* D38 — Barre d'onglets en bas, comme une appli iPhone ; « Plus » s'ouvre vers le haut */
+body{padding-bottom:calc(72px + env(safe-area-inset-bottom))!important}
+body nav[aria-label="Navigation principale"]{position:fixed!important;top:auto!important;left:0!important;right:0!important;bottom:0!important;z-index:900!important;display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:2px!important;margin:0!important;padding:3px max(4px,env(safe-area-inset-right)) calc(3px + env(safe-area-inset-bottom)) max(4px,env(safe-area-inset-left))!important;background:var(--paper-raised,#fffdf8)!important;border:0!important;border-top:1px solid var(--line,#d9cdbd)!important;border-radius:0!important;box-shadow:0 -6px 18px rgba(37,35,31,.12)!important;backdrop-filter:none!important}
+body nav[aria-label="Navigation principale"]>button,body nav[aria-label="Navigation principale"] .more-navigation>summary{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:1px;width:100%!important;min-width:0!important;min-height:52px!important;margin:0!important;padding:2px 1px!important;border:0!important;border-radius:10px!important;background:transparent!important;color:var(--ink-soft,#4f483f)!important;font-size:11px!important;font-weight:700!important;line-height:1.1!important;text-align:center!important;white-space:normal!important;box-shadow:none!important;list-style:none}
+body nav[aria-label="Navigation principale"] .more-navigation>summary::-webkit-details-marker{display:none}
+body nav[aria-label="Navigation principale"] .nav-ico{display:block;font-size:19px;line-height:1.1}
+body nav[aria-label="Navigation principale"]>button[aria-current="page"],body nav[aria-label="Navigation principale"] .more-navigation:has(button[aria-current="page"])>summary,body nav[aria-label="Navigation principale"] .more-navigation[open]>summary{background:var(--curtain,#9b303b)!important;color:#fff!important}
+body nav[aria-label="Navigation principale"] .more-navigation,body nav[aria-label="Navigation principale"] .more-navigation[open]{grid-column:auto!important;position:static!important;margin:0!important;min-width:0}
+body nav[aria-label="Navigation principale"] .more-navigation-menu{position:fixed!important;left:max(8px,env(safe-area-inset-left))!important;right:max(8px,env(safe-area-inset-right))!important;top:auto!important;bottom:calc(var(--nav-bottom,66px) + 8px)!important;z-index:901!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:6px!important;min-width:0!important;margin:0!important;padding:8px!important;border:1px solid var(--line,#d9cdbd)!important;border-radius:14px!important;background:var(--paper-raised,#fffdf8)!important;box-shadow:0 -10px 30px rgba(37,35,31,.25)!important}
+body nav[aria-label="Navigation principale"] .more-navigation-menu button{display:flex!important;align-items:center;gap:8px;min-height:48px!important;width:100%;padding:6px 10px!important;border:1px solid var(--line,#d9cdbd)!important;border-radius:10px!important;background:var(--paper,#f7f1e7)!important;color:var(--ink,#25231f)!important;font-size:14px!important;font-weight:700;text-align:left!important;white-space:normal!important}
+body nav[aria-label="Navigation principale"] .more-navigation-menu button .nav-ico{font-size:18px}
+body nav[aria-label="Navigation principale"] .more-navigation-menu button[aria-current="page"]{background:var(--curtain,#9b303b)!important;color:#fff!important;border-color:var(--curtain,#9b303b)!important}
+.storage-warn{bottom:calc(var(--nav-bottom,0px) + 10px)}
+body>header{padding-top:max(6px,env(safe-area-inset-top))!important}
+@media print{body nav[aria-label="Navigation principale"]{display:none!important}body{padding-bottom:0!important}}
+#randomExerciseResult>div>b:first-child{display:block;font-size:20px;line-height:1.25}
+/* D38 — Thème sombre automatique : suit le réglage clair / sombre de l'iPhone.
+   Les couleurs passent par les variables ; les couleurs écrites en dur sont reprises ici. */
+@media (prefers-color-scheme: dark){
+:root{color-scheme:dark;--paper:#161925;--paper-raised:#222639;--ink:#f1ece2;--ink-soft:#cbc3b6;--line:#41465e;--curtain:#a8343f;--curtain-dark:#ffb4bc;--accent-text:#ffb4bc;--focus-ring:#7cc8e8;--stage:#0f1118;--il-surface:linear-gradient(135deg,#2a2540 0%,#2e2434 50%,#232840 100%);--il-surface-bord:rgba(255,255,255,.12)}
+html{background:var(--paper)}
+body{color:var(--ink)}
+body>header{background:var(--paper)!important;color:var(--ink)!important;border-bottom-color:var(--line)!important}
+body>header h1,body>header div{color:var(--ink)!important}
+h2,h3,h4{color:var(--ink)}
+.muted,small,.dynamic-sub,.exercise-aliases,.exercise-categories,.exercise-usages,.reel-label{color:var(--ink-soft)!important}
+.home-step,.home-intro .eyebrow,.home-result-category,body>header .header-slogan,#cahier .coach-kicker,#cahier .coach-list-number,details.fiche-more>summary,.session-objective details.objective-fold>summary,.reel-item.reel-stop,#liveUnderClock details>summary,.plan-summary,.plan-warning,#liveProgress,#liveOvertime,.card a,a,main button,h3.exercise-title{color:var(--accent-text)!important}
+main button.btn-primary,#live #liveStart.btn-primary,.home-action>button,.home-next .btn-primary{background:var(--curtain)!important;color:#fff!important;border-color:var(--curtain)!important}
+main button{background:var(--paper-raised)!important;border-color:var(--line)!important}
+main button:disabled{opacity:.55}
+input,select,textarea,#drawEditor,#principesSearch,#search{background:var(--paper-raised)!important;color:var(--ink)!important;border-color:var(--line)!important}
+input::placeholder,textarea::placeholder{color:#9d968b}
+.card,details.card,.coach-quick,.regie-fold,.coach-attribution,.dynamic-row,.home-principle,.reel-window,.live-deck,details.fiche-more{border-color:var(--il-surface-bord)}
+.reel-window,#live .live-deck,details.fiche-more,.home-principle,body nav[aria-label="Navigation principale"],body nav[aria-label="Navigation principale"] .more-navigation-menu{background:var(--paper-raised)!important}
+.reel-item{color:var(--ink)}
+.pill,.coach-chip,.coach-count{background:#2d3248!important;color:var(--ink)!important}
+button.favorite,#games .card>.favorite{background:#ffd16d!important;color:#25231f!important}
+.dynamic-row output{color:color-mix(in srgb,var(--slider-color,#ccc) 65%,#fff)!important}
+#live>h2{color:var(--ink)!important}
+#live .card,#live #liveClock,#live #liveTitle,#live #liveInfo,#live label,#live .regie-player-list label{color:var(--ink)!important}
+body nav[aria-label="Navigation principale"]>button,body nav[aria-label="Navigation principale"] .more-navigation>summary{color:var(--ink-soft)!important}
+body nav[aria-label="Navigation principale"]>button[aria-current="page"],body nav[aria-label="Navigation principale"] .more-navigation:has(button[aria-current="page"])>summary,body nav[aria-label="Navigation principale"] .more-navigation[open]>summary,body nav[aria-label="Navigation principale"] .more-navigation-menu button[aria-current="page"]{background:var(--curtain)!important;color:#fff!important}
+body nav[aria-label="Navigation principale"] .more-navigation-menu button{background:var(--paper)!important;color:var(--ink)!important}
+}
+@media (prefers-color-scheme: dark){
+body::before{background:radial-gradient(ellipse 80% 40% at 0% 0%,rgba(255,210,31,.08),transparent 70%),radial-gradient(ellipse 80% 40% at 100% 100%,rgba(57,245,200,.08),transparent 70%),linear-gradient(180deg,#1c1c2b 0%,#211a2b 30%,#1b1f31 65%,#152220 100%)!important}
+#randomExerciseResult b{color:var(--ink)!important}
+}
+@media (prefers-color-scheme: dark){
+.exercise-schema svg{color:var(--ink)!important}
+.exercise-schema svg circle{fill:var(--paper-raised)}
+}
+/* D39 — Défi du jour */
+.home-challenge{border-left-color:var(--curtain,#9b303b)}
+/* D40 — Barre du bas : cachée dans les plein écran (Régie, séance), où elle gênerait */
+body.regie-full nav[aria-label="Navigation principale"],body.stage-open nav[aria-label="Navigation principale"]{display:none!important}
+body.regie-full,body.stage-open{padding-bottom:0!important}

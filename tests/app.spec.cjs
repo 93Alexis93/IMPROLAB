@@ -120,7 +120,11 @@ test('impression A4 : séance et schéma restent visibles',async({page})=>{
   expect(printStyles.display).not.toBe('none');
   await page.evaluate(()=>tab('jeux'));
   await expect.poll(()=>page.locator('#jeux .exercise-schema svg').count()).toBeGreaterThan(0);
+  // Depuis D37, le schéma est dans « Voir la fiche complète », ouvert d'office à l'impression.
+  await page.evaluate(()=>window.dispatchEvent(new Event('beforeprint')));
   await expect(page.locator('#jeux .exercise-schema').first()).toBeVisible();
+  await page.evaluate(()=>window.dispatchEvent(new Event('afterprint')));
+  await expect(page.locator('#jeux details.fiche-more[open]')).toHaveCount(0);
 });
 test('navigation principale : aucune erreur JavaScript de page',async({page})=>{
   const pageErrors=[];
@@ -130,25 +134,6 @@ test('navigation principale : aucune erreur JavaScript de page',async({page})=>{
     await expect(page.locator('#'+section)).toBeVisible();
   }
   expect(pageErrors).toEqual([]);
-});
-
-test('tirage rapide depuis l’accueil : exercice validé et accès à sa fiche',async({page})=>{
-  await page.evaluate(()=>tab('home'));
-  await page.getByRole('button',{name:/Tirer un exercice/}).last().click();
-  const result=page.locator('#homeQuickResult');
-  await expect(result.locator('h4')).toBeVisible();
-  await expect(result.locator('p').first()).toBeVisible();
-  const title=await result.locator('h4').innerText();
-  const rawTitle=await page.evaluate(name=>{
-    const game=data.find(g=>displayTitle(g[0])===name);
-    if(!game||!isEligibleGame(game,{includeExternal:false,includeIncomplete:false}))return null;
-    return game[0];
-  },title);
-  expect(rawTitle).not.toBeNull();
-  await result.getByRole('button',{name:'Voir la fiche'}).click();
-  await expect(page.locator('#jeux')).toBeVisible();
-  await expect(page.locator('#search')).toHaveValue(rawTitle);
-  await expect(page.locator('#games')).toContainText(title);
 });
 
 test('séance : ouverture énergisante et dernière fiche de catégorie principale Scène',async({page})=>{await page.evaluate(()=>generate());const result=await page.evaluate(()=>{const cards=[...document.querySelectorAll('#plan>.card[data-stage-index]')];const title=card=>card.querySelector('h3')?.textContent;const first=data.find(g=>displayTitle(g[0])===title(cards[0]));const last=data.find(g=>displayTitle(g[0])===title(cards.at(-1)));return {count:cards.length,first:first&&{primary:first[1],secondary:first[11]||[],usages:first[14]||[]},last:last&&{primary:last[1],secondary:last[11]||[]}}});expect(result.count).toBe(5);expect(['Énergie','Lâcher-prise','Amusement'].some(c=>result.first?.primary===c||result.first?.secondary.includes(c))||['chauffe','début de séance'].some(u=>result.first?.usages.includes(u))).toBe(true);expect(result.last?.primary).toBe('Scène')});

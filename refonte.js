@@ -1,4 +1,6 @@
-/* IMPRO LAB : refonte « écrans légers » (D36, 13 novembre 2026).
+/* IMPRO LAB : refonte « écrans légers » (D36, 13 novembre 2026), allégée le 18 novembre (D40) :
+   la barre du bas, l'en-tête réduit, les fiches courtes de la Bibliothèque, le défi du jour et le tirage de
+   l'Accueil sont maintenant dans index.html et styles.css (D37 à D39).
    Ce fichier ne touche ni aux données ni au générateur de séance : il range
    l'affichage (en-tête compact, barre en bas, replis) et ajoute un peu de vie.
    Écrit en clair, non minifié, pour rester lisible et facile à retirer. */
@@ -25,27 +27,10 @@
         window.scrollTo(0, 0);
       }
       if (id === 'groupes' && avant !== id) sur(function () { majAjoutJoueurs(); });
-      majToutReplier();
       return r;
     };
   }
   body.dataset.tab = ongletVisible();
-
-  /* ---------- Bouton « Tout replier » dans l'en-tête ---------- */
-  var boutonReplier = el('button', 'rf-fold-all', 'Tout replier');
-  boutonReplier.type = 'button'; boutonReplier.hidden = true;
-  function ouverts() {
-    var s = doc.getElementById(body.dataset.tab); if (!s) return [];
-    return $$('details[open]', s).concat($$('.rf-open', s));
-  }
-  function majToutReplier() { boutonReplier.hidden = ouverts().length === 0; }
-  boutonReplier.addEventListener('click', function () {
-    ouverts().forEach(function (n) { if (n.tagName === 'DETAILS') n.open = false; else fermer(n); });
-    cartesOuvertes.clear();
-    majToutReplier(); window.scrollTo(0, 0);
-  });
-  sur(function () { $('body > header').appendChild(boutonReplier); });
-  doc.addEventListener('toggle', function () { majToutReplier(); }, true);
 
   /* ---------- Cartes repliables (Bibliothèque, Cahier de coach) ---------- */
   function ouvrir(carte) { carte.classList.add('rf-open'); var t = carte.firstElementChild; if (t) t.setAttribute('aria-expanded', 'true'); }
@@ -58,47 +43,9 @@
       var carte = titre.closest(selCarte); if (!carte) return;
       if (carte.classList.contains('rf-open')) fermer(carte); else ouvrir(carte);
       if (auChangement) auChangement(carte);
-      majToutReplier();
     }
     conteneur.addEventListener('click', basculer);
     conteneur.addEventListener('keydown', basculer);
-  }
-
-  // Bibliothèque : 103 fiches ouvertes faisaient 130 écrans de haut. Une ligne par jeu.
-  var cartesOuvertes = new Set();
-  var jeux = doc.getElementById('games');
-  var boutonBiblio;
-  function majBoutonBiblio() {
-    if (!boutonBiblio) return;
-    var cartes = $$('.card', jeux), toutes = cartes.length && cartes.every(function (c) { return c.classList.contains('rf-open'); });
-    boutonBiblio.textContent = toutes ? 'Tout replier' : 'Tout déplier';
-    boutonBiblio.parentNode.hidden = cartes.length < 2;
-  }
-  function rangerBiblio() {
-    var cartes = $$('.card', jeux);
-    cartes.forEach(function (c) {
-      var t = $('.exercise-title', c); if (!t) return;
-      preparerTitre(t);
-      if (cartes.length <= 3 || cartesOuvertes.has(t.textContent)) ouvrir(c);
-    });
-    majBoutonBiblio(); majToutReplier();
-  }
-  if (jeux) {
-    var outils = el('div', 'rf-library-tools'); boutonBiblio = el('button', '', 'Tout déplier'); boutonBiblio.type = 'button';
-    outils.appendChild(boutonBiblio); jeux.parentNode.insertBefore(outils, jeux);
-    boutonBiblio.addEventListener('click', function () {
-      var cartes = $$('.card', jeux), toutes = cartes.every(function (c) { return c.classList.contains('rf-open'); });
-      cartesOuvertes.clear();
-      cartes.forEach(function (c) { if (toutes) fermer(c); else { ouvrir(c); cartesOuvertes.add($('.exercise-title', c).textContent); } });
-      majBoutonBiblio(); majToutReplier();
-    });
-    brancher(jeux, '.card', '.exercise-title', function (carte) {
-      var nom = $('.exercise-title', carte).textContent;
-      if (carte.classList.contains('rf-open')) cartesOuvertes.add(nom); else cartesOuvertes.delete(nom);
-      majBoutonBiblio();
-    });
-    new MutationObserver(rangerBiblio).observe(jeux, { childList: true });
-    rangerBiblio();
   }
 
   // Cahier de coach : chaque liste se déplie au toucher.
@@ -146,38 +93,6 @@
   function majAjoutJoueurs() { // à l'arrivée sur l'onglet : ouvert si l'effectif est vide, replié sinon
     var liste = doc.getElementById('rosterList'); if (ajoutJoueurs && liste) ajoutJoueurs.open = liste.children.length === 0;
   }
-
-  /* ---------- Accueil : le défi du jour, tiré de tes propres listes ---------- */
-  function hasard(graine) { // petit générateur reproductible : même défi toute la journée
-    var a = graine >>> 0;
-    return function () { a |= 0; a = a + 0x6D2B79F5 | 0; var t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
-  }
-  function tirerDefi(graine) {
-    var listes = sur(function () { return drawLists; }) || {};
-    var alea = hasard(graine), d = {};
-    ['Lieu', 'Personnage', 'Émotion', 'Contrainte'].forEach(function (k) {
-      var l = Array.isArray(listes[k]) ? listes[k] : []; if (l.length) d[k] = l[Math.floor(alea() * l.length)];
-    });
-    return d;
-  }
-  sur(function () {
-    var actions = $('#home .home-actions'); if (!actions) return;
-    var bloc = el('details', 'rf-defi'), resume = el('summary', '', '🎭 Défi du jour'), carte = el('div', 'rf-defi-carte');
-    bloc.id = 'rfDefi'; bloc.appendChild(resume); bloc.appendChild(carte);
-    var jour = new Date(), graine = jour.getFullYear() * 10000 + (jour.getMonth() + 1) * 100 + jour.getDate(), tour = 0;
-    function afficher() {
-      var d = tirerDefi(graine + tour * 7919), cles = Object.keys(d);
-      carte.replaceChildren();
-      if (!cles.length) { carte.appendChild(el('small', '', 'Tes listes de tirage sont vides pour l’instant.')); return; }
-      cles.forEach(function (k) { var p = el('p'); var b = el('small', '', k); p.appendChild(b); p.appendChild(doc.createTextNode(d[k])); carte.appendChild(p); });
-      carte.appendChild(el('small', '', 'Tiré de tes listes de tirage. Le même pour toute la journée, sauf si tu en redemandes un.'));
-      var autre = el('button', '', '🎲 Un autre défi'); autre.type = 'button';
-      autre.addEventListener('click', function () { tour++; afficher(); carte.style.animation = 'none'; void carte.offsetWidth; carte.style.animation = ''; });
-      carte.appendChild(autre);
-    }
-    bloc.addEventListener('toggle', function () { if (bloc.open) afficher(); });
-    actions.parentNode.insertBefore(bloc, actions.nextSibling);
-  });
 
   /* ---------- Un peu de vie : masque, confettis, petit mot ---------- */
   var COULEURS = ['#ffd21f', '#ff526e', '#d52cff', '#138bff', '#39f5c8', '#8f2433'];
@@ -266,27 +181,6 @@
       etait = plein;
     }).observe(body, { attributes: true, attributeFilter: ['class'] });
   });
-
-  // Tirage de l'Accueil : les titres défilent une demi-seconde avant de s'arrêter sur le bon.
-  // Le vrai titre est déjà en place dessous ; seul l'habillage défile.
-  var tirageOrigine = window.quickDraw;
-  if (typeof tirageOrigine === 'function') {
-    window.quickDraw = function () {
-      var r = tirageOrigine.apply(this, arguments);
-      sur(function () {
-        var h4 = $('#homeQuickResult h4'); if (!h4 || calme) return;
-        var titres = sur(function () { return data.map(function (g) { return displayTitle(g[0]); }); }) || []; if (titres.length < 5) return;
-        var rouleau = el('span', 'rf-rouleau'); rouleau.setAttribute('aria-hidden', 'true');
-        // Le rouleau est posé à côté du titre, jamais dedans : le texte du titre reste exact à tout instant.
-        var parent = h4.parentNode; if (getComputedStyle(parent).position === 'static') parent.style.position = 'relative';
-        rouleau.style.cssText = 'left:' + h4.offsetLeft + 'px;top:' + h4.offsetTop + 'px;width:' + h4.offsetWidth + 'px;height:' + h4.offsetHeight + 'px;font:' + getComputedStyle(h4).font;
-        h4.classList.add('rf-roule'); parent.appendChild(rouleau);
-        var tic = setInterval(function () { rouleau.textContent = titres[Math.floor(Math.random() * titres.length)]; }, 70);
-        setTimeout(function () { clearInterval(tic); rouleau.remove(); h4.classList.remove('rf-roule'); h4.style.animation = 'none'; void h4.offsetWidth; h4.style.animation = ''; }, 560);
-      });
-      return r;
-    };
-  }
 
   // Séance enregistrée : un coup de tampon.
   var enregistrerOrigine = window.saveSession;
