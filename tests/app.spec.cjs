@@ -76,6 +76,7 @@ test('six curseurs regroupés : valeurs par catégorie, synchronisation et réin
   expect(await page.locator('#randomDynamic3').inputValue()).toBe('85');
   await page.evaluate(()=>tab('random'));
   expect(await page.evaluate(()=>getRandomDynamics()['Émotions'])).toBe(85);
+  await page.evaluate(()=>{document.getElementById('randomSettingsFold').open=true}); // refonte D36 : curseurs repliés au départ
   await page.locator('#random').getByRole('button',{name:/Réinitialiser/}).click();
   const restored=await page.evaluate(()=>SLIDER_GROUPS.map((g,i)=>Number(document.getElementById('dynamic'+i).value)));
   const defaults=await page.evaluate(()=>SLIDER_GROUPS.map((g,i)=>groupDefault(i)));
@@ -119,7 +120,7 @@ test('impression A4 : séance et schéma restent visibles',async({page})=>{
   expect(printStyles.display).not.toBe('none');
   await page.evaluate(()=>tab('jeux'));
   await expect.poll(()=>page.locator('#jeux .exercise-schema svg').count()).toBeGreaterThan(0);
-  // Depuis D36, le schéma est dans « Voir la fiche complète », ouvert d'office à l'impression.
+  // Depuis D37, le schéma est dans « Voir la fiche complète », ouvert d'office à l'impression.
   await page.evaluate(()=>window.dispatchEvent(new Event('beforeprint')));
   await expect(page.locator('#jeux .exercise-schema').first()).toBeVisible();
   await page.evaluate(()=>window.dispatchEvent(new Event('afterprint')));

@@ -3,7 +3,7 @@
 const { test, expect } = require('@playwright/test');
 const { openApp, openSeance, openTab, reloadApp } = require('./helpers.cjs');
 
-// Chantier « La séance d'abord » (D36) : chrono en haut de la Régie, fiche courte partout,
+// Chantier « La séance d'abord » (D37) : chrono en haut de la Régie, fiche courte partout,
 // tirage animé, Accueil sans tirage, enregistrement refusé signalé, restauration annulable.
 
 async function generated(page) {
@@ -80,7 +80,7 @@ test('remplacer un exercice garde une seule fiche repliée, sans ancien schéma'
 
 test('une ancienne séance enregistrée sans repli est repliée à l’ouverture', async ({ page }) => {
   await generated(page);
-  // Simule une séance d'avant D36 : détails posés à plat dans la carte.
+  // Simule une séance d'avant D37 : détails posés à plat dans la carte.
   await page.evaluate(() => {
     document.querySelectorAll('#plan>.card details.fiche-more').forEach(d => { const body = d.querySelector('.fiche-more-body'); d.replaceWith(...body.children); });
     localStorage.setItem('impro-last-plan', document.getElementById('plan').innerHTML);

@@ -161,7 +161,34 @@ Branche `amelioration/pistes-improwiki` depuis `main` (23a5a65). Accord d’Alex
 - 1-61 et 2-31 retirées de l’appli (103 exercices affichés, library.json inchangé) ; tirages d’impro sans case cochée au départ.
 - Tests adaptés (compte de 103 fiches dans helpers.cjs, tirages, contact léger 5, niveaux) ; 2 nouveaux tests. Campagne complète au vert (iPhone-Chromium et iPhone-WebKit), check.cjs et integrity.cjs OK. Cache `v58-tirages-vides`.
 
-## Lot du 2026-11-18 : audit et chantier 1 « La séance d’abord » (D36)
+## Lot du 2026-11-13 : audit et refonte « écrans légers » (D36)
+Branche `claude/improlab-audit-refonte-xe6xbx` depuis `main` (1a2cc6b, PR 29 fusionnée).
+
+| Écran (iPhone SE) | Avant | Après |
+|---|---|---|
+| Bibliothèque | 131,9 écrans | 20,5 écrans |
+| Cahier de coach | 3,1 | 1,4 |
+| Préparer (séance vide) | 2,3 | 1,7 |
+| Régie | 2,1 | 1,8 |
+
+- Fichiers : `refonte.css`, `refonte.js`, `AUDIT.md`, `tests/refonte.spec.cjs` (8 tests) ; `index.html` (deux lignes de chargement), `sw.js` (cache `v59-refonte-ecrans-legers`, deux fichiers en plus dans le cache), `tests/features.spec.cjs` (le test des favoris déplie la fiche avant d’ajouter le favori).
+- Tests locaux : `check.cjs` OK, `integrity.cjs` OK (105 fiches), Playwright iPhone-Chromium 139 réussis sur 140. L’échec (« plein écran de séance… paysage ») existait avant la refonte et vient du Playwright 1.63 de l’environnement de travail.
+- WebKit : non lancé en local, à lire dans la CI de la PR.
+- À tester sur iPhone : la barre du bas (zone du geste d’accueil, appli installée sur l’écran d’accueil), le masque d’ouverture, la Bibliothèque repliée, le clavier ouvert au-dessus de la barre.
+
+### Deuxième passe du 2026-11-13 (même branche, PR 30)
+| Écran (iPhone SE) | Après la première passe | Après la deuxième |
+|---|---|---|
+| Exercice aléatoire | 1,6 écran | 1,1 |
+| Cahier de coach | 1,4 | 1,1 |
+| Spectacle | 1,5 | 1,4 |
+| Groupes (effectif vide) | 2,1 | 2,1 : l’ajout de joueurs reste ouvert tant que l’effectif est vide |
+
+Aucune cible sous 44 px, aucun débordement, aucune erreur JavaScript sur les dix onglets (iPhone SE et iPhone 13, Chromium).
+
+- Fichiers : `refonte.css`, `refonte.js` (`?v=2`), `sw.js` (cache `v60-refonte-passe-2`), `tests/refonte.spec.cjs` (11 tests), `tests/app.spec.cjs` (le test des six curseurs ouvre le repli avant « Réinitialiser »).
+- Tests locaux : `check.cjs` OK, `integrity.cjs` OK, Playwright iPhone-Chromium 142 réussis sur 143, même échec d’environnement qu’avant. WebKit : dans la CI.
+## Lot du 2026-11-18 : audit et chantier 1 « La séance d’abord » (D37)
 Branche `refonte/seance-dabord` depuis `main` (1a2cc6b). Référence sur `main` : 264/264.
 
 | Tâche | Objet | État |
@@ -176,7 +203,7 @@ Branche `refonte/seance-dabord` depuis `main` (1a2cc6b). Référence sur `main` 
 - Audit après chantier (WebKit) : 0 cible < 44 px, aucun débordement, aucune erreur JavaScript. Hauteur en écrans, SE / 13 : Préparer après génération 5 / 3,9 (avant 8,6 / 6,8) ; Bibliothèque 8,8 / 7 (avant 126 / 98) ; Régie 2,2 / 1,7, chrono visible dès l’ouverture.
 - À tester sur iPhone : chrono collé en haut pendant le défilement, animation du tirage, ouverture rapide de l’appli installée avec un réseau faible, restauration annulable.
 
-## Lot du 2026-11-18 : chantier 2 « Navigation et thème sombre » (D37)
+## Lot du 2026-11-18 : chantier 2 « Navigation et thème sombre » (D38)
 Branche `refonte/navigation-sombre` depuis `refonte/seance-dabord`.
 
 | Tâche | Objet | État |
@@ -187,6 +214,9 @@ Branche `refonte/navigation-sombre` depuis `refonte/seance-dabord`.
 
 - À tester sur iPhone : barre au-dessus de la barre d’accueil (appli installée et Safari), thème sombre en passant l’iPhone en mode sombre, Régie dans une salle sombre.
 
-### 2026-11-18 : Accueil sans la séance, défi du jour (D38) et fusion
+### 2026-11-18 : Accueil sans la séance, défi du jour (D39) et fusion
 - Accueil : échauffement express, principe du jour, défi du jour (60 défis à relire par Alexis).
 - Demande d’Alexis : « fusionne tout » : PR 31 puis PR 32 dans `main`.
+
+### 2026-11-18 : fusion avec la PR 30 (D40)
+- `main` (PR 30, « écrans légers ») intégré dans `refonte/navigation-sombre` ; mes versions gardées pour la barre du bas, l’en-tête, les fiches courtes et le défi du jour ; les effets de la PR 30 qui ne font pas doublon sont conservés (liste dans D40).

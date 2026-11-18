@@ -90,7 +90,7 @@ assert.ok(script.includes("localStorage.setItem('impro-session-dynamics-v1'") &&
 assert.ok(script.includes("other.value=n") && script.includes("document.getElementById('dynamic'+i)"), 'Synchronisation des curseurs entre les deux générateurs absente');
 assert.ok(html.includes('min-height:44px') || fs.readFileSync('styles.css','utf8').includes('min-height:44px'), 'Cibles tactiles de 44 px absentes');
 
-// D36 : plus de tirage sur l’Accueil (doublon avec Exercice aléatoire), place à la prochaine séance et au principe du jour.
+// D37 : plus de tirage sur l’Accueil (doublon avec Exercice aléatoire), place à la prochaine séance et au principe du jour.
 assert.ok(!script.includes('function quickDraw(') && script.includes('function homeRender(') && !html.includes('id="homeNext"') && html.includes('id="homeChallenge"') && html.includes('id="homePrinciple"'), 'Accueil : échauffement, principe du jour et défi du jour attendus, sans tirage ni séance');
 
 

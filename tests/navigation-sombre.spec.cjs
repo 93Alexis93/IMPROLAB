@@ -3,7 +3,7 @@
 const { test, expect } = require('@playwright/test');
 const { openApp, openSeance, openTab } = require('./helpers.cjs');
 
-// Chantier 2 (D37) : barre d'onglets en bas, thème sombre qui suit le réglage de l'iPhone.
+// Chantier 2 (D38) : barre d'onglets en bas, thème sombre qui suit le réglage de l'iPhone.
 
 const NAV = 'nav[aria-label="Navigation principale"]';
 
