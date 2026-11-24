@@ -240,3 +240,10 @@ Branche `refonte/navigation-sombre` depuis `refonte/seance-dabord`.
 - Tests locaux : `check.cjs` OK, `integrity.cjs` OK (116 fiches), Playwright iPhone-Chromium 169/169 et iPhone-WebKit 169/169.
 - À valider par Alexis : le classement des 60 défis en cinq familles.
 - À tester sur iPhone : la visite au premier lancement (effacer `improlab-visite-vue` ou passer par « Plus »), la loupe sous l'encoche, le retournement de la carte du défi, le partage du défi vers WhatsApp, le thème sombre.
+
+### 2026-11-24 : « Séance plus » (D45)
+- Branche `claude/gallant-allen-dprhgv`. Ajout à la séance depuis la Bibliothèque et la recherche globale, recherche et filtre dans l'ajout à la main, fiche coach imprimable en PDF.
+- Tests locaux : `check.cjs` OK, `integrity.cjs` OK (116 fiches), Playwright iPhone-Chromium 173/174. Le test « plein écran de séance… paysage » (`features.spec.cjs:238`) échouait déjà avant la modification dans cet environnement (Chromium 1.63 refuse de redimensionner une fenêtre en plein écran) ; WebKit non disponible ici, à vérifier par la CI.
+- Vérifié à l'œil : captures iPhone 13 clair et sombre (Bibliothèque, recherche, ajout à la main, pas de débordement horizontal, 0 erreur JavaScript) et PDF A4 généré par Chromium (3 pages pour 5 jeux).
+- À valider par Alexis : les phrases « Avec ce groupe » de la fiche coach.
+- À tester sur iPhone : impression de la fiche coach et enregistrement en PDF depuis Safari, bouton « ＋ Séance » dans la loupe, recherche dans l'ajout à la main.

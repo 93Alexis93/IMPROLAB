@@ -471,7 +471,7 @@
     var jeux = (typeof data !== 'undefined' && Array.isArray(data)) ? data : [];
     var ex = jeux.filter(function (g) { return correspond(mots, (g[0] || '') + ' ' + (g[1] || '') + ' ' + (g[2] || '')); })
       .sort(function (a, b) { return (correspond(mots, b[0]) ? 1 : 0) - (correspond(mots, a[0]) ? 1 : 0); }).slice(0, 8);
-    if (ex.length) groupes.push({ nom: '📚 Exercices', items: ex.map(function (g) { return { titre: typeof displayTitle === 'function' ? displayTitle(g[0]) : g[0], sous: g[1] || '', action: function () { allerExercice(g[0]); } }; }) });
+    if (ex.length) groupes.push({ nom: '📚 Exercices', items: ex.map(function (g) { return { titre: typeof displayTitle === 'function' ? displayTitle(g[0]) : g[0], sous: g[1] || '', action: function () { allerExercice(g[0]); }, titreFiche: g[0] }; }) });
     var pr = (principes || []).filter(function (p) { return correspond(mots, (p.titre || '') + ' ' + (p.formulation_originale || '') + ' ' + (p.principe || '')); }).slice(0, 5);
     if (pr.length) groupes.push({ nom: '🧭 Principes', items: pr.map(function (p) { return { titre: p.titre, sous: 'Principe', action: function () { allerPrincipe(p.titre); } }; }) });
     var conseils = (typeof IMPRO_ADVICE !== 'undefined' && Array.isArray(IMPRO_ADVICE)) ? IMPRO_ADVICE : [];
@@ -482,14 +482,28 @@
       .sort(function (a, b) { return (correspond(mots, b.titre) ? 1 : 0) - (correspond(mots, a.titre) ? 1 : 0); }).slice(0, 5);
     if (df.length) groupes.push({ nom: '🎯 Défis', items: df.map(function (d) { return { titre: d.titre, sous: (FAMILLES[d.famille] || {}).nom || 'Défi', action: function () { var s = lireEtat(); s.jour = jourLocal(); s.choix = d.titre; ecrireEtat(s); fermerRecherche(); tab('home'); rendreDefi(true); var b = doc.getElementById('homeChallenge'); if (b) b.scrollIntoView({ block: 'center' }); } }; }) });
     if (!groupes.length) { out.innerHTML = '<p class="ap-cherche-aide">Rien trouvé pour « ' + esc(q.trim()) + ' ». Essaie un mot plus court.</p>'; return; }
-    out.innerHTML = '';
+    out.innerHTML = '<p id="apChercheAjout" class="ap-cherche-msg" aria-live="polite"></p>';
     groupes.forEach(function (g) {
       var sec = el('section', 'ap-cherche-groupe'); sec.appendChild(el('h3', '', g.nom));
       var ul = el('ul');
       g.items.forEach(function (it) {
         var li = el('li'), b = el('button', 'ap-cherche-item'); b.type = 'button';
         b.appendChild(el('b', '', it.titre)); if (it.sous) b.appendChild(el('small', '', it.sous));
-        b.onclick = it.action; li.appendChild(b); ul.appendChild(li);
+        b.onclick = it.action; li.appendChild(b);
+        // D45 : ajouter l'exercice à la séance en cours sans quitter la recherche.
+        if (it.titreFiche && typeof window.sessionAddByTitle === 'function') {
+          li.className = 'ap-cherche-ligne';
+          var deja = typeof window.sessionHasGame === 'function' && window.sessionHasGame(jeux.filter(function (g) { return g[0] === it.titreFiche; })[0]);
+          var a = el('button', 'ap-cherche-ajout', deja ? '✓ Séance' : '＋ Séance'); a.type = 'button';
+          a.setAttribute('aria-label', (deja ? 'Déjà dans la séance : ' : 'Ajouter à la séance : ') + it.titre); a.disabled = !!deja;
+          a.onclick = function () {
+            var r = window.sessionAddByTitle(it.titreFiche);
+            var st = doc.getElementById('apChercheAjout'); if (st) st.textContent = r.msg;
+            if (r.ok) { a.disabled = true; a.textContent = '✓ Séance'; a.setAttribute('aria-label', 'Déjà dans la séance : ' + it.titre); }
+          };
+          li.appendChild(a);
+        }
+        ul.appendChild(li);
       });
       sec.appendChild(ul); out.appendChild(sec);
     });

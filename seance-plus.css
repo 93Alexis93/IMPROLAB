@@ -1,0 +1,54 @@
+/* IMPRO LAB : « Séance plus » (D45) — ajout depuis la Bibliothèque et la recherche, recherche dans l'ajout à la main, fiche coach imprimable. */
+
+/* Bibliothèque : bouton d'ajout à la séance, à côté des favoris */
+#games .lib-add{min-height:44px;margin:4px 0 4px 6px}
+#games .lib-add:disabled{opacity:1;cursor:default;background:transparent;color:var(--ink-soft,#625b52);border-style:dashed}
+#games .lib-add-status{margin:4px 0;font-size:14px;color:var(--ink-soft,#625b52)}
+
+/* Ajouter un exercice à la main : recherche et filtre */
+.add-exercise .manual-filters{display:grid;grid-template-columns:1fr;gap:8px;margin:10px 0 4px}
+.add-exercise .manual-filters input,.add-exercise .manual-filters select{width:100%;box-sizing:border-box;min-height:44px;font:inherit}
+.add-exercise .manual-count{margin:2px 0 8px;font-size:14px}
+.add-exercise .manual-count:empty{display:none}
+#manualGame{max-width:100%;min-height:44px}
+@media (min-width:640px){.add-exercise .manual-filters{grid-template-columns:2fr 1fr}}
+
+/* Recherche globale : bouton « ＋ Séance » à droite de chaque exercice */
+.ap-cherche-ligne{display:flex;gap:6px;align-items:stretch}
+.ap-cherche-ligne .ap-cherche-item{flex:1;min-width:0}
+.ap-cherche-ajout{flex:none;min-width:84px;min-height:50px;padding:6px 10px;border-radius:12px;border:1px solid var(--line,#d9cdbd);background:var(--paper-raised,#fffdf8);color:var(--ink,#25231f);font-weight:700;cursor:pointer}
+.ap-cherche-ajout:disabled{cursor:default;border-style:dashed;color:var(--ink-soft,#625b52)}
+.ap-cherche-msg{margin:6px 0 0;font-size:14px;color:var(--ink-soft,#625b52)}
+.ap-cherche-msg:empty{display:none}
+
+/* Fiche coach : invisible à l'écran, seule à l'impression */
+.coach-sheet{display:none}
+@media print{
+  @page{size:A4 portrait;margin:12mm}
+  body.print-coach main>*:not(#seance),body.print-coach>*:not(main){display:none!important}
+  body.print-coach #seance>*:not(#coachSheet){display:none!important}
+  body.print-coach #coachSheet{display:block!important}
+  body.print-coach{background:#fff!important}
+  .coach-page{color:#111!important;font-family:system-ui,Arial,sans-serif;font-size:10.5pt;line-height:1.38}
+  .coach-page *{color:#111!important;background:transparent!important}
+  .coach-page p{margin:1mm 0}
+  .coach-head{border-bottom:2px solid #74232d;padding-bottom:3mm;margin-bottom:4mm}
+  .coach-head h1{font:700 17pt/1.2 Georgia,"Times New Roman",serif;margin:0 0 1.5mm}
+  .coach-page .coach-meta{font-weight:700;color:#74232d!important}
+  .coach-groupe{border:1.5px solid #74232d;padding:2.5mm 3.5mm;margin:0 0 4mm;break-inside:avoid;page-break-inside:avoid}
+  .coach-groupe h2{font:700 11.5pt/1.25 Georgia,"Times New Roman",serif;margin:0 0 1mm}
+  /* Un jeu peut continuer sur la page suivante, mais son titre reste avec la suite et chaque bloc reste entier. */
+  .coach-jeu{border-top:1px solid #999;padding:3mm 0 2mm}
+  .coach-jeu h2,.coach-infos{break-after:avoid;page-break-after:avoid}
+  .coach-jeu>p,.coach-bloc,.coach-notes{break-inside:avoid;page-break-inside:avoid}
+  .coach-jeu h2{font:700 13pt/1.25 Georgia,"Times New Roman",serif;margin:0 0 .5mm;display:flex;flex-wrap:wrap;align-items:baseline;gap:0 2mm}
+  .coach-page .coach-num{color:#74232d!important}
+  .coach-duree{margin-left:auto;font:600 9.5pt/1.2 system-ui,Arial,sans-serif}
+  .coach-infos{font-size:9.5pt;font-style:italic}
+  .coach-bloc{margin:1.5mm 0 0}
+  .coach-bloc h3{font:700 10pt/1.2 system-ui,Arial,sans-serif;text-transform:uppercase;letter-spacing:.04em;margin:0 0 .5mm;color:#74232d!important}
+  .coach-bloc ul{margin:0;padding-left:5mm}
+  .coach-bloc li{margin:.4mm 0}
+  .coach-perso{border-left:2px solid #74232d;padding-left:3mm}
+  .coach-notes{margin-top:2mm!important;min-height:11mm;border-bottom:1px dotted #777;font-size:9.5pt;font-weight:700}
+}
