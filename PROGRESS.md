@@ -240,3 +240,10 @@ Branche `refonte/navigation-sombre` depuis `refonte/seance-dabord`.
 - Tests locaux : `check.cjs` OK, `integrity.cjs` OK (116 fiches), Playwright iPhone-Chromium 169/169 et iPhone-WebKit 169/169.
 - À valider par Alexis : le classement des 60 défis en cinq familles.
 - À tester sur iPhone : la visite au premier lancement (effacer `improlab-visite-vue` ou passer par « Plus »), la loupe sous l'encoche, le retournement de la carte du défi, le partage du défi vers WhatsApp, le thème sombre.
+
+### 2026-11-25 : séance du 25/11, le game (D46)
+- Dans `main` directement, à la demande d'Alexis. Commit de départ `f6a6951`. Fiches 3-19 Le jeu des chaises et 3-20 L'expert et ses fans, principe « Le game dans le jeu : la méthode DRE », section « Principes travaillés » sur la fiche (premier lien : 3-20 → DRE).
+- Non fait : variante « Avec du game » de l'IAO (fiche IAO introuvable ou ambiguë, voir D46).
+- Tests locaux : `check.cjs` OK, `integrity.cjs` OK (118 fiches), Playwright iPhone-Chromium 174/175 (échec connu « plein écran… paysage », Chromium 1.63 local). WebKit non disponible ici : à vérifier par la CI.
+- À valider par Alexis : section et ids, Corps en principale pour les chaises, durée et niveau des deux fiches, contact « aucun » des chaises, catégories secondaires de 3-20, propositions de l'assistant.
+- À tester sur iPhone : Bibliothèque → « L'expert et ses fans » → Voir la fiche complète → pastille → la note DRE s'ouvre ; thème sombre.
