@@ -5275,6 +5275,19 @@
         "Émotions",
         "Construction"
       ]
+    },
+    {
+      "titre": "Le game dans le jeu : la méthode DRE",
+      "texte_original": "Le game, c’est le jeu qu’il y a entre les comédiens pendant l’impro. La méthode DRE donne les différents types de games. Déclenchement : à chaque fois qu’il se passe quelque chose (une action ou un mot dit), l’autre réagit d’une certaine manière. Par exemple, à chaque fois qu’il se passe quelque chose de positif, tout le monde se serre la main. Règlement : un règlement s’installe entre les personnages. Par exemple, les deux ne peuvent jamais se regarder en même temps. Empêchement : empêcher quelqu’un de faire quelque chose. Par exemple, on joue à la pétanque et quelqu’un est empêché de jouer sa boule, à chaque fois, pour plein de raisons différentes. Ou deux personnes veulent sortir d’une pièce et sont empêchées de sortir. Le game se passe entre les comédiens, donc entre les personnages, mais ce sont les comédiens qui le mettent en place.",
+      "detail": "Le game, c’est le jeu entre les comédiens pendant l’impro. Méthode DRE, trois types de games : D comme déclenchement, R comme règlement, E comme empêchement.",
+      "nature": "principe général",
+      "origine": "notes_personnelles",
+      "objectif_pedagogique": "Scène",
+      "categories_secondaires": [
+        "Écoute",
+        "Construction",
+        "Amusement"
+      ]
     }
   ],
   "ressource_cahier_coach": {
