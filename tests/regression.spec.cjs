@@ -106,8 +106,9 @@ test('générateur : mes notes et créations IMPRO LAB, étapes respectées',asy
  const labels=await page.locator('#plan>.card>small').allTextContents();
  expect(labels).toHaveLength(5);
  // Les étiquettes n'affichent plus l'origine : on la vérifie dans la bibliothèque (mes notes ou créations IMPRO LAB).
+ // D43 : l'origine interview_alexis (3-15 à 3-18) est aussi admise par le générateur.
  const origins=await page.evaluate(names=>names.map(name=>{const g=data.find(x=>displayTitle(x[0])===name||x[0]===name);return g?g[0]:null}),await page.locator('#plan>.card h3').allTextContents());
- for(const raw of origins){const fiche=library.exercices.find(f=>f.titre===raw);expect(fiche,String(raw)).toBeTruthy();expect(['notes_personnelles','creation_improlab']).toContain(fiche.origine)}
+ for(const raw of origins){const fiche=library.exercices.find(f=>f.titre===raw);expect(fiche,String(raw)).toBeTruthy();expect(['notes_personnelles','creation_improlab','interview_alexis']).toContain(fiche.origine)}
  expect(['Mise en énergie','Connexion collective']).toContain(labels[0].split('·')[1].trim());
  expect(labels.at(-1).split('·')[1].trim()).toBe('Scène finale');
 });
