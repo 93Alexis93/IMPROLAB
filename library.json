@@ -4992,6 +4992,84 @@
         "auteur_variante": "Assistant d’Alexis"
       },
       "auteur_consigne_courte": "Alexis (mise en forme de l’assistant)"
+    },
+    {
+      "id": "3-19",
+      "titre": "Le jeu des chaises",
+      "section": "Saison 3",
+      "numero_source": null,
+      "texte_original": "Le jeu des chaises. En cercle, tous. Si on joue à 8, on met 9 chaises. Quelqu’un est au milieu et doit essayer de s’asseoir sur la chaise restée vide. Pour l’en empêcher, les autres, assis au départ, ont le droit de bouger latéralement d’une chaise, dans un sens ou dans l’autre. Le but de ceux qui sont assis est que la personne ne réussisse pas à s’asseoir. C’est assez marrant : au final tout le monde s’assoit en tournant.",
+      "regle_clarifiee": "On se met en cercle sur des chaises, avec une chaise de plus que de joueurs (9 chaises pour 8 joueurs). Une personne est au milieu et doit s’asseoir sur la chaise vide. Les joueurs assis ont le droit de se décaler d’une chaise, dans un sens ou dans l’autre. Leur but : que la personne du milieu n’arrive pas à s’asseoir. Au final, tout le monde se retrouve à s’asseoir en tournant.",
+      "statut": "clarifié",
+      "eligible_generateur": true,
+      "duree_minutes": 8,
+      "origine": "notes_personnelles",
+      "objectif_pedagogique": "Corps",
+      "niveau": "★",
+      "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "On se met en cercle sur des chaises, avec une chaise de plus que de joueurs (9 chaises pour 8 joueurs). Une personne est au milieu et doit s’asseoir sur la chaise vide. Les joueurs assis ont le droit de se décaler d’une chaise, dans un sens ou dans l’autre. Leur but : que la personne du milieu n’arrive pas à s’asseoir. Au final, tout le monde se retrouve à s’asseoir en tournant.",
+        "variante_facile": "La personne du milieu se déplace en marchant, sans courir.",
+        "variante_difficile": "Une fois la règle comprise, la personne du milieu peut changer de direction à tout moment.",
+        "points_vigilance": "Préserver les distances, éviter les contacts et portés imposés.",
+        "statut": "Proposition générique de l’assistant, à valider par Alexis : Alexis n’a pas encore rempli ces champs ; règle et notes originales conservées.",
+        "auteur_variantes": "Assistant d’Alexis"
+      },
+      "categories_secondaires": [
+        "Écoute",
+        "Cohésion"
+      ],
+      "accompagnement_pedagogique": {
+        "consigne": "On se met en cercle sur des chaises, avec une chaise de plus que de joueurs (9 chaises pour 8 joueurs). Une personne est au milieu et doit s’asseoir sur la chaise vide. Les joueurs assis ont le droit de se décaler d’une chaise, dans un sens ou dans l’autre. Leur but : que la personne du milieu n’arrive pas à s’asseoir. Au final, tout le monde se retrouve à s’asseoir en tournant.",
+        "variante": "Une fois la règle comprise, la personne du milieu peut changer de direction à tout moment.",
+        "objectif_prof": "Travailler l’observation, la précision corporelle et la lisibilité des intentions.",
+        "objectif_eleves": "J’apprends à faire comprendre une idée avec mon corps et à observer mon partenaire.",
+        "auteur": "assistant",
+        "statut": "Proposition générique de l’assistant, à valider par Alexis ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
+      },
+      "auteur_consigne_courte": "Assistant d’Alexis"
+    },
+    {
+      "id": "3-20",
+      "titre": "L’expert et ses fans",
+      "section": "Saison 3",
+      "numero_source": null,
+      "texte_original": "Une personne passe, qui est expert d’un sujet que le public définit. Le public est super fan de l’expert qui arrive et doit le couper d’une manière ou d’une autre, pour que l’expert soit interrompu dans son discours. À chaque fois qu’il est interrompu, il doit recommencer au départ. Le public a le droit une seule fois d’applaudir et de faire du bruit. Tout le reste doit être des interventions pour couper, en faisant attention que ceux qui coupent restent quand même des fans, et donc écoutent ce que l’expert leur dit. C’est l’expert qui doit rester au centre du jeu.",
+      "regle_clarifiee": "Un joueur arrive en expert d’un sujet défini par le public. Le public est fan de l’expert et doit l’interrompre, d’une manière ou d’une autre. À chaque interruption, l’expert recommence son discours depuis le début. Le public n’a le droit d’applaudir et de faire du bruit qu’une seule fois. Tout le reste doit être des interventions pour couper, en restant des fans : ceux qui coupent écoutent ce que dit l’expert. L’expert reste au centre du jeu.",
+      "statut": "clarifié",
+      "eligible_generateur": true,
+      "duree_minutes": 8,
+      "origine": "notes_personnelles",
+      "objectif_pedagogique": "Scène",
+      "niveau": "★",
+      "effectif_conseille": "à évaluer",
+      "contact_physique": "aucun",
+      "qualite_fiche": "clarifiée",
+      "conseils_animation": {
+        "consigne_courte": "Un joueur arrive en expert d’un sujet défini par le public. Le public est fan de l’expert et doit l’interrompre, d’une manière ou d’une autre. À chaque interruption, l’expert recommence son discours depuis le début. Le public n’a le droit d’applaudir et de faire du bruit qu’une seule fois. Tout le reste doit être des interventions pour couper, en restant des fans : ceux qui coupent écoutent ce que dit l’expert. L’expert reste au centre du jeu.",
+        "variante_facile": "Commencez par des interruptions espacées, une à la fois.",
+        "variante_difficile": "Chaque interruption doit être différente des précédentes.",
+        "points_vigilance": "Éviter les cris, la précipitation et la mise en échec publique.",
+        "statut": "Proposition générique de l’assistant, à valider par Alexis : Alexis n’a pas encore rempli ces champs ; règle et notes originales conservées.",
+        "auteur_variantes": "Assistant d’Alexis"
+      },
+      "categories_secondaires": [],
+      "accompagnement_pedagogique": {
+        "consigne": "Un joueur arrive en expert d’un sujet défini par le public. Le public est fan de l’expert et doit l’interrompre, d’une manière ou d’une autre. À chaque interruption, l’expert recommence son discours depuis le début. Le public n’a le droit d’applaudir et de faire du bruit qu’une seule fois. Tout le reste doit être des interventions pour couper, en restant des fans : ceux qui coupent écoutent ce que dit l’expert. L’expert reste au centre du jeu.",
+        "variante": "Chaque interruption doit être différente des précédentes.",
+        "objectif_prof": "Développer l’adaptation immédiate à une contrainte tout en gardant une scène lisible.",
+        "objectif_eleves": "J’apprends à m’adapter à une consigne nouvelle sans bloquer la scène.",
+        "auteur": "assistant",
+        "statut": "Proposition générique de l’assistant, à valider par Alexis ; règle et notes originales du créateur conservées.",
+        "auteur_variante": "Assistant d’Alexis"
+      },
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "principes_travailles": [
+        "Le game dans le jeu : la méthode DRE"
+      ]
     }
   ],
   "regles_pedagogiques": [

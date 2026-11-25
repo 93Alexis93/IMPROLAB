@@ -127,6 +127,6 @@ test('contact physique : filtre de la bibliothèque et tous les jeux dans le gé
   await expect(page.locator('#games .card')).toHaveCount(5);
   await expect(page.locator('#games .card').first()).toContainText('Contact léger');
   await page.evaluate(() => { const d = document.querySelector('#filterFold'); if (d) d.open = true; }); await page.selectOption('#contactFilter', 'aucun');
-  // 98 avant la saison 3, plus 3-8 à 3-14 (18 nov.), plus 3-15 à 3-18 (pistes improwiki, 18 nov.) : toutes sans contact.
-  await expect(page.locator('#games .card')).toHaveCount(109);
+  // 98 avant la saison 3, plus 3-8 à 3-14 (18 nov.), plus 3-15 à 3-18 (pistes improwiki, 18 nov.), plus 3-19 et 3-20 (25 nov.) : toutes sans contact.
+  await expect(page.locator('#games .card')).toHaveCount(111);
 });
