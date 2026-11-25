@@ -947,3 +947,10 @@ body::before{background:radial-gradient(ellipse 80% 40% at 0% 0%,rgba(255,210,31
 /* D40 — Barre du bas : cachée dans les plein écran (Régie, séance), où elle gênerait */
 body.regie-full nav[aria-label="Navigation principale"],body.stage-open nav[aria-label="Navigation principale"]{display:none!important}
 body.regie-full,body.stage-open{padding-bottom:0!important}
+/* Séance du 25/11 — Principes travaillés sur la fiche d'un exercice */
+.worked-principles{margin:8px 0 10px}
+.worked-principles-label{margin:0 0 6px;font-size:.9em}
+.worked-principles-list{display:flex;flex-wrap:wrap;gap:8px}
+.worked-principle-pill{display:inline-flex;align-items:center;min-height:44px;max-width:100%;padding:8px 14px;border:2px solid var(--curtain,#9b303b);border-radius:22px;background:var(--paper-raised,#fffdf8);color:var(--ink,#25231f);font:inherit;font-size:.92em;font-weight:600;line-height:1.25;text-align:left;white-space:normal;overflow-wrap:anywhere;cursor:pointer}
+.worked-principle-pill:focus-visible{outline:3px solid var(--curtain,#9b303b);outline-offset:2px}
+.worked-principle-target{outline:3px solid var(--curtain,#9b303b);outline-offset:2px}
