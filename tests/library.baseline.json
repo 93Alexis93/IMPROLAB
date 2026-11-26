@@ -1558,6 +1558,7 @@
     },
     "2-9": {
       "accompagnement_pedagogique": "981428304a1c8278572b6028ecd5da2b70aff038bbe2fef57727df4b3751fcc2",
+      "aussi_appele": "83dfca9c92be043f3258a5d022a937bd9e74e2017b493fc7bf04c406ed058ffb",
       "auteur_consigne_courte": "177a27303de4a59a1caf22a4ad60df303f686341278fd2982bb7a94da0ce7b00",
       "categories_secondaires": "9489069c7aed260852769503301e772f1f0d2a37667a0c7959d8c153d6eb9097",
       "conseils_animation": "8b68c7d0ac9bbcdc97498ed9fbbe2e7242cfc4e6f136e867af84b06c3d0c00d0",
@@ -1576,7 +1577,8 @@
       "section": "e06d3824ce7fe9d889afb6c6b4a695b391d91a589f60e55ab754998f643970c9",
       "statut": "247f86420c2bffefbb302453e3005a4b5fc39b0177b4e51335cdcae56c3ed6d8",
       "texte_original": "456c46b6786971030ac05f4d5f1e5b1aecf03434789ed2d27d33d9b8fcb30543",
-      "titre": "01ffb6ce8384e4383f9551e8da1009ff3c3b4728bbef964303f287446c7749d8"
+      "titre": "01ffb6ce8384e4383f9551e8da1009ff3c3b4728bbef964303f287446c7749d8",
+      "variantes": "a9de55715b09eaca96c87b3dda78b24399da3a1acc487177ab4e2d0ed43f5304"
     },
     "2-10": {
       "accompagnement_pedagogique": "20ff1ddf409e670613d862c4085189c65e96dfb70986f139f9ea8cf829a29134",

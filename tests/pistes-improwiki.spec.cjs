@@ -171,7 +171,8 @@ test('bibliothèque : la recherche trouve un jeu par son autre nom', async ({ pa
   await search.fill('');
   // Les fiches sans autre nom n'affichent pas la ligne.
   const withAlias = await page.locator('#games .card .exercise-aliases').count();
-  expect(withAlias).toBe(33);
+  // 34 depuis le 26/11 : « IAO » ajouté à 2-9.
+  expect(withAlias).toBe(34);
 });
 
 test('spectacle : une trame remplit l’ordre de passage et s’ajoute à la suite', async ({ page }) => {

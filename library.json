@@ -3079,7 +3079,17 @@
         "statut": "Proposition de l’assistant ; règle et notes originales du créateur conservées.",
         "auteur_variante": "Assistant d’Alexis"
       },
-      "auteur_consigne_courte": "Assistant d’Alexis"
+      "auteur_consigne_courte": "Assistant d’Alexis",
+      "aussi_appele": [
+        "IAO"
+      ],
+      "variantes": [
+        {
+          "nom": "Avec du game",
+          "texte_original": "IAO classique, mais on peut aussi passer l’énergie en faisant un game avec quelqu’un. Par exemple, le premier commence une danse un peu bizarre en allant vers l’autre, et l’autre doit rentrer dans le jeu. Ça dure quelques secondes, puis l’énergie passe à l’autre. Celui qui peut lancer le game, c’est forcément celui qui a l’énergie. Autre exemple : le premier fait semblant de lancer une canne à pêche et le deuxième se fait attraper comme un poisson.",
+          "origine": "notes_personnelles"
+        }
+      ]
     },
     {
       "id": "2-10",
