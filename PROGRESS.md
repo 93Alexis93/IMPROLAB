@@ -247,3 +247,8 @@ Branche `refonte/navigation-sombre` depuis `refonte/seance-dabord`.
 - Tests locaux : `check.cjs` OK, `integrity.cjs` OK (118 fiches), Playwright iPhone-Chromium 174/175 (échec connu « plein écran… paysage », Chromium 1.63 local). WebKit non disponible ici : à vérifier par la CI.
 - À valider par Alexis : section et ids, Corps en principale pour les chaises, durée et niveau des deux fiches, contact « aucun » des chaises, catégories secondaires de 3-20, propositions de l'assistant.
 - À tester sur iPhone : Bibliothèque → « L'expert et ses fans » → Voir la fiche complète → pastille → la note DRE s'ouvre ; thème sombre.
+
+### 2026-11-26 : IAO, variantes nommées, exercices liés, filtre par principe (D47)
+- Dans `main` directement. 2-9 = IAO (validé par Alexis) : variante « Avec du game » et « IAO » en aussi appelé. Section « Exercices liés » sous les notes de principe, filtre « Principe » dans la Bibliothèque.
+- Tests locaux : `check.cjs` OK, `integrity.cjs` OK (118 fiches), Playwright iPhone-Chromium 179/180 (échec connu « plein écran… paysage », Chromium 1.63 local).
+- À tester sur iPhone : chercher « IAO » dans la Bibliothèque ; Principes → Autres notes personnelles → méthode DRE → « L’expert et ses fans » ; filtre « Principe ».
