@@ -6,7 +6,8 @@
    Les titres des exercices sont stockés en clair : une entrée reste lisible même si la bibliothèque change.
    La clé commence par « impro- » : « Tout sauvegarder » et « Restaurer » l'emportent comme les autres.
    Ne touche ni à library.json, ni au plan (impro-last-plan), ni aux séances enregistrées (impro-history),
-   ni aux présences de l'onglet Groupes (impro-attendance-v1). */
+   ni aux présences de l’onglet Groupes (impro-attendance-v1).
+   D49 : lit les marques du plan (« à sauter si retard ») et les chronos lancés en Régie (impro-live-played-v1). */
 (function () {
   'use strict';
   var doc = document;
@@ -72,7 +73,14 @@
   function nomGroupe(groupeId) { var p = profils().filter(function (x) { return x.id === groupeId; })[0]; return p ? p.nom : ''; }
   function exercicesDuPlan() {
     var cartes = sur(function () { return planCards(); }) || [];
-    return cartes.map(function (c) { var h = c.querySelector('h3'); return h ? h.textContent.trim().slice(0, MAX_COURT) : ''; }).filter(Boolean);
+    return cartes.map(function (c) { var h = c.querySelector('h3'); return { titre: h ? h.textContent.trim().slice(0, MAX_COURT) : '', aSauter: c.dataset.skip === '1' }; }).filter(function (x) { return x.titre; });
+  }
+  // D49 : l'exercice « à sauter si retard » dont le chrono n'a jamais été lancé en Régie (alors que la Régie
+  // a servi pour cette séance) arrive coché « pas joué ». Sans Régie, rien n'est deviné : tout reste « joué ».
+  function joueParDefaut(x) {
+    if (!x.aSauter) return true;
+    var lances = sur(function () { return livePlayedRead(); }) || [];
+    return !lances.length || lances.indexOf(x.titre) >= 0;
   }
   function titresBibliotheque() {
     var vus = {}, out = [];
@@ -89,7 +97,7 @@
     return {
       id: '', creeLe: '', date: jourLocal(), groupeId: gid, eleves: eleves,
       librePresents: '', libreAbsents: '',
-      exercices: exercicesDuPlan().map(function (t) { return { titre: t, prevu: true, joue: true, commentaire: '' }; }),
+      exercices: exercicesDuPlan().map(function (x) { return { titre: x.titre, prevu: true, joue: joueParDefaut(x), commentaire: '', aSauter: x.aSauter }; }),
       commentaire: ''
     };
   }
@@ -142,7 +150,7 @@
     if (!b.exercices.length) return '<p class="muted">Aucun exercice pour l’instant. Ajoute ceux que vous avez joués ci-dessous.</p>';
     return '<ol class="journal-exercises">' + b.exercices.map(function (x, i) {
       return '<li class="journal-exercise' + (x.prevu ? '' : ' journal-hors-plan') + '">' +
-        '<div class="journal-exercise-head"><span class="journal-exercise-title">' + esc(x.titre) + '</span>' + (x.prevu ? '' : '<span class="journal-tag">hors plan</span>') + '</div>' +
+        '<div class="journal-exercise-head"><span class="journal-exercise-title">' + esc(x.titre) + '</span>' + (x.prevu ? '' : '<span class="journal-tag">hors plan</span>') + (x.aSauter ? '<span class="journal-tag">à sauter si retard</span>' : '') + '</div>' +
         '<div class="journal-exercise-line"><label class="journal-check"><input type="checkbox" id="journalPlayed' + i + '"' + (x.joue ? ' checked' : '') + ' aria-label="' + esc(x.titre) + ' : joué"><span>Joué</span></label>' +
         (x.prevu ? '' : '<button type="button" class="journal-remove" onclick="journalRemoveExtra(' + i + ')" aria-label="Retirer ' + esc(x.titre) + '">✕ Retirer</button>') + '</div>' +
         '<input type="text" id="journalNote' + i + '" maxlength="' + MAX_COURT + '" value="' + esc(x.commentaire) + '" placeholder="Commentaire court (facultatif)" aria-label="Commentaire sur ' + esc(x.titre) + '" autocomplete="off">' +

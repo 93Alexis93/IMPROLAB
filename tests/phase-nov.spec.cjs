@@ -96,7 +96,7 @@ test('fiche élève : une seule page, objectif et fil conducteur, deux encadrés
   await expect(page.locator('#studentSheets .student-page')).toHaveCount(1);
   await expect(page.locator('#studentSheets .student-head')).toContainText('Objectif de la séance');
   await expect(page.locator('#studentSheets .student-head')).toContainText('Fil conducteur');
-  const n = await page.locator('#plan>.card:not(.session-objective) h3').count();
+  const n = await page.locator('#plan>.card:not(.session-objective):not(.plan-closing) h3').count();
   await expect(page.locator('#studentSheets .student-sheet')).toHaveCount(n);
   await page.emulateMedia({ media: 'print' });
   const boxes = await page.locator('#studentSheets .student-sheet').evaluateAll(els => els.map(e => e.getBoundingClientRect()).map(r => ({ x: Math.round(r.x), y: Math.round(r.y), w: r.width })));

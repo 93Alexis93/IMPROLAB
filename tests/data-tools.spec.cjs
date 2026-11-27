@@ -124,7 +124,7 @@ test('fiches élèves : une fiche par exercice, seules imprimées', async ({ pag
   await page.getByRole('button', { name: /Fiches élèves/ }).click();
   expect(await page.evaluate(() => window.__printed)).toBe(true);
   await expect(page.locator('body')).toHaveClass(/print-students/);
-  const titles = (await page.locator('#plan>.card:not(.session-objective) h3').allTextContents()).map(t => t.trim());
+  const titles = (await page.locator('#plan>.card:not(.session-objective):not(.plan-closing) h3').allTextContents()).map(t => t.trim());
   await expect(page.locator('#studentSheets .student-sheet h2')).toHaveText(titles);
   await page.emulateMedia({ media: 'print' });
   await expect(page.locator('#studentSheets')).toBeVisible();

@@ -42,7 +42,7 @@ test('écarter un jeu pour un groupe : il n’est plus proposé à ce groupe, ma
   await openSeance(page);
   await chooseGroup(page, 'copains');
   await page.getByRole('button', { name: 'Générer ma séance' }).click();
-  const firstCard = page.locator('#plan>.card:not(.session-objective)').first();
+  const firstCard = page.locator('#plan>.card:not(.session-objective):not(.plan-closing)').first();
   const title = (await firstCard.locator('h3').textContent()).trim();
   await firstCard.getByRole('button', { name: /^Écarter exercice 1 pour ce groupe$/ }).click();
   await expect(page.locator('#planSummary')).toContainText('Copains');
@@ -54,7 +54,7 @@ test('écarter un jeu pour un groupe : il n’est plus proposé à ce groupe, ma
   expect(excludedRaw).toHaveLength(1);
   for (let round = 0; round < 6; round++) {
     await page.getByRole('button', { name: 'Générer ma séance' }).click();
-    const titles = (await page.locator('#plan>.card:not(.session-objective) h3').allTextContents()).map(t => t.trim());
+    const titles = (await page.locator('#plan>.card:not(.session-objective):not(.plan-closing) h3').allTextContents()).map(t => t.trim());
     expect(titles).not.toContain(title);
   }
 
@@ -79,7 +79,7 @@ test('partager une séance : résumé lisible et fichier importable via la feuil
   await openSeance(page);
   await chooseGroup(page, 'asso');
   await page.getByRole('button', { name: 'Générer ma séance' }).click();
-  const titles = (await page.locator('#plan>.card:not(.session-objective) h3').allTextContents()).map(t => t.trim());
+  const titles = (await page.locator('#plan>.card:not(.session-objective):not(.plan-closing) h3').allTextContents()).map(t => t.trim());
   await page.getByRole('button', { name: 'Partager la séance' }).click();
   await expect(page.locator('#planSummary')).toContainText('partagée');
   const shared = await page.evaluate(() => window.__shared);
@@ -249,7 +249,7 @@ test('plein écran de séance : consigne en grand, chrono synchronisé, navigati
   expect(Math.round(box.height)).toBe(vp.height);
   await expect(page.locator('#stageTitle')).toHaveText((await page.locator('#liveTitle').textContent()).trim());
   await expect(page.locator('#stageConsigne')).toHaveText(await consigneCourte(page));
-  await expect(page.locator('#stageProgress')).toHaveText('Exercice 1 / 5');
+  await expect(page.locator('#stageProgress')).toHaveText('Exercice 1 / 6');
   await expect(page.locator('#stageRole')).toBeHidden();
   for (const b of await stage.getByRole('button').all()) expect((await b.boundingBox()).height).toBeGreaterThanOrEqual(44);
 
@@ -259,7 +259,7 @@ test('plein écran de séance : consigne en grand, chrono synchronisé, navigati
   await expect(page.locator('#stageClock')).toHaveText(await page.locator('#liveClock').textContent());
 
   await stage.getByRole('button', { name: 'Exercice suivant' }).click();
-  await expect(page.locator('#stageProgress')).toHaveText('Exercice 2 / 5');
+  await expect(page.locator('#stageProgress')).toHaveText('Exercice 2 / 6');
   await expect(page.locator('#stageTitle')).toHaveText((await page.locator('#liveTitle').textContent()).trim());
 
   await page.setViewportSize({ width: 844, height: 390 });
@@ -351,7 +351,7 @@ test('fil rouge : la séance suivante suit les priorités du trimestre et varie 
   await page.locator('#filTrimester').selectOption('0');
   await expect(page.locator('#filFocus')).toHaveText('1er trimestre : Écoute, Énergie');
   await page.getByRole('button', { name: /Proposer la séance suivante/ }).click();
-  await expect(page.locator('#plan>.card:not(.session-objective)')).toHaveCount(5);
+  await expect(page.locator('#plan>.card:not(.session-objective):not(.plan-closing)')).toHaveCount(5);
   const values = await page.evaluate(() => SLIDER_GROUPS.map((g, i) => [g.name, Number(document.getElementById('dynamic' + i).value)]));
   for (const [name, v] of values) expect(v).toBe(['Écoute', 'Énergie'].includes(name) ? (v === 70 ? 70 : 90) : 30);
   await expect(page.locator('#filStatus')).toContainText('séance n° 1 pour Club collège');
@@ -428,7 +428,7 @@ test('partager une séance sans feuille de partage : le fichier est télécharg�
 
 // Niveaux en étoiles (revue d'Alexis du 7 novembre 2026).
 async function planLevels(page) {
-  return page.evaluate(() => Array.from(document.querySelectorAll('#plan>.card h3')).map(h => {
+  return page.evaluate(() => Array.from(document.querySelectorAll('#plan>.card:not(.plan-closing) h3')).map(h => {
     const t = h.textContent.trim(); const g = data.find(x => displayTitle(x[0]) === t || x[0] === t); return g ? g[13] : null;
   }));
 }
@@ -456,7 +456,7 @@ test('niveaux : le Club collège ne reçoit pas de jeu ★★★, l’Associatio
     const levels = await planLevels(page);
     expect(levels).toHaveLength(5);
     for (const level of levels) expect(level).toBeLessThanOrEqual(2);
-    await expect(page.locator('#plan>.card:not(.session-objective) small').first()).toContainText('★');
+    await expect(page.locator('#plan>.card:not(.session-objective):not(.plan-closing) small').first()).toContainText('★');
   }
   await chooseGroup(page, 'asso');
   await expect(page.locator('#groupLevelInfo')).toHaveText('Jeux jusqu’à ★★★');
@@ -519,7 +519,7 @@ test('doublons : deux jeux jumeaux ne tombent jamais dans la même séance', asy
       localStorage.removeItem('impro-recent-games');
       localStorage.removeItem('impro-session-rounds-v1');
       generate();
-      const titles = Array.from(document.querySelectorAll('#plan>.card h3')).map(h => h.textContent);
+      const titles = Array.from(document.querySelectorAll('#plan>.card:not(.plan-closing) h3')).map(h => h.textContent);
       const has = t => titles.includes(t) || titles.includes(displayTitle(t));
       for (const [a, b] of pairs) if (has(a) && has(b)) clashes.push(a + ' + ' + b);
     }

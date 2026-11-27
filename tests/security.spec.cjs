@@ -61,7 +61,7 @@ test('export puis import : les cartes exportées sont identiques', async ({ page
 test('aucune fiche non éligible ne figure dans une séance générée', async ({ page }) => {
   await openApp(page);
   await openSeance(page);await page.getByRole('button', { name: 'Générer ma séance' }).click();
-  const titles = await page.locator('#plan>.card h3').allTextContents();
+  const titles = await page.locator('#plan>.card:not(.plan-closing) h3').allTextContents();
   expect(titles).toHaveLength(5);
   const selected = await page.evaluate(names => names.map(name => {
     // Les titres sont affichés avec leur article (displayTitle) depuis le 23/10.
@@ -70,7 +70,7 @@ test('aucune fiche non éligible ne figure dans une séance générée', async (
   }), titles);
   expect(selected.every(item => item.found && item.eligible), JSON.stringify(selected)).toBe(true);
   for (const { raw } of selected) {
-    const fiche = library.exercices.find(item => item.titre === raw);
+    const fiche = library.exercices.find(item => item.titre.trim() === raw);
     if (fiche) expect(fiche.eligible_generateur, `Fiche ${fiche.id}`).toBe(true);
   }
 });

@@ -9,7 +9,7 @@ async function chooseGroup(page, id) {
   await page.locator('#groupProfile').selectOption(id);
   await expect(page.locator('#groupProfile')).toHaveValue(id);
 }
-const planTitles = page => page.locator('#plan > .card h3').allTextContents();
+const planTitles = page => page.locator('#plan > .card:not(.plan-closing) h3').allTextContents();
 
 test('rappel de sauvegarde : absent sans données, présent après 7 jours sans sauvegarde, disparaît après la sauvegarde', async ({ page }) => {
   await openApp(page);

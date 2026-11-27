@@ -957,3 +957,24 @@ body.regie-full,body.stage-open{padding-bottom:0!important}
 /* 26/11 — Variantes nommées (champ « variantes ») et exercices liés à un principe */
 .exercise-variant{margin:6px 0}
 .linked-exercises{margin-top:10px}
+/* D49 — Durée réelle : installation, clôture verrouillée, horaires et « à sauter si retard » */
+.plan-timing{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:6px 0 4px}
+.plan-timing label{margin:0;font-weight:650}
+.plan-timing small{grid-column:1/-1}
+.plan-timing-field{display:flex;align-items:center;gap:6px;margin-top:4px;font-weight:400}
+.plan-timing input{width:5.5em;min-height:44px;box-sizing:border-box;border:1px solid var(--line,#d9cdbd);border-radius:10px}
+.plan-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin:4px 0 8px}
+.plan-time{font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:.01em}
+.skip-badge{display:inline-flex;align-items:center;padding:3px 10px;border-radius:999px;border:2px solid var(--curtain,#9b303b);color:var(--accent-text,var(--curtain-dark,#74232d));font-size:13px;font-weight:800}
+.skip-toggle{min-height:44px;padding:6px 12px;font-size:13px;border:1px dashed var(--line,#d2c7b8)!important;background:transparent!important;color:var(--ink-soft,#625b52)!important;font-weight:650}
+.skip-toggle[aria-pressed="true"]{border-style:solid!important}
+.closing-lock{font-size:13px;color:var(--ink-soft,#625b52)}
+#plan>.card.plan-closing{border-style:dashed!important}
+#planSummary.plan-overflow{padding:10px 12px;border-radius:10px;border:2px solid var(--curtain,#9b303b);color:var(--accent-text,var(--curtain-dark,#74232d))}
+@media print{
+  .plan-meta{margin:2mm 0!important}
+  .plan-time{font-size:11pt}
+  .skip-badge{border:1.5pt solid #171717!important;color:#171717!important;display:inline-flex!important}
+  .closing-lock{display:none!important}
+  #planSummary{display:block!important;color:#171717!important;font-weight:700}
+}

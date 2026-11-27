@@ -259,3 +259,10 @@ Branche `refonte/navigation-sombre` depuis `refonte/seance-dabord`.
 - Contrôle visuel iPhone SE (Chromium, clair et sombre) : aucune cible < 44 px, pas de débordement, aucune erreur JavaScript.
 - À décider par Alexis : relier le journal aux présences de Groupes et au bilan du trimestre.
 - À tester sur iPhone : clore une séance, le sélecteur de date de Safari, cocher les présents au doigt, le clavier sur les commentaires, Modifier / Supprimer dans l’Historique, sauvegarde puis restauration via Fichiers.
+
+### 2026-11-27 : plans dans la durée réelle et corrections (D49, D50)
+- Branche `plans-duree-corrections` depuis `journal-seances` (`812965c`). Installation et clôture déduites, clôture verrouillée, « à sauter si retard », horaires, alerte de dépassement, déroulé fidèle, impression du plan, jeux récents dédoublonnés, titres sans espaces en mémoire.
+- Tests locaux : `check.cjs` OK, `integrity.cjs` OK (118 fiches), `library.json` inchangé. Nouveau `tests/plans-duree.spec.cjs` (7 tests). Suite complète iPhone-Chromium 191/192 (échec connu « plein écran… paysage »). Plans, journal, régression, sécurité et fonctions rejoués 4 fois : 256/256. WebKit non disponible ici.
+- Impression vérifiée en PDF A4 (Chromium) : horaires, badge, clôture, total et déroulé présents.
+- En attente d’Alexis : doublons des listes de tirage (D50), correction éventuelle des 7 titres dans `library.json`, choix de l’exercice « à sauter » par défaut.
+- À tester sur iPhone : réglages d’installation et de clôture, badge au toucher, Régie puis « Clore la séance », impression depuis Safari.
