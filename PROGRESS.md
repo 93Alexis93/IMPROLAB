@@ -252,3 +252,10 @@ Branche `refonte/navigation-sombre` depuis `refonte/seance-dabord`.
 - Dans `main` directement. 2-9 = IAO (validé par Alexis) : variante « Avec du game » et « IAO » en aussi appelé. Section « Exercices liés » sous les notes de principe, filtre « Principe » dans la Bibliothèque.
 - Tests locaux : `check.cjs` OK, `integrity.cjs` OK (118 fiches), Playwright iPhone-Chromium 179/180 (échec connu « plein écran… paysage », Chromium 1.63 local).
 - À tester sur iPhone : chercher « IAO » dans la Bibliothèque ; Principes → Autres notes personnelles → méthode DRE → « L’expert et ses fans » ; filtre « Principe ».
+
+### 2026-11-27 : journal des séances (D48)
+- Branche `journal-seances` depuis `main` (`642f12e`). Bouton « Clore la séance », écran de clôture, journal en tête de l’Historique (modifier, supprimer avec confirmation), clé `impro-session-log-v1` comprise dans la sauvegarde.
+- Tests locaux : `check.cjs` OK, `integrity.cjs` OK (118 fiches), nouveau `tests/journal-seances.spec.cjs` 5/5 en iPhone-Chromium ; suite complète iPhone-Chromium 184/185 (échec connu « plein écran… paysage », Chromium 1.63 local). WebKit non disponible ici : à vérifier par la CI.
+- Contrôle visuel iPhone SE (Chromium, clair et sombre) : aucune cible < 44 px, pas de débordement, aucune erreur JavaScript.
+- À décider par Alexis : relier le journal aux présences de Groupes et au bilan du trimestre.
+- À tester sur iPhone : clore une séance, le sélecteur de date de Safari, cocher les présents au doigt, le clavier sur les commentaires, Modifier / Supprimer dans l’Historique, sauvegarde puis restauration via Fichiers.

@@ -1,0 +1,64 @@
+/* IMPRO LAB : journal des séances (D48) — styles de journal.js.
+   Couleurs par variables : le thème sombre suit tout seul. Cibles tactiles ≥ 44 px. */
+
+/* « Clore la séance » : masqué tant que la séance est vide, comme Enregistrer (refonte.css) */
+body.rf-plan-vide #seance .journal-close{display:none!important}
+
+#journal .journal-block{padding:14px 16px}
+#journal .journal-block h3{margin:0 0 8px;font-family:Georgia,"Palatino Linotype",serif}
+#journal label{display:block;margin:8px 0;font-weight:650}
+#journal input[type=date],#journal input[type=text],#journal select,#journal textarea{display:block;box-sizing:border-box;width:100%;min-height:44px;margin-top:4px;font:inherit;font-weight:400;border:1px solid var(--line,#d9cdbd);border-radius:10px;padding:10px}
+#journal textarea{min-height:64px;resize:vertical}
+
+.journal-count{margin:0 0 8px;font-weight:700}
+.journal-actions-line{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.journal-actions-line button{flex:1 1 130px;min-height:44px}
+.journal-students{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:6px}
+
+/* Une case à cocher = toute la ligne réagit au toucher */
+#journal .journal-check{display:flex;align-items:center;gap:10px;min-height:44px;margin:0;padding:6px 10px;box-sizing:border-box;border:1px solid var(--line,#d9cdbd);border-radius:10px;background:var(--paper-raised,#fffdf8);cursor:pointer;font-weight:600}
+#journal .journal-check input{width:24px;height:24px;margin:0;flex:none;accent-color:var(--curtain,#9b303b)}
+#journal .journal-check span{min-width:0;overflow-wrap:anywhere}
+#journal .journal-check:has(input:not(:checked)){opacity:.72;text-decoration:line-through;text-decoration-color:var(--curtain,#9b303b)}
+
+.journal-exercises{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.journal-exercise{padding:10px;border:1px solid var(--line,#d9cdbd);border-radius:12px}
+.journal-exercise.journal-hors-plan{border-style:dashed}
+.journal-exercise-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:6px}
+.journal-exercise-title{font-weight:750;overflow-wrap:anywhere}
+.journal-tag{flex:none;font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;border:1px solid var(--curtain,#9b303b);color:var(--accent-text,var(--curtain-dark,#74232d))}
+.journal-exercise-line{display:flex;gap:8px;align-items:stretch}
+.journal-exercise-line .journal-check{flex:1}
+.journal-remove{min-height:44px;padding:6px 12px}
+#journal .journal-exercise input[type=text]{margin-top:8px}
+
+.journal-extra{margin-top:12px}
+.journal-extra>summary{min-height:44px;box-sizing:border-box;padding:10px 0;cursor:pointer;font-weight:750;color:var(--accent-text,var(--curtain-dark,#74232d))}
+.journal-extra button{min-height:44px;width:100%}
+
+.journal-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 24px}
+.journal-actions button{flex:1 1 160px;min-height:48px}
+.journal-status{min-height:1.2em;margin:6px 0;font-weight:700}
+.journal-status:empty{display:none}
+
+/* Historique : le journal en tête */
+.journal-history h3{margin:0 0 6px;font-family:Georgia,"Palatino Linotype",serif}
+.journal-history h3 small{font-family:system-ui,sans-serif;font-weight:600}
+.journal-vide{margin:6px 0 10px;color:var(--ink-soft,#625b52)}
+.journal-history>button{min-height:44px}
+.journal-entry{border-top:1px solid var(--line,#d9cdbd)}
+.journal-entry>summary{display:flex;flex-direction:column;justify-content:center;gap:2px;min-height:52px;box-sizing:border-box;padding:8px 0;cursor:pointer}
+.journal-entry-date{font-weight:750;text-transform:capitalize}
+.journal-entry-sum{font-size:14px;color:var(--ink-soft,#625b52)}
+.journal-entry-body{padding:0 0 10px}
+.journal-entry-body p{margin:6px 0;overflow-wrap:anywhere}
+.journal-detail-exercises{list-style:none;margin:8px 0;padding:0;display:grid;gap:6px}
+.journal-detail-exercises li{display:flex;gap:8px;align-items:flex-start;overflow-wrap:anywhere}
+.journal-mark{flex:none;width:1.4em;font-weight:800;text-align:center}
+.journal-joue .journal-mark{color:#1f7a4d}
+.journal-pas-joue .journal-mark{color:var(--curtain,#9b303b)}
+.journal-pas-joue b{text-decoration:line-through;text-decoration-color:var(--curtain,#9b303b)}
+.journal-etat{font-size:13px;color:var(--ink-soft,#625b52)}
+.journal-note{font-style:italic}
+@media (prefers-color-scheme: dark){.journal-joue .journal-mark{color:#7fd8a6}}
+@media print{.journal-actions,.journal-actions-line,.journal-close{display:none!important}}
